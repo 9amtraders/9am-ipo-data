@@ -50,6 +50,40 @@ def url_or_empty(v):
     return v if isinstance(v, str) and re.match(r"^https?://[^\s\"'<>]+$", v) else ""
 
 
+def subscription(v, where):
+    """Cleans an IPO's subscription figures and works out a retail investor's allotment chance."""
+    if not isinstance(v, dict):
+        return None, None
+    out = {k: num_or_none(v.get(k)) for k in ("qib", "nii", "retail", "total")}
+    for k in ("retailShares", "minAppShares", "retailApps"):
+        n = num_or_none(v.get(k))
+        out[k] = int(n) if n and n > 0 else None
+    out["asOf"] = text(v.get("asOf"), 40)
+    out["final"] = bool(v.get("final"))
+    out["source"] = url_or_empty(v.get("source"))
+    if all(out[k] is None for k in ("qib", "nii", "retail", "total")):
+        errors.append(f"{where}: subscription has no figures")
+        return None, None
+    if not out["source"]:
+        errors.append(f"{where}: subscription needs a source URL")
+    r = out["retail"]
+    if r is None:
+        return out, None
+    if r <= 1:
+        # Retail portion not fully subscribed: every valid application gets what it applied for.
+        return out, {"chance": 100.0, "oneIn": 1, "basis": "undersubscribed"}
+    if out["retailShares"] and out["minAppShares"] and out["retailApps"]:
+        # SEBI lottery: as many applicants as possible get the minimum application, chosen by draw.
+        lots = out["retailShares"] // out["minAppShares"]
+        c = min(1.0, lots / out["retailApps"])
+        basis = "applications"
+    else:
+        # Without the application count, 1 / times subscribed is the lowest the chance can be.
+        c = 1 / r
+        basis = "estimate"
+    return out, {"chance": round(c * 100, 1), "oneIn": max(1, round(1 / c)), "basis": basis}
+
+
 def build_report(raw, fname):
     cats = CFG["categories"]
     counts = {s: 0 for s in STATUSES}
@@ -182,6 +216,11 @@ def main():
             "hasReport": bool(rep),
             "score": rep["score"] if rep else None,
         })
+        sub, allot = subscription(i.get("sub"), f"list.json {name}")
+        if sub:
+            out[-1]["sub"] = sub
+        if allot:
+            out[-1]["allot"] = allot
     # IPOs that dropped off the live list keep their reports, so search still finds them.
     for sid, rep in reports.items():
         if sid not in seen:
@@ -197,6 +236,10 @@ def main():
     for sid, rep in sorted(reports.items()):
         c = rep["counts"]
         print(f"  {rep['name']}: score {rep['score']} ({c['pass']} pass, {c['caution']} caution, {c['flag']} flag, {c['na']} not found)")
+    for i in out:
+        if i.get("allot"):
+            a = i["allot"]
+            print(f"  {i['name']}: retail {i['sub']['retail']}x, allotment chance {a['chance']}% ({a['basis']})")
 
 
 if __name__ == "__main__":

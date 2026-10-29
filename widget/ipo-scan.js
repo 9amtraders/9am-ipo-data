@@ -245,6 +245,7 @@ function boot() {
       return '<h3>' + g[1] + '</h3><ul>' + items.map(function (i) {
         var sub = g[0] === 'open' && i.close ? 'Closes ' + shortDate(i.close) : g[0] === 'upcoming' ? 'Opens ' + shortDate(i.open) : g[0] === 'closed' && i.listing ? 'Lists ' + shortDate(i.listing) : '';
         if (i.score != null) sub = (sub ? sub + ' · ' : '') + 'Score ' + i.score;
+        if (i.sub && i.sub.retail != null) sub += ' · Retail ' + i.sub.retail.toFixed(1) + '×';
         return '<li><button type="button" data-pick="' + i.id + '" aria-current="' + (currentId === i.id) + '">' + esc(i.name) + (sub ? '<small>' + sub + '</small>' : '') + '</button></li>';
       }).join('') + '</ul>';
     }).join('') + '<h3>Example</h3><ul><li><button type="button" data-pick="sample" aria-current="' + (currentId === 'sample') + '">Sample full report</button></li></ul>';
@@ -276,6 +277,37 @@ function boot() {
   var flagIcon = '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C62828" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex:none;margin-top:2px"><path d="M12 9v4"></path><path d="M12 17h.01"></path><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z"></path></svg>';
   var studyNote = '<div class="note" role="note">' + infoIcon + '<p><strong>A good score does not mean you should apply.</strong> It only shows how many issues we found in public information about the issue. Always study the RHP, the business and the price yourself before deciding.</p></div>';
 
+
+  function pct(c) { return c >= 99.95 ? '100%' : c >= 10 ? Math.round(c) + '%' : c.toFixed(1) + '%'; }
+  function times(v) { return v == null ? '—' : v.toFixed(2) + '×'; }
+  function subHtml(ipo) {
+    if (!ipo || ipo.sample) return '';
+    var st = statusOf(ipo), sub = ipo.sub, a = ipo.allot;
+    var head = '<div class="subx"><h3 style="margin:0 0 4px">Subscription and your allotment chance</h3>';
+    if (!sub) {
+      if (st === 'upcoming') return head + '<p class="sub" style="margin:0">Subscription figures appear here once bidding opens on ' + fmtDate(ipo.open) + '.</p></div>';
+      if (st === 'open') return head + '<p class="sub" style="margin:0">Subscription figures for this IPO are added in the next morning update.</p></div>';
+      return '';
+    }
+    var sme = ipo.board === 'SME', rl = sme ? 'Individual investors' : 'Retail';
+    var live = !sub.final && st === 'open';
+    var big = '—', line = '', note = '';
+    if (a) {
+      var lower = a.basis === 'estimate' && a.chance < 100;
+      big = (lower ? 'At least ' : '') + pct(a.chance);
+      if (a.basis === 'undersubscribed') line = 'The ' + rl.toLowerCase() + ' portion is ' + (live ? 'not fully subscribed so far' : 'not fully subscribed') + ', so every valid application ' + (live ? 'would get' : 'gets') + ' the shares it applied for.';
+      else if (a.chance >= 100) line = 'There are enough shares for every ' + rl.toLowerCase() + ' applicant to get at least the minimum application.';
+      else line = (lower ? 'At least ' : 'About ') + (a.chance >= 15 ? Math.round(a.chance / 10) + ' in 10 ' : '1 in ' + a.oneIn.toLocaleString('en-IN') + ' ') + rl.toLowerCase() + ' applicants ' + (live || st === 'upcoming' ? 'would get' : 'get') + ' shares' + (live ? ' at the current subscription' : '') + '.';
+      if (lower) note = 'The exact chance depends on how many applications were made, which isn\'t published yet, so this is the lowest it can be.';
+    }
+    var cats = [['QIB', sub.qib], ['NII (HNI)', sub.nii], [rl, sub.retail], ['Total', sub.total]].filter(function (c) { return c[1] != null; });
+    var when = (sub.asOf ? 'As of ' + esc(sub.asOf) : '') + (sub.final ? ' · final figures' : live ? ' · bidding is still open, so these will change' : '');
+    return head + '<div class="subx-grid"><div class="chance"><span class="chance-lbl">' + (st === 'listed' ? 'Chance a ' + rl.toLowerCase() + ' applicant got shares' : 'Chance a ' + rl.toLowerCase() + ' applicant gets shares') + '</span>' +
+      '<strong>' + big + '</strong><p>' + line + '</p>' + (note ? '<p class="mute">' + note + '</p>' : '') + '</div>' +
+      '<div class="times">' + cats.map(function (c) { return '<div' + (c[0] === rl ? ' class="hl"' : '') + '><span>' + c[0] + '</span><b>' + times(c[1]) + '</b></div>'; }).join('') + '</div></div>' +
+      '<p class="updated">' + when + (sub.source ? ' · <a href="' + esc(sub.source) + '" target="_blank" rel="nofollow noopener">' + esc(host(sub.source)) + '</a>' : '') + '</p>' +
+      '<p class="updated">How it works: when the ' + rl.toLowerCase() + ' portion is oversubscribed, SEBI rules give the minimum application to as many applicants as possible, picked by lottery. Applying for more than the minimum doesn\'t raise your chance.</p></div>';
+  }
   function headerHtml(ipo, R) {
     R = R || {};
     var x = Object.assign({}, ipo, { band: R.band || ipo.band, open: R.open || ipo.open, close: R.close || ipo.close, listing: R.listing || ipo.listing, board: R.board || ipo.board });
@@ -290,7 +322,7 @@ function boot() {
     var by = R.generatedAt ? '<p class="byline">Built by AI from public sources on ' + fmtDate(R.generatedAt) + '. Figures may contain errors, so verify them in the RHP.</p>' : '';
     return '<div class="pills" style="gap:8px"><span class="tag t-upcoming">' + esc(x.board) + '</span><span class="tag ' + (ipo.sample ? 't-sample' : 't-' + s) + '">' + STATUS[s] + '</span></div>' +
       '<h2 id="is-rep-h" style="margin-top:12px;font-size:clamp(22px,4vw,34px)">' + esc(R.name && !ipo.sample ? R.name : ipo.name) + ' IPO Report</h2>' + by +
-      '<dl class="facts">' + facts.map(function (f) { return '<div><dt>' + f[0] + '</dt><dd>' + esc(f[1]) + '</dd></div>'; }).join('') + '</dl>';
+      '<dl class="facts">' + facts.map(function (f) { return '<div><dt>' + f[0] + '</dt><dd>' + esc(f[1]) + '</dd></div>'; }).join('') + '</dl>' + subHtml(byId[ipo.id] || ipo);
   }
 
   function peerHtml(R) {

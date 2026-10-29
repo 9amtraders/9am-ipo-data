@@ -12,6 +12,13 @@ Keep in the list:
 
 Remove IPOs that listed more than 10 days ago. Their reports stay in `raw/` and `reports/`, and the build keeps them searchable.
 
+For every IPO that is open now or closed in the last 10 days, also give `sub`, its latest subscription from public sources (chittorgarh.com subscription pages, NSE, BSE, moneycontrol, ipo news sites):
+`{"qib": 18.81, "nii": 12.81, "retail": 2.7, "total": 9.47, "asOf": "2026-10-29 17:00", "final": false, "retailShares": 7079871, "minAppShares": 45, "retailApps": null, "source": "https://..."}`
+- `qib`, `nii`, `retail`, `total` are times subscribed (for SME, `retail` is the individual investors category). QIB excludes anchor.
+- `retailShares` = shares offered to the retail (SME: individual) category; `minAppShares` = minimum shares one retail application must be (mainboard: 1 lot; SME: the minimum application); `retailApps` = number of retail applications, only if a source states it.
+- `final` is true only once bidding has closed and the figures are the closing ones. Keep updating `sub` until it is final.
+- Use `null` for anything not found and never estimate a figure. `build.py` computes the retail allotment chance from these.
+
 For every IPO give: `name` (official name without "Ltd"/"Limited"), `aka` (other names, brand names and common misspellings people might type, up to 8), `board` ("Mainboard" or "SME"), `open`, `close`, `listing` (YYYY-MM-DD or null), `band` (e.g. "₹78 – ₹82", or ""). Set `updated` to today's date. Never invent an IPO or a date.
 
 ## 2. Research new reports
