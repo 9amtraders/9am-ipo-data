@@ -13,13 +13,13 @@
  "ofsCr": 7.6,
  "lotSize": 600,
  "summary": "Ajwa Projects, a Surat-based company incorporated in 2011, provides fabrication, erection, piping, pressure equipment, civil construction and maintenance services to oil and gas, power, steel and cement clients, with over 93% of FY26 revenue coming from Gujarat. Revenue from operations grew from ₹34.3 cr in FY24 to ₹48.4 cr in FY26, and profit rose 65% in FY26 to ₹5.4 cr, an 11.2% net margin with RoNW of 36%. The ₹38 cr issue is ₹30.45 cr fresh and ₹7.6 cr offer for sale by two promoters whose average cost is ₹3.40–₹4.10 a share; the top 10 customers made up about 87% of FY26 revenue. On full-year FY26 profit the post-issue P/E is about 20.6x, well above the two listed peers named in the prospectus (9.5x and 16.0x).",
- "score": 25,
- "checksScore": 69,
+ "score": 24,
+ "checksScore": 63,
  "drivers": [
   {
    "name": "Subscription demand",
    "weight": 50,
-   "score": 18,
+   "score": 14,
    "detail": "Subscribed 1.57x retail, 0.18x NII, 0.87x overall (bidding still open)."
   },
   {
@@ -37,11 +37,11 @@
   {
    "name": "All 33 checks",
    "weight": 25,
-   "score": 69,
+   "score": 63,
    "detail": "Financial health, governance, issue structure, use of proceeds, legal and risk checks."
   }
  ],
- "capReason": "Capped at 25 because the issue is not fully subscribed so far.",
+ "capReason": "4 red flags took 20 points off. Capped at 50 because of 4 or more red flags. Capped at 60 because the P/E is more than 50% above listed peers. Capped at 25 because the issue is not fully subscribed so far.",
  "counts": {
   "pass": 18,
   "caution": 2,
@@ -53,22 +53,22 @@
  "categories": [
   {
    "name": "Financial health",
-   "score": 92,
+   "score": 88,
    "detail": "5 of 6 checks passed · 1 not found"
   },
   {
    "name": "Profitability",
-   "score": 90,
+   "score": 86,
    "detail": "4 of 5 checks passed · 1 not found"
   },
   {
    "name": "Valuation vs peers",
-   "score": 38,
+   "score": 28,
    "detail": "0 of 4 checks passed · 1 flag · 2 not found"
   },
   {
    "name": "Promoter & governance",
-   "score": 50,
+   "score": 40,
    "detail": "1 of 4 checks passed · 1 flag · 2 not found"
   },
   {
@@ -78,17 +78,17 @@
   },
   {
    "name": "Use of proceeds",
-   "score": 75,
+   "score": 70,
    "detail": "2 of 4 checks passed · 1 not found"
   },
   {
    "name": "Legal & litigation",
-   "score": 83,
+   "score": 77,
    "detail": "2 of 3 checks passed · 1 not found"
   },
   {
    "name": "Risk factors",
-   "score": 62,
+   "score": 57,
    "detail": "2 of 4 checks passed · 1 flag · 1 not found"
   }
  ],

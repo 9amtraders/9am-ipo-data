@@ -13,8 +13,8 @@
  "ofsCr": 0.0,
  "lotSize": 100,
  "summary": "BLS Polymers, incorporated in 2003, makes custom polymer compounds (HDPE, MDPE, LLDPE, XLPE, HFFR, PVC and adhesive coatings) for wire and cable insulation and 3LPE pipeline coating, from a single plant in Goa; wires and cables make up about 81% of sales. Revenue grew slowly, from ₹296 cr in FY24 to ₹349 cr in FY26 (about 8.6% a year), but profit rose from ₹7.5 cr to ₹27.0 cr as the net margin widened to 7.7% and debt to equity fell to 0.54. The whole ₹255 cr issue is fresh money, with ₹77.6 cr for expanding the Goa plant and ₹89.5 cr for working capital. At the upper band the post-issue P/E is about 34.5x, well above the 14.5x median of the listed peers named in the RHP, and the top customer alone gave 31.7% of FY26 revenue.",
- "score": 85,
- "checksScore": 70,
+ "score": 60,
+ "checksScore": 64,
  "drivers": [
   {
    "name": "Subscription demand",
@@ -37,11 +37,11 @@
   {
    "name": "All 33 checks",
    "weight": 25,
-   "score": 70,
+   "score": 64,
    "detail": "Financial health, governance, issue structure, use of proceeds, legal and risk checks."
   }
  ],
- "capReason": null,
+ "capReason": "3 red flags took 15 points off. Capped at 60 because the P/E is more than 50% above listed peers.",
  "counts": {
   "pass": 17,
   "caution": 5,
@@ -58,17 +58,17 @@
   },
   {
    "name": "Profitability",
-   "score": 90,
+   "score": 86,
    "detail": "4 of 5 checks passed · 1 not found"
   },
   {
    "name": "Valuation vs peers",
-   "score": 25,
+   "score": 15,
    "detail": "0 of 4 checks passed · 2 flags · 2 not found"
   },
   {
    "name": "Promoter & governance",
-   "score": 62,
+   "score": 48,
    "detail": "1 of 4 checks passed · 3 not found"
   },
   {
@@ -83,12 +83,12 @@
   },
   {
    "name": "Legal & litigation",
-   "score": 67,
+   "score": 60,
    "detail": "1 of 3 checks passed · 1 not found"
   },
   {
    "name": "Risk factors",
-   "score": 50,
+   "score": 45,
    "detail": "1 of 4 checks passed · 1 flag · 1 not found"
   }
  ],

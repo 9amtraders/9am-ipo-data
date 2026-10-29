@@ -375,7 +375,7 @@ function init(root) {
 
   function driversHtml(R) {
     if (!R.drivers || !R.drivers.length) return '';
-    return (R.capReason ? '<div class="banner" style="margin:18px 0 0"><span><strong>Low demand.</strong> ' + esc(R.capReason) + '</span></div>' : '') + '<div class="drivers"><h3 style="margin:0 0 4px">What drives this score</h3><p class="sub" style="margin:0 0 6px">' + R.drivers.map(function (d) { return esc(d.name) + ' ' + d.weight + '%'; }).join(' · ') + '</p>' +
+    return (R.capReason ? '<div class="banner" style="margin:18px 0 0"><span><strong>Strict rules applied.</strong> ' + esc(R.capReason) + '</span></div>' : '') + '<div class="drivers"><h3 style="margin:0 0 4px">What drives this score</h3><p class="sub" style="margin:0 0 6px">' + R.drivers.map(function (d) { return esc(d.name) + ' ' + d.weight + '%'; }).join(' · ') + '</p>' +
       R.drivers.map(function (d) {
         var col = d.score >= 76 ? '#14254A' : d.score >= 51 ? '#2F5DA8' : d.score >= 26 ? '#E08A00' : '#C62828';
         return '<div class="drv"><div class="drv-top"><span>' + esc(d.name) + ' <em>' + d.weight + '%</em></span><b>' + d.score + '</b></div>' +

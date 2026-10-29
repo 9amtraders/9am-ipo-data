@@ -13,13 +13,13 @@
  "ofsCr": 0.0,
  "lotSize": 1600,
  "summary": "Carver Roboweld makes welding consumables (metal-cored wires, welding rods, gouging electrodes) at a plant in Rajkot, Gujarat, and rents welding robots and regenerates forging dies through service units in Pune, Ludhiana and Hosur; all of its revenue comes from the forging industry. On a standalone basis revenue grew from ₹21.7 cr in FY24 to ₹27.0 cr in FY26, while profit more than doubled in FY26 to ₹3.5 cr as margins widened. The top ten customers gave about 81% of FY26 revenue, and operating cash flow was negative in FY26. At the upper band the post-issue P/E is about 30x standalone FY26 profit (about 20x on consolidated profit), above the 18.2x median of the listed peers named in the RHP.",
- "score": 25,
- "checksScore": 66,
+ "score": 18,
+ "checksScore": 59,
  "drivers": [
   {
    "name": "Subscription demand",
    "weight": 50,
-   "score": 7,
+   "score": 6,
    "detail": "Subscribed 0.65x retail, 2.31x NII, 0.83x overall (bidding still open)."
   },
   {
@@ -37,11 +37,11 @@
   {
    "name": "All 33 checks",
    "weight": 25,
-   "score": 66,
+   "score": 59,
    "detail": "Financial health, governance, issue structure, use of proceeds, legal and risk checks."
   }
  ],
- "capReason": "Capped at 25 because the retail portion is not fully subscribed so far.",
+ "capReason": "4 red flags took 20 points off. Capped at 50 because of 4 or more red flags. Capped at 60 because the P/E is more than 50% above listed peers. Capped at 25 because the retail portion is not fully subscribed so far.",
  "counts": {
   "pass": 15,
   "caution": 3,
@@ -58,17 +58,17 @@
   },
   {
    "name": "Profitability",
-   "score": 90,
+   "score": 86,
    "detail": "4 of 5 checks passed · 1 not found"
   },
   {
    "name": "Valuation vs peers",
-   "score": 38,
+   "score": 28,
    "detail": "0 of 4 checks passed · 1 flag · 2 not found"
   },
   {
    "name": "Promoter & governance",
-   "score": 62,
+   "score": 48,
    "detail": "1 of 4 checks passed · 3 not found"
   },
   {
@@ -78,17 +78,17 @@
   },
   {
    "name": "Use of proceeds",
-   "score": 62,
+   "score": 57,
    "detail": "2 of 4 checks passed · 1 flag · 1 not found"
   },
   {
    "name": "Legal & litigation",
-   "score": 50,
+   "score": 30,
    "detail": "Not found in public sources, scored as neutral"
   },
   {
    "name": "Risk factors",
-   "score": 50,
+   "score": 45,
    "detail": "1 of 4 checks passed · 1 flag · 1 not found"
   }
  ],

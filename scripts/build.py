@@ -19,8 +19,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 IST = timezone(timedelta(hours=5, minutes=30))
 CFG = json.loads((ROOT / "scripts" / "checklist.json").read_text(encoding="utf-8"))
-# "na" (not found) counts as neutral, so missing data can never push a score up.
-POINTS = {"pass": 1.0, "caution": 0.5, "flag": 0.0, "na": 0.5}
+# "na" (not found) counts below neutral: thin disclosure lowers the score.
+POINTS = {"pass": 1.0, "caution": 0.5, "flag": 0.0, "na": 0.3}
 STATUSES = ("pass", "caution", "flag", "na")
 errors = []
 
@@ -87,7 +87,7 @@ def subscription(v, where):
 # The score leans on three things: demand in the subscription, profit growth in the RHP, and P/E vs peers.
 # Weights: subscription 50%, profit growth 20%, P/E 5%, the 33 checks 25%.
 WEIGHTS = {"subscription": 50, "profit": 20, "pe": 5, "checks": 25}
-STATUS_PTS = {"pass": 85, "caution": 55, "flag": 20, "na": 50}
+STATUS_PTS = {"pass": 85, "caution": 55, "flag": 20, "na": 30}
 
 
 def band_score(v, bands, below):
@@ -101,7 +101,7 @@ def sub_driver(sub):
     if not sub or all(sub.get(k) is None for k in ("retail", "qib", "nii", "total")):
         return 50, "Subscription not available yet, scored as neutral until bidding opens."
     # Retail demand counts most: retail 50%, QIB 30%, NII 20% (weights reshared when a category is missing).
-    bands = [(100, 100), (50, 90), (20, 80), (10, 65), (3, 45), (1, 25)]
+    bands = [(100, 100), (50, 90), (20, 75), (10, 60), (3, 40), (1, 20)]
     parts = [(sub.get("retail"), 50), (sub.get("qib"), 30), (sub.get("nii"), 20)]
     parts = [(band_score(v, bands, 0), w) for v, w in parts if v is not None]
     if not parts:
@@ -132,8 +132,8 @@ def pe_driver(raw, peers, status):
         r = ipo_pe / med
         pts = 100 if r <= 0.75 else 85 if r <= 1 else 60 if r <= 1.25 else 35 if r <= 1.5 else 15
         word = "below" if r < 1 else "above"
-        return pts, f"P/E {ipo_pe:g}x vs peer median {med:.1f}x, {abs(r - 1) * 100:.0f}% {word}."
-    return STATUS_PTS.get(status, 50), "Peer P/E figures not found; scored from the P/E check."
+        return pts, f"P/E {ipo_pe:g}x vs peer median {med:.1f}x, {abs(r - 1) * 100:.0f}% {word}.", r
+    return STATUS_PTS.get(status, 50), "Peer P/E figures not found; scored from the P/E check.", None
 
 
 def build_report(raw, fname, sub=None):
@@ -213,13 +213,25 @@ def build_report(raw, fname, sub=None):
         {"name": "All 33 checks", "weight": WEIGHTS["checks"], "score": checks_score if checks_score is not None else 50, "detail": "Financial health, governance, issue structure, use of proceeds, legal and risk checks."},
     ]
     score = round(sum(d["score"] * d["weight"] for d in drivers) / sum(d["weight"] for d in drivers))
-    cap = None
+    # Strict rules, applied after the weighted average.
+    caps = []
+    flags = counts["flag"]
+    if flags:
+        score -= 5 * flags
+        caps.append(f"{flags} red flag{'s' if flags > 1 else ''} took {5 * flags} points off.")
+    if flags >= 4:
+        score = min(score, 50)
+        caps.append("Capped at 50 because of 4 or more red flags.")
+    if d_pe[2] is not None and d_pe[2] > 1.5:
+        score = min(score, 60)
+        caps.append("Capped at 60 because the P/E is more than 50% above listed peers.")
     r, t = (sub or {}).get("retail"), (sub or {}).get("total")
     if (r is not None and r < 1) or (t is not None and t < 1):
-        # An issue the public hasn't even fully subscribed can't score above Weak.
         who = "retail portion" if r is not None and r < 1 else "issue"
-        cap = f"Capped at 25 because the {who} is not fully subscribed" + ("" if (sub or {}).get("final") else " so far") + "."
         score = min(score, 25)
+        caps.append(f"Capped at 25 because the {who} is not fully subscribed" + ("" if (sub or {}).get("final") else " so far") + ".")
+    score = max(0, score)
+    cap = " ".join(caps) or None
     total = len(CFG["checks"])
     name = text(raw.get("name"), 80)
     if not name:

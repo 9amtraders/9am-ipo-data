@@ -13,13 +13,13 @@
  "ofsCr": 22.0,
  "lotSize": 600,
  "summary": "Wiscon Industries is a Delhi-based company, incorporated in September 2022, that trades and distributes LED TVs, air coolers, washing machines and ACs under its own Wiscon brand and sells third-party electric scooters; it recently acquired LED TV maker Dalmia Technologies as a wholly owned subsidiary. Consolidated revenue jumped from ₹3.2 cr in FY24 and ₹14.5 cr in FY25 to ₹196.9 cr in FY26, with profit of ₹20.4 cr in FY26, but most of that jump comes from the acquired subsidiary and operating cash flow was negative ₹20 cr in FY26. Of the ₹88 cr fresh issue, only ₹15 cr (17%) funds new machinery while ₹52 cr goes to working capital; promoter Sidhant Dalmia also sells ₹22 cr through the offer for sale. At the upper band the post-issue P/E on FY26 profit is about 20x, roughly 26% above the only listed peer named in the RHP, Cellecor Gadgets.",
- "score": 25,
- "checksScore": 66,
+ "score": 20,
+ "checksScore": 59,
  "drivers": [
   {
    "name": "Subscription demand",
    "weight": 50,
-   "score": 8,
+   "score": 6,
    "detail": "Subscribed 0.51x retail, 2x QIB, 0.05x NII, 0.9x overall (bidding still open)."
   },
   {
@@ -37,11 +37,11 @@
   {
    "name": "All 33 checks",
    "weight": 25,
-   "score": 66,
+   "score": 59,
    "detail": "Financial health, governance, issue structure, use of proceeds, legal and risk checks."
   }
  ],
- "capReason": "Capped at 25 because the retail portion is not fully subscribed so far.",
+ "capReason": "4 red flags took 20 points off. Capped at 50 because of 4 or more red flags. Capped at 25 because the retail portion is not fully subscribed so far.",
  "counts": {
   "pass": 15,
   "caution": 3,
@@ -53,7 +53,7 @@
  "categories": [
   {
    "name": "Financial health",
-   "score": 75,
+   "score": 72,
    "detail": "4 of 6 checks passed · 1 flag · 1 not found"
   },
   {
@@ -63,17 +63,17 @@
   },
   {
    "name": "Valuation vs peers",
-   "score": 50,
+   "score": 40,
    "detail": "1 of 4 checks passed · 1 flag · 2 not found"
   },
   {
    "name": "Promoter & governance",
-   "score": 62,
+   "score": 48,
    "detail": "1 of 4 checks passed · 3 not found"
   },
   {
    "name": "Issue structure",
-   "score": 83,
+   "score": 77,
    "detail": "2 of 3 checks passed · 1 not found"
   },
   {
@@ -83,12 +83,12 @@
   },
   {
    "name": "Legal & litigation",
-   "score": 50,
+   "score": 30,
    "detail": "Not found in public sources, scored as neutral"
   },
   {
    "name": "Risk factors",
-   "score": 38,
+   "score": 32,
    "detail": "0 of 4 checks passed · 1 flag · 1 not found"
   }
  ],
