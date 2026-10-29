@@ -1,0 +1,260 @@
+{
+ "name": "M.K.Sons Fine Jewels",
+ "board": "Mainboard",
+ "sector": "Jewellery retail",
+ "exchange": "NSE, BSE",
+ "open": "2026-10-28",
+ "close": "2026-10-30",
+ "listing": "2026-11-04",
+ "priceBand": "₹153 – ₹162",
+ "issueSizeCr": 275.4,
+ "freshCr": 220.32,
+ "ofsCr": 55.08,
+ "lotSize": 91,
+ "researchedOn": "2026-10-29",
+ "summary": "M.K.Sons Fine Jewels retails gold, diamond and CZ jewellery through five showrooms in Mumbai and Ahmedabad, sourcing all its products from third-party manufacturers and karigars; the Ahmedabad showrooms brought in about 68% of FY26 revenue. Revenue grew from ₹217 cr in FY24 to ₹539 cr in FY26 and profit rose 123% in FY26 to ₹51.8 cr, with the net margin widening to 9.6%. Operating cash flow was negative in FY24, FY25 and the June 2026 quarter and only ₹15.4 cr in FY26, as inventory days rose to 193. About 69% of the ₹220 cr fresh issue funds inventory for a new and an expanded showroom, and at the upper band the post-issue P/E of about 17.6x is below the median of the listed peers named in the RHP.",
+ "checks": {
+  "fh1": {
+   "status": "pass",
+   "finding": "Revenue from operations rose from ₹217.3 cr (FY24) to ₹538.7 cr (FY26), a CAGR of about 57.4%.",
+   "source": "https://www.5paisa.com/ipo/m-k-sons-fine-jewels-ltd-ipo"
+  },
+  "fh2": {
+   "status": "pass",
+   "finding": "Revenue grew every year: ₹217 cr, ₹351 cr, ₹539 cr (FY24–FY26).",
+   "source": "https://www.5paisa.com/ipo/m-k-sons-fine-jewels-ltd-ipo"
+  },
+  "fh3": {
+   "status": "pass",
+   "finding": "Debt to equity was 0.39 at June 2026 (borrowings ₹70.5 cr vs net worth ₹183.0 cr).",
+   "source": "https://www.chittorgarh.com/ipo/mksons-fine-jewels-ipo/"
+  },
+  "fh4": {
+   "status": "pass",
+   "finding": "Borrowings rose 77% (₹38.6 cr to ₹68.4 cr) while total income rose 148% over FY24–FY26.",
+   "source": "https://www.chittorgarh.com/ipo/mksons-fine-jewels-ipo/"
+  },
+  "fh5": {
+   "status": "pass",
+   "finding": "Net worth rose every year: ₹22.3 cr, ₹116.2 cr, ₹168.0 cr (FY24–FY26).",
+   "source": "https://www.chittorgarh.com/ipo/mksons-fine-jewels-ipo/"
+  },
+  "fh6": {
+   "status": "caution",
+   "finding": "Operating cash flow was ₹15.4 cr in FY26, about 30% of the ₹51.8 cr profit, after negative flows in FY24 and FY25.",
+   "source": "https://www.5paisa.com/ipo/m-k-sons-fine-jewels-ltd-ipo"
+  },
+  "pr1": {
+   "status": "pass",
+   "finding": "Profit after tax grew about 123% in FY26, to ₹51.8 cr from ₹23.3 cr.",
+   "source": "https://www.chittorgarh.com/ipo/mksons-fine-jewels-ipo/"
+  },
+  "pr2": {
+   "status": "pass",
+   "finding": "Net margin improved from 3.76% (FY24) to 6.62% (FY25) and 9.61% (FY26).",
+   "source": "https://ipowatch.in/mksons-fine-jewels-ipo-review/"
+  },
+  "pr3": {
+   "status": "pass",
+   "finding": "Return on net worth was 30.83% in FY26.",
+   "source": "https://www.chittorgarh.com/ipo/mksons-fine-jewels-ipo/"
+  },
+  "pr4": {
+   "status": "pass",
+   "finding": "ROCE was 39.88% in FY26.",
+   "source": "https://www.chittorgarh.com/ipo/mksons-fine-jewels-ipo/"
+  },
+  "pr5": {
+   "status": "na",
+   "finding": "Peer margins were not found in public sources.",
+   "source": ""
+  },
+  "va1": {
+   "status": "pass",
+   "finding": "Post-issue P/E of about 17.6x (₹912 cr market cap on FY26 profit) vs a peer median of 21.9x (Senco 9.6x, TBZ 19.6x, PNGS Reva 24.2x, Motisons 27.8x).",
+   "source": "https://www.chittorgarh.com/ipo-recommendation/mksons-fine-jewels-ipo/3100/"
+  },
+  "va2": {
+   "status": "pass",
+   "finding": "Post-issue price to book of about 2.26x (₹912 cr market cap vs about ₹403 cr post-issue net worth) vs a peer median of 3.9x.",
+   "source": "https://www.chittorgarh.com/ipo-recommendation/mksons-fine-jewels-ipo/3100/"
+  },
+  "va3": {
+   "status": "na",
+   "finding": "Peer market cap to sales figures were not found in public sources.",
+   "source": ""
+  },
+  "va4": {
+   "status": "na",
+   "finding": "Only bonus issues (May and December 2025) were found; no priced share issues or transfers in the 12 months before the IPO were found in public sources.",
+   "source": "https://ipowatch.in/mksons-fine-jewels-ipo-review/"
+  },
+  "pg1": {
+   "status": "pass",
+   "finding": "Promoters hold about 69.8% after the issue, down from 100%.",
+   "source": "https://www.chittorgarh.com/ipo/mksons-fine-jewels-ipo/"
+  },
+  "pg2": {
+   "status": "na",
+   "finding": "No information on pledged promoter shares was found.",
+   "source": ""
+  },
+  "pg3": {
+   "status": "na",
+   "finding": "Related-party transaction figures were not found in public sources.",
+   "source": ""
+  },
+  "pg4": {
+   "status": "na",
+   "finding": "No information on regulatory action against promoters was found.",
+   "source": ""
+  },
+  "is1": {
+   "status": "pass",
+   "finding": "The offer for sale is ₹55.08 cr, or 20% of the ₹275.4 cr issue.",
+   "source": "https://zerodha.com/ipo/461543/m-k-sons-fine-jewels"
+  },
+  "is2": {
+   "status": "pass",
+   "finding": "The issue is about 30.2% of the ₹912 cr post-issue market cap.",
+   "source": "https://ipowatch.in/mksons-fine-jewels-ipo-review/"
+  },
+  "is3": {
+   "status": "caution",
+   "finding": "The promoter selling shareholder's average cost is ₹18.31 a share, so the upper band is about 8.8x cost.",
+   "source": "https://ipowatch.in/mksons-fine-jewels-ipo-review/"
+  },
+  "up1": {
+   "status": "pass",
+   "finding": "₹152.84 cr, or 69.4% of the fresh issue, funds inventory for a new Maharashtra showroom and an expanded Gujarat showroom.",
+   "source": "https://zerodha.com/ipo/461543/m-k-sons-fine-jewels"
+  },
+  "up2": {
+   "status": "pass",
+   "finding": "₹30 cr, or 13.6% of the fresh issue, goes to repaying borrowings.",
+   "source": "https://zerodha.com/ipo/461543/m-k-sons-fine-jewels"
+  },
+  "up3": {
+   "status": "caution",
+   "finding": "General corporate purposes take ₹37.48 cr, or 17.0% of the fresh issue.",
+   "source": "https://zerodha.com/ipo/461543/m-k-sons-fine-jewels"
+  },
+  "up4": {
+   "status": "na",
+   "finding": "Public sources don't say whose loans are being repaid.",
+   "source": ""
+  },
+  "lg1": {
+   "status": "na",
+   "finding": "Litigation amounts were not found in public sources.",
+   "source": ""
+  },
+  "lg2": {
+   "status": "na",
+   "finding": "No information on criminal or regulatory cases was found.",
+   "source": ""
+  },
+  "lg3": {
+   "status": "pass",
+   "finding": "Contingent liabilities were ₹5.0 cr at June 2026, about 2.7% of the ₹183 cr net worth.",
+   "source": "https://ipowatch.in/mksons-fine-jewels-ipo-review/"
+  },
+  "rk1": {
+   "status": "pass",
+   "finding": "All revenue comes from walk-in sales at its own showrooms; the concentration called out is geographic (Ahmedabad showrooms 67.97% of FY26 revenue), not by customer.",
+   "source": "https://www.bajajbroking.in/blog/m-k-sons-fine-jewels-ipo-files-drhp-for-fresh-issue"
+  },
+  "rk2": {
+   "status": "caution",
+   "finding": "It relies entirely on third-party manufacturers and karigars with no long-term contracts, which is called out as a risk; supplier shares are not published.",
+   "source": "https://www.bajajbroking.in/blog/m-k-sons-fine-jewels-ipo-files-drhp-for-fresh-issue"
+  },
+  "rk3": {
+   "status": "pass",
+   "finding": "Operating since 2012 (about 14 years), and the promoter has run the jewellery business since 1999.",
+   "source": "https://anandrathi.com/ipo/m-k-sons-fine-jewels-ltd-ipo-details"
+  },
+  "rk4": {
+   "status": "na",
+   "finding": "Auditor remarks were not found in public sources.",
+   "source": ""
+  }
+ },
+ "ipoMetrics": {
+  "rev_cagr": 57.4,
+  "pat_margin": 9.61,
+  "roe": 30.83,
+  "roce": 39.88,
+  "de": 0.39,
+  "pe": 17.6,
+  "pb": 2.26
+ },
+ "peers": [
+  {
+   "name": "Motisons Jewellers",
+   "metrics": {
+    "roe": 12.77,
+    "pe": 27.78,
+    "pb": 3.6
+   }
+  },
+  {
+   "name": "Tribhovandas Bhimji Zaveri",
+   "metrics": {
+    "roe": 24.14,
+    "pe": 19.62,
+    "pb": 4.75
+   }
+  },
+  {
+   "name": "Senco Gold",
+   "metrics": {
+    "roe": 22.85,
+    "pe": 9.55,
+    "pb": 2.18
+   }
+  },
+  {
+   "name": "PNGS Reva Diamond Jewellery",
+   "metrics": {
+    "roe": 12.55,
+    "pe": 24.21,
+    "pb": 4.24
+   }
+  }
+ ],
+ "sources": [
+  {
+   "url": "https://www.chittorgarh.com/ipo/mksons-fine-jewels-ipo/",
+   "title": "M.K.Sons Fine Jewels IPO details — Chittorgarh"
+  },
+  {
+   "url": "https://www.chittorgarh.com/ipo-recommendation/mksons-fine-jewels-ipo/3100/",
+   "title": "M.K.Sons Fine Jewels IPO peer comparison — Chittorgarh"
+  },
+  {
+   "url": "https://zerodha.com/ipo/461543/m-k-sons-fine-jewels",
+   "title": "M.K.Sons Fine Jewels IPO — Zerodha"
+  },
+  {
+   "url": "https://www.5paisa.com/ipo/m-k-sons-fine-jewels-ltd-ipo",
+   "title": "M.K. Sons Fine Jewels IPO — 5paisa"
+  },
+  {
+   "url": "https://ipowatch.in/mksons-fine-jewels-ipo-review/",
+   "title": "M.K.Sons Fine Jewels IPO review by Dilip Davda — IPO Watch"
+  },
+  {
+   "url": "https://www.bajajbroking.in/blog/m-k-sons-fine-jewels-ipo-files-drhp-for-fresh-issue",
+   "title": "M. K. Sons Fine Jewels IPO — Bajaj Broking"
+  },
+  {
+   "url": "https://anandrathi.com/ipo/m-k-sons-fine-jewels-ltd-ipo-details",
+   "title": "M. K. Sons Fine Jewels IPO details — Anand Rathi"
+  },
+  {
+   "url": "https://groww.in/blog/m-k-sons-fine-jewels-ipo-to-open-on-october-28-2026",
+   "title": "M.K.Sons Fine Jewels IPO to open on October 28 — Groww"
+  }
+ ]
+}

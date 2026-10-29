@@ -1,0 +1,245 @@
+{
+ "name": "Wiscon Industries",
+ "board": "SME",
+ "sector": "Consumer electronics",
+ "exchange": "BSE SME",
+ "open": "2026-10-27",
+ "close": "2026-10-29",
+ "listing": "2026-11-03",
+ "priceBand": "₹194 – ₹204",
+ "issueSizeCr": 110.01,
+ "freshCr": 88.01,
+ "ofsCr": 22.0,
+ "lotSize": 600,
+ "researchedOn": "2026-10-29",
+ "summary": "Wiscon Industries is a Delhi-based company, incorporated in September 2022, that trades and distributes LED TVs, air coolers, washing machines and ACs under its own Wiscon brand and sells third-party electric scooters; it recently acquired LED TV maker Dalmia Technologies as a wholly owned subsidiary. Consolidated revenue jumped from ₹3.2 cr in FY24 and ₹14.5 cr in FY25 to ₹196.9 cr in FY26, with profit of ₹20.4 cr in FY26, but most of that jump comes from the acquired subsidiary and operating cash flow was negative ₹20 cr in FY26. Of the ₹88 cr fresh issue, only ₹15 cr (17%) funds new machinery while ₹52 cr goes to working capital; promoter Sidhant Dalmia also sells ₹22 cr through the offer for sale. At the upper band the post-issue P/E on FY26 profit is about 20x, roughly 26% above the only listed peer named in the RHP, Cellecor Gadgets.",
+ "checks": {
+  "fh1": {
+   "status": "pass",
+   "finding": "Consolidated revenue rose from ₹3.21 cr (FY24) to ₹196.87 cr (FY26), a CAGR of about 683%, largely from the acquired subsidiary.",
+   "source": "https://www.5paisa.com/sme-ipo/wiscon-industries-ltd-ipo"
+  },
+  "fh2": {
+   "status": "pass",
+   "finding": "Revenue grew every year: ₹3.21 cr, ₹14.49 cr, ₹196.87 cr (FY24–FY26).",
+   "source": "https://www.5paisa.com/sme-ipo/wiscon-industries-ltd-ipo"
+  },
+  "fh3": {
+   "status": "pass",
+   "finding": "Debt to equity was 0.96 at June 2026 (borrowings ₹36.97 cr vs net worth ₹38.49 cr), up from 0.83 in FY26.",
+   "source": "https://www.chittorgarh.com/ipo/wiscon-industries-ipo/3202/"
+  },
+  "fh4": {
+   "status": "na",
+   "finding": "Borrowings and revenue on the same (consolidated) basis across FY24–FY26 were not found in public sources.",
+   "source": ""
+  },
+  "fh5": {
+   "status": "pass",
+   "finding": "Net worth rose every year: about −₹0.34 cr (FY24), ₹4.17 cr (FY25), ₹30.61 cr (FY26).",
+   "source": "https://www.screener.in/company/id/1286275/"
+  },
+  "fh6": {
+   "status": "flag",
+   "finding": "Operating cash flow was negative at −₹20.01 cr in FY26, against a profit of ₹20.41 cr.",
+   "source": "https://www.5paisa.com/sme-ipo/wiscon-industries-ltd-ipo"
+  },
+  "pr1": {
+   "status": "pass",
+   "finding": "Profit after tax rose from ₹1.25 cr in FY25 to ₹20.41 cr in FY26, helped by the subsidiary acquisition.",
+   "source": "https://dhan.co/ipo/wiscon-industries-ipo/"
+  },
+  "pr2": {
+   "status": "pass",
+   "finding": "Net margin improved from a loss in FY24 to about 8.6% (FY25) and 10.36% (FY26).",
+   "source": "https://dhan.co/ipo/wiscon-industries-ipo/"
+  },
+  "pr3": {
+   "status": "pass",
+   "finding": "Return on net worth was 66.67% in FY26, on a small equity base.",
+   "source": "https://www.chittorgarh.com/ipo/wiscon-industries-ipo/3202/"
+  },
+  "pr4": {
+   "status": "pass",
+   "finding": "ROCE was 51.82% in FY26.",
+   "source": "https://www.chittorgarh.com/ipo/wiscon-industries-ipo/3202/"
+  },
+  "pr5": {
+   "status": "pass",
+   "finding": "FY26 net margin of 10.36% vs about 3.1% for the only listed peer, Cellecor Gadgets (₹39.61 cr profit on ₹1,292 cr revenue).",
+   "source": "https://www.tribuneindia.com/news/business/cellecor-reports-inr-1292-cr-revenue-and-28-profit-growth-in-fy25-26-driven-by-retail-expansion-and-product-diversification/"
+  },
+  "va1": {
+   "status": "flag",
+   "finding": "Post-issue P/E of about 20.0x on FY26 profit (₹407.75 cr market cap / ₹20.41 cr) vs 15.89x for the only peer, Cellecor Gadgets, about 26% above.",
+   "source": "https://www.chittorgarh.com/ipo-recommendation/wiscon-industries-ipo/3202/"
+  },
+  "va2": {
+   "status": "pass",
+   "finding": "Post-issue price to book of about 3.2x (₹407.75 cr market cap vs about ₹126.5 cr post-issue net worth) vs 3.89x for Cellecor Gadgets.",
+   "source": "https://www.chittorgarh.com/ipo-recommendation/wiscon-industries-ipo/3202/"
+  },
+  "va3": {
+   "status": "na",
+   "finding": "Peer market cap to sales figures were not found in public sources.",
+   "source": ""
+  },
+  "va4": {
+   "status": "na",
+   "finding": "No details of pre-IPO share issues or transfers and their prices were found in public sources.",
+   "source": ""
+  },
+  "pg1": {
+   "status": "pass",
+   "finding": "Promoters hold 68.46% after the issue, down from 94.18%.",
+   "source": "https://www.chittorgarh.com/ipo/wiscon-industries-ipo/3202/"
+  },
+  "pg2": {
+   "status": "na",
+   "finding": "No information on pledged promoter shares was found.",
+   "source": ""
+  },
+  "pg3": {
+   "status": "na",
+   "finding": "Related-party transaction figures were not found in public sources.",
+   "source": ""
+  },
+  "pg4": {
+   "status": "na",
+   "finding": "No information on regulatory action against promoters was found.",
+   "source": ""
+  },
+  "is1": {
+   "status": "pass",
+   "finding": "The offer for sale is ₹22 cr, or 20% of the ₹110 cr issue.",
+   "source": "https://zerodha.com/ipo/461416/wiscon-industries"
+  },
+  "is2": {
+   "status": "pass",
+   "finding": "The issue is about 27% of the ₹407.75 cr post-issue market cap.",
+   "source": "https://www.chittorgarh.com/ipo/wiscon-industries-ipo/3202/"
+  },
+  "is3": {
+   "status": "na",
+   "finding": "Promoter Sidhant Dalmia sells in the OFS, but his average acquisition cost was not found in public sources.",
+   "source": ""
+  },
+  "up1": {
+   "status": "flag",
+   "finding": "Only ₹15.04 cr (17.1%) of the fresh issue funds new plant and machinery at the subsidiary; ₹52 cr goes to working capital.",
+   "source": "https://zerodha.com/ipo/461416/wiscon-industries"
+  },
+  "up2": {
+   "status": "pass",
+   "finding": "None of the fresh issue is earmarked for repaying debt.",
+   "source": "https://zerodha.com/ipo/461416/wiscon-industries"
+  },
+  "up3": {
+   "status": "caution",
+   "finding": "General corporate purposes take ₹15.74 cr, or 17.9% of the fresh issue.",
+   "source": "https://zerodha.com/ipo/461416/wiscon-industries"
+  },
+  "up4": {
+   "status": "pass",
+   "finding": "No proceeds go to repaying loans, from promoters or anyone else.",
+   "source": "https://zerodha.com/ipo/461416/wiscon-industries"
+  },
+  "lg1": {
+   "status": "na",
+   "finding": "Litigation amounts were not found in public sources.",
+   "source": ""
+  },
+  "lg2": {
+   "status": "na",
+   "finding": "No information on criminal or regulatory cases was found.",
+   "source": ""
+  },
+  "lg3": {
+   "status": "na",
+   "finding": "Contingent liabilities were not found in public sources.",
+   "source": ""
+  },
+  "rk1": {
+   "status": "caution",
+   "finding": "Top 10 customers made up 63.36% of recent revenue.",
+   "source": "https://zerodha.com/ipo/461416/wiscon-industries"
+  },
+  "rk2": {
+   "status": "caution",
+   "finding": "Top 10 suppliers made up 99.77% of recent purchases, called out as a risk; single-supplier shares are not published.",
+   "source": "https://zerodha.com/ipo/461416/wiscon-industries"
+  },
+  "rk3": {
+   "status": "flag",
+   "finding": "Incorporated in September 2022, so about 4 years of operating history.",
+   "source": "https://www.chittorgarh.com/ipo/wiscon-industries-ipo/3202/"
+  },
+  "rk4": {
+   "status": "na",
+   "finding": "Auditor remarks were not found in public sources.",
+   "source": ""
+  }
+ },
+ "ipoMetrics": {
+  "rev_cagr": 683.1,
+  "pat_margin": 10.36,
+  "roe": 66.67,
+  "roce": 51.82,
+  "de": 0.96,
+  "pe": 19.98,
+  "pb": 3.22
+ },
+ "peers": [
+  {
+   "name": "Cellecor Gadgets",
+   "metrics": {
+    "pat_margin": 3.07,
+    "roe": 19.35,
+    "pe": 15.89,
+    "pb": 3.89
+   }
+  }
+ ],
+ "sources": [
+  {
+   "url": "https://zerodha.com/ipo/461416/wiscon-industries",
+   "title": "Wiscon Industries IPO — Zerodha"
+  },
+  {
+   "url": "https://www.chittorgarh.com/ipo/wiscon-industries-ipo/3202/",
+   "title": "Wiscon Industries IPO details — Chittorgarh"
+  },
+  {
+   "url": "https://www.chittorgarh.com/ipo-recommendation/wiscon-industries-ipo/3202/",
+   "title": "Wiscon Industries IPO peer comparison — Chittorgarh"
+  },
+  {
+   "url": "https://www.chittorgarh.com/news-detail/ipo/confirmed-ipo/wiscon-industries-ipo/15716/",
+   "title": "Wiscon Industries IPO opens today — Chittorgarh"
+  },
+  {
+   "url": "https://www.5paisa.com/sme-ipo/wiscon-industries-ltd-ipo",
+   "title": "Wiscon Industries IPO — 5paisa"
+  },
+  {
+   "url": "https://dhan.co/ipo/wiscon-industries-ipo/",
+   "title": "Wiscon Industries IPO — Dhan"
+  },
+  {
+   "url": "https://www.screener.in/company/id/1286275/",
+   "title": "Wiscon Industries standalone financials — Screener"
+  },
+  {
+   "url": "https://chanakyanipothi.com/sme-ipo-watch/wiscon-industries-ipo-review/",
+   "title": "Wiscon Industries IPO review — Chanakya Nipothi"
+  },
+  {
+   "url": "https://www.investorgain.com/ipo/wiscon-industries-ipo/2356/",
+   "title": "Wiscon Industries IPO — InvestorGain"
+  },
+  {
+   "url": "https://www.tribuneindia.com/news/business/cellecor-reports-inr-1292-cr-revenue-and-28-profit-growth-in-fy25-26-driven-by-retail-expansion-and-product-diversification/",
+   "title": "Cellecor FY26 results — Tribune India"
+  }
+ ]
+}

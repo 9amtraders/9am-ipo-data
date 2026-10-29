@@ -1,6 +1,14 @@
 {
  "updated": "2026-10-29",
  "ipos": [
+  {"name": "Shellz India", "aka": ["Shellz"], "board": "SME", "open": "2026-10-15", "close": "2026-10-19", "listing": "2026-10-23", "band": "₹170 – ₹179"},
+  {"name": "Bonfiglioli Transmissions", "aka": ["Bonfiglioli", "Bonfiglioli India"], "board": "Mainboard", "open": "2026-10-15", "close": "2026-10-19", "listing": "2026-10-23", "band": "₹558 – ₹586"},
+  {"name": "Sahajanand Medical Technologies", "aka": ["SMT", "Sahajanand Medical", "SMT Stents"], "board": "Mainboard", "open": "2026-10-15", "close": "2026-10-19", "listing": "2026-10-23", "band": "₹327 – ₹344"},
+  {"name": "Tonbo Imaging India", "aka": ["Tonbo Imaging", "Tonbo"], "board": "Mainboard", "open": "2026-10-15", "close": "2026-10-19", "listing": "2026-10-23", "band": "₹665 – ₹700"},
+  {"name": "Zetwerk", "aka": ["Zetwerk Manufacturing", "Zetwork"], "board": "Mainboard", "open": "2026-10-15", "close": "2026-10-19", "listing": "2026-10-23", "band": "₹143 – ₹151"},
+  {"name": "Paras Healthcare", "aka": ["Paras Hospitals", "Paras Health"], "board": "Mainboard", "open": "2026-10-21", "close": "2026-10-23", "listing": "2026-10-28", "band": "₹660 – ₹693"},
+  {"name": "Jio Platforms", "aka": ["Jio", "Reliance Jio", "Jio Platform"], "board": "Mainboard", "open": "2026-10-21", "close": "2026-10-23", "listing": "2026-10-28", "band": "₹1,065 – ₹1,119"},
+  {"name": "Core4 Engineers", "aka": ["Core 4 Engineers"], "board": "SME", "open": "2026-10-23", "close": "2026-10-27", "listing": "2026-10-30", "band": "₹88 – ₹93"},
   {"name": "EAAA India Alternatives", "aka": ["Edelweiss Alternatives", "EAAA", "Edelweiss Alternative Asset Advisors"], "board": "Mainboard", "open": "2026-10-26", "close": "2026-10-28", "listing": "2026-11-02", "band": "₹1,585 – ₹1,665"},
   {"name": "SFC Environmental Technologies", "aka": ["SFC Environmental", "SFC"], "board": "Mainboard", "open": "2026-10-27", "close": "2026-10-29", "listing": "2026-11-03", "band": "₹313 – ₹330"},
   {"name": "BLS Polymers", "aka": ["BLS Polymer"], "board": "Mainboard", "open": "2026-10-27", "close": "2026-10-29", "listing": "2026-11-03", "band": "₹142 – ₹150"},
@@ -13,6 +21,8 @@
   {"name": "Maxwell Engineering Solutions", "aka": ["Maxwell Engineering"], "board": "SME", "open": "2026-10-30", "close": "2026-11-03", "listing": "2026-11-06", "band": "₹150 – ₹158"},
   {"name": "Vectras Enprocon", "aka": [], "board": "SME", "open": "2026-10-30", "close": "2026-11-03", "listing": "2026-11-06", "band": "₹99 – ₹105"},
   {"name": "HGS (India)", "aka": ["HGS India"], "board": "SME", "open": "2026-10-30", "close": "2026-11-03", "listing": "2026-11-06", "band": "₹114 – ₹120"},
+  {"name": "Johnsoncab Electricals", "aka": ["Johnsoncab", "Johnson Cab Electricals"], "board": "SME", "open": "2026-10-30", "close": "2026-11-03", "listing": "2026-11-06", "band": "₹190 – ₹200"},
+  {"name": "Vedant Poly Fabs", "aka": ["Vedant Polyfabs"], "board": "SME", "open": "2026-11-02", "close": "2026-11-04", "listing": null, "band": ""},
   {"name": "Acko", "aka": ["Acko General Insurance"], "board": "Mainboard", "open": null, "close": null, "listing": null, "band": ""},
   {"name": "OYO", "aka": ["Oravel Stays", "PRISM", "OYO Rooms"], "board": "Mainboard", "open": null, "close": null, "listing": null, "band": ""},
   {"name": "Parle Products", "aka": ["Parle", "Parle G"], "board": "Mainboard", "open": null, "close": null, "listing": null, "band": ""},

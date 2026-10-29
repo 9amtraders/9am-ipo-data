@@ -2,6 +2,118 @@
  "updated": "2026-10-29",
  "ipos": [
   {
+   "name": "Shellz India",
+   "aka": [
+    "Shellz"
+   ],
+   "board": "SME",
+   "open": "2026-10-15",
+   "close": "2026-10-19",
+   "listing": "2026-10-23",
+   "band": "₹170 – ₹179",
+   "hasReport": false,
+   "score": null
+  },
+  {
+   "name": "Bonfiglioli Transmissions",
+   "aka": [
+    "Bonfiglioli",
+    "Bonfiglioli India"
+   ],
+   "board": "Mainboard",
+   "open": "2026-10-15",
+   "close": "2026-10-19",
+   "listing": "2026-10-23",
+   "band": "₹558 – ₹586",
+   "hasReport": false,
+   "score": null
+  },
+  {
+   "name": "Sahajanand Medical Technologies",
+   "aka": [
+    "SMT",
+    "Sahajanand Medical",
+    "SMT Stents"
+   ],
+   "board": "Mainboard",
+   "open": "2026-10-15",
+   "close": "2026-10-19",
+   "listing": "2026-10-23",
+   "band": "₹327 – ₹344",
+   "hasReport": false,
+   "score": null
+  },
+  {
+   "name": "Tonbo Imaging India",
+   "aka": [
+    "Tonbo Imaging",
+    "Tonbo"
+   ],
+   "board": "Mainboard",
+   "open": "2026-10-15",
+   "close": "2026-10-19",
+   "listing": "2026-10-23",
+   "band": "₹665 – ₹700",
+   "hasReport": false,
+   "score": null
+  },
+  {
+   "name": "Zetwerk",
+   "aka": [
+    "Zetwerk Manufacturing",
+    "Zetwork"
+   ],
+   "board": "Mainboard",
+   "open": "2026-10-15",
+   "close": "2026-10-19",
+   "listing": "2026-10-23",
+   "band": "₹143 – ₹151",
+   "hasReport": false,
+   "score": null
+  },
+  {
+   "name": "Paras Healthcare",
+   "aka": [
+    "Paras Hospitals",
+    "Paras Health"
+   ],
+   "board": "Mainboard",
+   "open": "2026-10-21",
+   "close": "2026-10-23",
+   "listing": "2026-10-28",
+   "band": "₹660 – ₹693",
+   "hasReport": false,
+   "score": null
+  },
+  {
+   "name": "Jio Platforms",
+   "aka": [
+    "Jio",
+    "Reliance Jio",
+    "Jio Platform"
+   ],
+   "board": "Mainboard",
+   "open": "2026-10-21",
+   "close": "2026-10-23",
+   "listing": "2026-10-28",
+   "band": "₹1,065 – ₹1,119",
+   "hasReport": false,
+   "score": null
+  },
+  {
+   "name": "Core4 Engineers",
+   "aka": [
+    "Core 4 Engineers"
+   ],
+   "board": "SME",
+   "open": "2026-10-23",
+   "close": "2026-10-27",
+   "listing": "2026-10-30",
+   "band": "₹88 – ₹93",
+   "hasReport": false,
+   "score": null
+  },
+  {
    "name": "EAAA India Alternatives",
    "aka": [
     "Edelweiss Alternatives",
@@ -27,8 +139,8 @@
    "close": "2026-10-29",
    "listing": "2026-11-03",
    "band": "₹313 – ₹330",
-   "hasReport": false,
-   "score": null
+   "hasReport": true,
+   "score": 59
   },
   {
    "name": "BLS Polymers",
@@ -40,8 +152,8 @@
    "close": "2026-10-29",
    "listing": "2026-11-03",
    "band": "₹142 – ₹150",
-   "hasReport": false,
-   "score": null
+   "hasReport": true,
+   "score": 70
   },
   {
    "name": "Wiscon Industries",
@@ -51,8 +163,8 @@
    "close": "2026-10-29",
    "listing": "2026-11-03",
    "band": "₹194 – ₹204",
-   "hasReport": false,
-   "score": null
+   "hasReport": true,
+   "score": 66
   },
   {
    "name": "M.K.Sons Fine Jewels",
@@ -66,8 +178,8 @@
    "close": "2026-10-30",
    "listing": "2026-11-04",
    "band": "₹153 – ₹162",
-   "hasReport": false,
-   "score": null
+   "hasReport": true,
+   "score": 78
   },
   {
    "name": "Carver Roboweld",
@@ -151,6 +263,33 @@
    "close": "2026-11-03",
    "listing": "2026-11-06",
    "band": "₹114 – ₹120",
+   "hasReport": false,
+   "score": null
+  },
+  {
+   "name": "Johnsoncab Electricals",
+   "aka": [
+    "Johnsoncab",
+    "Johnson Cab Electricals"
+   ],
+   "board": "SME",
+   "open": "2026-10-30",
+   "close": "2026-11-03",
+   "listing": "2026-11-06",
+   "band": "₹190 – ₹200",
+   "hasReport": false,
+   "score": null
+  },
+  {
+   "name": "Vedant Poly Fabs",
+   "aka": [
+    "Vedant Polyfabs"
+   ],
+   "board": "SME",
+   "open": "2026-11-02",
+   "close": "2026-11-04",
+   "listing": null,
+   "band": "",
    "hasReport": false,
    "score": null
   },
