@@ -85,8 +85,8 @@ def subscription(v, where):
 
 
 # The score leans on three things: demand in the subscription, profit growth in the RHP, and P/E vs peers.
-# Each counts 20%; the other checks of the 33-check list make up the remaining 40%.
-WEIGHTS = {"subscription": 20, "profit": 20, "pe": 20, "checks": 40}
+# Weights: subscription 50%, profit growth 20%, P/E 5%, the 33 checks 25%.
+WEIGHTS = {"subscription": 50, "profit": 20, "pe": 5, "checks": 25}
 STATUS_PTS = {"pass": 85, "caution": 55, "flag": 20, "na": 50}
 
 

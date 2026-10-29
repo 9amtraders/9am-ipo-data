@@ -13,12 +13,12 @@
  "ofsCr": 0.0,
  "lotSize": 182,
  "summary": "Bombay Coated and Special Steels processes coated and flat steel (slitting, cut-to-length, shearing, embossing) for appliance, engineering, automotive and electrical makers from four plants in Maharashtra, Rajasthan and Andhra Pradesh, and is an authorised service partner of JSW Steel Coated Products. Revenue grew from ₹755 cr in FY24 to ₹1,267 cr in FY26, but profit rose only 6.5% in FY26 to ₹30.5 cr and the net margin is thin at 2.4%. The whole ₹183 cr issue is fresh money, but about 68% of it goes to repaying debt; debt to equity was 2.78 before the issue. At the upper band the post-issue P/E is about 16.9x, below the median of the listed peers named in the RHP.",
- "score": 66,
+ "score": 55,
  "checksScore": 65,
  "drivers": [
   {
    "name": "Subscription demand",
-   "weight": 20,
+   "weight": 50,
    "score": 48,
    "detail": "Subscribed 2.81x overall and 6.89x by QIBs (bidding still open)."
   },
@@ -30,13 +30,13 @@
   },
   {
    "name": "P/E vs listed peers",
-   "weight": 20,
+   "weight": 5,
    "score": 100,
    "detail": "P/E 16.9x vs peer median 31.0x, 46% below."
   },
   {
    "name": "All 33 checks",
-   "weight": 40,
+   "weight": 25,
    "score": 65,
    "detail": "Financial health, governance, issue structure, use of proceeds, legal and risk checks."
   }

@@ -293,7 +293,7 @@
    "listing": "2026-11-03",
    "band": "₹313 – ₹330",
    "hasReport": true,
-   "score": 66,
+   "score": 61,
    "sub": {
     "qib": 18.81,
     "nii": 12.81,
@@ -323,7 +323,7 @@
    "listing": "2026-11-03",
    "band": "₹142 – ₹150",
    "hasReport": true,
-   "score": 68,
+   "score": 85,
    "sub": {
     "qib": 200.25,
     "nii": 559.2,
@@ -351,7 +351,7 @@
    "listing": "2026-11-03",
    "band": "₹194 – ₹204",
    "hasReport": true,
-   "score": 59,
+   "score": 52,
    "sub": {
     "qib": 2.0,
     "nii": 0.05,
@@ -383,7 +383,7 @@
    "listing": "2026-11-04",
    "band": "₹153 – ₹162",
    "hasReport": true,
-   "score": 74,
+   "score": 58,
    "sub": {
     "qib": 0.99,
     "nii": 2.2,
@@ -411,7 +411,7 @@
    "listing": "2026-11-04",
    "band": "₹76 – ₹80",
    "hasReport": true,
-   "score": 52,
+   "score": 45,
    "sub": {
     "qib": null,
     "nii": 2.31,
@@ -439,7 +439,7 @@
    "listing": "2026-11-04",
    "band": "₹203",
    "hasReport": true,
-   "score": 54,
+   "score": 46,
    "sub": {
     "qib": null,
     "nii": 0.18,
@@ -471,7 +471,7 @@
    "listing": "2026-11-05",
    "band": "₹78 – ₹82",
    "hasReport": true,
-   "score": 66,
+   "score": 55,
    "sub": {
     "qib": 6.89,
     "nii": 0.76,
@@ -499,7 +499,7 @@
    "listing": "2026-11-05",
    "band": "₹63 – ₹67",
    "hasReport": true,
-   "score": 69,
+   "score": 50,
    "sub": {
     "qib": null,
     "nii": null,
@@ -524,7 +524,7 @@
    "listing": "2026-11-06",
    "band": "₹150 – ₹158",
    "hasReport": true,
-   "score": 77
+   "score": 66
   },
   {
    "name": "Vectras Enprocon",

@@ -77,10 +77,10 @@ function init(root) {
       ['Price to book', 'x', 'low', 7.9, [6.8, 4.2, 3.1, 6.0]]
     ],
     drivers: [
-      { name: 'Subscription demand', weight: 20, score: 80, detail: 'Subscribed 24x overall and 61x by QIBs.' },
+      { name: 'Subscription demand', weight: 50, score: 80, detail: 'Subscribed 24x overall and 61x by QIBs.' },
       { name: 'Profit growth (RHP)', weight: 20, score: 85, detail: 'Profit after tax grew 31% in the latest year in the RHP.' },
-      { name: 'P/E vs listed peers', weight: 20, score: 35, detail: 'P/E 46x vs peer median 34.5x, 33% above.' },
-      { name: 'All 33 checks', weight: 40, score: 76, detail: 'Financial health, governance, issue structure, use of proceeds, legal and risk checks.' }
+      { name: 'P/E vs listed peers', weight: 5, score: 35, detail: 'P/E 46x vs peer median 34.5x, 33% above.' },
+      { name: 'All 33 checks', weight: 25, score: 76, detail: 'Financial health, governance, issue structure, use of proceeds, legal and risk checks.' }
     ],
     sources: [], generatedAt: null
   };
@@ -375,7 +375,7 @@ function init(root) {
 
   function driversHtml(R) {
     if (!R.drivers || !R.drivers.length) return '';
-    return '<div class="drivers"><h3 style="margin:0 0 4px">What drives this score</h3><p class="sub" style="margin:0 0 6px">Subscription, profit growth and P/E count for 60% of the score. The other checks count for 40%.</p>' +
+    return '<div class="drivers"><h3 style="margin:0 0 4px">What drives this score</h3><p class="sub" style="margin:0 0 6px">' + R.drivers.map(function (d) { return esc(d.name) + ' ' + d.weight + '%'; }).join(' · ') + '</p>' +
       R.drivers.map(function (d) {
         var col = d.score >= 76 ? '#14254A' : d.score >= 51 ? '#2F5DA8' : d.score >= 26 ? '#E08A00' : '#C62828';
         return '<div class="drv"><div class="drv-top"><span>' + esc(d.name) + ' <em>' + d.weight + '%</em></span><b>' + d.score + '</b></div>' +

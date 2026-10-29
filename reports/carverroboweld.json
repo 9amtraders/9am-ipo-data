@@ -13,12 +13,12 @@
  "ofsCr": 0.0,
  "lotSize": 1600,
  "summary": "Carver Roboweld makes welding consumables (metal-cored wires, welding rods, gouging electrodes) at a plant in Rajkot, Gujarat, and rents welding robots and regenerates forging dies through service units in Pune, Ludhiana and Hosur; all of its revenue comes from the forging industry. On a standalone basis revenue grew from ₹21.7 cr in FY24 to ₹27.0 cr in FY26, while profit more than doubled in FY26 to ₹3.5 cr as margins widened. The top ten customers gave about 81% of FY26 revenue, and operating cash flow was negative in FY26. At the upper band the post-issue P/E is about 30x standalone FY26 profit (about 20x on consolidated profit), above the 18.2x median of the listed peers named in the RHP.",
- "score": 52,
+ "score": 45,
  "checksScore": 66,
  "drivers": [
   {
    "name": "Subscription demand",
-   "weight": 20,
+   "weight": 50,
    "score": 15,
    "detail": "Subscribed 0.83x overall (bidding still open)."
   },
@@ -30,13 +30,13 @@
   },
   {
    "name": "P/E vs listed peers",
-   "weight": 20,
+   "weight": 5,
    "score": 15,
    "detail": "P/E 30.1x vs peer median 18.2x, 66% above."
   },
   {
    "name": "All 33 checks",
-   "weight": 40,
+   "weight": 25,
    "score": 66,
    "detail": "Financial health, governance, issue structure, use of proceeds, legal and risk checks."
   }
