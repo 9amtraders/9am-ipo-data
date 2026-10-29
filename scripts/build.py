@@ -222,9 +222,13 @@ def build_report(raw, fname, sub=None):
     if flags >= 4:
         score = min(score, 50)
         caps.append("Capped at 50 because of 4 or more red flags.")
+    t_all = (sub or {}).get("total")
     if d_pe[2] is not None and d_pe[2] > 1.5:
-        score = min(score, 60)
-        caps.append("Capped at 60 because the P/E is more than 50% above listed peers.")
+        if t_all is not None and t_all >= 100:
+            caps.append("P/E is more than 50% above listed peers, but the 60 cap is lifted because the issue is subscribed 100x or more.")
+        else:
+            score = min(score, 60)
+            caps.append("Capped at 60 because the P/E is more than 50% above listed peers.")
     r, t = (sub or {}).get("retail"), (sub or {}).get("total")
     if (r is not None and r < 1) or (t is not None and t < 1):
         who = "retail portion" if r is not None and r < 1 else "issue"
