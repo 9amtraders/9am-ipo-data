@@ -13,14 +13,14 @@
  "ofsCr": 7.6,
  "lotSize": 600,
  "summary": "Ajwa Projects, a Surat-based company incorporated in 2011, provides fabrication, erection, piping, pressure equipment, civil construction and maintenance services to oil and gas, power, steel and cement clients, with over 93% of FY26 revenue coming from Gujarat. Revenue from operations grew from ₹34.3 cr in FY24 to ₹48.4 cr in FY26, and profit rose 65% in FY26 to ₹5.4 cr, an 11.2% net margin with RoNW of 36%. The ₹38 cr issue is ₹30.45 cr fresh and ₹7.6 cr offer for sale by two promoters whose average cost is ₹3.40–₹4.10 a share; the top 10 customers made up about 87% of FY26 revenue. On full-year FY26 profit the post-issue P/E is about 20.6x, well above the two listed peers named in the prospectus (9.5x and 16.0x).",
- "score": 46,
+ "score": 25,
  "checksScore": 69,
  "drivers": [
   {
    "name": "Subscription demand",
    "weight": 50,
-   "score": 15,
-   "detail": "Subscribed 0.87x overall (bidding still open)."
+   "score": 18,
+   "detail": "Subscribed 1.57x retail, 0.18x NII, 0.87x overall (bidding still open)."
   },
   {
    "name": "Profit growth (RHP)",
@@ -41,6 +41,7 @@
    "detail": "Financial health, governance, issue structure, use of proceeds, legal and risk checks."
   }
  ],
+ "capReason": "Capped at 25 because the issue is not fully subscribed so far.",
  "counts": {
   "pass": 18,
   "caution": 2,

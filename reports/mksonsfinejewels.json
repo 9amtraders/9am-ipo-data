@@ -13,14 +13,14 @@
  "ofsCr": 55.08,
  "lotSize": 91,
  "summary": "M.K.Sons Fine Jewels retails gold, diamond and CZ jewellery through five showrooms in Mumbai and Ahmedabad, sourcing all its products from third-party manufacturers and karigars; the Ahmedabad showrooms brought in about 68% of FY26 revenue. Revenue grew from ₹217 cr in FY24 to ₹539 cr in FY26 and profit rose 123% in FY26 to ₹51.8 cr, with the net margin widening to 9.6%. Operating cash flow was negative in FY24, FY25 and the June 2026 quarter and only ₹15.4 cr in FY26, as inventory days rose to 193. About 69% of the ₹220 cr fresh issue funds inventory for a new and an expanded showroom, and at the upper band the post-issue P/E of about 17.6x is below the median of the listed peers named in the RHP.",
- "score": 58,
+ "score": 25,
  "checksScore": 78,
  "drivers": [
   {
    "name": "Subscription demand",
    "weight": 50,
-   "score": 28,
-   "detail": "Subscribed 1.18x overall and 0.99x by QIBs (bidding still open)."
+   "score": 5,
+   "detail": "Subscribed 0.85x retail, 0.99x QIB, 2.2x NII, 1.18x overall (bidding still open)."
   },
   {
    "name": "Profit growth (RHP)",
@@ -41,6 +41,7 @@
    "detail": "Financial health, governance, issue structure, use of proceeds, legal and risk checks."
   }
  ],
+ "capReason": "Capped at 25 because the retail portion is not fully subscribed so far.",
  "counts": {
   "pass": 19,
   "caution": 4,

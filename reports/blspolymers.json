@@ -20,7 +20,7 @@
    "name": "Subscription demand",
    "weight": 50,
    "score": 100,
-   "detail": "Subscribed 241.22x overall and 200.25x by QIBs (bidding still open)."
+   "detail": "Subscribed 128.36x retail, 200.25x QIB, 559.2x NII, 241.22x overall (bidding still open)."
   },
   {
    "name": "Profit growth (RHP)",
@@ -41,6 +41,7 @@
    "detail": "Financial health, governance, issue structure, use of proceeds, legal and risk checks."
   }
  ],
+ "capReason": null,
  "counts": {
   "pass": 17,
   "caution": 5,

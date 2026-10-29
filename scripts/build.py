@@ -98,19 +98,21 @@ def band_score(v, bands, below):
 
 
 def sub_driver(sub):
-    if not sub or (sub.get("total") is None and sub.get("qib") is None):
+    if not sub or all(sub.get(k) is None for k in ("retail", "qib", "nii", "total")):
         return 50, "Subscription not available yet, scored as neutral until bidding opens."
-    bands = [(100, 100), (50, 90), (20, 80), (10, 70), (3, 55), (1, 40)]
-    t, q = sub.get("total"), sub.get("qib")
-    parts = [band_score(x, bands, 15) for x in (t, q) if x is not None]
-    pts = round(sum(parts) / len(parts))
-    bits = []
-    if t is not None:
-        bits.append(f"{t:g}x overall")
-    if q is not None:
-        bits.append(f"{q:g}x by QIBs")
+    # Retail demand counts most: retail 50%, QIB 30%, NII 20% (weights reshared when a category is missing).
+    bands = [(100, 100), (50, 90), (20, 80), (10, 65), (3, 45), (1, 25)]
+    parts = [(sub.get("retail"), 50), (sub.get("qib"), 30), (sub.get("nii"), 20)]
+    parts = [(band_score(v, bands, 0), w) for v, w in parts if v is not None]
+    if not parts:
+        parts = [(band_score(sub["total"], bands, 0), 1)]
+    pts = round(sum(p * w for p, w in parts) / sum(w for _, w in parts))
+    r = sub.get("retail")
+    if r is not None and r < 1:
+        pts = min(pts, 10)
+    bits = [f"{sub[k]:g}x {label}" for k, label in (("retail", "retail"), ("qib", "QIB"), ("nii", "NII"), ("total", "overall")) if sub.get(k) is not None]
     live = "" if sub.get("final") else " (bidding still open)"
-    return pts, "Subscribed " + " and ".join(bits) + live + "."
+    return pts, "Subscribed " + ", ".join(bits) + live + "."
 
 
 def profit_driver(raw, status):
@@ -211,6 +213,13 @@ def build_report(raw, fname, sub=None):
         {"name": "All 33 checks", "weight": WEIGHTS["checks"], "score": checks_score if checks_score is not None else 50, "detail": "Financial health, governance, issue structure, use of proceeds, legal and risk checks."},
     ]
     score = round(sum(d["score"] * d["weight"] for d in drivers) / sum(d["weight"] for d in drivers))
+    cap = None
+    r, t = (sub or {}).get("retail"), (sub or {}).get("total")
+    if (r is not None and r < 1) or (t is not None and t < 1):
+        # An issue the public hasn't even fully subscribed can't score above Weak.
+        who = "retail portion" if r is not None and r < 1 else "issue"
+        cap = f"Capped at 25 because the {who} is not fully subscribed" + ("" if (sub or {}).get("final") else " so far") + "."
+        score = min(score, 25)
     total = len(CFG["checks"])
     name = text(raw.get("name"), 80)
     if not name:
@@ -234,6 +243,7 @@ def build_report(raw, fname, sub=None):
         "score": score,
         "checksScore": checks_score,
         "drivers": drivers,
+        "capReason": cap,
         "counts": counts,
         "totalChecks": total,
         "confidence": "low" if counts["na"] / total > 0.35 else "normal",

@@ -41,6 +41,7 @@
    "detail": "Financial health, governance, issue structure, use of proceeds, legal and risk checks."
   }
  ],
+ "capReason": null,
  "counts": {
   "pass": 18,
   "caution": 2,

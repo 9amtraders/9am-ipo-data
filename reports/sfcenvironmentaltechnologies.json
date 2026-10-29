@@ -13,14 +13,14 @@
  "ofsCr": 517.53,
  "lotSize": 45,
  "summary": "SFC Environmental Technologies, incorporated in 2005, provides technology, equipment and commissioning for wastewater treatment (its C-Tech sequencing batch reactor platform, with 728 installations), wastewater recycling and solid waste processing, including two municipal waste plants in Goa; most of its revenue comes from government-linked projects. Revenue from operations grew from ₹657.5 cr in FY24 to ₹803.6 cr in FY26 (about 10.6% a year), while profit rose only 5.4% in FY26 to ₹160.2 cr and operating cash flow was negative at -₹25.8 cr as borrowings more than doubled to ₹195.6 cr. About 78% of the ₹667.5 cr issue is an offer for sale, and none of the ₹150 cr fresh money goes to new capacity; promoter holding falls to 41.18%. At the upper band the post-issue P/E is about 20.2x, well below the RHP peers Thermax, Ion Exchange and Praj Industries.",
- "score": 61,
+ "score": 52,
  "checksScore": 59,
  "drivers": [
   {
    "name": "Subscription demand",
    "weight": 50,
-   "score": 62,
-   "detail": "Subscribed 9.47x overall and 18.81x by QIBs."
+   "score": 45,
+   "detail": "Subscribed 2.7x retail, 18.81x QIB, 12.81x NII, 9.47x overall."
   },
   {
    "name": "Profit growth (RHP)",
@@ -41,6 +41,7 @@
    "detail": "Financial health, governance, issue structure, use of proceeds, legal and risk checks."
   }
  ],
+ "capReason": null,
  "counts": {
   "pass": 12,
   "caution": 6,
