@@ -1,9 +1,7 @@
 /* 9AM IPO Scan widget script. Loaded by the HTML widget on 9amtraders.com/ipo-analyzer-india/.
    Kept as an external file so WordPress, Elementor and speed plugins can't strip or alter it. */
 (function () {
-function boot() {
-  if (!document.getElementById('ipo-scan') || window.__ipoScanBooted) return;
-  window.__ipoScanBooted = true;
+function init(root) {
   /* =================== SETTINGS =================== */
   var DATA = 'https://raw.githubusercontent.com/9amtraders/9am-ipo-data/main'; // updated every morning by the IPO Scan task
   var REQUEST_EMAIL = 'info@9amtraders.com';
@@ -82,7 +80,6 @@ function boot() {
   };
   /* =================== END SETTINGS =================== */
 
-  var root = document.getElementById('ipo-scan');
   var $ = function (s) { return root.querySelector(s); };
   var esc = function (s) { return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); };
   var ist = function (d, t) { return new Date(d + 'T' + (t || '00:00:00') + '+05:30'); };
@@ -206,7 +203,7 @@ function boot() {
   });
   list.addEventListener('mousedown', function (e) { var li = e.target.closest('li[data-id]'); if (li) { e.preventDefault(); choose(li.dataset.id); } });
   list.addEventListener('touchend', function (e) { var li = e.target.closest('li[data-id]'); if (li) { e.preventDefault(); choose(li.dataset.id); } });
-  document.addEventListener('click', function (e) { if (!e.target.closest('#ipo-scan .combo')) closeSugg(); });
+  document.addEventListener('click', function (e) { if (!root.querySelector('.combo').contains(e.target)) closeSugg(); });
 
   function didYouMean(q, lead) {
     var near = search(q).filter(function (r) { return !r.ipo.sample; }).slice(0, 3);
@@ -501,5 +498,18 @@ function boot() {
   }
   renderCal();
 }
+// Start every copy of the widget on the page. Elementor often keeps separate desktop and mobile
+// copies of a section, so the visible one may not be the first. Retry for pages that add it late.
+function boot() {
+  var roots = document.querySelectorAll('#ipo-scan, [data-ipo-scan]');
+  for (var i = 0; i < roots.length; i++) {
+    var r = roots[i];
+    if (r.__ipoScan || !r.querySelector('#is-q')) continue;
+    r.__ipoScan = true;
+    try { init(r); } catch (e) { r.__ipoScan = false; if (window.console) console.error('IPO Scan failed to start', e); }
+  }
+}
 if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', boot); else boot();
+window.addEventListener('load', boot);
+[800, 2500, 6000].forEach(function (t) { setTimeout(boot, t); });
 })();
