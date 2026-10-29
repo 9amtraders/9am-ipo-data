@@ -1,0 +1,436 @@
+{
+ "id": "bombaycoatedspecialsteels",
+ "name": "Bombay Coated and Special Steels",
+ "board": "Mainboard",
+ "sector": "Steel processing",
+ "exchange": "NSE, BSE",
+ "open": "2026-10-29",
+ "close": "2026-11-02",
+ "listing": "2026-11-05",
+ "band": "₹78 – ₹82",
+ "issueSizeCr": 183.06,
+ "freshCr": 183.06,
+ "ofsCr": 0.0,
+ "lotSize": 182,
+ "summary": "Bombay Coated and Special Steels processes coated and flat steel (slitting, cut-to-length, shearing, embossing) for appliance, engineering, automotive and electrical makers from four plants in Maharashtra, Rajasthan and Andhra Pradesh, and is an authorised service partner of JSW Steel Coated Products. Revenue grew from ₹755 cr in FY24 to ₹1,267 cr in FY26, but profit rose only 6.5% in FY26 to ₹30.5 cr and the net margin is thin at 2.4%. The whole ₹183 cr issue is fresh money, but about 68% of it goes to repaying debt; debt to equity was 2.78 before the issue. At the upper band the post-issue P/E is about 16.9x, below the median of the listed peers named in the RHP.",
+ "score": 65,
+ "counts": {
+  "pass": 12,
+  "caution": 7,
+  "flag": 3,
+  "na": 11
+ },
+ "totalChecks": 33,
+ "confidence": "normal",
+ "categories": [
+  {
+   "name": "Financial health",
+   "score": 75,
+   "detail": "4 of 6 checks passed · 1 flag"
+  },
+  {
+   "name": "Profitability",
+   "score": 70,
+   "detail": "2 of 5 checks passed · 1 not found"
+  },
+  {
+   "name": "Valuation vs peers",
+   "score": 75,
+   "detail": "2 of 4 checks passed · 2 not found"
+  },
+  {
+   "name": "Promoter & governance",
+   "score": 62,
+   "detail": "1 of 4 checks passed · 3 not found"
+  },
+  {
+   "name": "Issue structure",
+   "score": 100,
+   "detail": "3 of 3 checks passed"
+  },
+  {
+   "name": "Use of proceeds",
+   "score": 38,
+   "detail": "0 of 4 checks passed · 1 flag · 1 not found"
+  },
+  {
+   "name": "Legal & litigation",
+   "score": 50,
+   "detail": "Not found in public sources, scored as neutral"
+  },
+  {
+   "name": "Risk factors",
+   "score": 38,
+   "detail": "0 of 4 checks passed · 1 flag · 1 not found"
+  }
+ ],
+ "checks": [
+  {
+   "id": "fh1",
+   "name": "Revenue growth",
+   "category": "Financial health",
+   "status": "pass",
+   "finding": "Revenue rose from ₹755.3 cr (FY24) to ₹1,266.8 cr (FY26), a CAGR of about 29.5%.",
+   "source": "https://trendlyne.com/ipo/detail/2200/bombay-coated-and-special-steels-ltd"
+  },
+  {
+   "id": "fh2",
+   "name": "Revenue rose every year",
+   "category": "Financial health",
+   "status": "pass",
+   "finding": "Revenue grew every year: ₹755 cr, ₹1,056 cr, ₹1,267 cr (FY24–FY26).",
+   "source": "https://trendlyne.com/ipo/detail/2200/bombay-coated-and-special-steels-ltd"
+  },
+  {
+   "id": "fh3",
+   "name": "Debt to equity",
+   "category": "Financial health",
+   "status": "flag",
+   "finding": "Debt to equity was 2.78 in FY26 (borrowings ₹338.5 cr vs net worth ₹121.6 cr).",
+   "source": "https://anandrathi.com/blog/bombay-coated-and-special-steels-ipo-details"
+  },
+  {
+   "id": "fh4",
+   "name": "Debt growing slower than revenue",
+   "category": "Financial health",
+   "status": "pass",
+   "finding": "Borrowings rose 45% (₹234 cr to ₹338 cr) while total income rose 66% over FY24–FY26.",
+   "source": "https://anandrathi.com/blog/bombay-coated-and-special-steels-ipo-details"
+  },
+  {
+   "id": "fh5",
+   "name": "Net worth rising",
+   "category": "Financial health",
+   "status": "pass",
+   "finding": "Net worth rose every year: ₹54.4 cr, ₹83.1 cr, ₹121.6 cr (FY24–FY26).",
+   "source": "https://anandrathi.com/blog/bombay-coated-and-special-steels-ipo-details"
+  },
+  {
+   "id": "fh6",
+   "name": "Positive operating cash flow",
+   "category": "Financial health",
+   "status": "caution",
+   "finding": "Operating cash flow was ₹10.2 cr in FY26, only about a third of the ₹30.5 cr profit.",
+   "source": "https://trendlyne.com/ipo/detail/2200/bombay-coated-and-special-steels-ltd"
+  },
+  {
+   "id": "pr1",
+   "name": "Profit growth",
+   "category": "Profitability",
+   "status": "caution",
+   "finding": "Profit after tax grew 6.5% in FY26, to ₹30.5 cr, while revenue grew about 20%.",
+   "source": "https://anandrathi.com/blog/bombay-coated-and-special-steels-ipo-details"
+  },
+  {
+   "id": "pr2",
+   "name": "Profit margin trend",
+   "category": "Profitability",
+   "status": "caution",
+   "finding": "Net margin slipped from 2.80% (FY24) to 2.72% (FY25) and 2.40% (FY26).",
+   "source": "https://anandrathi.com/blog/bombay-coated-and-special-steels-ipo-details"
+  },
+  {
+   "id": "pr3",
+   "name": "Return on equity",
+   "category": "Profitability",
+   "status": "pass",
+   "finding": "Return on net worth was 25.1% in FY26, helped by the small equity base.",
+   "source": "https://www.chittorgarh.com/ipo-recommendation/bombay-coated-and-special-steels-ipo/2671/"
+  },
+  {
+   "id": "pr4",
+   "name": "Return on capital employed",
+   "category": "Profitability",
+   "status": "pass",
+   "finding": "ROCE was 16.4% in FY26, down from 18.8% in FY25.",
+   "source": "https://anandrathi.com/blog/bombay-coated-and-special-steels-ipo-details"
+  },
+  {
+   "id": "pr5",
+   "name": "Margin vs listed peers",
+   "category": "Profitability",
+   "status": "na",
+   "finding": "Peer margins were not found in public sources.",
+   "source": ""
+  },
+  {
+   "id": "va1",
+   "name": "P/E vs listed peers",
+   "category": "Valuation vs peers",
+   "status": "pass",
+   "finding": "Post-issue P/E of about 16.9x vs a peer median of 31.0x (BMW Industries 15.0x, Manaksia Coated 31.0x, Shiv Aum 98.5x).",
+   "source": "https://www.chittorgarh.com/ipo-recommendation/bombay-coated-and-special-steels-ipo/2671/"
+  },
+  {
+   "id": "va2",
+   "name": "Price to book vs listed peers",
+   "category": "Valuation vs peers",
+   "status": "pass",
+   "finding": "Post-issue price to book of about 1.7x (₹515 cr market cap vs ₹305 cr post-issue net worth) vs a peer median of 4.0x.",
+   "source": "https://www.chittorgarh.com/ipo-recommendation/bombay-coated-and-special-steels-ipo/2671/"
+  },
+  {
+   "id": "va3",
+   "name": "Market cap to sales vs listed peers",
+   "category": "Valuation vs peers",
+   "status": "na",
+   "finding": "Peer market cap to sales figures were not found in public sources.",
+   "source": ""
+  },
+  {
+   "id": "va4",
+   "name": "Recent pre-IPO share price",
+   "category": "Valuation vs peers",
+   "status": "na",
+   "finding": "No details of pre-IPO share issues or transfers were found in public sources.",
+   "source": ""
+  },
+  {
+   "id": "pg1",
+   "name": "Promoter holding after the issue",
+   "category": "Promoter & governance",
+   "status": "pass",
+   "finding": "Promoters hold 63.03% after the issue, down from 97.78%.",
+   "source": "https://anandrathi.com/blog/bombay-coated-and-special-steels-ipo-details"
+  },
+  {
+   "id": "pg2",
+   "name": "No pledged promoter shares",
+   "category": "Promoter & governance",
+   "status": "na",
+   "finding": "No information on pledged promoter shares was found.",
+   "source": ""
+  },
+  {
+   "id": "pg3",
+   "name": "Related-party transactions",
+   "category": "Promoter & governance",
+   "status": "na",
+   "finding": "Related-party transaction figures were not found in public sources.",
+   "source": ""
+  },
+  {
+   "id": "pg4",
+   "name": "No regulatory action against promoters",
+   "category": "Promoter & governance",
+   "status": "na",
+   "finding": "No information on regulatory action against promoters was found.",
+   "source": ""
+  },
+  {
+   "id": "is1",
+   "name": "Offer for sale share of the issue",
+   "category": "Issue structure",
+   "status": "pass",
+   "finding": "The entire ₹183 cr issue is fresh; there is no offer for sale.",
+   "source": "https://zerodha.com/ipo/461426/bombay-coated-special-steels"
+  },
+  {
+   "id": "is2",
+   "name": "Free float after listing",
+   "category": "Issue structure",
+   "status": "pass",
+   "finding": "The issue is about 35.5% of the ₹515 cr post-issue market cap.",
+   "source": "https://anandrathi.com/blog/bombay-coated-and-special-steels-ipo-details"
+  },
+  {
+   "id": "is3",
+   "name": "Selling shareholders' cost",
+   "category": "Issue structure",
+   "status": "pass",
+   "finding": "No selling shareholders, because there is no offer for sale.",
+   "source": "https://zerodha.com/ipo/461426/bombay-coated-special-steels"
+  },
+  {
+   "id": "up1",
+   "name": "Money for growth",
+   "category": "Use of proceeds",
+   "status": "flag",
+   "finding": "Only ₹15.8 cr (8.6%) buys equipment, and it is equipment already in use under a lease; nothing funds new capacity.",
+   "source": "https://zerodha.com/ipo/461426/bombay-coated-special-steels"
+  },
+  {
+   "id": "up2",
+   "name": "Debt repayment share",
+   "category": "Use of proceeds",
+   "status": "caution",
+   "finding": "₹125 cr, or 68.3% of the issue, goes to repaying borrowings.",
+   "source": "https://zerodha.com/ipo/461426/bombay-coated-special-steels"
+  },
+  {
+   "id": "up3",
+   "name": "General corporate purposes",
+   "category": "Use of proceeds",
+   "status": "caution",
+   "finding": "General corporate purposes take ₹42.3 cr, or 23.1% of the issue.",
+   "source": "https://zerodha.com/ipo/461426/bombay-coated-special-steels"
+  },
+  {
+   "id": "up4",
+   "name": "No repayment to promoter entities",
+   "category": "Use of proceeds",
+   "status": "na",
+   "finding": "Public sources don't say whose loans are being repaid.",
+   "source": ""
+  },
+  {
+   "id": "lg1",
+   "name": "Litigation against the company",
+   "category": "Legal & litigation",
+   "status": "na",
+   "finding": "Litigation amounts were not found in public sources.",
+   "source": ""
+  },
+  {
+   "id": "lg2",
+   "name": "Criminal or regulatory cases",
+   "category": "Legal & litigation",
+   "status": "na",
+   "finding": "No information on criminal or regulatory cases was found.",
+   "source": ""
+  },
+  {
+   "id": "lg3",
+   "name": "Contingent liabilities",
+   "category": "Legal & litigation",
+   "status": "na",
+   "finding": "Contingent liabilities were not found in public sources.",
+   "source": ""
+  },
+  {
+   "id": "rk1",
+   "name": "Customer concentration",
+   "category": "Risk factors",
+   "status": "caution",
+   "finding": "Customer concentration among a few appliance and engineering makers is called out as a risk; exact shares are not published.",
+   "source": "https://anandrathi.com/blog/bombay-coated-and-special-steels-ipo-details"
+  },
+  {
+   "id": "rk2",
+   "name": "Supplier dependence",
+   "category": "Risk factors",
+   "status": "flag",
+   "finding": "JSW Steel Coated Products supplies most of its raw material, which is called out as a key risk.",
+   "source": "https://zerodha.com/ipo/461426/bombay-coated-special-steels"
+  },
+  {
+   "id": "rk3",
+   "name": "Operating history",
+   "category": "Risk factors",
+   "status": "caution",
+   "finding": "Incorporated in December 2019, so under 7 years of operating history.",
+   "source": "https://trendlyne.com/ipo/detail/2200/bombay-coated-and-special-steels-ltd"
+  },
+  {
+   "id": "rk4",
+   "name": "Auditor remarks",
+   "category": "Risk factors",
+   "status": "na",
+   "finding": "Auditor remarks were not found in public sources.",
+   "source": ""
+  }
+ ],
+ "peers": [
+  "BMW Industries",
+  "Manaksia Coated Metals",
+  "Shiv Aum Steels"
+ ],
+ "metrics": [
+  [
+   "Revenue growth (CAGR)",
+   "%",
+   "high",
+   29.5,
+   [
+    null,
+    null,
+    null
+   ]
+  ],
+  [
+   "Net profit margin",
+   "%",
+   "high",
+   2.4,
+   [
+    null,
+    null,
+    null
+   ]
+  ],
+  [
+   "Return on equity",
+   "%",
+   "high",
+   25.12,
+   [
+    10.15,
+    11.96,
+    4.73
+   ]
+  ],
+  [
+   "Return on capital employed",
+   "%",
+   "high",
+   16.4,
+   [
+    null,
+    null,
+    null
+   ]
+  ],
+  [
+   "Debt to equity",
+   "x",
+   "low",
+   2.78,
+   [
+    null,
+    null,
+    null
+   ]
+  ],
+  [
+   "P/E (post-issue, upper band)",
+   "x",
+   "low",
+   16.9,
+   [
+    14.98,
+    31.03,
+    98.54
+   ]
+  ],
+  [
+   "Price to book (post-issue)",
+   "x",
+   "low",
+   1.69,
+   [
+    1.46,
+    4.03,
+    6.13
+   ]
+  ]
+ ],
+ "sources": [
+  {
+   "url": "https://zerodha.com/ipo/461426/bombay-coated-special-steels",
+   "title": "Bombay Coated & Special Steels IPO — Zerodha"
+  },
+  {
+   "url": "https://anandrathi.com/blog/bombay-coated-and-special-steels-ipo-details",
+   "title": "Bombay Coated and Special Steels IPO details — Anand Rathi"
+  },
+  {
+   "url": "https://trendlyne.com/ipo/detail/2200/bombay-coated-and-special-steels-ltd",
+   "title": "Bombay Coated and Special Steels IPO — Trendlyne"
+  },
+  {
+   "url": "https://www.chittorgarh.com/ipo-recommendation/bombay-coated-and-special-steels-ipo/2671/",
+   "title": "Bombay Coated and Special Steels IPO peer comparison — Chittorgarh"
+  }
+ ],
+ "generatedAt": "2026-10-29T08:00:00+05:30"
+}
