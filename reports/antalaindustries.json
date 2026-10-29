@@ -1,0 +1,448 @@
+{
+ "id": "antalaindustries",
+ "name": "Antala Industries",
+ "board": "SME",
+ "sector": "Packaging (BOPP and PP woven bags)",
+ "exchange": "BSE SME",
+ "open": "2026-10-29",
+ "close": "2026-11-02",
+ "listing": "2026-11-05",
+ "band": "₹63 – ₹67",
+ "issueSizeCr": 23.33,
+ "freshCr": 23.33,
+ "ofsCr": 0.0,
+ "lotSize": 2000,
+ "summary": "Antala Industries makes BOPP bags, BOPP printing and lamination rolls and PP woven bags for food processing, fertiliser, chemical, cement and seed customers from a single plant in Rajkot, Gujarat; it began as the partnership firm Octagon Industries in 2021 and became a company in August 2024. Total income grew from ₹12.6 cr in FY24 to ₹47.5 cr in FY26 and profit rose 133% in FY26 to ₹4.24 cr, with debt to equity low at 0.25. The whole ₹23.33 cr issue is fresh, with ₹10.68 cr for working capital and ₹5.89 cr for new machinery, and promoters keep about 52% after the issue. At the upper band the post-issue P/E on FY26 profit is about 19.2x, below the median of the two listed peers named in the offer document, while the top 10 customers still make up 56% of revenue.",
+ "score": 73,
+ "counts": {
+  "pass": 16,
+  "caution": 3,
+  "flag": 1,
+  "na": 13
+ },
+ "totalChecks": 33,
+ "confidence": "low",
+ "categories": [
+  {
+   "name": "Financial health",
+   "score": 75,
+   "detail": "4 of 6 checks passed · 1 flag · 1 not found"
+  },
+  {
+   "name": "Profitability",
+   "score": 90,
+   "detail": "4 of 5 checks passed · 1 not found"
+  },
+  {
+   "name": "Valuation vs peers",
+   "score": 75,
+   "detail": "2 of 4 checks passed · 2 not found"
+  },
+  {
+   "name": "Promoter & governance",
+   "score": 62,
+   "detail": "1 of 4 checks passed · 3 not found"
+  },
+  {
+   "name": "Issue structure",
+   "score": 100,
+   "detail": "3 of 3 checks passed"
+  },
+  {
+   "name": "Use of proceeds",
+   "score": 75,
+   "detail": "2 of 4 checks passed · 1 not found"
+  },
+  {
+   "name": "Legal & litigation",
+   "score": 50,
+   "detail": "Not found in public sources, scored as neutral"
+  },
+  {
+   "name": "Risk factors",
+   "score": 50,
+   "detail": "0 of 4 checks passed · 2 not found"
+  }
+ ],
+ "checks": [
+  {
+   "id": "fh1",
+   "name": "Revenue growth",
+   "category": "Financial health",
+   "status": "pass",
+   "finding": "Total income rose from ₹12.59 cr (FY24) to ₹47.53 cr (FY26), a CAGR of about 94%.",
+   "source": "https://www.investorgain.com/ipo/antala-industries-ipo/2375/"
+  },
+  {
+   "id": "fh2",
+   "name": "Revenue rose every year",
+   "category": "Financial health",
+   "status": "pass",
+   "finding": "Total income grew every year: ₹12.59 cr, ₹31.98 cr, ₹47.53 cr (FY24–FY26).",
+   "source": "https://www.investorgain.com/ipo/antala-industries-ipo/2375/"
+  },
+  {
+   "id": "fh3",
+   "name": "Debt to equity",
+   "category": "Financial health",
+   "status": "pass",
+   "finding": "Debt to equity was 0.25 in FY26 (borrowings ₹4.19 cr vs net worth ₹17.03 cr), and 0.08 at September 2026.",
+   "source": "https://www.investorgain.com/ipo/antala-industries-ipo/2375/"
+  },
+  {
+   "id": "fh4",
+   "name": "Debt growing slower than revenue",
+   "category": "Financial health",
+   "status": "flag",
+   "finding": "Borrowings rose from ₹0.36 cr to ₹4.19 cr over FY24–FY26, far faster than the 3.8x rise in total income, though they fell to ₹1.75 cr by September 2026.",
+   "source": "https://www.investorgain.com/ipo/antala-industries-ipo/2375/"
+  },
+  {
+   "id": "fh5",
+   "name": "Net worth rising",
+   "category": "Financial health",
+   "status": "pass",
+   "finding": "Net worth rose every year: ₹3.54 cr, ₹12.19 cr, ₹17.03 cr (FY24–FY26), and ₹22.17 cr at September 2026.",
+   "source": "https://www.investorgain.com/ipo/antala-industries-ipo/2375/"
+  },
+  {
+   "id": "fh6",
+   "name": "Positive operating cash flow",
+   "category": "Financial health",
+   "status": "na",
+   "finding": "Operating cash flow figures were not found in public sources.",
+   "source": ""
+  },
+  {
+   "id": "pr1",
+   "name": "Profit growth",
+   "category": "Profitability",
+   "status": "pass",
+   "finding": "Profit after tax grew about 133% in FY26, to ₹4.24 cr from ₹1.82 cr.",
+   "source": "https://www.chittorgarh.com/news-detail/ipo-news/upcoming-ipo/antala-industries-ipo/1900/"
+  },
+  {
+   "id": "pr2",
+   "name": "Profit margin trend",
+   "category": "Profitability",
+   "status": "pass",
+   "finding": "Net margin moved from 7.1% (FY24) to 5.7% (FY25) and 8.9% (FY26), higher than three years ago.",
+   "source": "https://www.investorgain.com/ipo/antala-industries-ipo/2375/"
+  },
+  {
+   "id": "pr3",
+   "name": "Return on equity",
+   "category": "Profitability",
+   "status": "pass",
+   "finding": "Return on net worth was 24.88% in FY26 (ROE stated as 33.26%).",
+   "source": "https://www.investorgain.com/ipo/antala-industries-ipo/2375/"
+  },
+  {
+   "id": "pr4",
+   "name": "Return on capital employed",
+   "category": "Profitability",
+   "status": "pass",
+   "finding": "ROCE was 42.23% in FY26.",
+   "source": "https://www.investorgain.com/ipo/antala-industries-ipo/2375/"
+  },
+  {
+   "id": "pr5",
+   "name": "Margin vs listed peers",
+   "category": "Profitability",
+   "status": "na",
+   "finding": "Peer margins were not found in public sources.",
+   "source": ""
+  },
+  {
+   "id": "va1",
+   "name": "P/E vs listed peers",
+   "category": "Valuation vs peers",
+   "status": "pass",
+   "finding": "Post-issue P/E of about 19.2x on FY26 profit (₹81.45 cr market cap vs ₹4.24 cr PAT) vs a peer median of 21.6x (Dhaval Packaging 18.5x, Knack Packaging 24.6x).",
+   "source": "https://www.investorgain.com/ipo/antala-industries-ipo/2375/"
+  },
+  {
+   "id": "va2",
+   "name": "Price to book vs listed peers",
+   "category": "Valuation vs peers",
+   "status": "pass",
+   "finding": "Post-issue price to book of about 1.8x (₹81.45 cr market cap vs ₹45.5 cr post-issue net worth) vs a peer median of about 6.0x derived from peer EPS, P/E and NAV.",
+   "source": "https://www.investorgain.com/ipo/antala-industries-ipo/2375/"
+  },
+  {
+   "id": "va3",
+   "name": "Market cap to sales vs listed peers",
+   "category": "Valuation vs peers",
+   "status": "na",
+   "finding": "Peer market cap to sales figures were not found in public sources.",
+   "source": ""
+  },
+  {
+   "id": "va4",
+   "name": "Recent pre-IPO share price",
+   "category": "Valuation vs peers",
+   "status": "na",
+   "finding": "No details of pre-IPO share issues or transfers were found in public sources.",
+   "source": ""
+  },
+  {
+   "id": "pg1",
+   "name": "Promoter holding after the issue",
+   "category": "Promoter & governance",
+   "status": "pass",
+   "finding": "Promoters hold 52.04% after the issue, down from 72.93%.",
+   "source": "https://ipowatch.in/?p=175459"
+  },
+  {
+   "id": "pg2",
+   "name": "No pledged promoter shares",
+   "category": "Promoter & governance",
+   "status": "na",
+   "finding": "No information on pledged promoter shares was found.",
+   "source": ""
+  },
+  {
+   "id": "pg3",
+   "name": "Related-party transactions",
+   "category": "Promoter & governance",
+   "status": "na",
+   "finding": "Related-party transaction figures were not found in public sources.",
+   "source": ""
+  },
+  {
+   "id": "pg4",
+   "name": "No regulatory action against promoters",
+   "category": "Promoter & governance",
+   "status": "na",
+   "finding": "No information on regulatory action against promoters was found.",
+   "source": ""
+  },
+  {
+   "id": "is1",
+   "name": "Offer for sale share of the issue",
+   "category": "Issue structure",
+   "status": "pass",
+   "finding": "The entire ₹23.33 cr issue is fresh; there is no offer for sale.",
+   "source": "https://www.chittorgarh.com/ipo/antala-industries-ipo/3221/"
+  },
+  {
+   "id": "is2",
+   "name": "Free float after listing",
+   "category": "Issue structure",
+   "status": "pass",
+   "finding": "The issue is about 28.6% of the ₹81.45 cr post-issue market cap.",
+   "source": "https://www.chittorgarh.com/ipo/antala-industries-ipo/3221/"
+  },
+  {
+   "id": "is3",
+   "name": "Selling shareholders' cost",
+   "category": "Issue structure",
+   "status": "pass",
+   "finding": "No selling shareholders, because there is no offer for sale.",
+   "source": "https://www.chittorgarh.com/ipo/antala-industries-ipo/3221/"
+  },
+  {
+   "id": "up1",
+   "name": "Money for growth",
+   "category": "Use of proceeds",
+   "status": "caution",
+   "finding": "₹5.89 cr, or about 25% of the issue, buys new plant and machinery for the Rajkot facility.",
+   "source": "https://www.chittorgarh.com/ipo/antala-industries-ipo/3221/"
+  },
+  {
+   "id": "up2",
+   "name": "Debt repayment share",
+   "category": "Use of proceeds",
+   "status": "pass",
+   "finding": "None of the proceeds are earmarked for repaying debt; the named uses are working capital and machinery.",
+   "source": "https://www.chittorgarh.com/ipo/antala-industries-ipo/3221/"
+  },
+  {
+   "id": "up3",
+   "name": "General corporate purposes",
+   "category": "Use of proceeds",
+   "status": "na",
+   "finding": "The general corporate purposes amount is not stated; the ₹6.76 cr left after named uses also covers issue expenses.",
+   "source": ""
+  },
+  {
+   "id": "up4",
+   "name": "No repayment to promoter entities",
+   "category": "Use of proceeds",
+   "status": "pass",
+   "finding": "No proceeds go to repaying any loans, including from promoters or group companies.",
+   "source": "https://www.chittorgarh.com/ipo/antala-industries-ipo/3221/"
+  },
+  {
+   "id": "lg1",
+   "name": "Litigation against the company",
+   "category": "Legal & litigation",
+   "status": "na",
+   "finding": "Litigation amounts were not found in public sources.",
+   "source": ""
+  },
+  {
+   "id": "lg2",
+   "name": "Criminal or regulatory cases",
+   "category": "Legal & litigation",
+   "status": "na",
+   "finding": "No information on criminal or regulatory cases was found.",
+   "source": ""
+  },
+  {
+   "id": "lg3",
+   "name": "Contingent liabilities",
+   "category": "Legal & litigation",
+   "status": "na",
+   "finding": "Contingent liabilities were not found in public sources.",
+   "source": ""
+  },
+  {
+   "id": "rk1",
+   "name": "Customer concentration",
+   "category": "Risk factors",
+   "status": "caution",
+   "finding": "The top 10 customers made up 56.43% of revenue in the six months to September 2026, with the largest at 19.61%.",
+   "source": "https://www.multibagg.ai/market-pulse/articles/ipo/antala-industries-limited-customer-concentration-rhp-cmvp1rau3000n0hpqkzo83pen"
+  },
+  {
+   "id": "rk2",
+   "name": "Supplier dependence",
+   "category": "Risk factors",
+   "status": "na",
+   "finding": "Supplier concentration figures were not found in public sources.",
+   "source": ""
+  },
+  {
+   "id": "rk3",
+   "name": "Operating history",
+   "category": "Risk factors",
+   "status": "caution",
+   "finding": "The business started as partnership firm Octagon Industries in April 2021, so about 5.5 years of operating history.",
+   "source": "https://theprint.in/ani-press-releases/rajkot-based-antala-industries-set-for-ipo-launch-soon-after-securing-bse-sme-approval/3077860/"
+  },
+  {
+   "id": "rk4",
+   "name": "Auditor remarks",
+   "category": "Risk factors",
+   "status": "na",
+   "finding": "Auditor remarks were not found in public sources.",
+   "source": ""
+  }
+ ],
+ "peers": [
+  "Dhaval Packaging",
+  "Knack Packaging"
+ ],
+ "metrics": [
+  [
+   "Revenue growth (CAGR)",
+   "%",
+   "high",
+   94.3,
+   [
+    null,
+    null
+   ]
+  ],
+  [
+   "Net profit margin",
+   "%",
+   "high",
+   8.92,
+   [
+    null,
+    null
+   ]
+  ],
+  [
+   "Return on equity",
+   "%",
+   "high",
+   24.88,
+   [
+    31.58,
+    34.41
+   ]
+  ],
+  [
+   "Return on capital employed",
+   "%",
+   "high",
+   42.23,
+   [
+    null,
+    null
+   ]
+  ],
+  [
+   "Debt to equity",
+   "x",
+   "low",
+   0.25,
+   [
+    null,
+    null
+   ]
+  ],
+  [
+   "P/E (post-issue, upper band)",
+   "x",
+   "low",
+   19.21,
+   [
+    18.5,
+    24.62
+   ]
+  ],
+  [
+   "Price to book (post-issue)",
+   "x",
+   "low",
+   1.79,
+   [
+    4.86,
+    7.22
+   ]
+  ]
+ ],
+ "sources": [
+  {
+   "url": "https://www.investorgain.com/ipo/antala-industries-ipo/2375/",
+   "title": "Antala Industries IPO financials, KPIs and peers — InvestorGain"
+  },
+  {
+   "url": "https://www.chittorgarh.com/ipo/antala-industries-ipo/3221/",
+   "title": "Antala Industries IPO details — Chittorgarh"
+  },
+  {
+   "url": "https://www.chittorgarh.com/news-detail/ipo-news/upcoming-ipo/antala-industries-ipo/1900/",
+   "title": "Antala Industries files DRHP — Chittorgarh"
+  },
+  {
+   "url": "https://www.chittorgarh.com/news-detail/ipo/confirmed-ipo/antala-industries-ipo/14572/",
+   "title": "Antala Industries IPO set to open — Chittorgarh"
+  },
+  {
+   "url": "https://ipowatch.in/?p=175459",
+   "title": "Antala Industries IPO shareholding — IPO Watch"
+  },
+  {
+   "url": "https://univest.in/blogs/antala-industries-initial-public-offering-review",
+   "title": "Antala Industries IPO review — Univest"
+  },
+  {
+   "url": "https://www.multibagg.ai/market-pulse/articles/ipo/antala-industries-limited-customer-concentration-rhp-cmvp1rau3000n0hpqkzo83pen",
+   "title": "Antala Industries customer concentration (RHP) — Multibagg"
+  },
+  {
+   "url": "https://theprint.in/ani-press-releases/rajkot-based-antala-industries-set-for-ipo-launch-soon-after-securing-bse-sme-approval/3077860/",
+   "title": "Antala Industries company history (press release) — ThePrint/ANI"
+  },
+  {
+   "url": "https://anandrathi.com/ipo/antala-industries-ltd-ipo-details",
+   "title": "Antala Industries Ltd IPO — Anand Rathi"
+  }
+ ],
+ "generatedAt": "2026-10-29T08:00:00+05:30"
+}

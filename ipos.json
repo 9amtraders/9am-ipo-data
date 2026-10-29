@@ -189,8 +189,8 @@
    "close": "2026-10-30",
    "listing": "2026-11-04",
    "band": "₹76 – ₹80",
-   "hasReport": false,
-   "score": null
+   "hasReport": true,
+   "score": 66
   },
   {
    "name": "Ajwa Projects",
@@ -200,8 +200,8 @@
    "close": "2026-10-30",
    "listing": "2026-11-04",
    "band": "₹203",
-   "hasReport": false,
-   "score": null
+   "hasReport": true,
+   "score": 69
   },
   {
    "name": "Bombay Coated & Special Steels",
@@ -226,8 +226,8 @@
    "close": "2026-11-02",
    "listing": "2026-11-05",
    "band": "₹63 – ₹67",
-   "hasReport": false,
-   "score": null
+   "hasReport": true,
+   "score": 73
   },
   {
    "name": "Maxwell Engineering Solutions",
@@ -239,8 +239,8 @@
    "close": "2026-11-03",
    "listing": "2026-11-06",
    "band": "₹150 – ₹158",
-   "hasReport": false,
-   "score": null
+   "hasReport": true,
+   "score": 74
   },
   {
    "name": "Vectras Enprocon",

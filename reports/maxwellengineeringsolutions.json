@@ -1,0 +1,444 @@
+{
+ "id": "maxwellengineeringsolutions",
+ "name": "Maxwell Engineering Solutions",
+ "board": "SME",
+ "sector": "Precision engineering components",
+ "exchange": "NSE Emerge",
+ "open": "2026-10-30",
+ "close": "2026-11-03",
+ "listing": "2026-11-06",
+ "band": "₹150 – ₹158",
+ "issueSizeCr": 57.64,
+ "freshCr": 57.64,
+ "ofsCr": 0.0,
+ "lotSize": 800,
+ "summary": "Maxwell Engineering Solutions makes and refurbishes precision parts for underwater pelletizing systems, such as die plates, blades and cutter hubs, at a Vadodara plant that started in July 2025, and earns most of its sales from exports. Total income grew from ₹10.9 cr in FY24 to ₹30.8 cr in FY26, and profit rose 29% in FY26 to ₹11.9 cr. Borrowings grew faster than income, from ₹3.2 cr to ₹16.7 cr, and the company was only incorporated in September 2022. The whole ₹57.6 cr issue is fresh money; about 42% is for new machinery and buildings, and the post-issue P/E of about 18.3x is well below the two profitable listed peers in the offer document.",
+ "score": 74,
+ "counts": {
+  "pass": 18,
+  "caution": 2,
+  "flag": 2,
+  "na": 11
+ },
+ "totalChecks": 33,
+ "confidence": "normal",
+ "categories": [
+  {
+   "name": "Financial health",
+   "score": 83,
+   "detail": "5 of 6 checks passed · 1 flag"
+  },
+  {
+   "name": "Profitability",
+   "score": 90,
+   "detail": "4 of 5 checks passed · 1 not found"
+  },
+  {
+   "name": "Valuation vs peers",
+   "score": 75,
+   "detail": "2 of 4 checks passed · 2 not found"
+  },
+  {
+   "name": "Promoter & governance",
+   "score": 62,
+   "detail": "1 of 4 checks passed · 3 not found"
+  },
+  {
+   "name": "Issue structure",
+   "score": 100,
+   "detail": "3 of 3 checks passed"
+  },
+  {
+   "name": "Use of proceeds",
+   "score": 75,
+   "detail": "2 of 4 checks passed · 2 not found"
+  },
+  {
+   "name": "Legal & litigation",
+   "score": 50,
+   "detail": "0 of 3 checks passed · 2 not found"
+  },
+  {
+   "name": "Risk factors",
+   "score": 50,
+   "detail": "1 of 4 checks passed · 1 flag · 1 not found"
+  }
+ ],
+ "checks": [
+  {
+   "id": "fh1",
+   "name": "Revenue growth",
+   "category": "Financial health",
+   "status": "pass",
+   "finding": "Total income rose from ₹10.87 cr (FY24) to ₹30.76 cr (FY26), a CAGR of about 68%.",
+   "source": "https://www.chittorgarh.com/ipo/maxwell-engineering-solutions-ipo/2704/"
+  },
+  {
+   "id": "fh2",
+   "name": "Revenue rose every year",
+   "category": "Financial health",
+   "status": "pass",
+   "finding": "Total income grew every year: ₹10.87 cr, ₹22.59 cr, ₹30.76 cr (FY24–FY26).",
+   "source": "https://www.chittorgarh.com/ipo/maxwell-engineering-solutions-ipo/2704/"
+  },
+  {
+   "id": "fh3",
+   "name": "Debt to equity",
+   "category": "Financial health",
+   "status": "pass",
+   "finding": "Debt to equity was 0.56 at July 31, 2026 (borrowings ₹15.77 cr vs net worth ₹27.92 cr).",
+   "source": "https://www.chittorgarh.com/ipo/maxwell-engineering-solutions-ipo/2704/"
+  },
+  {
+   "id": "fh4",
+   "name": "Debt growing slower than revenue",
+   "category": "Financial health",
+   "status": "flag",
+   "finding": "Borrowings rose about 424% (₹3.19 cr to ₹16.73 cr) while total income rose about 183% over FY24–FY26.",
+   "source": "https://www.chittorgarh.com/ipo/maxwell-engineering-solutions-ipo/2704/"
+  },
+  {
+   "id": "fh5",
+   "name": "Net worth rising",
+   "category": "Financial health",
+   "status": "pass",
+   "finding": "Net worth rose every year: ₹3.33 cr, ₹13.01 cr, ₹24.87 cr (FY24–FY26).",
+   "source": "https://www.chittorgarh.com/ipo/maxwell-engineering-solutions-ipo/2704/"
+  },
+  {
+   "id": "fh6",
+   "name": "Positive operating cash flow",
+   "category": "Financial health",
+   "status": "pass",
+   "finding": "Operating cash flow was ₹7.48 cr in FY26, about 63% of the ₹11.86 cr profit.",
+   "source": "https://www.finowings.com/IPO/maxwell-engineering-solutions-ipo"
+  },
+  {
+   "id": "pr1",
+   "name": "Profit growth",
+   "category": "Profitability",
+   "status": "pass",
+   "finding": "Profit after tax grew 29% in FY26, to ₹11.86 cr.",
+   "source": "https://www.chittorgarh.com/ipo/maxwell-engineering-solutions-ipo/2704/"
+  },
+  {
+   "id": "pr2",
+   "name": "Profit margin trend",
+   "category": "Profitability",
+   "status": "pass",
+   "finding": "Net margin on total income rose from 29.1% (FY24) to 40.6% (FY25), then eased to 38.6% (FY26).",
+   "source": "https://www.chittorgarh.com/ipo/maxwell-engineering-solutions-ipo/2704/"
+  },
+  {
+   "id": "pr3",
+   "name": "Return on equity",
+   "category": "Profitability",
+   "status": "pass",
+   "finding": "Return on net worth was 47.7% in FY26 (ROE 62.6%), helped by the small equity base.",
+   "source": "https://www.chittorgarh.com/ipo/maxwell-engineering-solutions-ipo/2704/"
+  },
+  {
+   "id": "pr4",
+   "name": "Return on capital employed",
+   "category": "Profitability",
+   "status": "pass",
+   "finding": "ROCE was 38.5% in FY26.",
+   "source": "https://www.chittorgarh.com/ipo/maxwell-engineering-solutions-ipo/2704/"
+  },
+  {
+   "id": "pr5",
+   "name": "Margin vs listed peers",
+   "category": "Profitability",
+   "status": "na",
+   "finding": "Peer margins were not found in public sources.",
+   "source": ""
+  },
+  {
+   "id": "va1",
+   "name": "P/E vs listed peers",
+   "category": "Valuation vs peers",
+   "status": "pass",
+   "finding": "Post-issue P/E of about 18.3x (₹216.4 cr market cap vs FY26 profit of ₹11.86 cr) vs a peer median of 99.8x (Omnitech 99.0x, Sunita Tools 100.7x; Kabra loss-making).",
+   "source": "https://www.chittorgarh.com/ipo-recommendation/maxwell-engineering-solutions-ipo/2704/"
+  },
+  {
+   "id": "va2",
+   "name": "Price to book vs listed peers",
+   "category": "Valuation vs peers",
+   "status": "pass",
+   "finding": "Post-issue price to book of about 2.6x (₹216.4 cr market cap vs about ₹82.5 cr post-issue net worth) vs a peer median of 9.5x.",
+   "source": "https://www.chittorgarh.com/ipo-recommendation/maxwell-engineering-solutions-ipo/2704/"
+  },
+  {
+   "id": "va3",
+   "name": "Market cap to sales vs listed peers",
+   "category": "Valuation vs peers",
+   "status": "na",
+   "finding": "Peer market cap to sales figures were not found in public sources.",
+   "source": ""
+  },
+  {
+   "id": "va4",
+   "name": "Recent pre-IPO share price",
+   "category": "Valuation vs peers",
+   "status": "na",
+   "finding": "No details of pre-IPO share issues or transfers were found in public sources.",
+   "source": ""
+  },
+  {
+   "id": "pg1",
+   "name": "Promoter holding after the issue",
+   "category": "Promoter & governance",
+   "status": "pass",
+   "finding": "Promoters hold 71.36% after the issue, down from 97.26%.",
+   "source": "https://www.chittorgarh.com/ipo/maxwell-engineering-solutions-ipo/2704/"
+  },
+  {
+   "id": "pg2",
+   "name": "No pledged promoter shares",
+   "category": "Promoter & governance",
+   "status": "na",
+   "finding": "No information on pledged promoter shares was found.",
+   "source": ""
+  },
+  {
+   "id": "pg3",
+   "name": "Related-party transactions",
+   "category": "Promoter & governance",
+   "status": "na",
+   "finding": "Related-party transaction figures were not found in public sources.",
+   "source": ""
+  },
+  {
+   "id": "pg4",
+   "name": "No regulatory action against promoters",
+   "category": "Promoter & governance",
+   "status": "na",
+   "finding": "No information on regulatory action against promoters was found.",
+   "source": ""
+  },
+  {
+   "id": "is1",
+   "name": "Offer for sale share of the issue",
+   "category": "Issue structure",
+   "status": "pass",
+   "finding": "The entire ₹57.64 cr issue is fresh; there is no offer for sale.",
+   "source": "https://www.chittorgarh.com/ipo/maxwell-engineering-solutions-ipo/2704/"
+  },
+  {
+   "id": "is2",
+   "name": "Free float after listing",
+   "category": "Issue structure",
+   "status": "pass",
+   "finding": "The issue is about 26.6% of the ₹216.4 cr post-issue market cap.",
+   "source": "https://www.chittorgarh.com/ipo/maxwell-engineering-solutions-ipo/2704/"
+  },
+  {
+   "id": "is3",
+   "name": "Selling shareholders' cost",
+   "category": "Issue structure",
+   "status": "pass",
+   "finding": "No selling shareholders, because there is no offer for sale.",
+   "source": "https://www.chittorgarh.com/ipo/maxwell-engineering-solutions-ipo/2704/"
+  },
+  {
+   "id": "up1",
+   "name": "Money for growth",
+   "category": "Use of proceeds",
+   "status": "pass",
+   "finding": "₹24.5 cr, or about 42.5% of the issue, goes to new machinery, lab equipment and a new office and plant building.",
+   "source": "https://www.chittorgarh.com/ipo/maxwell-engineering-solutions-ipo/2704/"
+  },
+  {
+   "id": "up2",
+   "name": "Debt repayment share",
+   "category": "Use of proceeds",
+   "status": "pass",
+   "finding": "₹4.30 cr, or about 7.5% of the issue, goes to repaying borrowings.",
+   "source": "https://www.chittorgarh.com/ipo/maxwell-engineering-solutions-ipo/2704/"
+  },
+  {
+   "id": "up3",
+   "name": "General corporate purposes",
+   "category": "Use of proceeds",
+   "status": "na",
+   "finding": "The general corporate purposes amount is not stated in public sources.",
+   "source": ""
+  },
+  {
+   "id": "up4",
+   "name": "No repayment to promoter entities",
+   "category": "Use of proceeds",
+   "status": "na",
+   "finding": "Public sources don't say whose loans are being repaid.",
+   "source": ""
+  },
+  {
+   "id": "lg1",
+   "name": "Litigation against the company",
+   "category": "Legal & litigation",
+   "status": "na",
+   "finding": "Litigation amounts were not found in public sources.",
+   "source": ""
+  },
+  {
+   "id": "lg2",
+   "name": "Criminal or regulatory cases",
+   "category": "Legal & litigation",
+   "status": "caution",
+   "finding": "An ESIC notice for alleged statutory non-compliance is disclosed; other legal proceedings are mentioned without details.",
+   "source": "https://www.equentis.com/ipos/maxwell-engineering-solutions-ltd-ipo_95974"
+  },
+  {
+   "id": "lg3",
+   "name": "Contingent liabilities",
+   "category": "Legal & litigation",
+   "status": "na",
+   "finding": "Contingent liabilities were not found in public sources.",
+   "source": ""
+  },
+  {
+   "id": "rk1",
+   "name": "Customer concentration",
+   "category": "Risk factors",
+   "status": "caution",
+   "finding": "Dependence on a few customers for most revenue is called out as a risk; exact shares are not published.",
+   "source": "https://www.bajajbroking.in/ipo/maxwell-engineering-solutions-limited-ipo"
+  },
+  {
+   "id": "rk2",
+   "name": "Supplier dependence",
+   "category": "Risk factors",
+   "status": "pass",
+   "finding": "The largest supplier was 24.98% of purchases in April–July 2026 and 17.28% in FY26, though top 10 suppliers were 80–87%.",
+   "source": "https://maxwells.in/wp-content/uploads/2026/10/RHP_Maxwell_V5_Combined.pdf"
+  },
+  {
+   "id": "rk3",
+   "name": "Operating history",
+   "category": "Risk factors",
+   "status": "flag",
+   "finding": "Incorporated in September 2022, so about 4 years of operating history.",
+   "source": "https://www.chittorgarh.com/ipo/maxwell-engineering-solutions-ipo/2704/"
+  },
+  {
+   "id": "rk4",
+   "name": "Auditor remarks",
+   "category": "Risk factors",
+   "status": "na",
+   "finding": "Auditor remarks were not found in public sources.",
+   "source": ""
+  }
+ ],
+ "peers": [
+  "Kabra Extrusiontechnik",
+  "Omnitech Engineering",
+  "Sunita Tools"
+ ],
+ "metrics": [
+  [
+   "Revenue growth (CAGR)",
+   "%",
+   "high",
+   68.2,
+   [
+    null,
+    null,
+    null
+   ]
+  ],
+  [
+   "Net profit margin",
+   "%",
+   "high",
+   40.28,
+   [
+    null,
+    null,
+    null
+   ]
+  ],
+  [
+   "Return on equity",
+   "%",
+   "high",
+   47.7,
+   [
+    -0.54,
+    11.28,
+    10.8
+   ]
+  ],
+  [
+   "Return on capital employed",
+   "%",
+   "high",
+   38.46,
+   [
+    null,
+    null,
+    null
+   ]
+  ],
+  [
+   "Debt to equity",
+   "x",
+   "low",
+   0.56,
+   [
+    null,
+    null,
+    null
+   ]
+  ],
+  [
+   "P/E (post-issue, upper band)",
+   "x",
+   "low",
+   18.25,
+   [
+    null,
+    99.0,
+    100.65
+   ]
+  ],
+  [
+   "Price to book (post-issue)",
+   "x",
+   "low",
+   2.62,
+   [
+    5.34,
+    11.55,
+    9.46
+   ]
+  ]
+ ],
+ "sources": [
+  {
+   "url": "https://www.chittorgarh.com/ipo/maxwell-engineering-solutions-ipo/2704/",
+   "title": "Maxwell Engineering Solutions IPO details — Chittorgarh"
+  },
+  {
+   "url": "https://www.chittorgarh.com/ipo-recommendation/maxwell-engineering-solutions-ipo/2704/",
+   "title": "Maxwell Engineering Solutions IPO peer comparison — Chittorgarh"
+  },
+  {
+   "url": "https://www.finowings.com/IPO/maxwell-engineering-solutions-ipo",
+   "title": "Maxwell Engineering Solutions IPO — Finowings"
+  },
+  {
+   "url": "https://www.bajajbroking.in/ipo/maxwell-engineering-solutions-limited-ipo",
+   "title": "Maxwell Engineering Solutions IPO — Bajaj Broking"
+  },
+  {
+   "url": "https://www.equentis.com/ipos/maxwell-engineering-solutions-ltd-ipo_95974",
+   "title": "Maxwell Engineering Solutions IPO — Equentis"
+  },
+  {
+   "url": "https://maxwells.in/wp-content/uploads/2026/10/RHP_Maxwell_V5_Combined.pdf",
+   "title": "Maxwell Engineering Solutions Red Herring Prospectus"
+  }
+ ],
+ "generatedAt": "2026-10-29T08:00:00+05:30"
+}
