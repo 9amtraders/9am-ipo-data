@@ -101,7 +101,7 @@ def sub_driver(sub):
     if not sub or all(sub.get(k) is None for k in ("retail", "qib", "nii", "total")):
         return 50, "Subscription not available yet, scored as neutral until bidding opens."
     # Retail demand counts most: retail 50%, QIB 30%, NII 20% (weights reshared when a category is missing).
-    bands = [(100, 100), (50, 90), (20, 75), (10, 60), (3, 40), (1, 20)]
+    bands = [(150, 100), (100, 95), (50, 85), (20, 75), (10, 60), (3, 40), (1, 20)]
     parts = [(sub.get("retail"), 50), (sub.get("qib"), 30), (sub.get("nii"), 20)]
     parts = [(band_score(v, bands, 0), w) for v, w in parts if v is not None]
     if not parts:
@@ -234,6 +234,10 @@ def build_report(raw, fname, sub=None):
         who = "retail portion" if r is not None and r < 1 else "issue"
         score = min(score, 25)
         caps.append(f"Capped at 25 because the {who} is not fully subscribed" + ("" if (sub or {}).get("final") else " so far") + ".")
+    if t_all is not None and t_all >= 150 and score < 76:
+        # Demand of 150x or more is the strongest signal there is: such an IPO is always rated Strong.
+        score = 76
+        caps.append("Raised to 76 (Strong) because the issue is subscribed 150x or more.")
     score = max(0, score)
     cap = " ".join(caps) or None
     total = len(CFG["checks"])
