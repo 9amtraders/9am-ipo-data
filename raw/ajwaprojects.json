@@ -14,51 +14,224 @@
  "researchedOn": "2026-10-29",
  "summary": "Ajwa Projects, a Surat-based company incorporated in 2011, provides fabrication, erection, piping, pressure equipment, civil construction and maintenance services to oil and gas, power, steel and cement clients, with over 93% of FY26 revenue coming from Gujarat. Revenue from operations grew from ₹34.3 cr in FY24 to ₹48.4 cr in FY26, and profit rose 65% in FY26 to ₹5.4 cr, an 11.2% net margin with RoNW of 36%. The ₹38 cr issue is ₹30.45 cr fresh and ₹7.6 cr offer for sale by two promoters whose average cost is ₹3.40–₹4.10 a share; the top 10 customers made up about 87% of FY26 revenue. On full-year FY26 profit the post-issue P/E is about 20.6x, well above the two listed peers named in the prospectus (9.5x and 16.0x).",
  "checks": {
-  "fh1": {"status": "pass", "finding": "Revenue from operations rose from ₹34.27 cr (FY24) to ₹48.42 cr (FY26), a CAGR of about 18.9%.", "source": "https://www.ajwaprojects.com/assets/image/pdf/prospectus-ajwa-with-binders.pdf"},
-  "fh2": {"status": "pass", "finding": "Revenue grew every year: ₹34.27 cr, ₹36.73 cr, ₹48.42 cr (FY24–FY26).", "source": "https://www.ajwaprojects.com/assets/image/pdf/prospectus-ajwa-with-binders.pdf"},
-  "fh3": {"status": "pass", "finding": "Debt to equity was 0.71 in FY26 (borrowings ₹12.52 cr vs net worth ₹17.71 cr) and 0.72 at June 2026.", "source": "https://www.chittorgarh.com/ipo/ajwa-projects-ipo/2761/"},
-  "fh4": {"status": "pass", "finding": "Borrowings rose about 15% (₹10.85 cr to ₹12.52 cr) while total income rose about 41% over FY24–FY26.", "source": "https://www.chittorgarh.com/ipo/ajwa-projects-ipo/2761/"},
-  "fh5": {"status": "pass", "finding": "Net worth rose every year: ₹8.90 cr, ₹12.29 cr, ₹17.71 cr (FY24–FY26).", "source": "https://www.chittorgarh.com/ipo/ajwa-projects-ipo/2761/"},
-  "fh6": {"status": "na", "finding": "Operating cash flow figures were not found in public sources.", "source": ""},
-  "pr1": {"status": "pass", "finding": "Profit after tax grew about 65% in FY26, to ₹5.42 cr from ₹3.28 cr.", "source": "https://www.chittorgarh.com/ipo/ajwa-projects-ipo/2761/"},
-  "pr2": {"status": "pass", "finding": "Net margin improved from about 8.6% (FY24) to 8.9% (FY25) and 11.2% (FY26).", "source": "https://www.chittorgarh.com/ipo/ajwa-projects-ipo/2761/"},
-  "pr3": {"status": "pass", "finding": "Return on net worth was 36.15% in FY26.", "source": "https://www.chittorgarh.com/ipo/ajwa-projects-ipo/2761/"},
-  "pr4": {"status": "pass", "finding": "ROCE was 34.75% in FY26.", "source": "https://www.chittorgarh.com/ipo/ajwa-projects-ipo/2761/"},
-  "pr5": {"status": "na", "finding": "Peer margins were not found in public sources.", "source": ""},
-  "va1": {"status": "flag", "finding": "Post-issue P/E of about 20.6x on FY26 profit (₹111.65 cr market cap vs ₹5.42 cr PAT) vs a peer median of 12.7x (Atmastco 16.0x, Samay Project Services 9.5x).", "source": "https://www.chittorgarh.com/ipo-recommendation/ajwa-projects-ipo/2761/"},
-  "va2": {"status": "caution", "finding": "Post-issue price to book of about 2.3x (₹111.65 cr market cap vs ₹48.2 cr post-issue net worth) vs a peer median of 1.86x, about 25% higher.", "source": "https://www.chittorgarh.com/ipo-recommendation/ajwa-projects-ipo/2761/"},
-  "va3": {"status": "na", "finding": "Peer market cap to sales figures were not found in public sources.", "source": ""},
-  "va4": {"status": "na", "finding": "No details of priced share issues or transfers in the 12 months before the IPO were found in public sources.", "source": ""},
-  "pg1": {"status": "pass", "finding": "Promoters hold 65.12% after the issue, down from 98.9%.", "source": "https://www.chittorgarh.com/ipo/ajwa-projects-ipo/2761/"},
-  "pg2": {"status": "na", "finding": "No information on pledged promoter shares was found.", "source": ""},
-  "pg3": {"status": "na", "finding": "Related-party transaction figures were not found in public sources.", "source": ""},
-  "pg4": {"status": "flag", "finding": "Two tax proceedings involving ₹101.32 lakh are outstanding against the promoters.", "source": "https://www.ajwaprojects.com/assets/image/pdf/prospectus-ajwa-with-binders.pdf"},
-  "is1": {"status": "pass", "finding": "The offer for sale is ₹7.60 cr, or about 20% of the ₹38.05 cr issue.", "source": "https://zerodha.com/ipo/461648/ajwa-projects"},
-  "is2": {"status": "pass", "finding": "The issue is about 34.1% of the ₹111.65 cr post-issue market cap.", "source": "https://www.chittorgarh.com/ipo/ajwa-projects-ipo/2761/"},
-  "is3": {"status": "flag", "finding": "The selling promoters' average cost is ₹3.40 and ₹4.10 a share, so ₹203 is about 50–60x their cost.", "source": "https://www.ajwaprojects.com/assets/image/pdf/prospectus-ajwa-with-binders.pdf"},
-  "up1": {"status": "caution", "finding": "₹8.10 cr, or 26.6% of the fresh issue, goes to capex on plant, machinery and transport vehicles.", "source": "https://zerodha.com/ipo/461648/ajwa-projects"},
-  "up2": {"status": "pass", "finding": "₹9.35 cr, or 30.7% of the fresh issue, goes to repaying borrowings.", "source": "https://zerodha.com/ipo/461648/ajwa-projects"},
-  "up3": {"status": "pass", "finding": "General corporate purposes take ₹4.43 cr, or 14.55% of the fresh issue.", "source": "https://zerodha.com/ipo/461648/ajwa-projects"},
-  "up4": {"status": "na", "finding": "Public sources don't say whose loans are being repaid.", "source": ""},
-  "lg1": {"status": "pass", "finding": "One tax proceeding of ₹4.90 lakh is outstanding against the company, under 1% of its ₹17.71 cr net worth.", "source": "https://www.ajwaprojects.com/assets/image/pdf/prospectus-ajwa-with-binders.pdf"},
-  "lg2": {"status": "pass", "finding": "No criminal or regulatory cases are listed against the company, promoters or directors.", "source": "https://www.ajwaprojects.com/assets/image/pdf/prospectus-ajwa-with-binders.pdf"},
-  "lg3": {"status": "na", "finding": "Contingent liabilities were not found in public sources.", "source": ""},
-  "rk1": {"status": "flag", "finding": "The top 10 customers made up about 86.7% of FY26 revenue, and the top customer 26.5% in the June 2026 quarter.", "source": "https://www.ajwaprojects.com/assets/image/pdf/prospectus-ajwa-with-binders.pdf"},
-  "rk2": {"status": "pass", "finding": "The top supplier was 10.1% of materials consumed in FY26 (30.9% in FY25, 23.9% in the June 2026 quarter).", "source": "https://www.ajwaprojects.com/assets/image/pdf/prospectus-ajwa-with-binders.pdf"},
-  "rk3": {"status": "pass", "finding": "Incorporated in 2011, so about 15 years of operating history.", "source": "https://www.chittorgarh.com/ipo/ajwa-projects-ipo/2761/"},
-  "rk4": {"status": "na", "finding": "Auditor remarks were not found in public sources.", "source": ""}
+  "fh1": {
+   "status": "pass",
+   "finding": "Revenue from operations rose from ₹34.27 cr (FY24) to ₹48.42 cr (FY26), a CAGR of about 18.9%.",
+   "source": "https://www.ajwaprojects.com/assets/image/pdf/prospectus-ajwa-with-binders.pdf"
+  },
+  "fh2": {
+   "status": "pass",
+   "finding": "Revenue grew every year: ₹34.27 cr, ₹36.73 cr, ₹48.42 cr (FY24–FY26).",
+   "source": "https://www.ajwaprojects.com/assets/image/pdf/prospectus-ajwa-with-binders.pdf"
+  },
+  "fh3": {
+   "status": "pass",
+   "finding": "Debt to equity was 0.71 in FY26 (borrowings ₹12.52 cr vs net worth ₹17.71 cr) and 0.72 at June 2026.",
+   "source": "https://www.chittorgarh.com/ipo/ajwa-projects-ipo/2761/"
+  },
+  "fh4": {
+   "status": "pass",
+   "finding": "Borrowings rose about 15% (₹10.85 cr to ₹12.52 cr) while total income rose about 41% over FY24–FY26.",
+   "source": "https://www.chittorgarh.com/ipo/ajwa-projects-ipo/2761/"
+  },
+  "fh5": {
+   "status": "pass",
+   "finding": "Net worth rose every year: ₹8.90 cr, ₹12.29 cr, ₹17.71 cr (FY24–FY26).",
+   "source": "https://www.chittorgarh.com/ipo/ajwa-projects-ipo/2761/"
+  },
+  "fh6": {
+   "status": "na",
+   "finding": "Operating cash flow figures were not found in public sources.",
+   "source": ""
+  },
+  "pr1": {
+   "status": "pass",
+   "finding": "Profit after tax grew about 65% in FY26, to ₹5.42 cr from ₹3.28 cr.",
+   "source": "https://www.chittorgarh.com/ipo/ajwa-projects-ipo/2761/"
+  },
+  "pr2": {
+   "status": "pass",
+   "finding": "Net margin improved from about 8.6% (FY24) to 8.9% (FY25) and 11.2% (FY26).",
+   "source": "https://www.chittorgarh.com/ipo/ajwa-projects-ipo/2761/"
+  },
+  "pr3": {
+   "status": "pass",
+   "finding": "Return on net worth was 36.15% in FY26.",
+   "source": "https://www.chittorgarh.com/ipo/ajwa-projects-ipo/2761/"
+  },
+  "pr4": {
+   "status": "pass",
+   "finding": "ROCE was 34.75% in FY26.",
+   "source": "https://www.chittorgarh.com/ipo/ajwa-projects-ipo/2761/"
+  },
+  "pr5": {
+   "status": "na",
+   "finding": "Peer margins were not found in public sources.",
+   "source": ""
+  },
+  "va1": {
+   "status": "flag",
+   "finding": "Post-issue P/E of about 20.6x on FY26 profit (₹111.65 cr market cap vs ₹5.42 cr PAT) vs a peer median of 12.7x (Atmastco 16.0x, Samay Project Services 9.5x).",
+   "source": "https://www.chittorgarh.com/ipo-recommendation/ajwa-projects-ipo/2761/"
+  },
+  "va2": {
+   "status": "caution",
+   "finding": "Post-issue price to book of about 2.3x (₹111.65 cr market cap vs ₹48.2 cr post-issue net worth) vs a peer median of 1.86x, about 25% higher.",
+   "source": "https://www.chittorgarh.com/ipo-recommendation/ajwa-projects-ipo/2761/"
+  },
+  "va3": {
+   "status": "na",
+   "finding": "Peer market cap to sales figures were not found in public sources.",
+   "source": ""
+  },
+  "va4": {
+   "status": "na",
+   "finding": "No details of priced share issues or transfers in the 12 months before the IPO were found in public sources.",
+   "source": ""
+  },
+  "pg1": {
+   "status": "pass",
+   "finding": "Promoters hold 65.12% after the issue, down from 98.9%.",
+   "source": "https://www.chittorgarh.com/ipo/ajwa-projects-ipo/2761/"
+  },
+  "pg2": {
+   "status": "na",
+   "finding": "No information on pledged promoter shares was found.",
+   "source": ""
+  },
+  "pg3": {
+   "status": "na",
+   "finding": "Related-party transaction figures were not found in public sources.",
+   "source": ""
+  },
+  "pg4": {
+   "status": "flag",
+   "finding": "Two tax proceedings involving ₹101.32 lakh are outstanding against the promoters.",
+   "source": "https://www.ajwaprojects.com/assets/image/pdf/prospectus-ajwa-with-binders.pdf"
+  },
+  "is1": {
+   "status": "pass",
+   "finding": "The offer for sale is ₹7.60 cr, or about 20% of the ₹38.05 cr issue.",
+   "source": "https://zerodha.com/ipo/461648/ajwa-projects"
+  },
+  "is2": {
+   "status": "pass",
+   "finding": "The issue is about 34.1% of the ₹111.65 cr post-issue market cap.",
+   "source": "https://www.chittorgarh.com/ipo/ajwa-projects-ipo/2761/"
+  },
+  "is3": {
+   "status": "flag",
+   "finding": "The selling promoters' average cost is ₹3.40 and ₹4.10 a share, so ₹203 is about 50–60x their cost.",
+   "source": "https://www.ajwaprojects.com/assets/image/pdf/prospectus-ajwa-with-binders.pdf"
+  },
+  "up1": {
+   "status": "caution",
+   "finding": "₹8.10 cr, or 26.6% of the fresh issue, goes to capex on plant, machinery and transport vehicles.",
+   "source": "https://zerodha.com/ipo/461648/ajwa-projects"
+  },
+  "up2": {
+   "status": "pass",
+   "finding": "₹9.35 cr, or 30.7% of the fresh issue, goes to repaying borrowings.",
+   "source": "https://zerodha.com/ipo/461648/ajwa-projects"
+  },
+  "up3": {
+   "status": "pass",
+   "finding": "General corporate purposes take ₹4.43 cr, or 14.55% of the fresh issue.",
+   "source": "https://zerodha.com/ipo/461648/ajwa-projects"
+  },
+  "up4": {
+   "status": "na",
+   "finding": "Public sources don't say whose loans are being repaid.",
+   "source": ""
+  },
+  "lg1": {
+   "status": "pass",
+   "finding": "One tax proceeding of ₹4.90 lakh is outstanding against the company, under 1% of its ₹17.71 cr net worth.",
+   "source": "https://www.ajwaprojects.com/assets/image/pdf/prospectus-ajwa-with-binders.pdf"
+  },
+  "lg2": {
+   "status": "pass",
+   "finding": "No criminal or regulatory cases are listed against the company, promoters or directors.",
+   "source": "https://www.ajwaprojects.com/assets/image/pdf/prospectus-ajwa-with-binders.pdf"
+  },
+  "lg3": {
+   "status": "na",
+   "finding": "Contingent liabilities were not found in public sources.",
+   "source": ""
+  },
+  "rk1": {
+   "status": "flag",
+   "finding": "The top 10 customers made up about 86.7% of FY26 revenue, and the top customer 26.5% in the June 2026 quarter.",
+   "source": "https://www.ajwaprojects.com/assets/image/pdf/prospectus-ajwa-with-binders.pdf"
+  },
+  "rk2": {
+   "status": "pass",
+   "finding": "The top supplier was 10.1% of materials consumed in FY26 (30.9% in FY25, 23.9% in the June 2026 quarter).",
+   "source": "https://www.ajwaprojects.com/assets/image/pdf/prospectus-ajwa-with-binders.pdf"
+  },
+  "rk3": {
+   "status": "pass",
+   "finding": "Incorporated in 2011, so about 15 years of operating history.",
+   "source": "https://www.chittorgarh.com/ipo/ajwa-projects-ipo/2761/"
+  },
+  "rk4": {
+   "status": "na",
+   "finding": "Auditor remarks were not found in public sources.",
+   "source": ""
+  }
  },
- "ipoMetrics": {"rev_cagr": 18.9, "pat_margin": 11.2, "roe": 36.15, "roce": 34.75, "de": 0.71, "pe": 20.6, "pb": 2.32},
+ "ipoMetrics": {
+  "rev_cagr": 18.9,
+  "pat_margin": 11.2,
+  "roe": 36.15,
+  "roce": 34.75,
+  "de": 0.71,
+  "pe": 20.6,
+  "pb": 2.32
+ },
+ "patGrowth": 65.2,
  "peers": [
-  {"name": "Atmastco", "metrics": {"roe": 13.93, "pe": 15.97, "pb": 1.98}},
-  {"name": "Samay Project Services", "metrics": {"roe": 22.64, "pe": 9.52, "pb": 1.73}}
+  {
+   "name": "Atmastco",
+   "metrics": {
+    "roe": 13.93,
+    "pe": 15.97,
+    "pb": 1.98
+   }
+  },
+  {
+   "name": "Samay Project Services",
+   "metrics": {
+    "roe": 22.64,
+    "pe": 9.52,
+    "pb": 1.73
+   }
+  }
  ],
  "sources": [
-  {"url": "https://www.chittorgarh.com/ipo/ajwa-projects-ipo/2761/", "title": "Ajwa Projects IPO details — Chittorgarh"},
-  {"url": "https://www.chittorgarh.com/ipo-recommendation/ajwa-projects-ipo/2761/", "title": "Ajwa Projects IPO peer comparison — Chittorgarh"},
-  {"url": "https://zerodha.com/ipo/461648/ajwa-projects", "title": "Ajwa Projects IPO — Zerodha"},
-  {"url": "https://www.ajwaprojects.com/assets/image/pdf/prospectus-ajwa-with-binders.pdf", "title": "Ajwa Projects prospectus"},
-  {"url": "https://www.ipoji.com/ipo/ajwa-projects-ipo", "title": "Ajwa Projects IPO — IPOji"},
-  {"url": "https://www.business-standard.com/markets/ipo/ajwa-projects-ltd-ipo-96155", "title": "Ajwa Projects IPO — Business Standard"}
+  {
+   "url": "https://www.chittorgarh.com/ipo/ajwa-projects-ipo/2761/",
+   "title": "Ajwa Projects IPO details — Chittorgarh"
+  },
+  {
+   "url": "https://www.chittorgarh.com/ipo-recommendation/ajwa-projects-ipo/2761/",
+   "title": "Ajwa Projects IPO peer comparison — Chittorgarh"
+  },
+  {
+   "url": "https://zerodha.com/ipo/461648/ajwa-projects",
+   "title": "Ajwa Projects IPO — Zerodha"
+  },
+  {
+   "url": "https://www.ajwaprojects.com/assets/image/pdf/prospectus-ajwa-with-binders.pdf",
+   "title": "Ajwa Projects prospectus"
+  },
+  {
+   "url": "https://www.ipoji.com/ipo/ajwa-projects-ipo",
+   "title": "Ajwa Projects IPO — IPOji"
+  },
+  {
+   "url": "https://www.business-standard.com/markets/ipo/ajwa-projects-ltd-ipo-96155",
+   "title": "Ajwa Projects IPO — Business Standard"
+  }
  ]
 }

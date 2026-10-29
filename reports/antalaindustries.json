@@ -13,7 +13,34 @@
  "ofsCr": 0.0,
  "lotSize": 2000,
  "summary": "Antala Industries makes BOPP bags, BOPP printing and lamination rolls and PP woven bags for food processing, fertiliser, chemical, cement and seed customers from a single plant in Rajkot, Gujarat; it began as the partnership firm Octagon Industries in 2021 and became a company in August 2024. Total income grew from ₹12.6 cr in FY24 to ₹47.5 cr in FY26 and profit rose 133% in FY26 to ₹4.24 cr, with debt to equity low at 0.25. The whole ₹23.33 cr issue is fresh, with ₹10.68 cr for working capital and ₹5.89 cr for new machinery, and promoters keep about 52% after the issue. At the upper band the post-issue P/E on FY26 profit is about 19.2x, below the median of the two listed peers named in the offer document, while the top 10 customers still make up 56% of revenue.",
- "score": 73,
+ "score": 69,
+ "checksScore": 73,
+ "drivers": [
+  {
+   "name": "Subscription demand",
+   "weight": 20,
+   "score": 15,
+   "detail": "Subscribed 0.82x overall (bidding still open)."
+  },
+  {
+   "name": "Profit growth (RHP)",
+   "weight": 20,
+   "score": 100,
+   "detail": "Profit after tax grew 133% in the latest year in the RHP."
+  },
+  {
+   "name": "P/E vs listed peers",
+   "weight": 20,
+   "score": 85,
+   "detail": "P/E 19.21x vs peer median 21.6x, 11% below."
+  },
+  {
+   "name": "All 33 checks",
+   "weight": 40,
+   "score": 73,
+   "detail": "Financial health, governance, issue structure, use of proceeds, legal and risk checks."
+  }
+ ],
  "counts": {
   "pass": 16,
   "caution": 3,

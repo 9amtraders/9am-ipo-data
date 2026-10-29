@@ -14,54 +14,246 @@
  "researchedOn": "2026-10-29",
  "summary": "SFC Environmental Technologies, incorporated in 2005, provides technology, equipment and commissioning for wastewater treatment (its C-Tech sequencing batch reactor platform, with 728 installations), wastewater recycling and solid waste processing, including two municipal waste plants in Goa; most of its revenue comes from government-linked projects. Revenue from operations grew from ₹657.5 cr in FY24 to ₹803.6 cr in FY26 (about 10.6% a year), while profit rose only 5.4% in FY26 to ₹160.2 cr and operating cash flow was negative at -₹25.8 cr as borrowings more than doubled to ₹195.6 cr. About 78% of the ₹667.5 cr issue is an offer for sale, and none of the ₹150 cr fresh money goes to new capacity; promoter holding falls to 41.18%. At the upper band the post-issue P/E is about 20.2x, well below the RHP peers Thermax, Ion Exchange and Praj Industries.",
  "checks": {
-  "fh1": {"status": "caution", "finding": "Revenue from operations rose from ₹657.5 cr (FY24) to ₹803.6 cr (FY26), a CAGR of about 10.6%.", "source": "https://trendlyne.com/ipo/detail/1801/sfc-environmental-technologies-ltd/"},
-  "fh2": {"status": "pass", "finding": "Revenue grew every year: ₹657.5 cr, ₹697.9 cr, ₹803.6 cr (FY24–FY26).", "source": "https://trendlyne.com/ipo/detail/1801/sfc-environmental-technologies-ltd/"},
-  "fh3": {"status": "pass", "finding": "Debt to equity was 0.24 at March 2026 (borrowings ₹195.6 cr vs net worth ₹804.2 cr).", "source": "https://www.chittorgarh.com/ipo/sfc-environmental-technologies-ipo/2070/"},
-  "fh4": {"status": "flag", "finding": "Borrowings rose 41% (₹139.2 cr to ₹195.6 cr) while revenue rose 22% over FY24–FY26; they more than doubled in FY26 alone.", "source": "https://www.chittorgarh.com/ipo/sfc-environmental-technologies-ipo/2070/"},
-  "fh5": {"status": "pass", "finding": "Net worth rose every year: ₹534.3 cr, ₹648.7 cr, ₹804.2 cr (FY24–FY26).", "source": "https://www.chittorgarh.com/ipo/sfc-environmental-technologies-ipo/2070/"},
-  "fh6": {"status": "flag", "finding": "Operating cash flow was negative at -₹25.8 cr in FY26, against a ₹160.2 cr profit.", "source": "https://trendlyne.com/ipo/detail/1801/sfc-environmental-technologies-ltd/"},
-  "pr1": {"status": "caution", "finding": "Profit after tax grew 5.4% in FY26, to ₹160.2 cr, while revenue grew about 15%.", "source": "https://www.chittorgarh.com/ipo/sfc-environmental-technologies-ipo/2070/"},
-  "pr2": {"status": "flag", "finding": "Net margin fell from 21.93% (FY24) to 19.94% (FY26), a drop of about 2 percentage points.", "source": "https://www.indmoney.com/ipo/sfc-environmental-technologies-ltd-ipo"},
-  "pr3": {"status": "pass", "finding": "Return on equity was 21.55% in FY26.", "source": "https://www.chittorgarh.com/ipo/sfc-environmental-technologies-ipo/2070/"},
-  "pr4": {"status": "pass", "finding": "ROCE was 22.21% in FY26.", "source": "https://www.chittorgarh.com/ipo/sfc-environmental-technologies-ipo/2070/"},
-  "pr5": {"status": "pass", "finding": "EBITDA margin of 29.34% in FY26 vs a peer median of 7.21% (Thermax 9.60%, Ion Exchange 7.21%, Praj 4.79%).", "source": "https://www.indmoney.com/ipo/sfc-environmental-technologies-ltd-ipo"},
-  "va1": {"status": "pass", "finding": "Post-issue P/E of about 20.2x vs a peer median of 52.0x (Ion Exchange 31.3x, Thermax 52.0x, Praj 220.8x).", "source": "https://www.chittorgarh.com/ipo-recommendation/sfc-environmental-technologies-ipo/2070/"},
-  "va2": {"status": "pass", "finding": "Post-issue price to book of about 3.4x (₹3,233 cr market cap vs ₹954 cr post-issue net worth) vs a peer median of 4.1x.", "source": "https://www.chittorgarh.com/ipo-recommendation/sfc-environmental-technologies-ipo/2070/"},
-  "va3": {"status": "flag", "finding": "Post-issue market cap to sales of about 4.0x (₹3,233 cr vs ₹803.6 cr) vs an implied peer median of about 1.7x (from peer P/E, profit and revenue).", "source": "https://www.indmoney.com/ipo/sfc-environmental-technologies-ltd-ipo"},
-  "va4": {"status": "na", "finding": "No details of pre-IPO share issues or transfers were found in public sources.", "source": ""},
-  "pg1": {"status": "caution", "finding": "Promoters hold 41.18% after the issue, down from 48.18%.", "source": "https://www.chittorgarh.com/ipo/sfc-environmental-technologies-ipo/2070/"},
-  "pg2": {"status": "na", "finding": "No information on pledged promoter shares was found.", "source": ""},
-  "pg3": {"status": "na", "finding": "Related-party transaction figures were not found in public sources.", "source": ""},
-  "pg4": {"status": "na", "finding": "No information on regulatory action against promoters was found.", "source": ""},
-  "is1": {"status": "flag", "finding": "The offer for sale is ₹517.5 cr, or 77.5% of the ₹667.5 cr issue.", "source": "https://zerodha.com/ipo/440733/sfc-environmental-technologies-2"},
-  "is2": {"status": "pass", "finding": "The issue is about 20.7% of the ₹3,233 cr post-issue market cap.", "source": "https://www.chittorgarh.com/ipo/sfc-environmental-technologies-ipo/2070/"},
-  "is3": {"status": "na", "finding": "The selling shareholders' acquisition cost was not found in public sources.", "source": ""},
-  "up1": {"status": "flag", "finding": "None of the ₹150 cr fresh issue funds capex or expansion; it goes to working capital, debt prepayment and general purposes.", "source": "https://zerodha.com/ipo/440733/sfc-environmental-technologies-2"},
-  "up2": {"status": "pass", "finding": "₹42.2 cr, or 28.2% of the fresh issue, goes to prepaying borrowings of the company and its subsidiary.", "source": "https://zerodha.com/ipo/440733/sfc-environmental-technologies-2"},
-  "up3": {"status": "caution", "finding": "General corporate purposes take ₹32.9 cr, or 21.9% of the fresh issue.", "source": "https://zerodha.com/ipo/440733/sfc-environmental-technologies-2"},
-  "up4": {"status": "na", "finding": "Public sources don't say whose loans are being repaid.", "source": ""},
-  "lg1": {"status": "pass", "finding": "Material civil litigation involving subsidiary SFC Umwelttechnik GmbH totals ₹66.7 cr, about 8.3% of net worth.", "source": "https://www.oquilia.com/news/sfc-environmental-technologies-ipo-rhp-opens-october-27"},
-  "lg2": {"status": "na", "finding": "No information on criminal or regulatory cases was found.", "source": ""},
-  "lg3": {"status": "na", "finding": "Contingent liabilities were not found in public sources.", "source": ""},
-  "rk1": {"status": "caution", "finding": "Top 10 customers gave 64.44% of FY26 revenue (79.20% in Q1 FY27), mostly government-linked.", "source": "https://www.indmoney.com/ipo/sfc-environmental-technologies-ltd-ipo"},
-  "rk2": {"status": "caution", "finding": "Top 10 suppliers made up 55.66% of FY26 purchases, and reliance on a few suppliers is called out as a risk; single-supplier shares are not published.", "source": "https://www.indmoney.com/ipo/sfc-environmental-technologies-ltd-ipo"},
-  "rk3": {"status": "pass", "finding": "Incorporated in March 2005, so about 21 years of operating history.", "source": "https://trendlyne.com/ipo/detail/1801/sfc-environmental-technologies-ltd/"},
-  "rk4": {"status": "na", "finding": "Auditor remarks were not found in public sources.", "source": ""}
+  "fh1": {
+   "status": "caution",
+   "finding": "Revenue from operations rose from ₹657.5 cr (FY24) to ₹803.6 cr (FY26), a CAGR of about 10.6%.",
+   "source": "https://trendlyne.com/ipo/detail/1801/sfc-environmental-technologies-ltd/"
+  },
+  "fh2": {
+   "status": "pass",
+   "finding": "Revenue grew every year: ₹657.5 cr, ₹697.9 cr, ₹803.6 cr (FY24–FY26).",
+   "source": "https://trendlyne.com/ipo/detail/1801/sfc-environmental-technologies-ltd/"
+  },
+  "fh3": {
+   "status": "pass",
+   "finding": "Debt to equity was 0.24 at March 2026 (borrowings ₹195.6 cr vs net worth ₹804.2 cr).",
+   "source": "https://www.chittorgarh.com/ipo/sfc-environmental-technologies-ipo/2070/"
+  },
+  "fh4": {
+   "status": "flag",
+   "finding": "Borrowings rose 41% (₹139.2 cr to ₹195.6 cr) while revenue rose 22% over FY24–FY26; they more than doubled in FY26 alone.",
+   "source": "https://www.chittorgarh.com/ipo/sfc-environmental-technologies-ipo/2070/"
+  },
+  "fh5": {
+   "status": "pass",
+   "finding": "Net worth rose every year: ₹534.3 cr, ₹648.7 cr, ₹804.2 cr (FY24–FY26).",
+   "source": "https://www.chittorgarh.com/ipo/sfc-environmental-technologies-ipo/2070/"
+  },
+  "fh6": {
+   "status": "flag",
+   "finding": "Operating cash flow was negative at -₹25.8 cr in FY26, against a ₹160.2 cr profit.",
+   "source": "https://trendlyne.com/ipo/detail/1801/sfc-environmental-technologies-ltd/"
+  },
+  "pr1": {
+   "status": "caution",
+   "finding": "Profit after tax grew 5.4% in FY26, to ₹160.2 cr, while revenue grew about 15%.",
+   "source": "https://www.chittorgarh.com/ipo/sfc-environmental-technologies-ipo/2070/"
+  },
+  "pr2": {
+   "status": "flag",
+   "finding": "Net margin fell from 21.93% (FY24) to 19.94% (FY26), a drop of about 2 percentage points.",
+   "source": "https://www.indmoney.com/ipo/sfc-environmental-technologies-ltd-ipo"
+  },
+  "pr3": {
+   "status": "pass",
+   "finding": "Return on equity was 21.55% in FY26.",
+   "source": "https://www.chittorgarh.com/ipo/sfc-environmental-technologies-ipo/2070/"
+  },
+  "pr4": {
+   "status": "pass",
+   "finding": "ROCE was 22.21% in FY26.",
+   "source": "https://www.chittorgarh.com/ipo/sfc-environmental-technologies-ipo/2070/"
+  },
+  "pr5": {
+   "status": "pass",
+   "finding": "EBITDA margin of 29.34% in FY26 vs a peer median of 7.21% (Thermax 9.60%, Ion Exchange 7.21%, Praj 4.79%).",
+   "source": "https://www.indmoney.com/ipo/sfc-environmental-technologies-ltd-ipo"
+  },
+  "va1": {
+   "status": "pass",
+   "finding": "Post-issue P/E of about 20.2x vs a peer median of 52.0x (Ion Exchange 31.3x, Thermax 52.0x, Praj 220.8x).",
+   "source": "https://www.chittorgarh.com/ipo-recommendation/sfc-environmental-technologies-ipo/2070/"
+  },
+  "va2": {
+   "status": "pass",
+   "finding": "Post-issue price to book of about 3.4x (₹3,233 cr market cap vs ₹954 cr post-issue net worth) vs a peer median of 4.1x.",
+   "source": "https://www.chittorgarh.com/ipo-recommendation/sfc-environmental-technologies-ipo/2070/"
+  },
+  "va3": {
+   "status": "flag",
+   "finding": "Post-issue market cap to sales of about 4.0x (₹3,233 cr vs ₹803.6 cr) vs an implied peer median of about 1.7x (from peer P/E, profit and revenue).",
+   "source": "https://www.indmoney.com/ipo/sfc-environmental-technologies-ltd-ipo"
+  },
+  "va4": {
+   "status": "na",
+   "finding": "No details of pre-IPO share issues or transfers were found in public sources.",
+   "source": ""
+  },
+  "pg1": {
+   "status": "caution",
+   "finding": "Promoters hold 41.18% after the issue, down from 48.18%.",
+   "source": "https://www.chittorgarh.com/ipo/sfc-environmental-technologies-ipo/2070/"
+  },
+  "pg2": {
+   "status": "na",
+   "finding": "No information on pledged promoter shares was found.",
+   "source": ""
+  },
+  "pg3": {
+   "status": "na",
+   "finding": "Related-party transaction figures were not found in public sources.",
+   "source": ""
+  },
+  "pg4": {
+   "status": "na",
+   "finding": "No information on regulatory action against promoters was found.",
+   "source": ""
+  },
+  "is1": {
+   "status": "flag",
+   "finding": "The offer for sale is ₹517.5 cr, or 77.5% of the ₹667.5 cr issue.",
+   "source": "https://zerodha.com/ipo/440733/sfc-environmental-technologies-2"
+  },
+  "is2": {
+   "status": "pass",
+   "finding": "The issue is about 20.7% of the ₹3,233 cr post-issue market cap.",
+   "source": "https://www.chittorgarh.com/ipo/sfc-environmental-technologies-ipo/2070/"
+  },
+  "is3": {
+   "status": "na",
+   "finding": "The selling shareholders' acquisition cost was not found in public sources.",
+   "source": ""
+  },
+  "up1": {
+   "status": "flag",
+   "finding": "None of the ₹150 cr fresh issue funds capex or expansion; it goes to working capital, debt prepayment and general purposes.",
+   "source": "https://zerodha.com/ipo/440733/sfc-environmental-technologies-2"
+  },
+  "up2": {
+   "status": "pass",
+   "finding": "₹42.2 cr, or 28.2% of the fresh issue, goes to prepaying borrowings of the company and its subsidiary.",
+   "source": "https://zerodha.com/ipo/440733/sfc-environmental-technologies-2"
+  },
+  "up3": {
+   "status": "caution",
+   "finding": "General corporate purposes take ₹32.9 cr, or 21.9% of the fresh issue.",
+   "source": "https://zerodha.com/ipo/440733/sfc-environmental-technologies-2"
+  },
+  "up4": {
+   "status": "na",
+   "finding": "Public sources don't say whose loans are being repaid.",
+   "source": ""
+  },
+  "lg1": {
+   "status": "pass",
+   "finding": "Material civil litigation involving subsidiary SFC Umwelttechnik GmbH totals ₹66.7 cr, about 8.3% of net worth.",
+   "source": "https://www.oquilia.com/news/sfc-environmental-technologies-ipo-rhp-opens-october-27"
+  },
+  "lg2": {
+   "status": "na",
+   "finding": "No information on criminal or regulatory cases was found.",
+   "source": ""
+  },
+  "lg3": {
+   "status": "na",
+   "finding": "Contingent liabilities were not found in public sources.",
+   "source": ""
+  },
+  "rk1": {
+   "status": "caution",
+   "finding": "Top 10 customers gave 64.44% of FY26 revenue (79.20% in Q1 FY27), mostly government-linked.",
+   "source": "https://www.indmoney.com/ipo/sfc-environmental-technologies-ltd-ipo"
+  },
+  "rk2": {
+   "status": "caution",
+   "finding": "Top 10 suppliers made up 55.66% of FY26 purchases, and reliance on a few suppliers is called out as a risk; single-supplier shares are not published.",
+   "source": "https://www.indmoney.com/ipo/sfc-environmental-technologies-ltd-ipo"
+  },
+  "rk3": {
+   "status": "pass",
+   "finding": "Incorporated in March 2005, so about 21 years of operating history.",
+   "source": "https://trendlyne.com/ipo/detail/1801/sfc-environmental-technologies-ltd/"
+  },
+  "rk4": {
+   "status": "na",
+   "finding": "Auditor remarks were not found in public sources.",
+   "source": ""
+  }
  },
- "ipoMetrics": {"rev_cagr": 10.6, "pat_margin": 19.94, "roe": 21.55, "roce": 22.21, "de": 0.24, "pe": 20.18, "pb": 3.39},
+ "ipoMetrics": {
+  "rev_cagr": 10.6,
+  "pat_margin": 19.94,
+  "roe": 21.55,
+  "roce": 22.21,
+  "de": 0.24,
+  "pe": 20.18,
+  "pb": 3.39
+ },
+ "patGrowth": 5.4,
  "peers": [
-  {"name": "Thermax", "metrics": {"pat_margin": 6.73, "roe": 13.74, "roce": 15.0, "pe": 52.01, "pb": 6.76}},
-  {"name": "Praj Industries", "metrics": {"pat_margin": 0.75, "roe": 1.77, "roce": 5.59, "pe": 220.77, "pb": 4.04}},
-  {"name": "Ion Exchange (India)", "metrics": {"pat_margin": 4.91, "roe": 11.2, "roce": 14.3, "pe": 31.34, "pb": 4.14}}
+  {
+   "name": "Thermax",
+   "metrics": {
+    "pat_margin": 6.73,
+    "roe": 13.74,
+    "roce": 15.0,
+    "pe": 52.01,
+    "pb": 6.76
+   }
+  },
+  {
+   "name": "Praj Industries",
+   "metrics": {
+    "pat_margin": 0.75,
+    "roe": 1.77,
+    "roce": 5.59,
+    "pe": 220.77,
+    "pb": 4.04
+   }
+  },
+  {
+   "name": "Ion Exchange (India)",
+   "metrics": {
+    "pat_margin": 4.91,
+    "roe": 11.2,
+    "roce": 14.3,
+    "pe": 31.34,
+    "pb": 4.14
+   }
+  }
  ],
  "sources": [
-  {"url": "https://www.chittorgarh.com/ipo/sfc-environmental-technologies-ipo/2070/", "title": "SFC Environmental Technologies IPO details — Chittorgarh"},
-  {"url": "https://www.chittorgarh.com/ipo-recommendation/sfc-environmental-technologies-ipo/2070/", "title": "SFC Environmental Technologies IPO peer comparison — Chittorgarh"},
-  {"url": "https://zerodha.com/ipo/440733/sfc-environmental-technologies-2", "title": "SFC Environmental Technologies IPO — Zerodha"},
-  {"url": "https://trendlyne.com/ipo/detail/1801/sfc-environmental-technologies-ltd/", "title": "SFC Environmental Technologies IPO — Trendlyne"},
-  {"url": "https://www.indmoney.com/ipo/sfc-environmental-technologies-ltd-ipo", "title": "SFC Environmental Technologies IPO — INDmoney"},
-  {"url": "https://www.oquilia.com/news/sfc-environmental-technologies-ipo-rhp-opens-october-27", "title": "SFC Environmental Technologies RHP summary — Oquilia"},
-  {"url": "https://groww.in/blog/sfc-environmental-technologies-ipo-to-open-on-october-27-2026", "title": "SFC Environmental Technologies IPO key details — Groww"},
-  {"url": "https://chanakyanipothi.com/sfc-environmental-technologies-ipo-review/", "title": "SFC Environmental Technologies IPO review — Chanakya Nipothi"}
+  {
+   "url": "https://www.chittorgarh.com/ipo/sfc-environmental-technologies-ipo/2070/",
+   "title": "SFC Environmental Technologies IPO details — Chittorgarh"
+  },
+  {
+   "url": "https://www.chittorgarh.com/ipo-recommendation/sfc-environmental-technologies-ipo/2070/",
+   "title": "SFC Environmental Technologies IPO peer comparison — Chittorgarh"
+  },
+  {
+   "url": "https://zerodha.com/ipo/440733/sfc-environmental-technologies-2",
+   "title": "SFC Environmental Technologies IPO — Zerodha"
+  },
+  {
+   "url": "https://trendlyne.com/ipo/detail/1801/sfc-environmental-technologies-ltd/",
+   "title": "SFC Environmental Technologies IPO — Trendlyne"
+  },
+  {
+   "url": "https://www.indmoney.com/ipo/sfc-environmental-technologies-ltd-ipo",
+   "title": "SFC Environmental Technologies IPO — INDmoney"
+  },
+  {
+   "url": "https://www.oquilia.com/news/sfc-environmental-technologies-ipo-rhp-opens-october-27",
+   "title": "SFC Environmental Technologies RHP summary — Oquilia"
+  },
+  {
+   "url": "https://groww.in/blog/sfc-environmental-technologies-ipo-to-open-on-october-27-2026",
+   "title": "SFC Environmental Technologies IPO key details — Groww"
+  },
+  {
+   "url": "https://chanakyanipothi.com/sfc-environmental-technologies-ipo-review/",
+   "title": "SFC Environmental Technologies IPO review — Chanakya Nipothi"
+  }
  ]
 }

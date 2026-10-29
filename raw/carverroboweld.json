@@ -14,52 +14,232 @@
  "researchedOn": "2026-10-29",
  "summary": "Carver Roboweld makes welding consumables (metal-cored wires, welding rods, gouging electrodes) at a plant in Rajkot, Gujarat, and rents welding robots and regenerates forging dies through service units in Pune, Ludhiana and Hosur; all of its revenue comes from the forging industry. On a standalone basis revenue grew from ₹21.7 cr in FY24 to ₹27.0 cr in FY26, while profit more than doubled in FY26 to ₹3.5 cr as margins widened. The top ten customers gave about 81% of FY26 revenue, and operating cash flow was negative in FY26. At the upper band the post-issue P/E is about 30x standalone FY26 profit (about 20x on consolidated profit), above the 18.2x median of the listed peers named in the RHP.",
  "checks": {
-  "fh1": {"status": "caution", "finding": "Standalone revenue rose from ₹21.67 cr (FY24) to ₹27.02 cr (FY26), a CAGR of about 11.7%.", "source": "https://www.5paisa.com/hindi/sme-ipo/carver-roboweld-ltd-ipo"},
-  "fh2": {"status": "pass", "finding": "Revenue grew every year: ₹21.67 cr, ₹24.86 cr, ₹27.02 cr (FY24–FY26).", "source": "https://www.5paisa.com/hindi/sme-ipo/carver-roboweld-ltd-ipo"},
-  "fh3": {"status": "pass", "finding": "Debt to equity was 0.97 in FY26 (borrowings ₹15.65 cr vs net worth ₹16.13 cr).", "source": "https://www.chittorgarh.com/ipo/carver-roboweld-ipo/3239/"},
-  "fh4": {"status": "pass", "finding": "Borrowings rose 17% (₹13.39 cr to ₹15.65 cr) while total income rose 25% over FY24–FY26.", "source": "https://www.chittorgarh.com/ipo/carver-roboweld-ipo/3239/"},
-  "fh5": {"status": "pass", "finding": "Net worth rose every year: ₹3.11 cr, ₹4.56 cr, ₹16.13 cr (FY24–FY26).", "source": "https://www.chittorgarh.com/ipo/carver-roboweld-ipo/3239/"},
-  "fh6": {"status": "flag", "finding": "Operating cash flow was negative at -₹2.65 cr in FY26.", "source": "https://www.5paisa.com/hindi/sme-ipo/carver-roboweld-ltd-ipo"},
-  "pr1": {"status": "pass", "finding": "Profit after tax rose 140% in FY26, from ₹1.45 cr to ₹3.48 cr.", "source": "https://www.chittorgarh.com/ipo/carver-roboweld-ipo/3239/"},
-  "pr2": {"status": "pass", "finding": "Net margin rose from about 4.7% (FY24) to 5.8% (FY25) and 12.9% (FY26).", "source": "https://www.5paisa.com/hindi/sme-ipo/carver-roboweld-ltd-ipo"},
-  "pr3": {"status": "pass", "finding": "Return on net worth was 21.57% in FY26 (standalone).", "source": "https://www.chittorgarh.com/ipo/carver-roboweld-ipo/3239/"},
-  "pr4": {"status": "pass", "finding": "ROCE was 21.64% in FY26.", "source": "https://www.chittorgarh.com/ipo/carver-roboweld-ipo/3239/"},
-  "pr5": {"status": "na", "finding": "Peer margins were not found in public sources.", "source": ""},
-  "va1": {"status": "flag", "finding": "Post-issue P/E of about 30.1x on standalone FY26 profit (₹104.8 cr market cap vs ₹3.48 cr) vs a peer median of 18.2x (Royal Arc 18.2x, Diffusion Engineers 34.5x, Classic Electrodes 7.0x).", "source": "https://www.chittorgarh.com/ipo-recommendation/carver-roboweld-ipo/3239/"},
-  "va2": {"status": "caution", "finding": "Post-issue price to book of about 2.36x (₹104.8 cr market cap vs about ₹44.4 cr post-issue net worth) vs a peer median of about 2.25x.", "source": "https://www.chittorgarh.com/ipo-recommendation/carver-roboweld-ipo/3239/"},
-  "va3": {"status": "na", "finding": "Peer market cap to sales figures were not found in public sources.", "source": ""},
-  "va4": {"status": "na", "finding": "Prices of any share issues in the 12 months before the IPO were not found in public sources.", "source": ""},
-  "pg1": {"status": "pass", "finding": "Promoters hold 65.77% after the issue, down from 90.07%.", "source": "https://www.chittorgarh.com/ipo/carver-roboweld-ipo/3239/"},
-  "pg2": {"status": "na", "finding": "No information on pledged promoter shares was found.", "source": ""},
-  "pg3": {"status": "na", "finding": "Related-party transaction figures were not found in public sources.", "source": ""},
-  "pg4": {"status": "na", "finding": "No information on regulatory action against promoters was found.", "source": ""},
-  "is1": {"status": "pass", "finding": "The entire ₹28.29 cr issue is fresh; there is no offer for sale.", "source": "https://zerodha.com/ipo/461547/carver-roboweld"},
-  "is2": {"status": "pass", "finding": "The issue is about 27% of the ₹104.8 cr post-issue market cap.", "source": "https://www.chittorgarh.com/ipo/carver-roboweld-ipo/3239/"},
-  "is3": {"status": "pass", "finding": "No selling shareholders, because there is no offer for sale.", "source": "https://zerodha.com/ipo/461547/carver-roboweld"},
-  "up1": {"status": "pass", "finding": "₹11.99 cr, or 42.4% of the issue, goes to buying welding robots.", "source": "https://zerodha.com/ipo/461547/carver-roboweld"},
-  "up2": {"status": "pass", "finding": "₹8.60 cr, or 30.4% of the issue, goes to repaying borrowings.", "source": "https://zerodha.com/ipo/461547/carver-roboweld"},
-  "up3": {"status": "flag", "finding": "General corporate purposes are shown at ₹7.70 cr, or 27.2% of the issue (this figure may include issue expenses).", "source": "https://zerodha.com/ipo/461547/carver-roboweld"},
-  "up4": {"status": "na", "finding": "Public sources don't say whose loans are being repaid beyond banks and financial institutions.", "source": ""},
-  "lg1": {"status": "na", "finding": "Litigation amounts were not found in public sources.", "source": ""},
-  "lg2": {"status": "na", "finding": "No information on criminal or regulatory cases was found.", "source": ""},
-  "lg3": {"status": "na", "finding": "Contingent liabilities were not found in public sources.", "source": ""},
-  "rk1": {"status": "flag", "finding": "The top ten customers gave 80.78% of FY26 revenue, and all revenue comes from the forging industry.", "source": "https://choiceindia.com/ipo/carver-roboweld-ipo"},
-  "rk2": {"status": "caution", "finding": "The top ten suppliers gave 92.43% of FY26 purchases and reliance on a few suppliers is called out as a risk; single-supplier shares are not published.", "source": "https://choiceindia.com/ipo/carver-roboweld-ipo"},
-  "rk3": {"status": "pass", "finding": "Incorporated in August 2009, so about 17 years of operating history.", "source": "https://trendlyne.com/ipo/detail/2584/carver-roboweld-ltd/"},
-  "rk4": {"status": "na", "finding": "Auditor remarks were not found in public sources.", "source": ""}
+  "fh1": {
+   "status": "caution",
+   "finding": "Standalone revenue rose from ₹21.67 cr (FY24) to ₹27.02 cr (FY26), a CAGR of about 11.7%.",
+   "source": "https://www.5paisa.com/hindi/sme-ipo/carver-roboweld-ltd-ipo"
+  },
+  "fh2": {
+   "status": "pass",
+   "finding": "Revenue grew every year: ₹21.67 cr, ₹24.86 cr, ₹27.02 cr (FY24–FY26).",
+   "source": "https://www.5paisa.com/hindi/sme-ipo/carver-roboweld-ltd-ipo"
+  },
+  "fh3": {
+   "status": "pass",
+   "finding": "Debt to equity was 0.97 in FY26 (borrowings ₹15.65 cr vs net worth ₹16.13 cr).",
+   "source": "https://www.chittorgarh.com/ipo/carver-roboweld-ipo/3239/"
+  },
+  "fh4": {
+   "status": "pass",
+   "finding": "Borrowings rose 17% (₹13.39 cr to ₹15.65 cr) while total income rose 25% over FY24–FY26.",
+   "source": "https://www.chittorgarh.com/ipo/carver-roboweld-ipo/3239/"
+  },
+  "fh5": {
+   "status": "pass",
+   "finding": "Net worth rose every year: ₹3.11 cr, ₹4.56 cr, ₹16.13 cr (FY24–FY26).",
+   "source": "https://www.chittorgarh.com/ipo/carver-roboweld-ipo/3239/"
+  },
+  "fh6": {
+   "status": "flag",
+   "finding": "Operating cash flow was negative at -₹2.65 cr in FY26.",
+   "source": "https://www.5paisa.com/hindi/sme-ipo/carver-roboweld-ltd-ipo"
+  },
+  "pr1": {
+   "status": "pass",
+   "finding": "Profit after tax rose 140% in FY26, from ₹1.45 cr to ₹3.48 cr.",
+   "source": "https://www.chittorgarh.com/ipo/carver-roboweld-ipo/3239/"
+  },
+  "pr2": {
+   "status": "pass",
+   "finding": "Net margin rose from about 4.7% (FY24) to 5.8% (FY25) and 12.9% (FY26).",
+   "source": "https://www.5paisa.com/hindi/sme-ipo/carver-roboweld-ltd-ipo"
+  },
+  "pr3": {
+   "status": "pass",
+   "finding": "Return on net worth was 21.57% in FY26 (standalone).",
+   "source": "https://www.chittorgarh.com/ipo/carver-roboweld-ipo/3239/"
+  },
+  "pr4": {
+   "status": "pass",
+   "finding": "ROCE was 21.64% in FY26.",
+   "source": "https://www.chittorgarh.com/ipo/carver-roboweld-ipo/3239/"
+  },
+  "pr5": {
+   "status": "na",
+   "finding": "Peer margins were not found in public sources.",
+   "source": ""
+  },
+  "va1": {
+   "status": "flag",
+   "finding": "Post-issue P/E of about 30.1x on standalone FY26 profit (₹104.8 cr market cap vs ₹3.48 cr) vs a peer median of 18.2x (Royal Arc 18.2x, Diffusion Engineers 34.5x, Classic Electrodes 7.0x).",
+   "source": "https://www.chittorgarh.com/ipo-recommendation/carver-roboweld-ipo/3239/"
+  },
+  "va2": {
+   "status": "caution",
+   "finding": "Post-issue price to book of about 2.36x (₹104.8 cr market cap vs about ₹44.4 cr post-issue net worth) vs a peer median of about 2.25x.",
+   "source": "https://www.chittorgarh.com/ipo-recommendation/carver-roboweld-ipo/3239/"
+  },
+  "va3": {
+   "status": "na",
+   "finding": "Peer market cap to sales figures were not found in public sources.",
+   "source": ""
+  },
+  "va4": {
+   "status": "na",
+   "finding": "Prices of any share issues in the 12 months before the IPO were not found in public sources.",
+   "source": ""
+  },
+  "pg1": {
+   "status": "pass",
+   "finding": "Promoters hold 65.77% after the issue, down from 90.07%.",
+   "source": "https://www.chittorgarh.com/ipo/carver-roboweld-ipo/3239/"
+  },
+  "pg2": {
+   "status": "na",
+   "finding": "No information on pledged promoter shares was found.",
+   "source": ""
+  },
+  "pg3": {
+   "status": "na",
+   "finding": "Related-party transaction figures were not found in public sources.",
+   "source": ""
+  },
+  "pg4": {
+   "status": "na",
+   "finding": "No information on regulatory action against promoters was found.",
+   "source": ""
+  },
+  "is1": {
+   "status": "pass",
+   "finding": "The entire ₹28.29 cr issue is fresh; there is no offer for sale.",
+   "source": "https://zerodha.com/ipo/461547/carver-roboweld"
+  },
+  "is2": {
+   "status": "pass",
+   "finding": "The issue is about 27% of the ₹104.8 cr post-issue market cap.",
+   "source": "https://www.chittorgarh.com/ipo/carver-roboweld-ipo/3239/"
+  },
+  "is3": {
+   "status": "pass",
+   "finding": "No selling shareholders, because there is no offer for sale.",
+   "source": "https://zerodha.com/ipo/461547/carver-roboweld"
+  },
+  "up1": {
+   "status": "pass",
+   "finding": "₹11.99 cr, or 42.4% of the issue, goes to buying welding robots.",
+   "source": "https://zerodha.com/ipo/461547/carver-roboweld"
+  },
+  "up2": {
+   "status": "pass",
+   "finding": "₹8.60 cr, or 30.4% of the issue, goes to repaying borrowings.",
+   "source": "https://zerodha.com/ipo/461547/carver-roboweld"
+  },
+  "up3": {
+   "status": "flag",
+   "finding": "General corporate purposes are shown at ₹7.70 cr, or 27.2% of the issue (this figure may include issue expenses).",
+   "source": "https://zerodha.com/ipo/461547/carver-roboweld"
+  },
+  "up4": {
+   "status": "na",
+   "finding": "Public sources don't say whose loans are being repaid beyond banks and financial institutions.",
+   "source": ""
+  },
+  "lg1": {
+   "status": "na",
+   "finding": "Litigation amounts were not found in public sources.",
+   "source": ""
+  },
+  "lg2": {
+   "status": "na",
+   "finding": "No information on criminal or regulatory cases was found.",
+   "source": ""
+  },
+  "lg3": {
+   "status": "na",
+   "finding": "Contingent liabilities were not found in public sources.",
+   "source": ""
+  },
+  "rk1": {
+   "status": "flag",
+   "finding": "The top ten customers gave 80.78% of FY26 revenue, and all revenue comes from the forging industry.",
+   "source": "https://choiceindia.com/ipo/carver-roboweld-ipo"
+  },
+  "rk2": {
+   "status": "caution",
+   "finding": "The top ten suppliers gave 92.43% of FY26 purchases and reliance on a few suppliers is called out as a risk; single-supplier shares are not published.",
+   "source": "https://choiceindia.com/ipo/carver-roboweld-ipo"
+  },
+  "rk3": {
+   "status": "pass",
+   "finding": "Incorporated in August 2009, so about 17 years of operating history.",
+   "source": "https://trendlyne.com/ipo/detail/2584/carver-roboweld-ltd/"
+  },
+  "rk4": {
+   "status": "na",
+   "finding": "Auditor remarks were not found in public sources.",
+   "source": ""
+  }
  },
- "ipoMetrics": {"rev_cagr": 11.7, "pat_margin": 12.88, "roe": 21.57, "roce": 21.64, "de": 0.97, "pe": 30.1, "pb": 2.36},
+ "ipoMetrics": {
+  "rev_cagr": 11.7,
+  "pat_margin": 12.88,
+  "roe": 21.57,
+  "roce": 21.64,
+  "de": 0.97,
+  "pe": 30.1,
+  "pb": 2.36
+ },
+ "patGrowth": 140.0,
  "peers": [
-  {"name": "Royal Arc Electrodes", "metrics": {"roe": 12.36, "pe": 18.18, "pb": 2.25}},
-  {"name": "Diffusion Engineers", "metrics": {"roe": 11.61, "pe": 34.52, "pb": 4.03}},
-  {"name": "Classic Electrodes (India)", "metrics": {"roe": 13.28, "pe": 7.03, "pb": 0.93}}
+  {
+   "name": "Royal Arc Electrodes",
+   "metrics": {
+    "roe": 12.36,
+    "pe": 18.18,
+    "pb": 2.25
+   }
+  },
+  {
+   "name": "Diffusion Engineers",
+   "metrics": {
+    "roe": 11.61,
+    "pe": 34.52,
+    "pb": 4.03
+   }
+  },
+  {
+   "name": "Classic Electrodes (India)",
+   "metrics": {
+    "roe": 13.28,
+    "pe": 7.03,
+    "pb": 0.93
+   }
+  }
  ],
  "sources": [
-  {"url": "https://zerodha.com/ipo/461547/carver-roboweld", "title": "Carver Roboweld IPO — Zerodha"},
-  {"url": "https://www.chittorgarh.com/ipo/carver-roboweld-ipo/3239/", "title": "Carver Roboweld IPO details — Chittorgarh"},
-  {"url": "https://www.chittorgarh.com/ipo-recommendation/carver-roboweld-ipo/3239/", "title": "Carver Roboweld IPO peer comparison — Chittorgarh"},
-  {"url": "https://www.5paisa.com/hindi/sme-ipo/carver-roboweld-ltd-ipo", "title": "Carver Roboweld IPO — 5paisa"},
-  {"url": "https://choiceindia.com/ipo/carver-roboweld-ipo", "title": "Carver Roboweld IPO — Choice India"},
-  {"url": "https://trendlyne.com/ipo/detail/2584/carver-roboweld-ltd/", "title": "Carver Roboweld IPO — Trendlyne"}
+  {
+   "url": "https://zerodha.com/ipo/461547/carver-roboweld",
+   "title": "Carver Roboweld IPO — Zerodha"
+  },
+  {
+   "url": "https://www.chittorgarh.com/ipo/carver-roboweld-ipo/3239/",
+   "title": "Carver Roboweld IPO details — Chittorgarh"
+  },
+  {
+   "url": "https://www.chittorgarh.com/ipo-recommendation/carver-roboweld-ipo/3239/",
+   "title": "Carver Roboweld IPO peer comparison — Chittorgarh"
+  },
+  {
+   "url": "https://www.5paisa.com/hindi/sme-ipo/carver-roboweld-ltd-ipo",
+   "title": "Carver Roboweld IPO — 5paisa"
+  },
+  {
+   "url": "https://choiceindia.com/ipo/carver-roboweld-ipo",
+   "title": "Carver Roboweld IPO — Choice India"
+  },
+  {
+   "url": "https://trendlyne.com/ipo/detail/2584/carver-roboweld-ltd/",
+   "title": "Carver Roboweld IPO — Trendlyne"
+  }
  ]
 }

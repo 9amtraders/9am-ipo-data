@@ -76,6 +76,12 @@ function init(root) {
       ['P/E (post-issue, upper band)', 'x', 'low', 46, [38, 31, 27, 42]],
       ['Price to book', 'x', 'low', 7.9, [6.8, 4.2, 3.1, 6.0]]
     ],
+    drivers: [
+      { name: 'Subscription demand', weight: 20, score: 80, detail: 'Subscribed 24x overall and 61x by QIBs.' },
+      { name: 'Profit growth (RHP)', weight: 20, score: 85, detail: 'Profit after tax grew 31% in the latest year in the RHP.' },
+      { name: 'P/E vs listed peers', weight: 20, score: 35, detail: 'P/E 46x vs peer median 34.5x, 33% above.' },
+      { name: 'All 33 checks', weight: 40, score: 76, detail: 'Financial health, governance, issue structure, use of proceeds, legal and risk checks.' }
+    ],
     sources: [], generatedAt: null
   };
   /* =================== END SETTINGS =================== */
@@ -366,6 +372,16 @@ function init(root) {
     }).join('') + '</ul></div>';
   }
 
+
+  function driversHtml(R) {
+    if (!R.drivers || !R.drivers.length) return '';
+    return '<div class="drivers"><h3 style="margin:0 0 4px">What drives this score</h3><p class="sub" style="margin:0 0 6px">Subscription, profit growth and P/E count for 60% of the score. The other checks count for 40%.</p>' +
+      R.drivers.map(function (d) {
+        var col = d.score >= 76 ? '#14254A' : d.score >= 51 ? '#2F5DA8' : d.score >= 26 ? '#E08A00' : '#C62828';
+        return '<div class="drv"><div class="drv-top"><span>' + esc(d.name) + ' <em>' + d.weight + '%</em></span><b>' + d.score + '</b></div>' +
+          '<div class="bar" aria-hidden="true"><i style="width:' + d.score + '%;background:' + col + '"></i></div><p>' + esc(d.detail) + '</p></div>';
+      }).join('') + '</div>';
+  }
   function renderFull(ipo, R) {
     var banners = '';
     if (ipo.sample) banners += '<div class="banner"><span><strong>Sample report.</strong> Search above or pick an IPO to get its real report.</span></div>';
@@ -395,7 +411,7 @@ function init(root) {
       '<div><div class="scale-bar" style="background:#F8DDB0"></div><strong style="color:#8A5300">Okay</strong><span>26 – 50</span></div>' +
       '<div><div class="scale-bar" style="background:#2F5DA8"></div><strong style="color:#2F5DA8">Good</strong><span>51 – 75</span></div>' +
       '<div><div class="scale-bar" style="background:#C9D2E6;border-radius:0 6px 6px 0"></div><strong style="color:#14254A">Strong</strong><span>76 – 100</span></div></div></div>' : '') +
-      studyNote + '</div>' +
+      driversHtml(R) + studyNote + '</div>' +
       '<div class="card"><h3>Scores by category</h3><div class="cats">' + cats + '</div></div>' +
       '<div class="card"><h3 style="color:#C62828">Red flags</h3>' + flags + '</div>' +
       peerHtml(R) + checksHtml(R) + sourcesHtml(R);

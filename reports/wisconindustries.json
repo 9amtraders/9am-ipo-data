@@ -13,7 +13,34 @@
  "ofsCr": 22.0,
  "lotSize": 600,
  "summary": "Wiscon Industries is a Delhi-based company, incorporated in September 2022, that trades and distributes LED TVs, air coolers, washing machines and ACs under its own Wiscon brand and sells third-party electric scooters; it recently acquired LED TV maker Dalmia Technologies as a wholly owned subsidiary. Consolidated revenue jumped from ₹3.2 cr in FY24 and ₹14.5 cr in FY25 to ₹196.9 cr in FY26, with profit of ₹20.4 cr in FY26, but most of that jump comes from the acquired subsidiary and operating cash flow was negative ₹20 cr in FY26. Of the ₹88 cr fresh issue, only ₹15 cr (17%) funds new machinery while ₹52 cr goes to working capital; promoter Sidhant Dalmia also sells ₹22 cr through the offer for sale. At the upper band the post-issue P/E on FY26 profit is about 20x, roughly 26% above the only listed peer named in the RHP, Cellecor Gadgets.",
- "score": 66,
+ "score": 59,
+ "checksScore": 66,
+ "drivers": [
+  {
+   "name": "Subscription demand",
+   "weight": 20,
+   "score": 28,
+   "detail": "Subscribed 0.9x overall and 2x by QIBs (bidding still open)."
+  },
+  {
+   "name": "Profit growth (RHP)",
+   "weight": 20,
+   "score": 100,
+   "detail": "Profit after tax grew 1532.8% in the latest year in the RHP."
+  },
+  {
+   "name": "P/E vs listed peers",
+   "weight": 20,
+   "score": 35,
+   "detail": "P/E 19.98x vs peer median 15.9x, 26% above."
+  },
+  {
+   "name": "All 33 checks",
+   "weight": 40,
+   "score": 66,
+   "detail": "Financial health, governance, issue structure, use of proceeds, legal and risk checks."
+  }
+ ],
  "counts": {
   "pass": 15,
   "caution": 3,

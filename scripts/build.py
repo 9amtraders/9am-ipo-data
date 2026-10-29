@@ -84,7 +84,57 @@ def subscription(v, where):
     return out, {"chance": round(c * 100, 1), "oneIn": max(1, round(1 / c)), "basis": basis}
 
 
-def build_report(raw, fname):
+# The score leans on three things: demand in the subscription, profit growth in the RHP, and P/E vs peers.
+# Each counts 20%; the other checks of the 33-check list make up the remaining 40%.
+WEIGHTS = {"subscription": 20, "profit": 20, "pe": 20, "checks": 40}
+STATUS_PTS = {"pass": 85, "caution": 55, "flag": 20, "na": 50}
+
+
+def band_score(v, bands, below):
+    for limit, pts in bands:
+        if v >= limit:
+            return pts
+    return below
+
+
+def sub_driver(sub):
+    if not sub or (sub.get("total") is None and sub.get("qib") is None):
+        return 50, "Subscription not available yet, scored as neutral until bidding opens."
+    bands = [(100, 100), (50, 90), (20, 80), (10, 70), (3, 55), (1, 40)]
+    t, q = sub.get("total"), sub.get("qib")
+    parts = [band_score(x, bands, 15) for x in (t, q) if x is not None]
+    pts = round(sum(parts) / len(parts))
+    bits = []
+    if t is not None:
+        bits.append(f"{t:g}x overall")
+    if q is not None:
+        bits.append(f"{q:g}x by QIBs")
+    live = "" if sub.get("final") else " (bidding still open)"
+    return pts, "Subscribed " + " and ".join(bits) + live + "."
+
+
+def profit_driver(raw, status):
+    g = num_or_none(raw.get("patGrowth"))
+    if g is None:
+        return STATUS_PTS.get(status, 50), "Latest-year profit growth figure not found; scored from the profit growth check."
+    pts = band_score(g, [(50, 100), (25, 85), (15, 70), (5, 50), (0, 35)], 10)
+    return pts, f"Profit after tax {'grew' if g >= 0 else 'fell'} {abs(g):g}% in the latest year in the RHP."
+
+
+def pe_driver(raw, peers, status):
+    ipo_pe = num_or_none((raw.get("ipoMetrics") or {}).get("pe"))
+    pes = sorted(x for x in (num_or_none((p.get("metrics") or {}).get("pe")) for p in peers) if x and x > 0)
+    if ipo_pe and pes:
+        n = len(pes)
+        med = pes[n // 2] if n % 2 else (pes[n // 2 - 1] + pes[n // 2]) / 2
+        r = ipo_pe / med
+        pts = 100 if r <= 0.75 else 85 if r <= 1 else 60 if r <= 1.25 else 35 if r <= 1.5 else 15
+        word = "below" if r < 1 else "above"
+        return pts, f"P/E {ipo_pe:g}x vs peer median {med:.1f}x, {abs(r - 1) * 100:.0f}% {word}."
+    return STATUS_PTS.get(status, 50), "Peer P/E figures not found; scored from the P/E check."
+
+
+def build_report(raw, fname, sub=None):
     cats = CFG["categories"]
     counts = {s: 0 for s in STATUSES}
     by_cat = {}
@@ -149,6 +199,18 @@ def build_report(raw, fname):
     size = num_or_none(raw.get("issueSizeCr"))
     if size is None and fresh is not None:
         size = round(fresh + (ofs or 0), 2)
+    checks_score = round(wsum / wtot) if wtot else None
+    st = {c["id"]: c["status"] for c in checks}
+    d_sub = sub_driver(sub)
+    d_profit = profit_driver(raw, st.get("pr1"))
+    d_pe = pe_driver(raw, peers, st.get("va1"))
+    drivers = [
+        {"name": "Subscription demand", "weight": WEIGHTS["subscription"], "score": d_sub[0], "detail": d_sub[1]},
+        {"name": "Profit growth (RHP)", "weight": WEIGHTS["profit"], "score": d_profit[0], "detail": d_profit[1]},
+        {"name": "P/E vs listed peers", "weight": WEIGHTS["pe"], "score": d_pe[0], "detail": d_pe[1]},
+        {"name": "All 33 checks", "weight": WEIGHTS["checks"], "score": checks_score if checks_score is not None else 50, "detail": "Financial health, governance, issue structure, use of proceeds, legal and risk checks."},
+    ]
+    score = round(sum(d["score"] * d["weight"] for d in drivers) / sum(d["weight"] for d in drivers))
     total = len(CFG["checks"])
     name = text(raw.get("name"), 80)
     if not name:
@@ -169,7 +231,9 @@ def build_report(raw, fname):
         "ofsCr": ofs,
         "lotSize": int(raw["lotSize"]) if isinstance(raw.get("lotSize"), (int, float)) else None,
         "summary": text(raw.get("summary"), 900),
-        "score": round(wsum / wtot) if wtot else None,
+        "score": score,
+        "checksScore": checks_score,
+        "drivers": drivers,
         "counts": counts,
         "totalChecks": total,
         "confidence": "low" if counts["na"] / total > 0.35 else "normal",
@@ -185,6 +249,11 @@ def build_report(raw, fname):
 def main():
     (ROOT / "reports").mkdir(exist_ok=True)
     lst = json.loads((ROOT / "list.json").read_text(encoding="utf-8"))
+    subs = {}
+    for i in lst.get("ipos", []):
+        sub, _ = subscription(i.get("sub"), f"list.json {text(i.get('name'), 80)}")
+        if sub:
+            subs[slug(i.get("name"))] = sub
     reports = {}
     for f in sorted((ROOT / "raw").glob("*.json")):
         try:
@@ -192,7 +261,7 @@ def main():
         except json.JSONDecodeError as e:
             errors.append(f"{f.name}: invalid JSON ({e})")
             continue
-        rep = build_report(raw, f.name)
+        rep = build_report(raw, f.name, subs.get(slug(raw.get("name"))))
         if rep["id"]:
             reports[rep["id"]] = rep
             (ROOT / "reports" / f"{rep['id']}.json").write_text(json.dumps(rep, ensure_ascii=False, indent=1), encoding="utf-8")
@@ -228,7 +297,7 @@ def main():
                         "listing": rep["listing"], "band": rep["band"], "hasReport": True, "score": rep["score"], "archived": True})
 
     if errors:
-        print("Problems found, nothing written to ipos.json:\n- " + "\n- ".join(errors))
+        print("Problems found, nothing written to ipos.json:\n- " + "\n- ".join(dict.fromkeys(errors)))
         sys.exit(1)
     updated = date_or_none(lst.get("updated")) or datetime.now(IST).date().isoformat()
     (ROOT / "ipos.json").write_text(json.dumps({"updated": updated, "ipos": out}, ensure_ascii=False, indent=1), encoding="utf-8")

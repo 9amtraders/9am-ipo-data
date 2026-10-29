@@ -13,7 +13,34 @@
  "ofsCr": 0.0,
  "lotSize": 100,
  "summary": "BLS Polymers, incorporated in 2003, makes custom polymer compounds (HDPE, MDPE, LLDPE, XLPE, HFFR, PVC and adhesive coatings) for wire and cable insulation and 3LPE pipeline coating, from a single plant in Goa; wires and cables make up about 81% of sales. Revenue grew slowly, from ₹296 cr in FY24 to ₹349 cr in FY26 (about 8.6% a year), but profit rose from ₹7.5 cr to ₹27.0 cr as the net margin widened to 7.7% and debt to equity fell to 0.54. The whole ₹255 cr issue is fresh money, with ₹77.6 cr for expanding the Goa plant and ₹89.5 cr for working capital. At the upper band the post-issue P/E is about 34.5x, well above the 14.5x median of the listed peers named in the RHP, and the top customer alone gave 31.7% of FY26 revenue.",
- "score": 70,
+ "score": 68,
+ "checksScore": 70,
+ "drivers": [
+  {
+   "name": "Subscription demand",
+   "weight": 20,
+   "score": 100,
+   "detail": "Subscribed 241.22x overall and 200.25x by QIBs (bidding still open)."
+  },
+  {
+   "name": "Profit growth (RHP)",
+   "weight": 20,
+   "score": 85,
+   "detail": "Profit after tax grew 28% in the latest year in the RHP."
+  },
+  {
+   "name": "P/E vs listed peers",
+   "weight": 20,
+   "score": 15,
+   "detail": "P/E 34.45x vs peer median 14.5x, 137% above."
+  },
+  {
+   "name": "All 33 checks",
+   "weight": 40,
+   "score": 70,
+   "detail": "Financial health, governance, issue structure, use of proceeds, legal and risk checks."
+  }
+ ],
  "counts": {
   "pass": 17,
   "caution": 5,
