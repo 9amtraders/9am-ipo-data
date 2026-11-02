@@ -50,6 +50,32 @@ def url_or_empty(v):
     return v if isinstance(v, str) and re.match(r"^https?://[^\s\"'<>]+$", v) else ""
 
 
+# Registrars the allotment page has check links for. Keys are what ipos.json stores.
+REGISTRARS = {
+    "kfin": ("kfin",),
+    "mufg": ("mufg", "link intime", "linkintime"),
+    "bigshare": ("bigshare",),
+    "cameo": ("cameo",),
+    "skyline": ("skyline",),
+    "maashitla": ("maashitla",),
+    "purva": ("purva",),
+    "integrated": ("integrated registry",),
+    "mas": ("mas services",),
+}
+
+
+def registrar_key(v, where):
+    """Maps a registrar name from list.json to a known key, or None if blank."""
+    if not isinstance(v, str) or not v.strip():
+        return None
+    low = v.lower()
+    for key, words in REGISTRARS.items():
+        if low == key or any(w in low for w in words):
+            return key
+    errors.append(f"{where}: unknown registrar '{text(v, 60)}' (known: {', '.join(REGISTRARS)})")
+    return None
+
+
 def subscription(v, where):
     """Cleans an IPO's subscription figures and works out a retail investor's allotment chance."""
     if not isinstance(v, dict):
@@ -315,6 +341,11 @@ def main():
             "hasReport": bool(rep),
             "score": rep["score"] if rep else None,
         })
+        reg = registrar_key(i.get("registrar"), f"list.json {name}")
+        if reg:
+            out[-1]["registrar"] = reg
+        if date_or_none(i.get("allotment")):
+            out[-1]["allotment"] = i["allotment"]
         sub, allot = subscription(i.get("sub"), f"list.json {name}")
         if sub:
             out[-1]["sub"] = sub

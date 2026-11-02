@@ -21,6 +21,10 @@ For every IPO that is open now or closed in the last 10 days, also give `sub`, i
 
 For every IPO give: `name` (official name without "Ltd"/"Limited"), `aka` (other names, brand names and common misspellings people might type, up to 8), `board` ("Mainboard" or "SME"), `open`, `close`, `listing` (YYYY-MM-DD or null), `band` (e.g. "₹78 – ₹82", or ""). Set `updated` to today's date. Never invent an IPO or a date.
 
+For every IPO with dates announced, also give (these feed the IPO Allotment Status page):
+- `registrar`: the issue's registrar as named in the RHP or on chittorgarh.com, using one of these keys: `kfin` (KFin Technologies), `mufg` (MUFG Intime India, formerly Link Intime), `bigshare`, `cameo`, `skyline`, `maashitla`, `purva`, `integrated` (Integrated Registry), `mas` (MAS Services). Use `null` if not found. `build.py` rejects any other value.
+- `allotment`: the basis-of-allotment date (YYYY-MM-DD) from the IPO's published timetable, or `null` if not announced. Never estimate it; the page estimates when it is missing.
+
 ## 2. Research new reports
 
 For each **mainboard** IPO that is open or opens within 7 days and has no file in `raw/`, research and write `raw/<id>.json`. `<id>` is the name lowercased with "ltd", "limited", "the", "and" and "&" removed and everything except letters and digits stripped (e.g. "Bombay Coated & Special Steels" → `bombaycoatedspecialsteels`). Do at most 4 new reports per run, open IPOs first. Add SME IPOs only if there are fewer than 4 mainboard ones.
