@@ -1,0 +1,189 @@
+<!-- 9AM Traders Academy | IPO Allotment Status Today
+     Lives in a WordPress Custom HTML block (normal editor, not Elementor).
+     TEMPLATE: scripts/render_allotment.py fills the N9AL placeholders from ipos.json and the GitHub workflow
+     publishes the result to the WordPress page. Edit this file, not the WordPress page. -->
+<div id="n9al">
+<style>
+#n9al{--navy:#14275a;--navy2:#0c1a3f;--red:#c1272d;--red2:#a01f25;--ink:#0e1a36;--grey:#5d6577;--line:#e3e7ef;--bg:#f5f7fb;--green:#1f8a52;
+  font-family:inherit;color:var(--ink);line-height:1.6;max-width:1140px;margin:0 auto;padding:0 16px;box-sizing:border-box}
+#n9al *{box-sizing:border-box}
+#n9al a{color:inherit}
+#n9al .hero{background:linear-gradient(160deg,#14275a,#0a1534);color:#fff;border-radius:18px;padding:40px 32px;margin:24px 0;position:relative;overflow:hidden}
+#n9al .hero:after{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px);background-size:40px 40px;pointer-events:none}
+#n9al .kicker{display:inline-block;background:var(--red);color:#fff;font-size:13px;font-weight:700;letter-spacing:2px;padding:5px 12px;border-radius:5px;text-transform:uppercase}
+#n9al h1{font-size:clamp(30px,5vw,46px);line-height:1.1;margin:14px 0 8px;color:#fff;font-weight:800}
+#n9al h1 span{color:#ff6b70}
+#n9al .hero p{color:#d5ddf0;margin:0 0 6px;max-width:720px;position:relative;z-index:1}
+#n9al .meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px;position:relative;z-index:1}
+#n9al .meta span{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.25);padding:6px 14px;border-radius:30px;font-size:14px}
+#n9al .meta b{color:#ff8a8e}
+#n9al .warn{background:#fff5f5;border:1px solid #f3c7c9;border-left:5px solid var(--red);border-radius:10px;padding:14px 18px;margin:0 0 22px;font-size:15px}
+#n9al .warn b{color:var(--red2)}
+#n9al h2{font-size:clamp(22px,3.4vw,30px);margin:38px 0 6px;color:var(--navy);font-weight:800}
+#n9al .sub{color:var(--grey);margin:0 0 16px}
+#n9al .tools{display:flex;flex-direction:column;gap:12px;margin:16px 0 18px}
+#n9al .search{width:100%;padding:13px 16px;border:1.5px solid var(--line);border-radius:10px;font-size:16px;font-family:inherit;background:#fff;color:var(--ink)}
+#n9al .search:focus{outline:none;border-color:var(--navy)}
+#n9al .tabs{display:flex;gap:8px;overflow-x:auto;padding-bottom:4px;-webkit-overflow-scrolling:touch}
+#n9al .tab{flex:0 0 auto;border:1.5px solid var(--line);background:#fff;color:var(--navy);padding:8px 14px;border-radius:30px;font-size:14px;font-weight:600;cursor:pointer;font-family:inherit;white-space:nowrap}
+#n9al .tab[aria-selected="true"]{background:var(--navy);color:#fff;border-color:var(--navy)}
+#n9al .tab small{opacity:.7;font-weight:500}
+#n9al .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px}
+#n9al .card{background:#fff;border:1px solid var(--line);border-top:4px solid var(--navy);border-radius:12px;padding:16px;display:flex;flex-direction:column;gap:8px}
+#n9al .card.risk{border-top-color:var(--red)}
+#n9al .card h3{font-size:17px;margin:0;color:var(--ink);font-weight:700;line-height:1.3}
+#n9al .tags{display:flex;flex-wrap:wrap;gap:6px}
+#n9al .tag{font-size:12px;font-weight:600;padding:3px 9px;border-radius:20px;background:var(--bg);color:var(--navy)}
+#n9al .tag.r{background:#fde8e9;color:var(--red2)}
+#n9al .tag.g{background:#e6f5ec;color:var(--green)}
+#n9al .card p{font-size:14px;color:var(--grey);margin:0;flex:1}
+#n9al .join{display:block;text-align:center;background:var(--navy);color:#fff!important;text-decoration:none;font-weight:700;padding:10px;border-radius:8px;font-size:15px}
+#n9al .join:hover{background:var(--navy2)}
+#n9al .join.ig{background:linear-gradient(90deg,#c13584,#e1306c,#f77737)}#n9al .join.ig:hover{filter:brightness(.92)}#n9al .card p.handle{flex:none;font-size:13px;color:var(--grey);margin:-4px 0 0}#n9al .card .join{margin-top:auto}
+#n9al .join.mu{background:var(--red)}
+#n9al .join.mu:hover{background:var(--red2)}
+#n9al .empty{display:none;text-align:center;color:var(--grey);padding:24px;border:1px dashed var(--line);border-radius:12px}
+#n9al .redflag{background:#fff;border:1px solid #f3c7c9;border-radius:16px;padding:24px;margin-top:14px}
+#n9al .flags{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px;margin-top:10px}
+#n9al .flag{background:#fff8f8;border-radius:10px;padding:14px}
+#n9al .flag h3{margin:0 0 4px;font-size:16px;color:var(--red2)}
+#n9al .flag p{margin:0;font-size:14px;color:var(--grey)}
+#n9al .report{background:var(--navy);color:#fff;border-radius:14px;padding:20px 22px;margin-top:16px;display:flex;flex-wrap:wrap;gap:14px 28px;align-items:center}
+#n9al .report b{color:#ff8a8e}
+#n9al .report a{color:#fff;font-weight:700}
+#n9al details{background:#fff;border:1px solid var(--line);border-radius:10px;padding:14px 18px;margin-bottom:10px}
+#n9al summary{font-weight:700;cursor:pointer;color:var(--navy)}
+#n9al details p{margin:10px 0 0;color:var(--grey)}
+#n9al .cta{background:linear-gradient(160deg,#14275a,#0a1534);color:#fff;border-radius:18px;padding:30px;margin:34px 0 16px;text-align:center}
+#n9al .cta h2{color:#fff;margin:0 0 8px}
+#n9al .cta p{color:#d5ddf0;margin:0 0 18px}
+#n9al .btn{display:inline-block;background:var(--red);color:#fff!important;text-decoration:none;font-weight:700;padding:14px 26px;border-radius:10px;box-shadow:0 5px 0 #7d1418}
+#n9al ul{padding-left:20px;color:var(--ink)}#n9al ul li{margin:4px 0}#n9al h3{color:var(--navy)}
+#n9al .rl{margin:8px 0 0;padding-left:18px;font-size:14px;color:var(--ink)}
+#n9al .disc{font-size:13px;color:var(--grey);border-top:1px solid var(--line);padding-top:14px;margin:20px 0 30px}
+@media (max-width:600px){#n9al .hero{padding:28px 20px}#n9al .redflag{padding:18px}}
+#n9al .status{display:inline-block;font-size:12px;font-weight:700;padding:3px 10px;border-radius:20px;background:var(--bg);color:var(--navy)}
+#n9al .status.out{background:#e6f5ec;color:var(--green)}#n9al .status.wait{background:#fff4dc;color:#9a6200}#n9al .status.open{background:#e8eefc;color:var(--navy)}#n9al .status.listed{background:#f0f1f5;color:var(--grey)}
+#n9al .card.hot{border-top-color:var(--green);box-shadow:0 0 0 2px rgba(31,138,82,.18)}
+#n9al .tl{display:grid;grid-template-columns:repeat(4,1fr);gap:4px;margin:4px 0 2px}
+#n9al .tl div{background:var(--bg);border-radius:8px;padding:6px 4px;text-align:center;font-size:11px;color:var(--grey);line-height:1.3}
+#n9al .tl b{display:block;color:var(--ink);font-size:12.5px}
+#n9al .tl .now{background:var(--navy);color:#cfd8ef}#n9al .tl .now b{color:#fff}
+#n9al .chance{font-size:13.5px;color:var(--ink);background:#f7f9fd;border-left:3px solid var(--navy);padding:6px 10px;border-radius:6px}
+#n9al .btns{display:flex;flex-direction:column;gap:6px;margin-top:auto}
+#n9al .join.alt{background:#fff;color:var(--navy)!important;border:1.5px solid var(--navy)}
+#n9al .row2{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+#n9al table{width:100%;border-collapse:collapse;font-size:15px;background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden}
+#n9al th,#n9al td{padding:11px 12px;border-bottom:1px solid var(--line);text-align:left;vertical-align:middle}
+#n9al th{background:var(--navy);color:#fff;font-size:14px}
+#n9al td a.mini{display:inline-block;background:var(--red);color:#fff!important;text-decoration:none;font-weight:700;font-size:13px;padding:7px 12px;border-radius:7px;white-space:nowrap}
+#n9al .steps{counter-reset:s;display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px;margin-top:10px}
+#n9al .step{background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px}
+#n9al .step h3{margin:0 0 6px;font-size:17px;color:var(--navy)}
+#n9al .step ol{margin:0;padding-left:18px;font-size:14.5px;color:var(--ink)}
+#n9al .loading{color:var(--grey);padding:18px;text-align:center;border:1px dashed var(--line);border-radius:12px}
+@media (max-width:600px){#n9al table{font-size:14px}#n9al th:nth-child(2),#n9al td:nth-child(2){display:none}}
+</style>
+
+<section class="hero">
+  <span class="kicker">Updates daily</span>
+  <h1>IPO Allotment Status <span>Today</span></h1>
+  <p>Check IPO allotment status by PAN for every current IPO. See each IPO's allotment, refund and listing dates, your retail chance of getting shares, and one-tap links to the registrar, BSE and NSE.</p>
+  <div class="meta"><span id="n9al-upd"><!--N9AL:UPDATED--></span><span>Free, no login</span></div>
+</section>
+
+<div class="warn"><b>Stay safe:</b> Only check allotment on the registrar, BSE or NSE websites linked here. No genuine site asks for your bank details, UPI PIN or OTP to show allotment status.</div>
+
+<h2>IPO allotment status this week</h2>
+<p class="sub">IPOs that are open, waiting for allotment or recently listed. Dates marked "expected" follow SEBI's T+3 timeline and may shift for holidays.</p>
+<div class="tools">
+  <input class="search" id="n9al-q" type="search" placeholder="Search an IPO by name" aria-label="Search IPOs">
+</div>
+<div class="grid" id="n9al-list"><!--N9AL:CARDS--></div>
+<div class="empty" id="n9al-empty">No IPO matches your search. You can still check any IPO using the registrar table below.</div>
+
+<h2>IPO registrar allotment status links</h2>
+<p class="sub">The registrar finalises the allotment and publishes the official status. Find your IPO's registrar in its RHP or on the card above.</p>
+<table>
+<thead><tr><th>Registrar</th><th>About</th><th>Allotment check</th></tr></thead>
+<tbody><tr><td><b>KFin Technologies</b></td><td>Formerly Karvy. Handles many large mainboard IPOs.</td><td><a class="mini" href="https://ipostatus.kfintech.com/" target="_blank" rel="noopener">Check status</a></td></tr><tr><td><b>MUFG Intime India (Link Intime)</b></td><td>Formerly Link Intime India.</td><td><a class="mini" href="https://in.mpms.mufg.com/Initial_Offer/public-issues.html" target="_blank" rel="noopener">Check status</a></td></tr><tr><td><b>Bigshare Services</b></td><td>Common for mainboard and SME issues.</td><td><a class="mini" href="https://ipo.bigshareonline.com/IPO_Status.html" target="_blank" rel="noopener">Check status</a></td></tr><tr><td><b>Cameo Corporate Services</b></td><td>Chennai-based registrar.</td><td><a class="mini" href="https://ipo.cameoindia.com/" target="_blank" rel="noopener">Check status</a></td></tr><tr><td><b>Skyline Financial Services</b></td><td>Common for SME issues.</td><td><a class="mini" href="https://www.skylinerta.com/ipo.php" target="_blank" rel="noopener">Check status</a></td></tr><tr><td><b>Maashitla Securities</b></td><td>Common for SME issues.</td><td><a class="mini" href="https://maashitla.com/allotment-status/public-issues" target="_blank" rel="noopener">Check status</a></td></tr><tr><td><b>Purva Sharegistry</b></td><td>Mumbai-based registrar.</td><td><a class="mini" href="https://www.purvashare.com/investor-service/ipo-query" target="_blank" rel="noopener">Check status</a></td></tr><tr><td><b>Integrated Registry Management</b></td><td>Chennai-based registrar.</td><td><a class="mini" href="https://www.integratedregistry.in/RegistrarsToSTA.aspx?OD=1" target="_blank" rel="noopener">Check status</a></td></tr><tr><td><b>MAS Services</b></td><td>Delhi-based registrar.</td><td><a class="mini" href="https://www.masserv.com/ipoallotment.asp" target="_blank" rel="noopener">Check status</a></td></tr>
+<tr><td><b>BSE</b></td><td>Works for issues listed on BSE. Choose Equity, the issue name and enter your PAN.</td><td><a class="mini" href="https://www.bseindia.com/investors/appli_check.aspx" target="_blank" rel="noopener">Check on BSE</a></td></tr>
+<tr><td><b>NSE</b></td><td>Works for issues listed on NSE. Free sign-in with PAN required.</td><td><a class="mini" href="https://www.nseindia.com/invest/check-trades-bids-verify-IPO-bids" target="_blank" rel="noopener">Check on NSE</a></td></tr>
+</tbody></table>
+
+<h2>How to check IPO allotment status by PAN</h2>
+<div class="steps">
+  <div class="step"><h3>1. On the registrar's website</h3><ol><li>Open your IPO's registrar from the table above.</li><li>Pick the IPO name from the list.</li><li>Choose PAN, type it and submit.</li><li>See shares applied and shares allotted.</li></ol></div>
+  <div class="step"><h3>2. On BSE</h3><ol><li>Open the BSE application status page.</li><li>Select Equity and the issue name.</li><li>Enter your PAN or application number.</li><li>Complete the check and search.</li></ol></div>
+  <div class="step"><h3>3. On NSE</h3><ol><li>Open the NSE bid verification page.</li><li>Sign up or log in with your PAN.</li><li>Select the IPO symbol.</li><li>Enter your PAN and application number.</li></ol></div>
+</div>
+
+<h2>IPO allotment timeline (SEBI T+3)</h2>
+<p>Since December 2023, every IPO in India follows SEBI's T+3 timeline, where T is the day bidding closes. Each step happens on a working day:</p>
+<ul>
+<li><b>T (issue closes):</b> last day to apply. Bids close in the afternoon.</li>
+<li><b>T+1 (allotment):</b> the registrar finalises the basis of allotment. Status usually goes live in the evening.</li>
+<li><b>T+2 (refund and credit):</b> money is unblocked for applicants who got no shares, and allotted shares reach your demat account.</li>
+<li><b>T+3 (listing):</b> shares start trading on NSE and BSE.</li>
+</ul>
+
+<h2>How IPO allotment works for retail investors</h2>
+<p>When an IPO is oversubscribed in the retail category, shares are allotted by a computerised lottery. Every valid application has the same chance of getting the minimum lot, whatever amount it bid for. That is why a 50x subscribed IPO gives only about one in fifty retail applications a lot. The "retail chance" on each card above is worked out from the official subscription figures and the number of applications, where these are published.</p>
+<p>Want to judge an IPO before you apply? Use our free <a href="https://9amtraders.com/ipo-analyzer-india/">IPO Analyzer</a>, which scores every mainboard IPO on subscription, profit growth, valuation and 33 checks.</p>
+
+<h2>FAQs</h2>
+<details><summary>How do I check IPO allotment status by PAN?</summary><p>Open the registrar&#x27;s allotment page for your IPO (or the BSE or NSE status page), choose the IPO name, select PAN, type your PAN and submit. The page shows the number of shares applied for and allotted.</p></details><details><summary>When is IPO allotment status announced?</summary><p>Under SEBI&#x27;s T+3 timeline, the basis of allotment is usually finalised on the first working day after the IPO closes, and the status goes live on the registrar&#x27;s website that evening.</p></details><details><summary>Which website is best to check IPO allotment?</summary><p>The registrar&#x27;s website is the official source because it finalises the allotment. BSE and NSE also show your status for issues listed on them. Your broker app usually updates a little later.</p></details><details><summary>What happens if I do not get an IPO allotment?</summary><p>The blocked amount is released to your bank account through the UPI mandate or ASBA by the second working day after the IPO closes. Nothing is debited if you get no shares.</p></details><details><summary>When will allotted IPO shares show in my demat account?</summary><p>Allotted shares are usually credited by the second working day after the IPO closes and can be sold from the listing day, the third working day after closing.</p></details><details><summary>Why does the allotment page say &#x27;record not found&#x27;?</summary><p>Usually the status is not out yet, the wrong IPO or exchange is selected, or the PAN does not match the application. Wait a few hours after allotment, check the registrar and the exchange, and confirm the PAN used in the bid.</p></details><details><summary>How can I improve my chances of getting an IPO allotment?</summary><p>For retail investors, allotment is by lottery when an IPO is oversubscribed, so each valid application has the same chance. Applying for more than the minimum lot does not improve it. Separate applications from family members&#x27; own PANs and demat accounts each enter the lottery.</p></details>
+
+<section class="cta">
+  <h2>Want to do more than wait for allotments?</h2>
+  <p>Learn to read an RHP, value a company and trade on your own analysis. Live classes in New Moti Nagar, Delhi or online. Your first demo class is free.</p>
+  <a class="btn" href="https://wa.me/919315906004?text=Hi%2C%20I%20want%20to%20book%20a%20free%20demo%20class" target="_blank" rel="noopener">Book a free demo class</a>
+</section>
+
+<p class="disc"><b>Disclaimer:</b> IPO dates, registrars and subscription figures are collected daily from public sources and may contain errors or change. Dates marked "expected" are estimates based on SEBI's T+3 timeline. Always confirm your allotment on the registrar, BSE or NSE website. 9AM Traders Academy is not connected to any registrar, exchange or issuer. Nothing on this page is investment advice.</p>
+
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How do I check IPO allotment status by PAN?", "acceptedAnswer": {"@type": "Answer", "text": "Open the registrar's allotment page for your IPO (or the BSE or NSE status page), choose the IPO name, select PAN, type your PAN and submit. The page shows the number of shares applied for and allotted."}}, {"@type": "Question", "name": "When is IPO allotment status announced?", "acceptedAnswer": {"@type": "Answer", "text": "Under SEBI's T+3 timeline, the basis of allotment is usually finalised on the first working day after the IPO closes, and the status goes live on the registrar's website that evening."}}, {"@type": "Question", "name": "Which website is best to check IPO allotment?", "acceptedAnswer": {"@type": "Answer", "text": "The registrar's website is the official source because it finalises the allotment. BSE and NSE also show your status for issues listed on them. Your broker app usually updates a little later."}}, {"@type": "Question", "name": "What happens if I do not get an IPO allotment?", "acceptedAnswer": {"@type": "Answer", "text": "The blocked amount is released to your bank account through the UPI mandate or ASBA by the second working day after the IPO closes. Nothing is debited if you get no shares."}}, {"@type": "Question", "name": "When will allotted IPO shares show in my demat account?", "acceptedAnswer": {"@type": "Answer", "text": "Allotted shares are usually credited by the second working day after the IPO closes and can be sold from the listing day, the third working day after closing."}}, {"@type": "Question", "name": "Why does the allotment page say 'record not found'?", "acceptedAnswer": {"@type": "Answer", "text": "Usually the status is not out yet, the wrong IPO or exchange is selected, or the PAN does not match the application. Wait a few hours after allotment, check the registrar and the exchange, and confirm the PAN used in the bid."}}, {"@type": "Question", "name": "How can I improve my chances of getting an IPO allotment?", "acceptedAnswer": {"@type": "Answer", "text": "For retail investors, allotment is by lottery when an IPO is oversubscribed, so each valid application has the same chance. Applying for more than the minimum lot does not improve it. Separate applications from family members' own PANs and demat accounts each enter the lottery."}}]}
+</script>
+<script>
+(function(){
+var SRC="https://raw.githubusercontent.com/9amtraders/9am-ipo-data/main/ipos.json";
+var REG={"kfin": ["KFin Technologies", "https://ipostatus.kfintech.com/"], "mufg": ["MUFG Intime India (Link Intime)", "https://in.mpms.mufg.com/Initial_Offer/public-issues.html"], "bigshare": ["Bigshare Services", "https://ipo.bigshareonline.com/IPO_Status.html"], "cameo": ["Cameo Corporate Services", "https://ipo.cameoindia.com/"], "skyline": ["Skyline Financial Services", "https://www.skylinerta.com/ipo.php"], "maashitla": ["Maashitla Securities", "https://maashitla.com/allotment-status/public-issues"], "purva": ["Purva Sharegistry", "https://www.purvashare.com/investor-service/ipo-query"], "integrated": ["Integrated Registry Management", "https://www.integratedregistry.in/RegistrarsToSTA.aspx?OD=1"], "mas": ["MAS Services", "https://www.masserv.com/ipoallotment.asp"]};
+var BSE="https://www.bseindia.com/investors/appli_check.aspx",NSE="https://www.nseindia.com/invest/check-trades-bids-verify-IPO-bids";
+var list=document.getElementById("n9al-list"),q=document.getElementById("n9al-q"),empty=document.getElementById("n9al-empty"),upd=document.getElementById("n9al-upd");
+function esc(s){return String(s==null?"":s).replace(/[&<>"]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];});}
+function d(s){if(!s)return null;var p=s.split("-");return new Date(Date.UTC(+p[0],p[1]-1,+p[2]));}
+function iso(x){return x.toISOString().slice(0,10);}
+function addWd(x,n){var t=new Date(x.getTime());while(n>0){t.setUTCDate(t.getUTCDate()+1);var w=t.getUTCDay();if(w!==0&&w!==6)n--;}return t;}
+function fmt(x){return x?x.toLocaleDateString("en-IN",{day:"numeric",month:"short",timeZone:"UTC"}):"–";}
+var now=new Date(Date.now()+330*60000),today=d(now.toISOString().slice(0,10)),hour=now.getUTCHours();
+function card(i){
+  var open=d(i.open),close=d(i.close);if(!open||!close)return null;
+  var allot=d(i.allotment),allotEst=!allot;if(!allot)allot=addWd(close,1);
+  var credit=addWd(allot,1),list_=d(i.listing),listEst=!list_;if(!list_)list_=addWd(close,3);
+  var age=(today-close)/864e5;if(today<open||age>12)return null;
+  var st,cls,stage;
+  if(today<=close){st="Bidding open till "+fmt(close);cls="open";stage=0;}
+  else if(today<allot||(+today===+allot&&hour<18)){st="Allotment "+(allotEst?"expected ":"on ")+fmt(allot);cls="wait";stage=1;}
+  else if(today<list_){st="Allotment status is out";cls="out";stage=2;}
+  else{st="Listed on "+fmt(list_);cls="listed";stage=3;}
+  var r=i.registrar&&REG[i.registrar];
+  var tl=[["Closes",close,false],["Allotment",allot,allotEst],["Refund & credit",credit,true],["Listing",list_,listEst]].map(function(x,k){return '<div class="'+(k===stage?"now":"")+'"><b>'+fmt(x[1])+(x[2]?"*":"")+'</b>'+x[0]+'</div>';}).join("");
+  var ch="",sf=i.sub&&!i.sub.final?' when last checked':'';if(i.allot&&i.allot.oneIn<=1&&i.sub&&i.sub.retail<1){ch='<p class="chance">Retail portion undersubscribed ('+esc(i.sub.retail)+'x'+sf+'), so every valid retail application should get at least one lot.</p>';}else if(i.allot&&i.allot.oneIn){ch='<p class="chance">Retail chance: about <b>1 in '+esc(i.allot.oneIn)+'</b> applications'+(i.sub&&i.sub.retail?' ('+esc(i.sub.retail)+'x retail subscription'+sf+')':'')+'</p>';}
+  else if(i.sub&&i.sub.retail){ch='<p class="chance">Retail subscription: <b>'+esc(i.sub.retail)+'x</b>'+sf+'</p>';}
+  var main=r?'<a class="join" href="'+r[1]+'" target="_blank" rel="noopener">Check on '+esc(r[0])+'</a>':'<a class="join" href="'+BSE+'" target="_blank" rel="noopener">Check on BSE</a>';
+  var alt=r?'<div class="row2"><a class="join alt" href="'+BSE+'" target="_blank" rel="noopener">BSE</a><a class="join alt" href="'+NSE+'" target="_blank" rel="noopener">NSE</a></div>':'<a class="join alt" href="'+NSE+'" target="_blank" rel="noopener">Check on NSE</a><p class="handle">Registrar not confirmed yet. See the registrar table below.</p>';
+  return {stage:stage,close:close,html:'<article class="card'+(stage===2?' hot':'')+'" data-n="'+esc((i.name+" "+(i.aka||[]).join(" ")).toLowerCase())+'"><h3>'+esc(i.name)+' IPO</h3><div class="tags"><span class="status '+cls+'">'+st+'</span><span class="tag">'+esc(i.board)+'</span>'+(i.band?'<span class="tag">'+esc(i.band)+'</span>':'')+'</div><div class="tl">'+tl+'</div>'+ch+'<div class="btns">'+main+alt+'</div></article>'};
+}
+fetch(SRC,{cache:"no-store"}).then(function(r){return r.json();}).then(function(j){
+  var order={2:0,1:1,0:2,3:3};
+  var cs=(j.ipos||[]).filter(function(i){return !i.archived;}).map(card).filter(Boolean).sort(function(a,b){return order[a.stage]-order[b.stage]||b.close-a.close;});
+  list.innerHTML=cs.length?cs.map(function(c){return c.html;}).join(""):'<div class="loading">No IPOs are in the allotment window right now. Use the registrar table below for older issues.</div>';
+  var age=(today-d(j.updated))/864e5;upd.textContent="IPO list updated "+fmt(d(j.updated))+" · * = expected date";if(age>2){list.insertAdjacentHTML("beforebegin",'<div class="warn" id="n9al-stale"><b>Note:</b> this list was last updated on '+fmt(d(j.updated))+'. Dates and subscription figures may have changed, so confirm on the registrar or exchange.</div>');}
+  filter();
+}).catch(function(){if(!list.querySelector(".card")){list.innerHTML='<div class="loading">Could not load the IPO list. Use the registrar links below to check any IPO.</div>';}});
+function filter(){var t=q.value.trim().toLowerCase(),n=0;list.querySelectorAll(".card").forEach(function(c){var ok=!t||c.dataset.n.indexOf(t)>-1;c.style.display=ok?"":"none";if(ok)n++;});empty.style.display=(t&&!n)?"block":"none";}
+q.addEventListener("input",filter);
+})();
+</script>
+</div>
