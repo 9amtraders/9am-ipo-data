@@ -1,161 +1,6 @@
 {
- "updated": "2026-10-29",
+ "updated": "2026-11-02",
  "ipos": [
-  {
-   "name": "Shellz India",
-   "aka": [
-    "Shellz"
-   ],
-   "board": "SME",
-   "open": "2026-10-15",
-   "close": "2026-10-19",
-   "listing": "2026-10-23",
-   "band": "₹170 – ₹179",
-   "hasReport": false,
-   "score": null,
-   "sub": {
-    "qib": 41.92,
-    "nii": 86.41,
-    "retail": 56.09,
-    "total": 58.54,
-    "retailShares": 1057600,
-    "minAppShares": 1600,
-    "retailApps": 36698,
-    "asOf": "2026-10-19",
-    "final": true,
-    "source": "https://www.chittorgarh.com/news-detail/ipo/closed-ipo/shellz-india-ipo/12861/"
-   },
-   "allot": {
-    "chance": 1.8,
-    "oneIn": 56,
-    "basis": "applications"
-   }
-  },
-  {
-   "name": "Bonfiglioli Transmissions",
-   "aka": [
-    "Bonfiglioli",
-    "Bonfiglioli India"
-   ],
-   "board": "Mainboard",
-   "open": "2026-10-15",
-   "close": "2026-10-19",
-   "listing": "2026-10-23",
-   "band": "₹558 – ₹586",
-   "hasReport": false,
-   "score": null,
-   "sub": {
-    "qib": 120.78,
-    "nii": 40.39,
-    "retail": 5.9,
-    "total": 46.05,
-    "retailShares": 15116165,
-    "minAppShares": 25,
-    "retailApps": 3093365,
-    "asOf": "2026-10-19",
-    "final": true,
-    "source": "https://www.chittorgarh.com/news-detail/ipo/closed-ipo/bonfiglioli-transmissions-ipo/12860/"
-   },
-   "allot": {
-    "chance": 19.5,
-    "oneIn": 5,
-    "basis": "applications"
-   }
-  },
-  {
-   "name": "Sahajanand Medical Technologies",
-   "aka": [
-    "SMT",
-    "Sahajanand Medical",
-    "SMT Stents"
-   ],
-   "board": "Mainboard",
-   "open": "2026-10-15",
-   "close": "2026-10-19",
-   "listing": "2026-10-23",
-   "band": "₹327 – ₹344",
-   "hasReport": false,
-   "score": null,
-   "sub": {
-    "qib": 34.7,
-    "nii": 14.64,
-    "retail": 3.04,
-    "total": 14.21,
-    "retailShares": 4750241,
-    "minAppShares": 43,
-    "retailApps": 293875,
-    "asOf": "2026-10-19",
-    "final": true,
-    "source": "https://www.chittorgarh.com/news-detail/ipo/closed-ipo/sahajanand-medical-technologies-ipo/12859/"
-   },
-   "allot": {
-    "chance": 37.6,
-    "oneIn": 3,
-    "basis": "applications"
-   }
-  },
-  {
-   "name": "Tonbo Imaging India",
-   "aka": [
-    "Tonbo Imaging",
-    "Tonbo"
-   ],
-   "board": "Mainboard",
-   "open": "2026-10-15",
-   "close": "2026-10-19",
-   "listing": "2026-10-23",
-   "band": "₹665 – ₹700",
-   "hasReport": false,
-   "score": null,
-   "sub": {
-    "qib": 293.56,
-    "nii": 156.36,
-    "retail": 31.11,
-    "total": 132.81,
-    "retailShares": 4256017,
-    "minAppShares": 21,
-    "retailApps": 4868618,
-    "asOf": "2026-10-19",
-    "final": true,
-    "source": "https://www.chittorgarh.com/news-detail/ipo/closed-ipo/tonbo-imaging-india-ipo/12863/"
-   },
-   "allot": {
-    "chance": 4.2,
-    "oneIn": 24,
-    "basis": "applications"
-   }
-  },
-  {
-   "name": "Zetwerk",
-   "aka": [
-    "Zetwerk Manufacturing",
-    "Zetwork"
-   ],
-   "board": "Mainboard",
-   "open": "2026-10-15",
-   "close": "2026-10-19",
-   "listing": "2026-10-23",
-   "band": "₹143 – ₹151",
-   "hasReport": false,
-   "score": null,
-   "sub": {
-    "qib": 4.71,
-    "nii": 1.45,
-    "retail": 0.77,
-    "total": 3.1,
-    "retailShares": 33130715,
-    "minAppShares": 99,
-    "retailApps": 171453,
-    "asOf": "2026-10-19",
-    "final": true,
-    "source": "https://www.chittorgarh.com/news-detail/ipo/closed-ipo/zetwerk-ipo/12862/"
-   },
-   "allot": {
-    "chance": 100.0,
-    "oneIn": 1,
-    "basis": "undersubscribed"
-   }
-  },
   {
    "name": "Paras Healthcare",
    "aka": [
@@ -169,6 +14,8 @@
    "band": "₹660 – ₹693",
    "hasReport": false,
    "score": null,
+   "registrar": "mufg",
+   "allotment": "2026-10-26",
    "sub": {
     "qib": 3.25,
     "nii": 0.69,
@@ -201,6 +48,8 @@
    "band": "₹1,065 – ₹1,119",
    "hasReport": false,
    "score": null,
+   "registrar": "kfin",
+   "allotment": "2026-10-26",
    "sub": {
     "qib": 67.15,
     "nii": 13.99,
@@ -231,6 +80,8 @@
    "band": "₹88 – ₹93",
    "hasReport": false,
    "score": null,
+   "registrar": "purva",
+   "allotment": "2026-10-28",
    "sub": {
     "qib": 5.06,
     "nii": 12.26,
@@ -263,6 +114,8 @@
    "band": "₹1,585 – ₹1,665",
    "hasReport": false,
    "score": null,
+   "registrar": "mufg",
+   "allotment": "2026-10-29",
    "sub": {
     "qib": 13.8,
     "nii": 4.81,
@@ -271,9 +124,9 @@
     "retailShares": 2522523,
     "minAppShares": 9,
     "retailApps": 87200,
-    "asOf": "2026-10-28 17:54 (day 3, closing day)",
-    "final": false,
-    "source": "https://www.chittorgarh.com/ipo_subscription/eaaa-india-alternatives-ipo/2061/"
+    "asOf": "2026-10-28 17:55",
+    "final": true,
+    "source": "https://www.investorgain.com/report/ipo-subscription-live/333/"
    },
    "allot": {
     "chance": 100.0,
@@ -294,6 +147,8 @@
    "band": "₹313 – ₹330",
    "hasReport": true,
    "score": 18,
+   "registrar": "mufg",
+   "allotment": "2026-10-30",
    "sub": {
     "qib": 18.81,
     "nii": 12.81,
@@ -324,6 +179,8 @@
    "band": "₹142 – ₹150",
    "hasReport": true,
    "score": 76,
+   "registrar": "kfin",
+   "allotment": "2026-10-30",
    "sub": {
     "qib": 200.25,
     "nii": 559.2,
@@ -332,9 +189,9 @@
     "retailShares": null,
     "minAppShares": 100,
     "retailApps": null,
-    "asOf": "2026-10-29 18:29 (day 3)",
-    "final": false,
-    "source": "https://ipogyani.com/ipo/bls-polymers-ipo/subscription"
+    "asOf": "2026-10-29 17:55",
+    "final": true,
+    "source": "https://www.investorgain.com/report/ipo-subscription-live/333/"
    },
    "allot": {
     "chance": 0.8,
@@ -352,17 +209,19 @@
    "band": "₹194 – ₹204",
    "hasReport": true,
    "score": 20,
+   "registrar": "maashitla",
+   "allotment": "2026-10-30",
    "sub": {
-    "qib": 2.0,
-    "nii": 0.05,
-    "retail": 0.51,
-    "total": 0.9,
+    "qib": 2.24,
+    "nii": 0.62,
+    "retail": 0.66,
+    "total": 1.17,
     "retailShares": 1778400,
     "minAppShares": 1200,
     "retailApps": null,
-    "asOf": "2026-10-29 day 3 (time not stated)",
-    "final": false,
-    "source": "https://www.ipoplatform.com/ipo/subscription-status"
+    "asOf": "2026-10-29 17:55",
+    "final": true,
+    "source": "https://www.investorgain.com/report/ipo-subscription-live/333/"
    },
    "allot": {
     "chance": 100.0,
@@ -383,23 +242,25 @@
    "listing": "2026-11-04",
    "band": "₹153 – ₹162",
    "hasReport": true,
-   "score": 25,
+   "score": 61,
+   "registrar": "bigshare",
+   "allotment": "2026-11-02",
    "sub": {
-    "qib": 0.99,
-    "nii": 2.2,
-    "retail": 0.85,
-    "total": 1.18,
+    "qib": 1.84,
+    "nii": 14.12,
+    "retail": 3.08,
+    "total": 5.09,
     "retailShares": 5950000,
     "minAppShares": 91,
     "retailApps": null,
-    "asOf": "2026-10-29 18:29 (day 2)",
-    "final": false,
-    "source": "https://ipogyani.com/ipo/mk-sons-fine-jewels-ipo/subscription"
+    "asOf": "2026-10-30 17:55",
+    "final": true,
+    "source": "https://www.investorgain.com/report/ipo-subscription-live/333/"
    },
    "allot": {
-    "chance": 100.0,
-    "oneIn": 1,
-    "basis": "undersubscribed"
+    "chance": 32.5,
+    "oneIn": 3,
+    "basis": "estimate"
    }
   },
   {
@@ -411,23 +272,25 @@
    "listing": "2026-11-04",
    "band": "₹76 – ₹80",
    "hasReport": true,
-   "score": 18,
+   "score": 50,
+   "registrar": "bigshare",
+   "allotment": "2026-11-02",
    "sub": {
-    "qib": null,
-    "nii": 2.31,
-    "retail": 0.65,
-    "total": 0.83,
+    "qib": 26.33,
+    "nii": 40.39,
+    "retail": 19.17,
+    "total": 25.8,
     "retailShares": 1180800,
     "minAppShares": 3200,
     "retailApps": null,
-    "asOf": "2026-10-29 17:06 (day 2)",
-    "final": false,
-    "source": "https://www.chittorgarh.com/ipo_subscription/carver-roboweld-ipo/3239/"
+    "asOf": "2026-10-30 17:56",
+    "final": true,
+    "source": "https://www.investorgain.com/report/ipo-subscription-live/333/"
    },
    "allot": {
-    "chance": 100.0,
-    "oneIn": 1,
-    "basis": "undersubscribed"
+    "chance": 5.2,
+    "oneIn": 19,
+    "basis": "estimate"
    }
   },
   {
@@ -440,20 +303,22 @@
    "band": "₹203",
    "hasReport": true,
    "score": 24,
+   "registrar": "kfin",
+   "allotment": "2026-11-02",
    "sub": {
     "qib": null,
-    "nii": 0.18,
-    "retail": 1.57,
-    "total": 0.87,
+    "nii": 0.32,
+    "retail": 1.93,
+    "total": 1.12,
     "retailShares": 889200,
     "minAppShares": 1200,
     "retailApps": null,
-    "asOf": "2026-10-29 18:28 (day 2)",
-    "final": false,
-    "source": "https://ipogyani.com/ipo/ajwa-projects-ipo/subscription"
+    "asOf": "2026-10-30 17:56",
+    "final": true,
+    "source": "https://www.investorgain.com/report/ipo-subscription-live/333/"
    },
    "allot": {
-    "chance": 63.7,
+    "chance": 51.8,
     "oneIn": 2,
     "basis": "estimate"
    }
@@ -471,22 +336,24 @@
    "listing": "2026-11-05",
    "band": "₹78 – ₹82",
    "hasReport": true,
-   "score": 25,
+   "score": 55,
+   "registrar": "kfin",
+   "allotment": "2026-11-03",
    "sub": {
-    "qib": 6.89,
-    "nii": 0.76,
-    "retail": 1.31,
-    "total": 2.81,
+    "qib": 37.32,
+    "nii": 166.44,
+    "retail": 35.46,
+    "total": 63.89,
     "retailShares": 7813409,
     "minAppShares": 182,
     "retailApps": null,
-    "asOf": "2026-10-29 17:05 (day 1)",
-    "final": false,
-    "source": "https://www.chittorgarh.com/ipo_subscription/bombay-coated-and-special-steels-ipo/2671/"
+    "asOf": "2026-11-02 17:55",
+    "final": true,
+    "source": "https://www.investorgain.com/report/ipo-subscription-live/333/"
    },
    "allot": {
-    "chance": 76.3,
-    "oneIn": 1,
+    "chance": 2.8,
+    "oneIn": 35,
     "basis": "estimate"
    }
   },
@@ -500,17 +367,24 @@
    "band": "₹63 – ₹67",
    "hasReport": true,
    "score": 25,
+   "registrar": "bigshare",
+   "allotment": "2026-11-03",
    "sub": {
-    "qib": null,
-    "nii": null,
-    "retail": null,
-    "total": 0.82,
+    "qib": 66.72,
+    "nii": 0.36,
+    "retail": 0.42,
+    "total": 1.13,
     "retailShares": 2760000,
     "minAppShares": 4000,
     "retailApps": null,
-    "asOf": "2026-10-29 day 1 (time not stated)",
-    "final": false,
-    "source": "https://www.investorgain.com/ipo/antala-industries-ipo/2375/"
+    "asOf": "2026-11-02 17:06",
+    "final": true,
+    "source": "https://www.investorgain.com/report/ipo-subscription-live/333/"
+   },
+   "allot": {
+    "chance": 100.0,
+    "oneIn": 1,
+    "basis": "undersubscribed"
    }
   },
   {
@@ -524,7 +398,26 @@
    "listing": "2026-11-06",
    "band": "₹150 – ₹158",
    "hasReport": true,
-   "score": 54
+   "score": 62,
+   "registrar": "kfin",
+   "allotment": "2026-11-04",
+   "sub": {
+    "qib": 0.0,
+    "nii": 117.09,
+    "retail": 110.21,
+    "total": 80.34,
+    "retailShares": 1200000,
+    "minAppShares": 1600,
+    "retailApps": null,
+    "asOf": "2026-11-02 17:56 (day 2)",
+    "final": false,
+    "source": "https://www.investorgain.com/report/ipo-subscription-live/333/"
+   },
+   "allot": {
+    "chance": 0.9,
+    "oneIn": 110,
+    "basis": "estimate"
+   }
   },
   {
    "name": "Vectras Enprocon",
@@ -534,8 +427,27 @@
    "close": "2026-11-03",
    "listing": "2026-11-06",
    "band": "₹99 – ₹105",
-   "hasReport": false,
-   "score": null
+   "hasReport": true,
+   "score": 25,
+   "registrar": "mufg",
+   "allotment": "2026-11-04",
+   "sub": {
+    "qib": 1.42,
+    "nii": 1.3,
+    "retail": 1.33,
+    "total": 1.31,
+    "retailShares": 1680000,
+    "minAppShares": 2400,
+    "retailApps": null,
+    "asOf": "2026-11-02 17:06 (day 2)",
+    "final": false,
+    "source": "https://www.investorgain.com/report/ipo-subscription-live/333/"
+   },
+   "allot": {
+    "chance": 75.2,
+    "oneIn": 1,
+    "basis": "estimate"
+   }
   },
   {
    "name": "HGS (India)",
@@ -547,8 +459,27 @@
    "close": "2026-11-03",
    "listing": "2026-11-06",
    "band": "₹114 – ₹120",
-   "hasReport": false,
-   "score": null
+   "hasReport": true,
+   "score": 43,
+   "registrar": "kfin",
+   "allotment": "2026-11-04",
+   "sub": {
+    "qib": 4.88,
+    "nii": 31.56,
+    "retail": 25.56,
+    "total": 20.96,
+    "retailShares": 960000,
+    "minAppShares": 2400,
+    "retailApps": null,
+    "asOf": "2026-11-02 17:55 (day 2)",
+    "final": false,
+    "source": "https://www.investorgain.com/report/ipo-subscription-live/333/"
+   },
+   "allot": {
+    "chance": 3.9,
+    "oneIn": 26,
+    "basis": "estimate"
+   }
   },
   {
    "name": "Johnsoncab Electricals",
@@ -561,8 +492,27 @@
    "close": "2026-11-03",
    "listing": "2026-11-06",
    "band": "₹190 – ₹200",
-   "hasReport": false,
-   "score": null
+   "hasReport": true,
+   "score": 34,
+   "registrar": "maashitla",
+   "allotment": "2026-11-04",
+   "sub": {
+    "qib": 0.99,
+    "nii": 2.89,
+    "retail": 2.21,
+    "total": 2.01,
+    "retailShares": 933600,
+    "minAppShares": 1200,
+    "retailApps": null,
+    "asOf": "2026-11-02 17:06 (day 2)",
+    "final": false,
+    "source": "https://www.investorgain.com/report/ipo-subscription-live/333/"
+   },
+   "allot": {
+    "chance": 45.2,
+    "oneIn": 2,
+    "basis": "estimate"
+   }
   },
   {
    "name": "Vedant Poly Fabs",
@@ -572,10 +522,29 @@
    "board": "SME",
    "open": "2026-11-02",
    "close": "2026-11-04",
-   "listing": null,
-   "band": "",
-   "hasReport": false,
-   "score": null
+   "listing": "2026-11-09",
+   "band": "₹88 – ₹94",
+   "hasReport": true,
+   "score": 13,
+   "registrar": "cameo",
+   "allotment": "2026-11-05",
+   "sub": {
+    "qib": 0.0,
+    "nii": 0.83,
+    "retail": 0.14,
+    "total": 0.42,
+    "retailShares": 3396000,
+    "minAppShares": 2400,
+    "retailApps": null,
+    "asOf": "2026-11-02 17:56 (day 1)",
+    "final": false,
+    "source": "https://www.investorgain.com/report/ipo-subscription-live/333/"
+   },
+   "allot": {
+    "chance": 100.0,
+    "oneIn": 1,
+    "basis": "undersubscribed"
+   }
   },
   {
    "name": "Acko",
@@ -734,6 +703,44 @@
     "Inox Clean",
     "Inox Solar"
    ],
+   "board": "Mainboard",
+   "open": null,
+   "close": null,
+   "listing": null,
+   "band": "",
+   "hasReport": false,
+   "score": null
+  },
+  {
+   "name": "Atomberg",
+   "aka": [
+    "Atomberg Technologies"
+   ],
+   "board": "Mainboard",
+   "open": null,
+   "close": null,
+   "listing": null,
+   "band": "",
+   "hasReport": false,
+   "score": null
+  },
+  {
+   "name": "Ratnadeep Retail",
+   "aka": [
+    "Ratnadeep Supermarket",
+    "Ratnadeep"
+   ],
+   "board": "Mainboard",
+   "open": null,
+   "close": null,
+   "listing": null,
+   "band": "",
+   "hasReport": false,
+   "score": null
+  },
+  {
+   "name": "Punjab Carbonic",
+   "aka": [],
    "board": "Mainboard",
    "open": null,
    "close": null,

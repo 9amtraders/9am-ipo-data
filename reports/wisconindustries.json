@@ -20,7 +20,7 @@
    "name": "Subscription demand",
    "weight": 50,
    "score": 6,
-   "detail": "Subscribed 0.51x retail, 2x QIB, 0.05x NII, 0.9x overall (bidding still open)."
+   "detail": "Subscribed 0.66x retail, 2.24x QIB, 0.62x NII, 1.17x overall."
   },
   {
    "name": "Profit growth (RHP)",
@@ -41,7 +41,7 @@
    "detail": "Financial health, governance, issue structure, use of proceeds, legal and risk checks."
   }
  ],
- "capReason": "4 red flags took 20 points off. Capped at 50 because of 4 or more red flags. Capped at 25 because the retail portion is not fully subscribed so far.",
+ "capReason": "4 red flags took 20 points off. Capped at 50 because of 4 or more red flags. Capped at 25 because the retail portion is not fully subscribed.",
  "counts": {
   "pass": 15,
   "caution": 3,

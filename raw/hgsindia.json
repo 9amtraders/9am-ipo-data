@@ -1,0 +1,220 @@
+{
+ "name": "HGS (India)",
+ "board": "SME",
+ "sector": "Geophysical instruments",
+ "exchange": "NSE SME",
+ "open": "2026-10-30",
+ "close": "2026-11-03",
+ "listing": "2026-11-06",
+ "priceBand": "₹114 – ₹120",
+ "issueSizeCr": 34.56,
+ "freshCr": 27.91,
+ "ofsCr": 6.65,
+ "lotSize": 2400,
+ "researchedOn": "2026-11-02",
+ "summary": "HGS (India), incorporated in 1986, makes geophones, seismic cables, connectors, seismographs and other geophysical instruments at a single plant in Manesar, Haryana, mainly for oil and gas and mineral exploration, and sells to 146 clients in 21 countries. Revenue fell about 8% in FY26 to ₹45.2 cr after rising from ₹35.5 cr in FY24 to ₹49.1 cr in FY25, while profit rose 10.8% to ₹11.6 cr and the net margin widened to 25.8%. The company has no borrowings, about 69% of the ₹27.9 cr fresh issue goes to plant and machinery replacement and Manesar facility works, and the top 10 customers made up 72.6% of FY26 revenue. At the upper band the post-issue P/E is about 11.2x and price to book about 1.1x; the RHP names no listed peers.",
+ "checks": {
+  "fh1": {
+   "status": "caution",
+   "finding": "Revenue rose from ₹35.48 cr (FY24) to ₹45.16 cr (FY26), a CAGR of about 12.8%.",
+   "source": "https://www.multibagg.ai/market-pulse/articles/ipo/analyse-hgs-india-ipo-rhp-cmvs5kg6j0001x6qb434agxce"
+  },
+  "fh2": {
+   "status": "flag",
+   "finding": "Revenue fell in the latest year, from ₹49.08 cr in FY25 to ₹45.16 cr in FY26.",
+   "source": "https://www.multibagg.ai/market-pulse/articles/ipo/analyse-hgs-india-ipo-rhp-cmvs5kg6j0001x6qb434agxce"
+  },
+  "fh3": {
+   "status": "pass",
+   "finding": "Total borrowings were nil at FY26 and at April 30, 2026, so debt to equity is nil.",
+   "source": "https://www.multibagg.ai/market-pulse/articles/ipo/analyse-hgs-india-ipo-rhp-cmvs5kg6j0001x6qb434agxce"
+  },
+  "fh4": {
+   "status": "pass",
+   "finding": "Borrowings were nil in FY24 and FY26 (negligible in FY25), so debt did not grow while revenue rose about 27%.",
+   "source": "https://www.multibagg.ai/market-pulse/articles/ipo/analyse-hgs-india-ipo-rhp-cmvs5kg6j0001x6qb434agxce"
+  },
+  "fh5": {
+   "status": "flag",
+   "finding": "Net worth fell from ₹95.04 cr (FY24) to ₹85.16 cr (FY25) before rising to ₹89.27 cr (FY26).",
+   "source": "https://www.multibagg.ai/market-pulse/articles/ipo/analyse-hgs-india-ipo-rhp-cmvs5kg6j0001x6qb434agxce"
+  },
+  "fh6": {
+   "status": "pass",
+   "finding": "Operating cash flow was ₹6.14 cr in FY26, about 53% of the ₹11.64 cr profit.",
+   "source": "https://www.multibagg.ai/market-pulse/articles/ipo/analyse-hgs-india-ipo-rhp-cmvs5kg6j0001x6qb434agxce"
+  },
+  "pr1": {
+   "status": "caution",
+   "finding": "Profit after tax grew 10.8% in FY26, from ₹10.51 cr to ₹11.64 cr.",
+   "source": "https://www.multibagg.ai/market-pulse/articles/ipo/analyse-hgs-india-ipo-rhp-cmvs5kg6j0001x6qb434agxce"
+  },
+  "pr2": {
+   "status": "pass",
+   "finding": "PAT margin improved from 11.27% (FY24) to 21.40% (FY25) and 25.77% (FY26).",
+   "source": "https://www.multibagg.ai/market-pulse/articles/ipo/analyse-hgs-india-ipo-rhp-cmvs5kg6j0001x6qb434agxce"
+  },
+  "pr3": {
+   "status": "caution",
+   "finding": "Return on net worth was 13.04% in FY26.",
+   "source": "https://ipowatch.in/hgs-india-ipo-date-review-price-allotment-details/"
+  },
+  "pr4": {
+   "status": "pass",
+   "finding": "ROCE was 17.13% in FY26, up from 16.06% in FY25.",
+   "source": "https://www.multibagg.ai/market-pulse/articles/ipo/analyse-hgs-india-ipo-rhp-cmvs5kg6j0001x6qb434agxce"
+  },
+  "pr5": {
+   "status": "na",
+   "finding": "The RHP says there are no listed Indian peers, so no peer margin comparison is possible.",
+   "source": ""
+  },
+  "va1": {
+   "status": "na",
+   "finding": "Post-issue P/E is about 11.2x, but the RHP names no listed peers to compare against.",
+   "source": ""
+  },
+  "va2": {
+   "status": "na",
+   "finding": "Post-issue price to book is about 1.1x, but there are no listed peers to compare against.",
+   "source": ""
+  },
+  "va3": {
+   "status": "na",
+   "finding": "No listed peers, so market cap to sales cannot be compared.",
+   "source": ""
+  },
+  "va4": {
+   "status": "na",
+   "finding": "Details of share issues or transfers in the 12 months before the IPO were not found in public sources.",
+   "source": ""
+  },
+  "pg1": {
+   "status": "pass",
+   "finding": "Promoters hold 63.50% after the issue, down from 87.30%.",
+   "source": "https://ipowatch.in/hgs-india-ipo-date-review-price-allotment-details/"
+  },
+  "pg2": {
+   "status": "pass",
+   "finding": "None of the promoter or promoter-group shares were pledged as of the RHP date.",
+   "source": "https://www.multibagg.ai/market-pulse/articles/ipo/analyse-hgs-india-ipo-rhp-cmvs5kg6j0001x6qb434agxce"
+  },
+  "pg3": {
+   "status": "caution",
+   "finding": "FY26 related-party payments were small (about ₹1.3 cr, mostly director pay), but the company lent ₹9.5 cr to promoter Sowar Pvt Ltd in FY24, repaid by FY25.",
+   "source": "https://www.multibagg.ai/market-pulse/articles/ipo/analyse-hgs-india-ipo-rhp-cmvs5kg6j0001x6qb434agxce"
+  },
+  "pg4": {
+   "status": "flag",
+   "finding": "Six direct-tax claims totalling ₹13.09 lakh are pending against promoters and directors.",
+   "source": "https://www.multibagg.ai/market-pulse/articles/ipo/analyse-hgs-india-ipo-rhp-cmvs5kg6j0001x6qb434agxce"
+  },
+  "is1": {
+   "status": "pass",
+   "finding": "The ₹6.65 cr offer for sale is 19.2% of the ₹34.56 cr issue.",
+   "source": "https://zerodha.com/ipo/461833/hgs-india"
+  },
+  "is2": {
+   "status": "pass",
+   "finding": "The ₹34.56 cr issue is about 26.5% of the ₹130.3 cr post-issue market cap (1,08,58,713 shares at ₹120).",
+   "source": "https://ipowatch.in/hgs-india-ipo-date-review-price-allotment-details/"
+  },
+  "is3": {
+   "status": "na",
+   "finding": "The acquisition cost of the 12 selling shareholders was not found in public sources.",
+   "source": ""
+  },
+  "up1": {
+   "status": "pass",
+   "finding": "₹19.36 cr (69.4% of the fresh issue) goes to plant and machinery replacement, a gold-plating facility and Manesar facility works.",
+   "source": "https://zerodha.com/ipo/461833/hgs-india"
+  },
+  "up2": {
+   "status": "pass",
+   "finding": "None of the fresh issue is used to repay debt.",
+   "source": "https://zerodha.com/ipo/461833/hgs-india"
+  },
+  "up3": {
+   "status": "caution",
+   "finding": "₹8.55 cr (30.6% of the fresh issue) goes to unidentified acquisitions and general corporate purposes combined; GCP alone is capped at 15%.",
+   "source": "https://zerodha.com/ipo/461833/hgs-india"
+  },
+  "up4": {
+   "status": "pass",
+   "finding": "The objects include no repayment of loans to promoters or group companies.",
+   "source": "https://zerodha.com/ipo/461833/hgs-india"
+  },
+  "lg1": {
+   "status": "pass",
+   "finding": "Quantified claims against the company total about ₹21 lakh (civil ₹15.28 lakh, tax ₹6.04 lakh), well under 1% of the ₹89.27 cr net worth.",
+   "source": "https://www.multibagg.ai/market-pulse/articles/ipo/analyse-hgs-india-ipo-rhp-cmvs5kg6j0001x6qb434agxce"
+  },
+  "lg2": {
+   "status": "na",
+   "finding": "Case-level figures for criminal or regulatory proceedings were not found in public sources.",
+   "source": ""
+  },
+  "lg3": {
+   "status": "na",
+   "finding": "A contingent liabilities figure was not found in public sources.",
+   "source": ""
+  },
+  "rk1": {
+   "status": "caution",
+   "finding": "The top 10 customers made up 72.58% of FY26 revenue, and the largest made up 21.79%.",
+   "source": "https://www.multibagg.ai/market-pulse/articles/ipo/analyse-hgs-india-ipo-rhp-cmvs5kg6j0001x6qb434agxce"
+  },
+  "rk2": {
+   "status": "na",
+   "finding": "Imports were 73.65% of FY26 purchases, but supplier-wise shares were not found.",
+   "source": ""
+  },
+  "rk3": {
+   "status": "pass",
+   "finding": "Incorporated in 1986, so about 40 years of operating history.",
+   "source": "https://www.investorgain.com/ipo/hgs-india-ipo/2241/"
+  },
+  "rk4": {
+   "status": "na",
+   "finding": "Auditor remarks were not found in public sources.",
+   "source": ""
+  }
+ },
+ "ipoMetrics": {
+  "rev_cagr": 12.8,
+  "pat_margin": 25.77,
+  "roe": 13.04,
+  "roce": 17.13,
+  "de": 0,
+  "pe": 11.19,
+  "pb": 1.11
+ },
+ "patGrowth": 10.8,
+ "peers": [],
+ "sources": [
+  {
+   "url": "https://www.multibagg.ai/market-pulse/articles/ipo/analyse-hgs-india-ipo-rhp-cmvs5kg6j0001x6qb434agxce",
+   "title": "HGS (India) IPO RHP analysis — Multibagg"
+  },
+  {
+   "url": "https://zerodha.com/ipo/461833/hgs-india",
+   "title": "HGS (India) IPO — Zerodha"
+  },
+  {
+   "url": "https://ipowatch.in/hgs-india-ipo-date-review-price-allotment-details/",
+   "title": "HGS (India) IPO details — IPOWatch"
+  },
+  {
+   "url": "https://www.investorgain.com/ipo/hgs-india-ipo/2241/",
+   "title": "HGS (India) IPO — InvestorGain"
+  },
+  {
+   "url": "https://www.chittorgarh.com/news-detail/ipo/confirmed-ipo/hgs-india-ipo/16796/",
+   "title": "HGS (India) IPO anchor and issue news — Chittorgarh"
+  },
+  {
+   "url": "https://www.ipomarket.in/ipo/hgs-india-sme-ipo",
+   "title": "HGS (India) SME IPO — IPO Market"
+  }
+ ]
+}

@@ -1,0 +1,480 @@
+{
+ "id": "vedantpolyfabs",
+ "name": "Vedant Poly Fabs",
+ "board": "SME",
+ "sector": "Flexible packaging",
+ "exchange": "NSE SME",
+ "open": "2026-11-02",
+ "close": "2026-11-04",
+ "listing": "2026-11-09",
+ "band": "₹88 – ₹94",
+ "issueSizeCr": 56.68,
+ "freshCr": 51.01,
+ "ofsCr": 5.67,
+ "lotSize": 2400,
+ "summary": "Vedant Poly Fabs makes flexible packaging (multi-layer LD films, shrink and barrier films, printed laminates, milk and oil pouches) for food, beverage and consumer goods companies from a single plant at Barasat, West Bengal. Total income rose from ₹49.7 cr in FY24 to ₹115.3 cr in FY26 and profit grew 140% in FY26 to ₹11.0 cr, but operating cash flow was negative in all three years (−₹11.5 cr in FY26) and borrowings rose from ₹6.4 cr to ₹46.8 cr. Related-party transactions were 27.6% of FY26 revenue and the top 10 customers gave 69.4% of sales. At the upper band the post-issue P/E is about 17.3x, close to the 17.8x median of the listed peers, while price to book of about 2.0x is above the peer median.",
+ "score": 13,
+ "checksScore": 56,
+ "drivers": [
+  {
+   "name": "Subscription demand",
+   "weight": 50,
+   "score": 0,
+   "detail": "Subscribed 0.14x retail, 0x QIB, 0.83x NII, 0.42x overall (bidding still open)."
+  },
+  {
+   "name": "Profit growth (RHP)",
+   "weight": 20,
+   "score": 100,
+   "detail": "Profit after tax grew 140.5% in the latest year in the RHP."
+  },
+  {
+   "name": "P/E vs listed peers",
+   "weight": 5,
+   "score": 85,
+   "detail": "P/E 17.27x vs peer median 17.8x, 3% below."
+  },
+  {
+   "name": "All 33 checks",
+   "weight": 25,
+   "score": 56,
+   "detail": "Financial health, governance, issue structure, use of proceeds, legal and risk checks."
+  }
+ ],
+ "capReason": "5 red flags took 25 points off. Capped at 50 because of 4 or more red flags. Capped at 25 because the retail portion is not fully subscribed so far.",
+ "counts": {
+  "pass": 14,
+  "caution": 3,
+  "flag": 5,
+  "na": 11
+ },
+ "totalChecks": 33,
+ "confidence": "normal",
+ "categories": [
+  {
+   "name": "Financial health",
+   "score": 58,
+   "detail": "3 of 6 checks passed · 2 flags"
+  },
+  {
+   "name": "Profitability",
+   "score": 86,
+   "detail": "4 of 5 checks passed · 1 not found"
+  },
+  {
+   "name": "Valuation vs peers",
+   "score": 40,
+   "detail": "1 of 4 checks passed · 1 flag · 2 not found"
+  },
+  {
+   "name": "Promoter & governance",
+   "score": 40,
+   "detail": "1 of 4 checks passed · 1 flag · 2 not found"
+  },
+  {
+   "name": "Issue structure",
+   "score": 77,
+   "detail": "2 of 3 checks passed · 1 not found"
+  },
+  {
+   "name": "Use of proceeds",
+   "score": 40,
+   "detail": "1 of 4 checks passed · 1 flag · 2 not found"
+  },
+  {
+   "name": "Legal & litigation",
+   "score": 53,
+   "detail": "1 of 3 checks passed · 2 not found"
+  },
+  {
+   "name": "Risk factors",
+   "score": 57,
+   "detail": "1 of 4 checks passed · 1 not found"
+  }
+ ],
+ "checks": [
+  {
+   "id": "fh1",
+   "name": "Revenue growth",
+   "category": "Financial health",
+   "status": "pass",
+   "finding": "Total income rose from ₹49.73 cr (FY24) to ₹115.31 cr (FY26), a CAGR of about 52.3%.",
+   "source": "https://ipowatch.in/?p=175942"
+  },
+  {
+   "id": "fh2",
+   "name": "Revenue rose every year",
+   "category": "Financial health",
+   "status": "pass",
+   "finding": "Total income grew every year: ₹49.73 cr, ₹81.58 cr, ₹115.31 cr (FY24–FY26).",
+   "source": "https://ipowatch.in/?p=175942"
+  },
+  {
+   "id": "fh3",
+   "name": "Debt to equity",
+   "category": "Financial health",
+   "status": "caution",
+   "finding": "Debt to equity was 1.11 in FY26 (borrowings ₹46.82 cr vs net worth ₹42.26 cr).",
+   "source": "https://chanakyanipothi.com/sme-ipo-watch/vedant-poly-fabs-ipo-review/"
+  },
+  {
+   "id": "fh4",
+   "name": "Debt growing slower than revenue",
+   "category": "Financial health",
+   "status": "flag",
+   "finding": "Borrowings rose about 637% (₹6.35 cr to ₹46.82 cr) while total income rose about 132% over FY24–FY26.",
+   "source": "https://www.multibagg.ai/market-pulse/articles/ipo/vedant-poly-fabs-borrowings-fy26-drhp-cmvt8jbzj00126mmeswapxl68"
+  },
+  {
+   "id": "fh5",
+   "name": "Net worth rising",
+   "category": "Financial health",
+   "status": "pass",
+   "finding": "Net worth rose every year: ₹3.86 cr, ₹15.42 cr, ₹42.26 cr (FY24–FY26).",
+   "source": "https://www.multibagg.ai/market-pulse/articles/ipo/vedant-poly-fabs-borrowings-fy26-drhp-cmvt8jbzj00126mmeswapxl68"
+  },
+  {
+   "id": "fh6",
+   "name": "Positive operating cash flow",
+   "category": "Financial health",
+   "status": "flag",
+   "finding": "Cash flow from operations was negative at −₹11.46 cr in FY26 (−₹5.74 cr in FY25, −₹3.46 cr in FY24).",
+   "source": "https://www.5paisa.com/sme-ipo/vedant-poly-fabs-ltd-ipo"
+  },
+  {
+   "id": "pr1",
+   "name": "Profit growth",
+   "category": "Profitability",
+   "status": "pass",
+   "finding": "Profit after tax grew about 140.5% in FY26, from ₹4.56 cr to ₹10.97 cr.",
+   "source": "https://www.multibagg.ai/market-pulse/articles/ipo/vedant-poly-fabs-borrowings-fy26-drhp-cmvt8jbzj00126mmeswapxl68"
+  },
+  {
+   "id": "pr2",
+   "name": "Profit margin trend",
+   "category": "Profitability",
+   "status": "pass",
+   "finding": "Net margin improved from about 1.3% (FY24) to 5.6% (FY25) and 9.5% (FY26).",
+   "source": "https://ipowatch.in/?p=175942"
+  },
+  {
+   "id": "pr3",
+   "name": "Return on equity",
+   "category": "Profitability",
+   "status": "pass",
+   "finding": "Return on net worth was 25.95% in FY26 (ROE 38.03%).",
+   "source": "https://www.chittorgarh.com/ipo/vedant-poly-fabs-ipo/3143/"
+  },
+  {
+   "id": "pr4",
+   "name": "Return on capital employed",
+   "category": "Profitability",
+   "status": "pass",
+   "finding": "ROCE was 46.34% in FY26.",
+   "source": "https://www.chittorgarh.com/ipo/vedant-poly-fabs-ipo/3143/"
+  },
+  {
+   "id": "pr5",
+   "name": "Margin vs listed peers",
+   "category": "Profitability",
+   "status": "na",
+   "finding": "Peer margins were not found in public sources.",
+   "source": ""
+  },
+  {
+   "id": "va1",
+   "name": "P/E vs listed peers",
+   "category": "Valuation vs peers",
+   "status": "pass",
+   "finding": "Post-issue P/E of about 17.3x (₹189.4 cr market cap on ₹10.97 cr FY26 profit) vs a peer median of 17.8x (B&A Packaging 14.1x, RFBL Flexi Pack 17.8x, Barflex Polyfilms 26.4x).",
+   "source": "https://www.investorgain.com/ipo/vedant-poly-fabs-ipo/2297/"
+  },
+  {
+   "id": "va2",
+   "name": "Price to book vs listed peers",
+   "category": "Valuation vs peers",
+   "status": "flag",
+   "finding": "Post-issue price to book of about 2.0x (₹189.4 cr vs ₹93.3 cr post-issue net worth) vs a peer median of about 1.3x, derived from the peers' P/E, EPS and NAV.",
+   "source": "https://www.investorgain.com/ipo/vedant-poly-fabs-ipo/2297/"
+  },
+  {
+   "id": "va3",
+   "name": "Market cap to sales vs listed peers",
+   "category": "Valuation vs peers",
+   "status": "na",
+   "finding": "Peer market cap to sales figures were not found in public sources.",
+   "source": ""
+  },
+  {
+   "id": "va4",
+   "name": "Recent pre-IPO share price",
+   "category": "Valuation vs peers",
+   "status": "na",
+   "finding": "Pre-IPO debt conversions, a bonus issue and promoter transfers are reported, but their dates and prices were not found.",
+   "source": ""
+  },
+  {
+   "id": "pg1",
+   "name": "Promoter holding after the issue",
+   "category": "Promoter & governance",
+   "status": "pass",
+   "finding": "Promoters hold 70.08% after the issue, down from 100%.",
+   "source": "https://www.investorgain.com/ipo/vedant-poly-fabs-ipo/2297/"
+  },
+  {
+   "id": "pg2",
+   "name": "No pledged promoter shares",
+   "category": "Promoter & governance",
+   "status": "na",
+   "finding": "No information on pledged promoter shares was found.",
+   "source": ""
+  },
+  {
+   "id": "pg3",
+   "name": "Related-party transactions",
+   "category": "Promoter & governance",
+   "status": "flag",
+   "finding": "Related-party transactions were ₹31.81 cr in FY26, or 27.63% of revenue (40.72% in FY25).",
+   "source": "https://www.multibagg.ai/ipo/vedant-poly-fabs-ltd__MBIPO893"
+  },
+  {
+   "id": "pg4",
+   "name": "No regulatory action against promoters",
+   "category": "Promoter & governance",
+   "status": "na",
+   "finding": "No information on regulatory action against promoters was found.",
+   "source": ""
+  },
+  {
+   "id": "is1",
+   "name": "Offer for sale share of the issue",
+   "category": "Issue structure",
+   "status": "pass",
+   "finding": "The offer for sale is ₹5.67 cr (6,03,600 shares), about 10% of the ₹56.68 cr issue.",
+   "source": "https://www.investorgain.com/ipo/vedant-poly-fabs-ipo/2297/"
+  },
+  {
+   "id": "is2",
+   "name": "Free float after listing",
+   "category": "Issue structure",
+   "status": "pass",
+   "finding": "The ₹56.68 cr issue is about 29.9% of the ₹189.4 cr post-issue market cap (2,01,51,614 shares at ₹94).",
+   "source": "https://www.indiaipo.in/ipo-blogs/vedant-poly-fabs-ltd"
+  },
+  {
+   "id": "is3",
+   "name": "Selling shareholders' cost",
+   "category": "Issue structure",
+   "status": "na",
+   "finding": "The selling promoter Sethsawaria Poly Fab LLP's average acquisition cost was not found.",
+   "source": ""
+  },
+  {
+   "id": "up1",
+   "name": "Money for growth",
+   "category": "Use of proceeds",
+   "status": "flag",
+   "finding": "Only ₹6.51 cr (about 12.8% of the ₹51.01 cr fresh issue) goes to plant and machinery; ₹17.59 cr goes to working capital.",
+   "source": "https://www.5paisa.com/sme-ipo/vedant-poly-fabs-ltd-ipo"
+  },
+  {
+   "id": "up2",
+   "name": "Debt repayment share",
+   "category": "Use of proceeds",
+   "status": "pass",
+   "finding": "₹8.00 cr, about 15.7% of the fresh issue, goes to repaying borrowings.",
+   "source": "https://www.5paisa.com/sme-ipo/vedant-poly-fabs-ltd-ipo"
+  },
+  {
+   "id": "up3",
+   "name": "General corporate purposes",
+   "category": "Use of proceeds",
+   "status": "na",
+   "finding": "The amount for general corporate purposes was not found in public sources.",
+   "source": ""
+  },
+  {
+   "id": "up4",
+   "name": "No repayment to promoter entities",
+   "category": "Use of proceeds",
+   "status": "na",
+   "finding": "Public sources don't say whose loans are being repaid.",
+   "source": ""
+  },
+  {
+   "id": "lg1",
+   "name": "Litigation against the company",
+   "category": "Legal & litigation",
+   "status": "na",
+   "finding": "Litigation amounts were not found in public sources.",
+   "source": ""
+  },
+  {
+   "id": "lg2",
+   "name": "Criminal or regulatory cases",
+   "category": "Legal & litigation",
+   "status": "na",
+   "finding": "No information on criminal or regulatory cases was found.",
+   "source": ""
+  },
+  {
+   "id": "lg3",
+   "name": "Contingent liabilities",
+   "category": "Legal & litigation",
+   "status": "pass",
+   "finding": "Contingent liabilities were a ₹1.40 cr bank guarantee at March 2026, about 3.3% of net worth.",
+   "source": "https://www.multibagg.ai/market-pulse/articles/ipo/vedant-poly-fabs-borrowings-fy26-drhp-cmvt8jbzj00126mmeswapxl68"
+  },
+  {
+   "id": "rk1",
+   "name": "Customer concentration",
+   "category": "Risk factors",
+   "status": "caution",
+   "finding": "The top 10 customers gave 69.44% of FY26 sales (top 5: 53.64%).",
+   "source": "https://www.multibagg.ai/ipo/vedant-poly-fabs-ltd__MBIPO893"
+  },
+  {
+   "id": "rk2",
+   "name": "Supplier dependence",
+   "category": "Risk factors",
+   "status": "na",
+   "finding": "The top 5 suppliers gave 79.32% of FY26 purchases, but the largest single supplier's share was not found.",
+   "source": ""
+  },
+  {
+   "id": "rk3",
+   "name": "Operating history",
+   "category": "Risk factors",
+   "status": "caution",
+   "finding": "Incorporated in December 2018, so under 8 years of operating history.",
+   "source": "https://www.chittorgarh.com/ipo/vedant-poly-fabs-ipo/3143/"
+  },
+  {
+   "id": "rk4",
+   "name": "Auditor remarks",
+   "category": "Risk factors",
+   "status": "pass",
+   "finding": "The statutory auditor had no qualifications requiring adjustment in the restated financial statements.",
+   "source": "https://www.multibagg.ai/market-pulse/articles/ipo/vedant-poly-fabs-borrowings-fy26-drhp-cmvt8jbzj00126mmeswapxl68"
+  }
+ ],
+ "peers": [
+  "RFBL Flexi Pack",
+  "Barflex Polyfilms",
+  "B&A Packaging India"
+ ],
+ "metrics": [
+  [
+   "Revenue growth (CAGR)",
+   "%",
+   "high",
+   52.3,
+   [
+    null,
+    null,
+    null
+   ]
+  ],
+  [
+   "Net profit margin",
+   "%",
+   "high",
+   9.52,
+   [
+    null,
+    null,
+    null
+   ]
+  ],
+  [
+   "Return on equity",
+   "%",
+   "high",
+   25.95,
+   [
+    31.11,
+    7.34,
+    7.9
+   ]
+  ],
+  [
+   "Return on capital employed",
+   "%",
+   "high",
+   46.34,
+   [
+    null,
+    null,
+    null
+   ]
+  ],
+  [
+   "Debt to equity",
+   "x",
+   "low",
+   1.11,
+   [
+    null,
+    null,
+    null
+   ]
+  ],
+  [
+   "P/E (post-issue, upper band)",
+   "x",
+   "low",
+   17.27,
+   [
+    17.79,
+    26.43,
+    14.11
+   ]
+  ],
+  [
+   "Price to book (post-issue)",
+   "x",
+   "low",
+   2.03,
+   [
+    5.54,
+    1.31,
+    1.12
+   ]
+  ]
+ ],
+ "sources": [
+  {
+   "url": "https://www.investorgain.com/ipo/vedant-poly-fabs-ipo/2297/",
+   "title": "Vedant Poly Fabs IPO details and peer comparison — Investorgain"
+  },
+  {
+   "url": "https://ipowatch.in/?p=175942",
+   "title": "Vedant Poly Fabs IPO — IPO Watch"
+  },
+  {
+   "url": "https://www.chittorgarh.com/ipo/vedant-poly-fabs-ipo/3143/",
+   "title": "Vedant Poly Fabs IPO — Chittorgarh"
+  },
+  {
+   "url": "https://chanakyanipothi.com/sme-ipo-watch/vedant-poly-fabs-ipo-review/",
+   "title": "Vedant Poly Fabs IPO review — Chanakya Nipothi"
+  },
+  {
+   "url": "https://www.indiaipo.in/ipo-blogs/vedant-poly-fabs-ltd",
+   "title": "Vedant Poly Fabs IPO share capital — IndiaIPO"
+  },
+  {
+   "url": "https://www.5paisa.com/sme-ipo/vedant-poly-fabs-ltd-ipo",
+   "title": "Vedant Poly Fabs IPO cash flow and objects — 5paisa"
+  },
+  {
+   "url": "https://www.multibagg.ai/ipo/vedant-poly-fabs-ltd__MBIPO893",
+   "title": "Vedant Poly Fabs IPO concentration and related parties — Multibagg"
+  },
+  {
+   "url": "https://www.multibagg.ai/market-pulse/articles/ipo/vedant-poly-fabs-borrowings-fy26-drhp-cmvt8jbzj00126mmeswapxl68",
+   "title": "Vedant Poly Fabs borrowings in FY26 — Multibagg"
+  }
+ ],
+ "generatedAt": "2026-11-02T08:00:00+05:30"
+}

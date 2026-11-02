@@ -13,14 +13,14 @@
  "ofsCr": 0.0,
  "lotSize": 800,
  "summary": "Maxwell Engineering Solutions makes and refurbishes precision parts for underwater pelletizing systems, such as die plates, blades and cutter hubs, at a Vadodara plant that started in July 2025, and earns most of its sales from exports. Total income grew from ₹10.9 cr in FY24 to ₹30.8 cr in FY26, and profit rose 29% in FY26 to ₹11.9 cr. Borrowings grew faster than income, from ₹3.2 cr to ₹16.7 cr, and the company was only incorporated in September 2022. The whole ₹57.6 cr issue is fresh money; about 42% is for new machinery and buildings, and the post-issue P/E of about 18.3x is well below the two profitable listed peers in the offer document.",
- "score": 54,
+ "score": 62,
  "checksScore": 67,
  "drivers": [
   {
    "name": "Subscription demand",
    "weight": 50,
-   "score": 50,
-   "detail": "Subscription not available yet, scored as neutral until bidding opens."
+   "score": 66,
+   "detail": "Subscribed 110.21x retail, 0x QIB, 117.09x NII, 80.34x overall (bidding still open)."
   },
   {
    "name": "Profit growth (RHP)",

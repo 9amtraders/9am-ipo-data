@@ -1,0 +1,468 @@
+{
+ "id": "vectrasenprocon",
+ "name": "Vectras Enprocon",
+ "board": "SME",
+ "sector": "Oil & gas EPC",
+ "exchange": "BSE SME",
+ "open": "2026-10-30",
+ "close": "2026-11-03",
+ "listing": "2026-11-06",
+ "band": "₹99 – ₹105",
+ "issueSizeCr": 53.05,
+ "freshCr": 42.59,
+ "ofsCr": 10.46,
+ "lotSize": 2400,
+ "summary": "Vectras Enprocon is a Gujarat-based EPC contractor for the midstream and downstream oil and gas sector, building pipelines, combined stations and refinery and terminal piping works, and offering inspection and testing services. Revenue rose from ₹54.3 cr in FY24 to ₹119.8 cr in FY26 and profit grew 51.7% in FY26 to ₹15.4 cr, but operating cash flow was negative in each of the three years and borrowings grew much faster than revenue. The top 10 customers made up 92.3% of FY26 revenue, and the two selling promoters acquired their shares at an average of ₹4. At the upper band the post-issue P/E is about 13.0x on FY26 profit, below the median of the listed peers named in the RHP.",
+ "score": 25,
+ "checksScore": 59,
+ "drivers": [
+  {
+   "name": "Subscription demand",
+   "weight": 50,
+   "score": 20,
+   "detail": "Subscribed 1.33x retail, 1.42x QIB, 1.3x NII, 1.31x overall (bidding still open)."
+  },
+  {
+   "name": "Profit growth (RHP)",
+   "weight": 20,
+   "score": 100,
+   "detail": "Profit after tax grew 51.7% in the latest year in the RHP."
+  },
+  {
+   "name": "P/E vs listed peers",
+   "weight": 5,
+   "score": 100,
+   "detail": "P/E 12.97x vs peer median 22.4x, 42% below."
+  },
+  {
+   "name": "All 33 checks",
+   "weight": 25,
+   "score": 59,
+   "detail": "Financial health, governance, issue structure, use of proceeds, legal and risk checks."
+  }
+ ],
+ "capReason": "5 red flags took 25 points off. Capped at 50 because of 4 or more red flags.",
+ "counts": {
+  "pass": 15,
+  "caution": 3,
+  "flag": 5,
+  "na": 10
+ },
+ "totalChecks": 33,
+ "confidence": "normal",
+ "categories": [
+  {
+   "name": "Financial health",
+   "score": 67,
+   "detail": "4 of 6 checks passed · 2 flags"
+  },
+  {
+   "name": "Profitability",
+   "score": 100,
+   "detail": "5 of 5 checks passed"
+  },
+  {
+   "name": "Valuation vs peers",
+   "score": 52,
+   "detail": "1 of 4 checks passed · 2 not found"
+  },
+  {
+   "name": "Promoter & governance",
+   "score": 52,
+   "detail": "1 of 4 checks passed · 2 not found"
+  },
+  {
+   "name": "Issue structure",
+   "score": 67,
+   "detail": "2 of 3 checks passed · 1 flag"
+  },
+  {
+   "name": "Use of proceeds",
+   "score": 40,
+   "detail": "1 of 4 checks passed · 1 flag · 2 not found"
+  },
+  {
+   "name": "Legal & litigation",
+   "score": 53,
+   "detail": "1 of 3 checks passed · 2 not found"
+  },
+  {
+   "name": "Risk factors",
+   "score": 28,
+   "detail": "0 of 4 checks passed · 1 flag · 2 not found"
+  }
+ ],
+ "checks": [
+  {
+   "id": "fh1",
+   "name": "Revenue growth",
+   "category": "Financial health",
+   "status": "pass",
+   "finding": "Revenue rose from ₹54.3 cr (FY24) to ₹119.8 cr (FY26), a CAGR of about 48.5%.",
+   "source": "https://www.multibagg.ai/market-pulse/articles/ipo/analyse-vectras-enprocon-ipo-rhp-cmvt7m5i8000f6mmeha2rllcj"
+  },
+  {
+   "id": "fh2",
+   "name": "Revenue rose every year",
+   "category": "Financial health",
+   "status": "pass",
+   "finding": "Revenue grew every year: ₹54.3 cr, ₹80.5 cr, ₹119.8 cr (FY24–FY26).",
+   "source": "https://www.multibagg.ai/market-pulse/articles/ipo/analyse-vectras-enprocon-ipo-rhp-cmvt7m5i8000f6mmeha2rllcj"
+  },
+  {
+   "id": "fh3",
+   "name": "Debt to equity",
+   "category": "Financial health",
+   "status": "pass",
+   "finding": "Debt to equity was 0.59 in FY26 and 0.67 at September 2026.",
+   "source": "https://www.multibagg.ai/market-pulse/articles/ipo/analyse-vectras-enprocon-ipo-rhp-cmvt7m5i8000f6mmeha2rllcj"
+  },
+  {
+   "id": "fh4",
+   "name": "Debt growing slower than revenue",
+   "category": "Financial health",
+   "status": "flag",
+   "finding": "Borrowings rose more than fivefold (₹4.2 cr to ₹22.2 cr) while revenue rose 120% over FY24–FY26.",
+   "source": "https://www.investorgain.com/ipo/vectras-enprocon-ipo/1998/"
+  },
+  {
+   "id": "fh5",
+   "name": "Net worth rising",
+   "category": "Financial health",
+   "status": "pass",
+   "finding": "Net worth rose every year: ₹12.2 cr, ₹22.3 cr, ₹37.8 cr (FY24–FY26).",
+   "source": "https://www.investorgain.com/ipo/vectras-enprocon-ipo/1998/"
+  },
+  {
+   "id": "fh6",
+   "name": "Positive operating cash flow",
+   "category": "Financial health",
+   "status": "flag",
+   "finding": "Operating cash flow was negative at -₹5.1 cr in FY26, against a profit of ₹15.4 cr.",
+   "source": "https://www.multibagg.ai/market-pulse/articles/ipo/analyse-vectras-enprocon-ipo-rhp-cmvt7m5i8000f6mmeha2rllcj"
+  },
+  {
+   "id": "pr1",
+   "name": "Profit growth",
+   "category": "Profitability",
+   "status": "pass",
+   "finding": "Profit after tax grew 51.7% in FY26, from ₹10.2 cr to ₹15.4 cr.",
+   "source": "https://www.investorgain.com/ipo/vectras-enprocon-ipo/1998/"
+  },
+  {
+   "id": "pr2",
+   "name": "Profit margin trend",
+   "category": "Profitability",
+   "status": "pass",
+   "finding": "Net margin improved from about 10.7% (FY24) to 12.6% (FY25) and 12.9% (FY26).",
+   "source": "https://www.multibagg.ai/market-pulse/articles/ipo/analyse-vectras-enprocon-ipo-rhp-cmvt7m5i8000f6mmeha2rllcj"
+  },
+  {
+   "id": "pr3",
+   "name": "Return on equity",
+   "category": "Profitability",
+   "status": "pass",
+   "finding": "Return on net worth was 51.4% in FY26, helped by the small equity base.",
+   "source": "https://www.investorgain.com/ipo/vectras-enprocon-ipo/1998/"
+  },
+  {
+   "id": "pr4",
+   "name": "Return on capital employed",
+   "category": "Profitability",
+   "status": "pass",
+   "finding": "ROCE was 48.4% in FY26.",
+   "source": "https://www.investorgain.com/ipo/vectras-enprocon-ipo/1998/"
+  },
+  {
+   "id": "pr5",
+   "name": "Margin vs listed peers",
+   "category": "Profitability",
+   "status": "pass",
+   "finding": "FY26 PAT margin of 12.9% vs a peer median of about 9.1% (Pratham EPC 4.4%, Desco Infratech 13.8%).",
+   "source": "https://www.multibagg.ai/market-pulse/articles/ipo/analyse-vectras-enprocon-ipo-rhp-cmvt7m5i8000f6mmeha2rllcj"
+  },
+  {
+   "id": "va1",
+   "name": "P/E vs listed peers",
+   "category": "Valuation vs peers",
+   "status": "pass",
+   "finding": "Post-issue P/E of about 13.0x (₹200.1 cr market cap vs ₹15.4 cr FY26 profit) vs a peer median of 22.4x (Pratham EPC 34.5x, Likhitha 22.4x, Desco 8.4x).",
+   "source": "https://ipowatch.in/?p=175783"
+  },
+  {
+   "id": "va2",
+   "name": "Price to book vs listed peers",
+   "category": "Valuation vs peers",
+   "status": "caution",
+   "finding": "Post-issue price to book of about 2.49x (₹200.1 cr vs ₹80.3 cr post-issue net worth) vs a peer median of about 2.13x, roughly 17% above.",
+   "source": "https://ipowatch.in/?p=175783"
+  },
+  {
+   "id": "va3",
+   "name": "Market cap to sales vs listed peers",
+   "category": "Valuation vs peers",
+   "status": "na",
+   "finding": "Peer market cap to sales figures were not found in public sources.",
+   "source": ""
+  },
+  {
+   "id": "va4",
+   "name": "Recent pre-IPO share price",
+   "category": "Valuation vs peers",
+   "status": "na",
+   "finding": "No details of pre-IPO share issues or transfers were found in public sources.",
+   "source": ""
+  },
+  {
+   "id": "pg1",
+   "name": "Promoter holding after the issue",
+   "category": "Promoter & governance",
+   "status": "pass",
+   "finding": "Promoters hold 73.49% after the issue, down from 100%.",
+   "source": "https://www.investorgain.com/ipo/vectras-enprocon-ipo/1998/"
+  },
+  {
+   "id": "pg2",
+   "name": "No pledged promoter shares",
+   "category": "Promoter & governance",
+   "status": "na",
+   "finding": "No information on pledged promoter shares was found.",
+   "source": ""
+  },
+  {
+   "id": "pg3",
+   "name": "Related-party transactions",
+   "category": "Promoter & governance",
+   "status": "caution",
+   "finding": "FY26 sales to related firm M/s Vectras were ₹17.1 cr, about 14% of revenue, with ₹11.8 cr of purchases from it.",
+   "source": "https://www.multibagg.ai/market-pulse/articles/ipo/analyse-vectras-enprocon-ipo-rhp-cmvt7m5i8000f6mmeha2rllcj"
+  },
+  {
+   "id": "pg4",
+   "name": "No regulatory action against promoters",
+   "category": "Promoter & governance",
+   "status": "na",
+   "finding": "No information on regulatory action against promoters was found.",
+   "source": ""
+  },
+  {
+   "id": "is1",
+   "name": "Offer for sale share of the issue",
+   "category": "Issue structure",
+   "status": "pass",
+   "finding": "The offer for sale is ₹10.46 cr, about 19.7% of the ₹53.05 cr issue.",
+   "source": "https://www.chittorgarh.com/news-detail/ipo/confirmed-ipo/vectras-enprocon-ipo/16571/"
+  },
+  {
+   "id": "is2",
+   "name": "Free float after listing",
+   "category": "Issue structure",
+   "status": "pass",
+   "finding": "The issue is about 26.5% of the ₹200.1 cr post-issue market cap.",
+   "source": "https://www.investorgain.com/ipo/vectras-enprocon-ipo/1998/"
+  },
+  {
+   "id": "is3",
+   "name": "Selling shareholders' cost",
+   "category": "Issue structure",
+   "status": "flag",
+   "finding": "The two selling promoters' average acquisition cost is ₹4 per share, so the upper band is about 26x their cost.",
+   "source": "https://www.multibagg.ai/market-pulse/articles/ipo/analyse-vectras-enprocon-ipo-rhp-cmvt7m5i8000f6mmeha2rllcj"
+  },
+  {
+   "id": "up1",
+   "name": "Money for growth",
+   "category": "Use of proceeds",
+   "status": "flag",
+   "finding": "No proceeds fund capex or expansion; ₹20 cr goes to working capital and ₹14 cr to debt repayment.",
+   "source": "https://www.investorgain.com/ipo/vectras-enprocon-ipo/1998/"
+  },
+  {
+   "id": "up2",
+   "name": "Debt repayment share",
+   "category": "Use of proceeds",
+   "status": "pass",
+   "finding": "₹14 cr, or about 32.9% of the ₹42.59 cr fresh issue, goes to repaying borrowings.",
+   "source": "https://www.investorgain.com/ipo/vectras-enprocon-ipo/1998/"
+  },
+  {
+   "id": "up3",
+   "name": "General corporate purposes",
+   "category": "Use of proceeds",
+   "status": "na",
+   "finding": "The general corporate purposes amount is not quantified in public sources.",
+   "source": ""
+  },
+  {
+   "id": "up4",
+   "name": "No repayment to promoter entities",
+   "category": "Use of proceeds",
+   "status": "na",
+   "finding": "Public sources don't say whose loans are being repaid.",
+   "source": ""
+  },
+  {
+   "id": "lg1",
+   "name": "Litigation against the company",
+   "category": "Legal & litigation",
+   "status": "na",
+   "finding": "Litigation amounts were not found in public sources.",
+   "source": ""
+  },
+  {
+   "id": "lg2",
+   "name": "Criminal or regulatory cases",
+   "category": "Legal & litigation",
+   "status": "na",
+   "finding": "No information on criminal or regulatory cases was found.",
+   "source": ""
+  },
+  {
+   "id": "lg3",
+   "name": "Contingent liabilities",
+   "category": "Legal & litigation",
+   "status": "pass",
+   "finding": "The company reported no contingent liabilities at the balance-sheet date.",
+   "source": "https://www.multibagg.ai/market-pulse/articles/ipo/analyse-vectras-enprocon-ipo-rhp-cmvt7m5i8000f6mmeha2rllcj"
+  },
+  {
+   "id": "rk1",
+   "name": "Customer concentration",
+   "category": "Risk factors",
+   "status": "flag",
+   "finding": "The top 10 customers made up 92.3% of FY26 revenue, and the largest one 23.9%.",
+   "source": "https://www.multibagg.ai/market-pulse/articles/ipo/analyse-vectras-enprocon-ipo-rhp-cmvt7m5i8000f6mmeha2rllcj"
+  },
+  {
+   "id": "rk2",
+   "name": "Supplier dependence",
+   "category": "Risk factors",
+   "status": "caution",
+   "finding": "The largest supplier made up 34.7% of FY26 purchases.",
+   "source": "https://www.multibagg.ai/market-pulse/articles/ipo/analyse-vectras-enprocon-ipo-rhp-cmvt7m5i8000f6mmeha2rllcj"
+  },
+  {
+   "id": "rk3",
+   "name": "Operating history",
+   "category": "Risk factors",
+   "status": "na",
+   "finding": "The incorporation date was not found in public sources.",
+   "source": ""
+  },
+  {
+   "id": "rk4",
+   "name": "Auditor remarks",
+   "category": "Risk factors",
+   "status": "na",
+   "finding": "Auditor remarks were not found in public sources.",
+   "source": ""
+  }
+ ],
+ "peers": [
+  "Pratham EPC Projects",
+  "Desco Infratech",
+  "Likhitha Infrastructure"
+ ],
+ "metrics": [
+  [
+   "Revenue growth (CAGR)",
+   "%",
+   "high",
+   48.5,
+   [
+    null,
+    null,
+    null
+   ]
+  ],
+  [
+   "Net profit margin",
+   "%",
+   "high",
+   12.88,
+   [
+    4.39,
+    13.78,
+    null
+   ]
+  ],
+  [
+   "Return on equity",
+   "%",
+   "high",
+   51.39,
+   [
+    7.44,
+    25.21,
+    9.82
+   ]
+  ],
+  [
+   "Return on capital employed",
+   "%",
+   "high",
+   48.37,
+   [
+    7.67,
+    29.73,
+    null
+   ]
+  ],
+  [
+   "Debt to equity",
+   "x",
+   "low",
+   0.59,
+   [
+    0.51,
+    0.22,
+    null
+   ]
+  ],
+  [
+   "P/E (post-issue, upper band)",
+   "x",
+   "low",
+   12.97,
+   [
+    34.47,
+    8.35,
+    22.43
+   ]
+  ],
+  [
+   "Price to book (post-issue)",
+   "x",
+   "low",
+   2.49,
+   [
+    2.33,
+    1.93,
+    2.13
+   ]
+  ]
+ ],
+ "sources": [
+  {
+   "url": "https://ipowatch.in/?p=175783",
+   "title": "Vectras Enprocon IPO details and peers — IPO Watch"
+  },
+  {
+   "url": "https://www.chittorgarh.com/news-detail/ipo/confirmed-ipo/vectras-enprocon-ipo/16571/",
+   "title": "Vectras Enprocon IPO news — Chittorgarh"
+  },
+  {
+   "url": "https://www.investorgain.com/ipo/vectras-enprocon-ipo/1998/",
+   "title": "Vectras Enprocon IPO — Investorgain"
+  },
+  {
+   "url": "https://www.multibagg.ai/market-pulse/articles/ipo/analyse-vectras-enprocon-ipo-rhp-cmvt7m5i8000f6mmeha2rllcj",
+   "title": "Vectras Enprocon IPO RHP analysis — Multibagg"
+  },
+  {
+   "url": "https://chanakyanipothi.com/sme-ipo-watch/vectras-enprocon-ipo-review/",
+   "title": "Vectras Enprocon IPO review — Chanakya Ni Pothi"
+  }
+ ],
+ "generatedAt": "2026-11-02T08:00:00+05:30"
+}
