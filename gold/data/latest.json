@@ -1,22 +1,22 @@
 {
- "updated_ist": "2026-11-03 06:53",
+ "updated_ist": "2026-11-03 08:12",
  "date": "2026-11-03",
- "usd_oz": 3952.83,
- "source_time": "2026-11-03T01:08:01.078374+00:00",
+ "usd_oz": 3947.28,
+ "source_time": "2026-11-03T02:27:01.105526+00:00",
  "is_stale": false,
  "usdinr": 94.91,
  "fx_date": "2026-11-02",
- "inr_10g_24k": 120618,
- "inr_g_24k": 12062,
- "inr_10g_22k": 110566,
- "inr_10g_18k": 90463,
+ "inr_10g_24k": 120448,
+ "inr_g_24k": 12045,
+ "inr_10g_22k": 110411,
+ "inr_10g_18k": 90336,
  "avg12": 132711,
  "avg12_from": "2025-10",
  "avg12_to": "2026-09",
- "stretch": -0.0911,
+ "stretch": -0.0924,
  "percentile": 1.6,
  "band": "cheap",
- "yoy": 0.0332,
+ "yoy": 0.0317,
  "yoy_month": "2025-11",
  "hist_from": "2001-01",
  "hist_to": "2026-09",
@@ -330,5 +330,308 @@
    "p": 132569,
    "a": 130342
   }
- ]
+ ],
+ "ribbon": [
+  {
+   "m": "2021-10",
+   "pct": 19.3,
+   "band": "cheap"
+  },
+  {
+   "m": "2021-11",
+   "pct": 29.3,
+   "band": "fair"
+  },
+  {
+   "m": "2021-12",
+   "pct": 26.4,
+   "band": "fair"
+  },
+  {
+   "m": "2022-01",
+   "pct": 28.6,
+   "band": "fair"
+  },
+  {
+   "m": "2022-02",
+   "pct": 42.2,
+   "band": "fair"
+  },
+  {
+   "m": "2022-03",
+   "pct": 69.4,
+   "band": "expensive"
+  },
+  {
+   "m": "2022-04",
+   "pct": 59.7,
+   "band": "fair"
+  },
+  {
+   "m": "2022-05",
+   "pct": 41.3,
+   "band": "fair"
+  },
+  {
+   "m": "2022-06",
+   "pct": 40.3,
+   "band": "fair"
+  },
+  {
+   "m": "2022-07",
+   "pct": 21.2,
+   "band": "cheap"
+  },
+  {
+   "m": "2022-08",
+   "pct": 27.0,
+   "band": "fair"
+  },
+  {
+   "m": "2022-09",
+   "pct": 10.2,
+   "band": "cheap"
+  },
+  {
+   "m": "2022-10",
+   "pct": 14.1,
+   "band": "cheap"
+  },
+  {
+   "m": "2022-11",
+   "pct": 24.1,
+   "band": "cheap"
+  },
+  {
+   "m": "2022-12",
+   "pct": 47.1,
+   "band": "fair"
+  },
+  {
+   "m": "2023-01",
+   "pct": 63.6,
+   "band": "expensive"
+  },
+  {
+   "m": "2023-02",
+   "pct": 53.9,
+   "band": "fair"
+  },
+  {
+   "m": "2023-03",
+   "pct": 61.0,
+   "band": "expensive"
+  },
+  {
+   "m": "2023-04",
+   "pct": 75.9,
+   "band": "expensive"
+  },
+  {
+   "m": "2023-05",
+   "pct": 73.6,
+   "band": "expensive"
+  },
+  {
+   "m": "2023-06",
+   "pct": 57.4,
+   "band": "fair"
+  },
+  {
+   "m": "2023-07",
+   "pct": 54.5,
+   "band": "fair"
+  },
+  {
+   "m": "2023-08",
+   "pct": 43.2,
+   "band": "fair"
+  },
+  {
+   "m": "2023-09",
+   "pct": 39.3,
+   "band": "fair"
+  },
+  {
+   "m": "2023-10",
+   "pct": 35.1,
+   "band": "fair"
+  },
+  {
+   "m": "2023-11",
+   "pct": 45.5,
+   "band": "fair"
+  },
+  {
+   "m": "2023-12",
+   "pct": 50.0,
+   "band": "fair"
+  },
+  {
+   "m": "2024-01",
+   "pct": 45.1,
+   "band": "fair"
+  },
+  {
+   "m": "2024-02",
+   "pct": 38.0,
+   "band": "fair"
+  },
+  {
+   "m": "2024-03",
+   "pct": 64.9,
+   "band": "expensive"
+  },
+  {
+   "m": "2024-04",
+   "pct": 85.0,
+   "band": "expensive"
+  },
+  {
+   "m": "2024-05",
+   "pct": 83.0,
+   "band": "expensive"
+  },
+  {
+   "m": "2024-06",
+   "pct": 79.1,
+   "band": "expensive"
+  },
+  {
+   "m": "2024-07",
+   "pct": 81.7,
+   "band": "expensive"
+  },
+  {
+   "m": "2024-08",
+   "pct": 84.3,
+   "band": "expensive"
+  },
+  {
+   "m": "2024-09",
+   "pct": 87.2,
+   "band": "very_expensive"
+  },
+  {
+   "m": "2024-10",
+   "pct": 92.4,
+   "band": "very_expensive"
+  },
+  {
+   "m": "2024-11",
+   "pct": 83.3,
+   "band": "expensive"
+  },
+  {
+   "m": "2024-12",
+   "pct": 80.1,
+   "band": "expensive"
+  },
+  {
+   "m": "2025-01",
+   "pct": 82.4,
+   "band": "expensive"
+  },
+  {
+   "m": "2025-02",
+   "pct": 92.7,
+   "band": "very_expensive"
+  },
+  {
+   "m": "2025-03",
+   "pct": 90.8,
+   "band": "very_expensive"
+  },
+  {
+   "m": "2025-04",
+   "pct": 95.3,
+   "band": "very_expensive"
+  },
+  {
+   "m": "2025-05",
+   "pct": 94.3,
+   "band": "very_expensive"
+  },
+  {
+   "m": "2025-06",
+   "pct": 93.4,
+   "band": "very_expensive"
+  },
+  {
+   "m": "2025-07",
+   "pct": 86.9,
+   "band": "very_expensive"
+  },
+  {
+   "m": "2025-08",
+   "pct": 86.2,
+   "band": "very_expensive"
+  },
+  {
+   "m": "2025-09",
+   "pct": 96.3,
+   "band": "very_expensive"
+  },
+  {
+   "m": "2025-10",
+   "pct": 98.9,
+   "band": "very_expensive"
+  },
+  {
+   "m": "2025-11",
+   "pct": 97.9,
+   "band": "very_expensive"
+  },
+  {
+   "m": "2025-12",
+   "pct": 98.5,
+   "band": "very_expensive"
+  },
+  {
+   "m": "2026-01",
+   "pct": 99.8,
+   "band": "very_expensive"
+  },
+  {
+   "m": "2026-02",
+   "pct": 99.5,
+   "band": "very_expensive"
+  },
+  {
+   "m": "2026-03",
+   "pct": 98.2,
+   "band": "very_expensive"
+  },
+  {
+   "m": "2026-04",
+   "pct": 96.0,
+   "band": "very_expensive"
+  },
+  {
+   "m": "2026-05",
+   "pct": 88.5,
+   "band": "very_expensive"
+  },
+  {
+   "m": "2026-06",
+   "pct": 51.3,
+   "band": "fair"
+  },
+  {
+   "m": "2026-07",
+   "pct": 25.1,
+   "band": "fair"
+  },
+  {
+   "m": "2026-08",
+   "pct": 52.3,
+   "band": "fair"
+  },
+  {
+   "m": "2026-09",
+   "pct": 29.6,
+   "band": "fair"
+  }
+ ],
+ "prev": null
 }
