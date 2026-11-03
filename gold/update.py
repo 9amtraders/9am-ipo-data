@@ -260,6 +260,17 @@ def main():
     for i in range(max(12, len(months) - 60), len(months)):
         chart.append({"m": months[i], "p": p[i], "a": round(statistics.fmean(p[i - 12:i]))})
 
+    # The reading for each of the last 60 months, for the colour strip on the page.
+    ribbon = []
+    for m in sorted(stretch)[-60:]:
+        mp = percentile(stretch[m], hist)
+        ribbon.append({"m": m, "pct": round(mp, 1), "band": band_of(mp)})
+
+    # Keep today's reading with the daily price, and find the previous day for "change since yesterday".
+    daily[-1].update({"pct": round(pct, 1), "band": band})
+    prev = next((d for d in reversed(daily[:-1])
+                 if (today - date.fromisoformat(d["date"])).days <= 4), None)
+
     latest = {
         "updated_ist": now.strftime("%Y-%m-%d %H:%M"),
         "date": today.isoformat(),
@@ -271,7 +282,8 @@ def main():
         "stretch": round(s_now, 4), "percentile": round(pct, 1), "band": band,
         "yoy": round(yoy, 4) if yoy is not None else None, "yoy_month": yoy_month,
         "hist_from": min(stretch), "hist_to": max(stretch), "hist_n": len(hist),
-        "pattern": pattern, "chart": chart,
+        "pattern": pattern, "chart": chart, "ribbon": ribbon,
+        "prev": {"date": prev["date"], "inr_10g": prev["inr_10g"]} if prev else None,
     }
     save("daily.json", daily)
     save("latest.json", latest)

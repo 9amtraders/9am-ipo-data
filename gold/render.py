@@ -7,6 +7,7 @@ the gauge and the chart, is plain HTML and SVG, so search engines read the full 
 import html
 import json
 import math
+from urllib.parse import quote
 from datetime import date
 from pathlib import Path
 
@@ -14,6 +15,7 @@ ROOT = Path(__file__).resolve().parent
 OUT = ROOT.parent / "build"
 URL_EN = "/gold-thermometer/"
 URL_HI = "/sona-sasta-ya-mahanga/"
+SITE = "https://9amtraders.com"
 DEMO = "https://wa.me/919315906004?text=Hi%2C%20I%20want%20to%20book%20a%20free%20demo%20class"
 COLORS = {"cheap": "#1f8a52", "fair": "#c9a227", "expensive": "#e07b28", "very_expensive": "#c1272d"}
 ZONES = [("cheap", 0, 25), ("fair", 25, 60), ("expensive", 60, 85), ("very_expensive", 85, 100)]
@@ -54,6 +56,11 @@ T = {
   "chart_h": "Gold in rupees: last 5 years",
   "chart_sub": "Monthly average price of 24K gold per 10 g, with its 12-month average. Today's price is the last point.",
   "legend": ["Monthly price", "12-month average", "Today"],
+  "ribbon_h": "How the reading changed: last 5 years",
+  "ribbon_sub": "Each block is one month, coloured by that month's Thermometer reading. Hover over or tap a block to see the month.",
+  "yday": "{chg} since {d}",
+  "share_b": "Share on WhatsApp",
+  "share_t": "Is gold cheap or expensive today? The 9AM Gold Thermometer reads {band} ({pct}/100). See why: {url}",
   "jeweller_h": "Why is your jeweller's rate higher?",
   "jeweller": "Indian gold prices add import duty and 3% GST, and jewellery also carries making charges. So your jeweller's rate will be higher than the international price shown here. The Thermometer uses the international price so that 25 years of history compare like with like, because India's import duty has changed several times in that period.",
   "how_h": "How the Gold Thermometer works",
@@ -109,6 +116,11 @@ T = {
   "chart_h": "रुपये में सोना: पिछले 5 साल",
   "chart_sub": "24 कैरेट सोने का 10 ग्राम का मासिक औसत भाव और उसका 12 महीने का औसत। आख़िरी बिंदु आज का भाव है।",
   "legend": ["मासिक भाव", "12 महीने का औसत", "आज"],
+  "ribbon_h": "पिछले 5 साल में रीडिंग कैसे बदली",
+  "ribbon_sub": "हर खाना एक महीना है, जिसका रंग उस महीने की थर्मामीटर रीडिंग बताता है। महीना देखने के लिए खाने पर माउस ले जाएं या टैप करें।",
+  "yday": "{d} से {chg}",
+  "share_b": "WhatsApp पर शेयर करें",
+  "share_t": "आज सोना सस्ता है या महंगा? 9AM गोल्ड थर्मामीटर की रीडिंग: {band} ({pct}/100)। पूरी जानकारी: {url}",
   "jeweller_h": "आपके ज्वैलर का भाव ज़्यादा क्यों होता है?",
   "jeweller": "भारत में सोने के भाव में आयात शुल्क और 3% GST जुड़ता है, और गहनों पर मेकिंग चार्ज भी लगता है। इसलिए ज्वैलर का भाव यहां दिखाए गए अंतरराष्ट्रीय भाव से ज़्यादा होगा। थर्मामीटर अंतरराष्ट्रीय भाव इसलिए इस्तेमाल करता है ताकि 25 साल की तुलना एक जैसी रहे, क्योंकि इस दौरान भारत में आयात शुल्क कई बार बदला है।",
   "how_h": "गोल्ड थर्मामीटर कैसे काम करता है?",
@@ -176,6 +188,22 @@ font-family:inherit;color:var(--ink);line-height:1.65;max-width:1080px;margin:0 
 #n9gt .btn{display:inline-block;background:var(--red);color:#fff!important;text-decoration:none;font-weight:700;padding:14px 26px;border-radius:10px;box-shadow:0 5px 0 #7d1418}
 #n9gt .disc{font-size:13px;color:var(--grey);border-top:1px solid var(--line);padding-top:12px;margin:14px 0}
 #n9gt .stale{display:none;background:#fff5f5;border:1px solid #f3c7c9;border-left:5px solid var(--red);border-radius:10px;padding:12px 16px;margin:0 0 14px;font-size:15px}
+#n9gt .needle{transform-origin:160px 160px;transform:rotate(var(--a))}
+#n9gt .chg{font-size:13px;font-weight:700;margin:4px 0 0!important}#n9gt .chg.up{color:#1f8a52!important}#n9gt .chg.dn{color:#c1272d!important}
+#n9gt .share{display:inline-flex;align-items:center;gap:8px;margin-top:6px;background:#25d366;color:#fff!important;text-decoration:none;font-weight:700;font-size:15px;padding:10px 16px;border-radius:9px}
+#n9gt .share svg{width:20px;height:20px}
+#n9gt .reading.pre .needle{transform:rotate(0deg)}
+#n9gt .reading.pre .seg{stroke-dasharray:1;stroke-dashoffset:1}
+#n9gt .reading.pre .bigname{opacity:0}
+#n9gt .reading.go .seg{stroke-dasharray:1;animation:n9draw .55s ease-out var(--d) both}
+#n9gt .reading.go .seg.on{animation:n9draw .55s ease-out var(--d) both,n9glow 1.2s ease-in-out 3.2s 3}
+#n9gt .reading.go .needle{animation:n9sweep 2.6s ease-in-out .5s both}
+#n9gt .reading.go .bigname{animation:n9up .5s ease-out 2.9s both}
+@keyframes n9draw{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes n9sweep{0%{transform:rotate(0deg)}38%{transform:rotate(180deg)}74%{transform:rotate(calc(var(--a) + 6deg))}88%{transform:rotate(calc(var(--a) - 2deg))}100%{transform:rotate(var(--a))}}
+@keyframes n9glow{0%,100%{opacity:1}50%{opacity:.45}}
+@keyframes n9up{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){#n9gt .reading .seg,#n9gt .reading .needle,#n9gt .reading .bigname{animation:none!important}}
 @media (max-width:760px){#n9gt .reading{grid-template-columns:1fr}#n9gt .cards{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:420px){#n9gt .cards{grid-template-columns:1fr}#n9gt .hero{padding:26px 20px}}
 </style>"""
@@ -213,6 +241,8 @@ def day_name(t, d):
 
 
 def gauge(L, t):
+    """Semicircle gauge. The needle is drawn at 0 and rotated to the reading, so CSS can animate the swing.
+    Without CSS or JavaScript the SVG transform still shows the final position."""
     cx, cy, r, w = 160, 160, 118, 26
 
     def pt(p, rad):
@@ -220,20 +250,47 @@ def gauge(L, t):
         return cx + rad * math.cos(a), cy - rad * math.sin(a)
 
     segs = ""
-    for name, a, b in ZONES:
+    for k, (name, a, b) in enumerate(ZONES):
         x1, y1 = pt(a, r)
         x2, y2 = pt(b, r)
-        segs += f'<path d="M{x1:.1f},{y1:.1f} A{r},{r} 0 0 1 {x2:.1f},{y2:.1f}" fill="none" stroke="{COLORS[name]}" stroke-width="{w}"/>'
+        on = " on" if name == L["band"] else ""
+        segs += (f'<path class="seg{on}" style="--d:{k * 0.12:.2f}s" pathLength="1" d="M{x1:.1f},{y1:.1f} A{r},{r} 0 0 1 {x2:.1f},{y2:.1f}" '
+                 f'fill="none" stroke="{COLORS[name]}" stroke-width="{w}"/>')
     for p_ in (25, 60, 85):
         xa, ya = pt(p_, r - w / 2 - 1)
         xb, yb = pt(p_, r + w / 2 + 1)
         segs += f'<line x1="{xa:.1f}" y1="{ya:.1f}" x2="{xb:.1f}" y2="{yb:.1f}" stroke="#fff" stroke-width="3"/>'
-    nx, ny = pt(L["percentile"], r - 30)
+    ticks = ""
+    for p_ in range(0, 101, 10):
+        xa, ya = pt(p_, r - w / 2 - 6)
+        xb, yb = pt(p_, r - w / 2 - (12 if p_ % 50 == 0 else 9))
+        ticks += f'<line x1="{xa:.1f}" y1="{ya:.1f}" x2="{xb:.1f}" y2="{yb:.1f}" stroke="#b8c0d2" stroke-width="1.5"/>'
+    deg = L["percentile"] * 1.8
     label = t["gauge_aria"].format(band=t["band"][L["band"]], pct=round(L["percentile"]))
-    return (f'<svg viewBox="0 0 320 185" role="img" aria-label="{esc(label)}">{segs}'
-            f'<line x1="{cx}" y1="{cy}" x2="{nx:.1f}" y2="{ny:.1f}" stroke="#0e1a36" stroke-width="6" stroke-linecap="round"/>'
-            f'<circle cx="{cx}" cy="{cy}" r="11" fill="#0e1a36"/>'
+    return (f'<svg viewBox="0 0 320 185" role="img" aria-label="{esc(label)}">{segs}{ticks}'
+            f'<g class="needle" style="--a:{deg:.1f}deg" transform="rotate({deg:.1f} {cx} {cy})">'
+            f'<path d="M{cx},{cy - 5} L{cx - (r - 34)},{cy} L{cx},{cy + 5} Z" fill="#0e1a36"/></g>'
+            f'<circle cx="{cx}" cy="{cy}" r="12" fill="#0e1a36"/><circle cx="{cx}" cy="{cy}" r="4.5" fill="{COLORS[L["band"]]}"/>'
             f'<text x="28" y="180" font-size="13" fill="#5d6577">0</text><text x="282" y="180" font-size="13" fill="#5d6577">100</text></svg>')
+
+
+def ribbon(L, t):
+    """One coloured block per month for the last five years, coloured by that month's reading."""
+    rb = L.get("ribbon") or []
+    if not rb:
+        return ""
+    W, H, l, rgt, top, bh = 680, 70, 8, 8, 6, 34
+    bw = (W - l - rgt) / len(rb)
+    cells, years = "", ""
+    for i, c in enumerate(rb):
+        x = l + i * bw
+        tip = f"{month_name(t, c['m'])}: {t['band'][c['band']]} ({round(c['pct'])}/100)"
+        cells += (f'<rect x="{x:.1f}" y="{top}" width="{bw + 0.4:.1f}" height="{bh}" fill="{COLORS[c["band"]]}">'
+                  f'<title>{esc(tip)}</title></rect>')
+        if c["m"].endswith("-01"):
+            years += (f'<line x1="{x:.1f}" x2="{x:.1f}" y1="{top}" y2="{top + bh + 6}" stroke="#fff" stroke-width="2"/>'
+                      f'<text x="{x + 3:.1f}" y="{top + bh + 22}" font-size="12" fill="#5d6577">{c["m"][:4]}</text>')
+    return f'<svg viewBox="0 0 {W} {H}" role="img" aria-label="{esc(t["ribbon_h"])}">{cells}{years}</svg>'
 
 
 def chart(L, t):
@@ -288,6 +345,12 @@ def page(L, lang):
     else:
         past = t["past_few"].format(band=bname, n=pt_["n"])
     yoy = pct(L["yoy"]) if L.get("yoy") is not None else "–"
+    yday = ""
+    if L.get("prev"):
+        diff = L["inr_10g_24k"] - L["prev"]["inr_10g"]
+        chg = f'{"+" if diff >= 0 else "−"}₹{inr(abs(diff))} ({pct(diff / L["prev"]["inr_10g"])})'
+        yday = f'<p class="chg {"up" if diff >= 0 else "dn"}">{t["yday"].format(chg=chg, d=day_name(t, L["prev"]["date"]))}</p>'
+    share = "https://wa.me/?text=" + quote(t["share_t"].format(band=bname, pct=p_, url=SITE + (URL_EN if lang == "en" else URL_HI)))
     zones = "".join(f'<tr><td><span class="dot" style="background:{COLORS[z]}"></span><b>{t["band"][z]}</b></td><td>{t["zone_rule"][z]}</td></tr>' for z, _, _ in ZONES)
     faqs = [(q, a.format(band=bname, x=x, dir=d, pct=p_)) for q, a in t["faq"]]
     faq_html = "".join(f"<details><summary>{esc(q)}</summary><p>{esc(a)}</p></details>" for q, a in faqs)
@@ -310,17 +373,18 @@ def page(L, lang):
   <div class="gauge">{gauge(L, t)}<div class="legend">{legend}</div></div>
   <div>
     <p class="lab">{t['today_is']}</p>
-    <div class="big" style="color:{COLORS[band]}">{bname}</div>
+    <div class="big bigname" style="color:{COLORS[band]}">{bname}</div>
     <p>{t['main'].format(x=x, dir=d, pct=p_)}</p>
     <p class="note">{t['band_text'][band]}</p>
+    <a class="share" href="{share}" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-3.9-4.7-4.1-.1-.2-1.1-1.5-1.1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.3 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.5.1.3.6 1 1.3 1.7.9.8 1.7 1.1 2 1.2.2.1.4.1.5-.1l.7-.9c.2-.2.4-.2.6-.1l1.9.9c.3.1.4.2.5.3.1.2.1.7-.1 1.3z"/></svg>{t['share_b']}</a>
   </div>
 </div>
 
 <div class="cards">
-  <div class="card"><h3>{t['r_price']}</h3><div class="v">₹{inr(L['inr_10g_24k'])}</div><p>{t['r_price_sub'].format(g=inr(L['inr_g_24k']), k22=inr(L['inr_10g_22k']), k18=inr(L['inr_10g_18k']))}</p></div>
+  <div class="card"><h3>{t['r_price']}</h3><div class="v">₹{inr(L['inr_10g_24k'])}</div>{yday}<p>{t['r_price_sub'].format(g=inr(L['inr_g_24k']), k22=inr(L['inr_10g_22k']), k18=inr(L['inr_10g_18k']))}</p></div>
   <div class="card"><h3>{t['r_avg']}</h3><div class="v">{pct(s)}</div><p>{t['r_avg_sub'].format(a=month_name(t, L['avg12_from']) + ' – ' + month_name(t, L['avg12_to']), v=inr(L['avg12']))}</p></div>
   <div class="card"><h3>{t['r_yoy']}</h3><div class="v">{yoy}</div><p>{t['r_yoy_sub'].format(m=month_name(t, L['yoy_month']))}</p></div>
-  <div class="card"><h3>{t['r_read']}</h3><div class="v">{p_} / 100</div><p>{t['r_read_sub']}</p></div>
+  <div class="card"><h3>{t['r_read']}</h3><div class="v"><span class="count" data-to="{p_}">{p_}</span> / 100</div><p>{t['r_read_sub']}</p></div>
 </div>
 <p class="attr">{t['attr'].format(gp=SRC['gp'], fx=L['usdinr'], fxd=day_name(t, L['fx_date']) if L.get('fx_date') else '')}</p>
 
@@ -330,6 +394,10 @@ def page(L, lang):
 <h2>{t['chart_h']}</h2>
 <p class="sub">{t['chart_sub']}</p>
 <div class="box chart">{chart(L, t)}</div>
+
+<h2>{t['ribbon_h']}</h2>
+<p class="sub">{t['ribbon_sub']}</p>
+<div class="box chart">{ribbon(L, t)}<div class="legend">{legend}</div></div>
 
 <h2>{t['jeweller_h']}</h2>
 <p>{t['jeweller']}</p>
@@ -356,6 +424,15 @@ def page(L, lang):
 {ld}
 </script>
 <script>
+(function(){{var box=document.querySelector("#n9gt .reading");if(!box)return;
+if(window.matchMedia&&matchMedia("(prefers-reduced-motion: reduce)").matches)return;
+var nums=document.querySelectorAll("#n9gt .count");box.classList.add("pre");nums.forEach(function(n){{n.textContent="0";}});
+function go(){{box.classList.remove("pre");box.classList.add("go");
+var nd=box.querySelector(".needle"),t0=null;requestAnimationFrame(function step(ts){{if(!t0)t0=ts;
+var m=getComputedStyle(nd).transform,a=0;if(m&&m!=="none"){{var v=m.match(/-?[0-9.e]+/g);a=Math.atan2(+v[1],+v[0])*180/Math.PI;if(a<-90)a+=360;}}
+var r=Math.max(0,Math.min(100,Math.round(a/1.8)));nums.forEach(function(n){{n.textContent=ts-t0>3300?n.getAttribute("data-to"):r;}});
+if(ts-t0<=3300)requestAnimationFrame(step);}});}}
+if("IntersectionObserver" in window){{var io=new IntersectionObserver(function(e){{if(e[0].isIntersecting){{io.disconnect();go();}}}},{{threshold:.35}});io.observe(box);}}else go();}})();
 (function(){{var r=document.getElementById("n9gt"),s=document.getElementById("n9gt-stale");if(!r||!s)return;
 var d=new Date(r.getAttribute("data-updated")+"T00:00:00+05:30");if((Date.now()-d)/864e5>3)s.style.display="block";}})();
 </script>
