@@ -28,28 +28,28 @@ T = {
   "lang": "en", "months": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
   "band": {"cheap": "Cheap", "fair": "Fair", "expensive": "Expensive", "very_expensive": "Very expensive"},
   "band_text": {
-   "cheap": "Gold is close to or below its recent average, a level seen in the cheapest quarter of months since 2000.",
+   "cheap": "Gold is close to or below its recent average, a level seen in the cheapest quarter of months since §Y§.",
    "fair": "Gold is trading near its normal level compared with the past year.",
    "expensive": "Gold has run up more than usual compared with the past year.",
-   "very_expensive": "Gold is stretched far above its recent average, a level reached in only about 15% of months since 2000."},
+   "very_expensive": "Gold is stretched far above its recent average, a level reached in only about 15% of months since §Y§."},
   "zone_rule": {"cheap": "Bottom 25% of months", "fair": "25% to 60%", "expensive": "60% to 85%", "very_expensive": "Top 15% of months"},
   "updated": "Updated {d} · {t} IST",
   "switch": '<a class="lang" href="' + URL_HI + '">हिंदी में पढ़ें →</a>',
   "h1": 'Gold Thermometer: Is Gold <span>Cheap or Expensive</span> Today?',
-  "intro": "Not just today's gold price: a daily reading of whether gold is cheap or expensive compared with its own history since 2000, based on international gold prices and the rupee exchange rate.",
+  "intro": "Not just today's gold price: a daily reading of whether gold is cheap or expensive compared with its own history since §Y§, based on international gold prices and the rupee exchange rate.",
   "today_is": "Today gold is",
-  "main": "Gold is <b>{x}</b> {dir} its 12-month average. Compared with every month since 2000, today's reading is higher than <b>{pct}%</b> of them.",
+  "main": "Gold is <b>{x}</b> {dir} its 12-month average. Compared with every month since §Y§, today's reading is higher than <b>{pct}%</b> of them.",
   "above": "above", "below": "below",
   "gauge_aria": "Gold Thermometer gauge showing {band}, reading {pct} out of 100",
   "r_price": "Gold today (24K, per 10 g)",
   "r_price_sub": "₹{g} per gram · 22K ₹{k22} · 18K ₹{k18} per 10 g. International price, before import duty and GST.",
   "r_avg": "Against 12-month average", "r_avg_sub": "Average {a}: ₹{v} per 10 g",
   "r_yoy": "Against a year ago", "r_yoy_sub": "vs the {m} average",
-  "r_read": "Thermometer reading", "r_read_sub": "0 = cheapest, 100 = most stretched month since 2000",
+  "r_read": "Thermometer reading", "r_read_sub": "0 = cheapest, 100 = most stretched month since §Y§",
   "attr": "Today's gold price: {gp}. USD/INR {fx} on {fxd}.",
   "past_h": "What happened next in the past?",
-  "past": "Since 2000, gold was in the <b>{band}</b> zone in <b>{n}</b> months. A year later, gold was higher in <b>{up}%</b> of those cases, with a typical (median) change of <b>{med}</b>. Across all months, gold was higher a year later {base}% of the time.",
-  "past_few": "Gold has been in the <b>{band}</b> zone in only {n} months since 2000, too few to show a reliable pattern.",
+  "past": "Since §Y§, gold was in the <b>{band}</b> zone in <b>{n}</b> months. A year later, gold was higher in <b>{up}%</b> of those cases, with a typical (median) change of <b>{med}</b>. Across all months, gold was higher a year later {base}% of the time.",
+  "past_few": "Gold has been in the <b>{band}</b> zone in only {n} months since §Y§, too few to show a reliable pattern.",
   "past_note": "This is what happened in the past, not a forecast. Gold can fall even when history looks favourable.",
   "chart_h": "Gold in rupees: last 5 years",
   "chart_sub": "Monthly average price of 24K gold per 10 g, with its 12-month average. Today's price is the last point.",
@@ -59,15 +59,15 @@ T = {
   "how_h": "How the Gold Thermometer works",
   "how": ["We take today's international gold price and convert it to rupees per 10 grams using the latest USD/INR rate.",
           "We compare it with gold's average price over the previous 12 months. Gold rises over the long run, so the raw price is almost always near a record. The gap from its own recent average shows whether gold has run ahead of itself.",
-          "We compare today's gap with the same gap for every month since 2000, and place it on the gauge."],
-  "zones_h": ["Zone", "Today's gap compared with months since 2000"],
+          "We compare today's gap with the same gap for every month since §Y§, and place it on the gauge."],
+  "zones_h": ["Zone", "Today's gap compared with months since §Y§"],
   "use_h": "How to use this reading",
   "use": ["<b>Buying jewellery for a wedding or festival?</b> Buy what you need when you need it. The reading tells you whether you are paying a stretched price, which can help you decide between buying all at once or in parts.",
           "<b>Investing in gold?</b> Many long-term investors buy a little every month through gold ETFs or gold mutual funds, which smooths out expensive and cheap phases.",
           "<b>Trading gold?</b> An expensive reading is not a sell signal. Gold can stay expensive for months. Traders still need a plan, a stop-loss and the right position size."],
   "faq_h": "FAQs",
   "faq": [
-   ("Is gold expensive right now?", "Today's reading is {band}: gold is {x} {dir} its 12-month average, higher than {pct}% of months since 2000. The reading is updated every day."),
+   ("Is gold expensive right now?", "Today's reading is {band}: gold is {x} {dir} its 12-month average, higher than {pct}% of months since §Y§. The reading is updated every day."),
    ("Is the Gold Thermometer a prediction of gold prices?", "No. It shows where today's price stands against gold's own history. The section on what happened next shows past patterns after similar readings, not a forecast."),
    ("Why is this price lower than my jeweller's rate?", "This page shows the international gold price converted to rupees. Jewellers' rates also include import duty, 3% GST and, for jewellery, making charges."),
    ("How often is the Gold Thermometer updated?", "Every day, using the latest international gold price and USD/INR exchange rate."),
@@ -83,28 +83,28 @@ T = {
   "lang": "hi", "months": ["जनवरी", "फ़रवरी", "मार्च", "अप्रैल", "मई", "जून", "जुलाई", "अगस्त", "सितंबर", "अक्टूबर", "नवंबर", "दिसंबर"],
   "band": {"cheap": "सस्ता", "fair": "सामान्य", "expensive": "महंगा", "very_expensive": "बहुत महंगा"},
   "band_text": {
-   "cheap": "सोना अपने हाल के औसत के आसपास या उससे नीचे है। 2000 के बाद ऐसा स्तर सबसे सस्ते 25% महीनों में ही देखा गया।",
+   "cheap": "सोना अपने हाल के औसत के आसपास या उससे नीचे है। §Y§ के बाद ऐसा स्तर सबसे सस्ते 25% महीनों में ही देखा गया।",
    "fair": "पिछले एक साल की तुलना में सोना अपने सामान्य स्तर के आसपास है।",
    "expensive": "पिछले एक साल की तुलना में सोना सामान्य से ज़्यादा चढ़ चुका है।",
-   "very_expensive": "सोना अपने हाल के औसत से काफ़ी ऊपर है। 2000 के बाद सिर्फ़ लगभग 15% महीनों में ही ऐसा स्तर दिखा।"},
+   "very_expensive": "सोना अपने हाल के औसत से काफ़ी ऊपर है। §Y§ के बाद सिर्फ़ लगभग 15% महीनों में ही ऐसा स्तर दिखा।"},
   "zone_rule": {"cheap": "सबसे नीचे के 25% महीने", "fair": "25% से 60%", "expensive": "60% से 85%", "very_expensive": "सबसे ऊपर के 15% महीने"},
   "updated": "अपडेट: {d} · {t} IST",
   "switch": '<a class="lang" href="' + URL_EN + '">Read in English →</a>',
   "h1": 'सोना <span>सस्ता है या महंगा?</span> आज का गोल्ड थर्मामीटर',
-  "intro": "सिर्फ़ आज का सोने का भाव नहीं, बल्कि रोज़ की एक रीडिंग जो बताती है कि 2000 के बाद के इतिहास के मुकाबले सोना अभी सस्ता है या महंगा। यह अंतरराष्ट्रीय सोने के भाव और डॉलर-रुपया रेट पर आधारित है।",
+  "intro": "सिर्फ़ आज का सोने का भाव नहीं, बल्कि रोज़ की एक रीडिंग जो बताती है कि §Y§ के बाद के इतिहास के मुकाबले सोना अभी सस्ता है या महंगा। यह अंतरराष्ट्रीय सोने के भाव और डॉलर-रुपया रेट पर आधारित है।",
   "today_is": "आज सोना है",
-  "main": "सोना अपने 12 महीने के औसत से <b>{x}</b> {dir} है। 2000 के बाद के हर महीने से तुलना करें तो आज की रीडिंग <b>{pct}%</b> महीनों से ऊपर है।",
+  "main": "सोना अपने 12 महीने के औसत से <b>{x}</b> {dir} है। §Y§ के बाद के हर महीने से तुलना करें तो आज की रीडिंग <b>{pct}%</b> महीनों से ऊपर है।",
   "above": "ऊपर", "below": "नीचे",
   "gauge_aria": "गोल्ड थर्मामीटर: {band}, रीडिंग 100 में से {pct}",
   "r_price": "आज सोने का भाव (24 कैरेट, 10 ग्राम)",
   "r_price_sub": "₹{g} प्रति ग्राम · 22 कैरेट ₹{k22} · 18 कैरेट ₹{k18} प्रति 10 ग्राम। अंतरराष्ट्रीय भाव, आयात शुल्क और GST से पहले।",
   "r_avg": "12 महीने के औसत से", "r_avg_sub": "औसत ({a}): ₹{v} प्रति 10 ग्राम",
   "r_yoy": "एक साल पहले से", "r_yoy_sub": "{m} के औसत से तुलना",
-  "r_read": "थर्मामीटर रीडिंग", "r_read_sub": "0 = सबसे सस्ता, 100 = 2000 के बाद का सबसे ज़्यादा खिंचा हुआ महीना",
+  "r_read": "थर्मामीटर रीडिंग", "r_read_sub": "0 = सबसे सस्ता, 100 = §Y§ के बाद का सबसे ज़्यादा खिंचा हुआ महीना",
   "attr": "आज का सोने का भाव: {gp}। डॉलर-रुपया रेट {fx}, {fxd}।",
   "past_h": "पहले ऐसा होने पर आगे क्या हुआ?",
-  "past": "2000 के बाद <b>{n}</b> महीनों में सोना <b>{band}</b> ज़ोन में था। उनमें से <b>{up}%</b> मामलों में एक साल बाद सोना ऊपर था, और आम तौर पर (मीडियन) बदलाव <b>{med}</b> रहा। सभी महीनों को मिलाकर देखें तो एक साल बाद सोना {base}% बार ऊपर था।",
-  "past_few": "2000 के बाद सोना सिर्फ़ {n} महीनों में <b>{band}</b> ज़ोन में रहा, जो भरोसेमंद पैटर्न दिखाने के लिए काफ़ी नहीं है।",
+  "past": "§Y§ के बाद <b>{n}</b> महीनों में सोना <b>{band}</b> ज़ोन में था। उनमें से <b>{up}%</b> मामलों में एक साल बाद सोना ऊपर था, और आम तौर पर (मीडियन) बदलाव <b>{med}</b> रहा। सभी महीनों को मिलाकर देखें तो एक साल बाद सोना {base}% बार ऊपर था।",
+  "past_few": "§Y§ के बाद सोना सिर्फ़ {n} महीनों में <b>{band}</b> ज़ोन में रहा, जो भरोसेमंद पैटर्न दिखाने के लिए काफ़ी नहीं है।",
   "past_note": "यह पुराने आंकड़ों का पैटर्न है, भविष्यवाणी नहीं। पैटर्न अच्छा होने पर भी सोना गिर सकता है।",
   "chart_h": "रुपये में सोना: पिछले 5 साल",
   "chart_sub": "24 कैरेट सोने का 10 ग्राम का मासिक औसत भाव और उसका 12 महीने का औसत। आख़िरी बिंदु आज का भाव है।",
@@ -114,15 +114,15 @@ T = {
   "how_h": "गोल्ड थर्मामीटर कैसे काम करता है?",
   "how": ["हम आज का अंतरराष्ट्रीय सोने का भाव लेते हैं और ताज़ा डॉलर-रुपया रेट से उसे 10 ग्राम के रुपये के भाव में बदलते हैं।",
           "फिर उसकी तुलना पिछले 12 महीनों के औसत भाव से करते हैं। लंबे समय में सोना बढ़ता ही है, इसलिए सिर्फ़ भाव देखने पर वह लगभग हमेशा रिकॉर्ड के पास दिखता है। अपने हाल के औसत से दूरी बताती है कि सोना ज़रूरत से ज़्यादा तो नहीं चढ़ गया।",
-          "आज की इस दूरी की तुलना 2000 के बाद के हर महीने की दूरी से करके उसे गेज पर दिखाया जाता है।"],
-  "zones_h": ["ज़ोन", "2000 के बाद के महीनों के मुकाबले आज की दूरी"],
+          "आज की इस दूरी की तुलना §Y§ के बाद के हर महीने की दूरी से करके उसे गेज पर दिखाया जाता है।"],
+  "zones_h": ["ज़ोन", "§Y§ के बाद के महीनों के मुकाबले आज की दूरी"],
   "use_h": "इस रीडिंग का इस्तेमाल कैसे करें",
   "use": ["<b>शादी या त्योहार के लिए गहने खरीद रहे हैं?</b> जितनी ज़रूरत हो, ज़रूरत के समय ही खरीदें। रीडिंग से पता चलता है कि आप खिंचा हुआ भाव तो नहीं दे रहे, जिससे एक साथ खरीदने या थोड़ा-थोड़ा करके खरीदने का फ़ैसला आसान हो सकता है।",
           "<b>सोने में निवेश कर रहे हैं?</b> कई लंबी अवधि के निवेशक गोल्ड ETF या गोल्ड म्यूचुअल फ़ंड के ज़रिए हर महीने थोड़ा-थोड़ा खरीदते हैं, जिससे महंगे और सस्ते दोनों दौर का असर बराबर हो जाता है।",
           "<b>सोने में ट्रेडिंग करते हैं?</b> महंगी रीडिंग बेचने का संकेत नहीं है। सोना महीनों तक महंगा बना रह सकता है। ट्रेडिंग के लिए प्लान, स्टॉप-लॉस और सही पोज़िशन साइज़ ज़रूरी है।"],
   "faq_h": "अक्सर पूछे जाने वाले सवाल",
   "faq": [
-   ("क्या अभी सोना महंगा है?", "आज की रीडिंग '{band}' है: सोना अपने 12 महीने के औसत से {x} {dir} है, जो 2000 के बाद के {pct}% महीनों से ज़्यादा है। यह रीडिंग रोज़ अपडेट होती है।"),
+   ("क्या अभी सोना महंगा है?", "आज की रीडिंग '{band}' है: सोना अपने 12 महीने के औसत से {x} {dir} है, जो §Y§ के बाद के {pct}% महीनों से ज़्यादा है। यह रीडिंग रोज़ अपडेट होती है।"),
    ("क्या गोल्ड थर्मामीटर सोने के भाव की भविष्यवाणी करता है?", "नहीं। थर्मामीटर बताता है कि आज का भाव सोने के अपने इतिहास के मुकाबले कहां है। 'आगे क्या हुआ' वाला हिस्सा मिलती-जुलती पुरानी रीडिंग के बाद के आंकड़े दिखाता है, भविष्यवाणी नहीं करता।"),
    ("यह भाव मेरे ज्वैलर के भाव से कम क्यों है?", "यहां अंतरराष्ट्रीय सोने का भाव रुपये में दिखाया गया है। ज्वैलर के भाव में आयात शुल्क, 3% GST और गहनों पर मेकिंग चार्ज भी जुड़ते हैं।"),
    ("गोल्ड थर्मामीटर कितनी बार अपडेट होता है?", "हर दिन, ताज़ा अंतरराष्ट्रीय सोने के भाव और डॉलर-रुपया रेट से।"),
@@ -255,7 +255,7 @@ def chart(L, t):
     for k in range(5):
         v = lo + (hi - lo) * k / 4
         y = Y(v)
-        lab = f"₹{v / 100000:.2f}L" if v >= 100000 else f"₹{v / 1000:.0f}k"
+        lab = f"₹{v / 100000:.2f}L" if hi >= 100000 else f"₹{v / 1000:.0f}k"
         grid += f'<line x1="{l}" x2="{W - rgt}" y1="{y:.1f}" y2="{y:.1f}" stroke="#e3e7ef"/><text x="{l - 8}" y="{y + 4:.1f}" font-size="12" fill="#5d6577" text-anchor="end">{lab}</text>'
     for i, p in enumerate(pts):
         if p["m"].endswith("-01"):
@@ -360,7 +360,7 @@ def page(L, lang):
 var d=new Date(r.getAttribute("data-updated")+"T00:00:00+05:30");if((Date.now()-d)/864e5>3)s.style.display="block";}})();
 </script>
 </div>
-"""
+""".replace("§Y§", L["hist_from"][:4])
 
 
 def main():
