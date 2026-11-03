@@ -12,3 +12,4 @@ Data behind the free IPO Analyzer on [9amtraders.com](https://9amtraders.com/ipo
 
 Reports are built from public sources and may contain errors. They are educational and not a recommendation to apply for, buy or sell any security.
 - `gold/` — the Gold Thermometer (`update.py` fetches prices, `render.py` builds the English and Hindi pages); `.github/workflows/gold-thermometer.yml` runs it daily and refreshes the two WordPress pages
+- `gmp.json` + `widget/gmp-page.html` + `scripts/render_gmp.py` — the IPO GMP Today page with the GMP Reality Check (GMP before listing vs actual listing); `.github/workflows/gmp-page.yml` publishes it to WordPress (needs the `WP_GMP_PAGE_ID` secret)

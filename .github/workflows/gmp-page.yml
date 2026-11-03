@@ -1,0 +1,63 @@
+# Publishes the IPO GMP Today page to WordPress.
+# Runs after every IPO or GMP data update, every weekday evening,
+# and on demand from the Actions tab.
+#
+# Needs four repository secrets (Settings > Secrets and variables > Actions):
+#   WP_URL           https://9amtraders.com
+#   WP_USER          the WordPress username the application password belongs to
+#   WP_APP_PASSWORD  a WordPress application password (Users > Profile > Application Passwords)
+#   WP_GMP_PAGE_ID       the ID of the IPO GMP Today page
+name: Publish IPO GMP page
+
+on:
+  push:
+    branches: [main]
+    paths: [ipos.json, gmp.json, widget/gmp-page.html, scripts/render_gmp.py]
+  schedule:
+    - cron: "15 14 * * 1-5"   # 7:45 pm IST, after the evening GMP update
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: gmp-page
+  cancel-in-progress: true
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Render the page
+        run: python3 scripts/render_gmp.py
+
+      - name: Publish to WordPress
+        env:
+          WP_URL: ${{ secrets.WP_URL }}
+          WP_USER: ${{ secrets.WP_USER }}
+          WP_APP_PASSWORD: ${{ secrets.WP_APP_PASSWORD }}
+          WP_GMP_PAGE_ID: ${{ secrets.WP_GMP_PAGE_ID }}
+        run: |
+          if [ -z "$WP_URL" ] || [ -z "$WP_USER" ] || [ -z "$WP_APP_PASSWORD" ] || [ -z "$WP_GMP_PAGE_ID" ]; then
+            echo "WordPress secrets are not set yet, so nothing was published."
+            exit 0
+          fi
+          python3 - <<'PY'
+          import json
+          html = open("build/gmp-page.html", encoding="utf-8").read()
+          json.dump({"content": "<!-- wp:html -->\n" + html + "\n<!-- /wp:html -->"}, open("payload.json", "w"))
+          PY
+          code=$(curl -sS -o resp.json -w "%{http_code}" -X POST \
+            -u "$WP_USER:$WP_APP_PASSWORD" \
+            -H "Content-Type: application/json" \
+            -H "User-Agent: 9am-ipo-data-publisher" \
+            --data @payload.json \
+            "${WP_URL%/}/wp-json/wp/v2/pages/$WP_GMP_PAGE_ID")
+          if [ "$code" != "200" ]; then
+            echo "WordPress answered HTTP $code:"
+            head -c 600 resp.json; echo
+            exit 1
+          fi
+          python3 -c "import json; r=json.load(open('resp.json')); print('Published page', r.get('id'), r.get('link'))"

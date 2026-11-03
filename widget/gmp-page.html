@@ -1,0 +1,173 @@
+<!-- 9AM Traders Academy | IPO GMP Today (Grey Market Premium) + GMP Reality Check
+     Lives in a WordPress Custom HTML block (normal editor, not Elementor).
+     TEMPLATE: scripts/render_gmp.py fills the N9GM placeholders from ipos.json and gmp.json, and
+     .github/workflows/gmp-page.yml publishes the result to the WordPress page. Edit this file, not the WordPress page. -->
+<div id="n9gm">
+<style>
+#n9gm{--navy:#14275a;--navy2:#0c1a3f;--red:#c1272d;--red2:#a01f25;--ink:#0e1a36;--grey:#5d6577;--line:#e3e7ef;--bg:#f5f7fb;--green:#1f8a52;--amber:#9a6200;
+  font-family:inherit;color:var(--ink);line-height:1.6;max-width:1140px;margin:0 auto;padding:0 16px;box-sizing:border-box}
+#n9gm *{box-sizing:border-box}
+#n9gm a{color:inherit}
+#n9gm .hero{background:linear-gradient(160deg,#14275a,#0a1534);color:#fff;border-radius:18px;padding:40px 32px;margin:24px 0;position:relative;overflow:hidden}
+#n9gm .hero:after{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px);background-size:40px 40px;pointer-events:none}
+#n9gm .kicker{display:inline-block;background:var(--red);color:#fff;font-size:13px;font-weight:700;letter-spacing:2px;padding:5px 12px;border-radius:5px;text-transform:uppercase;position:relative;z-index:1}
+#n9gm h1{font-size:clamp(30px,5vw,46px);line-height:1.1;margin:14px 0 8px;color:#fff;font-weight:800;position:relative;z-index:1}
+#n9gm h1 span{color:#ff6b70}
+#n9gm .hero p{color:#d5ddf0;margin:0 0 6px;max-width:740px;position:relative;z-index:1}
+#n9gm .meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px;position:relative;z-index:1}
+#n9gm .meta span{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.25);padding:6px 14px;border-radius:30px;font-size:14px}
+#n9gm .truth{position:relative;z-index:1;margin-top:22px;display:grid;grid-template-columns:repeat(3,1fr);gap:10px;max-width:760px}
+#n9gm .truth div{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.2);border-radius:12px;padding:12px 14px}
+#n9gm .truth b{display:block;font-size:26px;color:#fff;line-height:1.1}
+#n9gm .truth small{color:#c7d1ea;font-size:13px}
+@media (max-width:600px){#n9gm .truth{grid-template-columns:1fr}}
+#n9gm .warn{background:#fff5f5;border:1px solid #f3c7c9;border-left:5px solid var(--red);border-radius:10px;padding:14px 18px;margin:0 0 22px;font-size:15px}
+#n9gm .warn b{color:var(--red2)}
+#n9gm h2{font-size:clamp(22px,3.4vw,30px);margin:38px 0 6px;color:var(--navy);font-weight:800}
+#n9gm h3{color:var(--navy)}
+#n9gm .sub{color:var(--grey);margin:0 0 16px}
+#n9gm .search{width:100%;padding:13px 16px;border:1.5px solid var(--line);border-radius:10px;font-size:16px;font-family:inherit;background:#fff;color:var(--ink);margin:0 0 14px}
+#n9gm .search:focus{outline:none;border-color:var(--navy)}
+#n9gm .tw{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:#fff}
+#n9gm table{width:100%;border-collapse:collapse;font-size:15px;min-width:760px}
+#n9gm th,#n9gm td{padding:11px 12px;border-bottom:1px solid var(--line);text-align:left;vertical-align:middle}
+#n9gm th{background:var(--navy);color:#fff;font-size:13px;letter-spacing:.3px;white-space:nowrap}
+#n9gm tr:last-child td{border-bottom:0}
+#n9gm td.n,#n9gm th.n{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+#n9gm td b.nm{display:block;font-size:15.5px}
+#n9gm .tag{display:inline-block;font-size:11.5px;font-weight:600;padding:2px 8px;border-radius:20px;background:var(--bg);color:var(--navy);margin:2px 4px 0 0}
+#n9gm .up{color:var(--green);font-weight:700}#n9gm .dn{color:var(--red2);font-weight:700}#n9gm .fl{color:var(--grey)}
+#n9gm .gmp{font-weight:800;font-size:16px}
+#n9gm .sc{display:inline-block;font-weight:700;font-size:13px;padding:3px 9px;border-radius:20px;text-decoration:none}
+#n9gm .sc.s4{background:#e6f5ec;color:var(--green)}#n9gm .sc.s3{background:#eaf4ee;color:var(--green)}#n9gm .sc.s2{background:#fff4dc;color:var(--amber)}#n9gm .sc.s1{background:#fde8e9;color:var(--red2)}
+#n9gm .vd{display:inline-block;font-size:12.5px;font-weight:700;padding:3px 10px;border-radius:20px;white-space:nowrap}
+#n9gm .vd.hi{background:#fde8e9;color:var(--red2)}#n9gm .vd.lo{background:#e8eefc;color:var(--navy)}#n9gm .vd.ok{background:#e6f5ec;color:var(--green)}
+#n9gm .bar{position:relative;height:8px;background:var(--bg);border-radius:8px;min-width:110px}
+#n9gm .bar i{position:absolute;top:-3px;width:3px;height:14px;border-radius:2px}
+#n9gm .bar i.p{background:var(--red)}#n9gm .bar i.a{background:var(--navy)}
+#n9gm .legend{display:flex;flex-wrap:wrap;gap:14px;font-size:13px;color:var(--grey);margin:8px 0 0}
+#n9gm .legend span:before{content:"";display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:6px;vertical-align:-1px;background:var(--c)}
+#n9gm .loading{color:var(--grey);padding:18px;text-align:center}
+#n9gm .empty{display:none;text-align:center;color:var(--grey);padding:16px}
+#n9gm .cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px;margin-top:10px}
+#n9gm .c{background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px}
+#n9gm .c h3{margin:0 0 6px;font-size:17px}
+#n9gm .c p{margin:0;font-size:14.5px;color:var(--grey)}
+#n9gm .formula{background:#f7f9fd;border-left:4px solid var(--navy);border-radius:8px;padding:14px 16px;font-size:15px;margin:10px 0}
+#n9gm details{background:#fff;border:1px solid var(--line);border-radius:10px;padding:14px 18px;margin-bottom:10px}
+#n9gm summary{font-weight:700;cursor:pointer;color:var(--navy)}
+#n9gm details p{margin:10px 0 0;color:var(--grey)}
+#n9gm .cta{background:linear-gradient(160deg,#14275a,#0a1534);color:#fff;border-radius:18px;padding:30px;margin:34px 0 16px;text-align:center}
+#n9gm .cta h2{color:#fff;margin:0 0 8px}
+#n9gm .cta p{color:#d5ddf0;margin:0 0 18px}
+#n9gm .btn{display:inline-block;background:var(--red);color:#fff!important;text-decoration:none;font-weight:700;padding:14px 26px;border-radius:10px;box-shadow:0 5px 0 #7d1418;margin:4px}
+#n9gm .btn.ghost{background:transparent;border:1.5px solid #fff;box-shadow:none}
+#n9gm .disc{font-size:13px;color:var(--grey);border-top:1px solid var(--line);padding-top:14px;margin:20px 0 30px}
+#n9gm a:focus-visible,#n9gm input:focus-visible,#n9gm summary:focus-visible{outline:3px solid var(--red);outline-offset:2px}
+@media (max-width:600px){#n9gm .hero{padding:28px 20px}}
+</style>
+
+<section class="hero">
+  <span class="kicker">Updates daily · Free</span>
+  <h1>IPO GMP Today: <span>Live Grey Market Premium</span></h1>
+  <p>Live IPO GMP for every current and upcoming IPO, shown as a range from several grey market trackers. Then the part nobody else shows: how often GMP got the listing price wrong.</p>
+  <div class="truth"><!--N9GM:TRUTH--></div>
+  <div class="meta"><span><!--N9GM:UPDATED--></span><span>GMP in ₹ per share</span></div>
+</section>
+
+<div class="warn"><b>Read this first:</b> GMP (grey market premium) is an unofficial, unregulated price quoted by grey market dealers. SEBI and the exchanges do not publish or recognise it. Treat it as a rumour, not a forecast, and never pay anyone to "get" grey market shares.</div>
+
+<h2>Live IPO GMP today</h2>
+<p class="sub">IPOs open for bidding or waiting to list. Estimated listing price = upper price band + middle of today's GMP range.</p>
+<input class="search" id="n9gm-q" type="search" placeholder="Search IPO GMP by name" aria-label="Search IPO GMP">
+<div class="tw"><table>
+<thead><tr><th>IPO</th><th class="n">Price band</th><th class="n">GMP today</th><th class="n">vs yesterday</th><th class="n">Est. listing</th><th class="n">Subscribed</th><th class="n">Allotment chance</th><th>9AM score</th></tr></thead>
+<tbody id="n9gm-live"><!--N9GM:LIVE--></tbody>
+</table></div>
+<div class="empty" id="n9gm-empty">No IPO matches your search.</div>
+
+<h2>Upcoming IPO GMP</h2>
+<p class="sub">IPOs opening soon. Grey market trading usually starts a few days before an IPO opens, so many show no GMP yet.</p>
+<div class="tw"><table>
+<thead><tr><th>IPO</th><th class="n">Opens</th><th class="n">Price band</th><th class="n">GMP</th></tr></thead>
+<tbody><!--N9GM:UPCOMING--></tbody>
+</table></div>
+
+<h2>GMP Reality Check: GMP vs actual listing</h2>
+<p class="sub">Every IPO we tracked, comparing the GMP on the evening before listing with the real listing-day opening price. "Close" means within 5 percentage points.</p>
+<div class="tw"><table>
+<thead><tr><th>IPO</th><th class="n">Listed</th><th class="n">GMP said</th><th class="n">Actually listed</th><th>Gap</th><th>Verdict</th></tr></thead>
+<tbody><!--N9GM:REALITY--></tbody>
+</table></div>
+<div class="legend"><span style="--c:var(--red)">GMP said</span><span style="--c:var(--navy)">Actual listing</span><span>Bar runs from −20% to +100% listing gain</span></div>
+
+<h2>What is IPO GMP (grey market premium)?</h2>
+<p>IPO GMP, or grey market premium, is the extra amount over the issue price at which an IPO's shares are traded informally before they list on NSE or BSE. If an IPO's upper price band is ₹100 and the grey market premium is ₹30, dealers expect the shares to list around ₹130. These deals are unofficial agreements between individuals, settled in cash once the shares list.</p>
+<div class="formula"><b>Expected listing price</b> = Upper price band + GMP<br><b>Expected listing gain (%)</b> = GMP ÷ Upper price band × 100</div>
+
+<h2>Grey market terms you will hear</h2>
+<div class="cards">
+  <div class="c"><h3>GMP (premium)</h3><p>The price over the issue price at which grey market dealers buy and sell an IPO's shares before listing.</p></div>
+  <div class="c"><h3>Kostak rate</h3><p>A fixed amount paid for a whole IPO application, whether or not it gets allotted. The buyer takes the risk of non-allotment.</p></div>
+  <div class="c"><h3>Subject to sauda</h3><p>A price paid for an application only if it gets allotted. If there is no allotment, no money changes hands.</p></div>
+  <div class="c"><h3>Negative GMP</h3><p>When the grey market expects the IPO to list below its issue price. It often shows up when subscription is weak or the market falls.</p></div>
+</div>
+
+<h2>Why IPO GMP often goes wrong</h2>
+<ul>
+<li><b>It is a thin, unofficial market.</b> A few dealers can move the quote, and there is no record of how many shares actually traded at that price.</li>
+<li><b>It changes fast.</b> GMP follows subscription numbers and the Nifty mood day by day, and can swing sharply between bidding and listing.</li>
+<li><b>It can be pushed up.</b> A high GMP pulls in retail applications, so a hot quote is not proof of a hot IPO.</li>
+<li><b>The listing day decides.</b> The real listing price is set in the exchange's pre-open session, which has nothing to do with grey market deals.</li>
+</ul>
+<p>That is why this page shows GMP next to the <a href="https://9amtraders.com/ipo-analyzer-india/">9AM IPO Analyzer score</a>, which judges the IPO on subscription, profit growth, valuation and 33 checks. When GMP is high and the score is low, be careful.</p>
+
+<h2>How to use GMP sensibly</h2>
+<ul>
+<li>Use GMP as a sentiment signal only. Look at the subscription numbers, especially retail and QIB, before deciding.</li>
+<li>Compare several trackers. If they disagree a lot, the quote is weak.</li>
+<li>Check the GMP trend over the last few days, not one day's number.</li>
+<li>Never deal in the grey market yourself. It is unregulated, and you have no protection if the other side does not pay.</li>
+</ul>
+
+<h2>IPO GMP FAQs</h2>
+<details><summary>What is GMP in IPO?</summary><p>GMP stands for grey market premium. It is the unofficial premium over the issue price at which an IPO's shares are traded before listing. A GMP of ₹30 on a ₹100 issue suggests a listing around ₹130.</p></details>
+<details><summary>Is IPO GMP accurate?</summary><p>Often it is not. Our GMP Reality Check above compares the GMP the evening before listing with the actual listing price for every IPO we track, so you can see how far off it usually is.</p></details>
+<details><summary>Where can I see live IPO GMP today?</summary><p>The live IPO GMP table on this page shows today's grey market premium range for every open IPO and every IPO waiting to list, updated daily.</p></details>
+<details><summary>Is grey market trading legal in India?</summary><p>Grey market deals happen outside the stock exchanges and are not regulated by SEBI. They have no legal protection, and buyers and sellers rely only on trust.</p></details>
+<details><summary>What is the difference between GMP and kostak?</summary><p>GMP is a price per share. Kostak is a fixed price for a whole application, paid whether or not the application gets allotted.</p></details>
+<details><summary>Why does an IPO list below its GMP?</summary><p>The real listing price is set in the exchange's pre-open session by actual buyers and sellers. If the market falls, large investors sell, or the GMP was inflated, the listing comes in below the GMP.</p></details>
+<details><summary>Can I check upcoming IPO GMP?</summary><p>Yes. The upcoming IPO GMP table lists IPOs opening soon. Grey market quotes usually start a few days before an IPO opens.</p></details>
+
+<section class="cta">
+  <h2>Stop chasing GMP. Learn to judge an IPO yourself.</h2>
+  <p>Learn to read an RHP, value a company and trade on your own analysis. Live classes in New Moti Nagar, Delhi or online. Your first demo class is free.</p>
+  <a class="btn" href="https://wa.me/919315906004?text=Hi%2C%20I%20want%20to%20book%20a%20free%20demo%20class" target="_blank" rel="noopener">Book a free demo class</a>
+  <a class="btn ghost" href="https://9amtraders.com/ipo-analyzer-india/">Score an IPO free</a>
+</section>
+
+<p class="disc">GMP figures are collected from public grey market trackers and are unofficial. They are shown for education only and are not a recommendation to apply for, buy or sell any security. 9AM Traders Academy does not deal in the grey market.</p>
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"What is GMP in IPO?","acceptedAnswer":{"@type":"Answer","text":"GMP stands for grey market premium, the unofficial premium over the issue price at which an IPO's shares trade before listing."}},
+{"@type":"Question","name":"Is IPO GMP accurate?","acceptedAnswer":{"@type":"Answer","text":"Often it is not. The GMP Reality Check on this page compares the GMP before listing with the actual listing price for every IPO tracked."}},
+{"@type":"Question","name":"Where can I see live IPO GMP today?","acceptedAnswer":{"@type":"Answer","text":"The live IPO GMP table on this page shows today's grey market premium range for every open IPO and every IPO waiting to list, updated daily."}},
+{"@type":"Question","name":"Is grey market trading legal in India?","acceptedAnswer":{"@type":"Answer","text":"Grey market deals happen outside the stock exchanges and are not regulated by SEBI, so they have no legal protection."}},
+{"@type":"Question","name":"What is the difference between GMP and kostak?","acceptedAnswer":{"@type":"Answer","text":"GMP is a price per share; kostak is a fixed price for a whole application, paid whether or not it gets allotted."}},
+{"@type":"Question","name":"Why does an IPO list below its GMP?","acceptedAnswer":{"@type":"Answer","text":"The real listing price is set in the exchange pre-open session. If the market falls, large investors sell, or the GMP was inflated, the listing comes in below the GMP."}},
+{"@type":"Question","name":"Can I check upcoming IPO GMP?","acceptedAnswer":{"@type":"Answer","text":"Yes. The upcoming IPO GMP table lists IPOs opening soon; grey market quotes usually start a few days before an IPO opens."}}
+]}
+</script>
+<script>
+(function(){
+  var q=document.getElementById("n9gm-q"),rows=document.querySelectorAll("#n9gm-live tr[data-n]"),em=document.getElementById("n9gm-empty");
+  if(!q)return;
+  q.addEventListener("input",function(){
+    var v=q.value.trim().toLowerCase().replace(/[^a-z0-9 ]/g,""),shown=0;
+    rows.forEach(function(r){var ok=!v||r.getAttribute("data-n").indexOf(v)>-1;r.style.display=ok?"":"none";if(ok)shown++;});
+    em.style.display=shown?"none":"block";
+  });
+})();
+</script>
+</div>
