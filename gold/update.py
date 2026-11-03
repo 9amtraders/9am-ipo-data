@@ -16,6 +16,7 @@ unchanged, so the published pages keep the last good reading.
 """
 import io
 import json
+import math
 import os
 import re
 import statistics
@@ -31,6 +32,14 @@ OZ_G = 31.1034768  # grams in one troy ounce
 UA = "Mozilla/5.0 (compatible; 9am-gold-thermometer/1.0; +https://9amtraders.com)"
 HIST_FROM = "2000-01"  # first month whose 12-month average can be built from rupee data
 BANDS = [(25, "cheap"), (60, "fair"), (85, "expensive"), (101, "very_expensive")]
+
+# India's import duty on gold: 10% basic customs duty + 5% AIDC = 15%, from 13 May 2026
+# (MMTC-PAMP, https://www.mmtcpamp.com/blog/blog-detail/gold-silver-import-duty-hike).
+# Checked on 3 Nov 2026: international price x 1.15 was within 0.2% of the published Delhi 24K rate.
+# If the duty changes, update these two lines.
+DUTY = 0.15
+DUTY_FROM = "2026-05-13"
+KARATS = {"24": 1.0, "22": 22 / 24, "18": 0.75, "14": 0.585}
 
 WB_PAGE = "https://www.worldbank.org/en/research/commodity-markets"
 WB_FALLBACK = [
@@ -190,6 +199,51 @@ def percentile(value, values):
     return 100 * (below + 0.5 * equal) / len(values)
 
 
+def extras(today, p_today, usd, usdinr, wbm, series, months, daily):
+    """Indian rate estimate, returns, the rupee's share of gold's rise, and the history tables."""
+    india = p_today * (1 + DUTY)
+    out = {
+        "duty": DUTY, "duty_from": DUTY_FROM,
+        "india_10g": {k: round(india * f) for k, f in KARATS.items()},
+        "intl_10g": {k: round(p_today * f) for k, f in KARATS.items()},
+    }
+    # Returns: today's price against the average in the same month N years ago.
+    out["returns"] = []
+    for n in (1, 3, 5, 10, 15, 20):
+        m = f"{today.year - n}-{today.month:02d}"
+        if m in series:
+            tot = p_today / series[m] - 1
+            out["returns"].append({"years": n, "month": m, "then": series[m], "total": round(tot, 4),
+                                   "cagr": round((1 + tot) ** (1 / n) - 1, 4)})
+    # How much of the rise came from gold itself (in dollars) and how much from a weaker rupee.
+    out["split"] = []
+    for n in (5, 10, 20):
+        m = f"{today.year - n}-{today.month:02d}"
+        if m in wbm:
+            g = usd / wbm[m]["usd_oz"] - 1
+            r = usdinr / wbm[m]["usdinr"] - 1
+            tot = (1 + g) * (1 + r) - 1
+            share = math.log(1 + r) / math.log(1 + tot) if tot > 0 else None
+            out["split"].append({"years": n, "month": m, "usd": round(g, 4), "inr": round(r, 4), "total": round(tot, 4),
+                                 "rupee_share": round(share, 4) if share is not None else None})
+    # Year by year, from monthly averages. The current year is partial.
+    by_year = {}
+    for m in months:
+        by_year.setdefault(m[:4], []).append(series[m])
+    out["years"], prev = [], None
+    for y in sorted(by_year):
+        vals = by_year[y]
+        avg = statistics.fmean(vals)
+        out["years"].append({"year": y, "avg": round(avg), "low": min(vals), "high": max(vals), "months": len(vals),
+                             "change": round(avg / prev - 1, 4) if prev else None})
+        prev = avg
+    out["last12"] = [{"m": months[i], "p": series[months[i]], "chg": round(series[months[i]] / series[months[i - 1]] - 1, 4)}
+                     for i in range(len(months) - 12, len(months))]
+    out["daily30"] = [{"date": d["date"], "inr_10g": d["inr_10g"], "india_24": round(d["inr_10g"] * (1 + DUTY))}
+                      for d in daily[-30:]]
+    return out
+
+
 def main():
     now = datetime.now(IST)
     today = now.date()
@@ -284,6 +338,7 @@ def main():
         "hist_from": min(stretch), "hist_to": max(stretch), "hist_n": len(hist),
         "pattern": pattern, "chart": chart, "ribbon": ribbon,
         "prev": {"date": prev["date"], "inr_10g": prev["inr_10g"]} if prev else None,
+        **extras(today, p_today, usd, usdinr, monthly["months"], series, months, daily),
     }
     save("daily.json", daily)
     save("latest.json", latest)

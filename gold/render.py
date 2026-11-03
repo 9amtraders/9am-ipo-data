@@ -13,8 +13,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
 OUT = ROOT.parent / "build"
-URL_EN = "/gold-thermometer/"
-URL_HI = "/sona-sasta-ya-mahanga/"
+from texts import T, URL_EN, URL_HI
 SITE = "https://9amtraders.com"
 DEMO = "https://wa.me/919315906004?text=Hi%2C%20I%20want%20to%20book%20a%20free%20demo%20class"
 COLORS = {"cheap": "#1f8a52", "fair": "#c9a227", "expensive": "#e07b28", "very_expensive": "#c1272d"}
@@ -23,129 +22,6 @@ SRC = {
     "gp": '<a href="https://goldprice.dev/" target="_blank" rel="noopener">goldprice.dev</a>',
     "fx": '<a href="https://frankfurter.dev/" target="_blank" rel="noopener">Frankfurter</a>',
     "wb": '<a href="https://www.worldbank.org/en/research/commodity-markets" target="_blank" rel="noopener">World Bank Commodity Price Data (The Pink Sheet)</a>',
-}
-
-T = {
- "en": {
-  "lang": "en", "months": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
-  "band": {"cheap": "Cheap", "fair": "Fair", "expensive": "Expensive", "very_expensive": "Very expensive"},
-  "band_text": {
-   "cheap": "Gold is close to or below its recent average, a level seen in the cheapest quarter of months since §Y§.",
-   "fair": "Gold is trading near its normal level compared with the past year.",
-   "expensive": "Gold has run up more than usual compared with the past year.",
-   "very_expensive": "Gold is stretched far above its recent average, a level reached in only about 15% of months since §Y§."},
-  "zone_rule": {"cheap": "Bottom 25% of months", "fair": "25% to 60%", "expensive": "60% to 85%", "very_expensive": "Top 15% of months"},
-  "updated": "Updated {d} · {t} IST",
-  "switch": '<a class="lang" href="' + URL_HI + '">हिंदी में पढ़ें →</a>',
-  "h1": 'Gold Thermometer: Is Gold <span>Cheap or Expensive</span> Today?',
-  "intro": "Not just today's gold price: a daily reading of whether gold is cheap or expensive compared with its own history since §Y§, based on international gold prices and the rupee exchange rate.",
-  "today_is": "Today gold is",
-  "main": "Gold is <b>{x}</b> {dir} its 12-month average. Compared with every month since §Y§, today's reading is higher than <b>{pct}%</b> of them.",
-  "above": "above", "below": "below",
-  "gauge_aria": "Gold Thermometer gauge showing {band}, reading {pct} out of 100",
-  "r_price": "Gold today (24K, per 10 g)",
-  "r_price_sub": "₹{g} per gram · 22K ₹{k22} · 18K ₹{k18} per 10 g. International price, before import duty and GST.",
-  "r_avg": "Against 12-month average", "r_avg_sub": "Average {a}: ₹{v} per 10 g",
-  "r_yoy": "Against a year ago", "r_yoy_sub": "vs the {m} average",
-  "r_read": "Thermometer reading", "r_read_sub": "0 = cheapest, 100 = most stretched month since §Y§",
-  "attr": "Today's gold price: {gp}. USD/INR {fx} on {fxd}.",
-  "past_h": "What happened next in the past?",
-  "past": "Since §Y§, gold was in the <b>{band}</b> zone in <b>{n}</b> months. A year later, gold was higher in <b>{up}%</b> of those cases, with a typical (median) change of <b>{med}</b>. Across all months, gold was higher a year later {base}% of the time.",
-  "past_few": "Gold has been in the <b>{band}</b> zone in only {n} months since §Y§, too few to show a reliable pattern.",
-  "past_note": "This is what happened in the past, not a forecast. Gold can fall even when history looks favourable.",
-  "chart_h": "Gold in rupees: last 5 years",
-  "chart_sub": "Monthly average price of 24K gold per 10 g, with its 12-month average. Today's price is the last point.",
-  "legend": ["Monthly price", "12-month average", "Today"],
-  "ribbon_h": "How the reading changed: last 5 years",
-  "ribbon_sub": "Each block is one month, coloured by that month's Thermometer reading. Hover over or tap a block to see the month.",
-  "yday": "{chg} since {d}",
-  "share_b": "Share on WhatsApp",
-  "share_t": "Is gold cheap or expensive today? The 9AM Gold Thermometer reads {band} ({pct}/100). See why: {url}",
-  "jeweller_h": "Why is your jeweller's rate higher?",
-  "jeweller": "Indian gold prices add import duty and 3% GST, and jewellery also carries making charges. So your jeweller's rate will be higher than the international price shown here. The Thermometer uses the international price so that 25 years of history compare like with like, because India's import duty has changed several times in that period.",
-  "how_h": "How the Gold Thermometer works",
-  "how": ["We take today's international gold price and convert it to rupees per 10 grams using the latest USD/INR rate.",
-          "We compare it with gold's average price over the previous 12 months. Gold rises over the long run, so the raw price is almost always near a record. The gap from its own recent average shows whether gold has run ahead of itself.",
-          "We compare today's gap with the same gap for every month since §Y§, and place it on the gauge."],
-  "zones_h": ["Zone", "Today's gap compared with months since §Y§"],
-  "use_h": "How to use this reading",
-  "use": ["<b>Buying jewellery for a wedding or festival?</b> Buy what you need when you need it. The reading tells you whether you are paying a stretched price, which can help you decide between buying all at once or in parts.",
-          "<b>Investing in gold?</b> Many long-term investors buy a little every month through gold ETFs or gold mutual funds, which smooths out expensive and cheap phases.",
-          "<b>Trading gold?</b> An expensive reading is not a sell signal. Gold can stay expensive for months. Traders still need a plan, a stop-loss and the right position size."],
-  "faq_h": "FAQs",
-  "faq": [
-   ("Is gold expensive right now?", "Today's reading is {band}: gold is {x} {dir} its 12-month average, higher than {pct}% of months since §Y§. The reading is updated every day."),
-   ("Is the Gold Thermometer a prediction of gold prices?", "No. It shows where today's price stands against gold's own history. The section on what happened next shows past patterns after similar readings, not a forecast."),
-   ("Why is this price lower than my jeweller's rate?", "This page shows the international gold price converted to rupees. Jewellers' rates also include import duty, 3% GST and, for jewellery, making charges."),
-   ("How often is the Gold Thermometer updated?", "Every day, using the latest international gold price and USD/INR exchange rate."),
-   ("Where does the data come from?", "Today's gold price comes from goldprice.dev, exchange rates from European Central Bank reference rates via Frankfurter, and monthly history from the World Bank Commodity Price Data (The Pink Sheet).")],
-  "cta_h": "Want to understand what moves gold?",
-  "cta": "Learn how commodity and currency markets work, read charts and trade with a plan. Live classes in New Moti Nagar, Delhi or online. Your first demo class is free.",
-  "cta_b": "Book a free demo class",
-  "sources": "<b>Sources:</b> today's gold price from {gp}; USD/INR from European Central Bank reference rates via {fx}; monthly gold prices from the {wb}, licensed CC BY 4.0. Rupee history is built from monthly average gold prices and monthly average exchange rates.",
-  "disc": "<b>Disclaimer:</b> The Gold Thermometer is for education only. It is not investment advice or a recommendation to buy or sell gold. Prices are international indicative prices converted to rupees and will differ from Indian market and jeweller rates. Past patterns do not predict future prices.",
-  "stale": "This reading was last updated on {d}. Prices have moved since then.",
- },
- "hi": {
-  "lang": "hi", "months": ["जनवरी", "फ़रवरी", "मार्च", "अप्रैल", "मई", "जून", "जुलाई", "अगस्त", "सितंबर", "अक्टूबर", "नवंबर", "दिसंबर"],
-  "band": {"cheap": "सस्ता", "fair": "सामान्य", "expensive": "महंगा", "very_expensive": "बहुत महंगा"},
-  "band_text": {
-   "cheap": "सोना अपने हाल के औसत के आसपास या उससे नीचे है। §Y§ के बाद ऐसा स्तर सबसे सस्ते 25% महीनों में ही देखा गया।",
-   "fair": "पिछले एक साल की तुलना में सोना अपने सामान्य स्तर के आसपास है।",
-   "expensive": "पिछले एक साल की तुलना में सोना सामान्य से ज़्यादा चढ़ चुका है।",
-   "very_expensive": "सोना अपने हाल के औसत से काफ़ी ऊपर है। §Y§ के बाद सिर्फ़ लगभग 15% महीनों में ही ऐसा स्तर दिखा।"},
-  "zone_rule": {"cheap": "सबसे नीचे के 25% महीने", "fair": "25% से 60%", "expensive": "60% से 85%", "very_expensive": "सबसे ऊपर के 15% महीने"},
-  "updated": "अपडेट: {d} · {t} IST",
-  "switch": '<a class="lang" href="' + URL_EN + '">Read in English →</a>',
-  "h1": 'सोना <span>सस्ता है या महंगा?</span> आज का गोल्ड थर्मामीटर',
-  "intro": "सिर्फ़ आज का सोने का भाव नहीं, बल्कि रोज़ की एक रीडिंग जो बताती है कि §Y§ के बाद के इतिहास के मुकाबले सोना अभी सस्ता है या महंगा। यह अंतरराष्ट्रीय सोने के भाव और डॉलर-रुपया रेट पर आधारित है।",
-  "today_is": "आज सोना है",
-  "main": "सोना अपने 12 महीने के औसत से <b>{x}</b> {dir} है। §Y§ के बाद के हर महीने से तुलना करें तो आज की रीडिंग <b>{pct}%</b> महीनों से ऊपर है।",
-  "above": "ऊपर", "below": "नीचे",
-  "gauge_aria": "गोल्ड थर्मामीटर: {band}, रीडिंग 100 में से {pct}",
-  "r_price": "आज सोने का भाव (24 कैरेट, 10 ग्राम)",
-  "r_price_sub": "₹{g} प्रति ग्राम · 22 कैरेट ₹{k22} · 18 कैरेट ₹{k18} प्रति 10 ग्राम। अंतरराष्ट्रीय भाव, आयात शुल्क और GST से पहले।",
-  "r_avg": "12 महीने के औसत से", "r_avg_sub": "औसत ({a}): ₹{v} प्रति 10 ग्राम",
-  "r_yoy": "एक साल पहले से", "r_yoy_sub": "{m} के औसत से तुलना",
-  "r_read": "थर्मामीटर रीडिंग", "r_read_sub": "0 = सबसे सस्ता, 100 = §Y§ के बाद का सबसे ज़्यादा खिंचा हुआ महीना",
-  "attr": "आज का सोने का भाव: {gp}। डॉलर-रुपया रेट {fx}, {fxd}।",
-  "past_h": "पहले ऐसा होने पर आगे क्या हुआ?",
-  "past": "§Y§ के बाद <b>{n}</b> महीनों में सोना <b>{band}</b> ज़ोन में था। उनमें से <b>{up}%</b> मामलों में एक साल बाद सोना ऊपर था, और आम तौर पर (मीडियन) बदलाव <b>{med}</b> रहा। सभी महीनों को मिलाकर देखें तो एक साल बाद सोना {base}% बार ऊपर था।",
-  "past_few": "§Y§ के बाद सोना सिर्फ़ {n} महीनों में <b>{band}</b> ज़ोन में रहा, जो भरोसेमंद पैटर्न दिखाने के लिए काफ़ी नहीं है।",
-  "past_note": "यह पुराने आंकड़ों का पैटर्न है, भविष्यवाणी नहीं। पैटर्न अच्छा होने पर भी सोना गिर सकता है।",
-  "chart_h": "रुपये में सोना: पिछले 5 साल",
-  "chart_sub": "24 कैरेट सोने का 10 ग्राम का मासिक औसत भाव और उसका 12 महीने का औसत। आख़िरी बिंदु आज का भाव है।",
-  "legend": ["मासिक भाव", "12 महीने का औसत", "आज"],
-  "ribbon_h": "पिछले 5 साल में रीडिंग कैसे बदली",
-  "ribbon_sub": "हर खाना एक महीना है, जिसका रंग उस महीने की थर्मामीटर रीडिंग बताता है। महीना देखने के लिए खाने पर माउस ले जाएं या टैप करें।",
-  "yday": "{d} से {chg}",
-  "share_b": "WhatsApp पर शेयर करें",
-  "share_t": "आज सोना सस्ता है या महंगा? 9AM गोल्ड थर्मामीटर की रीडिंग: {band} ({pct}/100)। पूरी जानकारी: {url}",
-  "jeweller_h": "आपके ज्वैलर का भाव ज़्यादा क्यों होता है?",
-  "jeweller": "भारत में सोने के भाव में आयात शुल्क और 3% GST जुड़ता है, और गहनों पर मेकिंग चार्ज भी लगता है। इसलिए ज्वैलर का भाव यहां दिखाए गए अंतरराष्ट्रीय भाव से ज़्यादा होगा। थर्मामीटर अंतरराष्ट्रीय भाव इसलिए इस्तेमाल करता है ताकि 25 साल की तुलना एक जैसी रहे, क्योंकि इस दौरान भारत में आयात शुल्क कई बार बदला है।",
-  "how_h": "गोल्ड थर्मामीटर कैसे काम करता है?",
-  "how": ["हम आज का अंतरराष्ट्रीय सोने का भाव लेते हैं और ताज़ा डॉलर-रुपया रेट से उसे 10 ग्राम के रुपये के भाव में बदलते हैं।",
-          "फिर उसकी तुलना पिछले 12 महीनों के औसत भाव से करते हैं। लंबे समय में सोना बढ़ता ही है, इसलिए सिर्फ़ भाव देखने पर वह लगभग हमेशा रिकॉर्ड के पास दिखता है। अपने हाल के औसत से दूरी बताती है कि सोना ज़रूरत से ज़्यादा तो नहीं चढ़ गया।",
-          "आज की इस दूरी की तुलना §Y§ के बाद के हर महीने की दूरी से करके उसे गेज पर दिखाया जाता है।"],
-  "zones_h": ["ज़ोन", "§Y§ के बाद के महीनों के मुकाबले आज की दूरी"],
-  "use_h": "इस रीडिंग का इस्तेमाल कैसे करें",
-  "use": ["<b>शादी या त्योहार के लिए गहने खरीद रहे हैं?</b> जितनी ज़रूरत हो, ज़रूरत के समय ही खरीदें। रीडिंग से पता चलता है कि आप खिंचा हुआ भाव तो नहीं दे रहे, जिससे एक साथ खरीदने या थोड़ा-थोड़ा करके खरीदने का फ़ैसला आसान हो सकता है।",
-          "<b>सोने में निवेश कर रहे हैं?</b> कई लंबी अवधि के निवेशक गोल्ड ETF या गोल्ड म्यूचुअल फ़ंड के ज़रिए हर महीने थोड़ा-थोड़ा खरीदते हैं, जिससे महंगे और सस्ते दोनों दौर का असर बराबर हो जाता है।",
-          "<b>सोने में ट्रेडिंग करते हैं?</b> महंगी रीडिंग बेचने का संकेत नहीं है। सोना महीनों तक महंगा बना रह सकता है। ट्रेडिंग के लिए प्लान, स्टॉप-लॉस और सही पोज़िशन साइज़ ज़रूरी है।"],
-  "faq_h": "अक्सर पूछे जाने वाले सवाल",
-  "faq": [
-   ("क्या अभी सोना महंगा है?", "आज की रीडिंग '{band}' है: सोना अपने 12 महीने के औसत से {x} {dir} है, जो §Y§ के बाद के {pct}% महीनों से ज़्यादा है। यह रीडिंग रोज़ अपडेट होती है।"),
-   ("क्या गोल्ड थर्मामीटर सोने के भाव की भविष्यवाणी करता है?", "नहीं। थर्मामीटर बताता है कि आज का भाव सोने के अपने इतिहास के मुकाबले कहां है। 'आगे क्या हुआ' वाला हिस्सा मिलती-जुलती पुरानी रीडिंग के बाद के आंकड़े दिखाता है, भविष्यवाणी नहीं करता।"),
-   ("यह भाव मेरे ज्वैलर के भाव से कम क्यों है?", "यहां अंतरराष्ट्रीय सोने का भाव रुपये में दिखाया गया है। ज्वैलर के भाव में आयात शुल्क, 3% GST और गहनों पर मेकिंग चार्ज भी जुड़ते हैं।"),
-   ("गोल्ड थर्मामीटर कितनी बार अपडेट होता है?", "हर दिन, ताज़ा अंतरराष्ट्रीय सोने के भाव और डॉलर-रुपया रेट से।"),
-   ("आंकड़े कहां से आते हैं?", "आज का भाव goldprice.dev से, विनिमय दर यूरोपीय सेंट्रल बैंक की रेफ़रेंस रेट (Frankfurter के ज़रिए) से, और पुराने मासिक भाव वर्ल्ड बैंक के कमोडिटी प्राइस डेटा (The Pink Sheet) से आते हैं।")],
-  "cta_h": "जानना चाहते हैं कि सोने का भाव क्यों बदलता है?",
-  "cta": "कमोडिटी और करेंसी मार्केट कैसे काम करते हैं, चार्ट कैसे पढ़ें और प्लान के साथ ट्रेड कैसे करें, यह सब सीखें। न्यू मोती नगर, दिल्ली में या ऑनलाइन लाइव क्लास। पहली डेमो क्लास मुफ़्त है।",
-  "cta_b": "फ़्री डेमो क्लास बुक करें",
-  "sources": "<b>स्रोत:</b> आज का सोने का भाव {gp} से; डॉलर-रुपया रेट यूरोपीय सेंट्रल बैंक की रेफ़रेंस रेट से, {fx} के ज़रिए; मासिक सोने के भाव {wb} से, CC BY 4.0 लाइसेंस के तहत। रुपये का इतिहास मासिक औसत सोने के भाव और मासिक औसत विनिमय दर से बनाया गया है।",
-  "disc": "<b>डिस्क्लेमर:</b> गोल्ड थर्मामीटर सिर्फ़ जानकारी और शिक्षा के लिए है। यह निवेश सलाह या सोना खरीदने-बेचने की सिफ़ारिश नहीं है। यहां दिखाए गए भाव अंतरराष्ट्रीय अनुमानित भाव हैं जिन्हें रुपये में बदला गया है, और ये भारतीय बाज़ार और ज्वैलर के भाव से अलग होंगे। पुराना पैटर्न भविष्य के भाव नहीं बताता।",
-  "stale": "यह रीडिंग आख़िरी बार {d} को अपडेट हुई थी। तब से भाव बदल चुके हैं।",
- },
 }
 
 CSS = """<style>
@@ -204,6 +80,26 @@ font-family:inherit;color:var(--ink);line-height:1.65;max-width:1080px;margin:0 
 @keyframes n9glow{0%,100%{opacity:1}50%{opacity:.45}}
 @keyframes n9up{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
 @media (prefers-reduced-motion:reduce){#n9gt .reading .seg,#n9gt .reading .needle,#n9gt .reading .bigname{animation:none!important}}
+#n9gt .toc{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 6px}
+#n9gt .toc a{font-size:14px;font-weight:600;text-decoration:none;color:var(--navy);background:#fff;border:1.5px solid var(--line);padding:6px 12px;border-radius:20px}
+#n9gt section{scroll-margin-top:90px}
+#n9gt .tw{overflow-x:auto;-webkit-overflow-scrolling:touch;border-radius:12px}
+#n9gt .tw table{min-width:520px}
+#n9gt td.n,#n9gt th.n{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+#n9gt .rate td:first-child{font-weight:700}#n9gt .rate tr.hl td{background:#fff8e1}
+#n9gt .up{color:#1f8a52}#n9gt .dn{color:#c1272d}
+#n9gt .calc{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:18px;background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px}
+#n9gt .calc label{display:block;font-weight:700;color:var(--navy);font-size:14px;margin:0 0 4px}
+#n9gt .calc input,#n9gt .calc select{width:100%;padding:10px 12px;border:1.5px solid var(--line);border-radius:9px;font-size:16px;font-family:inherit;background:#fff;color:var(--ink)}
+#n9gt .calc .f{margin-bottom:12px}#n9gt .calc .row{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+#n9gt .calc .res{background:var(--bg);border-radius:12px;padding:14px 16px;align-self:start}
+#n9gt .calc .res div{display:flex;justify-content:space-between;gap:10px;padding:8px 0;border-bottom:1px dashed #d6dbe6;font-variant-numeric:tabular-nums}
+#n9gt .calc .res div:last-child{border:0}#n9gt .calc .res .tot{font-size:20px;font-weight:800;color:var(--navy)}
+#n9gt .rel{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px}
+#n9gt .rel a{display:block;background:#fff;border:1px solid var(--line);border-left:4px solid var(--red);border-radius:10px;padding:12px 14px;font-weight:700;text-decoration:none}
+#n9gt .cards3{grid-template-columns:repeat(3,minmax(0,1fr))}
+@media (max-width:760px){#n9gt .calc{grid-template-columns:1fr}#n9gt .cards3{grid-template-columns:1fr}}
+@media (max-width:560px){#n9gt .mh{display:none}#n9gt .tw table{min-width:0;font-size:14px}#n9gt th,#n9gt td{padding:9px 7px}#n9gt th.n{white-space:normal}}
 @media (max-width:760px){#n9gt .reading{grid-template-columns:1fr}#n9gt .cards{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:420px){#n9gt .cards{grid-template-columns:1fr}#n9gt .hero{padding:26px 20px}}
 </style>"""
@@ -330,6 +226,25 @@ def chart(L, t):
             f'<span><i style="background:#c1272d"></i>{lg[1]}</span><span><i style="background:#c9a227"></i>{lg[2]}</span></div>')
 
 
+def table(cols, rows, num_from=1, cls="", hide=()):
+    """cols: header labels; rows: lists of cell HTML. Columns from num_from onwards are right-aligned numbers.
+    Columns listed in hide are left out on small phone screens."""
+    def k(i):
+        return " ".join(x for x in ("n" if i >= num_from else "", "mh" if i in hide else "") if x)
+    th = "".join(f'<th class="{k(i)}">{c}</th>' for i, c in enumerate(cols))
+    body = ""
+    for r in rows:
+        trc = ""
+        if isinstance(r, tuple):
+            trc, r = r
+        body += f'<tr class="{trc}">' + "".join(f'<td class="{k(i)}">{c}</td>' for i, c in enumerate(r)) + "</tr>"
+    return f'<div class="tw"><table class="{cls}"><thead><tr>{th}</tr></thead><tbody>{body}</tbody></table></div>'
+
+
+def signed(x):
+    return f'<span class="{"up" if x >= 0 else "dn"}">{pct(x)}</span>'
+
+
 def page(L, lang):
     t = T[lang]
     band = L["band"]
@@ -338,6 +253,23 @@ def page(L, lang):
     x, d = pct(s, sign=False), t["above"] if s >= 0 else t["below"]
     p_ = round(L["percentile"])
     upd_d, upd_t = L["updated_ist"].split(" ")
+    today = day_name(t, L["date"])
+    india = {k: v for k, v in L["india_10g"].items()}
+    g24, g22 = india["24"] / 10, india["22"] / 10
+    url = SITE + (URL_EN if lang == "en" else URL_HI)
+
+    # Today's rate table
+    rate_rows = [(("hl" if k == "22" else ""), [t["karat"][k]] + [f"₹{inr(india[k] / 10 * w)}" for w in (1, 8, 10, 100)])
+                 for k in ("24", "22", "18", "14")]
+    yday = ""
+    if L.get("prev"):
+        diff = L["inr_10g_24k"] - L["prev"]["inr_10g"]
+        diff_in = diff * (1 + L["duty"])
+        chg = f'<b class="{"up" if diff >= 0 else "dn"}">{"+" if diff >= 0 else "−"}₹{inr(abs(diff_in))} ({pct(diff / L["prev"]["inr_10g"])})</b>'
+        yday = f'<p class="note">{t["yday"].format(chg=chg, d=day_name(t, L["prev"]["date"]))}</p>'
+    rate_note = t["rate_note"].format(usd=f'{L["usd_oz"]:,.2f}', fx=L["usdinr"], df=day_name(t, L["duty_from"]))
+
+    # Thermometer
     pt_ = L["pattern"]
     if pt_["n"] >= 12:
         past = t["past"].format(band=bname, n=pt_["n"], up=round(pt_["up_share"] * 100),
@@ -345,21 +277,58 @@ def page(L, lang):
     else:
         past = t["past_few"].format(band=bname, n=pt_["n"])
     yoy = pct(L["yoy"]) if L.get("yoy") is not None else "–"
-    yday = ""
-    if L.get("prev"):
-        diff = L["inr_10g_24k"] - L["prev"]["inr_10g"]
-        chg = f'{"+" if diff >= 0 else "−"}₹{inr(abs(diff))} ({pct(diff / L["prev"]["inr_10g"])})'
-        yday = f'<p class="chg {"up" if diff >= 0 else "dn"}">{t["yday"].format(chg=chg, d=day_name(t, L["prev"]["date"]))}</p>'
-    share = "https://wa.me/?text=" + quote(t["share_t"].format(band=bname, pct=p_, url=SITE + (URL_EN if lang == "en" else URL_HI)))
-    zones = "".join(f'<tr><td><span class="dot" style="background:{COLORS[z]}"></span><b>{t["band"][z]}</b></td><td>{t["zone_rule"][z]}</td></tr>' for z, _, _ in ZONES)
-    faqs = [(q, a.format(band=bname, x=x, dir=d, pct=p_)) for q, a in t["faq"]]
+    share = "https://wa.me/?text=" + quote(t["share_t"].format(band=bname, pct=p_, p24=inr(india["24"]), url=url))
+    legend = "".join(f'<span><i style="background:{COLORS[z]}"></i>{t["band"][z]}</span>' for z, _, _ in ZONES)
+    zones = [[f'<span class="dot" style="background:{COLORS[z]}"></span><b>{t["band"][z]}</b>', t["zone_rule"][z]] for z, _, _ in ZONES]
+
+    # Calculator, filled in for 10 g of 22K at 10% making charges and 3% GST
+    r22 = india["22"]
+    c_gold, c_make = r22, r22 * 0.10
+    c_gst = (c_gold + c_make) * 0.03
+    c_tot = c_gold + c_make + c_gst
+    rates_json = json.dumps({k: india[k] for k in ("24", "22", "18", "14")})
+    pur_opts = "".join(f'<option value="{k}"{" selected" if k == "22" else ""}>{t["karat"][k]}</option>' for k in ("24", "22", "18", "14"))
+    co = t["c_out"]
+
+    # Returns and the rupee's share
+    yl = lambda n: (t["yr"] if n == 1 else t["yrs"]).format(n=n)
+    ret_rows = [[yl(r["years"]), f'₹{inr(r["then"])}', f'₹{inr(L["inr_10g_24k"])}', signed(r["total"]), signed(r["cagr"])]
+                for r in L.get("returns", [])]
+    split_rows = [[yl(r["years"]), signed(r["usd"]), signed(r["inr"]), signed(r["total"]),
+                   f'{round(r["rupee_share"] * 100)}%' if r["rupee_share"] is not None else "–"] for r in L.get("split", [])]
+    s10 = next((r for r in L.get("split", []) if r["years"] == 10), None)
+    s10v = round(s10["rupee_share"] * 100) if s10 and s10["rupee_share"] is not None else "–"
+    r10 = next((r for r in L.get("returns", []) if r["years"] == 10), None)
+
+    # History tables, newest first
+    yrs = L.get("years", [])
+    hist_rows = [[y["year"] + ("*" if y["months"] < 12 else ""), f'₹{inr(y["avg"])}', signed(y["change"]) if y["change"] is not None else "–",
+                  f'₹{inr(y["low"])}', f'₹{inr(y["high"])}'] for y in reversed(yrs) if y["year"] >= "2001"]
+    cur = yrs[-1] if yrs else {"year": "", "months": 0}
+    m12_rows = [[month_name(t, m["m"]), f'₹{inr(m["p"])}', signed(m["chg"])] for m in reversed(L.get("last12", []))]
+    d30 = L.get("daily30", [])
+    d30_html = ""
+    if len(d30) >= 2:
+        d30_rows = [[day_name(t, x_["date"]), f'₹{inr(x_["india_24"])}', f'₹{inr(x_["inr_10g"])}'] for x_ in reversed(d30)]
+        d30_html = f'<h3>{t["d30_h"]}</h3>' + table(t["d30_cols"], d30_rows)
+
+    pur_rows = [list(r) for r in t["pur"]]
+    unit_rows = [[lab, f'₹{inr(g24 * w)}', f'₹{inr(g22 * w)}'] for w, lab in t["units"]]
+    ways_rows = [[f"<b>{a}</b>", b, c] for a, b, c in t["ways"]]
+
+    faq_vals = dict(band=bname, x=x, dir=d, pct=p_, p24=inr(india["24"]), p22=inr(india["22"]),
+                    r10=f'{r10["total"] * 100:.0f}%' if r10 else "–", c10=f'{r10["cagr"] * 100:.1f}%' if r10 else "–",
+                    tola24=inr(g24 * 11.6638), tola22=inr(g22 * 11.6638))
+    faqs = [(q, a.format(**faq_vals)) for q, a in t["faq"]]
     faq_html = "".join(f"<details><summary>{esc(q)}</summary><p>{esc(a)}</p></details>" for q, a in faqs)
     ld = json.dumps({"@context": "https://schema.org", "@type": "FAQPage", "inLanguage": lang,
                      "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in faqs]},
                     ensure_ascii=False)
-    legend = "".join(f'<span><i style="background:{COLORS[z]}"></i>{t["band"][z]}</span>' for z, _, _ in ZONES)
-    return f"""<!-- 9AM Traders Academy | Gold Thermometer ({lang}). Built by gold/render.py in github.com/9amtraders/9am-ipo-data.
-     Updated automatically every day. Edit the script, not this page. -->
+    toc = "".join(f'<a href="#n9gt-{i}">{lab}</a>' for i, lab in t["toc"])
+    rel = "".join(f'<a href="{u}">{lab}</a>' for u, lab in t["rel"])
+
+    return f"""<!-- 9AM Traders Academy | Gold price today and Gold Thermometer ({lang}). Built by gold/render.py in github.com/9amtraders/9am-ipo-data.
+     Updated automatically every day. Edit the scripts, not this page. -->
 <div id="n9gt" lang="{lang}" data-updated="{L['date']}">
 {CSS}
 <section class="hero">
@@ -367,8 +336,20 @@ def page(L, lang):
   <h1>{t['h1']}</h1>
   <p>{t['intro']}</p>
 </section>
-<div class="stale" id="n9gt-stale">{t['stale'].format(d=day_name(t, L['date']))}</div>
+<div class="stale" id="n9gt-stale">{t['stale'].format(d=today)}</div>
+<nav class="toc">{toc}</nav>
 
+<section id="n9gt-rate">
+<h2>{t['rate_h'].format(d=today)}</h2>
+<p class="sub">{t['rate_sub'].format(g22=inr(g22), g24=inr(g24))}</p>
+{table(t['rate_cols'], rate_rows, cls='rate', hide=(2, 4))}
+{yday}
+<p class="note">{rate_note}</p>
+<p class="attr">{t['attr'].format(gp=SRC['gp'], fx=SRC['fx'])}</p>
+</section>
+
+<section id="n9gt-thermometer">
+<h2>{t['therm_h']}</h2>
 <div class="reading">
   <div class="gauge">{gauge(L, t)}<div class="legend">{legend}</div></div>
   <div>
@@ -379,38 +360,106 @@ def page(L, lang):
     <a class="share" href="{share}" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-3.9-4.7-4.1-.1-.2-1.1-1.5-1.1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.3 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.5.1.3.6 1 1.3 1.7.9.8 1.7 1.1 2 1.2.2.1.4.1.5-.1l.7-.9c.2-.2.4-.2.6-.1l1.9.9c.3.1.4.2.5.3.1.2.1.7-.1 1.3z"/></svg>{t['share_b']}</a>
   </div>
 </div>
-
-<div class="cards">
-  <div class="card"><h3>{t['r_price']}</h3><div class="v">₹{inr(L['inr_10g_24k'])}</div>{yday}<p>{t['r_price_sub'].format(g=inr(L['inr_g_24k']), k22=inr(L['inr_10g_22k']), k18=inr(L['inr_10g_18k']))}</p></div>
+<div class="cards cards3">
   <div class="card"><h3>{t['r_avg']}</h3><div class="v">{pct(s)}</div><p>{t['r_avg_sub'].format(a=month_name(t, L['avg12_from']) + ' – ' + month_name(t, L['avg12_to']), v=inr(L['avg12']))}</p></div>
   <div class="card"><h3>{t['r_yoy']}</h3><div class="v">{yoy}</div><p>{t['r_yoy_sub'].format(m=month_name(t, L['yoy_month']))}</p></div>
   <div class="card"><h3>{t['r_read']}</h3><div class="v"><span class="count" data-to="{p_}">{p_}</span> / 100</div><p>{t['r_read_sub']}</p></div>
 </div>
-<p class="attr">{t['attr'].format(gp=SRC['gp'], fx=L['usdinr'], fxd=day_name(t, L['fx_date']) if L.get('fx_date') else '')}</p>
-
-<h2>{t['past_h']}</h2>
+<p class="note">{t['therm_note']}</p>
+<h3>{t['past_h']}</h3>
 <div class="box"><p style="margin:0">{past}</p><p class="note">{t['past_note']}</p></div>
+</section>
 
+<section id="n9gt-calculator">
+<h2>{t['calc_h']}</h2>
+<p class="sub">{t['calc_sub']}</p>
+<div class="calc" id="n9gt-calc" data-rates='{rates_json}'>
+  <div>
+    <div class="row">
+      <div class="f"><label for="n9c-w">{t['c_weight']}</label><input id="n9c-w" type="number" min="0" step="0.01" value="10" inputmode="decimal"></div>
+      <div class="f"><label for="n9c-p">{t['c_purity']}</label><select id="n9c-p">{pur_opts}</select></div>
+    </div>
+    <div class="f"><label for="n9c-r">{t['c_rate']}</label><input id="n9c-r" type="number" min="0" step="1" value="{r22}" inputmode="decimal"></div>
+    <div class="row">
+      <div class="f"><label for="n9c-m">{t['c_making']}</label><input id="n9c-m" type="number" min="0" step="0.1" value="10" inputmode="decimal"></div>
+      <div class="f"><label for="n9c-mt">&nbsp;</label><select id="n9c-mt"><option value="pct">{t['c_mtype'][0]}</option><option value="pg">{t['c_mtype'][1]}</option></select></div>
+    </div>
+    <div class="f"><label for="n9c-g">{t['c_gst']}</label><input id="n9c-g" type="number" min="0" step="0.1" value="3" inputmode="decimal"></div>
+  </div>
+  <div class="res" aria-live="polite">
+    <div><span>{co[0]}</span><b id="n9o-g">₹{inr(c_gold)}</b></div>
+    <div><span>{co[1]}</span><b id="n9o-m">₹{inr(c_make)}</b></div>
+    <div><span>{co[2]}</span><b id="n9o-t">₹{inr(c_gst)}</b></div>
+    <div class="tot"><span>{co[3]}</span><span id="n9o-b">₹{inr(c_tot)}</span></div>
+    <div><span>{co[4]}</span><b id="n9o-pg">₹{inr(c_tot / 10)}</b></div>
+  </div>
+</div>
+<p class="note">{t['c_note']}</p>
+</section>
+
+<section id="n9gt-chart">
 <h2>{t['chart_h']}</h2>
 <p class="sub">{t['chart_sub']}</p>
 <div class="box chart">{chart(L, t)}</div>
-
-<h2>{t['ribbon_h']}</h2>
+<h3>{t['ribbon_h']}</h3>
 <p class="sub">{t['ribbon_sub']}</p>
 <div class="box chart">{ribbon(L, t)}<div class="legend">{legend}</div></div>
+</section>
 
-<h2>{t['jeweller_h']}</h2>
-<p>{t['jeweller']}</p>
+<section id="n9gt-returns">
+<h2>{t['ret_h']}</h2>
+<p class="sub">{t['ret_sub']}</p>
+{table(t['ret_cols'], ret_rows, hide=(2,))}
+<h3>{t['split_h']}</h3>
+<p class="sub">{t['split_sub']}</p>
+{table(t['split_cols'], split_rows, hide=(3,))}
+<p class="note">{t['split_text'].format(s=s10v)}</p>
+</section>
 
+<section id="n9gt-history">
+<h2>{t['hist_h']}</h2>
+<p class="sub">{t['hist_sub'].format(y=cur['year'], n=cur['months'])}</p>
+{table(t['hist_cols'], hist_rows, hide=(3, 4))}
+<h3>{t['m12_h']}</h3>
+{table(t['m12_cols'], m12_rows)}
+{d30_html}
+</section>
+
+<section id="n9gt-drivers">
+<h2>{t['drv_h']}</h2>
+<ul>{''.join(f'<li>{x_.format(s=s10v)}</li>' for x_ in t['drv'])}</ul>
+<h3>{t['india_h']}</h3>
+<p>{t['india'].format(df=day_name(t, L['duty_from']))}</p>
+</section>
+
+<section id="n9gt-purity">
+<h2>{t['pur_h']}</h2>
+{table(t['pur_cols'], pur_rows, num_from=9)}
+<p class="note">{t['hallmark']}</p>
+<h3>{t['unit_h']}</h3>
+{table(t['unit_cols'], unit_rows)}
+</section>
+
+<section id="n9gt-ways">
+<h2>{t['ways_h']}</h2>
+{table(t['ways_cols'], ways_rows, num_from=9)}
+</section>
+
+<section id="n9gt-how">
 <h2>{t['how_h']}</h2>
 <ol>{''.join(f'<li>{x_}</li>' for x_ in t['how'])}</ol>
-<table><thead><tr><th>{t['zones_h'][0]}</th><th>{t['zones_h'][1]}</th></tr></thead><tbody>{zones}</tbody></table>
-
-<h2>{t['use_h']}</h2>
+{table(t['zones_h'], zones, num_from=9)}
+<h3>{t['use_h']}</h3>
 <ul>{''.join(f'<li>{x_}</li>' for x_ in t['use'])}</ul>
+</section>
 
+<section id="n9gt-faq">
 <h2>{t['faq_h']}</h2>
 {faq_html}
+</section>
+
+<h2>{t['rel_h']}</h2>
+<div class="rel">{rel}</div>
 
 <section class="cta">
   <h2>{t['cta_h']}</h2>
@@ -433,6 +482,13 @@ var m=getComputedStyle(nd).transform,a=0;if(m&&m!=="none"){{var v=m.match(/-?[0-
 var r=Math.max(0,Math.min(100,Math.round(a/1.8)));nums.forEach(function(n){{n.textContent=ts-t0>3300?n.getAttribute("data-to"):r;}});
 if(ts-t0<=3300)requestAnimationFrame(step);}});}}
 if("IntersectionObserver" in window){{var io=new IntersectionObserver(function(e){{if(e[0].isIntersecting){{io.disconnect();go();}}}},{{threshold:.35}});io.observe(box);}}else go();}})();
+(function(){{var c=document.getElementById("n9gt-calc");if(!c)return;var R=JSON.parse(c.getAttribute("data-rates"));
+function $(i){{return document.getElementById(i);}}function num(i){{var v=parseFloat($(i).value);return isFinite(v)&&v>0?v:0;}}
+function f(v){{return "₹"+Math.round(v).toLocaleString("en-IN");}}
+function calc(){{var w=num("n9c-w"),r=num("n9c-r"),m=num("n9c-m"),g=num("n9c-g"),gold=r/10*w,mk=$("n9c-mt").value==="pct"?gold*m/100:m*w,tx=(gold+mk)*g/100,tot=gold+mk+tx;
+$("n9o-g").textContent=f(gold);$("n9o-m").textContent=f(mk);$("n9o-t").textContent=f(tx);$("n9o-b").textContent=f(tot);$("n9o-pg").textContent=w?f(tot/w):"–";}}
+$("n9c-p").addEventListener("change",function(){{$("n9c-r").value=R[this.value];calc();}});
+["n9c-w","n9c-r","n9c-m","n9c-g","n9c-mt"].forEach(function(i){{$(i).addEventListener("input",calc);$(i).addEventListener("change",calc);}});calc();}})();
 (function(){{var r=document.getElementById("n9gt"),s=document.getElementById("n9gt-stale");if(!r||!s)return;
 var d=new Date(r.getAttribute("data-updated")+"T00:00:00+05:30");if((Date.now()-d)/864e5>3)s.style.display="block";}})();
 </script>
