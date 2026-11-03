@@ -1,3 +1,4 @@
 build/
 payload.json
 resp.json
+gold/__pycache__/

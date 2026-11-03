@@ -11,3 +11,4 @@ Data behind the free IPO Analyzer on [9amtraders.com](https://9amtraders.com/ipo
 - `widget/allotment-page.html` + `scripts/render_allotment.py` — the IPO Allotment Status page; `.github/workflows/allotment-page.yml` publishes it to WordPress after each update
 
 Reports are built from public sources and may contain errors. They are educational and not a recommendation to apply for, buy or sell any security.
+- `gold/` — the Gold Thermometer (`update.py` fetches prices, `render.py` builds the English and Hindi pages); `.github/workflows/gold-thermometer.yml` runs it daily and refreshes the two WordPress pages

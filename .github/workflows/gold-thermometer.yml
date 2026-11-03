@@ -1,0 +1,87 @@
+# Updates the 9AM Gold Thermometer once a day and refreshes its two WordPress pages in place.
+# It only edits the existing pages; it never creates posts or sends anything anywhere.
+#
+# Secrets (Settings > Secrets and variables > Actions):
+#   GOLDPRICE_API_KEY  goldprice.dev free plan key
+#   GOLD_PAGE_ID_EN    ID of the English page   (slug: gold-thermometer)
+#   GOLD_PAGE_ID_HI    ID of the Hindi page     (slug: sona-sasta-ya-mahanga)
+#   WP_URL, WP_USER, WP_APP_PASSWORD   already used by the IPO allotment page
+name: Gold Thermometer
+
+on:
+  schedule:
+    - cron: "20 6 * * *"   # 11:50 am IST every day
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [gold/*.py, .github/workflows/gold-thermometer.yml]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: gold-thermometer
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install
+        run: pip install --quiet openpyxl
+
+      - name: Fetch today's gold price and work out the reading
+        env:
+          GOLDPRICE_API_KEY: ${{ secrets.GOLDPRICE_API_KEY }}
+        run: python gold/update.py
+
+      - name: Build the pages
+        run: python gold/render.py
+
+      - name: Save the data
+        run: |
+          git config user.name "9am-gold-thermometer"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add gold/data
+          if git diff --cached --quiet; then echo "No data change."; exit 0; fi
+          git commit -q -m "Gold Thermometer data $(TZ=Asia/Kolkata date +%F)"
+          git pull -q --rebase origin main
+          git push -q origin HEAD:main
+
+      - name: Refresh the WordPress pages
+        env:
+          WP_URL: ${{ secrets.WP_URL }}
+          WP_USER: ${{ secrets.WP_USER }}
+          WP_APP_PASSWORD: ${{ secrets.WP_APP_PASSWORD }}
+          GOLD_PAGE_ID_EN: ${{ secrets.GOLD_PAGE_ID_EN }}
+          GOLD_PAGE_ID_HI: ${{ secrets.GOLD_PAGE_ID_HI }}
+        run: |
+          if [ -z "$WP_URL" ] || [ -z "$WP_USER" ] || [ -z "$WP_APP_PASSWORD" ]; then
+            echo "WordPress secrets are not set, so the pages were not refreshed."; exit 0
+          fi
+          fail=0
+          for lang in en hi; do
+            id_var="GOLD_PAGE_ID_$(echo $lang | tr a-z A-Z)"; id="${!id_var}"
+            if [ -z "$id" ]; then echo "$id_var is not set, skipping the $lang page."; continue; fi
+            python - "$lang" <<'PY'
+          import json, sys
+          lang = sys.argv[1]
+          html = open(f"build/gold-thermometer-{lang}.html", encoding="utf-8").read()
+          json.dump({"content": "<!-- wp:html -->\n" + html + "\n<!-- /wp:html -->"}, open("payload.json", "w"))
+          PY
+            code=$(curl -sS -o resp.json -w "%{http_code}" -X POST -u "$WP_USER:$WP_APP_PASSWORD" \
+              -H "Content-Type: application/json" -H "User-Agent: 9am-gold-thermometer" \
+              --data @payload.json "${WP_URL%/}/wp-json/wp/v2/pages/$id")
+            if [ "$code" = "200" ]; then
+              python -c "import json; r=json.load(open('resp.json')); print('Refreshed $lang page', r.get('id'), r.get('link'))"
+            else
+              echo "WordPress answered HTTP $code for the $lang page:"; head -c 600 resp.json; echo; fail=1
+            fi
+          done
+          exit $fail
