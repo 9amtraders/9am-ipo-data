@@ -1,4 +1,296 @@
 {
- "updated": null,
- "ipos": {}
+ "updated": "2026-11-04",
+ "ipos": {
+  "bombaycoatedspecialsteels": {
+   "name": "Bombay Coated & Special Steels",
+   "readings": [
+    {
+     "date": "2026-11-04",
+     "low": 7,
+     "high": 7,
+     "sources": [
+      "https://www.investorgain.com/gmp/bombay-coated-and-special-steels-ipo/1936/",
+      "https://ipogyani.com/ipo/bombay-coated-and-special-steels-ipo/gmp"
+     ]
+    }
+   ]
+  },
+  "mksonsfinejewels": {
+   "name": "M.K.Sons Fine Jewels",
+   "readings": [
+    {
+     "date": "2026-11-04",
+     "low": 10,
+     "high": 10,
+     "sources": [
+      "https://www.investorgain.com/gmp/mksons-fine-jewels-ipo/2288/",
+      "https://www.ipoji.com/ipo-gmp/mksons-fine-jewels-ipo"
+     ]
+    }
+   ]
+  },
+  "carverroboweld": {
+   "name": "Carver Roboweld",
+   "readings": [
+    {
+     "date": "2026-11-04",
+     "low": 4,
+     "high": 4,
+     "sources": [
+      "https://www.investorgain.com/gmp/carver-roboweld-ipo/2393/"
+     ]
+    }
+   ]
+  },
+  "ajwaprojects": {
+   "name": "Ajwa Projects",
+   "issuePrice": 203,
+   "readings": [
+    {
+     "date": "2026-11-04",
+     "low": 1,
+     "high": 1,
+     "sources": [
+      "https://www.investorgain.com/gmp/ajwa-projects-ipo/2017/"
+     ]
+    }
+   ]
+  },
+  "maxwellengineeringsolutions": {
+   "name": "Maxwell Engineering Solutions",
+   "readings": [
+    {
+     "date": "2026-11-04",
+     "low": 80,
+     "high": 80,
+     "sources": [
+      "https://www.investorgain.com/gmp/maxwell-engineering-solutions-ipo/1965/"
+     ]
+    }
+   ]
+  },
+  "vectrasenprocon": {
+   "name": "Vectras Enprocon",
+   "readings": [
+    {
+     "date": "2026-11-04",
+     "low": 0,
+     "high": 0,
+     "sources": [
+      "https://www.investorgain.com/gmp/vectras-enprocon-ipo/1998/"
+     ]
+    }
+   ]
+  },
+  "hgsindia": {
+   "name": "HGS (India)",
+   "readings": [
+    {
+     "date": "2026-11-04",
+     "low": 25,
+     "high": 25,
+     "sources": [
+      "https://www.investorgain.com/gmp/hgs-india-ipo/2241/"
+     ]
+    }
+   ]
+  },
+  "johnsoncabelectricals": {
+   "name": "Johnsoncab Electricals",
+   "readings": [
+    {
+     "date": "2026-11-04",
+     "low": 8,
+     "high": 8,
+     "sources": [
+      "https://www.investorgain.com/ipo/johnsoncab-electricals-ipo/2371/"
+     ]
+    }
+   ]
+  },
+  "vedantpolyfabs": {
+   "name": "Vedant Poly Fabs",
+   "readings": [
+    {
+     "date": "2026-11-04",
+     "low": 11,
+     "high": 11,
+     "sources": [
+      "https://www.investorgain.com/gmp/vedant-poly-fabs-ipo/2297/"
+     ]
+    }
+   ]
+  },
+  "hdfireprotect": {
+   "name": "HD Fire Protect",
+   "issuePrice": 271,
+   "readings": [
+    {
+     "date": "2026-10-20",
+     "low": 71,
+     "high": 71,
+     "sources": [
+      "https://www.investorgain.com/gmp/hd-fire-protect-ipo/1902/"
+     ]
+    }
+   ],
+   "listing": {
+    "date": "2026-10-21",
+    "open": 335.0,
+    "source": "https://www.chittorgarh.com/ipo/hd-fire-protect-ipo-ipo/2628/"
+   }
+  },
+  "fusioncx": {
+   "name": "Fusion CX",
+   "issuePrice": 289,
+   "readings": [
+    {
+     "date": "2026-10-21",
+     "low": 13.5,
+     "high": 13.5,
+     "sources": [
+      "https://www.investorgain.com/gmp/fusion-cx-ipo/1792/"
+     ]
+    }
+   ],
+   "listing": {
+    "date": "2026-10-22",
+    "open": 305.0,
+    "source": "https://www.chittorgarh.com/ipo/fusion-cx-ipo-ipo/2455/"
+   }
+  },
+  "bonfigliolitransmissions": {
+   "name": "Bonfiglioli Transmissions",
+   "issuePrice": 586,
+   "readings": [
+    {
+     "date": "2026-10-22",
+     "low": 66,
+     "high": 66,
+     "sources": [
+      "https://www.investorgain.com/gmp/bonfiglioli-transmissions-ipo/2124/"
+     ]
+    }
+   ],
+   "listing": {
+    "date": "2026-10-23",
+    "open": 586.0,
+    "source": "https://www.chittorgarh.com/ipo/bonfiglioli-transmissions-ipo-ipo/2861/"
+   }
+  },
+  "zetwerk": {
+   "name": "Zetwerk",
+   "issuePrice": 151,
+   "readings": [
+    {
+     "date": "2026-10-22",
+     "low": 1,
+     "high": 1,
+     "sources": [
+      "https://www.investorgain.com/ipo/zetwerk-ipo/2279/"
+     ]
+    }
+   ],
+   "listing": {
+    "date": "2026-10-23",
+    "open": 159.25,
+    "source": "https://www.freepressjournal.in/business/zetwerk-shares-list-at-55-premium-stock-makes-positive-market-debut-at-15925-on-nse"
+   }
+  },
+  "sahajanandmedicaltechnologies": {
+   "name": "Sahajanand Medical Technologies",
+   "issuePrice": 344,
+   "readings": [
+    {
+     "date": "2026-10-22",
+     "low": 17,
+     "high": 17,
+     "sources": [
+      "https://www.investorgain.com/gmp/sahajanand-medical-technologies-ipo-gmp/1842/"
+     ]
+    }
+   ],
+   "listing": {
+    "date": "2026-10-23",
+    "open": 371.15,
+    "source": "https://www.chittorgarh.com/ipo/sahajanand-medical-technologies-ipo-ipo/2550/"
+   }
+  },
+  "tonboimagingindia": {
+   "name": "Tonbo Imaging India",
+   "issuePrice": 700,
+   "readings": [
+    {
+     "date": "2026-10-22",
+     "low": 450,
+     "high": 450,
+     "sources": [
+      "https://www.investorgain.com/ipo/tonbo-imaging-india-ipo/2369/"
+     ]
+    }
+   ],
+   "listing": {
+    "date": "2026-10-23",
+    "open": 1160.0,
+    "source": "https://www.5paisa.com/blog/tonbo-imaging-india-ipo-listing"
+   }
+  },
+  "jioplatforms": {
+   "name": "Jio Platforms",
+   "issuePrice": 1119,
+   "readings": [
+    {
+     "date": "2026-10-27",
+     "low": 248,
+     "high": 248,
+     "sources": [
+      "https://www.investorgain.com/gmp/jio-platforms-ipo/2306/"
+     ]
+    }
+   ],
+   "listing": {
+    "date": "2026-10-28",
+    "open": 1358.0,
+    "source": "https://www.5paisa.com/blog/jio-platforms-ipo-listing"
+   }
+  },
+  "vishalnirmiti": {
+   "name": "Vishal Nirmiti",
+   "issuePrice": 220,
+   "readings": [
+    {
+     "date": "2026-10-07",
+     "low": 2,
+     "high": 2,
+     "sources": [
+      "https://www.investorgain.com/gmp/vishal-nirmiti-ipo/1602/"
+     ]
+    }
+   ],
+   "listing": {
+    "date": "2026-10-08",
+    "open": 215.0,
+    "source": "https://groww.in/blog/vishal-nirmiti-shares-list-at-2-discount-on-nse"
+   }
+  },
+  "blspolymers": {
+   "name": "BLS Polymers",
+   "issuePrice": 150,
+   "readings": [
+    {
+     "date": "2026-11-02",
+     "low": 67,
+     "high": 67,
+     "sources": [
+      "https://www.gmpipowatch.in/ipo/bls-polymers/listing-price"
+     ]
+    }
+   ],
+   "listing": {
+    "date": "2026-11-03",
+    "open": 248.0,
+    "source": "https://www.chittorgarh.com/ipo/bls-polymers-ipo/2559/"
+   }
+  }
+ }
 }

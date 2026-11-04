@@ -5,9 +5,9 @@
  "sector": "Packaging (BOPP and PP woven bags)",
  "exchange": "BSE SME",
  "open": "2026-10-29",
- "close": "2026-11-02",
- "listing": "2026-11-05",
- "band": "₹63 – ₹67",
+ "close": "2026-11-05",
+ "listing": "2026-11-11",
+ "band": "₹62 – ₹66",
  "issueSizeCr": 23.33,
  "freshCr": 23.33,
  "ofsCr": 0.0,
@@ -20,7 +20,7 @@
    "name": "Subscription demand",
    "weight": 50,
    "score": 10,
-   "detail": "Subscribed 0.42x retail, 66.72x QIB, 0.36x NII, 1.13x overall."
+   "detail": "Subscribed 0.42x retail, 66.72x QIB, 0.3x NII, 1.13x overall (bidding still open)."
   },
   {
    "name": "Profit growth (RHP)",
@@ -41,7 +41,7 @@
    "detail": "Financial health, governance, issue structure, use of proceeds, legal and risk checks."
   }
  ],
- "capReason": "1 red flag took 5 points off. Capped at 25 because the retail portion is not fully subscribed.",
+ "capReason": "1 red flag took 5 points off. Capped at 25 because the retail portion is not fully subscribed so far.",
  "counts": {
   "pass": 16,
   "caution": 3,

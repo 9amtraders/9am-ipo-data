@@ -13,14 +13,14 @@
  "ofsCr": 0.0,
  "lotSize": 1200,
  "summary": "Johnsoncab Electricals makes low-voltage wires and cables up to 1.1 kV under the JOHNSON CABLES brand from two units in Mehsana, Gujarat, selling to private and government customers through tenders and vendor approvals. Revenue grew from ₹89 cr in FY24 to ₹211 cr in FY26 and profit rose 146% in FY26 to ₹13.4 cr, but operating cash flow was negative ₹19.7 cr in FY26 and borrowings more than doubled to ₹79.9 cr, a debt to equity of 2.54. The whole ₹56 cr issue is fresh money, about half of it for a new shed, machinery and a rooftop solar plant and ₹14 cr for working capital, with nothing for debt repayment. At the upper band the post-issue P/E is about 15.8x, below the 18.1x median of the listed peers named in the offer documents.",
- "score": 34,
+ "score": 61,
  "checksScore": 71,
  "drivers": [
   {
    "name": "Subscription demand",
    "weight": 50,
-   "score": 14,
-   "detail": "Subscribed 2.21x retail, 0.99x QIB, 2.89x NII, 2.01x overall (bidding still open)."
+   "score": 68,
+   "detail": "Subscribed 17.98x retail, 20.19x QIB, 42.27x NII, 23.82x overall."
   },
   {
    "name": "Profit growth (RHP)",

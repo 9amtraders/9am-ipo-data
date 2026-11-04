@@ -13,14 +13,14 @@
  "ofsCr": 6.65,
  "lotSize": 2400,
  "summary": "HGS (India), incorporated in 1986, makes geophones, seismic cables, connectors, seismographs and other geophysical instruments at a single plant in Manesar, Haryana, mainly for oil and gas and mineral exploration, and sells to 146 clients in 21 countries. Revenue fell about 8% in FY26 to ₹45.2 cr after rising from ₹35.5 cr in FY24 to ₹49.1 cr in FY25, while profit rose 10.8% to ₹11.6 cr and the net margin widened to 25.8%. The company has no borrowings, about 69% of the ₹27.9 cr fresh issue goes to plant and machinery replacement and Manesar facility works, and the top 10 customers made up 72.6% of FY26 revenue. At the upper band the post-issue P/E is about 11.2x and price to book about 1.1x; the RHP names no listed peers.",
- "score": 43,
+ "score": 76,
  "checksScore": 59,
  "drivers": [
   {
    "name": "Subscription demand",
    "weight": 50,
-   "score": 64,
-   "detail": "Subscribed 25.56x retail, 4.88x QIB, 31.56x NII, 20.96x overall (bidding still open)."
+   "score": 98,
+   "detail": "Subscribed 235.72x retail, 137.92x QIB, 424.67x NII, 248.58x overall."
   },
   {
    "name": "Profit growth (RHP)",
@@ -41,7 +41,7 @@
    "detail": "Financial health, governance, issue structure, use of proceeds, legal and risk checks."
   }
  ],
- "capReason": "3 red flags took 15 points off.",
+ "capReason": "3 red flags took 15 points off. Raised to 76 (Strong) because the issue is subscribed 150x or more.",
  "counts": {
   "pass": 14,
   "caution": 6,

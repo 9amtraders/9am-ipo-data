@@ -13,14 +13,14 @@
  "ofsCr": 10.46,
  "lotSize": 2400,
  "summary": "Vectras Enprocon is a Gujarat-based EPC contractor for the midstream and downstream oil and gas sector, building pipelines, combined stations and refinery and terminal piping works, and offering inspection and testing services. Revenue rose from ₹54.3 cr in FY24 to ₹119.8 cr in FY26 and profit grew 51.7% in FY26 to ₹15.4 cr, but operating cash flow was negative in each of the three years and borrowings grew much faster than revenue. The top 10 customers made up 92.3% of FY26 revenue, and the two selling promoters acquired their shares at an average of ₹4. At the upper band the post-issue P/E is about 13.0x on FY26 profit, below the median of the listed peers named in the RHP.",
- "score": 25,
+ "score": 32,
  "checksScore": 59,
  "drivers": [
   {
    "name": "Subscription demand",
    "weight": 50,
-   "score": 20,
-   "detail": "Subscribed 1.33x retail, 1.42x QIB, 1.3x NII, 1.31x overall (bidding still open)."
+   "score": 34,
+   "detail": "Subscribed 4.45x retail, 1.88x QIB, 6.69x NII, 4.2x overall."
   },
   {
    "name": "Profit growth (RHP)",

@@ -13,14 +13,14 @@
  "ofsCr": 5.67,
  "lotSize": 2400,
  "summary": "Vedant Poly Fabs makes flexible packaging (multi-layer LD films, shrink and barrier films, printed laminates, milk and oil pouches) for food, beverage and consumer goods companies from a single plant at Barasat, West Bengal. Total income rose from ₹49.7 cr in FY24 to ₹115.3 cr in FY26 and profit grew 140% in FY26 to ₹11.0 cr, but operating cash flow was negative in all three years (−₹11.5 cr in FY26) and borrowings rose from ₹6.4 cr to ₹46.8 cr. Related-party transactions were 27.6% of FY26 revenue and the top 10 customers gave 69.4% of sales. At the upper band the post-issue P/E is about 17.3x, close to the 17.8x median of the listed peers, while price to book of about 2.0x is above the peer median.",
- "score": 13,
+ "score": 18,
  "checksScore": 56,
  "drivers": [
   {
    "name": "Subscription demand",
    "weight": 50,
-   "score": 0,
-   "detail": "Subscribed 0.14x retail, 0x QIB, 0.83x NII, 0.42x overall (bidding still open)."
+   "score": 10,
+   "detail": "Subscribed 0.83x retail, 327.27x QIB, 0.94x NII, 0.89x overall (bidding still open)."
   },
   {
    "name": "Profit growth (RHP)",

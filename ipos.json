@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-03",
+ "updated": "2026-11-04",
  "ipos": [
   {
    "name": "Core4 Engineers",
@@ -295,24 +295,24 @@
    "aka": [],
    "board": "SME",
    "open": "2026-10-29",
-   "close": "2026-11-02",
-   "listing": "2026-11-05",
-   "band": "₹63 – ₹67",
+   "close": "2026-11-05",
+   "listing": "2026-11-11",
+   "band": "₹62 – ₹66",
    "hasReport": true,
    "score": 25,
    "registrar": "bigshare",
-   "allotment": "2026-11-03",
+   "allotment": "2026-11-06",
    "sub": {
     "qib": 66.72,
-    "nii": 0.36,
+    "nii": 0.3,
     "retail": 0.42,
     "total": 1.13,
     "retailShares": 2760000,
     "minAppShares": 4000,
     "retailApps": null,
-    "asOf": "2026-11-02 17:06",
-    "final": true,
-    "source": "https://www.investorgain.com/report/ipo-subscription-live/333/"
+    "asOf": "2026-11-02 20:00 (issue extended to Nov ",
+    "final": false,
+    "source": "https://www.chittorgarh.com/ipo_news/antala-industries-ipo/3221/"
    },
    "allot": {
     "chance": 100.0,
@@ -331,24 +331,24 @@
    "listing": "2026-11-06",
    "band": "₹150 – ₹158",
    "hasReport": true,
-   "score": 62,
+   "score": 79,
    "registrar": "kfin",
    "allotment": "2026-11-04",
    "sub": {
-    "qib": 0.0,
-    "nii": 117.09,
-    "retail": 110.21,
-    "total": 80.34,
+    "qib": 259.45,
+    "nii": 857.65,
+    "retail": 556.09,
+    "total": 536.8,
     "retailShares": 1200000,
     "minAppShares": 1600,
     "retailApps": null,
-    "asOf": "2026-11-02 17:56 (day 2)",
-    "final": false,
-    "source": "https://www.investorgain.com/report/ipo-subscription-live/333/"
+    "asOf": "2026-11-03 20:00 (final)",
+    "final": true,
+    "source": "https://www.chittorgarh.com/ipo_news/maxwell-engineering-solutions-ipo/2704/"
    },
    "allot": {
-    "chance": 0.9,
-    "oneIn": 110,
+    "chance": 0.2,
+    "oneIn": 556,
     "basis": "estimate"
    }
   },
@@ -361,24 +361,24 @@
    "listing": "2026-11-06",
    "band": "₹99 – ₹105",
    "hasReport": true,
-   "score": 25,
+   "score": 32,
    "registrar": "mufg",
    "allotment": "2026-11-04",
    "sub": {
-    "qib": 1.42,
-    "nii": 1.3,
-    "retail": 1.33,
-    "total": 1.31,
+    "qib": 1.88,
+    "nii": 6.69,
+    "retail": 4.45,
+    "total": 4.2,
     "retailShares": 1680000,
     "minAppShares": 2400,
     "retailApps": null,
-    "asOf": "2026-11-02 17:06 (day 2)",
-    "final": false,
-    "source": "https://www.investorgain.com/report/ipo-subscription-live/333/"
+    "asOf": "2026-11-03 17:54 (final)",
+    "final": true,
+    "source": "https://www.chittorgarh.com/ipo_subscription/vectras-enprocon-ipo/2740/"
    },
    "allot": {
-    "chance": 75.2,
-    "oneIn": 1,
+    "chance": 22.5,
+    "oneIn": 4,
     "basis": "estimate"
    }
   },
@@ -393,24 +393,24 @@
    "listing": "2026-11-06",
    "band": "₹114 – ₹120",
    "hasReport": true,
-   "score": 43,
+   "score": 76,
    "registrar": "kfin",
    "allotment": "2026-11-04",
    "sub": {
-    "qib": 4.88,
-    "nii": 31.56,
-    "retail": 25.56,
-    "total": 20.96,
+    "qib": 137.92,
+    "nii": 424.67,
+    "retail": 235.72,
+    "total": 248.58,
     "retailShares": 960000,
     "minAppShares": 2400,
     "retailApps": null,
-    "asOf": "2026-11-02 17:55 (day 2)",
-    "final": false,
-    "source": "https://www.investorgain.com/report/ipo-subscription-live/333/"
+    "asOf": "2026-11-03 20:00 (final)",
+    "final": true,
+    "source": "https://www.chittorgarh.com/ipo_news/hgs-india-ipo/2981/"
    },
    "allot": {
-    "chance": 3.9,
-    "oneIn": 26,
+    "chance": 0.4,
+    "oneIn": 236,
     "basis": "estimate"
    }
   },
@@ -426,24 +426,24 @@
    "listing": "2026-11-06",
    "band": "₹190 – ₹200",
    "hasReport": true,
-   "score": 34,
+   "score": 61,
    "registrar": "maashitla",
    "allotment": "2026-11-04",
    "sub": {
-    "qib": 0.99,
-    "nii": 2.89,
-    "retail": 2.21,
-    "total": 2.01,
+    "qib": 20.19,
+    "nii": 42.27,
+    "retail": 17.98,
+    "total": 23.82,
     "retailShares": 933600,
     "minAppShares": 1200,
     "retailApps": null,
-    "asOf": "2026-11-02 17:06 (day 2)",
-    "final": false,
-    "source": "https://www.investorgain.com/report/ipo-subscription-live/333/"
+    "asOf": "2026-11-03 17:54 (final)",
+    "final": true,
+    "source": "https://www.chittorgarh.com/ipo_subscription/johnsoncab-electricals-ipo/3217/"
    },
    "allot": {
-    "chance": 45.2,
-    "oneIn": 2,
+    "chance": 5.6,
+    "oneIn": 18,
     "basis": "estimate"
    }
   },
@@ -458,20 +458,20 @@
    "listing": "2026-11-09",
    "band": "₹88 – ₹94",
    "hasReport": true,
-   "score": 13,
+   "score": 18,
    "registrar": "cameo",
    "allotment": "2026-11-05",
    "sub": {
-    "qib": 0.0,
-    "nii": 0.83,
-    "retail": 0.14,
-    "total": 0.42,
+    "qib": 327.27,
+    "nii": 0.94,
+    "retail": 0.83,
+    "total": 0.89,
     "retailShares": 3396000,
     "minAppShares": 2400,
     "retailApps": null,
-    "asOf": "2026-11-02 17:56 (day 1)",
+    "asOf": "2026-11-03 17:54 (day 2)",
     "final": false,
-    "source": "https://www.investorgain.com/report/ipo-subscription-live/333/"
+    "source": "https://www.chittorgarh.com/ipo_subscription/vedant-poly-fabs-ipo/3143/"
    },
    "allot": {
     "chance": 100.0,
