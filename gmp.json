@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-04",
+ "updated": "2026-11-05",
  "ipos": {
   "bombaycoatedspecialsteels": {
    "name": "Bombay Coated & Special Steels",
@@ -27,7 +27,12 @@
       "https://www.ipoji.com/ipo-gmp/mksons-fine-jewels-ipo"
      ]
     }
-   ]
+   ],
+   "listing": {
+    "date": "2026-11-04",
+    "open": 171.0,
+    "source": "https://www.chittorgarh.com/ipo/mksons-fine-jewels-ipo/"
+   }
   },
   "carverroboweld": {
    "name": "Carver Roboweld",
@@ -40,7 +45,12 @@
       "https://www.investorgain.com/gmp/carver-roboweld-ipo/2393/"
      ]
     }
-   ]
+   ],
+   "listing": {
+    "date": "2026-11-04",
+    "open": 90.0,
+    "source": "https://hdfcsky.com/news/carver-roboweld-debuts-at-rs-90-on-bse-sme-rises-5-percent-to-rs-94-50"
+   }
   },
   "ajwaprojects": {
    "name": "Ajwa Projects",
@@ -54,7 +64,12 @@
       "https://www.investorgain.com/gmp/ajwa-projects-ipo/2017/"
      ]
     }
-   ]
+   ],
+   "listing": {
+    "date": "2026-11-04",
+    "open": 203.0,
+    "source": "https://hdfcsky.com/news/ajwa-projects-shares-flatline-on-bse-sme-debut"
+   }
   },
   "maxwellengineeringsolutions": {
    "name": "Maxwell Engineering Solutions",
