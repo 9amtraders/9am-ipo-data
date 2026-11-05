@@ -33,7 +33,7 @@ HIST_FILE = Path(os.environ.get("HIST_FILE", ".cache/bubble_history.csv.gz"))
 KEEP_CALENDAR_DAYS = 780          # ~530 trading days: stable 200 EMA + 1 year of replay
 REPLAY_DAYS = 260                 # first run rebuilds ~1 year of phase history
 CONFIRM_DAYS = 2                  # days a new phase must hold before it counts
-STATE_VERSION = 2                 # bump when phase rules change, to force a rebuild
+STATE_VERSION = 3                 # bump when phase rules change, to force a rebuild
 MIN_ROWS = 210                    # skip stocks listed too recently
 IST = dt.timezone(dt.timedelta(hours=5, minutes=30))
 
@@ -185,8 +185,8 @@ def pct(x):
 
 
 def classify(m):
-    """Returns (phase, stage, reasons) or (None, None, []) when the stock
-    is not in a clear cycle phase (e.g. a long, slow downtrend)."""
+    """Returns (phase, stage, reasons). Stocks in no bubble stage are
+    returned as phase "out" (out of cycle)."""
     d, dd, slope, r, peak = m["d200"], m["dd"], m["slope"], m["rsi"], m["peak"]
 
     # 1. Blow-off: had a mania-sized run in the last 6 months, now well off the top
@@ -240,7 +240,24 @@ def classify(m):
             f"Volume is {m['vr']:.1f}x normal",
         ]
 
-    return None, None, []
+    # 5. Out of cycle: not in any bubble stage
+    if d < -0.03 and slope < 0:
+        return "out", "Slow downtrend", [
+            f"{pct(d)} below a falling 200-day average",
+            f"{pct(dd)} from its 52-week high",
+            "No big run-up in the last 6 months, so not a blow-off",
+        ]
+    if d < 0:
+        return "out", "Below average", [
+            f"{pct(d)} below its 200-day average",
+            "The 200-day average is not clearly falling",
+            f"{pct(dd)} from its 52-week high",
+        ]
+    return "out", "No clear trend", [
+        f"{pct(d)} vs its 200-day average, but that average is flat or falling",
+        f"Moved in a {m['rng60'] * 100:.0f}% range over 3 months",
+        f"{pct(dd)} from its 52-week high",
+    ]
 
 
 # ---------------------------------------------------------------- phase memory
@@ -297,7 +314,7 @@ def main():
         print(f"First run: replaying {len(todo)} trading days to build phase history")
     todo_set = set(todo)
 
-    temp = {d: {"t": 0, "stealth": 0, "awareness": 0, "mania": 0, "blowoff": 0} for d in todo}
+    temp = {d: {"t": 0, "stealth": 0, "awareness": 0, "mania": 0, "blowoff": 0, "out": 0} for d in todo}
     latest = {}
     for sym, g in hist.groupby("sym"):
         f = indicators(g)
@@ -338,7 +355,7 @@ def main():
         })
 
     counts = {k: sum(1 for s in stocks if s["p"] == k)
-              for k in ("stealth", "awareness", "mania", "blowoff")}
+              for k in ("stealth", "awareness", "mania", "blowoff", "out")}
     out = {
         "date": data_date,
         "built": now.strftime("%Y-%m-%d %H:%M IST"),
@@ -356,7 +373,7 @@ def main():
     for d, t in temp.items():
         if t["t"]:
             rows[d] = {"d": d, "t": t["t"], "st": t["stealth"], "aw": t["awareness"],
-                       "ma": t["mania"], "bo": t["blowoff"]}
+                       "ma": t["mania"], "bo": t["blowoff"], "ou": t["out"]}
     th = {"universe": "Nifty 500", "days": [rows[d] for d in sorted(rows)][-1300:]}
 
     OUT_FILE.parent.mkdir(parents=True, exist_ok=True)
