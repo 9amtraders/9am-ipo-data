@@ -1,0 +1,51 @@
+# Save as: .github/workflows/bubble-phase-meter.yml  (in 9amtraders/9am-ipo-data)
+# Also put build_bubble_phases.py in the repo root.
+name: Bubble Phase Meter
+
+on:
+  schedule:
+    - cron: "30 13 * * 1-5"   # 7:00 PM IST, Mon-Fri (bhavcopy is out by ~6 PM)
+  workflow_dispatch: {}        # "Run workflow" button for manual runs
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install pandas numpy
+
+      # Price history lives in the Actions cache, not in the repo (keeps the repo small)
+      - name: Restore price history
+        uses: actions/cache/restore@v4
+        with:
+          path: .cache
+          key: bubble-hist-${{ github.run_id }}
+          restore-keys: bubble-hist-
+
+      - name: Build phases.json
+        run: python build_bubble_phases.py
+
+      - name: Save price history
+        if: always()
+        uses: actions/cache/save@v4
+        with:
+          path: .cache
+          key: bubble-hist-${{ github.run_id }}
+
+      - name: Commit
+        run: |
+          git config user.name  "9am-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add bubble/phases.json bubble/temperature.json bubble/state.json
+          git diff --cached --quiet || git commit -m "Bubble phases $(date -u +%F)"
+          git push
+
