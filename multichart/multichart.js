@@ -17,7 +17,7 @@ function toast(t){var el=$("mc-toast");el.textContent=t;el.style.display="block"
 var ALIAS={NIFTY:"BSE:SNSX50",NIFTY50:"BSE:SNSX50",BANKNIFTY:"BSE:BANK",FINNIFTY:"BSE:FINSER",
  NIFTYIT:"BSE:IT",NIFTYPHARMA:"BSE:HC",NIFTYAUTO:"BSE:AUTO",NIFTYMETAL:"BSE:METAL",NIFTYFMCG:"BSE:FMCG",NIFTYREALTY:"BSE:REALTY",
  SENSEX:"BSE:SENSEX",SENSEX50:"BSE:SNSX50",BANKEX:"BSE:BANK",BSE500:"BSE:BSE500",BSE100:"BSE:BSE100",
- GOLD:"TVC:GOLD",SILVER:"TVC:SILVER",CRUDE:"TVC:USOIL",USDINR:"FX_IDC:USDINR",BTC:"BITSTAMP:BTCUSD",BITCOIN:"BITSTAMP:BTCUSD",DXY:"TVC:DXY",SPX:"SP:SPX"};
+ GOLD:"TVC:GOLD",SILVER:"TVC:SILVER",CRUDE:"TVC:USOIL",USDINR:"FX_IDC:USDINR",BTC:"BITSTAMP:BTCUSD",BITCOIN:"BITSTAMP:BTCUSD",DXY:"CAPITALCOM:DXY",SPX:"FOREXCOM:SPXUSD",SP500:"FOREXCOM:SPXUSD",DOW:"FOREXCOM:DJI",DJI:"FOREXCOM:DJI",EURUSD:"FX:EURUSD"};
 var SWAPNOTE={NIFTY:"Nifty isn't allowed in free charts — showing Sensex 50, the closest index.",NIFTY50:"Nifty isn't allowed in free charts — showing Sensex 50, the closest index.",BANKNIFTY:"Bank Nifty isn't allowed in free charts — showing BSE Bankex instead."};
 var NSEIDX={"NSE:NIFTY":"BSE:SNSX50","NSE:BANKNIFTY":"BSE:BANK","NSE:CNXIT":"BSE:IT","NSE:CNXPHARMA":"BSE:HC","NSE:CNXAUTO":"BSE:AUTO","NSE:CNXMETAL":"BSE:METAL","NSE:CNXFMCG":"BSE:FMCG","NSE:CNXREALTY":"BSE:REALTY","NSE:CNXFINANCE":"BSE:FINSER","NSE:INDIAVIX":"BSE:SENSEX"};
 function fixNSE(sym){if(NSEIDX[sym])return NSEIDX[sym];return String(sym).indexOf("NSE:")==0?"BSE:"+sym.slice(4):sym}
@@ -29,11 +29,14 @@ function norm(s){s=String(s||"").trim().toUpperCase().replace(/\s+/g,"");if(!s)r
  return ALIAS[s]||("BSE:"+s)}
 function base(sym){var p=String(sym).split(":");return p[p.length-1]}
 // TradingView writes "&" and "-" in Indian stock codes as "_" (M&M -> M_M, BAJAJ-AUTO -> BAJAJ_AUTO)
+// Free widgets give BSE (Indian) symbols end-of-day data only: Daily, Weekly, Monthly
+var EOD_TF=["D","W","M"];function isEOD(sym){return /^BSE:/.test(String(sym))}
+function okTF(sym,tf){return isEOD(sym)&&EOD_TF.indexOf(tf)<0?"D":tf}
 function tvSym(sym){var p=String(sym).split(":");if(p.length<2)return sym;return p[0]+":"+p[1].replace(/[&-]/g,"_")}
 
 /* ---------------- state ---------------- */
 var small=window.matchMedia("(max-width:760px)").matches;
-var DEF={lay:small?2:4,theme:"light",link:false,sel:0,charts:[{s:"BSE:SENSEX",tf:"15"},{s:"BSE:BANK",tf:"15"},{s:"FX_IDC:USDINR",tf:"15"},{s:"TVC:GOLD",tf:"D"}],strat:""};
+var DEF={lay:small?2:4,theme:"light",link:false,sel:0,charts:[{s:"BSE:SENSEX",tf:"D"},{s:"BSE:BANK",tf:"D"},{s:"FX_IDC:USDINR",tf:"15"},{s:"TVC:GOLD",tf:"15"}],strat:""};
 var cfg=Object.assign({},DEF,load("screen",{}));
 cfg.charts=(cfg.charts&&cfg.charts.length==4)?cfg.charts:DEF.charts.slice();
 cfg.charts.forEach(function(c){c.s=fixNSE(c.s)});  // older saved screens used NSE symbols
@@ -52,28 +55,29 @@ function whenTV(f){if(tvReady||tvFail)f();else tvQ.push(f)}
 /* ---------------- strategies & presets ---------------- */
 var EMA200={id:"MAExp@tv-basicstudies",inputs:{length:200}},VOL="Volume@tv-basicstudies",RSI="RSI@tv-basicstudies",BB="BB@tv-basicstudies",VWAP="VWAP@tv-basicstudies",MACD="MACD@tv-basicstudies";
 var STRATS={
- orb:{n:"Opening Range Breakout",tf:["5","15","D","5"],extra:[null,null,null,"BSE:SENSEX"],st:[[VWAP,VOL],[VWAP,VOL],[],[]],
-  ck:["Mark the high and low of the first 15 minutes (9:15–9:30)","Wait for a 5-minute candle to CLOSE outside that range","Check the Sensex chart (bottom right) — trade with the index, not against it","Price on the right side of VWAP","Stop loss at the other side of the range, position size fixed before entry"],
-  tip:"Pehle 15 minute ka range dekho. Range ke bahar candle close hone ka wait karo — sirf wick se breakout mat maano."},
- ema:{n:"200 EMA Pullback",tf:["D","60","15","D"],extra:[null,null,null,"BSE:SENSEX"],st:[[EMA200],[EMA200],[],[EMA200]],
-  ck:["Daily price is above a RISING 200 EMA","Price pulls back close to the 200 EMA or a support level","Sensex is not in a sharp fall (bottom-right chart)","A bullish candle forms on the 1-hour chart near support","Stop loss below the pullback low"],
+ hi52:{n:"52-Week High Breakout",tf:["D","W","M","D"],extra:[null,null,null,"BSE:SENSEX"],st:[[VOL],[VOL],[],[]],
+  ck:["Price is within 3% of its 52-week high","Daily candle CLOSES above the 52-week high","Volume on the breakout day is at least 1.5x normal","The weekly and monthly charts are also in an uptrend","Sensex (bottom right) is not in a sharp fall","Decide your stop loss before you enter"],
+  tip:"52-week high todna matlab saal bhar ke sab sellers ab nuksaan mein nahi hain — upar supply kam hoti hai. Par close aur volume dono confirm karo."},
+ ema:{n:"200 EMA Pullback",tf:["D","W","M","D"],extra:[null,null,null,"BSE:SENSEX"],st:[[EMA200],[EMA200],[],[EMA200]],
+  ck:["Daily price is above a RISING 200 EMA","Price pulls back close to the 200 EMA or a support level","Sensex is not in a sharp fall (bottom-right chart)","A bullish daily candle forms near the 200 EMA or support","Stop loss below the pullback low"],
   tip:"Trend tumhara dost hai: 200 EMA upar ki taraf ho tabhi pullback dhoondo. Girte EMA pe 'sasta' samajh ke mat kharido."},
- brk:{n:"Breakout + Volume",tf:["D","W","60","D"],extra:[null,null,null,"BSE:SENSEX"],st:[[VOL],[VOL],[VOL],[]],
-  ck:["Clear resistance touched at least 2 times before","Daily candle CLOSES above resistance","Volume on breakout day is at least 1.5x normal","Weekly chart also looks strong — not right under a big weekly resistance","Plan what you will do if price falls back below the breakout level"],
+ brk:{n:"Breakout + Volume",tf:["D","W","M","D"],extra:[null,null,null,"BSE:SENSEX"],st:[[VOL],[VOL],[VOL],[]],
+  ck:["Clear resistance touched at least 2 times before","Daily candle CLOSES above resistance","Volume on breakout day is at least 1.5x normal","Weekly and monthly charts also look strong — not right under a big resistance","Plan what you will do if price falls back below the breakout level"],
   tip:"Volume ke bina breakout aksar fake hota hai. Close above resistance + zyada volume = asli breakout ka pehla sign."},
- rsi:{n:"RSI Divergence",tf:["D","60","15","D"],extra:[null,null,null,"BSE:SENSEX"],st:[[RSI],[RSI],[RSI],[]],
+ rsi:{n:"RSI Divergence",tf:["D","W","M","D"],extra:[null,null,null,"BSE:SENSEX"],st:[[RSI],[RSI],[RSI],[]],
   ck:["Price makes a new high (or low)","RSI makes a LOWER high (or HIGHER low) at the same time","Divergence appears on at least 2 timeframes","Wait for a confirming candle — divergence alone is not an entry","Stop loss beyond the latest swing high/low"],
   tip:"Price naya high bana raha hai par RSI nahi — matlab andar se taakat kam ho rahi hai. Par confirmation candle ka wait zaroori hai."},
- bb:{n:"Bollinger Squeeze",tf:["D","60","W","D"],extra:[null,null,null,"BSE:SENSEX"],st:[[BB],[BB],[BB],[]],
+ bb:{n:"Bollinger Squeeze",tf:["D","W","M","D"],extra:[null,null,null,"BSE:SENSEX"],st:[[BB],[BB],[BB],[]],
   ck:["Bollinger Bands are the narrowest in about 3 months","Volume is drying up during the squeeze","Wait for a close outside the bands","Trade in the direction of the break, not before it","Stop loss back inside the bands"],
   tip:"Jab bands bahut patle ho jaate hain, bada move aane wala hota hai — par direction pehle se koi nahi jaanta. Break ka wait karo."}
 };
 var PRESETS={
- mtf:{n:"Multi-timeframe: selected stock (Day / 1h / 15m / 5m)"},
- morning:{n:"Morning check: Sensex, Bankex, USD/INR, Gold",c:[["BSE:SENSEX","15"],["BSE:BANK","15"],["FX_IDC:USDINR","15"],["TVC:GOLD","15"]]},
+ mtf:{n:"Multi-timeframe: selected symbol (Month / Week / Day)"},
+ morning:{n:"Morning check: Sensex, Bankex, USD/INR, Gold",c:[["BSE:SENSEX","D"],["BSE:BANK","D"],["FX_IDC:USDINR","15"],["TVC:GOLD","15"]]},
+ commod:{n:"Commodities intraday: Gold, Silver, Crude, USD/INR (15m)",c:[["TVC:GOLD","15"],["TVC:SILVER","15"],["TVC:USOIL","15"],["FX_IDC:USDINR","15"]]},
  sector:{n:"Sector rotation: IT, Healthcare, Auto, Metal",c:[["BSE:IT","D"],["BSE:HC","D"],["BSE:AUTO","D"],["BSE:METAL","D"]]},
  sector2:{n:"Sector rotation 2: Bankex, FMCG, Capital Goods, Power",c:[["BSE:BANK","D"],["BSE:FMCG","D"],["BSE:CG","D"],["BSE:POWER","D"]]},
- global:{n:"Global cues: Sensex, S&P 500, Dollar index, Crude",c:[["BSE:SENSEX","D"],["SP:SPX","D"],["TVC:DXY","D"],["TVC:USOIL","D"]]},
+ global:{n:"Global cues: Sensex, S&P 500, Dollar index, Crude",c:[["BSE:SENSEX","D"],["FOREXCOM:SPXUSD","D"],["CAPITALCOM:DXY","D"],["TVC:USOIL","D"]]},
  metals:{n:"Gold vs Silver vs USD/INR vs Sensex",c:[["TVC:GOLD","D"],["TVC:SILVER","D"],["FX_IDC:USDINR","D"],["BSE:SENSEX","D"]]},
  stocksector:{n:"Selected stock vs Sensex vs its sector"}
 };
@@ -86,7 +90,7 @@ function mount(i){var box=$("mc-tv-"+i);if(!box)return;
  if(LAZY&&i>=lazyFrom&&!root.classList.contains("focus")){var r=box.getBoundingClientRect();if(r.top>window.innerHeight+250){box.setAttribute("data-i",i);box.setAttribute("data-pending","1");box.innerHTML='<div class="msg">Chart loads when you scroll here…</div>';LAZY.observe(box);return}}
  mountNow(i)}
 function mountNow(i){
- var box=$("mc-tv-"+i);if(!box)return;var c=cfg.charts[i],id="mc-w"+i+"-"+(++mountSeq);
+ var box=$("mc-tv-"+i);if(!box)return;var c=cfg.charts[i],id="mc-w"+i+"-"+(++mountSeq);c.tf=okTF(c.s,c.tf);
  box.innerHTML='<div id="'+id+'" style="height:100%"></div><div class="msg" style="z-index:-1">Loading chart…</div>';
  whenTV(function(){
   if(!window.TradingView){box.innerHTML='<div class="msg">Chart could not load. Check your connection or ad-blocker, then refresh.</div>';return}
@@ -98,7 +102,7 @@ function mountNow(i){
 function badge(sym){var b=PH&&PH[base(sym)];if(!b)return"";var P=PHN[b.p];
  return'<a class="badge" style="--c:'+P.c+'" href="'+BUBBLE_PAGE+'" target="_blank" rel="noopener" title="Bubble Phase Meter: '+esc(b.st)+'">'+P.n+(b.days!=null?' · '+b.days+(b.known===false?"+":"")+'d':"")+'</a>'}
 function header(i){var c=cfg.charts[i],nn=notesFor(c.s).length;
- return'<span class="sym">'+esc(base(c.s))+'</span><select data-tf="'+i+'" aria-label="Timeframe">'+Object.keys(TFN).map(function(k){return'<option value="'+k+'"'+(k==c.tf?" selected":"")+'>'+TFN[k]+'</option>'}).join("")+'</select>'
+ return'<span class="sym">'+esc(base(c.s))+'</span><select data-tf="'+i+'" aria-label="Timeframe">'+Object.keys(TFN).filter(function(k){return !isEOD(c.s)||EOD_TF.indexOf(k)>=0}).map(function(k){return'<option value="'+k+'"'+(k==c.tf?" selected":"")+'>'+TFN[k]+'</option>'}).join("")+'</select>'
  +badge(c.s)+(nn?'<span class="nt">📝 '+nn+'</span>':"")+'<span class="sp"></span><span class="fine">'+esc(c.s.split(":")[0])+'</span>'}
 function buildGrid(){
  var g=$("mc-grid"),n=cfg.lay;g.className="grid l"+n;var h="";
@@ -108,7 +112,7 @@ function buildGrid(){
 }
 function refreshHeaders(){for(var i=0;i<cfg.lay;i++){var el=$("mc-ph-"+i);if(el)el.innerHTML=header(i)}}
 function selectPane(i){if(i>=cfg.lay)i=0;cfg.sel=i;[].forEach.call($("mc-grid").children,function(p,k){p.classList.toggle("on",k==i)});persist();renderNotes();news()}
-function setChart(i,s,tf,noMount){cfg.charts[i]={s:s,tf:tf||cfg.charts[i].tf};if(!noMount&&i<cfg.lay){mount(i);var el=$("mc-ph-"+i);if(el)el.innerHTML=header(i)}}
+function setChart(i,s,tf,noMount){var want=tf||cfg.charts[i].tf,got=okTF(s,want);if(got!=want)toast("Indian stocks show Daily, Weekly and Monthly charts only in free TradingView charts.");cfg.charts[i]={s:s,tf:got};if(!noMount&&i<cfg.lay){mount(i);var el=$("mc-ph-"+i);if(el)el.innerHTML=header(i)}}
 function apply(list){list.forEach(function(c,i){cfg.charts[i]={s:c[0],tf:c[1]}});if(cfg.lay<4&&list.length>=4&&!small)cfg.lay=4;persist();buildGrid();renderNotes();news()}
 
 /* ---------------- bubble phases (for badges, Today's 4, note prices) ---------------- */
@@ -299,7 +303,7 @@ $("mc-lay").addEventListener("click",function(e){var b=e.target.closest("[data-l
 Object.keys(PRESETS).forEach(function(k){var o=document.createElement("option");o.value=k;o.textContent=PRESETS[k].n;$("mc-preset").appendChild(o)});
 Object.keys(STRATS).forEach(function(k){var o=document.createElement("option");o.value=k;o.textContent=STRATS[k].n;$("mc-strat").appendChild(o)});
 $("mc-preset").addEventListener("change",function(){var k=this.value,s=cfg.charts[cfg.sel].s;this.value="";if(!k)return;cfg.strat="";$("mc-strat").value="";renderStrat();
- if(k=="mtf")apply([[s,"D"],[s,"60"],[s,"15"],[s,"5"]]);
+ if(k=="mtf")apply(isEOD(s)?[[s,"M"],[s,"W"],[s,"D"],["BSE:SENSEX","D"]]:[[s,"D"],[s,"60"],[s,"15"],[s,"5"]]);
  else if(k=="stocksector")apply([[s,"D"],["BSE:SENSEX","D"],[sectorIdx(s),"D"],[s,"W"]]);
  else apply(PRESETS[k].c);cfg.sel=0;persist()});
 function sectorIdx(s){var b=PH&&PH[base(s)],sec=b&&b.sec||"";var m={"Information Technology":"BSE:IT","Healthcare":"BSE:HC","Automobile and Auto Components":"BSE:AUTO","Metals & Mining":"BSE:METAL","Fast Moving Consumer Goods":"BSE:FMCG","Realty":"BSE:REALTY","Financial Services":"BSE:FINSER","Oil Gas & Consumable Fuels":"BSE:OILGAS","Power":"BSE:POWER","Capital Goods":"BSE:CG"};return m[sec]||"BSE:BSE500"}
