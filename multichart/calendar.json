@@ -1,0 +1,30 @@
+{
+  "updated": "2026-11-05",
+  "note": "Upload to 9amtraders/9am-ipo-data as multichart/calendar.json. Add next year's NSE holidays every December. Source: NSE equity & F&O trading holiday circular.",
+  "holidays": [
+    {"d": "2026-01-15", "n": "Municipal Corporation Election (Maharashtra)"},
+    {"d": "2026-01-26", "n": "Republic Day"},
+    {"d": "2026-03-03", "n": "Holi"},
+    {"d": "2026-03-26", "n": "Shri Ram Navami"},
+    {"d": "2026-03-31", "n": "Shri Mahavir Jayanti"},
+    {"d": "2026-04-03", "n": "Good Friday"},
+    {"d": "2026-04-14", "n": "Dr. Baba Saheb Ambedkar Jayanti"},
+    {"d": "2026-05-01", "n": "Maharashtra Day"},
+    {"d": "2026-05-28", "n": "Bakri Id"},
+    {"d": "2026-06-26", "n": "Muharram"},
+    {"d": "2026-09-14", "n": "Ganesh Chaturthi"},
+    {"d": "2026-10-02", "n": "Mahatma Gandhi Jayanti"},
+    {"d": "2026-10-20", "n": "Dussehra"},
+    {"d": "2026-11-10", "n": "Diwali Balipratipada"},
+    {"d": "2026-11-24", "n": "Prakash Gurpurb Sri Guru Nanak Dev"},
+    {"d": "2026-12-25", "n": "Christmas"}
+  ],
+  "special": [
+    {"d": "2026-11-08", "n": "Muhurat trading (Sunday) - timings as per NSE circular"}
+  ],
+  "expiries": [
+    {"label": "Nifty 50 weekly", "dow": 2, "monthly": false},
+    {"label": "Monthly F&O (Nifty, Bank Nifty, stocks)", "dow": 2, "monthly": true},
+    {"label": "Sensex weekly (BSE)", "dow": 4, "monthly": false}
+  ]
+}
