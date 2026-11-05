@@ -33,6 +33,7 @@ HIST_FILE = Path(os.environ.get("HIST_FILE", ".cache/bubble_history.csv.gz"))
 KEEP_CALENDAR_DAYS = 780          # ~530 trading days: stable 200 EMA + 1 year of replay
 REPLAY_DAYS = 260                 # first run rebuilds ~1 year of phase history
 CONFIRM_DAYS = 2                  # days a new phase must hold before it counts
+STATE_VERSION = 2                 # bump when phase rules change, to force a rebuild
 MIN_ROWS = 210                    # skip stocks listed too recently
 IST = dt.timezone(dt.timedelta(hours=5, minutes=30))
 
@@ -255,7 +256,10 @@ def step(e, date, raw, stage, why):
     if raw == e["p"]:
         e.update(st=stage, why=why, pend=None, pc=0)
     else:
-        e["pc"] = e["pc"] + 1 if e["pend"] == raw else 1
+        # count days in a row that DON'T match the current phase, whatever the
+        # new reading is (it can bounce between e.g. "none" and "awareness");
+        # when confirmed, switch to today's reading
+        e["pc"] += 1
         e["pend"] = raw
         if e["pc"] >= CONFIRM_DAYS:
             e.update(was=e["p"], p=raw, st=stage, why=why, since=date, days=1,
@@ -282,6 +286,8 @@ def main():
     data_date = all_dates[-1]
 
     state = load_json(STATE_FILE, {})
+    if state.get("v") != STATE_VERSION:      # rules changed: rebuild history from scratch
+        state = {}
     smap = state.get("stocks", {})
     last = state.get("last")
     if last:
@@ -356,7 +362,8 @@ def main():
     OUT_FILE.parent.mkdir(parents=True, exist_ok=True)
     OUT_FILE.write_text(json.dumps(out, separators=(",", ":"), ensure_ascii=False))
     TEMP_FILE.write_text(json.dumps(th, separators=(",", ":")))
-    STATE_FILE.write_text(json.dumps({"last": data_date, "stocks": smap}, separators=(",", ":")))
+    STATE_FILE.write_text(json.dumps({"v": STATE_VERSION, "last": data_date, "stocks": smap},
+                                     separators=(",", ":")))
     print(f"{data_date}: {counts}, unclassified {out['unclassified']}, "
           f"temperature days {len(th['days'])}")
 
