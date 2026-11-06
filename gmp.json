@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-05",
+ "updated": "2026-11-06",
  "ipos": {
   "bombaycoatedspecialsteels": {
    "name": "Bombay Coated & Special Steels",
@@ -13,7 +13,13 @@
       "https://ipogyani.com/ipo/bombay-coated-and-special-steels-ipo/gmp"
      ]
     }
-   ]
+   ],
+   "issuePrice": 82,
+   "listing": {
+    "date": "2026-11-05",
+    "open": 91.0,
+    "source": "https://upstox.com/news/market-news/ipo/bombay-coated-and-special-steels-shares-list-at-11-premium-on-nse-here-s-how-much-investors-made/article-203019/"
+   }
   },
   "mksonsfinejewels": {
    "name": "M.K.Sons Fine Jewels",
@@ -81,6 +87,14 @@
      "sources": [
       "https://www.investorgain.com/gmp/maxwell-engineering-solutions-ipo/1965/"
      ]
+    },
+    {
+     "date": "2026-11-06",
+     "low": 105,
+     "high": 105,
+     "sources": [
+      "https://www.investorgain.com/gmp/maxwell-engineering-solutions-ipo/1965/"
+     ]
     }
    ]
   },
@@ -107,6 +121,14 @@
      "sources": [
       "https://www.investorgain.com/gmp/hgs-india-ipo/2241/"
      ]
+    },
+    {
+     "date": "2026-11-06",
+     "low": 27,
+     "high": 27,
+     "sources": [
+      "https://www.investorgain.com/gmp/hgs-india-ipo/2241/"
+     ]
     }
    ]
   },
@@ -130,6 +152,14 @@
      "date": "2026-11-04",
      "low": 11,
      "high": 11,
+     "sources": [
+      "https://www.investorgain.com/gmp/vedant-poly-fabs-ipo/2297/"
+     ]
+    },
+    {
+     "date": "2026-11-06",
+     "low": 1,
+     "high": 1,
      "sources": [
       "https://www.investorgain.com/gmp/vedant-poly-fabs-ipo/2297/"
      ]

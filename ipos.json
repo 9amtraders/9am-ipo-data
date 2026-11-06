@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-05",
+ "updated": "2026-11-06",
  "ipos": [
   {
    "name": "Core4 Engineers",
@@ -299,25 +299,25 @@
    "listing": "2026-11-11",
    "band": "₹62 – ₹66",
    "hasReport": true,
-   "score": 25,
+   "score": 65,
    "registrar": "bigshare",
    "allotment": "2026-11-06",
    "sub": {
     "qib": 66.72,
-    "nii": 22.17,
-    "retail": 0.8,
-    "total": 4.82,
+    "nii": 49.94,
+    "retail": 5.22,
+    "total": 12.79,
     "retailShares": 2760000,
     "minAppShares": 4000,
     "retailApps": null,
-    "asOf": "2026-11-04 17:54 (day 5)",
-    "final": false,
+    "asOf": "2026-11-05 17:54 (final day)",
+    "final": true,
     "source": "https://www.chittorgarh.com/ipo_subscription/antala-industries-ipo/3221/"
    },
    "allot": {
-    "chance": 100.0,
-    "oneIn": 1,
-    "basis": "undersubscribed"
+    "chance": 19.2,
+    "oneIn": 5,
+    "basis": "estimate"
    }
   },
   {
