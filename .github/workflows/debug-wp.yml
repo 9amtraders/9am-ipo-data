@@ -1,4 +1,4 @@
-# Temporary: checks how the two tracker pages render in Chrome. Safe to delete.
+# Temporary: finds what WordPress changes inside the tracker script. Safe to delete.
 name: debug-wp (temporary)
 on:
   workflow_dispatch: {}
@@ -6,67 +6,27 @@ jobs:
   check:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - run: pip install -q playwright && python -m playwright install --with-deps chromium > /dev/null 2>&1
       - env:
           WP_URL: ${{ secrets.WP_URL }}
         run: |
-          mkdir -p shots
+          curl -sS -A "Mozilla/5.0" "${WP_URL%/}/bse-order-wins-tracker-companies-that-bagged-new-orders-this-week/?dbg=$RANDOM" -o live.html
           python3 - <<'PY'
-          import os, re
-          from playwright.sync_api import sync_playwright
-          base = os.environ["WP_URL"].rstrip("/")
-          pages = {"orders": "/bse-order-wins-tracker-companies-that-bagged-new-orders-this-week/",
-                   "deals": "/nse-bulk-and-block-deals-tracker/"}
-          with sync_playwright() as p:
-              b = p.chromium.launch()
-              for name, path in pages.items():
-                  for vw in ((1280, 900), (390, 844)):
-                      pg = b.new_page(viewport={"width": vw[0], "height": vw[1]})
-                      logs = []
-                      pg.on("console", lambda m: logs.append(f"console.{m.type}: {m.text}"[:300]))
-                      pg.on("pageerror", lambda e: logs.append(f"PAGEERROR: {e}"[:400]))
-                      pg.on("requestfailed", lambda r: logs.append(f"FAILED: {r.url[:120]} {r.failure}"))
-                      pg.goto(base + path + "?dbg=1", wait_until="networkidle", timeout=90000)
-                      pg.wait_for_timeout(4000)
-                      root = "ow9" if name == "orders" else "sm9"
-                      info = pg.evaluate(f"""() => {{ const r=document.getElementById('{root}'); if(!r) return 'NO ROOT';
-                        const cs=getComputedStyle(r); const cards=[...r.querySelectorAll('.card')];
-                        return 'root display='+cs.display+' vis='+cs.visibility+' opacity='+cs.opacity+' height='+r.offsetHeight+
-                          ' | cards='+cards.length+' shown='+cards.filter(c=>c.classList.contains('in')).length+
-                          ' | upd='+(document.getElementById('{"ow-upd" if name=="orders" else "sm9-upd"}')||{{}}).textContent+
-                          ' | scripts in root='+r.querySelectorAll('script').length+' | p-in-style='+[...document.querySelectorAll('style')].filter(s=>/<p>|<br/.test(s.innerHTML)).length; }}""")
-                      print(f"===== {name} {vw[0]}px: {info}")
-                      for l in logs[:25]: print("   ", l)
-                      pg.screenshot(path=f"shots/{name}_{vw[0]}.png", full_page=False)
-                      pg.evaluate(f"document.getElementById('{root}') && document.getElementById('{root}').scrollIntoView()")
-                      pg.wait_for_timeout(1500)
-                      pg.screenshot(path=f"shots/{name}_{vw[0]}_tool.png")
-                      html = pg.content()
-                      open(f"shots/{name}_{vw[0]}.html","w").write(html)
-                      m = re.search(r"<script>\s*\(function\(\)\{.{0,400}", html, re.S)
-                      print("    inline script head:", (m.group(0)[:200] if m else "NOT FOUND").replace("\n", " "))
-                      pg.close()
-              b.close()
+          import re, subprocess
+          h = open("live.html", encoding="utf-8", errors="replace").read()
+          i = h.find('var DATA_URL="https://raw.githubusercontent.com/9amtraders/9am-ipo-data/main/orders/orders.json"')
+          a = h.rfind("<script>", 0, i); b = h.find("</script>", i)
+          js = h[a + 8:b]
+          open("t.js", "w").write(js)
+          r = subprocess.run(["node", "--check", "t.js"], capture_output=True, text=True)
+          print("NODE:", r.stderr[:900])
+          m = re.search(r"t\.js:(\d+)", r.stderr)
+          if m:
+              ln = int(m.group(1)); lines = js.split("\n")
+              print("LINE", ln, ":", lines[ln - 1][:600])
+          for pat in ["<p>", "</p>", "<br />", "&#8217;", "&#8220;", "&#8221;", "&#038;", "&amp;&amp;", "&#8211;", "&lt;", "<img", "data:image"]:
+              print(f"count {pat!r}: {js.count(pat)}")
+          st = h[h.rfind("<style>", 0, h.find("#ow9 .b-govt")):h.find("</style>", h.find("#ow9 .b-govt"))]
+          print("style block <p>/<br>:", st.count("<p>"), st.count("<br"))
+          for m in list(re.finditer(r"<p>|<br ?/?>|&#82\d\d;", js))[:6]:
+              print("CONTEXT:", repr(js[max(0, m.start() - 120): m.end() + 60]))
           PY
-      - env:
-          WP_URL: ${{ secrets.WP_URL }}
-          WP_USER: ${{ secrets.WP_USER }}
-          WP_APP_PASSWORD: ${{ secrets.WP_APP_PASSWORD }}
-          OW: ${{ secrets.WP_OW_PAGE_ID }}
-          SM: ${{ secrets.WP_SM_PAGE_ID }}
-        run: |
-          for pair in "orders:$OW" "deals:$SM"; do n=${pair%%:*}; id=${pair#*:}
-            curl -sS -u "$WP_USER:$WP_APP_PASSWORD" "${WP_URL%/}/wp-json/wp/v2/pages/$id?context=edit" -o shots/${n}_rest.json
-            curl -sS "${WP_URL%/}/wp-json/wp/v2/pages?slug=nse-bulk-and-block-deals-tracker&_fields=id,slug,status,modified" -o shots/slug_deals.json
-            curl -sS "${WP_URL%/}/wp-json/wp/v2/posts?slug=nse-bulk-and-block-deals-tracker&_fields=id,slug,type,status" -o shots/slug_deals_posts.json
-          done
-          python3 -c "
-          import json
-          for n in ('orders','deals'):
-              d=json.load(open(f'shots/{n}_rest.json'));print(n,'rest slug',d.get('slug'),'modified',d.get('modified'),'raw has ow9/sm9',('ow9' in d['content']['raw']) or ('sm9' in d['content']['raw']),'raw len',len(d['content']['raw']))
-          print('pages with deals slug:',open('shots/slug_deals.json').read()[:300]);print('posts with deals slug:',open('shots/slug_deals_posts.json').read()[:300])"
-      - uses: actions/upload-artifact@v4
-        with:
-          name: shots
-          path: shots/
