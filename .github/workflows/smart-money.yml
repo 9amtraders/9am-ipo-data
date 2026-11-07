@@ -1,0 +1,85 @@
+# Save as: .github/workflows/smart-money.yml  (in 9amtraders/9am-ipo-data)
+# Also needs: build_smart_money.py (repo root), scripts/render_smart_money.py,
+# and widget/smart-money-page.html (the page itself).
+#
+# 1) Every weekday evening it collects NSE bulk & block deals, closing prices and
+#    news into smartmoney/deals.json.
+# 2) It then renders the page with today's deals as plain HTML (for Google) and
+#    publishes it to WordPress, like the IPO GMP page.
+#
+# Publishing needs these repository secrets (the first three already exist for the GMP page):
+#   WP_URL, WP_USER, WP_APP_PASSWORD
+#   WP_SM_PAGE_ID   the ID of the "NSE Bulk and Block Deals Tracker" page
+name: Smart Money Tracker
+
+on:
+  schedule:
+    - cron: "15 14 * * 1-5"   # 7:45 PM IST, Mon-Fri (NSE posts bulk/block deals in the evening)
+  push:
+    branches: [main]
+    paths: [widget/smart-money-page.html, scripts/render_smart_money.py]
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: smart-money
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Build smartmoney/deals.json
+        if: github.event_name != 'push'
+        run: python build_smart_money.py
+
+      - name: Commit data
+        if: github.event_name != 'push'
+        run: |
+          git config user.name  "9am-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add smartmoney/deals.json
+          git diff --cached --quiet || git commit -m "Smart money deals $(date -u +%F)"
+          git pull --rebase
+          git push
+
+      - name: Render the page
+        run: python scripts/render_smart_money.py
+
+      - name: Publish to WordPress
+        env:
+          WP_URL: ${{ secrets.WP_URL }}
+          WP_USER: ${{ secrets.WP_USER }}
+          WP_APP_PASSWORD: ${{ secrets.WP_APP_PASSWORD }}
+          WP_SM_PAGE_ID: ${{ secrets.WP_SM_PAGE_ID }}
+        run: |
+          if [ -z "$WP_URL" ] || [ -z "$WP_USER" ] || [ -z "$WP_APP_PASSWORD" ] || [ -z "$WP_SM_PAGE_ID" ]; then
+            echo "WordPress secrets are not set yet, so the page was not published (data is still updated)."
+            exit 0
+          fi
+          python3 - <<'PY'
+          import json
+          html = open("build/smart-money-page.html", encoding="utf-8").read()
+          json.dump({"content": "<!-- wp:html -->\n" + html + "\n<!-- /wp:html -->"}, open("payload.json", "w"))
+          PY
+          code=$(curl -sS -o resp.json -w "%{http_code}" -X POST \
+            -u "$WP_USER:$WP_APP_PASSWORD" \
+            -H "Content-Type: application/json" \
+            -H "User-Agent: 9am-ipo-data-publisher" \
+            --data @payload.json \
+            "${WP_URL%/}/wp-json/wp/v2/pages/$WP_SM_PAGE_ID")
+          if [ "$code" != "200" ]; then
+            echo "WordPress answered HTTP $code:"
+            head -c 600 resp.json; echo
+            exit 1
+          fi
+          python3 -c "import json; r=json.load(open('resp.json')); print('Published page', r.get('id'), r.get('link'))"
