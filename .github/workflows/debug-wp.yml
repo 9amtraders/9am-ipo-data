@@ -43,11 +43,29 @@ jobs:
                       pg.wait_for_timeout(1500)
                       pg.screenshot(path=f"shots/{name}_{vw[0]}_tool.png")
                       html = pg.content()
+                      open(f"shots/{name}_{vw[0]}.html","w").write(html)
                       m = re.search(r"<script>\s*\(function\(\)\{.{0,400}", html, re.S)
                       print("    inline script head:", (m.group(0)[:200] if m else "NOT FOUND").replace("\n", " "))
                       pg.close()
               b.close()
           PY
+      - env:
+          WP_URL: ${{ secrets.WP_URL }}
+          WP_USER: ${{ secrets.WP_USER }}
+          WP_APP_PASSWORD: ${{ secrets.WP_APP_PASSWORD }}
+          OW: ${{ secrets.WP_OW_PAGE_ID }}
+          SM: ${{ secrets.WP_SM_PAGE_ID }}
+        run: |
+          for pair in "orders:$OW" "deals:$SM"; do n=${pair%%:*}; id=${pair#*:}
+            curl -sS -u "$WP_USER:$WP_APP_PASSWORD" "${WP_URL%/}/wp-json/wp/v2/pages/$id?context=edit" -o shots/${n}_rest.json
+            curl -sS "${WP_URL%/}/wp-json/wp/v2/pages?slug=nse-bulk-and-block-deals-tracker&_fields=id,slug,status,modified" -o shots/slug_deals.json
+            curl -sS "${WP_URL%/}/wp-json/wp/v2/posts?slug=nse-bulk-and-block-deals-tracker&_fields=id,slug,type,status" -o shots/slug_deals_posts.json
+          done
+          python3 -c "
+          import json
+          for n in ('orders','deals'):
+              d=json.load(open(f'shots/{n}_rest.json'));print(n,'rest slug',d.get('slug'),'modified',d.get('modified'),'raw has ow9/sm9',('ow9' in d['content']['raw']) or ('sm9' in d['content']['raw']),'raw len',len(d['content']['raw']))
+          print('pages with deals slug:',open('shots/slug_deals.json').read()[:300]);print('posts with deals slug:',open('shots/slug_deals_posts.json').read()[:300])"
       - uses: actions/upload-artifact@v4
         with:
           name: shots
