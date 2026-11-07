@@ -55,7 +55,42 @@ FX_FALLBACK = {"USD": 88.0, "EUR": 102.0, "GBP": 117.0}
 
 
 # ------------------------------------------------------------------ download
+# BSE's API only answers browser-like clients that have visited bseindia.com first,
+# so we use curl_cffi (Chrome fingerprint) with one warm-up visit. Falls back to urllib.
+try:
+    from curl_cffi import requests as cffi
+except ImportError:            # pip install curl_cffi
+    cffi = None
+SESSION = None
+
+
+def session():
+    global SESSION
+    if SESSION is None and cffi is not None:
+        SESSION = cffi.Session(impersonate="chrome")
+        try:
+            SESSION.get("https://www.bseindia.com/", headers={"Referer": "https://www.google.com/"}, timeout=30)
+        except Exception as e:  # noqa: BLE001
+            print(f"  BSE warm-up failed: {e}", file=sys.stderr)
+    return SESSION
+
+
 def fetch(url, tries=3, accept_404=True):
+    s = session() if "bseindia.com" in url else None
+    if s is not None:
+        for i in range(tries):
+            try:
+                r = s.get(url, headers={"Referer": "https://www.bseindia.com/", "Origin": "https://www.bseindia.com"},
+                          timeout=40)
+                if r.status_code == 200:
+                    return r.content
+                if r.status_code == 404 and accept_404:
+                    return None
+                print(f"  HTTP {r.status_code} on {url[:110]} (try {i + 1})", file=sys.stderr)
+            except Exception as e:  # noqa: BLE001
+                print(f"  {e} on {url[:110]} (try {i + 1})", file=sys.stderr)
+            time.sleep(2 * (i + 1))
+        return None
     req = urllib.request.Request(url, headers=HEADERS)
     for i in range(tries):
         try:

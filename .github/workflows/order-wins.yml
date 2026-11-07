@@ -40,13 +40,16 @@ jobs:
 
       - name: Build orders/orders.json
         if: github.event_name != 'push'
-        run: python build_order_wins.py
+        run: |
+          pip install -q curl_cffi
+          python build_order_wins.py
 
       - name: Commit data
         if: github.event_name != 'push'
         run: |
           git config user.name  "9am-bot"
           git config user.email "actions@users.noreply.github.com"
+          [ -f orders/orders.json ] || { echo "No orders file was written — see the step above."; exit 1; }
           git add orders/orders.json
           git diff --cached --quiet || git commit -m "Order wins $(date -u +%F)"
           git pull --rebase
