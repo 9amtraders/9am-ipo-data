@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-06",
+ "updated": "2026-11-07",
  "ipos": {
   "bombaycoatedspecialsteels": {
    "name": "Bombay Coated & Special Steels",
@@ -96,7 +96,13 @@
       "https://www.investorgain.com/gmp/maxwell-engineering-solutions-ipo/1965/"
      ]
     }
-   ]
+   ],
+   "listing": {
+    "date": "2026-11-06",
+    "open": 300.2,
+    "source": "https://hdfcsky.com/news/maxwell-engineering-solutions-shares-rise-90-percent-on-debut"
+   },
+   "issuePrice": 158
   },
   "vectrasenprocon": {
    "name": "Vectras Enprocon",
@@ -109,7 +115,13 @@
       "https://www.investorgain.com/gmp/vectras-enprocon-ipo/1998/"
      ]
     }
-   ]
+   ],
+   "listing": {
+    "date": "2026-11-06",
+    "open": 106.0,
+    "source": "https://hdfcsky.com/news/vectras-enprocon-debuts-at-rs-106-edges-up-0-24-percent"
+   },
+   "issuePrice": 105
   },
   "hgsindia": {
    "name": "HGS (India)",
@@ -130,7 +142,13 @@
       "https://www.investorgain.com/gmp/hgs-india-ipo/2241/"
      ]
     }
-   ]
+   ],
+   "listing": {
+    "date": "2026-11-06",
+    "open": 160.0,
+    "source": "https://www.chittorgarh.com/ipo/hgs-india-ipo/2981/"
+   },
+   "issuePrice": 120
   },
   "johnsoncabelectricals": {
    "name": "Johnsoncab Electricals",
@@ -143,7 +161,13 @@
       "https://www.investorgain.com/ipo/johnsoncab-electricals-ipo/2371/"
      ]
     }
-   ]
+   ],
+   "listing": {
+    "date": "2026-11-06",
+    "open": 238.5,
+    "source": "https://www.chittorgarh.com/ipo/johnsoncab-electricals-ipo/3217/"
+   },
+   "issuePrice": 200
   },
   "vedantpolyfabs": {
    "name": "Vedant Poly Fabs",
@@ -158,6 +182,14 @@
     },
     {
      "date": "2026-11-06",
+     "low": 1,
+     "high": 1,
+     "sources": [
+      "https://www.investorgain.com/gmp/vedant-poly-fabs-ipo/2297/"
+     ]
+    },
+    {
+     "date": "2026-11-07",
      "low": 1,
      "high": 1,
      "sources": [
@@ -336,6 +368,19 @@
     "open": 248.0,
     "source": "https://www.chittorgarh.com/ipo/bls-polymers-ipo/2559/"
    }
+  },
+  "antalaindustries": {
+   "name": "Antala Industries",
+   "readings": [
+    {
+     "date": "2026-11-07",
+     "low": 0,
+     "high": 0,
+     "sources": [
+      "https://www.investorgain.com/gmp/antala-industries-ipo/2375/"
+     ]
+    }
+   ]
   }
  }
 }
