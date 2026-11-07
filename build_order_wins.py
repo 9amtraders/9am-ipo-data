@@ -274,16 +274,17 @@ RX_CTX = re.compile(r"(order|contract|award|worth|valued|value|amount|considerat
 RX_SKIP = re.compile(r"(?i)order ?book|backlog|order inflow|unexecuted|cumulative|year[- ]to[- ]date|ytd|"
                      r"so far|total orders|capital|turnover|net worth|revenue|market (size|opportunity)|classif|"
                      r"authori[sz]ed|range of|between rs|crore to|cr to")
-PDF_VER = 2
+PDF_VER = 3
 
 
 def value_from_pdf(text, fx):
-    """First amount that follows order wording; skips order-book totals, share capital, L&T-style size bands."""
-    for m in RX_CTX.finditer(text):
-        win = text[m.start(): m.end() + 160]
-        if RX_SKIP.search(text[max(0, m.start() - 80): m.end() + 160]):
+    """First amount in a sentence about the order; skips order-book totals, share capital, size bands."""
+    for sent in re.split(r"(?<=[.;!?])\s+(?=[A-Z₹*(\"'])", text):
+        if len(sent) > 400:
+            sent = sent[:400]
+        if not RX_CTX.search(sent) or RX_SKIP.search(sent):
             continue
-        v = parse_value(win, fx)
+        v = parse_value(sent, fx)
         if v[0] > 0:
             return v
     return 0.0, "", "INR"
