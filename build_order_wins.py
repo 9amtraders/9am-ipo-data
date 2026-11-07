@@ -409,7 +409,7 @@ def main():
     except (OSError, ValueError):
         pass
     today = dt.datetime.now(IST).date()
-    first = len(known) < 200
+    first = len(known) < 200 or any(o.get("pdf") not in (None, PDF_VER) for o in known.values())
     start = today - dt.timedelta(days=FIRST_RUN_DAYS if first else DAILY_LOOKBACK)
     fx = fx_rates(old.get("fx"))
 
