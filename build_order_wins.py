@@ -271,19 +271,22 @@ def pdf_text(url):
 
 
 RX_CTX = re.compile(r"(order|contract|award|worth|valued|value|amount|consideration|aggregat|lo[ai]\b)", re.I)
+RX_SKIP = re.compile(r"(?i)order ?book|backlog|order inflow|unexecuted|cumulative|year[- ]to[- ]date|ytd|"
+                     r"so far|total orders|capital|turnover|net worth|revenue|market (size|opportunity)|classif|"
+                     r"authori[sz]ed|range of|between rs|crore to|cr to")
+PDF_VER = 2
 
 
 def value_from_pdf(text, fx):
-    """Only look at amounts close to order words, so share capital or turnover in the letterhead is ignored."""
-    best = (0.0, "", "INR")
+    """First amount that follows order wording; skips order-book totals, share capital, L&T-style size bands."""
     for m in RX_CTX.finditer(text):
-        win = text[m.start(): m.end() + 220]
-        if re.search(r"(?i)capital|turnover|net worth|revenue|authori[sz]ed", win[:80]):
+        win = text[m.start(): m.end() + 160]
+        if RX_SKIP.search(text[max(0, m.start() - 80): m.end() + 160]):
             continue
         v = parse_value(win, fx)
-        if v[0] > best[0]:
-            best = v
-    return best
+        if v[0] > 0:
+            return v
+    return 0.0, "", "INR"
 
 
 def client_of(text):
@@ -433,17 +436,18 @@ def main():
         v, vr, cur = parse_value(text, fx)
         cl = client_of(more) or client_of(head)
         url = ((PDF_URL if int(r.get("PDFFLAG") or 0) != 2 else PDF_HIST_URL).format(att)) if att else ""
-        if url and (not v or not cl) and not o.get("pdf"):
-            o["pdf"] = 1                                       # read each PDF only once
+        if url and (not v or not cl) and o.get("pdf") != PDF_VER:
+            o["pdf"] = PDF_VER                                 # read each PDF once per parser version
+            o.pop("vp", None)
             pt = pdf_text(url)
             if pt:
-                o["pt"] = pt[:1500]
+                o["pt"] = pt[:2500]
                 if not v:
                     v, vr, cur = value_from_pdf(pt, fx)
                     o["vp"] = 1 if v else 0
                 if not cl:
                     cl = client_of(pt[:3000])
-        elif o.get("pdf") and not v and o.get("v"):
+        elif o.get("pdf") == PDF_VER and not v and o.get("v"):
             v, vr, cur, cl = o["v"], o.get("vr", ""), o.get("cur", "INR"), cl or o.get("cl", "")
         if not_business_order(f"{text} {o.get('pt', '')[:600]}"):
             known.pop(nid, None)
@@ -499,6 +503,12 @@ def main():
         if v:
             mcap[c], mdate[c] = v, today.isoformat()
         time.sleep(0.4)
+
+    # a value read from a PDF that is bigger than 2x the whole company is almost surely a misread
+    for o in orders:
+        m = mcap.get(o["c"])
+        if o.get("vp") and m and o["v"] > 2 * m:
+            o["v"], o["vr"], o["chk"] = 0.0, "", 1
 
     out = {
         "updated": dt.datetime.now(IST).strftime("%Y-%m-%d %H:%M IST"),
