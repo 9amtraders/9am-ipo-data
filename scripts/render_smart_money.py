@@ -11,6 +11,8 @@ tables, the biggest net buys/sells, accumulation streaks, and Dataset schema.
 Save as scripts/render_smart_money.py in 9amtraders/9am-ipo-data.
 """
 import html
+import os
+import re
 import json
 import datetime as dt
 from pathlib import Path
@@ -80,13 +82,29 @@ def deal_table(rows):
     return f"<div class='tw'><table>{head}{body}</table></div>"
 
 
+def finish(page):
+    """Point the CSS/JS links at this exact commit (fresh on every publish) and keep
+    JSON-LD on one line so WordPress can't slip <p> tags into it."""
+    page = page.replace("{{ASSET_VER}}", os.environ.get("GITHUB_SHA", "main"))
+
+    def one_line(m):
+        try:
+            data = json.loads(m.group(1))
+        except ValueError:
+            return m.group(0)
+        return ('<script type="application/ld+json">' +
+                json.dumps(data, ensure_ascii=False).replace("</", "<\\/") + "</script>")
+    page = re.sub(r'<script type="application/ld\+json">\s*(.*?)\s*</script>', one_line, page, flags=re.S)
+    return re.sub(r"\n\s*\n+", "\n", page)       # blank lines are where WordPress adds <p>
+
+
 def main():
     data = json.loads(DATA.read_text())
     tpl = TPL.read_text(encoding="utf-8")
     deals, dates = data.get("deals", []), data.get("dates", [])
     if not deals or not dates:
         OUT.parent.mkdir(exist_ok=True)
-        OUT.write_text(tpl, encoding="utf-8")
+        OUT.write_text(finish(tpl), encoding="utf-8")
         print("no deals yet — template written unchanged")
         return
 
@@ -188,6 +206,7 @@ def main():
               .replace("<!--SM9:UPDATED-->", f"Last updated {esc(data.get('updated', latest))}. ")
               .replace("<!--SM9:SCHEMA-->", schema_html))
     OUT.parent.mkdir(exist_ok=True)
+    out = finish(out)
     OUT.write_text(out, encoding="utf-8")
     print(f"wrote {OUT} for {latest}: {len(bulk)} bulk, {len(block)} block rows")
 

@@ -17,7 +17,7 @@ on:
     - cron: "15 14 * * 1-5"   # 7:45 PM IST, Mon-Fri (NSE posts bulk/block deals in the evening)
   push:
     branches: [main]
-    paths: [widget/smart-money-page.html, scripts/render_smart_money.py]
+    paths: [widget/smart-money-page.html, widget/smart-money.css, widget/smart-money.js, scripts/render_smart_money.py]
   workflow_dispatch: {}
 
 permissions:

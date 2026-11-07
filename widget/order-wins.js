@@ -1,0 +1,275 @@
+(function(){
+"use strict";
+var DATA_URL="https://raw.githubusercontent.com/9amtraders/9am-ipo-data/main/orders/orders.json";
+var root=document.getElementById("ow9");root.classList.add("anim"),$=function(id){return document.getElementById(id)};
+var DPR=Math.min(window.devicePixelRatio||1,2);
+var ST={per:1,ct:"ALL",th:"ALL",size:"0",q:"",val:false,sort:"v",dir:-1,page:0};
+var DB=null,V=null;
+var CT={govt:["Govt / PSU","b-govt","#ffc24b","255,194,75"],private:["Private","b-private","#5a82ff","90,130,255"],overseas:["Overseas","b-overseas","#a678ff","166,120,255"]};
+
+/* ---------- helpers ---------- */
+function cr(v,sign){var a=Math.abs(v),s=sign?(v>0?"+":v<0?"−":""):(v<0?"−":"");
+  if(a>=1000)return s+"₹"+(a/1000).toFixed(a>=10000?1:2)+"K Cr";if(a>=100)return s+"₹"+a.toFixed(0)+" Cr";if(a>=1)return s+"₹"+a.toFixed(1)+" Cr";return s+"₹"+(a*100).toFixed(0)+" L"}
+function pct(x){return(x>=0?"+":"−")+Math.abs(x).toFixed(Math.abs(x)<10?1:0)+"%"}
+function esc(s){return String(s==null?"":s).replace(/[&<>"']/g,function(m){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[m]})}
+function dfmt(d){var p=d.split("-");return p[2]+" "+["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"][+p[1]-1]}
+function nm(o){return o.s||String(o.n).replace(/\s+(Limited|Ltd\.?)$/i,"")}
+function badge(t){return'<span class="badge '+CT[t][1]+'">'+CT[t][0]+"</span>"}
+function count(el,to,fmt){var from=+(el.dataset.v||0),t0=performance.now();el.dataset.v=to;(function f(t){var k=Math.min(1,(t-t0)/900),e=1-Math.pow(1-k,3);el.textContent=fmt(from+(to-from)*e);if(k<1)requestAnimationFrame(f)})(t0)}
+var tip=$("ow-tip");
+function showTip(e,h){tip.innerHTML=h;tip.style.opacity=1;var x=e.clientX+14;if(x+270>innerWidth)x=e.clientX-274;tip.style.left=x+"px";tip.style.top=(e.clientY+14)+"px"}
+function hideTip(){tip.style.opacity=0}
+function visible(el){var r=el.getBoundingClientRect();return r.bottom>0&&r.top<innerHeight}
+function fit(cv){if(!cv._bh)cv._bh=+cv.getAttribute("height");var w=cv.clientWidth,h=cv._bh;if(innerWidth<600)h=Math.round(h*.85);
+  if(cv._w!==w||cv._h!==h){cv.width=w*DPR;cv.height=h*DPR;cv.style.height=h+"px";cv._w=w;cv._h=h}var x=cv.getContext("2d");x.setTransform(DPR,0,0,DPR,0,0);return{x:x,w:w,h:h}}
+function bez(a,b,t){var cx=(a.x+b.x)/2,u=1-t;return{x:u*u*u*a.x+3*u*u*t*cx+3*u*t*t*cx+t*t*t*b.x,y:u*u*u*a.y+3*u*u*t*a.y+3*u*t*t*b.y+t*t*t*b.y}}
+
+/* ---------- demo data (until the live file exists) ---------- */
+function demo(){
+  var seed=11;function R(){seed=(seed*16807)%2147483647;return(seed-1)/2147483646}
+  var C=[["532555","NTPC","NTPC Ltd",360000,"Power & Renewables",360],["542649","RVNL","Rail Vikas Nigam Ltd",80000,"Railways",385],["500093","CGPOWER","CG Power and Industrial Solutions Ltd",110000,"Power & Renewables",720],["532814","INDIANB","Indian Bank",80000,"Other",600],["540750","IEX","Indian Energy Exchange Ltd",17000,"Power & Renewables",180],["543265","KPIGREEN","KPI Green Energy Ltd",9500,"Power & Renewables",480],["532848","DELTACORP","Delta Corp Ltd",3000,"Other",110],["533155","JUBLFOOD","Jubilant FoodWorks",44000,"Other",650],["500355","RALLIS","Rallis India",5800,"Other",300],["532921","ADANIPORTS","Adani Ports",300000,"Roads & Infra",1400],["526299","MPHASIS","Mphasis Ltd",52000,"IT & Telecom",2750],["500400","TATAPOWER","Tata Power",128000,"Power & Renewables",400],["543270","MTARTECH","MTAR Technologies",5400,"Defence",1750],["541143","BDL","Bharat Dynamics",58000,"Defence",1600],["500049","BEL","Bharat Electronics",290000,"Defence",400],["522287","KALPATPOWR","Kalpataru Projects",20000,"Power & Renewables",1200],["532942","KNRCON","KNR Constructions",6500,"Roads & Infra",230],["533269","WABAG","VA Tech Wabag",9800,"Water",1580],["532779","TORNTPOWER","Torrent Power",70000,"Power & Renewables",1450],["544107","JSWINFRA","JSW Infrastructure",60000,"Roads & Infra",290]];
+  var CL={govt:["National Highways Authority of India","Ministry of Defence","Central Railway","NTPC Ltd","Power Grid Corporation of India","Jal Nigam","Indian Navy"],private:["Adani Green Energy Ltd","Reliance Industries Ltd","Tata Projects Ltd","Larsen & Toubro Ltd","a leading private developer"],overseas:["Saudi Electricity Company","a European utility","a US-based client","Dubai Electricity & Water Authority"]};
+  var dates=[],d=new Date(),out=[],id=1,close={},mcap={};
+  while(dates.length<64){d.setDate(d.getDate()-1);if(d.getDay()%6)dates.push(d.toISOString().slice(0,10))}
+  dates.forEach(function(dt,i){var n=2+Math.floor(R()*5);
+    for(var k=0;k<n;k++){var c=C[Math.floor(R()*C.length)],ct=R()<.55?"govt":R()<.7?"private":"overseas",cl=CL[ct][Math.floor(R()*CL[ct].length)];
+      var v=R()<.15?0:+Math.min(c[3]<15000&&R()<.25?c[3]*(.08+R()*.25):c[3]*(.001+R()*.03),4500).toFixed(1),cur=ct==="overseas"&&R()<.7?"USD":"INR";
+      var vr=v?(cur==="USD"?"USD "+(v*1e7/88/1e6).toFixed(1)+" million":"Rs. "+v.toLocaleString("en-IN")+" crore"):"";
+      out.push({id:String(id++),c:c[0],s:c[1],n:c[2],d:dt,tm:(9+Math.floor(R()*9))+":"+(10+Math.floor(R()*49)),
+        h:"Receipt of order"+(v?" worth "+vr:"")+" from "+cl,m:(c[2]+" has received "+(R()<.5?"an order":"a Letter of Award")+(v?" worth "+vr:"")+" from "+cl+" for "+({"Railways":"supply of rolling stock components","Defence":"supply of electronic systems","Power & Renewables":"EPC of a solar project","Roads & Infra":"construction of a 4-lane highway","Water":"a water treatment plant","IT & Telecom":"digital transformation services","Other":"supply of products"}[c[4]])+"."),
+        u:"https://www.bseindia.com/corporates/ann.html",v:v,vr:vr,cur:cur,cl:cl,ct:ct,th:c[4],p0:+(c[5]*(.85+R()*.3)).toFixed(2)})}});
+  C.forEach(function(c){close[c[0]]=+(c[5]*(.9+R()*.25)).toFixed(2);mcap[c[0]]=c[3]});
+  return{updated:"demo",demo:true,closeDate:dates[0],close:close,mcap:mcap,orders:out,fx:{USD:88}};
+}
+
+/* ---------- prep + filters ---------- */
+function prep(){var C=DB.close||{},M=DB.mcap||{};
+  DB.dates=[];var seen={};DB.orders.forEach(function(o){if(!seen[o.d]){seen[o.d]=1;DB.dates.push(o.d)}});DB.dates.sort().reverse();
+  DB.orders.forEach(function(o){o.v=+o.v||0;o.pm=o.v&&M[o.c]?o.v/M[o.c]*100:null;o.x=o.p0&&C[o.c]?(C[o.c]/o.p0-1)*100:null;o.th=o.th||"Other";o.ct=CT[o.ct]?o.ct:"private"});
+  var by={};DB.orders.forEach(function(o){(by[o.c]=by[o.c]||[]).push(o)});DB.byCo=by;
+  DB.orders.forEach(function(o){var L=by[o.c].slice().sort(function(a,b){return a.d.localeCompare(b.d)||String(a.tm).localeCompare(String(b.tm))});o.k=L.indexOf(o)+1;o.kn=L.length});
+  var th={};DB.orders.forEach(function(o){th[o.th]=(th[o.th]||0)+1});
+  $("f-th").innerHTML='<option value="ALL">All themes</option>'+Object.keys(th).sort(function(a,b){return th[b]-th[a]}).map(function(t){return'<option>'+esc(t)+"</option>"}).join("");
+}
+function compute(){
+  var days={};DB.dates.slice(0,ST.per===1?1:ST.per>=92?999:Math.ceil(ST.per*5/7)).forEach(function(d){days[d]=1});
+  var q=ST.q.trim().toUpperCase();
+  var rows=DB.orders.filter(function(o){
+    if(!days[o.d])return false;if(ST.ct!=="ALL"&&o.ct!==ST.ct)return false;if(ST.th!=="ALL"&&o.th!==ST.th)return false;
+    if(ST.val&&!o.v)return false;
+    if(ST.size==="p5"&&!(o.pm>=5))return false;if(ST.size==="p10"&&!(o.pm>=10))return false;if(/^\d+$/.test(ST.size)&&+ST.size&&!(o.v>=+ST.size))return false;
+    if(q&&(String(o.s)+" "+o.n+" "+o.cl+" "+o.h).toUpperCase().indexOf(q)<0)return false;return true});
+  var co={},th={},ct={},val=0,big=0;
+  rows.forEach(function(o){val+=o.v;if(o.pm>=10)big++;
+    var c=co[o.c]=co[o.c]||{c:o.c,s:o.s,n:o.n,v:0,k:0,pm:0,x:null,list:[]};c.v+=o.v;c.k++;c.pm+=o.pm||0;c.list.push(o);if(o.x!==null)c.x=o.x;
+    th[o.th]=(th[o.th]||0)+o.v;ct[o.ct]=(ct[o.ct]||0)+o.v});
+  V={rows:rows,co:Object.keys(co).map(function(k){return co[k]}),th:th,ct:ct,val:val,big:big,days:Object.keys(days)};
+}
+
+/* ---------- top: kpis, ticker, summary, insights ---------- */
+function renderTop(){
+  var lbl=ST.per===1?(DB.dates[0]?dfmt(DB.dates[0]):""):ST.per===7?"last week":ST.per===30?"last month":"last 3 months";
+  count($("k-val"),V.val,function(v){return cr(v)});count($("k-n"),V.rows.length,function(v){return Math.round(v)});
+  count($("k-co"),V.co.length,function(v){return Math.round(v)});count($("k-big"),V.big,function(v){return Math.round(v)});
+  var g=V.ct.govt||0;$("k-val-s").textContent=lbl+(V.val?" · "+Math.round(g/V.val*100)+"% from Govt/PSU":"");
+  var nv=V.rows.filter(function(o){return o.v}).length;$("k-n-s").textContent=nv+" with a readable value";
+  var rep=V.co.filter(function(c){return c.k>1}).length;$("k-co-s").textContent=rep?rep+" won more than one order":" ";
+  var t=V.rows.slice().sort(function(a,b){return b.d.localeCompare(a.d)||String(b.tm).localeCompare(String(a.tm))}).slice(0,40).map(function(o){
+    return'<span class="ti"><b>'+esc(nm(o))+'</b>'+badge(o.ct)+'<span class="mut">'+esc(String(o.cl||o.th).slice(0,34))+'</span><b class="mono y">'+(o.v?cr(o.v):"value n/a")+"</b>"+(o.pm>=1?'<span class="mono '+(o.pm>=10?"r":"mut")+'">'+o.pm.toFixed(1)+"% of mcap</span>":"")+"</span>"}).join("");
+  $("ow-tick").innerHTML=t?t+t:'<span class="ti mut">No orders for these filters yet today</span>';
+  renderSummary();
+  var R=V.rows.filter(function(o){return o.v}),I=[];
+  var b1=R.slice().sort(function(a,b){return b.v-a.v})[0],b2=R.filter(function(o){return o.pm!==null}).sort(function(a,b){return b.pm-a.pm})[0];
+  var th=Object.keys(V.th).sort(function(a,b){return V.th[b]-V.th[a]})[0],rp=V.co.slice().sort(function(a,b){return b.k-a.k||b.v-a.v})[0];
+  var bx=V.rows.filter(function(o){return o.x!==null&&o.v}).sort(function(a,b){return b.x-a.x})[0];
+  if(b1)I.push(["💰","Biggest order",nm(b1),cr(b1.v)+(b1.cl?" from "+String(b1.cl).slice(0,28):""),b1.c]);
+  if(b2&&b2.pm>=1)I.push(["🚀","Biggest vs company size",nm(b2),cr(b2.v)+" = "+b2.pm.toFixed(1)+"% of market cap",b2.c]);
+  if(th&&V.th[th]>0)I.push(["🏗️","Hottest theme",th,cr(V.th[th])+" of orders",null]);
+  if(rp&&rp.k>1)I.push(["🏆","Most orders",nm(rp),rp.k+" orders · "+cr(rp.v),rp.c]);
+  if(bx&&bx.x>0)I.push(["📈","Best reaction since",nm(bx),pct(bx.x)+" since its "+cr(bx.v)+" order",bx.c]);
+  $("ow-ins").innerHTML=I.map(function(x){return'<div class="ins" '+(x[4]?'data-co="'+esc(x[4])+'"':"")+'><div class="e">'+x[0]+'</div><div class="t">'+x[1]+'</div><div class="h">'+esc(x[2])+'</div><div class="d">'+esc(x[3])+"</div></div>"}).join("");
+}
+function renderSummary(){var d=DB.dates[0];if(!d){$("ow-sum").style.display="none";return}
+  var R=DB.orders.filter(function(o){return o.d===d}),tot=0,g=0,co={};R.forEach(function(o){tot+=o.v;if(o.ct==="govt")g+=o.v;co[o.c]=1});
+  var big=R.filter(function(o){return o.v}).sort(function(a,b){return b.v-a.v})[0],rel=R.filter(function(o){return o.pm!==null}).sort(function(a,b){return b.pm-a.pm})[0];
+  var t="On <b>"+dfmt(d)+" "+d.slice(0,4)+"</b>, "+Object.keys(co).length+" listed companies announced "+R.length+" new order"+(R.length===1?"":"s")+" on BSE"+(tot?", worth at least <b>"+cr(tot)+"</b> in total"+(g?" ("+Math.round(g/tot*100)+"% from government and PSU clients)":""):"")+".";
+  if(big)t+=" Biggest order: <b>"+esc(nm(big))+"</b> ("+cr(big.v)+(big.cl?" from "+esc(big.cl):"")+").";
+  if(rel&&rel!==big&&rel.pm>=2)t+=" Biggest relative to company size: <b>"+esc(nm(rel))+"</b>, an order worth "+rel.pm.toFixed(1)+"% of its market cap.";
+  $("ow-sum").innerHTML=t}
+
+/* ---------- Sankey: client type -> theme -> company ---------- */
+var sk={cv:$("ow-sk"),nodes:[],links:[],lay:null,parts:[],prog:0,hover:null};
+function buildSankey(){var mob=innerWidth<600,NC=mob?12:18;
+  var R=V.rows.filter(function(o){return o.v>0}),coT={};R.forEach(function(o){coT[o.c]=(coT[o.c]||0)+o.v});
+  var keep={};Object.keys(coT).sort(function(a,b){return coT[b]-coT[a]}).slice(0,NC).forEach(function(c){keep[c]=1});
+  var N={},L={};function node(id,col,label,ex){var n=N[id];if(!n){n=N[id]={id:id,col:col,label:label,v:0,ins:[],outs:[],xs:[]};for(var k in ex)n[k]=ex[k]}return n}
+  function link(a,b,v){var k=a.id+">"+b.id,l=L[k];if(!l){l=L[k]={s:a,t:b,v:0};a.outs.push(l);b.ins.push(l)}l.v+=v}
+  R.forEach(function(o){var a=node("C:"+o.ct,0,CT[o.ct][0],{ct:o.ct}),b=node("T:"+o.th,1,o.th,{}),c=keep[o.c]?node("K:"+o.c,2,nm(o),{co:o.c,th:o.th}):node("K:other",2,"Other companies",{th:"zzz"});
+    [a,b,c].forEach(function(n){n.v+=o.v});if(o.x!==null)c.xs.push(o.x);link(a,b,o.v);link(b,c,o.v)});
+  sk.nodes=Object.keys(N).map(function(k){var n=N[k];n.x0=n.xs.length?n.xs.reduce(function(s,v){return s+v},0)/n.xs.length:null;return n});
+  sk.links=Object.keys(L).map(function(k){return L[k]});sk.lay=null;sk.parts=[];sk.prog=0;sk.hover=null}
+function layoutSankey(w,h){var mob=w<600,nw=mob?8:12,labW=mob?84:170,gap=mob?5:8;
+  var cols=[[],[],[]];sk.nodes.forEach(function(n){cols[n.col].push(n)});
+  cols[0].sort(function(a,b){return b.v-a.v});cols[1].sort(function(a,b){return b.v-a.v});var rk={};cols[1].forEach(function(n,i){rk[n.label]=i});
+  cols[2].sort(function(a,b){return(a.label==="Other companies")-(b.label==="Other companies")||(rk[a.th]-rk[b.th])||b.v-a.v});
+  var T=cols[0].reduce(function(s,n){return s+n.v},0)||1,k=Infinity;cols.forEach(function(c){if(c.length)k=Math.min(k,(h-16-gap*(c.length-1))/T)});
+  var xs=[mob?4:10,Math.round(w*(mob?.40:.40)),w-labW-nw];
+  cols.forEach(function(c,ci){var tot=c.reduce(function(s,n){return s+Math.max(1.5,n.v*k)},0)+gap*(c.length-1),y=8+(h-16-tot)/2;c.forEach(function(n){n.x=xs[ci];n.w=nw;n.y=y;n.h=Math.max(1.5,n.v*k);y+=n.h+gap})});
+  sk.nodes.forEach(function(n){n.outs.sort(function(a,b){return a.t.y-b.t.y});n.ins.sort(function(a,b){return a.s.y-b.s.y});var o=n.y;n.outs.forEach(function(l){l.wd=l.v*k;l.sy=o;o+=l.wd});var i=n.y;n.ins.forEach(function(l){l.ty=i;i+=l.wd})});
+  sk.links.forEach(function(l){l.x0=l.s.x+l.s.w;l.x1=l.t.x;var ctn=l.s.col===0?l.s.ct:null;if(!ctn){var best=null;l.s.ins.forEach(function(m){if(!best||m.v>best.v)best=m});ctn=best?best.s.ct:"private"}l.col=CT[ctn][3]});
+  return{w:w,h:h,mob:mob}}
+function skLit(l){var h=sk.hover;if(!h)return null;if(h.link)return h.link===l;var n=h.node;if(l.s===n||l.t===n)return true;
+  if(n.col===2&&l.t.col===1)return l.t.outs.some(function(m){return m.t===n});if(n.col===0&&l.s.col===1)return l.s.ins.some(function(m){return m.s===n});return false}
+function drawSankey(){var cv=sk.cv;if(!visible(cv))return;var F=fit(cv),x=F.x,w=F.w,h=F.h;if(!sk.lay||sk.lay.w!==w||sk.lay.h!==h)sk.lay=layoutSankey(w,h);var G=sk.lay;
+  x.clearRect(0,0,w,h);if(!sk.links.length){x.fillStyle="#8f9bc0";x.font="14px Inter,sans-serif";x.textAlign="center";x.fillText("No orders with a readable value for these filters",w/2,h/2);return}
+  sk.prog=Math.min(1,sk.prog+.018);var e=1-Math.pow(1-sk.prog,3);x.save();x.beginPath();x.rect(0,0,w*e+2,h);x.clip();
+  sk.links.forEach(function(l){var lit=skLit(l),a=lit===null?.32:lit?.65:.06,xm=(l.x0+l.x1)/2,g=x.createLinearGradient(l.x0,0,l.x1,0);g.addColorStop(0,"rgba("+l.col+","+a*.8+")");g.addColorStop(1,"rgba("+l.col+","+a+")");
+    x.beginPath();x.moveTo(l.x0,l.sy);x.bezierCurveTo(xm,l.sy,xm,l.ty,l.x1,l.ty);x.lineTo(l.x1,l.ty+l.wd);x.bezierCurveTo(xm,l.ty+l.wd,xm,l.sy+l.wd,l.x0,l.sy+l.wd);x.closePath();x.fillStyle=g;x.fill()});
+  if(sk.parts.length<(G.mob?600:1000))sk.links.forEach(function(l){if(Math.random()<Math.min(.9,l.wd/26+.04))sk.parts.push({l:l,t:0,sp:.004+Math.random()*.005,o:Math.random()})});
+  sk.parts=sk.parts.filter(function(p){p.t+=p.sp;if(p.t>1)return false;var l=p.l,lit=skLit(l);if(lit===false)return true;var pt=bez({x:l.x0,y:l.sy+l.wd*(.1+p.o*.8)},{x:l.x1,y:l.ty+l.wd*(.1+p.o*.8)},p.t);
+    x.beginPath();x.arc(pt.x,pt.y,lit?1.9:1.4,0,7);x.fillStyle="rgba("+l.col+","+(lit?1:.8)+")";x.fill();return true});
+  var fs=G.mob?10:12;
+  sk.nodes.forEach(function(n){var c=n.col===0?CT[n.ct][2]:n.col===1?"#7c8cff":(n.x0===null?"#8f9bc0":n.x0>=0?"#1fd18b":"#ff4d5e");
+    var dim=sk.hover&&!(sk.hover.node===n||sk.links.some(function(l){return(l.s===n||l.t===n)&&skLit(l)}));x.globalAlpha=dim?.35:1;x.fillStyle=c;x.beginPath();if(x.roundRect)x.roundRect(n.x,n.y,n.w,n.h,3);else x.rect(n.x,n.y,n.w,n.h);x.fill();
+    if(n.h+(G.mob?5:8)>=(G.mob?11:13)||(sk.hover&&sk.hover.node===n)){var lx=n.x+n.w+6,ly=n.y+n.h/2,name=n.label,max=n.col===2?(G.mob?10:16):(G.mob?12:20);if(name.length>max)name=name.slice(0,max-1)+"…";
+      x.textAlign="left";x.textBaseline="middle";x.font="700 "+fs+"px Inter,sans-serif";x.shadowColor="rgba(5,10,30,.95)";x.shadowBlur=6;x.fillStyle="#e8ecf7";x.fillText(name,lx,ly-(n.h>26?fs*.55:0));
+      x.font="700 "+(fs-1)+'px "JetBrains Mono",monospace';x.fillStyle=n.col===2?c:"#aab3d3";
+      if(n.h>26)x.fillText(cr(n.v),lx,ly+fs*.6);else if(n.col===2&&!G.mob){x.font="700 "+fs+"px Inter,sans-serif";var tw=x.measureText(name).width;x.font="700 "+(fs-1)+'px "JetBrains Mono",monospace';x.fillText(cr(n.v),lx+tw+6,ly)}x.shadowBlur=0}
+    x.globalAlpha=1});x.restore()}
+function skHit(e){var r=sk.cv.getBoundingClientRect(),mx=e.clientX-r.left,my=e.clientY-r.top;
+  for(var i=0;i<sk.nodes.length;i++){var n=sk.nodes[i];if(mx>=n.x-4&&mx<=n.x+n.w+(n.col===2?150:80)&&my>=n.y-2&&my<=n.y+Math.max(n.h,10)+2)return{node:n}}
+  for(var j=sk.links.length-1;j>=0;j--){var l=sk.links[j];if(mx<l.x0||mx>l.x1)continue;var lo=0,hi=1,xm=(l.x0+l.x1)/2;for(var it=0;it<18;it++){var t=(lo+hi)/2,u=1-t,xx=u*u*u*l.x0+3*u*u*t*xm+3*u*t*t*xm+t*t*t*l.x1;if(xx<mx)lo=t;else hi=t}
+    var y=bez({x:l.x0,y:l.sy},{x:l.x1,y:l.ty},(lo+hi)/2).y;if(my>=y-1&&my<=y+Math.max(l.wd,3)+1)return{link:l}}return null}
+sk.cv.addEventListener("mousemove",function(e){var h=skHit(e);sk.hover=h;sk.cv.style.cursor=h&&h.node&&h.node.co?"pointer":"default";if(!h)return hideTip();
+  if(h.node){var n=h.node;showTip(e,"<b>"+esc(n.label)+"</b><br>Orders worth <b class='y'>"+cr(n.v)+"</b>"+(n.x0!==null?"<br>Stock "+(n.x0>=0?"<span class='g'>":"<span class='r'>")+pct(n.x0)+"</span> since order":"")+(n.co?"<br><span class='mut'>Click for every order</span>":""))}
+  else showTip(e,esc(h.link.s.label)+" → <b>"+esc(h.link.t.label)+"</b><br>"+cr(h.link.v))});
+sk.cv.addEventListener("mouseleave",function(){sk.hover=null;hideTip()});
+sk.cv.addEventListener("click",function(e){var h=skHit(e);if(h&&h.node&&h.node.co)openCo(h.node.co)});
+
+/* ---------- Impact map: x = % of mcap (log), y = % since ---------- */
+var mp={cv:$("ow-map"),b:[],hover:null,k:0};
+function buildMap(){var old={};mp.b.forEach(function(b){old[b.o.id]=b});
+  var R=V.rows.filter(function(o){return o.v>0&&o.pm!==null}).sort(function(a,b){return b.v-a.v}).slice(0,innerWidth<600?40:80),mx=Math.max.apply(null,R.map(function(o){return o.v}).concat([1]));
+  mp.b=R.map(function(o){var ob=old[o.id];return{o:o,r:Math.max(5,Math.sqrt(o.v/mx)*(innerWidth<600?30:44)),cx:ob?ob.cx:null,cy:ob?ob.cy:null,ph:Math.random()*6.28}});mp.k=0}
+function drawMap(){var cv=mp.cv;if(!visible(cv))return;var F=fit(cv),x=F.x,w=F.w,h=F.h,t=performance.now()/1000;x.clearRect(0,0,w,h);
+  var L=w<600?34:46,B=34,T=14,Rr=12,pw=w-L-Rr,ph=h-T-B;
+  var lx=function(p){var v=Math.log10(Math.max(.05,Math.min(100,p)));return L+(v+1.301)/(2+1.301)*pw};
+  var xs=mp.b.map(function(b){return b.o.x}).filter(function(v){return v!==null}),ymax=Math.max(10,Math.min(80,Math.ceil(Math.max.apply(null,xs.map(Math.abs).concat([10]))/10)*10));
+  var ly=function(v){return T+ph/2-(Math.max(-ymax,Math.min(ymax,v))/ymax)*(ph/2)};
+  x.fillStyle="rgba(31,209,139,.05)";x.fillRect(L,T,pw,ph/2);x.fillStyle="rgba(255,77,94,.05)";x.fillRect(L,T+ph/2,pw,ph/2);
+  x.strokeStyle="#22305e";x.lineWidth=1;x.font="600 10px Inter,sans-serif";x.fillStyle="#8f9bc0";x.textAlign="center";
+  [.1,1,5,10,25,100].forEach(function(p){var X=lx(p);x.beginPath();x.moveTo(X,T);x.lineTo(X,T+ph);x.setLineDash([3,5]);x.stroke();x.setLineDash([]);x.fillText(p+"%",X,h-B+16)});
+  x.fillText("Order as % of company's market cap →",L+pw/2,h-6);
+  x.textAlign="right";[ymax,ymax/2,0,-ymax/2,-ymax].forEach(function(v){var Y=ly(v);x.fillText((v>0?"+":"")+v+"%",L-6,Y+3);if(v===0){x.strokeStyle="#3a4a80";x.beginPath();x.moveTo(L,Y);x.lineTo(L+pw,Y);x.stroke();x.strokeStyle="#22305e"}});
+  var X10=lx(10);x.fillStyle="rgba(255,194,75,.08)";x.fillRect(X10,T,L+pw-X10,ph);x.fillStyle="#ffc24b";x.textAlign="left";x.font="800 10px Inter,sans-serif";x.fillText("GAME-CHANGERS",X10+6,T+12);
+  if(!mp.b.length){x.fillStyle="#8f9bc0";x.font="14px Inter,sans-serif";x.textAlign="center";x.fillText("No orders with value and market cap for these filters",w/2,h/2);return}
+  mp.k=Math.min(1,mp.k+.03);var e=1-Math.pow(1-mp.k,3);
+  mp.b.forEach(function(b){var tx=lx(b.o.pm),ty=b.o.x===null?T+ph/2:ly(b.o.x);if(b.cx===null){b.cx=tx;b.cy=T+ph/2}b.cx+=(tx-b.cx)*.08;b.cy+=(ty-b.cy)*.08;
+    var r=b.r*e*(mp.hover===b?1.15:1),yy=b.cy+Math.sin(t*.8+b.ph)*2,col=b.o.x===null?"143,155,192":b.o.x>=0?"31,209,139":"255,77,94";
+    var g=x.createRadialGradient(b.cx-r*.3,yy-r*.35,r*.1,b.cx,yy,r);g.addColorStop(0,"rgba("+col+",.9)");g.addColorStop(1,"rgba("+col+",.28)");
+    x.beginPath();x.arc(b.cx,yy,r,0,7);x.fillStyle=g;x.shadowColor="rgba("+col+",.5)";x.shadowBlur=mp.hover===b?24:8;x.fill();x.shadowBlur=0;
+    x.lineWidth=1.5;x.strokeStyle=CT[b.o.ct][2];x.globalAlpha=.8;x.stroke();x.globalAlpha=1;
+    if(r>15){x.fillStyle="#fff";x.font="800 "+Math.min(12,r/2.6)+"px Inter,sans-serif";x.textAlign="center";x.textBaseline="middle";var s=nm(b.o);x.fillText(s.length>9?s.slice(0,8)+"…":s,b.cx,yy);x.textBaseline="alphabetic"}
+    b.sx=b.cx;b.sy=yy;b.sr=r})}
+function mapHit(e){var r=mp.cv.getBoundingClientRect(),mx=e.clientX-r.left,my=e.clientY-r.top,hit=null,best=1e9;mp.b.forEach(function(b){var d=(b.sx-mx)*(b.sx-mx)+(b.sy-my)*(b.sy-my);if(d<b.sr*b.sr&&b.sr<best){best=b.sr;hit=b}});return hit}
+mp.cv.addEventListener("mousemove",function(e){var b=mapHit(e);mp.hover=b;mp.cv.style.cursor=b?"pointer":"default";if(!b)return hideTip();var o=b.o;
+  showTip(e,"<b>"+esc(nm(o))+"</b> "+badge(o.ct)+"<br>Order <b class='y'>"+cr(o.v)+"</b> · "+o.pm.toFixed(1)+"% of mcap<br>"+(o.x!==null?"Stock "+(o.x>=0?"<b class='g'>":"<b class='r'>")+pct(o.x)+"</b> since · ":"")+dfmt(o.d)+(o.cl?"<br><span class='mut'>From "+esc(String(o.cl).slice(0,40))+"</span>":""))});
+mp.cv.addEventListener("mouseleave",function(){mp.hover=null;hideTip()});
+mp.cv.addEventListener("click",function(e){var b=mapHit(e);if(b)openCo(b.o.c)});
+
+/* ---------- weekly inflow (stacked bars) ---------- */
+var wk={cv:$("ow-wk"),k:0,bars:[]};
+function buildWeeks(){var W={};DB.orders.forEach(function(o){if(!o.v)return;if(ST.ct!=="ALL"&&o.ct!==ST.ct)return;if(ST.th!=="ALL"&&o.th!==ST.th)return;
+  var d=new Date(o.d+"T00:00:00"),day=(d.getDay()+6)%7;d.setDate(d.getDate()-day);var k=d.toISOString().slice(0,10),b=W[k]=W[k]||{k:k,govt:0,private:0,overseas:0};b[o.ct]+=o.v});
+  wk.bars=Object.keys(W).sort().slice(-13).map(function(k){return W[k]});wk.k=0}
+function drawWeeks(){var cv=wk.cv;if(!visible(cv))return;var F=fit(cv),x=F.x,w=F.w,h=F.h;x.clearRect(0,0,w,h);if(!wk.bars.length){x.fillStyle="#8f9bc0";x.font="14px Inter,sans-serif";x.textAlign="center";x.fillText("No data",w/2,h/2);return}
+  wk.k=Math.min(1,wk.k+.025);var e=1-Math.pow(1-wk.k,3),L=8,B=26,T=22,n=wk.bars.length,bw=(w-L*2)/n,mx=Math.max.apply(null,wk.bars.map(function(b){return b.govt+b.private+b.overseas}))||1;
+  wk.bars.forEach(function(b,i){var x0=L+i*bw+bw*.15,ww=bw*.7,y=h-B;["govt","private","overseas"].forEach(function(t){var hh=b[t]/mx*(h-B-T)*e;x.fillStyle=CT[t][2];x.globalAlpha=wk.hover===i?1:.85;x.fillRect(x0,y-hh,ww,hh);y-=hh});x.globalAlpha=1;
+    var tot=b.govt+b.private+b.overseas;if(e>.9&&(n<=8||i%2===n%2||wk.hover===i)){x.fillStyle="#e8ecf7";x.font='700 10px "JetBrains Mono",monospace';x.textAlign="center";x.fillText(cr(tot).replace(" Cr",""),x0+ww/2,y-5)}
+    x.fillStyle="#8f9bc0";x.font="600 10px Inter,sans-serif";x.textAlign="center";if(n<=8||i%2===(n-1)%2)x.fillText(dfmt(b.k),x0+ww/2,h-8);b.x0=x0;b.ww=ww})}
+wk.cv.addEventListener("mousemove",function(e){var r=wk.cv.getBoundingClientRect(),mx=e.clientX-r.left,hit=-1;wk.bars.forEach(function(b,i){if(mx>=b.x0-4&&mx<=b.x0+b.ww+4)hit=i});wk.hover=hit;if(hit<0)return hideTip();var b=wk.bars[hit];
+  showTip(e,"<b>Week of "+dfmt(b.k)+"</b><br>"+["govt","private","overseas"].map(function(t){return CT[t][0]+": <b>"+cr(b[t])+"</b>"}).join("<br>"))});
+wk.cv.addEventListener("mouseleave",function(){wk.hover=-1;hideTip()});
+
+/* ---------- do big orders move stocks? ---------- */
+function renderMove(){var el=$("ow-move"),R=V.rows.filter(function(o){return o.x!==null&&o.pm!==null});
+  if(DB.closeDate)$("ow-move-s").textContent="Average move from the close before each order to the close on "+dfmt(DB.closeDate)+" · current filters";
+  if(!R.length){el.innerHTML='<div class="empty">Price reactions appear once orders have a market cap and price.</div>';return}
+  var BK=[["Under 1% of mcap",0,1],["1–5% of mcap",1,5],["5–10% of mcap",5,10],["10%+ (game-changers)",10,1e9]];
+  var rows=BK.map(function(b){var a=R.filter(function(o){return o.pm>=b[1]&&o.pm<b[2]}),up=a.filter(function(o){return o.x>=0}).length;return{n:b[0],c:a.length,up:a.length?up/a.length*100:0,avg:a.length?a.reduce(function(s,o){return s+o.x},0)/a.length:0}});
+  el.innerHTML='<div class="wrow h"><span>Order size</span><span>Stocks up after order</span><span style="text-align:right">Up %</span><span style="text-align:right">Avg move</span></div>'+rows.map(function(r){
+    return'<div class="wrow"><span>'+r.n+' <span class="mut">('+r.c+')</span></span><span class="bar2"><i data-w="'+r.up.toFixed(0)+'" style="background:linear-gradient(90deg,#1fd18b,#5ee7ff)"></i></span><b class="mono" style="text-align:right">'+(r.c?Math.round(r.up)+"%":"—")+'</b><b class="mono '+(r.avg>=0?"g":"r")+'" style="text-align:right">'+(r.c?pct(r.avg):"—")+"</b></div>"}).join("")+
+    '<p class="disc" style="text-align:left">Measured from the close before the filing to the latest close. Small samples can mislead.</p>';
+  requestAnimationFrame(function(){requestAnimationFrame(function(){el.querySelectorAll("[data-w]").forEach(function(i){i.style.width=i.dataset.w+"%"})})})}
+
+/* ---------- repeat winners (3 months) ---------- */
+function renderRepeat(){var q=ST.q.trim().toUpperCase(),M=DB.mcap||{},C=DB.close||{};
+  var L=Object.keys(DB.byCo).map(function(c){var a=DB.byCo[c].filter(function(o){return(ST.ct==="ALL"||o.ct===ST.ct)&&(ST.th==="ALL"||o.th===ST.th)}),v=a.reduce(function(s,o){return s+o.v},0);
+    a.sort(function(x,y){return x.d.localeCompare(y.d)});var f=a[0];return{c:c,a:a,v:v,pm:M[c]&&v?v/M[c]*100:null,x:f&&f.p0&&C[c]?(C[c]/f.p0-1)*100:null}})
+   .filter(function(r){return r.a.length>1&&(!q||(r.a[0].s+" "+r.a[0].n).toUpperCase().indexOf(q)>=0)}).sort(function(a,b){return b.a.length-a.a.length||b.v-a.v}).slice(0,10);
+  $("ow-rep").innerHTML=L.length?L.map(function(r){var o=r.a[r.a.length-1],cls={};r.a.forEach(function(z){cls[z.ct]=1});
+    return'<div class="rep" data-co="'+esc(r.c)+'"><div class="cnt"><b>'+r.a.length+'</b><span>orders</span></div><div style="min-width:0"><div><b style="color:#fff">'+esc(nm(o))+'</b> <span class="mut" style="font-size:12px">'+esc(String(o.n).slice(0,34))+"</span> "+Object.keys(cls).map(badge).join("")+'</div><div class="sub">'+r.a.map(function(z){return dfmt(z.d)}).join(" · ")+(r.pm!==null?" · order book added: <b>"+r.pm.toFixed(1)+"% of mcap</b>":"")+'</div></div><div style="text-align:right"><b class="mono y">'+(r.v?cr(r.v):"—")+'</b>'+(r.x!==null?'<div class="sub '+(r.x>=0?"g":"r")+'">'+pct(r.x)+" since 1st</div>":"")+"</div></div>"}).join(""):'<div class="empty">No company has more than one order in this view yet.</div>'}
+
+/* ---------- table ---------- */
+var PG=25;
+function sorted(){var k=ST.sort,d=ST.dir;return V.rows.slice().sort(function(a,b){var x=a[k],y=b[k];
+  if(k==="d")return(a.d+a.tm).localeCompare(b.d+b.tm)*d;if(k==="v"||k==="pm"||k==="x"){x=x==null?-1e9*d:x;y=y==null?-1e9*d:y;return(x-y)*d||(b.v-a.v)}return String(x||"").localeCompare(String(y||""))*d})}
+function renderTable(){var all=sorted(),n=all.length,pages=Math.max(1,Math.ceil(n/PG));ST.page=Math.min(ST.page,pages-1);
+  $("ow-rows").innerHTML=all.slice(ST.page*PG,ST.page*PG+PG).map(function(o){
+    return'<tr><td class="mut" style="white-space:nowrap">'+dfmt(o.d)+'<div class="sub">'+esc(o.tm||"")+'</div></td><td><span class="sym" data-co="'+esc(o.c)+'">'+esc(nm(o))+"</span>"+(o.kn>1?'<span class="badge b-rep">'+o.kn+" orders</span>":"")+'<div class="what" title="'+esc(o.m||o.h)+'">'+esc(o.h)+'</div></td>'+
+    '<td class="num mono"><b class="y">'+(o.v?cr(o.v):'<span class="mut">n/a</span>')+'</b>'+(o.cur&&o.cur!=="INR"?'<div class="sub">'+esc(o.vr)+"</div>":"")+'</td>'+
+    '<td class="num mono">'+(o.pm!==null?'<b class="'+(o.pm>=10?"r":"")+'">'+o.pm.toFixed(o.pm<1?2:1)+"%</b>"+(o.pm>=10?'<div><span class="badge b-big">game-changer</span></div>':""):'<span class="mut">—</span>')+'</td>'+
+    '<td class="hide-m"><div class="who" style="max-width:220px" title="'+esc(o.cl)+'">'+esc(o.cl||"—")+"</div>"+badge(o.ct)+'</td><td class="hide-m"><span class="badge b-th">'+esc(o.th)+"</span></td>"+
+    '<td class="num mono">'+(o.x!==null?'<b class="'+(o.x>=0?"g":"r")+'">'+pct(o.x)+"</b>":'<span class="mut">—</span>')+'</td>'+
+    '<td>'+(o.u?'<a class="pdf" href="'+esc(o.u)+'" target="_blank" rel="noopener">PDF ↗</a>':"")+"</td></tr>"}).join("")||'<tr><td colspan="8" class="empty">No orders match. Try a longer period or clear the filters.</td></tr>';
+  $("pg-info").textContent="Page "+(ST.page+1)+" of "+pages;$("pg-prev").disabled=ST.page===0;$("pg-next").disabled=ST.page>=pages-1;
+  $("ow-cnt").textContent=n+" order announcements · "+all.filter(function(o){return o.v}).length+" with a readable value";
+  root.querySelectorAll(".tbl th").forEach(function(th){th.textContent=th.textContent.replace(/ [▲▼]$/,"");if(th.dataset.k&&th.dataset.k===ST.sort)th.textContent+=ST.dir<0?" ▼":" ▲"})}
+
+/* ---------- company drawer ---------- */
+function vlinks(o){var e=encodeURIComponent,s=o.s||"",q=e('"'+String(o.n).replace(/\b(Limited|Ltd\.?)\b/gi,"").trim()+'" order');
+  return'<div class="vlinks"><a class="ex" href="https://www.bseindia.com/corporates/ann.html" target="_blank" rel="noopener">BSE announcements ↗</a>'+
+   (s?'<a class="ex" href="https://www.nseindia.com/get-quotes/equity?symbol='+e(s)+'" target="_blank" rel="noopener">NSE quote ↗</a><a href="https://www.tradingview.com/chart/?symbol=BSE%3A'+e(s.replace(/[&-]/g,"_"))+'" target="_blank" rel="noopener nofollow">Chart ↗</a><a href="https://www.screener.in/company/'+e(s)+'/" target="_blank" rel="noopener nofollow">Fundamentals ↗</a>':"")+
+   '<a href="https://news.google.com/search?q='+q+'&hl=en-IN&gl=IN&ceid=IN%3Aen" target="_blank" rel="noopener nofollow">Order news ↗</a></div>'}
+function openCo(c){var A=(DB.byCo[c]||[]).slice().sort(function(a,b){return b.d.localeCompare(a.d)||String(b.tm).localeCompare(String(a.tm))});if(!A.length)return;
+  var o=A[0],M=(DB.mcap||{})[c],C=(DB.close||{})[c],tot=A.reduce(function(s,z){return s+z.v},0),first=A[A.length-1];
+  var ctT={};A.forEach(function(z){ctT[z.ct]=(ctT[z.ct]||0)+z.v});
+  $("ow-drawer").innerHTML='<button class="x" aria-label="Close">×</button><div class="mut" style="font-size:12px;text-transform:uppercase;letter-spacing:.06em">Order history · last 3 months · BSE '+esc(c)+'</div><h2 style="margin-top:4px">'+esc(nm(o))+'</h2><p class="mut">'+esc(o.n)+'</p>'+vlinks(o)+
+   '<div class="mini"><div><span>Orders announced</span><b>'+A.length+'</b></div><div><span>Total order value</span><b class="y">'+(tot?cr(tot):"—")+'</b></div><div><span>Market cap</span><b>'+(M?cr(M):"—")+'</b></div><div><span>Orders as % of mcap</span><b class="'+(M&&tot/M*100>=10?"r":"")+'">'+(M&&tot?(tot/M*100).toFixed(1)+"%":"—")+'</b></div>'+
+   (C?'<div><span>Last close ('+dfmt(DB.closeDate)+')</span><b>₹'+C+'</b></div><div><span>Since first order</span><b class="'+(first.p0&&C>=first.p0?"g":"r")+'">'+(first.p0?pct((C/first.p0-1)*100):"—")+"</b></div>":"")+'</div>'+
+   '<p class="mut" style="font-size:13px">Clients: '+Object.keys(ctT).map(function(t){return badge(t)+" "+cr(ctT[t])}).join(" &nbsp; ")+'</p>'+
+   '<h3 style="margin:14px 0 2px">Every order</h3>'+A.map(function(z){return'<div class="ord"><div class="top"><b>'+dfmt(z.d)+" "+esc(z.tm||"")+'</b><b class="mono y">'+(z.v?cr(z.v):"value n/a")+(z.pm!==null?' <span class="mut">('+z.pm.toFixed(1)+"% mcap)</span>":"")+'</b></div><div style="margin:4px 0;color:#c9d1ec">'+esc(z.m||z.h)+'</div><div class="sub">'+badge(z.ct)+'<span class="badge b-th">'+esc(z.th)+"</span>"+(z.cl?" "+esc(z.cl):"")+(z.x!==null?' · <span class="'+(z.x>=0?"g":"r")+'">'+pct(z.x)+" since</span>":"")+(z.u?' · <a class="pdf" href="'+esc(z.u)+'" target="_blank" rel="noopener">Filing PDF ↗</a>':"")+"</div></div>"}).join("")+
+   '<p class="disc">Values are read automatically from the filing summary. Open the PDF to confirm.</p>';
+  $("ow-drawer").scrollTop=0;$("ow-drawer").classList.add("on");$("ow-shade").classList.add("on");hideTip();
+  try{history.replaceState(null,"","#company-"+encodeURIComponent((o.s||c).toLowerCase()))}catch(x){}}
+function closeDrawer(){$("ow-drawer").classList.remove("on");$("ow-shade").classList.remove("on");try{if(/^#company-/.test(location.hash))history.replaceState(null,"",location.pathname+location.search)}catch(x){}}
+function fromHash(){var m=/^#company-(.+)$/.exec(location.hash);if(!m)return;var k=decodeURIComponent(m[1]).toUpperCase(),hit=DB.orders.filter(function(o){return String(o.s).toUpperCase()===k||o.c===k})[0];if(hit)openCo(hit.c)}
+$("ow-shade").addEventListener("click",closeDrawer);document.addEventListener("keydown",function(e){if(e.key==="Escape")closeDrawer()});
+window.addEventListener("hashchange",function(){if(DB)fromHash()});
+root.addEventListener("click",function(e){if(e.target.closest(".x"))return closeDrawer();if(e.target.closest("a[href^='http']"))return;var c=e.target.closest("[data-co]");if(c){e.preventDefault();openCo(c.dataset.co)}});
+
+/* ---------- controls ---------- */
+function setSeg(id,v){root.querySelectorAll("#"+id+" button").forEach(function(b){b.classList.toggle("on",b.dataset.v===String(v))})}
+function seg(id,key,num){$(id).addEventListener("click",function(e){var b=e.target.closest("button");if(!b)return;ST[key]=num?+b.dataset.v:b.dataset.v;setSeg(id,b.dataset.v);refresh()})}
+seg("f-per","per",true);seg("f-ct","ct");
+$("f-th").addEventListener("change",function(){ST.th=this.value;refresh()});$("f-size").addEventListener("change",function(){ST.size=this.value;refresh()});
+var qt;$("f-q").addEventListener("input",function(){var v=this.value;clearTimeout(qt);qt=setTimeout(function(){ST.q=v;refresh()},220)});
+$("f-val").addEventListener("change",function(){ST.val=this.checked;refresh()});
+root.querySelectorAll(".tbl th[data-k]").forEach(function(th){th.addEventListener("click",function(){var k=th.dataset.k;if(ST.sort===k)ST.dir*=-1;else{ST.sort=k;ST.dir=(k==="n"||k==="cl"||k==="th")?1:-1}ST.page=0;renderTable()})});
+$("pg-prev").addEventListener("click",function(){ST.page--;renderTable()});$("pg-next").addEventListener("click",function(){ST.page++;renderTable()});
+$("ow-csv").addEventListener("click",function(){var Ls=[["Date","Time","BSE code","Symbol","Company","Order value (Rs Cr)","Original amount","% of market cap","Client","Client type","Theme","% since order","Headline","Filing PDF"].join(",")];
+  sorted().forEach(function(o){function q(s){return'"'+String(s==null?"":s).replace(/"/g,"'")+'"'}Ls.push([o.d,o.tm,o.c,o.s||"",q(o.n),o.v||"",q(o.vr),o.pm!==null?o.pm.toFixed(2):"",q(o.cl),CT[o.ct][0],q(o.th),o.x!==null?o.x.toFixed(1):"",q(o.h),o.u].join(","))});
+  var a=document.createElement("a");a.href=URL.createObjectURL(new Blob([Ls.join("\n")],{type:"text/csv"}));a.download="order-wins-9amtraders.csv";a.click()});
+
+function refresh(){ST.page=0;compute();renderTop();buildSankey();buildMap();buildWeeks();renderMove();renderRepeat();renderTable()}
+function loop(){drawSankey();drawMap();drawWeeks();requestAnimationFrame(loop)}
+var io="IntersectionObserver" in window?new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}})},{threshold:.1}):null;
+root.querySelectorAll(".card").forEach(function(c){io?io.observe(c):c.classList.add("in")});
+var rt;window.addEventListener("resize",function(){clearTimeout(rt);rt=setTimeout(function(){sk.lay=null;buildMap()},200)});
+
+function start(d){DB=d;$("ow-load").style.display="none";$("ow-upd").textContent=d.demo?"demo preview":"updated "+d.updated;
+  if(d.demo){$("ow-banner").style.display="block";$("ow-banner").innerHTML="<b>Demo preview — these are not real orders.</b> Live BSE order wins will appear here automatically after the first update."}
+  prep();if(DB.dates[0]&&ST.per===1&&DB.orders.filter(function(o){return o.d===DB.dates[0]}).length<3){ST.per=7;setSeg("f-per","7")}
+  refresh();setTimeout(fromHash,50);requestAnimationFrame(loop)}
+fetch(DATA_URL+"?t="+Math.floor(Date.now()/3e5),{cache:"no-store"}).then(function(r){if(!r.ok)throw 0;return r.json()}).then(function(d){if(!d.orders||!d.orders.length)throw 0;start(d)}).catch(function(){start(demo())});
+})();

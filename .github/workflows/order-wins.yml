@@ -17,7 +17,7 @@ on:
     - cron: "30 4-14/2 * * 1-5"   # every 2 hours, 10:00 AM to 8:00 PM IST, Mon-Fri
   push:
     branches: [main]
-    paths: [widget/order-wins-page.html, scripts/render_order_wins.py]
+    paths: [widget/order-wins-page.html, widget/order-wins.css, widget/order-wins.js, scripts/render_order_wins.py]
   workflow_dispatch: {}
 
 permissions:
