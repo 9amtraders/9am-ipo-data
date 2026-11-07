@@ -1,4 +1,4 @@
-# Temporary: checks what WordPress has stored for the two tracker pages. Safe to delete.
+# Temporary: checks how the two tracker pages render in Chrome. Safe to delete.
 name: debug-wp (temporary)
 on:
   workflow_dispatch: {}
@@ -6,32 +6,49 @@ jobs:
   check:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
+      - run: pip install -q playwright && python -m playwright install --with-deps chromium > /dev/null 2>&1
       - env:
           WP_URL: ${{ secrets.WP_URL }}
-          WP_USER: ${{ secrets.WP_USER }}
-          WP_APP_PASSWORD: ${{ secrets.WP_APP_PASSWORD }}
-          OW: ${{ secrets.WP_OW_PAGE_ID }}
-          SM: ${{ secrets.WP_SM_PAGE_ID }}
-          GM: ${{ secrets.WP_GMP_PAGE_ID }}
         run: |
-          for pair in "OW:$OW" "SM:$SM" "GMP:$GM"; do
-            name=${pair%%:*}; id=${pair#*:}
-            echo "===== $name page id $id"
-            curl -sS -u "$WP_USER:$WP_APP_PASSWORD" -H "User-Agent: 9am-ipo-data-publisher" \
-              "${WP_URL%/}/wp-json/wp/v2/pages/$id?context=edit" -o p.json
-            python3 - <<'PY'
-          import json
-          d=json.load(open("p.json"))
-          if "code" in d: print("ERROR", d); raise SystemExit
-          raw=d["content"]["raw"]; ren=d["content"]["rendered"]
-          print("slug:", d.get("slug"), "| status:", d.get("status"), "| template:", repr(d.get("template")), "| modified:", d.get("modified"))
-          print("link:", d.get("link"))
-          print("meta:", {k: (str(v)[:60]) for k, v in (d.get("meta") or {}).items()})
-          print("raw length:", len(raw), "| has ow9/sm9:", "ow9" in raw or "sm9" in raw, "| raw starts:", raw[:160].replace("\n"," "))
-          print("rendered length:", len(ren), "| rendered has <script:", ren.count("<script"), "| starts:", ren[:160].replace("\n"," "))
+          mkdir -p shots
+          python3 - <<'PY'
+          import os, re
+          from playwright.sync_api import sync_playwright
+          base = os.environ["WP_URL"].rstrip("/")
+          pages = {"orders": "/bse-order-wins-tracker-companies-that-bagged-new-orders-this-week/",
+                   "deals": "/nse-bulk-and-block-deals-tracker/"}
+          with sync_playwright() as p:
+              b = p.chromium.launch()
+              for name, path in pages.items():
+                  for vw in ((1280, 900), (390, 844)):
+                      pg = b.new_page(viewport={"width": vw[0], "height": vw[1]})
+                      logs = []
+                      pg.on("console", lambda m: logs.append(f"console.{m.type}: {m.text}"[:300]))
+                      pg.on("pageerror", lambda e: logs.append(f"PAGEERROR: {e}"[:400]))
+                      pg.on("requestfailed", lambda r: logs.append(f"FAILED: {r.url[:120]} {r.failure}"))
+                      pg.goto(base + path + "?dbg=1", wait_until="networkidle", timeout=90000)
+                      pg.wait_for_timeout(4000)
+                      root = "ow9" if name == "orders" else "sm9"
+                      info = pg.evaluate(f"""() => {{ const r=document.getElementById('{root}'); if(!r) return 'NO ROOT';
+                        const cs=getComputedStyle(r); const cards=[...r.querySelectorAll('.card')];
+                        return 'root display='+cs.display+' vis='+cs.visibility+' opacity='+cs.opacity+' height='+r.offsetHeight+
+                          ' | cards='+cards.length+' shown='+cards.filter(c=>c.classList.contains('in')).length+
+                          ' | upd='+(document.getElementById('{"ow-upd" if name=="orders" else "sm9-upd"}')||{{}}).textContent+
+                          ' | scripts in root='+r.querySelectorAll('script').length+' | p-in-style='+[...document.querySelectorAll('style')].filter(s=>/<p>|<br/.test(s.innerHTML)).length; }}""")
+                      print(f"===== {name} {vw[0]}px: {info}")
+                      for l in logs[:25]: print("   ", l)
+                      pg.screenshot(path=f"shots/{name}_{vw[0]}.png", full_page=False)
+                      pg.evaluate(f"document.getElementById('{root}') && document.getElementById('{root}').scrollIntoView()")
+                      pg.wait_for_timeout(1500)
+                      pg.screenshot(path=f"shots/{name}_{vw[0]}_tool.png")
+                      html = pg.content()
+                      m = re.search(r"<script>\s*\(function\(\)\{.{0,400}", html, re.S)
+                      print("    inline script head:", (m.group(0)[:200] if m else "NOT FOUND").replace("\n", " "))
+                      pg.close()
+              b.close()
           PY
-            link=$(python3 -c "import json;print(json.load(open('p.json')).get('link',''))")
-            [ -n "$link" ] && curl -sS -D h.txt -o live.html -A "Mozilla/5.0" "$link?x=$RANDOM" && \
-              echo "live: $(wc -c < live.html) bytes | ow9/sm9 in live: $(grep -c 'ow9\|sm9' live.html) | elementor data-elementor-type: $(grep -o 'data-elementor-type="[a-z-]*"' live.html | sort | uniq -c | tr '\n' ' ')" && \
-              grep -iE "^(x-cache|x-litespeed|cf-cache|cache-control|x-hcdn|server|x-powered)" h.txt
-          done
+      - uses: actions/upload-artifact@v4
+        with:
+          name: shots
+          path: shots/
