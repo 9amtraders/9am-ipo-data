@@ -126,19 +126,16 @@ def pick(row, *keys):
 
 # ------------------------------------------------------------------ announcements
 def fetch_announcements(start, end):
-    out, page = [], 1
-    while page <= 60:
+    out, page, seen = [], 1, set()
+    while page <= 80:
         data = get_json(ANN_URL.format(page=page, f=start, t=end))
         rows = (data or {}).get("Table") or []
-        if not rows:
+        new = [r for r in rows if str(r.get("NEWSID")) not in seen]
+        if not new:
             break
-        out += rows
-        total = rows[0].get("TotalPageCnt") or rows[0].get("TOTALPAGECNT") or 1
-        try:
-            total = int(total)
-        except (TypeError, ValueError):
-            total = 1
-        if page >= total:
+        seen.update(str(r.get("NEWSID")) for r in new)
+        out += new
+        if len(rows) < 50:                   # BSE serves 50 rows a page
             break
         page += 1
         time.sleep(0.8)
@@ -162,8 +159,10 @@ UNIT = {"crore": 1, "crores": 1, "cr": 1, "crs": 1, "lakh": 0.01, "lakhs": 0.01,
         "lacs": 0.01, "million": 0.1, "mn": 0.1, "billion": 100, "bn": 100}
 NUM = r"(\d{1,3}(?:,\d{2,3})+(?:\.\d+)?|\d+(?:\.\d+)?)"
 UNITS = r"(?:(crores?|crs?\.?|lakhs?|lacs?|million|mn|billion|bn)\b)"
-RX_INR = re.compile(r"(?:rs\.?|inr|₹|rupees)\s*" + NUM + r"\s*(?:/-)?\s*" + UNITS + "?", re.I)
+RX_INR = re.compile(r"(?:rs\.?|inr|₹|rupees|\?)\s*" + NUM + r"\s*(?:/-)?\s*" + UNITS + "?", re.I)
 RX_INR_NOCUR = re.compile(NUM + r"\s*" + r"(crores?|crs?\.?|lakhs?|lacs?)\b", re.I)
+RX_BARE = re.compile(r"(?:amount(?:ing)?|valued?|worth|value|consideration|price|aggregating|for)\s*(?:of|at|to|approximately|approx\.?|about|:)?\s*"
+                     r"(\d{1,3}(?:,\d{2})+,\d{3}(?:\.\d+)?)", re.I)   # e.g. "amount 4,85,35,000"
 RX_FX = re.compile(r"(usd|us\s?\$|\$|eur|euro|€|gbp|£)\s*" + NUM + r"\s*" + UNITS + "?", re.I)
 RX_FX2 = re.compile(NUM + r"\s*" + r"(million|mn|billion|bn)\s*(usd|us\s?dollars?|dollars?|eur|euros?|gbp)\b", re.I)
 
@@ -194,6 +193,10 @@ def parse_value(text, fx):
         cr = to_num(m.group(1)) * UNIT[m.group(2).lower().rstrip(".")]
         if cr > best[0]:
             best = (cr, m.group(0), "INR")
+    for m in RX_BARE.finditer(t):
+        cr = to_num(m.group(1)) / 1e7
+        if cr > best[0]:
+            best = (cr, m.group(0)[-30:], "INR")
     for m in RX_FX.finditer(t):
         cur, n, unit = fx_code(m.group(1)), to_num(m.group(2)), (m.group(3) or "").lower()
         amt = n * {"million": 1e6, "mn": 1e6, "billion": 1e9, "bn": 1e9}.get(unit, 1)
@@ -214,8 +217,8 @@ def parse_value(text, fx):
 # ------------------------------------------------------------------ client & theme
 RX_CLIENT = re.compile(
     r"\b(?:from|by|with)\s+(?:m/s\.?\s*)?((?:the\s+)?[A-Z][\w&.,'()\-/ ]{2,90}?)"
-    r"(?=\s+(?:for|worth|valued|valuing|amounting|aggregating|of\s+(?:rs|inr|₹|usd)|to\s+(?:supply|execute|provide)|towards|under|in\s+respect)\b|[.;:]|\s*\(|$)")
-GOVT = re.compile(r"\b(national highways|authority of india|of india\b|ministry|govt|government|nhai|nhidcl|indian railways?|railway|rvnl|ircon|dfccil|rites|"
+    r"(?=\s+(?:for|worth|woth|valued|valuing|amounting|aggregating|of\s+(?:rs|inr|₹|usd)|to\s+(?:supply|execute|provide|the)|towards|under|in\s+(?:respect|association)|amounting|dated|vide)\b|[.;:]|\s*\(|$)")
+GOVT = re.compile(r"\b(government of|govt\.? of|undertaking|port authority|port trust|devaswom|board\b|vij company|commission\b|department|tamil ?nadu|kerala|karnataka|maharashtra|gujarat|rajasthan|uttar pradesh|madhya pradesh|telangana|andhra|odisha|bihar|west bengal|haryana|punjab|assam|grse|garden reach|national highways|authority of india|of india\b|ministry|govt|government|nhai|nhidcl|indian railways?|railway|rvnl|ircon|dfccil|rites|"
                   r"ntpc|nhpc|sjvn|powergrid|power grid|pgcil|bhel|bel\b|bharat electronics|hal\b|hindustan aeronautics|"
                   r"drdo|indian (army|navy|air force)|mod\b|defence|ongc|iocl|indian oil|bpcl|hpcl|gail|oil india|"
                   r"coal india|nmdc|sail|nlc|mahanadi|bccl|secl|ncl\b|wcl\b|state|municipal|corporation of|nagar|"
@@ -226,6 +229,7 @@ OVERSEAS = re.compile(r"\b(overseas|export|international (order|client|customer|
                       r"saudi|uae|dubai|qatar|oman|kuwait|bangladesh|nepal|sri lanka|kenya|nigeria|germany|"
                       r"japan|singapore|australia|canada|brazil|mexico|foreign)\b", re.I)
 THEMES = [
+    ("Healthcare", r"hospital|pharma|medical|health|drug|vaccine|diagnostic|patient|monitor type|ventilator"),
     ("Defence", r"defen[cs]e|army|navy|air force|missile|radar|ammunition|drdo|military|armou?r|warship|bel\b|hal\b"),
     ("Railways", r"rail|metro|coach|wagon|locomotive|vande|rvnl|ircon|dfccil|kavach|signalling|track"),
     ("Power & Renewables", r"solar|wind|power|renewable|transmission|substation|transformer|epc.*mw|\bmw\b|\bgw\b|electri|battery|bess|discom|smart meter"),
@@ -233,9 +237,53 @@ THEMES = [
     ("Water", r"water|irrigation|sewage|pipeline|jal|drinking|canal|desalination"),
     ("Oil, Gas & Mining", r"oil|gas|ongc|refiner|mining|coal|mineral|drilling|lng|cgd"),
     ("IT & Telecom", r"software|it services|digital|cloud|data cent|telecom|5g|network|fibre|fiber|cyber|ai\b|saas"),
-    ("Healthcare", r"hospital|pharma|medical|health|drug|vaccine|diagnostic"),
     ("Ships & Engineering", r"ship|vessel|boat|engineering|machine|equipment|valve|pump|boiler|turbine|crane"),
 ]
+
+
+NOT_ORDER = re.compile(r"\b(income[- ]tax|gst|cgst|sgst|igst|goods and services tax|customs|excise|tax demand|demand order|"
+                       r"assessment|rectification|appellate|appeal|tribunal|nclt|nclat|high court|supreme court|court|"
+                       r"penalty|show[- ]cause|adjudicat|commissioner|regulatory action|actions? taken|order passed|"
+                       r"sebi order|settlement order|interim order|winding up|arbitration award|attachment)\b", re.I)
+IS_ORDER = re.compile(r"\b(work order|purchase order|letter of (award|intent)|loa\b|loi\b|contract|tender|l-?1|"
+                      r"supply order|service order|new orders?|orders? (worth|valued|of rs)|bagged|secured|won)\b", re.I)
+
+
+def not_business_order(text):
+    return bool(NOT_ORDER.search(text or "")) and not IS_ORDER.search(text or "")
+
+
+def pdf_text(url):
+    """Text of the first pages of a filing PDF (best effort; needs pypdf)."""
+    try:
+        from pypdf import PdfReader
+    except ImportError:
+        return ""
+    raw = fetch(url, tries=2)
+    if not raw or not raw[:5] == b"%PDF-":
+        return ""
+    try:
+        rd = PdfReader(io.BytesIO(raw))
+        txt = " ".join((pg.extract_text() or "") for pg in rd.pages[:3])
+    except Exception:  # noqa: BLE001
+        return ""
+    return " ".join(txt.split())[:8000]
+
+
+RX_CTX = re.compile(r"(order|contract|award|worth|valued|value|amount|consideration|aggregat|lo[ai]\b)", re.I)
+
+
+def value_from_pdf(text, fx):
+    """Only look at amounts close to order words, so share capital or turnover in the letterhead is ignored."""
+    best = (0.0, "", "INR")
+    for m in RX_CTX.finditer(text):
+        win = text[m.start(): m.end() + 220]
+        if re.search(r"(?i)capital|turnover|net worth|revenue|authori[sz]ed", win[:80]):
+            continue
+        v = parse_value(win, fx)
+        if v[0] > best[0]:
+            best = v
+    return best
 
 
 def client_of(text):
@@ -350,8 +398,14 @@ def main():
         except ValueError:
             pass
     known = {o["id"]: o for o in old.get("orders", [])}
+    try:
+        for k, v in json.loads(Path("orders/pdfcache.json").read_text()).items():
+            if k in known:
+                known[k].update(v)
+    except (OSError, ValueError):
+        pass
     today = dt.datetime.now(IST).date()
-    first = len(known) < 20
+    first = len(known) < 200
     start = today - dt.timedelta(days=FIRST_RUN_DAYS if first else DAILY_LOOKBACK)
     fx = fx_rates(old.get("fx"))
 
@@ -370,20 +424,39 @@ def main():
         if not (nid and code and when):
             continue
         head = " ".join(str(pick(r, "HEADLINE", "NEWSSUB")).split())
-        more = " ".join(str(pick(r, "MORE", "NEWSSUB")).split())
+        more = " ".join(str(pick(r, "MORE")).split())
+        if "Announcement under Regulation 30 (LODR)-" in more:   # just the filing's title
+            more = ""
         text = f"{head} {more}"
         att = str(pick(r, "ATTACHMENTNAME")).strip()
         o = known.get(nid, {})
         v, vr, cur = parse_value(text, fx)
         cl = client_of(more) or client_of(head)
+        url = ((PDF_URL if int(r.get("PDFFLAG") or 0) != 2 else PDF_HIST_URL).format(att)) if att else ""
+        if url and (not v or not cl) and not o.get("pdf"):
+            o["pdf"] = 1                                       # read each PDF only once
+            pt = pdf_text(url)
+            if pt:
+                o["pt"] = pt[:1500]
+                if not v:
+                    v, vr, cur = value_from_pdf(pt, fx)
+                    o["vp"] = 1 if v else 0
+                if not cl:
+                    cl = client_of(pt[:3000])
+        elif o.get("pdf") and not v and o.get("v"):
+            v, vr, cur, cl = o["v"], o.get("vr", ""), o.get("cur", "INR"), cl or o.get("cl", "")
+        if not_business_order(f"{text} {o.get('pt', '')[:600]}"):
+            known.pop(nid, None)
+            continue
         o.update({
             "id": nid, "c": code,
             "n": " ".join(str(pick(r, "SLONGNAME", "LONG_NAME", "COMPANYNAME")).split()) or code,
             "d": when.date().isoformat(), "tm": when.strftime("%H:%M"),
             "h": head[:300], "m": more[:600],
-            "u": (PDF_URL if int(r.get("PDFFLAG") or 0) != 2 else PDF_HIST_URL).format(att) if att else "",
+            "u": url,
             "v": v, "vr": vr, "cur": cur, "cl": cl,
-            "ct": client_type(cl, text, cur, str(pick(r, "SLONGNAME"))), "th": theme_of(text),
+            "ct": client_type(cl, f"{text} {o.get('pt', '')[:800]}", cur, str(pick(r, "SLONGNAME"))),
+            "th": theme_of(f"{text} {o.get('pt', '')[:800]}"),
         })
         if nid not in known:
             added += 1
@@ -395,7 +468,7 @@ def main():
     # same company, same value, same day = a re-filed duplicate
     seen, uniq = set(), []
     for o in sorted(orders, key=lambda o: (o["d"], o.get("tm", "")), reverse=True):
-        key = (o["c"], o["d"], o["v"]) if o["v"] else (o["c"], o["d"], o["h"][:80])
+        key = (o["c"], o["d"], o["v"]) if o["v"] else (o["c"], o["d"], "noval")
         if key in seen:
             continue
         seen.add(key)
@@ -436,6 +509,11 @@ def main():
         "mcap": {c: mcap[c] for c in codes if c in mcap},
         "mcapDate": {c: mdate[c] for c in codes if c in mdate},
         "orders": sorted(orders, key=lambda o: (o["d"], o.get("tm", "")), reverse=True),
+    }
+    state = {o["id"]: {k: o[k] for k in ("pdf", "pt", "vp") if k in o} for o in orders}
+    Path("orders/pdfcache.json").parent.mkdir(parents=True, exist_ok=True)
+    Path("orders/pdfcache.json").write_text(json.dumps(state, separators=(",", ":"), ensure_ascii=False))
+    out = {**out, "orders": [{k: v for k, v in o.items() if k not in ("pdf", "pt", "vp")} for o in out["orders"]],
     }
     if not out["orders"]:
         print("No orders found — keeping old file", file=sys.stderr)
