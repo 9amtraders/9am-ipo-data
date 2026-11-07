@@ -1,0 +1,85 @@
+# Save as: .github/workflows/order-wins.yml  (in 9amtraders/9am-ipo-data)
+# Also needs: build_order_wins.py (repo root), scripts/render_order_wins.py,
+# and widget/order-wins-page.html (the page itself).
+#
+# 1) Every 2 hours on weekdays it collects BSE "Award of Order / Receipt of Order"
+#    filings, prices and market caps into orders/orders.json.
+# 2) It then renders the page with today's orders as plain HTML (for Google) and
+#    publishes it to WordPress, like the IPO GMP page.
+#
+# Publishing needs these repository secrets (the first three already exist for the GMP page):
+#   WP_URL, WP_USER, WP_APP_PASSWORD
+#   WP_OW_PAGE_ID   the ID of the "BSE Order Wins Tracker" page
+name: Order Wins Tracker
+
+on:
+  schedule:
+    - cron: "30 4-14/2 * * 1-5"   # every 2 hours, 10:00 AM to 8:00 PM IST, Mon-Fri
+  push:
+    branches: [main]
+    paths: [widget/order-wins-page.html, scripts/render_order_wins.py]
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: order-wins
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Build orders/orders.json
+        if: github.event_name != 'push'
+        run: python build_order_wins.py
+
+      - name: Commit data
+        if: github.event_name != 'push'
+        run: |
+          git config user.name  "9am-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add orders/orders.json
+          git diff --cached --quiet || git commit -m "Order wins $(date -u +%F)"
+          git pull --rebase
+          git push
+
+      - name: Render the page
+        run: python scripts/render_order_wins.py
+
+      - name: Publish to WordPress
+        env:
+          WP_URL: ${{ secrets.WP_URL }}
+          WP_USER: ${{ secrets.WP_USER }}
+          WP_APP_PASSWORD: ${{ secrets.WP_APP_PASSWORD }}
+          WP_OW_PAGE_ID: ${{ secrets.WP_OW_PAGE_ID }}
+        run: |
+          if [ -z "$WP_URL" ] || [ -z "$WP_USER" ] || [ -z "$WP_APP_PASSWORD" ] || [ -z "$WP_OW_PAGE_ID" ]; then
+            echo "WordPress secrets are not set yet, so the page was not published (data is still updated)."
+            exit 0
+          fi
+          python3 - <<'PY'
+          import json
+          html = open("build/order-wins-page.html", encoding="utf-8").read()
+          json.dump({"content": "<!-- wp:html -->\n" + html + "\n<!-- /wp:html -->"}, open("payload.json", "w"))
+          PY
+          code=$(curl -sS -o resp.json -w "%{http_code}" -X POST \
+            -u "$WP_USER:$WP_APP_PASSWORD" \
+            -H "Content-Type: application/json" \
+            -H "User-Agent: 9am-ipo-data-publisher" \
+            --data @payload.json \
+            "${WP_URL%/}/wp-json/wp/v2/pages/$WP_OW_PAGE_ID")
+          if [ "$code" != "200" ]; then
+            echo "WordPress answered HTTP $code:"
+            head -c 600 resp.json; echo
+            exit 1
+          fi
+          python3 -c "import json; r=json.load(open('resp.json')); print('Published page', r.get('id'), r.get('link'))"
