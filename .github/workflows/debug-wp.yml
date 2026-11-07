@@ -1,0 +1,37 @@
+# Temporary: checks what WordPress has stored for the two tracker pages. Safe to delete.
+name: debug-wp (temporary)
+on:
+  workflow_dispatch: {}
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - env:
+          WP_URL: ${{ secrets.WP_URL }}
+          WP_USER: ${{ secrets.WP_USER }}
+          WP_APP_PASSWORD: ${{ secrets.WP_APP_PASSWORD }}
+          OW: ${{ secrets.WP_OW_PAGE_ID }}
+          SM: ${{ secrets.WP_SM_PAGE_ID }}
+          GM: ${{ secrets.WP_GMP_PAGE_ID }}
+        run: |
+          for pair in "OW:$OW" "SM:$SM" "GMP:$GM"; do
+            name=${pair%%:*}; id=${pair#*:}
+            echo "===== $name page id $id"
+            curl -sS -u "$WP_USER:$WP_APP_PASSWORD" -H "User-Agent: 9am-ipo-data-publisher" \
+              "${WP_URL%/}/wp-json/wp/v2/pages/$id?context=edit" -o p.json
+            python3 - <<'PY'
+          import json
+          d=json.load(open("p.json"))
+          if "code" in d: print("ERROR", d); raise SystemExit
+          raw=d["content"]["raw"]; ren=d["content"]["rendered"]
+          print("slug:", d.get("slug"), "| status:", d.get("status"), "| template:", repr(d.get("template")), "| modified:", d.get("modified"))
+          print("link:", d.get("link"))
+          print("meta:", {k: (str(v)[:60]) for k, v in (d.get("meta") or {}).items()})
+          print("raw length:", len(raw), "| has ow9/sm9:", "ow9" in raw or "sm9" in raw, "| raw starts:", raw[:160].replace("\n"," "))
+          print("rendered length:", len(ren), "| rendered has <script:", ren.count("<script"), "| starts:", ren[:160].replace("\n"," "))
+          PY
+            link=$(python3 -c "import json;print(json.load(open('p.json')).get('link',''))")
+            [ -n "$link" ] && curl -sS -D h.txt -o live.html -A "Mozilla/5.0" "$link?x=$RANDOM" && \
+              echo "live: $(wc -c < live.html) bytes | ow9/sm9 in live: $(grep -c 'ow9\|sm9' live.html) | elementor data-elementor-type: $(grep -o 'data-elementor-type="[a-z-]*"' live.html | sort | uniq -c | tr '\n' ' ')" && \
+              grep -iE "^(x-cache|x-litespeed|cf-cache|cache-control|x-hcdn|server|x-powered)" h.txt
+          done
