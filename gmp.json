@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-07",
+ "updated": "2026-11-08",
  "ipos": {
   "bombaycoatedspecialsteels": {
    "name": "Bombay Coated & Special Steels",
@@ -195,6 +195,15 @@
      "sources": [
       "https://www.investorgain.com/gmp/vedant-poly-fabs-ipo/2297/"
      ]
+    },
+    {
+     "date": "2026-11-08",
+     "low": 1,
+     "high": 1,
+     "sources": [
+      "https://www.investorgain.com/gmp/vedant-poly-fabs-ipo/2297/",
+      "https://www.ipoguru.in/"
+     ]
     }
    ]
   },
@@ -378,6 +387,14 @@
      "high": 0,
      "sources": [
       "https://www.investorgain.com/gmp/antala-industries-ipo/2375/"
+     ]
+    },
+    {
+     "date": "2026-11-08",
+     "low": 0,
+     "high": 0,
+     "sources": [
+      "https://www.ipoguru.in/"
      ]
     }
    ]
