@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-08",
+ "updated": "2026-11-09",
  "ipos": [
   {
    "name": "Core4 Engineers",
@@ -539,8 +539,12 @@
    "band": ""
   },
   {
-   "name": "Punjab Carbonic",
-   "aka": [],
+   "name": "Avaada Electro",
+   "aka": [
+    "Avaada",
+    "Avaada Electro IPO",
+    "Avada Electro"
+   ],
    "board": "Mainboard",
    "open": null,
    "close": null,
