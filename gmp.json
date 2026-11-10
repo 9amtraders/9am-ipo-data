@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-09",
+ "updated": "2026-11-10",
  "ipos": {
   "bombaycoatedspecialsteels": {
    "name": "Bombay Coated & Special Steels",
@@ -214,7 +214,12 @@
      ]
     }
    ],
-   "issuePrice": 94
+   "issuePrice": 94,
+   "listing": {
+    "date": "2026-11-09",
+    "open": 94.0,
+    "source": "https://www.chittorgarh.com/ipo/vedant-poly-fabs-ipo/3143/"
+   }
   },
   "hdfireprotect": {
    "name": "HD Fire Protect",
@@ -413,6 +418,14 @@
      "sources": [
       "https://www.investorgain.com/gmp/antala-industries-ipo/2375/",
       "https://www.ipoguru.in/ipo-gmp/antala-industries-sme-ipo"
+     ]
+    },
+    {
+     "date": "2026-11-10",
+     "low": 0,
+     "high": 0,
+     "sources": [
+      "https://www.investorgain.com/gmp/antala-industries-ipo/2375/"
      ]
     }
    ]
