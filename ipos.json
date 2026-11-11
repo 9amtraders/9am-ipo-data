@@ -1,229 +1,6 @@
 {
- "updated": "2026-11-10",
+ "updated": "2026-11-11",
  "ipos": [
-  {
-   "name": "EAAA India Alternatives",
-   "aka": [
-    "Edelweiss Alternatives",
-    "EAAA",
-    "Edelweiss Alternative Asset Advisors"
-   ],
-   "board": "Mainboard",
-   "open": "2026-10-26",
-   "close": "2026-10-28",
-   "listing": "2026-11-02",
-   "band": "₹1,585 – ₹1,665",
-   "hasReport": false,
-   "score": null,
-   "registrar": "mufg",
-   "allotment": "2026-10-29",
-   "sub": {
-    "qib": 13.8,
-    "nii": 4.81,
-    "retail": 1.08,
-    "total": 5.51,
-    "retailShares": 2522523,
-    "minAppShares": 9,
-    "retailApps": 87200,
-    "asOf": "2026-10-28 17:55",
-    "final": true,
-    "source": "https://www.investorgain.com/report/ipo-subscription-live/333/"
-   },
-   "allot": {
-    "chance": 100.0,
-    "oneIn": 1,
-    "basis": "applications"
-   }
-  },
-  {
-   "name": "SFC Environmental Technologies",
-   "aka": [
-    "SFC Environmental",
-    "SFC"
-   ],
-   "board": "Mainboard",
-   "open": "2026-10-27",
-   "close": "2026-10-29",
-   "listing": "2026-11-03",
-   "band": "₹313 – ₹330",
-   "hasReport": true,
-   "score": 18,
-   "registrar": "mufg",
-   "allotment": "2026-10-30",
-   "sub": {
-    "qib": 18.81,
-    "nii": 12.81,
-    "retail": 2.7,
-    "total": 9.47,
-    "retailShares": 7079871,
-    "minAppShares": 45,
-    "retailApps": null,
-    "asOf": "2026-10-29 17:11 day 3 final",
-    "final": true,
-    "source": "https://www.ipoguru.in/news/sfc-environmental-technologies-ipo-subscription-status-final-day"
-   },
-   "allot": {
-    "chance": 37.0,
-    "oneIn": 3,
-    "basis": "estimate"
-   }
-  },
-  {
-   "name": "BLS Polymers",
-   "aka": [
-    "BLS Polymer"
-   ],
-   "board": "Mainboard",
-   "open": "2026-10-27",
-   "close": "2026-10-29",
-   "listing": "2026-11-03",
-   "band": "₹142 – ₹150",
-   "hasReport": true,
-   "score": 76,
-   "registrar": "kfin",
-   "allotment": "2026-10-30",
-   "sub": {
-    "qib": 200.25,
-    "nii": 559.2,
-    "retail": 128.36,
-    "total": 241.22,
-    "retailShares": null,
-    "minAppShares": 100,
-    "retailApps": null,
-    "asOf": "2026-10-29 17:55",
-    "final": true,
-    "source": "https://www.investorgain.com/report/ipo-subscription-live/333/"
-   },
-   "allot": {
-    "chance": 0.8,
-    "oneIn": 128,
-    "basis": "estimate"
-   }
-  },
-  {
-   "name": "Wiscon Industries",
-   "aka": [],
-   "board": "SME",
-   "open": "2026-10-27",
-   "close": "2026-10-29",
-   "listing": "2026-11-03",
-   "band": "₹194 – ₹204",
-   "hasReport": true,
-   "score": 20,
-   "registrar": "maashitla",
-   "allotment": "2026-10-30",
-   "sub": {
-    "qib": 2.24,
-    "nii": 0.62,
-    "retail": 0.66,
-    "total": 1.17,
-    "retailShares": 1778400,
-    "minAppShares": 1200,
-    "retailApps": null,
-    "asOf": "2026-10-29 17:55",
-    "final": true,
-    "source": "https://www.investorgain.com/report/ipo-subscription-live/333/"
-   },
-   "allot": {
-    "chance": 100.0,
-    "oneIn": 1,
-    "basis": "undersubscribed"
-   }
-  },
-  {
-   "name": "M.K.Sons Fine Jewels",
-   "aka": [
-    "MK Sons",
-    "MK Sons Jewellers",
-    "MK Sons Fine Jewels"
-   ],
-   "board": "Mainboard",
-   "open": "2026-10-28",
-   "close": "2026-10-30",
-   "listing": "2026-11-04",
-   "band": "₹153 – ₹162",
-   "hasReport": true,
-   "score": 61,
-   "registrar": "bigshare",
-   "allotment": "2026-11-02",
-   "sub": {
-    "qib": 1.84,
-    "nii": 14.12,
-    "retail": 3.08,
-    "total": 5.09,
-    "retailShares": 5950000,
-    "minAppShares": 91,
-    "retailApps": null,
-    "asOf": "2026-10-30 17:55",
-    "final": true,
-    "source": "https://www.investorgain.com/report/ipo-subscription-live/333/"
-   },
-   "allot": {
-    "chance": 32.5,
-    "oneIn": 3,
-    "basis": "estimate"
-   }
-  },
-  {
-   "name": "Carver Roboweld",
-   "aka": [],
-   "board": "SME",
-   "open": "2026-10-28",
-   "close": "2026-10-30",
-   "listing": "2026-11-04",
-   "band": "₹76 – ₹80",
-   "hasReport": true,
-   "score": 50,
-   "registrar": "bigshare",
-   "allotment": "2026-11-02",
-   "sub": {
-    "qib": 26.33,
-    "nii": 40.39,
-    "retail": 19.17,
-    "total": 25.8,
-    "retailShares": 1180800,
-    "minAppShares": 3200,
-    "retailApps": null,
-    "asOf": "2026-10-30 17:56",
-    "final": true,
-    "source": "https://www.investorgain.com/report/ipo-subscription-live/333/"
-   },
-   "allot": {
-    "chance": 5.2,
-    "oneIn": 19,
-    "basis": "estimate"
-   }
-  },
-  {
-   "name": "Ajwa Projects",
-   "aka": [],
-   "board": "SME",
-   "open": "2026-10-28",
-   "close": "2026-10-30",
-   "listing": "2026-11-04",
-   "band": "₹203",
-   "hasReport": true,
-   "score": 24,
-   "registrar": "kfin",
-   "allotment": "2026-11-02",
-   "sub": {
-    "qib": null,
-    "nii": 0.32,
-    "retail": 1.93,
-    "total": 1.12,
-    "retailShares": 889200,
-    "minAppShares": 1200,
-    "retailApps": null,
-    "asOf": "2026-10-30 17:56",
-    "final": true,
-    "source": "https://www.investorgain.com/report/ipo-subscription-live/333/"
-   },
-   "allot": {
-    "chance": 51.8,
-    "oneIn": 2,
-    "basis": "estimate"
-   }
-  },
   {
    "name": "Bombay Coated & Special Steels",
    "aka": [
@@ -653,6 +430,78 @@
    "band": "",
    "hasReport": false,
    "score": null
+  },
+  {
+   "name": "Ajwa Projects",
+   "aka": [],
+   "board": "SME",
+   "open": "2026-10-28",
+   "close": "2026-10-30",
+   "listing": "2026-11-04",
+   "band": "₹203",
+   "hasReport": true,
+   "score": 42,
+   "archived": true
+  },
+  {
+   "name": "BLS Polymers",
+   "aka": [],
+   "board": "Mainboard",
+   "open": "2026-10-27",
+   "close": "2026-10-29",
+   "listing": "2026-11-03",
+   "band": "₹142 – ₹150",
+   "hasReport": true,
+   "score": 44,
+   "archived": true
+  },
+  {
+   "name": "Carver Roboweld",
+   "aka": [],
+   "board": "SME",
+   "open": "2026-10-28",
+   "close": "2026-10-30",
+   "listing": "2026-11-04",
+   "band": "₹76 – ₹80",
+   "hasReport": true,
+   "score": 40,
+   "archived": true
+  },
+  {
+   "name": "M.K.Sons Fine Jewels",
+   "aka": [],
+   "board": "Mainboard",
+   "open": "2026-10-28",
+   "close": "2026-10-30",
+   "listing": "2026-11-04",
+   "band": "₹153 – ₹162",
+   "hasReport": true,
+   "score": 67,
+   "archived": true
+  },
+  {
+   "name": "SFC Environmental Technologies",
+   "aka": [],
+   "board": "Mainboard",
+   "open": "2026-10-27",
+   "close": "2026-10-29",
+   "listing": "2026-11-03",
+   "band": "₹313 – ₹330",
+   "hasReport": true,
+   "score": 23,
+   "archived": true
+  },
+  {
+   "name": "Wiscon Industries",
+   "aka": [],
+   "board": "SME",
+   "open": "2026-10-27",
+   "close": "2026-10-29",
+   "listing": "2026-11-03",
+   "band": "₹194 – ₹204",
+   "hasReport": true,
+   "score": 42,
+   "archived": true
   }
  ]
 }
