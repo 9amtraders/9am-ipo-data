@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-03",
+ "fetched": "2026-11-11",
  "source": "https://thedocs.worldbank.org/en/doc/74e8be41ceb20fa0da750cda2f6b9e4e-0050012026/related/CMO-Historical-Data-Monthly.xlsx",
  "months": {
   "2000-01": {
@@ -1606,6 +1606,11 @@
    "usd_oz": 4319.0,
    "usdinr": 95.4705,
    "inr_10g": 132569
+  },
+  "2026-10": {
+   "usd_oz": 4105.0,
+   "usdinr": 95.5309,
+   "inr_10g": 126081
   }
  }
 }
