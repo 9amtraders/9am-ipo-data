@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-11",
+ "updated": "2026-11-12",
  "ipos": {
   "bombaycoatedspecialsteels": {
    "name": "Bombay Coated & Special Steels",
@@ -436,7 +436,12 @@
       "https://www.investorgain.com/ipo/antala-industries-ipo/2375/"
      ]
     }
-   ]
+   ],
+   "listing": {
+    "date": "2026-11-11",
+    "open": 52.8,
+    "source": "https://www.ipoji.com/ipo/antala-industries-ipo"
+   }
   }
  }
 }
