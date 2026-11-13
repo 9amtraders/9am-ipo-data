@@ -1,33 +1,6 @@
 {
- "updated": "2026-11-12",
+ "updated": "2026-11-13",
  "ipos": [
-  {
-   "name": "Bombay Coated & Special Steels",
-   "aka": [
-    "Bombay Coated Steels",
-    "BCSS",
-    "Bombay Coated"
-   ],
-   "board": "Mainboard",
-   "open": "2026-10-29",
-   "close": "2026-11-02",
-   "listing": "2026-11-05",
-   "band": "₹78 – ₹82",
-   "registrar": "kfin",
-   "allotment": "2026-11-03",
-   "sub": {
-    "qib": 37.32,
-    "nii": 166.44,
-    "retail": 35.46,
-    "total": 63.89,
-    "asOf": "2026-11-02 17:55",
-    "final": true,
-    "retailShares": 7813409,
-    "minAppShares": 182,
-    "retailApps": null,
-    "source": "https://www.investorgain.com/report/ipo-subscription-live/333/"
-   }
-  },
   {
    "name": "Antala Industries",
    "aka": [],
@@ -174,6 +147,22 @@
     "retailApps": null,
     "source": "https://hdfcsky.com/news/vedant-poly-fabs-ipo-subscription-status-day-3"
    }
+  },
+  {
+   "name": "Crystal Crop Protection",
+   "aka": [
+    "Crystal Crop",
+    "Crystal Crop Protection IPO",
+    "Crystal Cropscience",
+    "Krystal Crop"
+   ],
+   "board": "Mainboard",
+   "open": "2026-11-18",
+   "close": "2026-11-20",
+   "listing": "2026-11-26",
+   "band": "",
+   "registrar": "mufg",
+   "allotment": null
   },
   {
    "name": "Acko",

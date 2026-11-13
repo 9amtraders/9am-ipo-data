@@ -1,40 +1,6 @@
 {
- "updated": "2026-11-12",
+ "updated": "2026-11-13",
  "ipos": [
-  {
-   "name": "Bombay Coated & Special Steels",
-   "aka": [
-    "Bombay Coated Steels",
-    "BCSS",
-    "Bombay Coated"
-   ],
-   "board": "Mainboard",
-   "open": "2026-10-29",
-   "close": "2026-11-02",
-   "listing": "2026-11-05",
-   "band": "₹78 – ₹82",
-   "hasReport": true,
-   "score": 55,
-   "registrar": "kfin",
-   "allotment": "2026-11-03",
-   "sub": {
-    "qib": 37.32,
-    "nii": 166.44,
-    "retail": 35.46,
-    "total": 63.89,
-    "retailShares": 7813409,
-    "minAppShares": 182,
-    "retailApps": null,
-    "asOf": "2026-11-02 17:55",
-    "final": true,
-    "source": "https://www.investorgain.com/report/ipo-subscription-live/333/"
-   },
-   "allot": {
-    "chance": 2.8,
-    "oneIn": 35,
-    "basis": "estimate"
-   }
-  },
   {
    "name": "Antala Industries",
    "aka": [],
@@ -223,6 +189,23 @@
     "oneIn": 2,
     "basis": "estimate"
    }
+  },
+  {
+   "name": "Crystal Crop Protection",
+   "aka": [
+    "Crystal Crop",
+    "Crystal Crop Protection IPO",
+    "Crystal Cropscience",
+    "Krystal Crop"
+   ],
+   "board": "Mainboard",
+   "open": "2026-11-18",
+   "close": "2026-11-20",
+   "listing": "2026-11-26",
+   "band": "",
+   "hasReport": true,
+   "score": 33,
+   "registrar": "mufg"
   },
   {
    "name": "Acko",
@@ -453,6 +436,18 @@
    "band": "₹142 – ₹150",
    "hasReport": true,
    "score": 44,
+   "archived": true
+  },
+  {
+   "name": "Bombay Coated and Special Steels",
+   "aka": [],
+   "board": "Mainboard",
+   "open": "2026-10-29",
+   "close": "2026-11-02",
+   "listing": "2026-11-05",
+   "band": "₹78 – ₹82",
+   "hasReport": true,
+   "score": 39,
    "archived": true
   },
   {

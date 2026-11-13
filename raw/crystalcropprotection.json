@@ -1,0 +1,253 @@
+{
+ "name": "Crystal Crop Protection",
+ "board": "Mainboard",
+ "sector": "Agrochemicals and seeds",
+ "exchange": "NSE, BSE",
+ "open": "2026-11-18",
+ "close": "2026-11-20",
+ "listing": "2026-11-26",
+ "priceBand": "",
+ "issueSizeCr": null,
+ "freshCr": 600,
+ "ofsCr": null,
+ "lotSize": null,
+ "researchedOn": "2026-11-13",
+ "summary": "Crystal Crop Protection, founded in 1994, sells herbicides, fungicides, insecticides, bio-stimulants and seeds in India through more than 13,000 distributors and exports to over 19 countries. Revenue from operations was ₹2,691 cr in FY25, only about 3.5% a year above FY23 after a dip in FY24, while profit rose 35.7% to ₹118 cr and return on equity stayed low at 8.3%. Borrowings rose 55% over FY23–FY25 to ₹947 cr and reached ₹1,205 cr by September 2025, and about 78% of the ₹600 cr fresh issue in the draft papers goes to repaying debt. The price band, final issue size and post-issue holding are not yet announced, so valuation checks are unrated and this report uses DRHP figures.",
+ "checks": {
+  "fh1": {
+   "status": "flag",
+   "finding": "Revenue from operations went from ₹2,513 cr (FY23) to ₹2,691 cr (FY25), a CAGR of about 3.5%.",
+   "source": "https://hdfcsky.com/ipo/crystal-crop-protection-ipo"
+  },
+  "fh2": {
+   "status": "caution",
+   "finding": "Revenue fell to ₹2,230 cr in FY24 from ₹2,513 cr in FY23, then rose 20.7% to ₹2,691 cr in FY25.",
+   "source": "https://hdfcsky.com/ipo/crystal-crop-protection-ipo"
+  },
+  "fh3": {
+   "status": "pass",
+   "finding": "Debt to equity was about 0.78 at September 2025 (borrowings ₹1,205 cr vs net worth ₹1,538 cr).",
+   "source": "https://hdfcsky.com/ipo/crystal-crop-protection-ipo"
+  },
+  "fh4": {
+   "status": "flag",
+   "finding": "Borrowings rose 55% (₹613 cr to ₹947 cr) over FY23–FY25 while revenue rose only 7%.",
+   "source": "https://hdfcsky.com/ipo/crystal-crop-protection-ipo"
+  },
+  "fh5": {
+   "status": "pass",
+   "finding": "Net worth rose every year: ₹1,252 cr, ₹1,325 cr, ₹1,424 cr (FY23–FY25) and ₹1,538 cr at September 2025.",
+   "source": "https://hdfcsky.com/ipo/crystal-crop-protection-ipo"
+  },
+  "fh6": {
+   "status": "na",
+   "finding": "Operating cash flow figures were not found in public sources.",
+   "source": ""
+  },
+  "pr1": {
+   "status": "pass",
+   "finding": "Profit after tax grew 35.7% in FY25, to ₹118.4 cr from ₹87.2 cr.",
+   "source": "https://hdfcsky.com/ipo/crystal-crop-protection-ipo"
+  },
+  "pr2": {
+   "status": "pass",
+   "finding": "PAT margin improved from 3.0% (FY23) to 3.9% (FY24) and 4.4% (FY25).",
+   "source": "https://hdfcsky.com/ipo/crystal-crop-protection-ipo"
+  },
+  "pr3": {
+   "status": "flag",
+   "finding": "Return on equity was 8.31% in FY25.",
+   "source": "https://www.chittorgarh.com/ipo/crystal-crop-protection-ipo/2813/"
+  },
+  "pr4": {
+   "status": "na",
+   "finding": "Public sources disagree on FY25 ROCE (16.4% on Chittorgarh, 9.7% on HDFC Sky), so it is not rated.",
+   "source": ""
+  },
+  "pr5": {
+   "status": "na",
+   "finding": "Listed-peer margins were not found in public sources.",
+   "source": ""
+  },
+  "va1": {
+   "status": "na",
+   "finding": "The price band has not been announced, so the post-issue P/E cannot be computed; listed peers trade at 17.8x–45.9x.",
+   "source": ""
+  },
+  "va2": {
+   "status": "na",
+   "finding": "The price band has not been announced, so the post-issue price to book cannot be computed.",
+   "source": ""
+  },
+  "va3": {
+   "status": "na",
+   "finding": "The price band has not been announced, so the post-issue market cap to sales cannot be computed.",
+   "source": ""
+  },
+  "va4": {
+   "status": "na",
+   "finding": "No details of pre-IPO share issues or transfers were found in public sources.",
+   "source": ""
+  },
+  "pg1": {
+   "status": "na",
+   "finding": "Promoters hold 86.69% before the issue; the post-issue holding is not yet published.",
+   "source": ""
+  },
+  "pg2": {
+   "status": "na",
+   "finding": "No information on pledged promoter shares was found.",
+   "source": ""
+  },
+  "pg3": {
+   "status": "na",
+   "finding": "Related-party transaction figures were not found in public sources.",
+   "source": ""
+  },
+  "pg4": {
+   "status": "na",
+   "finding": "No information on regulatory action against promoters was found.",
+   "source": ""
+  },
+  "is1": {
+   "status": "na",
+   "finding": "The OFS of 74.05 lakh shares cannot be valued until the price band is announced.",
+   "source": ""
+  },
+  "is2": {
+   "status": "na",
+   "finding": "The issue as a share of post-issue market cap cannot be computed until the price band is announced.",
+   "source": ""
+  },
+  "is3": {
+   "status": "na",
+   "finding": "Selling shareholders' acquisition cost was not found in public sources.",
+   "source": ""
+  },
+  "up1": {
+   "status": "na",
+   "finding": "Unidentified acquisitions are grouped with general corporate purposes in the remaining ~22% of the fresh issue, so the growth share is not stated.",
+   "source": ""
+  },
+  "up2": {
+   "status": "flag",
+   "finding": "₹465.6 cr of the ₹600 cr fresh issue in the DRHP (about 78%) goes to repaying debt of the company and its subsidiary Saffire Crop Science.",
+   "source": "https://hdfcsky.com/ipo/crystal-crop-protection-ipo"
+  },
+  "up3": {
+   "status": "na",
+   "finding": "The amount for general corporate purposes has not been quantified.",
+   "source": ""
+  },
+  "up4": {
+   "status": "na",
+   "finding": "Public sources don't say whose loans are being repaid.",
+   "source": ""
+  },
+  "lg1": {
+   "status": "na",
+   "finding": "Litigation amounts were not found in public sources.",
+   "source": ""
+  },
+  "lg2": {
+   "status": "na",
+   "finding": "No information on criminal or regulatory cases was found.",
+   "source": ""
+  },
+  "lg3": {
+   "status": "na",
+   "finding": "Contingent liabilities were not found in public sources.",
+   "source": ""
+  },
+  "rk1": {
+   "status": "na",
+   "finding": "Customer concentration figures were not found in public sources.",
+   "source": ""
+  },
+  "rk2": {
+   "status": "na",
+   "finding": "Supplier concentration figures were not found in public sources.",
+   "source": ""
+  },
+  "rk3": {
+   "status": "pass",
+   "finding": "The company was founded in 1994, over 30 years ago.",
+   "source": "https://www.freepressjournal.in/business/crystal-crop-protection-files-drhp-for-ipo-with-600-crore-fresh-issue"
+  },
+  "rk4": {
+   "status": "na",
+   "finding": "Auditor remarks were not found in public sources.",
+   "source": ""
+  }
+ },
+ "ipoMetrics": {
+  "rev_cagr": 3.5,
+  "pat_margin": 4.4,
+  "roe": 8.31,
+  "roce": null,
+  "de": 0.78,
+  "pe": null,
+  "pb": null
+ },
+ "patGrowth": 35.7,
+ "peers": [
+  {
+   "name": "Kaveri Seed Co.",
+   "metrics": {
+    "roe": 18.83,
+    "pe": 17.75,
+    "pb": 3.37
+   }
+  },
+  {
+   "name": "Sumitomo Chemical India",
+   "metrics": {
+    "roe": 17.44,
+    "pe": 45.88,
+    "pb": 8.0
+   }
+  },
+  {
+   "name": "Bayer CropScience",
+   "metrics": {
+    "roe": 19.93,
+    "pe": 35.58,
+    "pb": 7.09
+   }
+  },
+  {
+   "name": "Rallis India",
+   "metrics": {
+    "roe": 6.62,
+    "pe": 39.78,
+    "pb": 2.63
+   }
+  }
+ ],
+ "sources": [
+  {
+   "url": "https://hdfcsky.com/ipo/crystal-crop-protection-ipo",
+   "title": "Crystal Crop Protection IPO — HDFC Sky"
+  },
+  {
+   "url": "https://www.chittorgarh.com/ipo/crystal-crop-protection-ipo/2813/",
+   "title": "Crystal Crop Protection IPO — Chittorgarh"
+  },
+  {
+   "url": "https://www.chittorgarh.com/ipo-recommendation/crystal-crop-protection-ipo/2813/",
+   "title": "Crystal Crop Protection IPO peer comparison — Chittorgarh"
+  },
+  {
+   "url": "https://www.freepressjournal.in/business/crystal-crop-protection-files-drhp-for-ipo-with-600-crore-fresh-issue",
+   "title": "Crystal Crop Protection files DRHP — Free Press Journal"
+  },
+  {
+   "url": "https://www.ipoji.com/ipo/crystal-crop-protection-ipo",
+   "title": "Crystal Crop Protection IPO dates — IPOji"
+  },
+  {
+   "url": "https://chanakyanipothi.com/crystal-crop-protection-ipo-review/",
+   "title": "Crystal Crop Protection IPO review — Chanakya Nipothi"
+  }
+ ]
+}
