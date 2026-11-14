@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-13",
+ "updated": "2026-11-14",
  "ipos": [
   {
    "name": "Antala Industries",
@@ -160,9 +160,23 @@
    "open": "2026-11-18",
    "close": "2026-11-20",
    "listing": "2026-11-26",
-   "band": "",
+   "band": "₹259 – ₹272",
    "registrar": "mufg",
-   "allotment": null
+   "allotment": "2026-11-23"
+  },
+  {
+   "name": "Watrana Rentals",
+   "aka": [
+    "Watrana",
+    "Watrana Rental"
+   ],
+   "board": "SME",
+   "open": "2026-11-19",
+   "close": "2026-11-23",
+   "listing": "2026-11-27",
+   "band": "₹232 – ₹245",
+   "registrar": "maashitla",
+   "allotment": "2026-11-25"
   },
   {
    "name": "Acko",

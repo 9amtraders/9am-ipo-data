@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-13",
+ "updated": "2026-11-14",
  "ipos": {
   "bombaycoatedspecialsteels": {
    "name": "Bombay Coated & Special Steels",
@@ -442,6 +442,19 @@
     "open": 52.8,
     "source": "https://www.ipoji.com/ipo/antala-industries-ipo"
    }
+  },
+  "crystalcropprotection": {
+   "name": "Crystal Crop Protection",
+   "readings": [
+    {
+     "date": "2026-11-14",
+     "low": 40,
+     "high": 40,
+     "sources": [
+      "https://www.investorgain.com/ipo/crystal-crop-protection-ipo/2067/"
+     ]
+    }
+   ]
   }
  }
 }

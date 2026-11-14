@@ -7,14 +7,14 @@
  "open": "2026-11-18",
  "close": "2026-11-20",
  "listing": "2026-11-26",
- "band": "",
- "issueSizeCr": 600.0,
- "freshCr": 600.0,
- "ofsCr": null,
- "lotSize": null,
- "summary": "Crystal Crop Protection, founded in 1994, sells herbicides, fungicides, insecticides, bio-stimulants and seeds in India through more than 13,000 distributors and exports to over 19 countries. Revenue from operations was ₹2,691 cr in FY25, only about 3.5% a year above FY23 after a dip in FY24, while profit rose 35.7% to ₹118 cr and return on equity stayed low at 8.3%. Borrowings rose 55% over FY23–FY25 to ₹947 cr and reached ₹1,205 cr by September 2025, and about 78% of the ₹600 cr fresh issue in the draft papers goes to repaying debt. The price band, final issue size and post-issue holding are not yet announced, so valuation checks are unrated and this report uses DRHP figures.",
- "score": 33,
- "checksScore": 37,
+ "band": "₹259 – ₹272",
+ "issueSizeCr": 455.48,
+ "freshCr": 354.77,
+ "ofsCr": 100.71,
+ "lotSize": 55,
+ "summary": "Crystal Crop Protection, founded in 1994, sells herbicides, insecticides, fungicides, plant growth regulators and seeds in India through more than 13,000 distributors and exports selected products. In the RHP, revenue from operations rose 17.2% to ₹3,152 cr in FY26 and profit after tax rose 22.4% to ₹144.9 cr, though return on equity stayed below 8%. At the upper band the company is valued at about ₹4,438 cr, or about 30.6x FY26 profit, below the median of its listed agrochemical peers. Of the ₹354.8 cr fresh issue, ₹270 cr (about 76%) goes to repaying debt of the company and its subsidiary Saffire Crop Science, and the ₹100.7 cr offer for sale is by promoter Ankur Aggarwal.",
+ "score": 48,
+ "checksScore": 57,
  "drivers": [
   {
    "name": "Subscription demand",
@@ -25,56 +25,56 @@
   {
    "name": "Profit growth (RHP)",
    "weight": 20,
-   "score": 85,
-   "detail": "Profit after tax grew 35.7% in the latest year in the RHP."
+   "score": 70,
+   "detail": "Profit after tax grew 22.4% in the latest year in the RHP."
   },
   {
    "name": "P/E vs listed peers",
    "weight": 5,
-   "score": 30,
-   "detail": "Peer P/E figures not found; scored from the P/E check."
+   "score": 85,
+   "detail": "P/E 30.6x vs peer median 37.7x, 19% below."
   },
   {
    "name": "All 33 checks",
    "weight": 25,
-   "score": 37,
+   "score": 57,
    "detail": "Financial health, governance, issue structure, use of proceeds, legal and risk checks."
   }
  ],
- "capReason": "4 red flags took 20 points off. Capped at 50 because of 4 or more red flags.",
+ "capReason": "2 red flags took 10 points off.",
  "counts": {
-  "pass": 5,
-  "caution": 1,
-  "flag": 4,
-  "na": 23
+  "pass": 13,
+  "caution": 2,
+  "flag": 2,
+  "na": 16
  },
  "totalChecks": 33,
  "confidence": "low",
  "categories": [
   {
    "name": "Financial health",
-   "score": 47,
-   "detail": "2 of 6 checks passed · 2 flags · 1 not found"
+   "score": 80,
+   "detail": "4 of 6 checks passed · 1 not found"
   },
   {
    "name": "Profitability",
-   "score": 52,
-   "detail": "2 of 5 checks passed · 1 flag · 2 not found"
+   "score": 66,
+   "detail": "3 of 5 checks passed · 1 flag · 1 not found"
   },
   {
    "name": "Valuation vs peers",
-   "score": 30,
-   "detail": "Not found in public sources, scored as neutral"
+   "score": 82,
+   "detail": "3 of 4 checks passed · 1 not found"
   },
   {
    "name": "Promoter & governance",
-   "score": 30,
-   "detail": "Not found in public sources, scored as neutral"
+   "score": 48,
+   "detail": "1 of 4 checks passed · 3 not found"
   },
   {
    "name": "Issue structure",
-   "score": 30,
-   "detail": "Not found in public sources, scored as neutral"
+   "score": 60,
+   "detail": "1 of 3 checks passed · 1 not found"
   },
   {
    "name": "Use of proceeds",
@@ -97,41 +97,41 @@
    "id": "fh1",
    "name": "Revenue growth",
    "category": "Financial health",
-   "status": "flag",
-   "finding": "Revenue from operations went from ₹2,513 cr (FY23) to ₹2,691 cr (FY25), a CAGR of about 3.5%.",
-   "source": "https://hdfcsky.com/ipo/crystal-crop-protection-ipo"
+   "status": "pass",
+   "finding": "Revenue from operations rose from ₹2,230 cr in FY24 to ₹3,152 cr in FY26, a CAGR of about 18.9%.",
+   "source": "https://eng.ruralvoice.in/agribusiness/crystal-crop-protection-to-launch-rs-456-crore-ipo-on-november-18.html"
   },
   {
    "id": "fh2",
    "name": "Revenue rose every year",
    "category": "Financial health",
-   "status": "caution",
-   "finding": "Revenue fell to ₹2,230 cr in FY24 from ₹2,513 cr in FY23, then rose 20.7% to ₹2,691 cr in FY25.",
-   "source": "https://hdfcsky.com/ipo/crystal-crop-protection-ipo"
+   "status": "pass",
+   "finding": "Revenue grew in both of the last 2 years: about 20.7% in FY25 and 17.2% in FY26 to ₹3,152 cr.",
+   "source": "https://eng.ruralvoice.in/agribusiness/crystal-crop-protection-to-launch-rs-456-crore-ipo-on-november-18.html"
   },
   {
    "id": "fh3",
    "name": "Debt to equity",
    "category": "Financial health",
    "status": "pass",
-   "finding": "Debt to equity was about 0.78 at September 2025 (borrowings ₹1,205 cr vs net worth ₹1,538 cr).",
-   "source": "https://hdfcsky.com/ipo/crystal-crop-protection-ipo"
+   "finding": "Debt to equity was about 0.40 at March 2026 (borrowings ₹820 cr vs net worth ₹2,040 cr).",
+   "source": "https://www.investorgain.com/ipo/crystal-crop-protection-ipo/2067/"
   },
   {
    "id": "fh4",
    "name": "Debt growing slower than revenue",
    "category": "Financial health",
-   "status": "flag",
-   "finding": "Borrowings rose 55% (₹613 cr to ₹947 cr) over FY23–FY25 while revenue rose only 7%.",
-   "source": "https://hdfcsky.com/ipo/crystal-crop-protection-ipo"
+   "status": "caution",
+   "finding": "Borrowings rose about 42% (₹577 cr to ₹820 cr) over FY24–FY26, slightly faster than revenue (about 41%).",
+   "source": "https://www.investorgain.com/ipo/crystal-crop-protection-ipo/2067/"
   },
   {
    "id": "fh5",
    "name": "Net worth rising",
    "category": "Financial health",
    "status": "pass",
-   "finding": "Net worth rose every year: ₹1,252 cr, ₹1,325 cr, ₹1,424 cr (FY23–FY25) and ₹1,538 cr at September 2025.",
-   "source": "https://hdfcsky.com/ipo/crystal-crop-protection-ipo"
+   "finding": "Net worth rose every year: ₹1,488 cr (FY24), ₹1,600 cr (FY25) and ₹2,040 cr (FY26).",
+   "source": "https://www.investorgain.com/ipo/crystal-crop-protection-ipo/2067/"
   },
   {
    "id": "fh6",
@@ -146,32 +146,32 @@
    "name": "Profit growth",
    "category": "Profitability",
    "status": "pass",
-   "finding": "Profit after tax grew 35.7% in FY25, to ₹118.4 cr from ₹87.2 cr.",
-   "source": "https://hdfcsky.com/ipo/crystal-crop-protection-ipo"
+   "finding": "Profit after tax grew 22.4% in FY26, to ₹144.9 cr from ₹118.4 cr.",
+   "source": "https://eng.ruralvoice.in/agribusiness/crystal-crop-protection-to-launch-rs-456-crore-ipo-on-november-18.html"
   },
   {
    "id": "pr2",
    "name": "Profit margin trend",
    "category": "Profitability",
    "status": "pass",
-   "finding": "PAT margin improved from 3.0% (FY23) to 3.9% (FY24) and 4.4% (FY25).",
-   "source": "https://hdfcsky.com/ipo/crystal-crop-protection-ipo"
+   "finding": "PAT margin improved from about 3.9% (FY24) to 4.4% (FY25) and 4.6% (FY26).",
+   "source": "https://www.investorgain.com/ipo/crystal-crop-protection-ipo/2067/"
   },
   {
    "id": "pr3",
    "name": "Return on equity",
    "category": "Profitability",
    "status": "flag",
-   "finding": "Return on equity was 8.31% in FY25.",
-   "source": "https://www.chittorgarh.com/ipo/crystal-crop-protection-ipo/2813/"
+   "finding": "Return on equity was 7.94% in FY26.",
+   "source": "https://www.investorgain.com/ipo/crystal-crop-protection-ipo/2067/"
   },
   {
    "id": "pr4",
    "name": "Return on capital employed",
    "category": "Profitability",
-   "status": "na",
-   "finding": "Public sources disagree on FY25 ROCE (16.4% on Chittorgarh, 9.7% on HDFC Sky), so it is not rated.",
-   "source": ""
+   "status": "pass",
+   "finding": "ROCE was 16.06% in FY26.",
+   "source": "https://www.investorgain.com/ipo/crystal-crop-protection-ipo/2067/"
   },
   {
    "id": "pr5",
@@ -185,41 +185,41 @@
    "id": "va1",
    "name": "P/E vs listed peers",
    "category": "Valuation vs peers",
-   "status": "na",
-   "finding": "The price band has not been announced, so the post-issue P/E cannot be computed; listed peers trade at 17.8x–45.9x.",
-   "source": ""
+   "status": "pass",
+   "finding": "P/E is about 30.6x FY26 profit at ₹272, below the listed-peer median of about 37.7x.",
+   "source": "https://chanakyanipothi.com/crystal-crop-protection-ipo-review/"
   },
   {
    "id": "va2",
    "name": "Price to book vs listed peers",
    "category": "Valuation vs peers",
-   "status": "na",
-   "finding": "The price band has not been announced, so the post-issue price to book cannot be computed.",
-   "source": ""
+   "status": "pass",
+   "finding": "Post-issue price to book is about 1.9x (₹4,438 cr market cap vs about ₹2,395 cr post-issue net worth), below the peer median of about 5.2x.",
+   "source": "https://www.investorgain.com/ipo/crystal-crop-protection-ipo/2067/"
   },
   {
    "id": "va3",
    "name": "Market cap to sales vs listed peers",
    "category": "Valuation vs peers",
    "status": "na",
-   "finding": "The price band has not been announced, so the post-issue market cap to sales cannot be computed.",
+   "finding": "Market cap to sales is about 1.4x, but listed-peer sales multiples were not found.",
    "source": ""
   },
   {
    "id": "va4",
    "name": "Recent pre-IPO share price",
    "category": "Valuation vs peers",
-   "status": "na",
-   "finding": "No details of pre-IPO share issues or transfers were found in public sources.",
-   "source": ""
+   "status": "pass",
+   "finding": "A ₹84.2 cr pre-IPO placement was done at ₹272.07 per share, in line with the upper band.",
+   "source": "https://eng.ruralvoice.in/agribusiness/crystal-crop-protection-to-launch-rs-456-crore-ipo-on-november-18.html"
   },
   {
    "id": "pg1",
    "name": "Promoter holding after the issue",
    "category": "Promoter & governance",
-   "status": "na",
-   "finding": "Promoters hold 86.69% before the issue; the post-issue holding is not yet published.",
-   "source": ""
+   "status": "pass",
+   "finding": "Promoter holding falls from 84.92% to 75.85% after the issue.",
+   "source": "https://www.investorgain.com/ipo/crystal-crop-protection-ipo/2067/"
   },
   {
    "id": "pg2",
@@ -249,24 +249,24 @@
    "id": "is1",
    "name": "Offer for sale share of the issue",
    "category": "Issue structure",
-   "status": "na",
-   "finding": "The OFS of 74.05 lakh shares cannot be valued until the price band is announced.",
-   "source": ""
+   "status": "pass",
+   "finding": "The ₹100.71 cr offer for sale is about 22% of the ₹455.48 cr issue.",
+   "source": "https://upstox.com/news/market-news/ipo/crystal-crop-protection-ipo-opens-nov-18-check-price-band-lot-size-and-key-dates/article-203398/"
   },
   {
    "id": "is2",
    "name": "Free float after listing",
    "category": "Issue structure",
-   "status": "na",
-   "finding": "The issue as a share of post-issue market cap cannot be computed until the price band is announced.",
-   "source": ""
+   "status": "caution",
+   "finding": "The ₹455.5 cr issue is about 10.3% of the ₹4,438 cr post-issue market cap.",
+   "source": "https://www.investorgain.com/ipo/crystal-crop-protection-ipo/2067/"
   },
   {
    "id": "is3",
    "name": "Selling shareholders' cost",
    "category": "Issue structure",
    "status": "na",
-   "finding": "Selling shareholders' acquisition cost was not found in public sources.",
+   "finding": "The selling promoter's average acquisition cost was not found in public sources.",
    "source": ""
   },
   {
@@ -274,7 +274,7 @@
    "name": "Money for growth",
    "category": "Use of proceeds",
    "status": "na",
-   "finding": "Unidentified acquisitions are grouped with general corporate purposes in the remaining ~22% of the fresh issue, so the growth share is not stated.",
+   "finding": "Unidentified acquisitions are grouped with general corporate purposes in the remaining ~₹85 cr of the fresh issue, so the growth share is not stated.",
    "source": ""
   },
   {
@@ -282,15 +282,15 @@
    "name": "Debt repayment share",
    "category": "Use of proceeds",
    "status": "flag",
-   "finding": "₹465.6 cr of the ₹600 cr fresh issue in the DRHP (about 78%) goes to repaying debt of the company and its subsidiary Saffire Crop Science.",
-   "source": "https://hdfcsky.com/ipo/crystal-crop-protection-ipo"
+   "finding": "₹270 cr of the ₹354.8 cr fresh issue (about 76%) goes to repaying borrowings of the company and its subsidiary Saffire Crop Science.",
+   "source": "https://chanakyanipothi.com/crystal-crop-protection-ipo-review/"
   },
   {
    "id": "up3",
    "name": "General corporate purposes",
    "category": "Use of proceeds",
    "status": "na",
-   "finding": "The amount for general corporate purposes has not been quantified.",
+   "finding": "The amount for general corporate purposes has not been quantified separately.",
    "source": ""
   },
   {
@@ -369,7 +369,7 @@
    "Revenue growth (CAGR)",
    "%",
    "high",
-   3.5,
+   18.9,
    [
     null,
     null,
@@ -381,7 +381,7 @@
    "Net profit margin",
    "%",
    "high",
-   4.4,
+   4.6,
    [
     null,
     null,
@@ -393,7 +393,7 @@
    "Return on equity",
    "%",
    "high",
-   8.31,
+   7.94,
    [
     18.83,
     17.44,
@@ -405,7 +405,7 @@
    "Return on capital employed",
    "%",
    "high",
-   null,
+   16.06,
    [
     null,
     null,
@@ -417,7 +417,7 @@
    "Debt to equity",
    "x",
    "low",
-   0.78,
+   0.4,
    [
     null,
     null,
@@ -429,7 +429,7 @@
    "P/E (post-issue, upper band)",
    "x",
    "low",
-   null,
+   30.6,
    [
     17.75,
     45.88,
@@ -441,7 +441,7 @@
    "Price to book (post-issue)",
    "x",
    "low",
-   null,
+   1.85,
    [
     3.37,
     8.0,
@@ -452,29 +452,37 @@
  ],
  "sources": [
   {
-   "url": "https://hdfcsky.com/ipo/crystal-crop-protection-ipo",
-   "title": "Crystal Crop Protection IPO — HDFC Sky"
+   "url": "https://eng.ruralvoice.in/agribusiness/crystal-crop-protection-to-launch-rs-456-crore-ipo-on-november-18.html",
+   "title": "Crystal Crop Protection to launch ₹456 cr IPO — Rural Voice"
   },
   {
-   "url": "https://www.chittorgarh.com/ipo/crystal-crop-protection-ipo/2813/",
-   "title": "Crystal Crop Protection IPO — Chittorgarh"
+   "url": "https://www.investorgain.com/ipo/crystal-crop-protection-ipo/2067/",
+   "title": "Crystal Crop Protection IPO details — Investorgain"
+  },
+  {
+   "url": "https://chanakyanipothi.com/crystal-crop-protection-ipo-review/",
+   "title": "Crystal Crop Protection IPO review — Chanakya Nipothi"
+  },
+  {
+   "url": "https://upstox.com/news/market-news/ipo/crystal-crop-protection-ipo-opens-nov-18-check-price-band-lot-size-and-key-dates/article-203398/",
+   "title": "Crystal Crop Protection IPO opens Nov 18 — Upstox"
+  },
+  {
+   "url": "https://www.global-agriculture.com/crop-protection/crystal-crop-protection-sets-ipo-price-band-at-rs-259-272-issue-to-open-on-november-18/",
+   "title": "Crystal Crop Protection sets price band — Global Agriculture"
   },
   {
    "url": "https://www.chittorgarh.com/ipo-recommendation/crystal-crop-protection-ipo/2813/",
    "title": "Crystal Crop Protection IPO peer comparison — Chittorgarh"
   },
   {
+   "url": "https://www.chittorgarh.com/ipo/crystal-crop-protection-ipo/2813/",
+   "title": "Crystal Crop Protection IPO — Chittorgarh"
+  },
+  {
    "url": "https://www.freepressjournal.in/business/crystal-crop-protection-files-drhp-for-ipo-with-600-crore-fresh-issue",
    "title": "Crystal Crop Protection files DRHP — Free Press Journal"
-  },
-  {
-   "url": "https://www.ipoji.com/ipo/crystal-crop-protection-ipo",
-   "title": "Crystal Crop Protection IPO dates — IPOji"
-  },
-  {
-   "url": "https://chanakyanipothi.com/crystal-crop-protection-ipo-review/",
-   "title": "Crystal Crop Protection IPO review — Chanakya Nipothi"
   }
  ],
- "generatedAt": "2026-11-13T08:00:00+05:30"
+ "generatedAt": "2026-11-14T08:00:00+05:30"
 }

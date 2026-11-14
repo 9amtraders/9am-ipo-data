@@ -1,0 +1,436 @@
+{
+ "id": "watranarentals",
+ "name": "Watrana Rentals",
+ "board": "SME",
+ "sector": "Material handling equipment rental",
+ "exchange": "NSE Emerge",
+ "open": "2026-11-19",
+ "close": "2026-11-23",
+ "listing": "2026-11-27",
+ "band": "₹232 – ₹245",
+ "issueSizeCr": 120.1,
+ "freshCr": 120.1,
+ "ofsCr": 0.0,
+ "lotSize": 600,
+ "summary": "Watrana Rentals, a Delhi company incorporated in 2019, rents out and trades forklifts, stackers, pallet trucks, aerial work platforms and batteries to automotive, tyre, beverage, paper, logistics and airport customers, with 2,646 owned equipment units at June 2026. Revenue rose from ₹130 cr in FY24 to ₹212 cr in FY26 and profit after tax grew 19.4% to ₹29.2 cr in FY26, with return on equity of about 41%. The business is funded largely by debt: borrowings of ₹165 cr at June 2026 were about 1.8 times net worth and grew faster than revenue over FY24–FY26. The ₹120.1 cr issue is entirely fresh, about ₹98 cr of it goes to buying more equipment, and the company is valued at about ₹400 cr, or about 13x earnings, at the upper band.",
+ "score": 51,
+ "checksScore": 61,
+ "drivers": [
+  {
+   "name": "Subscription demand",
+   "weight": 50,
+   "score": 50,
+   "detail": "Subscription not available yet, scored as neutral until bidding opens."
+  },
+  {
+   "name": "Profit growth (RHP)",
+   "weight": 20,
+   "score": 70,
+   "detail": "Profit after tax grew 19.4% in the latest year in the RHP."
+  },
+  {
+   "name": "P/E vs listed peers",
+   "weight": 5,
+   "score": 30,
+   "detail": "Peer P/E figures not found; scored from the P/E check."
+  },
+  {
+   "name": "All 33 checks",
+   "weight": 25,
+   "score": 61,
+   "detail": "Financial health, governance, issue structure, use of proceeds, legal and risk checks."
+  }
+ ],
+ "capReason": "1 red flag took 5 points off.",
+ "counts": {
+  "pass": 15,
+  "caution": 2,
+  "flag": 1,
+  "na": 15
+ },
+ "totalChecks": 33,
+ "confidence": "low",
+ "categories": [
+  {
+   "name": "Financial health",
+   "score": 63,
+   "detail": "3 of 6 checks passed · 1 flag · 1 not found"
+  },
+  {
+   "name": "Profitability",
+   "score": 86,
+   "detail": "4 of 5 checks passed · 1 not found"
+  },
+  {
+   "name": "Valuation vs peers",
+   "score": 30,
+   "detail": "Not found in public sources, scored as neutral"
+  },
+  {
+   "name": "Promoter & governance",
+   "score": 48,
+   "detail": "1 of 4 checks passed · 3 not found"
+  },
+  {
+   "name": "Issue structure",
+   "score": 100,
+   "detail": "3 of 3 checks passed"
+  },
+  {
+   "name": "Use of proceeds",
+   "score": 82,
+   "detail": "3 of 4 checks passed · 1 not found"
+  },
+  {
+   "name": "Legal & litigation",
+   "score": 53,
+   "detail": "1 of 3 checks passed · 2 not found"
+  },
+  {
+   "name": "Risk factors",
+   "score": 35,
+   "detail": "0 of 4 checks passed · 3 not found"
+  }
+ ],
+ "checks": [
+  {
+   "id": "fh1",
+   "name": "Revenue growth",
+   "category": "Financial health",
+   "status": "pass",
+   "finding": "Revenue rose from ₹130.2 cr in FY24 to ₹211.7 cr in FY26, a CAGR of about 27.5%.",
+   "source": "https://www.ipoji.com/ipo/watrana-rentals-ipo"
+  },
+  {
+   "id": "fh2",
+   "name": "Revenue rose every year",
+   "category": "Financial health",
+   "status": "pass",
+   "finding": "Revenue grew in both of the last 2 years: to ₹179.7 cr in FY25 and ₹211.7 cr in FY26.",
+   "source": "https://www.ipoji.com/ipo/watrana-rentals-ipo"
+  },
+  {
+   "id": "fh3",
+   "name": "Debt to equity",
+   "category": "Financial health",
+   "status": "caution",
+   "finding": "Debt to equity was about 1.77 at June 2026 (borrowings ₹164.7 cr vs net worth ₹93.2 cr).",
+   "source": "https://www.ipoji.com/ipo/watrana-rentals-ipo"
+  },
+  {
+   "id": "fh4",
+   "name": "Debt growing slower than revenue",
+   "category": "Financial health",
+   "status": "flag",
+   "finding": "Borrowings rose about 76% (₹93.1 cr to ₹164.1 cr) over FY24–FY26, faster than revenue (about 63%).",
+   "source": "https://www.ipoji.com/ipo/watrana-rentals-ipo"
+  },
+  {
+   "id": "fh5",
+   "name": "Net worth rising",
+   "category": "Financial health",
+   "status": "pass",
+   "finding": "Net worth rose every year: ₹32.0 cr (FY24), ₹56.4 cr (FY25) and ₹85.6 cr (FY26).",
+   "source": "https://www.ipoji.com/ipo/watrana-rentals-ipo"
+  },
+  {
+   "id": "fh6",
+   "name": "Positive operating cash flow",
+   "category": "Financial health",
+   "status": "na",
+   "finding": "Operating cash flow figures were not found in public sources.",
+   "source": ""
+  },
+  {
+   "id": "pr1",
+   "name": "Profit growth",
+   "category": "Profitability",
+   "status": "pass",
+   "finding": "Profit after tax grew about 19.4% in FY26, to ₹29.16 cr from ₹24.43 cr.",
+   "source": "https://www.ipoji.com/ipo/watrana-rentals-ipo"
+  },
+  {
+   "id": "pr2",
+   "name": "Profit margin trend",
+   "category": "Profitability",
+   "status": "pass",
+   "finding": "PAT margin was stable at about 13.9% (FY24), 13.6% (FY25) and 13.8% (FY26).",
+   "source": "https://www.ipoji.com/ipo/watrana-rentals-ipo"
+  },
+  {
+   "id": "pr3",
+   "name": "Return on equity",
+   "category": "Profitability",
+   "status": "pass",
+   "finding": "Return on equity was 41.08%.",
+   "source": "https://www.ipoji.com/ipo/watrana-rentals-ipo"
+  },
+  {
+   "id": "pr4",
+   "name": "Return on capital employed",
+   "category": "Profitability",
+   "status": "pass",
+   "finding": "ROCE was 19.06%.",
+   "source": "https://www.ipoji.com/ipo/watrana-rentals-ipo"
+  },
+  {
+   "id": "pr5",
+   "name": "Margin vs listed peers",
+   "category": "Profitability",
+   "status": "na",
+   "finding": "No listed peers were found in public sources.",
+   "source": ""
+  },
+  {
+   "id": "va1",
+   "name": "P/E vs listed peers",
+   "category": "Valuation vs peers",
+   "status": "na",
+   "finding": "Post-issue P/E is about 13.0x at the upper band, but no listed peers were found for comparison.",
+   "source": ""
+  },
+  {
+   "id": "va2",
+   "name": "Price to book vs listed peers",
+   "category": "Valuation vs peers",
+   "status": "na",
+   "finding": "Post-issue price to book is about 1.9x, but no listed peers were found for comparison.",
+   "source": ""
+  },
+  {
+   "id": "va3",
+   "name": "Market cap to sales vs listed peers",
+   "category": "Valuation vs peers",
+   "status": "na",
+   "finding": "Market cap to sales is about 1.9x, but no listed peers were found for comparison.",
+   "source": ""
+  },
+  {
+   "id": "va4",
+   "name": "Recent pre-IPO share price",
+   "category": "Valuation vs peers",
+   "status": "na",
+   "finding": "No details of pre-IPO share issues or transfers were found in public sources.",
+   "source": ""
+  },
+  {
+   "id": "pg1",
+   "name": "Promoter holding after the issue",
+   "category": "Promoter & governance",
+   "status": "pass",
+   "finding": "Promoter holding falls from 100% to 70% after the issue.",
+   "source": "https://www.ipoji.com/ipo/watrana-rentals-ipo"
+  },
+  {
+   "id": "pg2",
+   "name": "No pledged promoter shares",
+   "category": "Promoter & governance",
+   "status": "na",
+   "finding": "No information on pledged promoter shares was found.",
+   "source": ""
+  },
+  {
+   "id": "pg3",
+   "name": "Related-party transactions",
+   "category": "Promoter & governance",
+   "status": "na",
+   "finding": "Related-party transaction figures were not found in public sources.",
+   "source": ""
+  },
+  {
+   "id": "pg4",
+   "name": "No regulatory action against promoters",
+   "category": "Promoter & governance",
+   "status": "na",
+   "finding": "No information on regulatory action against promoters was found.",
+   "source": ""
+  },
+  {
+   "id": "is1",
+   "name": "Offer for sale share of the issue",
+   "category": "Issue structure",
+   "status": "pass",
+   "finding": "The issue is entirely a fresh issue of 49.02 lakh shares, with no offer for sale.",
+   "source": "https://www.indiaipo.in/ipo-blogs/watrana-rentals-ipo"
+  },
+  {
+   "id": "is2",
+   "name": "Free float after listing",
+   "category": "Issue structure",
+   "status": "pass",
+   "finding": "The ₹120.1 cr issue is about 30% of the ₹400.3 cr post-issue market cap.",
+   "source": "https://www.indiaipo.in/ipo-blogs/watrana-rentals-ipo"
+  },
+  {
+   "id": "is3",
+   "name": "Selling shareholders' cost",
+   "category": "Issue structure",
+   "status": "pass",
+   "finding": "There is no offer for sale, so no selling shareholders.",
+   "source": "https://www.indiaipo.in/ipo-blogs/watrana-rentals-ipo"
+  },
+  {
+   "id": "up1",
+   "name": "Money for growth",
+   "category": "Use of proceeds",
+   "status": "pass",
+   "finding": "About ₹98.12 cr of the ₹120.1 cr issue (about 82%) goes to buying material handling equipment, aerial work platforms and batteries.",
+   "source": "https://lapaasvoice.com/watrana-rentals-to-launch-%E2%82%B9120-crore-ipo-on-november-19-sets-price-band-at-%E2%82%B9232-%E2%82%B9245"
+  },
+  {
+   "id": "up2",
+   "name": "Debt repayment share",
+   "category": "Use of proceeds",
+   "status": "pass",
+   "finding": "None of the proceeds are earmarked for repaying debt.",
+   "source": "https://lapaasvoice.com/watrana-rentals-to-launch-%E2%82%B9120-crore-ipo-on-november-19-sets-price-band-at-%E2%82%B9232-%E2%82%B9245"
+  },
+  {
+   "id": "up3",
+   "name": "General corporate purposes",
+   "category": "Use of proceeds",
+   "status": "na",
+   "finding": "The amount for general corporate purposes has not been stated separately from issue expenses.",
+   "source": ""
+  },
+  {
+   "id": "up4",
+   "name": "No repayment to promoter entities",
+   "category": "Use of proceeds",
+   "status": "pass",
+   "finding": "No proceeds go to repaying loans; the objects are equipment purchases and general corporate purposes.",
+   "source": "https://lapaasvoice.com/watrana-rentals-to-launch-%E2%82%B9120-crore-ipo-on-november-19-sets-price-band-at-%E2%82%B9232-%E2%82%B9245"
+  },
+  {
+   "id": "lg1",
+   "name": "Litigation against the company",
+   "category": "Legal & litigation",
+   "status": "na",
+   "finding": "Litigation amounts were not found in public sources.",
+   "source": ""
+  },
+  {
+   "id": "lg2",
+   "name": "Criminal or regulatory cases",
+   "category": "Legal & litigation",
+   "status": "na",
+   "finding": "No information on criminal or regulatory cases was found.",
+   "source": ""
+  },
+  {
+   "id": "lg3",
+   "name": "Contingent liabilities",
+   "category": "Legal & litigation",
+   "status": "pass",
+   "finding": "Contingent liabilities and commitments were ₹2.77 cr at December 2024 (DRHP), about 5% of net worth then.",
+   "source": "https://hdfcsky.com/news/watrana-rentals-files-drhp-for-ipo"
+  },
+  {
+   "id": "rk1",
+   "name": "Customer concentration",
+   "category": "Risk factors",
+   "status": "na",
+   "finding": "Customer concentration figures were not found in public sources.",
+   "source": ""
+  },
+  {
+   "id": "rk2",
+   "name": "Supplier dependence",
+   "category": "Risk factors",
+   "status": "na",
+   "finding": "Supplier concentration figures were not found in public sources.",
+   "source": ""
+  },
+  {
+   "id": "rk3",
+   "name": "Operating history",
+   "category": "Risk factors",
+   "status": "caution",
+   "finding": "The company was incorporated in November 2019, about 7 years ago.",
+   "source": "https://www.ipoji.com/ipo/watrana-rentals-ipo"
+  },
+  {
+   "id": "rk4",
+   "name": "Auditor remarks",
+   "category": "Risk factors",
+   "status": "na",
+   "finding": "Auditor remarks were not found in public sources.",
+   "source": ""
+  }
+ ],
+ "peers": [],
+ "metrics": [
+  [
+   "Revenue growth (CAGR)",
+   "%",
+   "high",
+   27.5,
+   []
+  ],
+  [
+   "Net profit margin",
+   "%",
+   "high",
+   13.8,
+   []
+  ],
+  [
+   "Return on equity",
+   "%",
+   "high",
+   41.08,
+   []
+  ],
+  [
+   "Return on capital employed",
+   "%",
+   "high",
+   19.06,
+   []
+  ],
+  [
+   "Debt to equity",
+   "x",
+   "low",
+   1.77,
+   []
+  ],
+  [
+   "P/E (post-issue, upper band)",
+   "x",
+   "low",
+   13.03,
+   []
+  ],
+  [
+   "Price to book (post-issue)",
+   "x",
+   "low",
+   1.88,
+   []
+  ]
+ ],
+ "sources": [
+  {
+   "url": "https://www.ipoji.com/ipo/watrana-rentals-ipo",
+   "title": "Watrana Rentals IPO details — IPOji"
+  },
+  {
+   "url": "https://www.indiaipo.in/ipo-blogs/watrana-rentals-ipo",
+   "title": "Watrana Rentals IPO — IndiaIPO"
+  },
+  {
+   "url": "https://lapaasvoice.com/watrana-rentals-to-launch-%E2%82%B9120-crore-ipo-on-november-19-sets-price-band-at-%E2%82%B9232-%E2%82%B9245",
+   "title": "Watrana Rentals to launch ₹120 cr IPO — Lapaas Voice"
+  },
+  {
+   "url": "https://hdfcsky.com/news/watrana-rentals-files-drhp-for-ipo",
+   "title": "Watrana Rentals files DRHP — HDFC Sky"
+  },
+  {
+   "url": "https://www.ipoguru.in/ipo/watrana-rentals-sme-ipo",
+   "title": "Watrana Rentals IPO dates and registrar — IPO Guru"
+  }
+ ],
+ "generatedAt": "2026-11-14T08:00:00+05:30"
+}
