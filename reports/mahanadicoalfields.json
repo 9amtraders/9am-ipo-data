@@ -1,0 +1,488 @@
+{
+ "id": "mahanadicoalfields",
+ "name": "Mahanadi Coalfields",
+ "board": "Mainboard",
+ "sector": "Coal mining",
+ "exchange": "NSE, BSE",
+ "open": "2026-11-19",
+ "close": "2026-11-23",
+ "listing": "2026-11-27",
+ "band": "",
+ "issueSizeCr": 0.0,
+ "freshCr": 0.0,
+ "ofsCr": null,
+ "lotSize": null,
+ "summary": "Mahanadi Coalfields, a Coal India subsidiary incorporated in 1992, mines non-coking coal from 17 mines in Odisha's Talcher and Ib Valley coalfields and produced 218.31 million tonnes in FY26, about 21% of India's output. Revenue from operations slipped from ₹31,634 cr in FY24 to ₹30,550 cr in FY26 and profit after tax fell 1.2% in FY26 to ₹10,698 cr, though return on net worth was 53.9% and the company is almost debt-free. The issue is entirely an offer for sale of 66.18 crore shares (about 10%) by Coal India, so the company receives no money, and the price band had not been announced when this report was written, so valuation checks are not rated. Top 10 customers, mainly thermal power utilities, give 55.9% of revenue, and contingent liabilities are about 39.8% of net worth.",
+ "score": 5,
+ "checksScore": 47,
+ "drivers": [
+  {
+   "name": "Subscription demand",
+   "weight": 50,
+   "score": 50,
+   "detail": "Subscription not available yet, scored as neutral until bidding opens."
+  },
+  {
+   "name": "Profit growth (RHP)",
+   "weight": 20,
+   "score": 10,
+   "detail": "Profit after tax fell 1.2% in the latest year in the RHP."
+  },
+  {
+   "name": "P/E vs listed peers",
+   "weight": 5,
+   "score": 30,
+   "detail": "Peer P/E figures not found; scored from the P/E check."
+  },
+  {
+   "name": "All 33 checks",
+   "weight": 25,
+   "score": 47,
+   "detail": "Financial health, governance, issue structure, use of proceeds, legal and risk checks."
+  }
+ ],
+ "capReason": "7 red flags took 35 points off. Capped at 50 because of 4 or more red flags.",
+ "counts": {
+  "pass": 11,
+  "caution": 4,
+  "flag": 7,
+  "na": 11
+ },
+ "totalChecks": 33,
+ "confidence": "normal",
+ "categories": [
+  {
+   "name": "Financial health",
+   "score": 67,
+   "detail": "4 of 6 checks passed · 2 flags"
+  },
+  {
+   "name": "Profitability",
+   "score": 46,
+   "detail": "2 of 5 checks passed · 2 flags · 1 not found"
+  },
+  {
+   "name": "Valuation vs peers",
+   "score": 30,
+   "detail": "Not found in public sources, scored as neutral"
+  },
+  {
+   "name": "Promoter & governance",
+   "score": 48,
+   "detail": "1 of 4 checks passed · 3 not found"
+  },
+  {
+   "name": "Issue structure",
+   "score": 27,
+   "detail": "0 of 3 checks passed · 1 flag · 1 not found"
+  },
+  {
+   "name": "Use of proceeds",
+   "score": 75,
+   "detail": "3 of 4 checks passed · 1 flag"
+  },
+  {
+   "name": "Legal & litigation",
+   "score": 33,
+   "detail": "0 of 3 checks passed · 1 flag"
+  },
+  {
+   "name": "Risk factors",
+   "score": 52,
+   "detail": "1 of 4 checks passed · 2 not found"
+  }
+ ],
+ "checks": [
+  {
+   "id": "fh1",
+   "name": "Revenue growth",
+   "category": "Financial health",
+   "status": "flag",
+   "finding": "Revenue from operations fell from ₹31,634 cr (FY24) to ₹30,550 cr (FY26), a CAGR of about -1.7%.",
+   "source": "https://www.kotakneo.com/ipo/mahanadi-coalfields-ipo/"
+  },
+  {
+   "id": "fh2",
+   "name": "Revenue rose every year",
+   "category": "Financial health",
+   "status": "flag",
+   "finding": "Revenue from operations fell in both years: ₹31,634 cr, ₹31,353 cr, ₹30,550 cr (FY24–FY26).",
+   "source": "https://www.kotakneo.com/ipo/mahanadi-coalfields-ipo/"
+  },
+  {
+   "id": "fh3",
+   "name": "Debt to equity",
+   "category": "Financial health",
+   "status": "pass",
+   "finding": "Borrowings were about ₹3 cr at March 2026 against net worth of ₹21,371 cr, so debt to equity is close to zero.",
+   "source": "https://univest.in/blogs/mahanadi-coalfields-ipo-sebi-nod-coal-india-10-percent-ofs-key-details"
+  },
+  {
+   "id": "fh4",
+   "name": "Debt growing slower than revenue",
+   "category": "Financial health",
+   "status": "pass",
+   "finding": "Total borrowings fell from ₹3.95 cr (FY24) to ₹3.16 cr (FY26).",
+   "source": "https://www.chittorgarh.com/ipo/mahanadi-coalfields-ipo/3247/"
+  },
+  {
+   "id": "fh5",
+   "name": "Net worth rising",
+   "category": "Financial health",
+   "status": "pass",
+   "finding": "Net worth rose every year: ₹16,120 cr, ₹18,343 cr, ₹21,371 cr (FY24–FY26).",
+   "source": "https://www.chittorgarh.com/ipo/mahanadi-coalfields-ipo/3247/"
+  },
+  {
+   "id": "fh6",
+   "name": "Positive operating cash flow",
+   "category": "Financial health",
+   "status": "pass",
+   "finding": "Operating cash flow was ₹12,478 cr in FY26, above the ₹10,698 cr profit.",
+   "source": "https://www.kotakneo.com/ipo/mahanadi-coalfields-ipo/"
+  },
+  {
+   "id": "pr1",
+   "name": "Profit growth",
+   "category": "Profitability",
+   "status": "flag",
+   "finding": "Profit after tax fell 1.2% in FY26, to ₹10,698 cr from ₹10,825 cr, after falling from ₹11,842 cr in FY24.",
+   "source": "https://www.chittorgarh.com/ipo/mahanadi-coalfields-ipo/3247/"
+  },
+  {
+   "id": "pr2",
+   "name": "Profit margin trend",
+   "category": "Profitability",
+   "status": "flag",
+   "finding": "PAT as a share of total income fell from about 35.3% (FY24) to 31.6% (FY26).",
+   "source": "https://www.chittorgarh.com/ipo/mahanadi-coalfields-ipo/3247/"
+  },
+  {
+   "id": "pr3",
+   "name": "Return on equity",
+   "category": "Profitability",
+   "status": "pass",
+   "finding": "Return on net worth was 53.87% in FY26, down from 62.82% in FY25 and 80.56% in FY24.",
+   "source": "https://www.kotakneo.com/ipo/mahanadi-coalfields-ipo/"
+  },
+  {
+   "id": "pr4",
+   "name": "Return on capital employed",
+   "category": "Profitability",
+   "status": "pass",
+   "finding": "ROCE was 73.26% in FY26.",
+   "source": "https://www.chittorgarh.com/ipo/mahanadi-coalfields-ipo/3247/"
+  },
+  {
+   "id": "pr5",
+   "name": "Margin vs listed peers",
+   "category": "Profitability",
+   "status": "na",
+   "finding": "Peer margins were not found in public sources.",
+   "source": ""
+  },
+  {
+   "id": "va1",
+   "name": "P/E vs listed peers",
+   "category": "Valuation vs peers",
+   "status": "na",
+   "finding": "The price band had not been announced, so the post-issue P/E cannot be computed.",
+   "source": ""
+  },
+  {
+   "id": "va2",
+   "name": "Price to book vs listed peers",
+   "category": "Valuation vs peers",
+   "status": "na",
+   "finding": "The price band had not been announced, so the post-issue price to book cannot be computed.",
+   "source": ""
+  },
+  {
+   "id": "va3",
+   "name": "Market cap to sales vs listed peers",
+   "category": "Valuation vs peers",
+   "status": "na",
+   "finding": "The price band had not been announced, so market cap to sales cannot be computed.",
+   "source": ""
+  },
+  {
+   "id": "va4",
+   "name": "Recent pre-IPO share price",
+   "category": "Valuation vs peers",
+   "status": "na",
+   "finding": "No details of pre-IPO share issues or transfers were found in public sources.",
+   "source": ""
+  },
+  {
+   "id": "pg1",
+   "name": "Promoter holding after the issue",
+   "category": "Promoter & governance",
+   "status": "pass",
+   "finding": "Promoters (Coal India and the President of India) hold 100% before and 90% after the issue.",
+   "source": "https://www.chittorgarh.com/ipo/mahanadi-coalfields-ipo/3247/"
+  },
+  {
+   "id": "pg2",
+   "name": "No pledged promoter shares",
+   "category": "Promoter & governance",
+   "status": "na",
+   "finding": "No information on pledged promoter shares was found.",
+   "source": ""
+  },
+  {
+   "id": "pg3",
+   "name": "Related-party transactions",
+   "category": "Promoter & governance",
+   "status": "na",
+   "finding": "Related-party transaction figures were not found in public sources.",
+   "source": ""
+  },
+  {
+   "id": "pg4",
+   "name": "No regulatory action against promoters",
+   "category": "Promoter & governance",
+   "status": "na",
+   "finding": "No information on regulatory action against promoters was found.",
+   "source": ""
+  },
+  {
+   "id": "is1",
+   "name": "Offer for sale share of the issue",
+   "category": "Issue structure",
+   "status": "flag",
+   "finding": "The whole issue is an offer for sale of 66.18 crore shares by Coal India; there is no fresh issue.",
+   "source": "https://www.chittorgarh.com/ipo/mahanadi-coalfields-ipo/3247/"
+  },
+  {
+   "id": "is2",
+   "name": "Free float after listing",
+   "category": "Issue structure",
+   "status": "caution",
+   "finding": "The offer is about 10% of the company; promoter holding falls from 100% to 90%.",
+   "source": "https://www.chittorgarh.com/ipo/mahanadi-coalfields-ipo/3247/"
+  },
+  {
+   "id": "is3",
+   "name": "Selling shareholders' cost",
+   "category": "Issue structure",
+   "status": "na",
+   "finding": "Coal India's acquisition cost per share was not found in public sources.",
+   "source": ""
+  },
+  {
+   "id": "up1",
+   "name": "Money for growth",
+   "category": "Use of proceeds",
+   "status": "flag",
+   "finding": "The company receives none of the proceeds, so nothing funds capex or expansion.",
+   "source": "https://www.outlookmoney.com/amp/story/invest/coal-india-subsidiary-mahanadi-coal-fields-files-draft-papers-for-ipo-key-details-you-must-know"
+  },
+  {
+   "id": "up2",
+   "name": "Debt repayment share",
+   "category": "Use of proceeds",
+   "status": "pass",
+   "finding": "No proceeds go to repaying debt; all go to the selling shareholder.",
+   "source": "https://www.outlookmoney.com/amp/story/invest/coal-india-subsidiary-mahanadi-coal-fields-files-draft-papers-for-ipo-key-details-you-must-know"
+  },
+  {
+   "id": "up3",
+   "name": "General corporate purposes",
+   "category": "Use of proceeds",
+   "status": "pass",
+   "finding": "No proceeds go to general corporate purposes; all go to the selling shareholder.",
+   "source": "https://www.outlookmoney.com/amp/story/invest/coal-india-subsidiary-mahanadi-coal-fields-files-draft-papers-for-ipo-key-details-you-must-know"
+  },
+  {
+   "id": "up4",
+   "name": "No repayment to promoter entities",
+   "category": "Use of proceeds",
+   "status": "pass",
+   "finding": "No proceeds reach the company, so none repay loans from promoters or group companies.",
+   "source": "https://www.outlookmoney.com/amp/story/invest/coal-india-subsidiary-mahanadi-coal-fields-files-draft-papers-for-ipo-key-details-you-must-know"
+  },
+  {
+   "id": "lg1",
+   "name": "Litigation against the company",
+   "category": "Legal & litigation",
+   "status": "flag",
+   "finding": "The DRHP lists criminal, tax and regulatory proceedings totalling ₹9,084.8 cr (about 42% of FY26 net worth), plus a CAG observation on state mineral levies with potential exposure of about ₹31,228 cr.",
+   "source": "https://univest.in/blogs/mahanadi-coalfields-ipo-sebi-nod-coal-india-10-percent-ofs-key-details"
+  },
+  {
+   "id": "lg2",
+   "name": "Criminal or regulatory cases",
+   "category": "Legal & litigation",
+   "status": "caution",
+   "finding": "The DRHP lists 47 criminal and 52 regulatory proceedings; public sources don't say how material they are.",
+   "source": "https://univest.in/blogs/mahanadi-coalfields-ipo-sebi-nod-coal-india-10-percent-ofs-key-details"
+  },
+  {
+   "id": "lg3",
+   "name": "Contingent liabilities",
+   "category": "Legal & litigation",
+   "status": "caution",
+   "finding": "Contingent liabilities were 39.80% of net worth at March 31, 2026.",
+   "source": "https://www.kotakneo.com/ipo/mahanadi-coalfields-ipo/"
+  },
+  {
+   "id": "rk1",
+   "name": "Customer concentration",
+   "category": "Risk factors",
+   "status": "caution",
+   "finding": "Top 10 customers gave 55.94% of FY26 revenue from operations; thermal power was 68.62% of sales.",
+   "source": "https://www.kotakneo.com/ipo/mahanadi-coalfields-ipo/"
+  },
+  {
+   "id": "rk2",
+   "name": "Supplier dependence",
+   "category": "Risk factors",
+   "status": "na",
+   "finding": "Top 10 contractors took 60.02% of contract expenses, but no single-supplier share was found.",
+   "source": ""
+  },
+  {
+   "id": "rk3",
+   "name": "Operating history",
+   "category": "Risk factors",
+   "status": "pass",
+   "finding": "Incorporated on April 3, 1992, giving over 34 years of operating history.",
+   "source": "https://trendlyne.com/ipo/detail/2586/mahanadi-coalfields-ltd/"
+  },
+  {
+   "id": "rk4",
+   "name": "Auditor remarks",
+   "category": "Risk factors",
+   "status": "na",
+   "finding": "Auditor remarks were not found in public sources.",
+   "source": ""
+  }
+ ],
+ "peers": [
+  "Coal India",
+  "Bharat Coking Coal",
+  "NMDC",
+  "PT Bukit Asam"
+ ],
+ "metrics": [
+  [
+   "Revenue growth (CAGR)",
+   "%",
+   "high",
+   -1.73,
+   [
+    null,
+    null,
+    null,
+    null
+   ]
+  ],
+  [
+   "Net profit margin",
+   "%",
+   "high",
+   31.56,
+   [
+    null,
+    null,
+    null,
+    null
+   ]
+  ],
+  [
+   "Return on equity",
+   "%",
+   "high",
+   53.87,
+   [
+    null,
+    null,
+    null,
+    null
+   ]
+  ],
+  [
+   "Return on capital employed",
+   "%",
+   "high",
+   73.26,
+   [
+    null,
+    null,
+    null,
+    null
+   ]
+  ],
+  [
+   "Debt to equity",
+   "x",
+   "low",
+   0.0,
+   [
+    null,
+    null,
+    null,
+    null
+   ]
+  ],
+  [
+   "P/E (post-issue, upper band)",
+   "x",
+   "low",
+   null,
+   [
+    7.95,
+    null,
+    10.24,
+    10.0
+   ]
+  ],
+  [
+   "Price to book (post-issue)",
+   "x",
+   "low",
+   null,
+   [
+    null,
+    null,
+    null,
+    null
+   ]
+  ]
+ ],
+ "sources": [
+  {
+   "url": "https://www.chittorgarh.com/ipo/mahanadi-coalfields-ipo/3247/",
+   "title": "Mahanadi Coalfields IPO details — Chittorgarh"
+  },
+  {
+   "url": "https://www.kotakneo.com/ipo/mahanadi-coalfields-ipo/",
+   "title": "Mahanadi Coalfields IPO — Kotak Neo"
+  },
+  {
+   "url": "https://univest.in/blogs/mahanadi-coalfields-ipo-sebi-nod-coal-india-10-percent-ofs-key-details",
+   "title": "Mahanadi Coalfields IPO key details — Univest"
+  },
+  {
+   "url": "https://trendlyne.com/ipo/detail/2586/mahanadi-coalfields-ltd/",
+   "title": "Mahanadi Coalfields IPO — Trendlyne"
+  },
+  {
+   "url": "https://www.outlookmoney.com/amp/story/invest/coal-india-subsidiary-mahanadi-coal-fields-files-draft-papers-for-ipo-key-details-you-must-know",
+   "title": "Mahanadi Coalfields files draft papers — Outlook Money"
+  },
+  {
+   "url": "https://www.ipoji.com/ipo/mahanadi-coalfields-ipo",
+   "title": "Mahanadi Coalfields IPO dates and quotas — IPOji"
+  },
+  {
+   "url": "https://theopenpress.in/article/mahanadi-coalfields-files-red-herring-prospectus-ipo-open-november-19",
+   "title": "Mahanadi Coalfields files RHP — The Open Press"
+  },
+  {
+   "url": "https://etvbharat.com/hi/business/upcoming-ipos-next-week-16-to-20-november-mahanadi-coalfields-crystal-crop-protection-ipo-price-band-lot-size-subscription-date-details-hin26111401046",
+   "title": "Upcoming IPOs next week — ETV Bharat"
+  }
+ ],
+ "generatedAt": "2026-11-15T08:00:00+05:30"
+}

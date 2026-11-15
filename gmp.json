@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-14",
+ "updated": "2026-11-15",
  "ipos": {
   "bombaycoatedspecialsteels": {
    "name": "Bombay Coated & Special Steels",
@@ -452,6 +452,27 @@
      "high": 40,
      "sources": [
       "https://www.investorgain.com/ipo/crystal-crop-protection-ipo/2067/"
+     ]
+    },
+    {
+     "date": "2026-11-15",
+     "low": 27,
+     "high": 27,
+     "sources": [
+      "https://www.investorgain.com/gmp/crystal-crop-protection-ipo-gmp/2067/"
+     ]
+    }
+   ]
+  },
+  "watranarentals": {
+   "name": "Watrana Rentals",
+   "readings": [
+    {
+     "date": "2026-11-15",
+     "low": 22,
+     "high": 22,
+     "sources": [
+      "https://www.investorgain.com/gmp/watrana-rentals-ipo-gmp/1818/"
      ]
     }
    ]

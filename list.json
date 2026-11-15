@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-14",
+ "updated": "2026-11-15",
  "ipos": [
   {
    "name": "Antala Industries",
@@ -22,130 +22,6 @@
     "minAppShares": 4000,
     "retailApps": null,
     "source": "https://www.chittorgarh.com/ipo_subscription/antala-industries-ipo/3221/"
-   }
-  },
-  {
-   "name": "Maxwell Engineering Solutions",
-   "aka": [
-    "Maxwell Engineering"
-   ],
-   "board": "SME",
-   "open": "2026-10-30",
-   "close": "2026-11-03",
-   "listing": "2026-11-06",
-   "band": "₹150 – ₹158",
-   "registrar": "kfin",
-   "allotment": "2026-11-04",
-   "sub": {
-    "qib": 259.45,
-    "nii": 857.65,
-    "retail": 556.09,
-    "total": 536.8,
-    "asOf": "2026-11-03 20:00 (final)",
-    "final": true,
-    "retailShares": 1200000,
-    "minAppShares": 1600,
-    "retailApps": null,
-    "source": "https://www.chittorgarh.com/ipo_news/maxwell-engineering-solutions-ipo/2704/"
-   }
-  },
-  {
-   "name": "Vectras Enprocon",
-   "aka": [],
-   "board": "SME",
-   "open": "2026-10-30",
-   "close": "2026-11-03",
-   "listing": "2026-11-06",
-   "band": "₹99 – ₹105",
-   "registrar": "mufg",
-   "allotment": "2026-11-04",
-   "sub": {
-    "qib": 1.88,
-    "nii": 6.69,
-    "retail": 4.45,
-    "total": 4.2,
-    "asOf": "2026-11-03 17:54 (final)",
-    "final": true,
-    "retailShares": 1680000,
-    "minAppShares": 2400,
-    "retailApps": null,
-    "source": "https://www.chittorgarh.com/ipo_subscription/vectras-enprocon-ipo/2740/"
-   }
-  },
-  {
-   "name": "HGS (India)",
-   "aka": [
-    "HGS India"
-   ],
-   "board": "SME",
-   "open": "2026-10-30",
-   "close": "2026-11-03",
-   "listing": "2026-11-06",
-   "band": "₹114 – ₹120",
-   "registrar": "kfin",
-   "allotment": "2026-11-04",
-   "sub": {
-    "qib": 137.92,
-    "nii": 424.67,
-    "retail": 235.72,
-    "total": 248.58,
-    "asOf": "2026-11-03 20:00 (final)",
-    "final": true,
-    "retailShares": 960000,
-    "minAppShares": 2400,
-    "retailApps": null,
-    "source": "https://www.chittorgarh.com/ipo_news/hgs-india-ipo/2981/"
-   }
-  },
-  {
-   "name": "Johnsoncab Electricals",
-   "aka": [
-    "Johnsoncab",
-    "Johnson Cab Electricals"
-   ],
-   "board": "SME",
-   "open": "2026-10-30",
-   "close": "2026-11-03",
-   "listing": "2026-11-06",
-   "band": "₹190 – ₹200",
-   "registrar": "maashitla",
-   "allotment": "2026-11-04",
-   "sub": {
-    "qib": 20.19,
-    "nii": 42.27,
-    "retail": 17.98,
-    "total": 23.82,
-    "asOf": "2026-11-03 17:54 (final)",
-    "final": true,
-    "retailShares": 933600,
-    "minAppShares": 1200,
-    "retailApps": null,
-    "source": "https://www.chittorgarh.com/ipo_subscription/johnsoncab-electricals-ipo/3217/"
-   }
-  },
-  {
-   "name": "Vedant Poly Fabs",
-   "aka": [
-    "Vedant Polyfabs"
-   ],
-   "board": "SME",
-   "open": "2026-11-02",
-   "close": "2026-11-04",
-   "listing": "2026-11-09",
-   "band": "₹88 – ₹94",
-   "registrar": "cameo",
-   "allotment": "2026-11-05",
-   "sub": {
-    "qib": 1.0,
-    "nii": 1.38,
-    "retail": 2.26,
-    "total": 1.9,
-    "asOf": "2026-11-04 17:00 (final)",
-    "final": true,
-    "retailShares": 3396000,
-    "minAppShares": 2400,
-    "retailApps": null,
-    "source": "https://hdfcsky.com/news/vedant-poly-fabs-ipo-subscription-status-day-3"
    }
   },
   {
@@ -176,6 +52,23 @@
    "listing": "2026-11-27",
    "band": "₹232 – ₹245",
    "registrar": "maashitla",
+   "allotment": "2026-11-25"
+  },
+  {
+   "name": "Mahanadi Coalfields",
+   "aka": [
+    "MCL",
+    "Mahanadi Coal Fields",
+    "MCL IPO",
+    "Mahanadi Coalfield",
+    "Coal India MCL"
+   ],
+   "board": "Mainboard",
+   "open": "2026-11-19",
+   "close": "2026-11-23",
+   "listing": "2026-11-27",
+   "band": "",
+   "registrar": "kfin",
    "allotment": "2026-11-25"
   },
   {
