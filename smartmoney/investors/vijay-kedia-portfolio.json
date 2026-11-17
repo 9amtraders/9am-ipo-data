@@ -76,8 +76,8 @@
    "qty": 2000000,
    "buy": 164.72,
    "date": "18 Aug 2026",
-   "now": 161.0,
-   "now_date": "Nov 2026, from holding value",
+   "now": 158.66,
+   "now_date": "17 Nov 2026, NSE close",
    "sym": "ZAGGLE"
   },
   {
@@ -86,8 +86,8 @@
    "qty": 1498107,
    "buy": 167.0,
    "date": "Jan 2026",
-   "now": 147.52,
-   "now_date": "Nov 2026, from holding value",
+   "now": 144.6,
+   "now_date": "17 Nov 2026, NSE close",
    "sym": "SPMLINFRA"
   },
   {
