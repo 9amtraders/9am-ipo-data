@@ -1,0 +1,264 @@
+{
+ "order": 7,
+ "slug": "rekha-jhunjhunwala-portfolio",
+ "name": "Rekha Jhunjhunwala",
+ "initials": "RJ",
+ "intro": "The Jhunjhunwala family portfolio, held by Rekha Jhunjhunwala, Rare Enterprises and family trusts: latest disclosed holdings and what changed in the September 2026 quarter.",
+ "card_line": "Biggest individual portfolio · Titan worth ₹20,000+ Cr",
+ "stats": [
+  {
+   "label": "Disclosed portfolio",
+   "value": "₹44,286–60,962 Cr",
+   "sub": "Lower figure: her name only",
+   "est": 1
+  },
+  {
+   "label": "Stocks disclosed",
+   "value": "26–27",
+   "sub": "Holdings above 1% only"
+  },
+  {
+   "label": "Largest holding",
+   "value": "Titan",
+   "sub": "5.3% · ₹20,458 Cr"
+  },
+  {
+   "label": "This quarter",
+   "value": "5 small trims",
+   "sub": "No new buys"
+  }
+ ],
+ "no_deals_text": "No 2026 bulk or block deals in her name were found. Changes this year show up only in quarterly filings.",
+ "changes": {
+  "new": [],
+  "add": [],
+  "cut": [
+   "Baazar Style Retail · −0.05 pts",
+   "Canara Bank · −0.04 pts",
+   "VA Tech Wabag · −0.02 pts",
+   "Federal Bank · −0.01 pts",
+   "Tata Motors PV · −0.01 pts"
+  ],
+  "out": [
+   "Raghav Productivity Enhancers (no longer listed; was 4.4% in Mar 2026)"
+  ]
+ },
+ "changes_note": "Star Health fell from 17.1% in March to 3.0% in June 2026; that was the previous quarter.",
+ "holdings_lede": "From the September 2026 filings, valued at 22 October 2026 prices. Stakes combine Rekha Jhunjhunwala, Rare Enterprises and the family trusts.",
+ "holdings": [
+  {
+   "stock": "Titan Company",
+   "qty": 47184470,
+   "stake": "5.3%",
+   "chg": [
+    "same",
+    "No change"
+   ],
+   "value_cr": 20458.2
+  },
+  {
+   "stock": "Inventurus Knowledge Solutions",
+   "qty": 84668326,
+   "stake": "49.3%",
+   "chg": [
+    "same",
+    "No change"
+   ],
+   "value_cr": 14014.3
+  },
+  {
+   "stock": "Metro Brands",
+   "qty": 39153600,
+   "stake": "14.4%",
+   "chg": [
+    "same",
+    "No change"
+   ],
+   "value_cr": 3347.6
+  },
+  {
+   "stock": "Concord Biotech",
+   "qty": 25199240,
+   "stake": "24.1%",
+   "chg": [
+    "same",
+    "No change"
+   ],
+   "value_cr": 3221.5
+  },
+  {
+   "stock": "Fortis Healthcare",
+   "qty": 30350152,
+   "stake": "4.0%",
+   "chg": [
+    "same",
+    "No change"
+   ],
+   "value_cr": 2185.2
+  },
+  {
+   "stock": "Federal Bank",
+   "qty": 59030060,
+   "stake": "2.4%",
+   "chg": [
+    "cut",
+    "−0.01 pts"
+   ],
+   "value_cr": 2045.4
+  },
+  {
+   "stock": "Tata Motors CV",
+   "qty": 48748260,
+   "stake": "1.3%",
+   "chg": [
+    "same",
+    "No change"
+   ],
+   "value_cr": 1994.5
+  },
+  {
+   "stock": "Crisil",
+   "qty": 3799000,
+   "stake": "5.2%",
+   "chg": [
+    "same",
+    "No change"
+   ],
+   "value_cr": 1767.5
+  },
+  {
+   "stock": "Canara Bank",
+   "qty": 125418000,
+   "stake": "1.4%",
+   "chg": [
+    "cut",
+    "−0.04 pts"
+   ],
+   "value_cr": 1497.1
+  },
+  {
+   "stock": "Karur Vysya Bank",
+   "qty": 40185019,
+   "stake": "4.2%",
+   "chg": [
+    "same",
+    "No change"
+   ],
+   "value_cr": 1418.1
+  },
+  {
+   "stock": "Tata Motors PV",
+   "qty": 48798260,
+   "stake": "1.3%",
+   "chg": [
+    "cut",
+    "−0.01 pts"
+   ],
+   "value_cr": 1314.4
+  },
+  {
+   "stock": "Indian Hotels",
+   "qty": 14287765,
+   "stake": "1.0%",
+   "chg": [
+    "same",
+    "No change"
+   ],
+   "value_cr": 1111.7
+  },
+  {
+   "stock": "Star Health",
+   "qty": 17870977,
+   "stake": "3.0%",
+   "chg": [
+    "same",
+    "No change"
+   ],
+   "value_cr": 959.7
+  },
+  {
+   "stock": "Jubilant Pharmova",
+   "qty": 10244000,
+   "stake": "6.4%",
+   "chg": [
+    "same",
+    "No change"
+   ],
+   "value_cr": 953.4
+  },
+  {
+   "stock": "NCC",
+   "qty": 78333266,
+   "stake": "12.5%",
+   "chg": [
+    "same",
+    "No change"
+   ],
+   "value_cr": 939.5
+  }
+ ],
+ "holdings_note": "Holding data from Kalpi's summary of the September 2026 filings. Values move daily with share prices.",
+ "about": "Rekha Jhunjhunwala is the wife of the late investor Rakesh Jhunjhunwala. Since his death in August 2022, the family portfolio has been held by her, their firm Rare Enterprises and family trusts. It is one of the largest disclosed portfolios held by an Indian individual investor family, led by Titan Company.",
+ "schema_desc": "Indian investor; holds the Jhunjhunwala family portfolio with Rare Enterprises and family trusts.",
+ "news": [
+  {
+   "src": "Trendlyne",
+   "date": "Nov 2026",
+   "title": "Rekha Jhunjhunwala trims Baazar Style Retail, Canara Bank, Federal Bank in Sep 2026",
+   "url": "https://trendlyne.com/portfolio/superstar-shareholders/53782/latest/rekha-jhunjhunwala/"
+  }
+ ],
+ "faq": [
+  [
+   "What is Rekha Jhunjhunwala's portfolio worth?",
+   "Holdings in her own name were about ₹44,000–47,000 crore after the September 2026 filings. Including Rare Enterprises and family trusts, the family's disclosed holdings were about ₹60,962 crore across 27 stocks at 22 October 2026 prices."
+  ],
+  [
+   "What did Rekha Jhunjhunwala buy recently?",
+   "No new stocks were added in the September 2026 quarter. The only changes were five small trims, in Baazar Style Retail, Canara Bank, VA Tech Wabag, Federal Bank and Tata Motors PV."
+  ],
+  [
+   "What is her biggest holding?",
+   "Titan Company, a 5.3% stake worth about ₹20,458 crore at 22 October 2026 prices."
+  ],
+  [
+   "How do you know the prices?",
+   "Prices are exact only for bulk and block deals, which the exchanges publish daily. Quarterly filings show shares held but not the price paid, so those gains are shown as not public or estimated."
+  ]
+ ],
+ "sources": [
+  [
+   "Kalpi: Rakesh/Rekha Jhunjhunwala holdings (Sep 2026 filings)",
+   "https://kalpi.ai/superstar-investors/rakesh-jhunjhunwala"
+  ],
+  [
+   "Trendlyne: Rekha Jhunjhunwala holdings",
+   "https://trendlyne.com/portfolio/superstar-shareholders/53782/latest/rekha-jhunjhunwala/"
+  ],
+  [
+   "Primary records: NSE and BSE bulk/block deal data and company shareholding patterns",
+   ""
+  ]
+ ],
+ "meta": {
+  "title": "Rekha Jhunjhunwala Portfolio 2026: Latest Holdings & Net Worth | 9AM Traders",
+  "description": "Rekha Jhunjhunwala portfolio 2026: Titan, Metro Brands, Concord Biotech and 27 disclosed stocks worth ₹60,000+ crore with Rare Enterprises, plus Sep 2026 changes.",
+  "keywords": "rekha jhunjhunwala portfolio, rekha jhunjhunwala latest holdings, rekha jhunjhunwala net worth, rare enterprises portfolio"
+ },
+ "category": "Big investors",
+ "quarter": "September 2026",
+ "updated": "17 November 2026",
+ "updated_iso": "2026-11-17",
+ "tag": "Big investor (HNI) · Data as of Sep 2026 quarter",
+ "h1": "Rekha Jhunjhunwala Portfolio 2026",
+ "pl": [],
+ "deals": [],
+ "timeline": null,
+ "aliases": [
+  "REKHA JHUNJHUNWALA",
+  "RARE ENTERPRISES",
+  "RARE INVESTMENTS"
+ ],
+ "auto_deals": [],
+ "deals_updated": "17 Nov 2026"
+}

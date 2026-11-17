@@ -1,0 +1,421 @@
+{
+ "order": 1,
+ "slug": "ashish-kacholia-portfolio",
+ "name": "Ashish Kacholia",
+ "initials": "AK",
+ "category": "Big investors",
+ "tag": "Big investor (HNI) · Data as of Sep 2026 quarter",
+ "h1": "Ashish Kacholia Portfolio 2026",
+ "quarter": "September 2026",
+ "updated": "17 November 2026",
+ "updated_iso": "2026-11-17",
+ "intro": "Latest disclosed holdings, recent bulk deals with exact prices, and the estimated gain or loss on his recent bets. Every figure links to its source.",
+ "card_line": "Small-cap picker · sold Xpro India in Oct 2026",
+ "stats": [
+  {
+   "label": "Disclosed portfolio",
+   "value": "₹2,606–2,915 Cr",
+   "sub": "Estimates vary by data source",
+   "est": 1
+  },
+  {
+   "label": "Stocks disclosed",
+   "value": "43–46",
+   "sub": "Holdings above 1% only"
+  },
+  {
+   "label": "Latest deal",
+   "value": "19 Oct 2026",
+   "sub": "Sold Xpro India · ₹21.5 Cr"
+  },
+  {
+   "label": "Growth in 2024",
+   "value": "+88%",
+   "sub": "₹1,191 Cr → ₹2,247 Cr"
+  }
+ ],
+ "deals": [
+  {
+   "date": "19 Oct 2026",
+   "stock": "Xpro India",
+   "action": "Sell",
+   "qty": 222000,
+   "price": 970.11
+  },
+  {
+   "date": "23 Jul 2026",
+   "stock": "Dhabriya Polywood",
+   "action": "Sell (full exit)",
+   "qty": 576347,
+   "price": 387.04
+  },
+  {
+   "date": "23 Mar 2026",
+   "stock": "Brand Concepts",
+   "action": "Sell",
+   "qty": 179838,
+   "price": 217
+  },
+  {
+   "date": "20 Mar 2026",
+   "stock": "Aelea Commodities",
+   "action": "Buy",
+   "qty": 773400,
+   "price": 120.5
+  },
+  {
+   "date": "20 Mar 2026",
+   "stock": "Naman Industries Proxima",
+   "action": "Sell",
+   "qty": 1078400,
+   "price": 53.41
+  },
+  {
+   "date": "18 Mar 2026",
+   "stock": "Cosmic CRF",
+   "action": "Sell",
+   "qty": 326800,
+   "price": 650.24
+  },
+  {
+   "date": "18 Mar 2026",
+   "stock": "BEW Engineering",
+   "action": "Sell",
+   "qty": 633500,
+   "price": 84.66
+  },
+  {
+   "date": "9 Oct 2025",
+   "stock": "TechEra Engineering",
+   "action": "Buy",
+   "qty": 200000,
+   "price": 247.1
+  }
+ ],
+ "deals_note": "Naman Industries: exchange data shows Suryavanshi Commotrade Pvt Ltd bought the same 10,78,400 shares at ₹53.41 the same day. Suryavanshi Commotrade also appears next to his name in several shareholding filings.",
+ "pl": [
+  {
+   "type": "paper",
+   "stock": "Aelea Commodities",
+   "qty": 773400,
+   "buy": 120.5,
+   "date": "20 Mar 2026",
+   "now": 106.6,
+   "now_date": "13 Nov 2026",
+   "sym": "ACLD"
+  },
+  {
+   "type": "paper",
+   "stock": "TechEra Engineering",
+   "qty": 200000,
+   "buy": 247.1,
+   "date": "9 Oct 2025",
+   "now": 128.75,
+   "now_date": "11 Nov 2026",
+   "extra": "if still held",
+   "sym": "TECHERA"
+  },
+  {
+   "type": "sale",
+   "stock": "Xpro India",
+   "qty": 222000,
+   "price": 970.11,
+   "date": "19 Oct 2026",
+   "extra": "Cash from the sale. About 2.5 lakh shares were left, if there were no other trades."
+  },
+  {
+   "type": "sale",
+   "stock": "Dhabriya Polywood",
+   "qty": 576347,
+   "price": 387.04,
+   "date": "23 Jul 2026",
+   "extra": "Full exit. He held 5.8% in Dec 2025.",
+   "sym": "DHABRIYA"
+  }
+ ],
+ "changes": {
+  "new": [
+   "ESDS Software Solution · 2.1%",
+   "Ardee Industries · 1.2%"
+  ],
+  "add": [
+   "Indo SMC · 3.0% → 3.3%",
+   "Stove Kraft · 1.7% → 1.9%"
+  ],
+  "cut": [
+   "Xpro India · 3.9% → 2.0%",
+   "Carysil · 3.5% → 2.7%",
+   "Yasho Industries · 2.1% → 1.5%",
+   "Advait Energy · 1.8% → 1.1%",
+   "Texel Industries · 7.9% → 7.4%",
+   "Knowledge Marine · 2.9% → 2.3%",
+   "Beta Drugs · 4.9% → 4.4%"
+  ],
+  "out": [
+   "Dhabriya Polywood (sold in full)",
+   "Fineotex Chemical (2.1% → not listed)"
+  ]
+ },
+ "changes_note": "Back in the filings after a gap: SG Finserve (2.3%), Safari Industries (1.6%) and Concord Control (1.6%). These were not shown in the June data, which may be a missing filing rather than a new buy. Some holdings are filed under different spellings of his name, and we have matched them.",
+ "holdings_lede": "From the September 2026 shareholding filings, at a recent market price. Only stakes above 1% are disclosed, so his real portfolio is larger.",
+ "holdings": [
+  {
+   "stock": "Shaily Engineering Plastics",
+   "qty": 1478980,
+   "stake": "3.2%",
+   "chg": [
+    "same",
+    "No change"
+   ],
+   "value_cr": 458.3
+  },
+  {
+   "stock": "ESDS Software Solution",
+   "qty": 2402000,
+   "stake": "2.1%",
+   "chg": [
+    "new",
+    "New"
+   ],
+   "value_cr": 285.0
+  },
+  {
+   "stock": "Man Industries",
+   "qty": 2277029,
+   "stake": "3.0%",
+   "chg": [
+    "same",
+    "No change"
+   ],
+   "value_cr": 173.8
+  },
+  {
+   "stock": "V-Marc India",
+   "qty": 3966000,
+   "stake": "2.7%",
+   "chg": [
+    "same",
+    "No change"
+   ],
+   "value_cr": 120.6
+  },
+  {
+   "stock": "SG Finserve",
+   "qty": 1544009,
+   "stake": "2.3%",
+   "chg": [
+    "new",
+    "Back in filing"
+   ],
+   "value_cr": 120.5
+  },
+  {
+   "stock": "Tanfac Industries",
+   "qty": 340918,
+   "stake": "1.6%",
+   "chg": [
+    "same",
+    "No change"
+   ],
+   "value_cr": 117.3
+  },
+  {
+   "stock": "Safari Industries",
+   "qty": 790000,
+   "stake": "1.6%",
+   "chg": [
+    "new",
+    "Back in filing"
+   ],
+   "value_cr": 109.9
+  },
+  {
+   "stock": "Balu Forge Industries",
+   "qty": 1890933,
+   "stake": "1.6%",
+   "chg": [
+    "same",
+    "No change"
+   ],
+   "value_cr": 100.5
+  },
+  {
+   "stock": "Beta Drugs",
+   "qty": 492681,
+   "stake": "4.4%",
+   "chg": [
+    "cut",
+    "4.9% → 4.4%"
+   ],
+   "value_cr": 88.8
+  },
+  {
+   "stock": "Faze Three",
+   "qty": 1317554,
+   "stake": "5.4%",
+   "chg": [
+    "same",
+    "No change"
+   ],
+   "value_cr": 75.1
+  },
+  {
+   "stock": "Carysil",
+   "qty": 773111,
+   "stake": "2.7%",
+   "chg": [
+    "cut",
+    "3.5% → 2.7%"
+   ],
+   "value_cr": 73.9
+  },
+  {
+   "stock": "Yasho Industries",
+   "qty": 178984,
+   "stake": "1.5%",
+   "chg": [
+    "cut",
+    "2.1% → 1.5%"
+   ],
+   "value_cr": 66.0
+  },
+  {
+   "stock": "Xpro India",
+   "qty": 471550,
+   "stake": "2.0%",
+   "chg": [
+    "cut",
+    "3.9% → 2.0%"
+   ],
+   "value_cr": 59.7,
+   "gain": "<em class=\"nd\">Sold 2.2 lakh more in Oct</em>"
+  },
+  {
+   "stock": "Stove Kraft",
+   "qty": 634916,
+   "stake": "1.9%",
+   "chg": [
+    "add",
+    "1.7% → 1.9%"
+   ],
+   "value_cr": 48.9
+  },
+  {
+   "stock": "Aelea Commodities",
+   "qty": 773400,
+   "stake": "4.3%",
+   "chg": [
+    "add",
+    "Bought Mar 2026"
+   ],
+   "value_cr": 8.2,
+   "gain": "<span class=\"dn\">−11.5%</span> <em class=\"es\">Est.</em>"
+  }
+ ],
+ "holdings_note": "Values are at Trendlyne's recent price, not on 30 Sep. Related holdings under Suryavanshi Commotrade Pvt Ltd (e.g. Shaily Engineering 1.7%, Beta Drugs 6.1%, BEW Engineering 8.2%) are listed separately in filings and are not included above. Aelea share count is from the March 2026 bulk deal; the filing may show a different count.",
+ "timeline": [
+  {
+   "when": "Dec 2023",
+   "label_value": "₹1,191 Cr",
+   "value": 1191
+  },
+  {
+   "when": "17 Dec 2024",
+   "label_value": "₹2,247 Cr",
+   "value": 2247
+  },
+  {
+   "when": "Nov 2026",
+   "label_value": "~₹2,906 Cr",
+   "value": 2906,
+   "est": 1
+  }
+ ],
+ "about": "Ashish Kacholia is an Indian investor known for picking small and mid-sized listed companies. He is often called an \"ace investor\" in Indian market news. He also invests in private start-ups. His listed portfolio is tracked through the shareholding filings that companies submit to NSE and BSE every quarter, and through bulk-deal records published daily by the exchanges.",
+ "schema_desc": "Indian investor known for investing in small and mid-sized Indian listed companies.",
+ "news": [
+  {
+   "src": "Trendlyne",
+   "date": "21 Oct 2026",
+   "title": "Kacholia sells 0.9% stake in Xpro India via bulk deal",
+   "url": "https://trendlyne.com/posts/5903915/market-trades-lower-superstar-investor-ashish-kacholia-sells-0-9-stake-in-xpro"
+  },
+  {
+   "src": "TradingView News",
+   "date": "Nov 2026",
+   "title": "Q2 portfolio: ESDS Software, Ardee Industries, SG Finserve among new stocks",
+   "url": "https://www.tradingview.com/news/moodys:b305e50b9db99:0-ashish-kacholia-q2-portfolio-what-s-in-what-s-out-esds-software-ardee-industries-sg-finserve-among-new-stocks-list/"
+  },
+  {
+   "src": "DSIJ",
+   "date": "Jul 2026",
+   "title": "Kacholia exits Dhabriya Polywood in ₹22.29 crore bulk deal",
+   "url": "https://insights.dsij.in/dsijarticledetail/ashish-kacholia-exits-this-multibagger-low-pe-stock-through-rs-2229-crore-bulk-deal-abakkus-venture-opportunities-fund-acquires-601341-shares-check-details-58564"
+  },
+  {
+   "src": "Trade Brains",
+   "date": "23 Mar 2026",
+   "title": "Kacholia sells 8.25% stake in Naman Industries",
+   "url": "https://tradebrains.in/stock-in-focus-as-ashish-kacholia-sells-8-25-stake-via-block-deal/"
+  }
+ ],
+ "faq": [
+  [
+   "What is Ashish Kacholia's portfolio worth?",
+   "His publicly disclosed holdings were estimated at about ₹2,606–2,915 crore across 43–46 stocks after the September 2026 filings. Different data sites use different prices and name matches, so estimates vary."
+  ],
+  [
+   "What did Ashish Kacholia buy recently?",
+   "New stakes in the September 2026 quarter include ESDS Software Solution (2.1%) and Ardee Industries (1.2%), and he raised his stake in Indo SMC to 3.3%."
+  ],
+  [
+   "What did he sell recently?",
+   "He sold 2,22,000 shares of Xpro India at ₹970.11 on 19 October 2026 and exited Dhabriya Polywood at ₹387.04 on 23 July 2026, both via bulk deals."
+  ],
+  [
+   "How do you know the prices?",
+   "Prices are exact only for bulk and block deals, which the exchanges publish daily. Quarterly filings show shares held but not the price paid, so those gains are shown as not public or estimated."
+  ]
+ ],
+ "sources": [
+  [
+   "Trendlyne: Ashish Kacholia holdings (Sep 2026 filings)",
+   "https://trendlyne.com/portfolio/superstar-shareholders/53746/latest/ashish-kacholia/"
+  ],
+  [
+   "Trendlyne: Ashish Kacholia bulk and block deals",
+   "https://trendlyne.com/portfolio/bulk-block-deals/53746/ashish-kacholia/"
+  ],
+  [
+   "TradingView News: Q2 portfolio changes",
+   "https://www.tradingview.com/news/moodys:b305e50b9db99:0-ashish-kacholia-q2-portfolio-what-s-in-what-s-out-esds-software-ardee-industries-sg-finserve-among-new-stocks-list/"
+  ],
+  [
+   "Business Standard: portfolio growth in 2024",
+   "https://www.business-standard.com/india-news/investors-wealth-growth-2024-ashish-kacholia-mukul-agrawal-hemendra-kothari-124122000506_1.html"
+  ],
+  [
+   "DSIJ: TechEra Engineering bulk deal, Oct 2025",
+   "https://insights.dsij.in/dsijarticledetail/ashish-kacholia-bought-200000-shares-in-bulk-deal-this-aerospace-defense-company-stock-hits-5-upper-circuit-on-october-9-2025-id003-53142"
+  ],
+  [
+   "Recent share prices: Aelea Commodities ₹106.60 (BSE close, 13 Nov 2026); TechEra Engineering ₹128.75 (NSE, 11 Nov 2026)",
+   ""
+  ],
+  [
+   "Primary records: NSE and BSE bulk/block deal data and company shareholding patterns",
+   ""
+  ]
+ ],
+ "meta": {
+  "title": "Ashish Kacholia Portfolio 2026: Latest Holdings, Bulk Deals & Est. Gains | 9AM Traders",
+  "description": "Ashish Kacholia portfolio 2026: latest holdings, new buys and sells, bulk deals with exact prices and estimated gains on his recent bets. Sources on every figure.",
+  "keywords": "ashish kacholia portfolio, ashish kacholia latest holdings, ashish kacholia bulk deals, ashish kacholia net worth"
+ },
+ "aliases": [
+  "ASHISH KACHOLIA",
+  "SURYAVANSHI COMMOTRADE"
+ ],
+ "auto_deals": [],
+ "deals_updated": "17 Nov 2026"
+}

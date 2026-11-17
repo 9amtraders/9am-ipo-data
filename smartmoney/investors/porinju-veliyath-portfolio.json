@@ -1,0 +1,219 @@
+{
+ "order": 10,
+ "slug": "porinju-veliyath-portfolio",
+ "name": "Porinju Veliyath",
+ "initials": "PV",
+ "intro": "Porinju Veliyath's latest disclosed holdings, in his own name and through his firm Equity Intelligence, and his four new small-cap stakes in the September 2026 quarter.",
+ "card_line": "4 new small-caps in Sep 2026 · cut Orient Bell",
+ "stats": [
+  {
+   "label": "Disclosed portfolio",
+   "value": "₹49 Cr – ₹246 Cr",
+   "sub": "Own name only vs incl. his firm",
+   "est": 1
+  },
+  {
+   "label": "Stocks disclosed",
+   "value": "6–15",
+   "sub": "Own name vs incl. firm"
+  },
+  {
+   "label": "New this quarter",
+   "value": "4",
+   "sub": "Veegaland, RPSG, Ansal, Shigan"
+  },
+  {
+   "label": "Biggest own holding",
+   "value": "Aurum Proptech",
+   "sub": "1.69% · ₹35.5 Cr"
+  }
+ ],
+ "deals": [
+  {
+   "date": "Dec 2020",
+   "stock": "BEML",
+   "via": "Equity Intelligence India",
+   "action": "Buy",
+   "qty": 265000,
+   "price": 847.63
+  }
+ ],
+ "deals_note": "No 2026 bulk deals were found, so an older deal by his firm is shown.",
+ "changes": {
+  "new": [
+   "Ansal Buildwell · 3.2%",
+   "Veegaland Developers · 2.2%",
+   "Shigan Quantum Technologies · 1.5%",
+   "RPSG Ventures · 1.1%"
+  ],
+  "add": [
+   "AeonX Digital · +0.11 pts"
+  ],
+  "cut": [
+   "Orient Bell · −0.85 pts",
+   "Aurum Proptech · −0.41 pts",
+   "Kerala Ayurveda · −0.19 pts"
+  ],
+  "out": []
+ },
+ "changes_note": "New stakes include holdings through Equity Intelligence India.",
+ "holdings_lede": "From the September 2026 filings. Shares and values are shown for holdings in his own name; new stakes through his firm show stake only.",
+ "holdings": [
+  {
+   "stock": "Aurum Proptech",
+   "qty": 1635000,
+   "stake": "1.69%",
+   "chg": [
+    "cut",
+    "−0.41 pts"
+   ],
+   "value_cr": 35.5
+  },
+  {
+   "stock": "Kerala Ayurveda",
+   "qty": 418063,
+   "stake": "3.22%",
+   "chg": [
+    "cut",
+    "−0.19 pts"
+   ],
+   "value_cr": 5.8
+  },
+  {
+   "stock": "Duroply Industries",
+   "qty": 359263,
+   "stake": "3.31%",
+   "chg": [
+    "same",
+    "No change"
+   ],
+   "value_cr": 3.6
+  },
+  {
+   "stock": "AeonX Digital",
+   "qty": 179481,
+   "stake": "3.87%",
+   "chg": [
+    "add",
+    "+0.11 pts"
+   ],
+   "value_cr": 2.0
+  },
+  {
+   "stock": "Ansal Buildwell",
+   "qty": null,
+   "stake": "3.2%",
+   "chg": [
+    "new",
+    "New"
+   ],
+   "value_cr": null
+  },
+  {
+   "stock": "Veegaland Developers",
+   "qty": null,
+   "stake": "2.2%",
+   "chg": [
+    "new",
+    "New"
+   ],
+   "value_cr": null
+  },
+  {
+   "stock": "Shigan Quantum Technologies",
+   "qty": null,
+   "stake": "1.5%",
+   "chg": [
+    "new",
+    "New"
+   ],
+   "value_cr": null
+  },
+  {
+   "stock": "RPSG Ventures",
+   "qty": null,
+   "stake": "1.1%",
+   "chg": [
+    "new",
+    "New"
+   ],
+   "value_cr": null
+  }
+ ],
+ "holdings_note": "Own-name values from Trendlyne at a recent price. Duroply value worked out from shares × price.",
+ "about": "Porinju Veliyath is an Indian investor who started his career in Mumbai as a floor trader. He is the managing director and portfolio manager of Equity Intelligence India, and is known for bets on small companies, many of them from Kerala.",
+ "schema_desc": "Indian investor and managing director of Equity Intelligence India.",
+ "news": [
+  {
+   "src": "Trendlyne",
+   "date": "Nov 2026",
+   "title": "Porinju Veliyath adds Veegaland, RPSG Ventures, Ansal Buildwell, Shigan Quantum",
+   "url": "https://trendlyne.com/portfolio/superstar-shareholders/53777/latest/porinju-v-veliyath/"
+  },
+  {
+   "src": "Business Standard",
+   "date": "Jun 2025",
+   "title": "Porinju Veliyath portfolio stock Kerala Ayurveda zooms 20%",
+   "url": "https://www.business-standard.com/markets/news/porinju-veliyath-portfolio-stock-zooms-20-on-huge-volumes-do-you-own-125062300478_1.html"
+  }
+ ],
+ "faq": [
+  [
+   "What is Porinju Veliyath's portfolio worth?",
+   "Holdings in his own name were about ₹49 crore across 6 stocks after the September 2026 filings. Including Equity Intelligence, Trendlyne shows about ₹206–246 crore across 15 stocks."
+  ],
+  [
+   "What did Porinju Veliyath buy recently?",
+   "Four new stakes in the September 2026 quarter: Ansal Buildwell (3.2%), Veegaland Developers (2.2%), Shigan Quantum Technologies (1.5%) and RPSG Ventures (1.1%)."
+  ],
+  [
+   "What did he sell recently?",
+   "He cut his stake in Orient Bell by 0.85 points and trimmed Aurum Proptech and Kerala Ayurveda."
+  ],
+  [
+   "How do you know the prices?",
+   "Prices are exact only for bulk and block deals, which the exchanges publish daily. Quarterly filings show shares held but not the price paid, so those gains are shown as not public or estimated."
+  ]
+ ],
+ "sources": [
+  [
+   "Trendlyne: Porinju Veliyath holdings (own name)",
+   "https://trendlyne.com/portfolio/superstar-shareholders/custom/?query=porinju+veliyath"
+  ],
+  [
+   "Trendlyne: Porinju V Veliyath incl. Equity Intelligence",
+   "https://trendlyne.com/portfolio/superstar-shareholders/53777/latest/porinju-v-veliyath/"
+  ],
+  [
+   "Business Standard: BEML deal by Equity Intelligence (Dec 2020)",
+   "https://www.business-standard.com/topic/porinju-veliyath"
+  ],
+  [
+   "Wikipedia: Porinju Veliyath",
+   "https://en.wikipedia.org/wiki/Porinju_Veliyath"
+  ],
+  [
+   "Primary records: NSE and BSE bulk/block deal data and company shareholding patterns",
+   ""
+  ]
+ ],
+ "meta": {
+  "title": "Porinju Veliyath Portfolio 2026: Latest Holdings & New Stocks | 9AM Traders",
+  "description": "Porinju Veliyath portfolio 2026: holdings in his name and via Equity Intelligence, 4 new small-cap stakes in Sep 2026 and recent sells, with sources.",
+  "keywords": "porinju veliyath portfolio, porinju veliyath latest holdings, porinju veliyath new stocks, equity intelligence portfolio"
+ },
+ "category": "Big investors",
+ "quarter": "September 2026",
+ "updated": "17 November 2026",
+ "updated_iso": "2026-11-17",
+ "tag": "Big investor (HNI) · Data as of Sep 2026 quarter",
+ "h1": "Porinju Veliyath Portfolio 2026",
+ "pl": [],
+ "timeline": null,
+ "aliases": [
+  "PORINJU VELIYATH",
+  "EQUITY INTELLIGENCE"
+ ],
+ "auto_deals": [],
+ "deals_updated": "17 Nov 2026"
+}

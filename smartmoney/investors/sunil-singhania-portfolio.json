@@ -1,0 +1,329 @@
+{
+ "order": 8,
+ "slug": "sunil-singhania-portfolio",
+ "name": "Sunil Singhania",
+ "initials": "SS",
+ "tag": "Big investor · via Abakkus funds · Sep 2026 quarter",
+ "intro": "Sunil Singhania invests through funds run by his firm Abakkus. Here are the funds' latest disclosed holdings, their 2026 bulk deals with exact prices and how those bets are doing.",
+ "card_line": "Abakkus bought Kacholia's Dhabriya stake · up ~24% on paper",
+ "stats": [
+  {
+   "label": "Disclosed portfolio",
+   "value": "~₹2,219 Cr",
+   "sub": "Across Abakkus funds",
+   "est": 1
+  },
+  {
+   "label": "Stocks disclosed",
+   "value": "~35",
+   "sub": "Holdings above 1% only"
+  },
+  {
+   "label": "Latest deal",
+   "value": "12 Oct 2026",
+   "sub": "Jubilant Pharmova · ₹100.7 Cr"
+  },
+  {
+   "label": "Largest holding",
+   "value": "Dynamatic Tech",
+   "sub": "2.9% · ₹262 Cr"
+  }
+ ],
+ "deals": [
+  {
+   "date": "12 Oct 2026",
+   "stock": "Jubilant Pharmova",
+   "via": "Abakkus Four2Eight Opportunities Fund",
+   "action": "Buy",
+   "qty": 1100000,
+   "price": 915.0
+  },
+  {
+   "date": "29 Sep 2026",
+   "stock": "AXISCADES Technologies",
+   "via": "Abakkus Investment Managers + Diversified Alpha Fund",
+   "action": "Buy",
+   "qty": 1100573,
+   "price": 1824.0
+  },
+  {
+   "date": "23 Jul 2026",
+   "stock": "Dhabriya Polywood",
+   "via": "Abakkus Venture Opportunities Fund",
+   "action": "Buy",
+   "qty": 601341,
+   "price": 387.04
+  }
+ ],
+ "deals_note": "AXISCADES combines three same-day purchases at ₹1,824 (6,04,253 + 2,55,320 + 2,41,000 shares). The Dhabriya Polywood shares were bought when Ashish Kacholia sold his full stake.",
+ "pl": [
+  {
+   "type": "paper",
+   "stock": "Dhabriya Polywood",
+   "qty": 601341,
+   "buy": 387.04,
+   "date": "23 Jul 2026",
+   "now": 480.6,
+   "now_date": "Nov 2026, from holding value",
+   "sym": "DHABRIYA"
+  },
+  {
+   "type": "paper",
+   "stock": "Jubilant Pharmova",
+   "qty": 1100000,
+   "buy": 915.0,
+   "date": "12 Oct 2026",
+   "now": 964.0,
+   "now_date": "Nov 2026, from holding value",
+   "sym": "JUBLPHARMA"
+  }
+ ],
+ "changes": {
+  "new": [
+   "Dhabriya Polywood · 5.6%",
+   "Sejal Glass · 4.4%",
+   "Adroit Industries · 4.2%",
+   "Paramount Communications · 3.6%",
+   "Caliber Mining & Logistics · 3.6%",
+   "BaiKakaji Polymers · 2.8%",
+   "HG Infra Engineering · 1.3%",
+   "QLine Biotech · 1.1%"
+  ],
+  "add": [],
+  "cut": [
+   "Rupa & Company · −1.85 pts",
+   "Indogulf Cropsciences · 4.0% → 3.5%",
+   "Stylam Industries · 2.1% → 2.0%"
+  ],
+  "out": []
+ },
+ "changes_note": "Holdings are spread across several Abakkus funds; we have added them up per company.",
+ "holdings_lede": "From the September 2026 filings, at a recent market price. Totals combine all Abakkus funds holding the stock.",
+ "holdings": [
+  {
+   "stock": "Dynamatic Technologies",
+   "qty": 199728,
+   "stake": "2.9%",
+   "chg": [
+    "same",
+    "No change"
+   ],
+   "value_cr": 262.4
+  },
+  {
+   "stock": "Jubilant Pharmova",
+   "qty": 1835028,
+   "stake": "1.2%",
+   "chg": [
+    "same",
+    "No change"
+   ],
+   "value_cr": 176.9
+  },
+  {
+   "stock": "Carysil",
+   "qty": 1519981,
+   "stake": "5.3%",
+   "chg": [
+    "same",
+    "No change"
+   ],
+   "value_cr": 146.5
+  },
+  {
+   "stock": "Technocraft Industries",
+   "qty": 501179,
+   "stake": "2.2%",
+   "chg": [
+    "new",
+    "New"
+   ],
+   "value_cr": 144.7
+  },
+  {
+   "stock": "IIFL Capital",
+   "qty": 3894795,
+   "stake": "1.2%",
+   "chg": [
+    "same",
+    "No change"
+   ],
+   "value_cr": 137.9
+  },
+  {
+   "stock": "The Anup Engineering",
+   "qty": 715229,
+   "stake": "3.6%",
+   "chg": [
+    "same",
+    "No change"
+   ],
+   "value_cr": 123.4
+  },
+  {
+   "stock": "Stylam Industries",
+   "qty": 335031,
+   "stake": "2.0%",
+   "chg": [
+    "cut",
+    "2.1% → 2.0%"
+   ],
+   "value_cr": 108.4
+  },
+  {
+   "stock": "Ion Exchange",
+   "qty": 2712799,
+   "stake": "1.9%",
+   "chg": [
+    "same",
+    "No change"
+   ],
+   "value_cr": 86.6
+  },
+  {
+   "stock": "Afcom Holdings",
+   "qty": 563520,
+   "stake": "2.0%",
+   "chg": [
+    "same",
+    "No change"
+   ],
+   "value_cr": 85.4
+  },
+  {
+   "stock": "J Kumar Infraprojects",
+   "qty": 1873547,
+   "stake": "2.5%",
+   "chg": [
+    "same",
+    "No change"
+   ],
+   "value_cr": 81.8
+  },
+  {
+   "stock": "All Time Plastics",
+   "qty": 4032258,
+   "stake": "6.2%",
+   "chg": [
+    "same",
+    "No change"
+   ],
+   "value_cr": 81.8
+  },
+  {
+   "stock": "Paramount Communications",
+   "qty": 11904761,
+   "stake": "3.6%",
+   "chg": [
+    "new",
+    "New"
+   ],
+   "value_cr": 79.5
+  },
+  {
+   "stock": "Sejal Glass",
+   "qty": 500000,
+   "stake": "4.4%",
+   "chg": [
+    "new",
+    "New"
+   ],
+   "value_cr": 45.2
+  },
+  {
+   "stock": "Aye Finance",
+   "qty": 2713240,
+   "stake": "1.1%",
+   "chg": [
+    "same",
+    "No change"
+   ],
+   "value_cr": 43.1
+  },
+  {
+   "stock": "Dhabriya Polywood",
+   "qty": 601341,
+   "stake": "5.6%",
+   "chg": [
+    "new",
+    "New"
+   ],
+   "value_cr": 28.9,
+   "gain": "<span class=\"up\">+24.2%</span> <em class=\"es\">Est.</em>"
+  }
+ ],
+ "holdings_note": "Values are Trendlyne's figures at a recent price. 'Price now' in the cards above is worked out from those values (value ÷ shares), so it is approximate. Technocraft shows as new in this data but was held earlier through another fund.",
+ "about": "Sunil Singhania is an Indian fund manager and the founder of Abakkus Asset Manager. He set it up in 2018 after leaving Reliance Mutual Fund, where he was chief investment officer for equities. His listed bets are made through Abakkus funds, and Abakkus Asset Manager filed draft papers with SEBI for its own IPO in September 2026.",
+ "schema_desc": "Indian fund manager and founder of Abakkus Asset Manager.",
+ "news": [
+  {
+   "src": "Business Standard",
+   "date": "Dec 2020",
+   "title": "Technocraft jumps after Abakkus fund buys stake",
+   "url": "https://www.business-standard.com/article/news-cm/technocraft-inds-spurts-after-abakkus-fund-buys-stake-120120800503_1.html"
+  },
+  {
+   "src": "DSIJ",
+   "date": "Jul 2026",
+   "title": "Abakkus Venture Opportunities Fund buys Kacholia's Dhabriya Polywood stake",
+   "url": "https://insights.dsij.in/dsijarticledetail/ashish-kacholia-exits-this-multibagger-low-pe-stock-through-rs-2229-crore-bulk-deal-abakkus-venture-opportunities-fund-acquires-601341-shares-check-details-58564"
+  }
+ ],
+ "faq": [
+  [
+   "What is Sunil Singhania's portfolio worth?",
+   "The Abakkus funds' disclosed holdings were about ₹2,219 crore across roughly 35 stocks after the September 2026 filings, per Trendlyne."
+  ],
+  [
+   "What did Sunil Singhania buy recently?",
+   "Abakkus funds bought 11 lakh Jubilant Pharmova shares at ₹915 on 12 October 2026 and about 11 lakh AXISCADES shares at ₹1,824 on 29 September 2026. New stakes in the September quarter include Dhabriya Polywood, Sejal Glass, Adroit Industries and Paramount Communications."
+  ],
+  [
+   "How is the Dhabriya Polywood bet doing?",
+   "Abakkus bought 6,01,341 shares at ₹387.04 on 23 July 2026. At about ₹481 in November 2026, that was up roughly 24% on paper."
+  ],
+  [
+   "How do you know the prices?",
+   "Prices are exact only for bulk and block deals, which the exchanges publish daily. Quarterly filings show shares held but not the price paid, so those gains are shown as not public or estimated."
+  ]
+ ],
+ "sources": [
+  [
+   "Trendlyne: Sunil Singhania holdings (Sep 2026 filings)",
+   "https://trendlyne.com/portfolio/superstar-shareholders/182955/latest/sunil-singhania-portfolio/"
+  ],
+  [
+   "Trendlyne: Sunil Singhania bulk and block deals",
+   "https://trendlyne.com/portfolio/bulk-block-deals/182955/sunil-singhania/"
+  ],
+  [
+   "DSIJ: Dhabriya Polywood deal",
+   "https://insights.dsij.in/dsijarticledetail/ashish-kacholia-exits-this-multibagger-low-pe-stock-through-rs-2229-crore-bulk-deal-abakkus-venture-opportunities-fund-acquires-601341-shares-check-details-58564"
+  ],
+  [
+   "AltPortFunds: Abakkus IPO filing",
+   "https://www.altportfunds.com/fund-managers/sunil-singhania/"
+  ],
+  [
+   "Primary records: NSE and BSE bulk/block deal data and company shareholding patterns",
+   ""
+  ]
+ ],
+ "meta": {
+  "title": "Sunil Singhania Portfolio 2026: Abakkus Holdings, Bulk Deals & Gains | 9AM Traders",
+  "description": "Sunil Singhania portfolio 2026: Abakkus funds' disclosed holdings, new stocks in Sep 2026, Jubilant and AXISCADES bulk deals with exact prices and estimated gains.",
+  "keywords": "sunil singhania portfolio, abakkus portfolio, sunil singhania latest holdings, sunil singhania bulk deal"
+ },
+ "category": "Big investors",
+ "quarter": "September 2026",
+ "updated": "17 November 2026",
+ "updated_iso": "2026-11-17",
+ "h1": "Sunil Singhania Portfolio 2026",
+ "timeline": null,
+ "aliases": [
+  "ABAKKUS",
+  "SUNIL SINGHANIA"
+ ],
+ "auto_deals": [],
+ "deals_updated": "17 Nov 2026"
+}

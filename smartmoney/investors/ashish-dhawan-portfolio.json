@@ -1,0 +1,278 @@
+{
+ "order": 4,
+ "slug": "ashish-dhawan-portfolio",
+ "name": "Ashish Dhawan",
+ "initials": "AD",
+ "category": "Big investors",
+ "tag": "Big investor (HNI) · Data as of Sep 2026 quarter",
+ "h1": "Ashish Dhawan Portfolio 2026",
+ "quarter": "September 2026",
+ "updated": "17 November 2026",
+ "updated_iso": "2026-11-17",
+ "intro": "Ashish Dhawan's latest disclosed holdings, his new stakes in the September 2026 quarter and how his 2026 Bluspring purchase has done.",
+ "card_line": "Bluspring bet up ~236% on paper · new Equitas stake",
+ "stats": [
+  {
+   "label": "Disclosed portfolio",
+   "value": "₹2,128–2,177 Cr",
+   "sub": "Estimates vary by price date",
+   "est": 1
+  },
+  {
+   "label": "Stocks disclosed",
+   "value": "13",
+   "sub": "Holdings above 1% only"
+  },
+  {
+   "label": "Best recent bet",
+   "value": "+236%",
+   "sub": "Bluspring, on paper",
+   "est": 1
+  },
+  {
+   "label": "Biggest holding",
+   "value": "Religare",
+   "sub": "7.33% · ₹546 Cr"
+  }
+ ],
+ "deals": [
+  {
+   "date": "23 Mar 2026",
+   "stock": "Bluspring Enterprises",
+   "action": "Buy",
+   "qty": 1700000,
+   "price": 45.55
+  }
+ ],
+ "deals_note": "This purchase took his Bluspring stake from 4.96% to 6.10%, per his disclosure to the exchange.",
+ "pl": [
+  {
+   "type": "paper",
+   "stock": "Bluspring Enterprises",
+   "qty": 1700000,
+   "buy": 45.55,
+   "date": "23 Mar 2026",
+   "now": 153.24,
+   "now_date": "Nov 2026, Trendlyne",
+   "extra": "on this lot only",
+   "sym": "BLUSPRING"
+  }
+ ],
+ "changes": {
+  "new": [
+   "Equitas Small Finance Bank · 4.10%",
+   "Allcargo Global · 1.00%"
+  ],
+  "add": [
+   "Religare Enterprises · +2.09 pts → 7.33%"
+  ],
+  "cut": [
+   "Quess Corp · −0.01 pts",
+   "Northern Arc Capital · −0.01 pts"
+  ],
+  "out": []
+ },
+ "changes_note": "Mahindra & Mahindra Financial Services is shown by data sites as below 1%, so it no longer appears in filings.",
+ "holdings_lede": "From the September 2026 shareholding filings, at a recent market price.",
+ "holdings": [
+  {
+   "stock": "Religare Enterprises",
+   "qty": 25281090,
+   "stake": "7.33%",
+   "chg": [
+    "add",
+    "+2.09 pts"
+   ],
+   "value_cr": 546.4
+  },
+  {
+   "stock": "IIFL Finance",
+   "qty": 5673406,
+   "stake": "1.33%",
+   "chg": [
+    "same",
+    "No change"
+   ],
+   "value_cr": 319.0
+  },
+  {
+   "stock": "Equitas Small Finance Bank",
+   "qty": 46870000,
+   "stake": "4.10%",
+   "chg": [
+    "new",
+    "New"
+   ],
+   "value_cr": 268.0
+  },
+  {
+   "stock": "Quess Corp",
+   "qty": 7312080,
+   "stake": "4.89%",
+   "chg": [
+    "cut",
+    "−0.01 pts"
+   ],
+   "value_cr": 237.3
+  },
+  {
+   "stock": "AGI Greenpac",
+   "qty": 3100000,
+   "stake": "4.79%",
+   "chg": [
+    "same",
+    "No change"
+   ],
+   "value_cr": 202.5
+  },
+  {
+   "stock": "Greenlam Industries",
+   "qty": 9628420,
+   "stake": "3.77%",
+   "chg": [
+    "same",
+    "No change"
+   ],
+   "value_cr": 201.3
+  },
+  {
+   "stock": "Bluspring Enterprises",
+   "qty": 9594503,
+   "stake": "6.42%",
+   "chg": [
+    "same",
+    "No change"
+   ],
+   "value_cr": 147.0,
+   "gain": "<span class=\"up\">+236% on Mar lot</span> <em class=\"es\">Est.</em>"
+  },
+  {
+   "stock": "RPSG Ventures",
+   "qty": 1234286,
+   "stake": "3.73%",
+   "chg": [
+    "same",
+    "No change"
+   ],
+   "value_cr": 102.2
+  },
+  {
+   "stock": "Northern Arc Capital",
+   "qty": 3500000,
+   "stake": "2.16%",
+   "chg": [
+    "cut",
+    "−0.01 pts"
+   ],
+   "value_cr": 93.2
+  },
+  {
+   "stock": "Digitide Solutions",
+   "qty": 6098401,
+   "stake": "4.09%",
+   "chg": [
+    "same",
+    "No change"
+   ],
+   "value_cr": 40.6
+  },
+  {
+   "stock": "Allcargo Global",
+   "qty": 9838739,
+   "stake": "1.00%",
+   "chg": [
+    "new",
+    "New"
+   ],
+   "value_cr": 10.7
+  },
+  {
+   "stock": "Dish TV India",
+   "qty": 28957491,
+   "stake": "1.57%",
+   "chg": [
+    "same",
+    "No change"
+   ],
+   "value_cr": 6.0
+  },
+  {
+   "stock": "Palred Technologies",
+   "qty": 678189,
+   "stake": "5.54%",
+   "chg": [
+    "same",
+    "No change"
+   ],
+   "value_cr": 2.6
+  }
+ ],
+ "holdings_note": "Values are Trendlyne's figures at a recent price, not on 30 Sep.",
+ "timeline": null,
+ "about": "Ashish Dhawan is an Indian investor who co-founded the private equity firm ChrysCapital and later moved into education, building Ashoka University. His listed portfolio is concentrated in a small number of companies, which are tracked through quarterly shareholding filings and his disclosures to the exchanges.",
+ "schema_desc": "Indian investor and co-founder of ChrysCapital.",
+ "news": [
+  {
+   "src": "ScanX",
+   "date": "Mar 2026",
+   "title": "Ashish Dhawan raises Bluspring stake to 6.10% via open market",
+   "url": "https://scanx.trade/stock-market-news/companies/ashish-dhawan-increases-stake-in-bluspring-enterprises-to-6-10-through-open-market-purchase/35844707"
+  },
+  {
+   "src": "Trade Brains",
+   "date": "24 Mar 2026",
+   "title": "Dhawan buys 17 lakh Bluspring shares at ₹45.55",
+   "url": "https://tradebrains.in/3-stocks-in-focus-after-ashish-kacholia-and-other-investors-bought-and-sold-stakes-via-bulk-deal/"
+  }
+ ],
+ "faq": [
+  [
+   "What is Ashish Dhawan's portfolio worth?",
+   "His publicly disclosed holdings were about ₹2,128–2,177 crore across 13 stocks after the September 2026 filings, depending on the price date used."
+  ],
+  [
+   "What did Ashish Dhawan buy recently?",
+   "New stakes in the September 2026 quarter include Equitas Small Finance Bank (4.10%) and Allcargo Global (1.00%), and he raised his Religare Enterprises stake by 2.09 points to 7.33%."
+  ],
+  [
+   "How has his Bluspring bet done?",
+   "He bought 17 lakh Bluspring shares at ₹45.55 on 23 March 2026. At about ₹153 in November 2026, that lot was up roughly 236% on paper, an estimated gain of about ₹18 crore."
+  ],
+  [
+   "How do you know the prices?",
+   "Prices are exact only for bulk and block deals, which the exchanges publish daily. Quarterly filings show shares held but not the price paid, so those gains are shown as not public or estimated."
+  ]
+ ],
+ "sources": [
+  [
+   "Trendlyne: Ashish Dhawan holdings (Sep 2026 filings)",
+   "https://trendlyne.com/portfolio/superstar-shareholders/custom/?query=ashish+dhawan"
+  ],
+  [
+   "Trendlyne: Ashish Dhawan bulk and block deals",
+   "https://trendlyne.com/portfolio/bulk-block-deals/custom/?query=Ashish+Dhawan"
+  ],
+  [
+   "ScanX: Bluspring stake disclosure",
+   "https://scanx.trade/stock-market-news/companies/ashish-dhawan-increases-stake-in-bluspring-enterprises-to-6-10-through-open-market-purchase/35844707"
+  ],
+  [
+   "Raunak Sharma's newsletter: background on Ashish Dhawan",
+   "https://raunaksharma.substack.com/p/bluspring-enterprises"
+  ],
+  [
+   "Primary records: NSE and BSE bulk/block deal data and company shareholding patterns",
+   ""
+  ]
+ ],
+ "meta": {
+  "title": "Ashish Dhawan Portfolio 2026: Latest Holdings, New Stocks & Gains | 9AM Traders",
+  "description": "Ashish Dhawan portfolio 2026: 13 disclosed stocks, new Equitas and Allcargo stakes, Religare stake raised, and the estimated gain on his Bluspring bulk deal.",
+  "keywords": "ashish dhawan portfolio, ashish dhawan latest holdings, ashish dhawan new stocks, ashish dhawan bluspring"
+ },
+ "aliases": [
+  "ASHISH DHAWAN"
+ ],
+ "auto_deals": [],
+ "deals_updated": "17 Nov 2026"
+}

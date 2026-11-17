@@ -1,0 +1,132 @@
+{
+ "order": 14,
+ "slug": "hemendra-kothari-portfolio",
+ "name": "Hemendra Kothari",
+ "initials": "HK",
+ "intro": "Hemendra Kothari's latest disclosed holdings, led by a 9.13% stake in Sonata Software.",
+ "card_line": "9.13% of Sonata Software · ~₹656 Cr",
+ "stats": [
+  {
+   "label": "Disclosed portfolio",
+   "value": "~₹743 Cr",
+   "sub": "Two disclosed stocks",
+   "est": 1
+  },
+  {
+   "label": "Stocks disclosed",
+   "value": "2",
+   "sub": "Holdings above 1% only"
+  },
+  {
+   "label": "Largest holding",
+   "value": "Sonata Software",
+   "sub": "9.13% · ~₹656 Cr"
+  },
+  {
+   "label": "This quarter",
+   "value": "No changes",
+   "sub": "Sonata stake unchanged"
+  }
+ ],
+ "no_deals_text": "No 2026 bulk or block deals by Hemendra Kothari were found.",
+ "changes": {
+  "new": [],
+  "add": [],
+  "cut": [],
+  "out": []
+ },
+ "changes_note": "In June 2026, Alkyl Amines was listed jointly with Shuchi Hemendra Kothari (1.18%); in September only his own 1.04% is listed. That may be a change in how the holding is reported rather than a sale.",
+ "holdings_lede": "From the September 2026 filings.",
+ "holdings": [
+  {
+   "stock": "Sonata Software",
+   "qty": 25599986,
+   "stake": "9.13%",
+   "chg": [
+    "same",
+    "No change"
+   ],
+   "value_cr": 655.5
+  },
+  {
+   "stock": "Alkyl Amines Chemicals",
+   "qty": 533500,
+   "stake": "1.04%",
+   "chg": [
+    "cut",
+    "See note"
+   ],
+   "value_cr": 87.3
+  }
+ ],
+ "holdings_note": "Sonata value from Finology; Alkyl Amines from Trendlyne.",
+ "about": "Hemendra Kothari is chairman of DSP Investment Managers and a long-term investor. Besides listed stocks, he has invested in private companies such as Pepperfry and ACKO, and in Horizon Industrial Parks, which also counts Radhakishan Damani as an investor.",
+ "schema_desc": "Indian investor and chairman of DSP Investment Managers.",
+ "news": [
+  {
+   "src": "Trendlyne",
+   "date": "Nov 2026",
+   "title": "Sonata Software shareholding: Hemendra M Kothari holds 9.1%",
+   "url": "https://trendlyne.com/equity/1267/SONATSOFTW/sonata-software-ltd/"
+  }
+ ],
+ "faq": [
+  [
+   "What is Hemendra Kothari's portfolio worth?",
+   "His disclosed listed holdings were about ₹743 crore after the September 2026 filings, mostly his 9.13% stake in Sonata Software."
+  ],
+  [
+   "What does Hemendra Kothari own?",
+   "Sonata Software (9.13%) and Alkyl Amines Chemicals (1.04%) in listed stocks, plus private investments such as Pepperfry and ACKO."
+  ],
+  [
+   "Did he buy or sell anything recently?",
+   "His Sonata Software stake was unchanged in the September 2026 quarter."
+  ],
+  [
+   "How do you know the prices?",
+   "Prices are exact only for bulk and block deals, which the exchanges publish daily. Quarterly filings show shares held but not the price paid, so those gains are shown as not public or estimated."
+  ]
+ ],
+ "sources": [
+  [
+   "Finology: Sonata Software super investors (Sep 2026)",
+   "https://ticker.finology.in/company/SONATSOFTW"
+  ],
+  [
+   "Trendlyne: Hemendra Mathradas Kothari (Sep 2026)",
+   "https://trendlyne.com/portfolio/superstar-shareholders/custom/?query=hemendra+mathradas+kothari"
+  ],
+  [
+   "smallcase: Hemendra Kothari profile",
+   "https://www.smallcase.com/star-investors/hemendra-kothari-portfolio/"
+  ],
+  [
+   "Tracxn: Hemendra Kothari private investments",
+   "https://tracxn.com/d/people/hemendra-kothari/__UVtPsJ-Vz7BSsVSj52COGiJwk7CZIqNN5xyPYn9IbOo"
+  ],
+  [
+   "Primary records: NSE and BSE bulk/block deal data and company shareholding patterns",
+   ""
+  ]
+ ],
+ "meta": {
+  "title": "Hemendra Kothari Portfolio 2026: Sonata Software Stake & Holdings | 9AM Traders",
+  "description": "Hemendra Kothari portfolio 2026: 9.13% of Sonata Software worth about ₹656 crore, Alkyl Amines, and private investments. DSP chairman's disclosed holdings.",
+  "keywords": "hemendra kothari portfolio, hemendra kothari sonata software, hemendra kothari holdings, dsp hemendra kothari"
+ },
+ "category": "Big investors",
+ "quarter": "September 2026",
+ "updated": "17 November 2026",
+ "updated_iso": "2026-11-17",
+ "tag": "Big investor (HNI) · Data as of Sep 2026 quarter",
+ "h1": "Hemendra Kothari Portfolio 2026",
+ "pl": [],
+ "deals": [],
+ "timeline": null,
+ "aliases": [
+  "HEMENDRA KOTHARI"
+ ],
+ "auto_deals": [],
+ "deals_updated": "17 Nov 2026"
+}

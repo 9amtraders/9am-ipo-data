@@ -1,0 +1,217 @@
+{
+ "order": 6,
+ "slug": "radhakishan-damani-portfolio",
+ "name": "Radhakishan Damani",
+ "initials": "RD",
+ "category": "Big investors",
+ "tag": "Big investor & DMart founder · Data as of Sep 2026 quarter",
+ "h1": "Radhakishan Damani Portfolio 2026",
+ "quarter": "September 2026",
+ "updated": "17 November 2026",
+ "updated_iso": "2026-11-17",
+ "intro": "Radhakishan Damani's latest disclosed holdings, led by his founder's stake in Avenue Supermarts (DMart), and his new stake in the National Stock Exchange.",
+ "card_line": "New 1.58% NSE stake worth ~₹7,000 Cr",
+ "stats": [
+  {
+   "label": "Disclosed portfolio",
+   "value": "₹1.06–1.61 lakh Cr",
+   "sub": "Depends on family & trust holdings counted",
+   "est": 1
+  },
+  {
+   "label": "Stocks disclosed",
+   "value": "6–7",
+   "sub": "Holdings above 1% only"
+  },
+  {
+   "label": "Big new stake",
+   "value": "NSE · 1.58%",
+   "sub": "~₹6,967 Cr"
+  },
+  {
+   "label": "Largest holding",
+   "value": "DMart",
+   "sub": "47.72% with family trusts"
+  }
+ ],
+ "deals": [],
+ "no_deals_text": "No 2026 bulk or block deals by Radhakishan Damani were found. His recent moves show up in quarterly filings instead, such as the new National Stock Exchange stake below.",
+ "pl": [
+  {
+   "type": "static",
+   "stock": "National Stock Exchange",
+   "k": "New 1.58% stake · 3,90,84,400 shares",
+   "big": "₹6,967 Cr",
+   "kind": "neu",
+   "m": "Value at a recent price. His buy price is not public.",
+   "badge": "nd"
+  },
+  {
+   "type": "static",
+   "stock": "Avenue Supermarts (DMart)",
+   "k": "Founder's stake, incl. family trusts · 47.72%",
+   "big": "₹98,708 Cr",
+   "kind": "neu",
+   "m": "He founded the company, so there is no 'buy price' in the usual sense.",
+   "badge": "nd"
+  },
+  {
+   "type": "static",
+   "stock": "Horizon Industrial Parks",
+   "k": "New 1.16% stake · 3,34,39,224 shares",
+   "big": "₹161.6 Cr",
+   "kind": "neu",
+   "m": "Value at a recent price. Buy price not public.",
+   "badge": "nd"
+  }
+ ],
+ "changes": {
+  "new": [
+   "National Stock Exchange · 1.58%",
+   "Horizon Industrial Parks · 1.16%"
+  ],
+  "add": [],
+  "cut": [],
+  "out": []
+ },
+ "changes_note": "Other holdings (VST Industries, Advani Hotels, BF Utilities, Mangalam Organics) were unchanged. Family members and trusts hold further stakes in some of these companies.",
+ "holdings_lede": "From the September 2026 shareholding filings, at a recent market price. DMart is shown as one combined row for him, his family and family trusts.",
+ "holdings": [
+  {
+   "stock": "Avenue Supermarts (DMart)",
+   "qty": 311125708,
+   "stake": "47.72%",
+   "chg": [
+    "same",
+    "No change"
+   ],
+   "value_cr": 98707.7,
+   "gain": "<em class=\"nd\">Founder</em>"
+  },
+  {
+   "stock": "National Stock Exchange",
+   "qty": 39084400,
+   "stake": "1.58%",
+   "chg": [
+    "new",
+    "New"
+   ],
+   "value_cr": 6967.4
+  },
+  {
+   "stock": "Horizon Industrial Parks",
+   "qty": 33439224,
+   "stake": "1.16%",
+   "chg": [
+    "new",
+    "New"
+   ],
+   "value_cr": 161.6
+  },
+  {
+   "stock": "VST Industries",
+   "qty": 5351850,
+   "stake": "3.15%",
+   "chg": [
+    "same",
+    "No change"
+   ],
+   "value_cr": 101.4
+  },
+  {
+   "stock": "Advani Hotels & Resorts",
+   "qty": 3860018,
+   "stake": "4.18%",
+   "chg": [
+    "same",
+    "No change"
+   ],
+   "value_cr": 17.6
+  },
+  {
+   "stock": "BF Utilities",
+   "qty": 381000,
+   "stake": "1.01%",
+   "chg": [
+    "same",
+    "No change"
+   ],
+   "value_cr": 16.6
+  },
+  {
+   "stock": "Mangalam Organics",
+   "qty": 186187,
+   "stake": "2.17%",
+   "chg": [
+    "same",
+    "No change"
+   ],
+   "value_cr": 8.1
+  }
+ ],
+ "holdings_note": "Values are Trendlyne's figures at a recent price. Other trackers that add holdings of family companies show a larger total (up to about ₹1.61 lakh crore).",
+ "about": "Radhakishan Shivkishan Damani is the founder and promoter of Avenue Supermarts, which runs the DMart retail chain, and one of India's best-known investors. Most of his disclosed wealth is his DMart stake, held with family members and family trusts. He also holds stakes in companies such as VST Industries and, from the September 2026 quarter, the National Stock Exchange.",
+ "schema_desc": "Founder of Avenue Supermarts (DMart) and Indian investor.",
+ "news": [
+  {
+   "src": "Sharpely",
+   "date": "Nov 2026",
+   "title": "Radhakishan Damani adds a 1.58% NSE stake in Sep 2026",
+   "url": "https://sharpely.in/titan-tracker/radhakishan-damani-2"
+  },
+  {
+   "src": "Business Standard",
+   "date": "Dec 2020",
+   "title": "Damani and family sell 0.79% stake in Trent for ₹202 crore",
+   "url": "https://www.business-standard.com/article/companies/radhakishan-damani-others-sell-0-79-stake-in-tata-s-trent-for-rs-202-cr-120120300453_1.html"
+  }
+ ],
+ "faq": [
+  [
+   "What is Radhakishan Damani's portfolio worth?",
+   "His disclosed holdings were valued at about ₹1.06 lakh crore after the September 2026 filings on Trendlyne, and up to about ₹1.61 lakh crore on trackers that also count family company holdings. Most of it is his DMart stake."
+  ],
+  [
+   "What did Radhakishan Damani buy recently?",
+   "His September 2026 filings show two new stakes: 1.58% of the National Stock Exchange (about ₹6,967 crore) and 1.16% of Horizon Industrial Parks."
+  ],
+  [
+   "Does he trade often?",
+   "No 2026 bulk or block deals by him were found. His changes are mostly visible in quarterly shareholding filings."
+  ],
+  [
+   "How do you know the prices?",
+   "Prices are exact only for bulk and block deals, which the exchanges publish daily. Quarterly filings show shares held but not the price paid, so those gains are shown as not public or estimated."
+  ]
+ ],
+ "sources": [
+  [
+   "Trendlyne: Radhakishan Damani holdings (Sep 2026 filings)",
+   "https://trendlyne.com/portfolio/superstar-shareholders/custom/?query=RADHAKISHAN++DAMANI"
+  ],
+  [
+   "Trendlyne: Radhakishan Damani portfolio incl. family holdings",
+   "https://trendlyne.com/portfolio/superstar-shareholders/178317/latest/radhakishan-damani-portfolio/"
+  ],
+  [
+   "Sharpely: Radhakishan Damani portfolio",
+   "https://sharpely.in/titan-tracker/radhakishan-damani-2"
+  ],
+  [
+   "Primary records: NSE and BSE shareholding patterns",
+   ""
+  ]
+ ],
+ "meta": {
+  "title": "Radhakishan Damani Portfolio 2026: Holdings, NSE Stake & Net Worth | 9AM Traders",
+  "description": "Radhakishan Damani portfolio 2026: DMart founder's disclosed holdings, new 1.58% National Stock Exchange stake, VST and more, with values and sources.",
+  "keywords": "radhakishan damani portfolio, radhakishan damani latest holdings, radhakishan damani nse stake, rk damani net worth"
+ },
+ "aliases": [
+  "RADHAKISHAN DAMANI",
+  "DERIVE INVESTMENTS",
+  "BRIGHT STAR INVESTMENTS"
+ ],
+ "auto_deals": [],
+ "deals_updated": "17 Nov 2026"
+}

@@ -1,0 +1,205 @@
+{
+ "order": 9,
+ "slug": "madhusudan-kela-portfolio",
+ "name": "Madhusudan Kela",
+ "initials": "MK",
+ "intro": "Madhusudan Kela's latest disclosed holdings, including those of his family, and what changed in the September 2026 quarter.",
+ "card_line": "Choice International worth ~₹1,200 Cr · exited SG Finserve",
+ "stats": [
+  {
+   "label": "Disclosed portfolio",
+   "value": "~₹2,498–2,525 Cr",
+   "sub": "Incl. family holdings",
+   "est": 1
+  },
+  {
+   "label": "Stocks disclosed",
+   "value": "~15",
+   "sub": "Holdings above 1% only"
+  },
+  {
+   "label": "Largest holding",
+   "value": "Choice Intl",
+   "sub": "7.21% · ~₹1,206 Cr"
+  },
+  {
+   "label": "This quarter",
+   "value": "1 exit",
+   "sub": "SG Finserve below 1%"
+  }
+ ],
+ "no_deals_text": "No 2026 bulk or block deals by Madhusudan Kela were found. His recent moves are visible in quarterly filings.",
+ "changes": {
+  "new": [],
+  "add": [],
+  "cut": [
+   "Rashi Peripherals · −0.57 pts",
+   "Windsor Machines · 6.40% → 6.30%"
+  ],
+  "out": [
+   "SG Finserve (1.44% → below 1%)"
+  ]
+ },
+ "changes_note": "Several holdings are in the names of family members, such as Mahi Madhusudan Kela.",
+ "holdings_lede": "Latest disclosed holdings. Values come from different trackers and price dates, so treat them as approximate.",
+ "holdings": [
+  {
+   "stock": "Choice International",
+   "qty": 16054833,
+   "stake": "7.21%",
+   "chg": [
+    "same",
+    "No change"
+   ],
+   "value_cr": 1205.96
+  },
+  {
+   "stock": "MK Ventures Capital",
+   "qty": 2858027,
+   "stake": "74.36%",
+   "chg": [
+    "same",
+    "No change"
+   ],
+   "value_cr": 288.66
+  },
+  {
+   "stock": "Windsor Machines",
+   "qty": 6515506,
+   "stake": "6.30%",
+   "chg": [
+    "cut",
+    "6.40% → 6.30%"
+   ],
+   "value_cr": 182.79
+  },
+  {
+   "stock": "Prataap Snacks",
+   "qty": 1100000,
+   "stake": "4.6%",
+   "chg": [
+    "same",
+    "No change"
+   ],
+   "value_cr": 118.0
+  },
+  {
+   "stock": "Indostar Capital Finance",
+   "qty": 3379834,
+   "stake": "2.09%",
+   "chg": [
+    "same",
+    "No change"
+   ],
+   "value_cr": 69.09
+  },
+  {
+   "stock": "Bombay Dyeing",
+   "qty": 3142758,
+   "stake": "1.52%",
+   "chg": [
+    "same",
+    "No change"
+   ],
+   "value_cr": 32.28
+  },
+  {
+   "stock": "Niyogin Fintech",
+   "qty": 5020000,
+   "stake": "4.51%",
+   "chg": [
+    "same",
+    "No change"
+   ],
+   "value_cr": 24.51
+  },
+  {
+   "stock": "Emkay Global",
+   "qty": 301685,
+   "stake": "1.1%",
+   "chg": [
+    "same",
+    "No change"
+   ],
+   "value_cr": 7.7
+  }
+ ],
+ "holdings_note": "Choice International and Windsor Machines: Sep 2026 figures from Finology. Prataap Snacks and Emkay: Trendlyne (held as Mahi Madhusudan Kela). MK Ventures, Indostar, Bombay Dyeing and Niyogin: Trade Brains, at earlier 2026 prices.",
+ "about": "Madhusudan Kela is an Indian investor and former chief investment strategist at Reliance Capital, where he worked until 2017. He is now the promoter of MK Ventures. His disclosed portfolio includes holdings in the names of family members.",
+ "schema_desc": "Indian investor and promoter of MK Ventures; former chief investment strategist at Reliance Capital.",
+ "news": [
+  {
+   "src": "Trade Brains",
+   "date": "Oct 2026",
+   "title": "Madhusudan Kela exits SG Finserve in Q2",
+   "url": "https://tradebrains.in/indian-markets/4-stocks-in-which-mukul-agrawal-and-madhusudan-kela-sold-their-entire-stakes-in-q2-12753257"
+  },
+  {
+   "src": "TradingView News",
+   "date": "2025",
+   "title": "Madhusudan Kela portfolio sinks nearly 39% in September quarter (2025)",
+   "url": "https://www.tradingview.com/news/moneycontrol:369158253094b:0-madhusudan-kela-portfolio-sinks-nearly-39-in-september-quarter/"
+  }
+ ],
+ "faq": [
+  [
+   "What is Madhusudan Kela's portfolio worth?",
+   "His and his family's disclosed holdings were about ₹2,500 crore across roughly 15 stocks after the September 2026 filings, per Trendlyne."
+  ],
+  [
+   "What is his biggest holding?",
+   "Choice International, a 7.21% stake worth about ₹1,206 crore in the September 2026 data."
+  ],
+  [
+   "What did Madhusudan Kela sell recently?",
+   "He cut his SG Finserve stake from 1.44% to below 1% in the September 2026 quarter and trimmed Rashi Peripherals and Windsor Machines."
+  ],
+  [
+   "How do you know the prices?",
+   "Prices are exact only for bulk and block deals, which the exchanges publish daily. Quarterly filings show shares held but not the price paid, so those gains are shown as not public or estimated."
+  ]
+ ],
+ "sources": [
+  [
+   "Trendlyne: Madhusudan Kela holdings",
+   "https://trendlyne.com/portfolio/superstar-shareholders/584325/latest/madhusudan-kela/"
+  ],
+  [
+   "Finology: Madhusudan Kela (Sep 2026)",
+   "https://ticker.finology.in/investor/madhusudan-kela"
+  ],
+  [
+   "Trade Brains: Madhusudan Kela portfolio",
+   "https://portal.tradebrains.in/superstars/madhusudan-kela"
+  ],
+  [
+   "Wikipedia: Madhusudan Kela",
+   "https://en.wikipedia.org/wiki/Madhusudan_Kela"
+  ],
+  [
+   "Primary records: NSE and BSE bulk/block deal data and company shareholding patterns",
+   ""
+  ]
+ ],
+ "meta": {
+  "title": "Madhusudan Kela Portfolio 2026: Latest Holdings & Changes | 9AM Traders",
+  "description": "Madhusudan Kela portfolio 2026: Choice International, MK Ventures, Windsor Machines and other disclosed holdings worth about ₹2,500 crore, plus Sep 2026 changes.",
+  "keywords": "madhusudan kela portfolio, madhu kela portfolio, madhusudan kela latest holdings, madhusudan kela stocks"
+ },
+ "category": "Big investors",
+ "quarter": "September 2026",
+ "updated": "17 November 2026",
+ "updated_iso": "2026-11-17",
+ "tag": "Big investor (HNI) · Data as of Sep 2026 quarter",
+ "h1": "Madhusudan Kela Portfolio 2026",
+ "pl": [],
+ "deals": [],
+ "timeline": null,
+ "aliases": [
+  "MADHUSUDAN KELA",
+  "MADHURI KELA",
+  "MAHI KELA"
+ ],
+ "auto_deals": [],
+ "deals_updated": "17 Nov 2026"
+}
