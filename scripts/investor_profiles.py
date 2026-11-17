@@ -267,9 +267,9 @@ def index_page(all_d):
         cards += (f'<a class="nw" href="{SITE}/smart-money/{d["slug"]}/"><small>{e(d["category"])} · {e(d["stats"][0]["value"])}</small>'
                   f'<b>{e(d["name"])} portfolio</b><span style="display:block;font-size:13px;color:#5b6278;margin-top:4px">{e(d["card_line"])}</span></a>')
     return f'''<!-- 9AM Smart Money · Big investors index (paste into one Elementor HTML widget). URL: {SITE}/smart-money/
-     SEO title: Superstar Investor Portfolios 2026: Kacholia, Kedia, Jhunjhunwala & More | 9AM Traders
-     Meta description: Latest portfolios of India's top 15 investors: disclosed holdings, new buys and sells, bulk deals with exact prices and estimated gains. Updated every quarter.
-     Focus keywords: superstar investor portfolio, ace investor portfolio, hni portfolio india, big investor holdings -->
+     SEO title: Superstar Investor Portfolios 2026: Latest Holdings & Deals
+     Meta description: Track 15 superstar investors like Kacholia, Kedia and Jhunjhunwala: latest holdings, bulk deals with exact prices and estimated gains. Updated daily.
+     Focus keywords: superstar investor portfolio, ace investor portfolio, big investors portfolio india, hni portfolio, superstar portfolio 2026 -->
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
 {CSS}
 <div class="smp" id="smp"><div class="w">
