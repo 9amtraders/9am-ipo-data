@@ -1,0 +1,149 @@
+{
+ "order": 15,
+ "slug": "ramesh-damani-portfolio",
+ "name": "Ramesh Damani",
+ "initials": "RSD",
+ "intro": "Ramesh Damani's latest disclosed holdings: a small, focused list with one small increase in the September 2026 quarter.",
+ "card_line": "Added to Panama Petrochem in Sep 2026",
+ "stats": [
+  {
+   "label": "Disclosed portfolio",
+   "value": "₹65–68 Cr",
+   "sub": "Estimates vary by price date",
+   "est": 1
+  },
+  {
+   "label": "Stocks disclosed",
+   "value": "4",
+   "sub": "Holdings above 1% only"
+  },
+  {
+   "label": "Largest holding",
+   "value": "Panama Petrochem",
+   "sub": "1.22% · ₹33.8 Cr"
+  },
+  {
+   "label": "This quarter",
+   "value": "1 increase",
+   "sub": "Panama Petrochem +0.06 pts"
+  }
+ ],
+ "no_deals_text": "No 2026 bulk deals by Ramesh Damani were found.",
+ "changes": {
+  "new": [],
+  "add": [
+   "Panama Petrochem · 1.16% → 1.22%"
+  ],
+  "cut": [],
+  "out": []
+ },
+ "holdings_lede": "From the September 2026 filings, at a recent market price. His listed holdings are small compared with his reputation; many investments are not above the 1% disclosure level.",
+ "holdings": [
+  {
+   "stock": "Panama Petrochem",
+   "qty": 740957,
+   "stake": "1.22%",
+   "chg": [
+    "add",
+    "+0.06 pts"
+   ],
+   "value_cr": 33.8
+  },
+  {
+   "stock": "Protean eGov Technologies",
+   "qty": 429069,
+   "stake": "1.05%",
+   "chg": [
+    "same",
+    "No change"
+   ],
+   "value_cr": 27.1
+  },
+  {
+   "stock": "Shreyas Shipping",
+   "qty": null,
+   "stake": "—",
+   "chg": [
+    "same",
+    "No change"
+   ],
+   "value_cr": 5.9
+  },
+  {
+   "stock": "Vadivarhe Speciality Chemicals",
+   "qty": null,
+   "stake": "—",
+   "chg": [
+    "same",
+    "No change"
+   ],
+   "value_cr": null
+  }
+ ],
+ "holdings_note": "Values from Trendlyne. Shreyas Shipping and Vadivarhe stake details were not shown in the data we could access.",
+ "about": "Ramesh Damani is a veteran Indian investor and a member of the Bombay Stock Exchange since 1989. He is known for spotting long-term themes early and manages his own portfolio through his family investment company.",
+ "schema_desc": "Veteran Indian investor and BSE member since 1989.",
+ "news": [
+  {
+   "src": "Sharpely",
+   "date": "Nov 2026",
+   "title": "Ramesh Damani raises Panama Petrochem stake to 1.22%",
+   "url": "https://sharpely.in/titan-tracker/ramesh-damani-47"
+  }
+ ],
+ "faq": [
+  [
+   "What is Ramesh Damani's portfolio worth?",
+   "His disclosed holdings were about ₹65–68 crore across 4 stocks after the September 2026 filings."
+  ],
+  [
+   "What did Ramesh Damani buy recently?",
+   "He raised his stake in Panama Petrochem from 1.16% to 1.22% in the September 2026 quarter."
+  ],
+  [
+   "Is he related to Radhakishan Damani?",
+   "They share a surname and are both well-known investors, but their portfolios are separate. This page covers only Ramesh Damani's own disclosed holdings."
+  ],
+  [
+   "How do you know the prices?",
+   "Prices are exact only for bulk and block deals, which the exchanges publish daily. Quarterly filings show shares held but not the price paid, so those gains are shown as not public or estimated."
+  ]
+ ],
+ "sources": [
+  [
+   "Trendlyne: Ramesh Damani holdings (Sep 2026)",
+   "https://trendlyne.com/portfolio/superstar-shareholders/custom/?query=ramesh+damani"
+  ],
+  [
+   "Sharpely: Ramesh Damani portfolio",
+   "https://sharpely.in/titan-tracker/ramesh-damani-47"
+  ],
+  [
+   "Rupeezy: Ramesh Damani profile",
+   "https://rupeezy.in/blog/ramesh-damani-stocks-list"
+  ],
+  [
+   "Primary records: NSE and BSE bulk/block deal data and company shareholding patterns",
+   ""
+  ]
+ ],
+ "meta": {
+  "title": "Ramesh Damani Portfolio 2026: Latest Holdings & Changes | 9AM Traders",
+  "description": "Ramesh Damani portfolio 2026: Panama Petrochem, Protean eGov and other disclosed holdings, with the Sep 2026 stake increase. With sources.",
+  "keywords": "ramesh damani portfolio, ramesh damani latest holdings, ramesh damani stocks, ramesh damani panama petrochem"
+ },
+ "category": "Big investors",
+ "quarter": "September 2026",
+ "updated": "17 November 2026",
+ "updated_iso": "2026-11-17",
+ "tag": "Big investor (HNI) · Data as of Sep 2026 quarter",
+ "h1": "Ramesh Damani Portfolio 2026",
+ "pl": [],
+ "deals": [],
+ "timeline": null,
+ "aliases": [
+  "RAMESH DAMANI"
+ ],
+ "auto_deals": [],
+ "deals_updated": "17 Nov 2026"
+}

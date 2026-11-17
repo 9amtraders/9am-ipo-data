@@ -1,0 +1,8 @@
+<script>
+(function(){var r=document.getElementById('smp');if(!r)return;r.classList.add('js');
+var els=[].slice.call(r.querySelectorAll('.rv'));els.forEach(function(e,i){e.style.setProperty('--d',(Math.min(i,2)*0.06)+'s')});
+function grow(){[].forEach.call(r.querySelectorAll('#smp-bars i'),function(b,i){setTimeout(function(){b.style.height=b.getAttribute('data-h')+'%'},i*180)})}
+if(!('IntersectionObserver'in window)){els.forEach(function(e){e.classList.add('in')});grow();return}
+var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');if(en.target.querySelector('#smp-bars'))grow();io.unobserve(en.target)}})},{threshold:.08});
+els.forEach(function(e){io.observe(e)});})();
+</script>

@@ -1,0 +1,158 @@
+{
+ "order": 13,
+ "slug": "nemish-shah-portfolio",
+ "name": "Nemish Shah",
+ "initials": "NS",
+ "intro": "Nemish Shah's latest disclosed holdings: five long-held stocks, led by Asahi India Glass and LMW, with no changes in the September 2026 quarter.",
+ "card_line": "5 long-held stocks · no changes in Sep 2026",
+ "stats": [
+  {
+   "label": "Disclosed portfolio",
+   "value": "₹3,221–3,610 Cr",
+   "sub": "Estimates vary by source",
+   "est": 1
+  },
+  {
+   "label": "Stocks disclosed",
+   "value": "5",
+   "sub": "Holdings above 1% only"
+  },
+  {
+   "label": "Largest holding",
+   "value": "Asahi India Glass",
+   "sub": "5.7% · ~₹1,605 Cr"
+  },
+  {
+   "label": "This quarter",
+   "value": "No changes",
+   "sub": "Buy-and-hold"
+  }
+ ],
+ "no_deals_text": "No 2026 bulk or block deals by Nemish Shah were found. His portfolio rarely changes.",
+ "changes": {
+  "new": [],
+  "add": [],
+  "cut": [],
+  "out": []
+ },
+ "changes_note": "No new buys, increases or sales were reported for the September 2026 quarter.",
+ "holdings_lede": "From the September 2026 filings, at a recent market price.",
+ "holdings": [
+  {
+   "stock": "Asahi India Glass",
+   "qty": 14482818,
+   "stake": "5.7%",
+   "chg": [
+    "same",
+    "No change"
+   ],
+   "value_cr": 1605.4
+  },
+  {
+   "stock": "LMW",
+   "qty": 926373,
+   "stake": "8.7%",
+   "chg": [
+    "same",
+    "No change"
+   ],
+   "value_cr": 1451
+  },
+  {
+   "stock": "Elgi Equipments",
+   "qty": 5360000,
+   "stake": "1.69%",
+   "chg": [
+    "same",
+    "No change"
+   ],
+   "value_cr": 322.7
+  },
+  {
+   "stock": "Bannari Amman Sugars",
+   "qty": 325000,
+   "stake": "2.59%",
+   "chg": [
+    "same",
+    "No change"
+   ],
+   "value_cr": 109.7
+  },
+  {
+   "stock": "Zodiac Clothing",
+   "qty": 405124,
+   "stake": "1.56%",
+   "chg": [
+    "same",
+    "No change"
+   ],
+   "value_cr": 3.6
+  }
+ ],
+ "holdings_note": "Asahi, Elgi and Bannari values from Trendlyne. LMW value worked out from Sharpely's capital goods total minus Elgi, so it is approximate; share count from the latest disclosed filing.",
+ "about": "Nemish Shah is an Indian investor and co-founder of Enam, the investment firm. He keeps a low profile and holds a small number of stocks for long periods.",
+ "schema_desc": "Indian investor and co-founder of Enam.",
+ "news": [
+  {
+   "src": "Inshorts",
+   "date": "Nov 2025",
+   "title": "Nemish Shah raises his stake in Lakshmi Machine Works to 8.7%",
+   "url": "https://inshorts.com/en/amp_news/nemish-shah-raises-his-stake-in-lakshmi-machine-works-to-8-7--1762249277979"
+  }
+ ],
+ "faq": [
+  [
+   "What is Nemish Shah's portfolio worth?",
+   "His disclosed holdings were about ₹3,221–3,610 crore across 5 stocks after the September 2026 filings, depending on the data source and price date."
+  ],
+  [
+   "What did Nemish Shah buy or sell recently?",
+   "Nothing. No new buys, increases or sales were reported for the September 2026 quarter."
+  ],
+  [
+   "What is his biggest holding?",
+   "Asahi India Glass, a 5.7% stake worth about ₹1,605 crore, followed closely by LMW."
+  ],
+  [
+   "How do you know the prices?",
+   "Prices are exact only for bulk and block deals, which the exchanges publish daily. Quarterly filings show shares held but not the price paid, so those gains are shown as not public or estimated."
+  ]
+ ],
+ "sources": [
+  [
+   "Trendlyne: Nemish S Shah holdings",
+   "https://trendlyne.com/portfolio/superstar-shareholders/53776/latest/nemish-s-shah/"
+  ],
+  [
+   "Sharpely: Nemish S Shah portfolio",
+   "https://sharpely.in/titan-tracker/nemish-s-shah-8"
+  ],
+  [
+   "Tickertape: Nemish Shah holdings",
+   "https://www.tickertape.in/stocks/collections/nemish-shah-portfolio"
+  ],
+  [
+   "Primary records: NSE and BSE bulk/block deal data and company shareholding patterns",
+   ""
+  ]
+ ],
+ "meta": {
+  "title": "Nemish Shah Portfolio 2026: Latest Holdings & Net Worth | 9AM Traders",
+  "description": "Nemish Shah portfolio 2026: Asahi India Glass, LMW, Elgi Equipments, Bannari Amman Sugars and Zodiac Clothing, worth ₹3,200+ crore. With sources.",
+  "keywords": "nemish shah portfolio, nemish shah latest holdings, nemish shah net worth, enam nemish shah"
+ },
+ "category": "Big investors",
+ "quarter": "September 2026",
+ "updated": "17 November 2026",
+ "updated_iso": "2026-11-17",
+ "tag": "Big investor (HNI) · Data as of Sep 2026 quarter",
+ "h1": "Nemish Shah Portfolio 2026",
+ "pl": [],
+ "deals": [],
+ "timeline": null,
+ "aliases": [
+  "NEMISH SHAH"
+ ],
+ "auto_deals": [],
+ "deals_updated": "17 Nov 2026"
+}

@@ -1,0 +1,167 @@
+{
+ "order": 11,
+ "slug": "dolly-khanna-portfolio",
+ "name": "Dolly Khanna",
+ "initials": "DK",
+ "intro": "Dolly Khanna's latest disclosed holdings: a small, concentrated list with two new stakes in the September 2026 quarter.",
+ "card_line": "New stake in Rain Industries · trimmed Prakash",
+ "stats": [
+  {
+   "label": "Disclosed portfolio",
+   "value": "₹351–395 Cr",
+   "sub": "Estimates vary by source",
+   "est": 1
+  },
+  {
+   "label": "Stocks disclosed",
+   "value": "5",
+   "sub": "Holdings above 1% only"
+  },
+  {
+   "label": "Biggest new bet",
+   "value": "Rain Industries",
+   "sub": "1.72% · ~₹94–120 Cr"
+  },
+  {
+   "label": "Largest holding",
+   "value": "Chennai Petroleum",
+   "sub": "~₹213 Cr"
+  }
+ ],
+ "no_deals_text": "No 2026 bulk or block deals by Dolly Khanna were found. Her changes show up in quarterly filings.",
+ "changes": {
+  "new": [
+   "Rain Industries · 1.72%",
+   "Rajshree Polypack · 1.05%"
+  ],
+  "add": [
+   "Savera Industries · 1.70% → 2.08%"
+  ],
+  "cut": [
+   "Prakash Industries · 2.12% → 1.78%",
+   "Chennai Petroleum · 1.28% → 1.02%"
+  ],
+  "out": []
+ },
+ "holdings_lede": "From the September 2026 filings. Where a tracker did not give a value, it is shown as not shown.",
+ "holdings": [
+  {
+   "stock": "Chennai Petroleum",
+   "qty": null,
+   "stake": "1.02%",
+   "chg": [
+    "cut",
+    "1.28% → 1.02%"
+   ],
+   "value_cr": 213.5
+  },
+  {
+   "stock": "Rain Industries",
+   "qty": 5798355,
+   "stake": "1.72%",
+   "chg": [
+    "new",
+    "New"
+   ],
+   "value_cr": 120.2
+  },
+  {
+   "stock": "Prakash Industries",
+   "qty": null,
+   "stake": "1.78%",
+   "chg": [
+    "cut",
+    "2.12% → 1.78%"
+   ],
+   "value_cr": null
+  },
+  {
+   "stock": "Savera Industries",
+   "qty": null,
+   "stake": "2.08%",
+   "chg": [
+    "add",
+    "1.70% → 2.08%"
+   ],
+   "value_cr": null
+  },
+  {
+   "stock": "Rajshree Polypack",
+   "qty": 777842,
+   "stake": "1.05%",
+   "chg": [
+    "new",
+    "New"
+   ],
+   "value_cr": 1.4
+  }
+ ],
+ "holdings_note": "Chennai Petroleum value is Sharpely's figure for her oil & gas holdings, which is that one stock. Rain Industries value from Trendlyne; its own summary gives ₹94.2 crore at an earlier price.",
+ "about": "Dolly Khanna is a Chennai-based investor known for picking little-known small companies. Her disclosed portfolio is small and changes often, and is tracked through quarterly shareholding filings.",
+ "schema_desc": "Chennai-based Indian investor known for small-company picks.",
+ "news": [
+  {
+   "src": "Trendlyne",
+   "date": "Nov 2026",
+   "title": "Dolly Khanna adds Rain Industries, enters Rajshree Polypack",
+   "url": "https://trendlyne.com/portfolio/superstar-shareholders/53757/latest/dolly-khanna/"
+  },
+  {
+   "src": "Business Standard",
+   "date": "2021",
+   "title": "Dolly Khanna buys 1.26% of Neuland Labs; stock up 121% in 2021",
+   "url": "https://www.business-standard.com/article/markets/this-pharma-stock-from-dolly-khanna-portfolio-zoom-121-thus-far-in-2021-121040600705_1.html"
+  }
+ ],
+ "faq": [
+  [
+   "What is Dolly Khanna's portfolio worth?",
+   "Her disclosed holdings were about ₹351–395 crore across 5 stocks after the September 2026 filings, depending on the data source."
+  ],
+  [
+   "What did Dolly Khanna buy recently?",
+   "New stakes in Rain Industries (1.72%) and Rajshree Polypack (1.05%) in the September 2026 quarter, and she raised Savera Industries to 2.08%."
+  ],
+  [
+   "What did she sell recently?",
+   "She trimmed Prakash Industries (2.12% to 1.78%) and Chennai Petroleum (1.28% to 1.02%)."
+  ],
+  [
+   "How do you know the prices?",
+   "Prices are exact only for bulk and block deals, which the exchanges publish daily. Quarterly filings show shares held but not the price paid, so those gains are shown as not public or estimated."
+  ]
+ ],
+ "sources": [
+  [
+   "Trendlyne: Dolly Khanna holdings (Sep 2026)",
+   "https://trendlyne.com/portfolio/superstar-shareholders/custom/?query=dolly+khanna"
+  ],
+  [
+   "Sharpely: Dolly Khanna portfolio",
+   "https://sharpely.in/titan-tracker/dolly-khanna-28"
+  ],
+  [
+   "Primary records: NSE and BSE bulk/block deal data and company shareholding patterns",
+   ""
+  ]
+ ],
+ "meta": {
+  "title": "Dolly Khanna Portfolio 2026: Latest Holdings & New Stocks | 9AM Traders",
+  "description": "Dolly Khanna portfolio 2026: new stakes in Rain Industries and Rajshree Polypack, Savera raised, Prakash and Chennai Petroleum trimmed. All 5 disclosed stocks.",
+  "keywords": "dolly khanna portfolio, dolly khanna latest holdings, dolly khanna new stocks, dolly khanna rain industries"
+ },
+ "category": "Big investors",
+ "quarter": "September 2026",
+ "updated": "17 November 2026",
+ "updated_iso": "2026-11-17",
+ "tag": "Big investor (HNI) · Data as of Sep 2026 quarter",
+ "h1": "Dolly Khanna Portfolio 2026",
+ "pl": [],
+ "deals": [],
+ "timeline": null,
+ "aliases": [
+  "DOLLY KHANNA"
+ ],
+ "auto_deals": [],
+ "deals_updated": "17 Nov 2026"
+}

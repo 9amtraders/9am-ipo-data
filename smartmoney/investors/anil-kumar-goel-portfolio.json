@@ -1,0 +1,210 @@
+{
+ "order": 12,
+ "slug": "anil-kumar-goel-portfolio",
+ "name": "Anil Kumar Goel",
+ "initials": "AG",
+ "intro": "Anil Kumar Goel's latest disclosed holdings with family members, and the five new stakes he took in the September 2026 quarter.",
+ "card_line": "38 stocks · 5 new stakes in Sep 2026",
+ "stats": [
+  {
+   "label": "Disclosed portfolio",
+   "value": "₹2,426–2,707 Cr",
+   "sub": "Incl. family holdings",
+   "est": 1
+  },
+  {
+   "label": "Stocks disclosed",
+   "value": "38–39",
+   "sub": "Holdings above 1% only"
+  },
+  {
+   "label": "New this quarter",
+   "value": "5",
+   "sub": "Incl. TNA Solutions 10.41%"
+  },
+  {
+   "label": "Top stock",
+   "value": "KRBL",
+   "sub": "Per Sharpely"
+  }
+ ],
+ "no_deals_text": "No 2026 bulk deals by Anil Kumar Goel were found. In February 2026 he and family members bought 54,000 Sportking India shares in the open market, taking the stake above 5%.",
+ "changes": {
+  "new": [
+   "TNA Solutions · 10.41%",
+   "Rockingdeals Circular Economy · 3.04%",
+   "Triveni Power Transmission · 2.48%",
+   "Crayons Advertising · 1.11%",
+   "Gulshan Polyols · 1.01%"
+  ],
+  "add": [
+   "Sportking India · 5.17% → 5.29%",
+   "Vardhman Holdings · 6.76% → 6.84%",
+   "Nahar Poly Films · 1.17% → 1.18%",
+   "Triveni Engineering · 4.59% → 4.60%"
+  ],
+  "cut": [
+   "Avadh Sugar · 6.79% → 6.70%",
+   "Uttam Sugar · 5.37% → 5.30%",
+   "Sanghvi Movers · 1.01% → 1.00%"
+  ],
+  "out": []
+ },
+ "changes_note": "Holdings combine Anil Kumar Goel and associates such as Seema Goel.",
+ "holdings_lede": "Holdings with a disclosed value or a change this quarter. Trackers do not publish values for all 38 stocks.",
+ "holdings": [
+  {
+   "stock": "Vardhman Holdings",
+   "qty": 218400,
+   "stake": "6.84%",
+   "chg": [
+    "add",
+    "+0.08 pts"
+   ],
+   "value_cr": 72.7
+  },
+  {
+   "stock": "TNA Solutions",
+   "qty": 2125000,
+   "stake": "10.41%",
+   "chg": [
+    "new",
+    "New"
+   ],
+   "value_cr": null
+  },
+  {
+   "stock": "Triveni Power Transmission",
+   "qty": 2601000,
+   "stake": "2.48%",
+   "chg": [
+    "new",
+    "New"
+   ],
+   "value_cr": null
+  },
+  {
+   "stock": "Gulshan Polyols",
+   "qty": 630000,
+   "stake": "1.01%",
+   "chg": [
+    "new",
+    "New"
+   ],
+   "value_cr": 9.5
+  },
+  {
+   "stock": "Amarjothi Spinning Mills",
+   "qty": 595525,
+   "stake": "8.82%",
+   "chg": [
+    "same",
+    "No change"
+   ],
+   "value_cr": 8.8
+  },
+  {
+   "stock": "Rockingdeals Circular Economy",
+   "qty": 252000,
+   "stake": "3.04%",
+   "chg": [
+    "new",
+    "New"
+   ],
+   "value_cr": null
+  },
+  {
+   "stock": "Crayons Advertising",
+   "qty": 270000,
+   "stake": "1.11%",
+   "chg": [
+    "new",
+    "New"
+   ],
+   "value_cr": 0.7
+  },
+  {
+   "stock": "KRBL",
+   "qty": 6777000,
+   "stake": "2.96%*",
+   "chg": [
+    "same",
+    "No change"
+   ],
+   "value_cr": null
+  }
+ ],
+ "holdings_note": "Values from Trendlyne where shown. *KRBL: Anil Kumar Goel's own 2.96% as last listed in filings; Seema Goel holds about 1.5% more. Share counts for TNA, Triveni Power and Rockingdeals are Sharpely's rounded figures.",
+ "about": "Anil Kumar Goel is an Indian investor known for long-held stakes in cyclical, asset-heavy businesses such as sugar, textiles and rice. Many holdings are shared with family members, and his portfolio is tracked through quarterly shareholding filings.",
+ "schema_desc": "Indian investor known for stakes in sugar, textile and other cyclical companies.",
+ "news": [
+  {
+   "src": "Apparel Resources",
+   "date": "Feb 2026",
+   "title": "Anil Kumar Goel raises Sportking India stake above 5%",
+   "url": "https://apparelresources.com/business-news/manufacturing/veteran-investor-anil-kumar-goel-raises-holding-sportking-india-5-04/"
+  },
+  {
+   "src": "Business Standard",
+   "date": "Aug 2025",
+   "title": "Anil Goel portfolio stock KRBL surges 12%",
+   "url": "https://www.business-standard.com/markets/news/anil-goel-portfolio-smallcap-stock-surges-12-in-weak-market-do-you-own-125080800489_1.html"
+  }
+ ],
+ "faq": [
+  [
+   "What is Anil Kumar Goel's portfolio worth?",
+   "His and his associates' disclosed holdings were about ₹2,426–2,707 crore across 38–39 stocks after the September 2026 filings, depending on the data source."
+  ],
+  [
+   "What did Anil Kumar Goel buy recently?",
+   "Five new stakes in the September 2026 quarter, the largest being TNA Solutions (10.41%), plus small increases in Sportking, Vardhman Holdings, Nahar Poly Films and Triveni Engineering."
+  ],
+  [
+   "What did he sell recently?",
+   "Small trims in Avadh Sugar, Uttam Sugar and Sanghvi Movers."
+  ],
+  [
+   "How do you know the prices?",
+   "Prices are exact only for bulk and block deals, which the exchanges publish daily. Quarterly filings show shares held but not the price paid, so those gains are shown as not public or estimated."
+  ]
+ ],
+ "sources": [
+  [
+   "Trendlyne: Anil Kumar Goel and associates",
+   "https://trendlyne.com/portfolio/superstar-shareholders/53743/latest/anil-kumar-goel-and-associates-portfolio/"
+  ],
+  [
+   "Sharpely: Anil Kumar Goel portfolio",
+   "https://sharpely.in/titan-tracker/anil-kumar-goel-9"
+  ],
+  [
+   "Trendlyne: KRBL holding history",
+   "https://trendlyne.com/equity/holding-lookup/765/53743/krbl-ltd/anil-kumar-goel-and-associates-portfolio"
+  ],
+  [
+   "Primary records: NSE and BSE bulk/block deal data and company shareholding patterns",
+   ""
+  ]
+ ],
+ "meta": {
+  "title": "Anil Kumar Goel Portfolio 2026: Latest Holdings & New Stocks | 9AM Traders",
+  "description": "Anil Kumar Goel portfolio 2026: 38 disclosed stocks worth ₹2,400+ crore, 5 new stakes in Sep 2026 incl. TNA Solutions, and recent changes. With sources.",
+  "keywords": "anil kumar goel portfolio, anil goel portfolio, anil kumar goel latest holdings, anil kumar goel new stocks"
+ },
+ "category": "Big investors",
+ "quarter": "September 2026",
+ "updated": "17 November 2026",
+ "updated_iso": "2026-11-17",
+ "tag": "Big investor (HNI) · Data as of Sep 2026 quarter",
+ "h1": "Anil Kumar Goel Portfolio 2026",
+ "pl": [],
+ "deals": [],
+ "timeline": null,
+ "aliases": [
+  "ANIL KUMAR GOEL",
+  "SEEMA GOEL"
+ ],
+ "auto_deals": [],
+ "deals_updated": "17 Nov 2026"
+}

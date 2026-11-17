@@ -1,0 +1,319 @@
+{
+ "order": 5,
+ "slug": "akash-bhanshali-portfolio",
+ "name": "Akash Bhanshali",
+ "initials": "AB",
+ "category": "Big investors",
+ "tag": "Big investor (HNI) · Data as of Sep 2026 quarter",
+ "h1": "Akash Bhanshali Portfolio 2026",
+ "quarter": "September 2026",
+ "updated": "17 November 2026",
+ "updated_iso": "2026-11-17",
+ "intro": "Akash Bhanshali's latest disclosed holdings, worth several thousand crore across a handful of stocks, and what his best-known bulk-deal purchase has made since 2018.",
+ "card_line": "Sudarshan Chemical lot up ~248% on paper since 2018",
+ "stats": [
+  {
+   "label": "Disclosed portfolio",
+   "value": "₹7,666–8,591 Cr",
+   "sub": "Estimates vary by data source",
+   "est": 1
+  },
+  {
+   "label": "Stocks disclosed",
+   "value": "16–17",
+   "sub": "Holdings above 1% only"
+  },
+  {
+   "label": "Biggest holding",
+   "value": "Gujarat Fluoro",
+   "sub": "4.75% · ₹2,211 Cr"
+  },
+  {
+   "label": "Changes this quarter",
+   "value": "Very few",
+   "sub": "No new stocks in Sep 2026"
+  }
+ ],
+ "deals": [
+  {
+   "date": "17 Apr 2026",
+   "stock": "Pan Electronics India",
+   "action": "Sell (exit)",
+   "qty": 40085,
+   "price": 35.88
+  },
+  {
+   "date": "15 May 2024",
+   "stock": "Aadhar Housing Finance",
+   "action": "Buy",
+   "qty": 2200000,
+   "price": 319.06
+  },
+  {
+   "date": "19 Oct 2018",
+   "stock": "Sudarshan Chemical Industries",
+   "action": "Buy",
+   "qty": 5567711,
+   "price": 300.2
+  }
+ ],
+ "deals_note": "He makes few bulk deals, so older deals are shown. Aadhar Housing no longer appears in his above-1% holdings.",
+ "pl": [
+  {
+   "type": "paper",
+   "stock": "Sudarshan Chemical",
+   "qty": 5567711,
+   "buy": 300.2,
+   "date": "19 Oct 2018",
+   "now": 1045.0,
+   "now_date": "Nov 2026, Trendlyne",
+   "extra": "on this lot",
+   "sym": "SUDARSCHEM"
+  },
+  {
+   "type": "static",
+   "stock": "Aadhar Housing Finance",
+   "k": "Bought 22,00,000 @ ₹319.06 · 15 May 2024",
+   "big": "₹70.19 Cr invested",
+   "kind": "neu",
+   "m": "No longer in his above-1% holdings, so the result is not public.",
+   "badge": "nd"
+  }
+ ],
+ "changes": {
+  "new": [],
+  "add": [
+   "Dilip Buildcon · 1.29% → 1.30%"
+  ],
+  "cut": [
+   "Sudarshan Chemical · −0.09 pts → 7.04%",
+   "Ramkrishna Forgings · −0.04 pts → 2.18%",
+   "One97 (Paytm) · −0.01 pts → 1.23%"
+  ],
+  "out": [
+   "Pan Electronics (sold Apr 2026)"
+  ]
+ },
+ "changes_note": "Holdings are filed under both 'Akash Bhanshali' and 'Akash Manek Bhanshali'; we have combined them.",
+ "holdings_lede": "From the September 2026 shareholding filings, at a recent market price.",
+ "holdings": [
+  {
+   "stock": "Gujarat Fluorochemicals",
+   "qty": 5219505,
+   "stake": "4.75%",
+   "chg": [
+    "same",
+    "No change"
+   ],
+   "value_cr": 2210.8
+  },
+  {
+   "stock": "Laurus Labs",
+   "qty": 7151700,
+   "stake": "1.32%",
+   "chg": [
+    "same",
+    "No change"
+   ],
+   "value_cr": 1531.9
+  },
+  {
+   "stock": "One97 Communications (Paytm)",
+   "qty": 7921162,
+   "stake": "1.23%",
+   "chg": [
+    "cut",
+    "−0.01 pts"
+   ],
+   "value_cr": 1268.7
+  },
+  {
+   "stock": "Sudarshan Chemical",
+   "qty": 5605577,
+   "stake": "7.04%",
+   "chg": [
+    "cut",
+    "−0.09 pts"
+   ],
+   "value_cr": 585.8,
+   "gain": "<span class=\"up\">+248% on 2018 lot</span> <em class=\"es\">Est.</em>"
+  },
+  {
+   "stock": "Schneider Electric Infra",
+   "qty": 3238887,
+   "stake": "1.35%",
+   "chg": [
+    "same",
+    "No change"
+   ],
+   "value_cr": 369.7
+  },
+  {
+   "stock": "Welspun Living",
+   "qty": 13435382,
+   "stake": "1.42%",
+   "chg": [
+    "same",
+    "No change"
+   ],
+   "value_cr": 288.9
+  },
+  {
+   "stock": "Ramkrishna Forgings",
+   "qty": 4051910,
+   "stake": "2.18%",
+   "chg": [
+    "cut",
+    "−0.04 pts"
+   ],
+   "value_cr": 252.6
+  },
+  {
+   "stock": "Amber Enterprises",
+   "qty": 404302,
+   "stake": "1.15%",
+   "chg": [
+    "same",
+    "No change"
+   ],
+   "value_cr": 243.8
+  },
+  {
+   "stock": "Greenlam Industries",
+   "qty": 11319890,
+   "stake": "4.44%",
+   "chg": [
+    "same",
+    "No change"
+   ],
+   "value_cr": 236.5
+  },
+  {
+   "stock": "Inox Wind",
+   "qty": 30288766,
+   "stake": "1.75%",
+   "chg": [
+    "same",
+    "No change"
+   ],
+   "value_cr": 177.4
+  },
+  {
+   "stock": "Aptus Value Housing",
+   "qty": 7611920,
+   "stake": "1.52%",
+   "chg": [
+    "same",
+    "No change"
+   ],
+   "value_cr": 153.6
+  },
+  {
+   "stock": "Natco Pharma",
+   "qty": 1800788,
+   "stake": "1.01%",
+   "chg": [
+    "same",
+    "No change"
+   ],
+   "value_cr": 143.1
+  },
+  {
+   "stock": "Genus Power",
+   "qty": 3608418,
+   "stake": "1.19%",
+   "chg": [
+    "same",
+    "No change"
+   ],
+   "value_cr": 96.7
+  },
+  {
+   "stock": "Dilip Buildcon",
+   "qty": 2117727,
+   "stake": "1.30%",
+   "chg": [
+    "add",
+    "+0.01 pts"
+   ],
+   "value_cr": 82.8
+  },
+  {
+   "stock": "GeeCee Ventures",
+   "qty": 629570,
+   "stake": "3.01%",
+   "chg": [
+    "same",
+    "No change"
+   ],
+   "value_cr": 22.4
+  }
+ ],
+ "holdings_note": "Values are Trendlyne's figures at a recent price, not on 30 Sep.",
+ "about": "Akash Bhanshali is an Indian investor whose disclosed portfolio is concentrated in a small number of large positions, led by Gujarat Fluorochemicals, Laurus Labs and One97 Communications (Paytm). His holdings appear in filings under 'Akash Bhanshali' and 'Akash Manek Bhanshali'.",
+ "schema_desc": "Indian investor with large disclosed stakes in listed Indian companies.",
+ "news": [
+  {
+   "src": "Business Standard",
+   "date": "16 May 2024",
+   "title": "Aadhar Housing soars 8% after HNIs, including Akash Bhanshali, buy shares",
+   "url": "https://www.business-standard.com/markets/news/newly-listed-aadhar-housing-soars-8-after-hnis-buy-shares-in-bulk-deals-124051600366_1.html"
+  },
+  {
+   "src": "DSIJ",
+   "date": "Jun 2026",
+   "title": "Akash Bhanshali portfolio stock Welspun Living completes ₹252 crore buyback",
+   "url": "https://insights.dsij.in/dsijarticledetail/akash-bhanshali-portfolio-stock-completes-rs-252-crore-buyback-do-you-own-this-textile-major-id021"
+  }
+ ],
+ "faq": [
+  [
+   "What is Akash Bhanshali's portfolio worth?",
+   "His publicly disclosed holdings were about ₹7,666–8,591 crore across 16–17 stocks after the September 2026 filings, depending on the data source and price date."
+  ],
+  [
+   "What did Akash Bhanshali buy recently?",
+   "No new stocks appeared in his September 2026 filings. His only increase was a tiny one in Dilip Buildcon (1.29% to 1.30%)."
+  ],
+  [
+   "How much has his Sudarshan Chemical bet made?",
+   "He bought 55,67,711 Sudarshan Chemical shares at ₹300.20 on 19 October 2018. At about ₹1,045 in November 2026, that lot was up roughly 248% on paper, an estimated gain of about ₹415 crore."
+  ],
+  [
+   "How do you know the prices?",
+   "Prices are exact only for bulk and block deals, which the exchanges publish daily. Quarterly filings show shares held but not the price paid, so those gains are shown as not public or estimated."
+  ]
+ ],
+ "sources": [
+  [
+   "Trendlyne: Akash Bhanshali holdings (Sep 2026 filings)",
+   "https://trendlyne.com/portfolio/superstar-shareholders/custom/?query=akash+bhanshali"
+  ],
+  [
+   "Trendlyne: Akash Bhanshali bulk and block deals",
+   "https://trendlyne.com/portfolio/bulk-block-deals/53740/akash-bhanshali-portfolio/"
+  ],
+  [
+   "Sharpely: Akash Bhanshali portfolio",
+   "https://sharpely.in/titan-tracker/akash-bhanshali-5"
+  ],
+  [
+   "Business Standard: Aadhar Housing bulk deal",
+   "https://www.business-standard.com/markets/news/newly-listed-aadhar-housing-soars-8-after-hnis-buy-shares-in-bulk-deals-124051600366_1.html"
+  ],
+  [
+   "Primary records: NSE and BSE bulk/block deal data and company shareholding patterns",
+   ""
+  ]
+ ],
+ "meta": {
+  "title": "Akash Bhanshali Portfolio 2026: Latest Holdings, Net Worth & Gains | 9AM Traders",
+  "description": "Akash Bhanshali portfolio 2026: ₹7,600+ crore across 17 disclosed stocks incl. Gujarat Fluoro, Laurus Labs and Paytm, with bulk deals and estimated gains.",
+  "keywords": "akash bhanshali portfolio, akash bhanshali latest holdings, akash bhanshali net worth, akash bhanshali stocks"
+ },
+ "aliases": [
+  "AKASH BHANSHALI"
+ ],
+ "auto_deals": [],
+ "deals_updated": "17 Nov 2026"
+}
