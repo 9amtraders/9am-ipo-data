@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-16",
+ "updated": "2026-11-17",
  "ipos": {
   "bombaycoatedspecialsteels": {
    "name": "Bombay Coated & Special Steels",
@@ -470,6 +470,14 @@
       "https://www.investorgain.com/gmp/crystal-crop-protection-ipo/2067/",
       "https://ipowatch.in/crystal-crop-protection-ipo-gmp/"
      ]
+    },
+    {
+     "date": "2026-11-17",
+     "low": 13,
+     "high": 13,
+     "sources": [
+      "https://www.investorgain.com/gmp/crystal-crop-protection-ipo-gmp/2067/"
+     ]
     }
    ]
   },
@@ -490,6 +498,27 @@
      "high": 22,
      "sources": [
       "https://www.investorgain.com/gmp/watrana-rentals-ipo/1818/"
+     ]
+    },
+    {
+     "date": "2026-11-17",
+     "low": 25,
+     "high": 25,
+     "sources": [
+      "https://www.investorgain.com/gmp/watrana-rentals-ipo-gmp/1818/"
+     ]
+    }
+   ]
+  },
+  "mahanadicoalfields": {
+   "name": "Mahanadi Coalfields",
+   "readings": [
+    {
+     "date": "2026-11-17",
+     "low": 3.5,
+     "high": 3.5,
+     "sources": [
+      "https://www.investorgain.com/gmp/mahanadi-coalfields-ipo-gmp/2401/"
      ]
     }
    ]

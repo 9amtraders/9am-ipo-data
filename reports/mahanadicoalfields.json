@@ -7,14 +7,14 @@
  "open": "2026-11-19",
  "close": "2026-11-23",
  "listing": "2026-11-27",
- "band": "",
- "issueSizeCr": 0.0,
+ "band": "₹129 – ₹136",
+ "issueSizeCr": 8981.12,
  "freshCr": 0.0,
- "ofsCr": null,
- "lotSize": null,
- "summary": "Mahanadi Coalfields, a Coal India subsidiary incorporated in 1992, mines non-coking coal from 17 mines in Odisha's Talcher and Ib Valley coalfields and produced 218.31 million tonnes in FY26, about 21% of India's output. Revenue from operations slipped from ₹31,634 cr in FY24 to ₹30,550 cr in FY26 and profit after tax fell 1.2% in FY26 to ₹10,698 cr, though return on net worth was 53.9% and the company is almost debt-free. The issue is entirely an offer for sale of 66.18 crore shares (about 10%) by Coal India, so the company receives no money, and the price band had not been announced when this report was written, so valuation checks are not rated. Top 10 customers, mainly thermal power utilities, give 55.9% of revenue, and contingent liabilities are about 39.8% of net worth.",
- "score": 5,
- "checksScore": 47,
+ "ofsCr": 8981.12,
+ "lotSize": 110,
+ "summary": "Mahanadi Coalfields, a Coal India subsidiary incorporated in 1992, mines non-coking coal from 17 mines in Odisha's Talcher and Ib Valley coalfields and produced 218.31 million tonnes in FY26, about 21% of India's output. Revenue from operations slipped from ₹31,634 cr in FY24 to ₹30,550 cr in FY26 and profit after tax fell 1.2% in FY26 to ₹10,698 cr, though return on net worth was about 54% and the company is almost debt-free. At the upper band of ₹136 the company is valued at about ₹90,010 cr, or about 8.4x FY26 earnings, in line with the cheapest of its RHP peers, and the ₹8,981 cr issue is entirely an offer for sale by Coal India, so the company receives no money. Contingent liabilities were about 56% of net worth at September 2026, and top 10 customers, mainly thermal power utilities, give 55.9% of revenue.",
+ "score": 0,
+ "checksScore": 49,
  "drivers": [
   {
    "name": "Subscription demand",
@@ -31,22 +31,22 @@
   {
    "name": "P/E vs listed peers",
    "weight": 5,
-   "score": 30,
-   "detail": "Peer P/E figures not found; scored from the P/E check."
+   "score": 85,
+   "detail": "P/E 8.43x vs peer median 8.5x, 0% below."
   },
   {
    "name": "All 33 checks",
    "weight": 25,
-   "score": 47,
+   "score": 49,
    "detail": "Financial health, governance, issue structure, use of proceeds, legal and risk checks."
   }
  ],
- "capReason": "7 red flags took 35 points off. Capped at 50 because of 4 or more red flags.",
+ "capReason": "10 red flags took 50 points off. Capped at 50 because of 4 or more red flags.",
  "counts": {
-  "pass": 11,
-  "caution": 4,
-  "flag": 7,
-  "na": 11
+  "pass": 13,
+  "caution": 3,
+  "flag": 10,
+  "na": 7
  },
  "totalChecks": 33,
  "confidence": "normal",
@@ -63,18 +63,18 @@
   },
   {
    "name": "Valuation vs peers",
-   "score": 30,
-   "detail": "Not found in public sources, scored as neutral"
+   "score": 65,
+   "detail": "2 of 4 checks passed · 2 not found"
   },
   {
    "name": "Promoter & governance",
-   "score": 48,
-   "detail": "1 of 4 checks passed · 3 not found"
+   "score": 40,
+   "detail": "1 of 4 checks passed · 1 flag · 2 not found"
   },
   {
    "name": "Issue structure",
-   "score": 27,
-   "detail": "0 of 3 checks passed · 1 flag · 1 not found"
+   "score": 17,
+   "detail": "0 of 3 checks passed · 2 flags"
   },
   {
    "name": "Use of proceeds",
@@ -83,8 +83,8 @@
   },
   {
    "name": "Legal & litigation",
-   "score": 33,
-   "detail": "0 of 3 checks passed · 1 flag"
+   "score": 17,
+   "detail": "0 of 3 checks passed · 2 flags"
   },
   {
    "name": "Risk factors",
@@ -185,16 +185,16 @@
    "id": "va1",
    "name": "P/E vs listed peers",
    "category": "Valuation vs peers",
-   "status": "na",
-   "finding": "The price band had not been announced, so the post-issue P/E cannot be computed.",
-   "source": ""
+   "status": "pass",
+   "finding": "At ₹136 the P/E is about 8.4x FY26 EPS of ₹16.13, at or below the RHP peer median of about 8.5x (Coal India 8.05x, NMDC 8.47x, PT Bukit Asam 11.40x).",
+   "source": "https://www.multibagg.ai/market-pulse/articles/ipo/analyse-mahanadi-coalfields-ipo-rhp-cmwhjei3q00007cpbxvlrkpsn"
   },
   {
    "id": "va2",
    "name": "Price to book vs listed peers",
    "category": "Valuation vs peers",
    "status": "na",
-   "finding": "The price band had not been announced, so the post-issue price to book cannot be computed.",
+   "finding": "Price to book is about 4.2x (₹136 vs FY26 NAV of ₹32.29), but peer price-to-book figures were not found.",
    "source": ""
   },
   {
@@ -202,16 +202,16 @@
    "name": "Market cap to sales vs listed peers",
    "category": "Valuation vs peers",
    "status": "na",
-   "finding": "The price band had not been announced, so market cap to sales cannot be computed.",
+   "finding": "Market cap to sales is about 2.9x (₹90,010 cr vs ₹30,550 cr revenue), but peer market-cap-to-sales figures were not found.",
    "source": ""
   },
   {
    "id": "va4",
    "name": "Recent pre-IPO share price",
    "category": "Valuation vs peers",
-   "status": "na",
-   "finding": "No details of pre-IPO share issues or transfers were found in public sources.",
-   "source": ""
+   "status": "pass",
+   "finding": "The RHP reports no pre-IPO placement and no share acquisitions by Coal India in the preceding year.",
+   "source": "https://www.multibagg.ai/market-pulse/articles/ipo/analyse-mahanadi-coalfields-ipo-rhp-cmwhjei3q00007cpbxvlrkpsn"
   },
   {
    "id": "pg1",
@@ -233,9 +233,9 @@
    "id": "pg3",
    "name": "Related-party transactions",
    "category": "Promoter & governance",
-   "status": "na",
-   "finding": "Related-party transaction figures were not found in public sources.",
-   "source": ""
+   "status": "flag",
+   "finding": "FY26 related-party transactions were ₹8,386 cr, 27.45% of revenue, mostly the ₹7,650 cr dividend paid to Coal India.",
+   "source": "https://www.multibagg.ai/market-pulse/articles/ipo/analyse-mahanadi-coalfields-ipo-rhp-cmwhjei3q00007cpbxvlrkpsn"
   },
   {
    "id": "pg4",
@@ -265,9 +265,9 @@
    "id": "is3",
    "name": "Selling shareholders' cost",
    "category": "Issue structure",
-   "status": "na",
-   "finding": "Coal India's acquisition cost per share was not found in public sources.",
-   "source": ""
+   "status": "flag",
+   "finding": "Coal India's weighted average acquisition cost is ₹0.26 per share, so ₹136 is over 500 times its cost.",
+   "source": "https://www.multibagg.ai/market-pulse/articles/ipo/analyse-mahanadi-coalfields-ipo-rhp-cmwhjei3q00007cpbxvlrkpsn"
   },
   {
    "id": "up1",
@@ -306,8 +306,8 @@
    "name": "Litigation against the company",
    "category": "Legal & litigation",
    "status": "flag",
-   "finding": "The DRHP lists criminal, tax and regulatory proceedings totalling ₹9,084.8 cr (about 42% of FY26 net worth), plus a CAG observation on state mineral levies with potential exposure of about ₹31,228 cr.",
-   "source": "https://univest.in/blogs/mahanadi-coalfields-ipo-sebi-nod-coal-india-10-percent-ofs-key-details"
+   "finding": "The RHP lists 42 direct-tax cases worth ₹8,082 cr and a ₹2,566 cr village compensation claim against the company, together about half of net worth.",
+   "source": "https://www.multibagg.ai/market-pulse/articles/ipo/analyse-mahanadi-coalfields-ipo-rhp-cmwhjei3q00007cpbxvlrkpsn"
   },
   {
    "id": "lg2",
@@ -321,9 +321,9 @@
    "id": "lg3",
    "name": "Contingent liabilities",
    "category": "Legal & litigation",
-   "status": "caution",
-   "finding": "Contingent liabilities were 39.80% of net worth at March 31, 2026.",
-   "source": "https://www.kotakneo.com/ipo/mahanadi-coalfields-ipo/"
+   "status": "flag",
+   "finding": "Contingent liabilities were ₹12,513 cr, 55.86% of net worth, at September 30, 2026.",
+   "source": "https://www.multibagg.ai/market-pulse/articles/ipo/analyse-mahanadi-coalfields-ipo-rhp-cmwhjei3q00007cpbxvlrkpsn"
   },
   {
    "id": "rk1",
@@ -395,10 +395,10 @@
    "high",
    53.87,
    [
-    null,
-    null,
-    null,
-    null
+    27.8,
+    2.07,
+    23.4,
+    13.03
    ]
   ],
   [
@@ -429,19 +429,19 @@
    "P/E (post-issue, upper band)",
    "x",
    "low",
-   null,
+   8.43,
    [
-    7.95,
+    8.05,
     null,
-    10.24,
-    10.0
+    8.47,
+    11.4
    ]
   ],
   [
    "Price to book (post-issue)",
    "x",
    "low",
-   null,
+   4.21,
    [
     null,
     null,
@@ -482,7 +482,23 @@
   {
    "url": "https://etvbharat.com/hi/business/upcoming-ipos-next-week-16-to-20-november-mahanadi-coalfields-crystal-crop-protection-ipo-price-band-lot-size-subscription-date-details-hin26111401046",
    "title": "Upcoming IPOs next week — ETV Bharat"
+  },
+  {
+   "url": "https://www.multibagg.ai/market-pulse/articles/ipo/analyse-mahanadi-coalfields-ipo-rhp-cmwhjei3q00007cpbxvlrkpsn",
+   "title": "Mahanadi Coalfields RHP analysis — Multibagg"
+  },
+  {
+   "url": "https://www.goodreturns.in/news/mahanadi-coalfields-ipo-opens-on-november-19-check-issue-size-price-band-gmp-dates-and-other-det-1547179.html",
+   "title": "Mahanadi Coalfields IPO opens Nov 19 — Goodreturns"
+  },
+  {
+   "url": "https://upstox.com/news/market-news/ipo/mahanadi-coalfields-ipo-price-band-set-at-129-136-per-share-check-lot-size-and-key-dates/article-203479",
+   "title": "Mahanadi Coalfields price band set — Upstox"
+  },
+  {
+   "url": "https://www.ipoguru.in/news/mahanadi-coalfields-ipo-price-band-129-136",
+   "title": "Mahanadi Coalfields price band ₹129–136 — IPO Guru"
   }
  ],
- "generatedAt": "2026-11-15T08:00:00+05:30"
+ "generatedAt": "2026-11-17T08:00:00+05:30"
 }

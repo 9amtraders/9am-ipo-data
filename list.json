@@ -1,29 +1,6 @@
 {
- "updated": "2026-11-16",
+ "updated": "2026-11-17",
  "ipos": [
-  {
-   "name": "Antala Industries",
-   "aka": [],
-   "board": "SME",
-   "open": "2026-10-29",
-   "close": "2026-11-05",
-   "listing": "2026-11-11",
-   "band": "₹62 – ₹66",
-   "registrar": "bigshare",
-   "allotment": "2026-11-06",
-   "sub": {
-    "qib": 66.72,
-    "nii": 49.94,
-    "retail": 5.22,
-    "total": 12.79,
-    "asOf": "2026-11-05 17:54 (final day)",
-    "final": true,
-    "retailShares": 2760000,
-    "minAppShares": 4000,
-    "retailApps": null,
-    "source": "https://www.chittorgarh.com/ipo_subscription/antala-industries-ipo/3221/"
-   }
-  },
   {
    "name": "Crystal Crop Protection",
    "aka": [
@@ -67,7 +44,7 @@
    "open": "2026-11-19",
    "close": "2026-11-23",
    "listing": "2026-11-27",
-   "band": "",
+   "band": "₹129 – ₹136",
    "registrar": "kfin",
    "allotment": "2026-11-25"
   },
@@ -241,6 +218,22 @@
     "Avaada",
     "Avaada Electro IPO",
     "Avada Electro"
+   ],
+   "board": "Mainboard",
+   "open": null,
+   "close": null,
+   "listing": null,
+   "band": ""
+  },
+  {
+   "name": "Hindustan Coca-Cola Holdings",
+   "aka": [
+    "HCCB",
+    "Hindustan Coca-Cola Beverages",
+    "HCCH",
+    "Coca-Cola India",
+    "Coca Cola India bottler",
+    "Hindustan Coca Cola"
    ],
    "board": "Mainboard",
    "open": null,
