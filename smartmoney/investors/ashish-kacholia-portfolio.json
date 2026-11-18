@@ -110,8 +110,8 @@
    "qty": 200000,
    "buy": 247.1,
    "date": "9 Oct 2025",
-   "now": 106.3,
-   "now_date": "17 Nov 2026, NSE close",
+   "now": 103.35,
+   "now_date": "18 Nov 2026, NSE close",
    "extra": "if still held",
    "sym": "TECHERA"
   },
@@ -417,5 +417,5 @@
   "SURYAVANSHI COMMOTRADE"
  ],
  "auto_deals": [],
- "deals_updated": "17 Nov 2026"
+ "deals_updated": "18 Nov 2026"
 }

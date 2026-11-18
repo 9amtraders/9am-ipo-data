@@ -76,8 +76,8 @@
    "qty": 2000000,
    "buy": 164.72,
    "date": "18 Aug 2026",
-   "now": 158.66,
-   "now_date": "17 Nov 2026, NSE close",
+   "now": 156.97,
+   "now_date": "18 Nov 2026, NSE close",
    "sym": "ZAGGLE"
   },
   {
@@ -86,8 +86,8 @@
    "qty": 1498107,
    "buy": 167.0,
    "date": "Jan 2026",
-   "now": 144.6,
-   "now_date": "17 Nov 2026, NSE close",
+   "now": 138.83,
+   "now_date": "18 Nov 2026, NSE close",
    "sym": "SPMLINFRA"
   },
   {
@@ -354,5 +354,5 @@
   "ANKIT VIJAY KEDIA"
  ],
  "auto_deals": [],
- "deals_updated": "17 Nov 2026"
+ "deals_updated": "18 Nov 2026"
 }

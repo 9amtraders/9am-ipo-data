@@ -52,8 +52,8 @@
    "qty": 1700000,
    "buy": 45.55,
    "date": "23 Mar 2026",
-   "now": 153.77,
-   "now_date": "17 Nov 2026, NSE close",
+   "now": 162.06,
+   "now_date": "18 Nov 2026, NSE close",
    "extra": "on this lot only",
    "sym": "BLUSPRING"
   }
@@ -274,5 +274,5 @@
   "ASHISH DHAWAN"
  ],
  "auto_deals": [],
- "deals_updated": "17 Nov 2026"
+ "deals_updated": "18 Nov 2026"
 }

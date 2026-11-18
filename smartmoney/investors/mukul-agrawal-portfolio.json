@@ -80,8 +80,8 @@
    "qty": 729729,
    "buy": 1370.0,
    "date": "6 Nov 2026",
-   "now": 1447.8,
-   "now_date": "17 Nov 2026, NSE close",
+   "now": 1444.7,
+   "now_date": "18 Nov 2026, NSE close",
    "sym": "ALIVUS"
   },
   {
@@ -381,5 +381,5 @@
    "t": "BULK"
   }
  ],
- "deals_updated": "17 Nov 2026"
+ "deals_updated": "18 Nov 2026"
 }
