@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-17",
+ "updated": "2026-11-18",
  "ipos": [
   {
    "name": "Crystal Crop Protection",
@@ -53,6 +53,22 @@
    "score": 0,
    "registrar": "kfin",
    "allotment": "2026-11-25"
+  },
+  {
+   "name": "Casagrand Premier Builder",
+   "aka": [
+    "Casagrand",
+    "Casagrand Builder",
+    "Casa Grand",
+    "Casagrand Premier"
+   ],
+   "board": "Mainboard",
+   "open": null,
+   "close": null,
+   "listing": null,
+   "band": "",
+   "hasReport": false,
+   "score": null
   },
   {
    "name": "Acko",
@@ -210,33 +226,6 @@
    "aka": [
     "Inox Clean",
     "Inox Solar"
-   ],
-   "board": "Mainboard",
-   "open": null,
-   "close": null,
-   "listing": null,
-   "band": "",
-   "hasReport": false,
-   "score": null
-  },
-  {
-   "name": "Atomberg",
-   "aka": [
-    "Atomberg Technologies"
-   ],
-   "board": "Mainboard",
-   "open": null,
-   "close": null,
-   "listing": null,
-   "band": "",
-   "hasReport": false,
-   "score": null
-  },
-  {
-   "name": "Ratnadeep Retail",
-   "aka": [
-    "Ratnadeep Supermarket",
-    "Ratnadeep"
    ],
    "board": "Mainboard",
    "open": null,
