@@ -1,0 +1,440 @@
+{
+ "id": "foodlinkfbholdingsindia",
+ "name": "Foodlink F&B Holdings (India)",
+ "board": "Mainboard",
+ "sector": "Catering and restaurants",
+ "exchange": "NSE, BSE",
+ "open": "2026-11-25",
+ "close": "2026-11-27",
+ "listing": "2026-12-02",
+ "band": "",
+ "issueSizeCr": 160.0,
+ "freshCr": 160.0,
+ "ofsCr": null,
+ "lotSize": null,
+ "summary": "Foodlink F&B Holdings runs events catering, casual dining restaurants (brands include India Bistro, China Bistro and Art of Dum), cloud kitchens and banquets in India and the UAE, led by promoter Sanjay Manohar Vazirani. Total income rose from ₹131 cr in FY22 to ₹380 cr in FY24, but profit swung between losses and small gains, with a ₹15.4 cr loss in FY24 and a ₹7.4 cr profit in the nine months to December 2024. The issue has a ₹160 cr fresh issue plus an offer for sale of about 1.2 crore shares; about 54% of the fresh money goes to new kitchens and restaurants and about 18% to repaying debt. The figures here come from the draft offer document; the price band and newer financials were not yet public when this report was written.",
+ "score": 18,
+ "checksScore": 39,
+ "drivers": [
+  {
+   "name": "Subscription demand",
+   "weight": 50,
+   "score": 50,
+   "detail": "Subscription not available yet, scored as neutral until bidding opens."
+  },
+  {
+   "name": "Profit growth (RHP)",
+   "weight": 20,
+   "score": 10,
+   "detail": "Profit after tax fell 662.3% in the latest year in the RHP."
+  },
+  {
+   "name": "P/E vs listed peers",
+   "weight": 5,
+   "score": 30,
+   "detail": "Peer P/E figures not found; scored from the P/E check."
+  },
+  {
+   "name": "All 33 checks",
+   "weight": 25,
+   "score": 39,
+   "detail": "Financial health, governance, issue structure, use of proceeds, legal and risk checks."
+  }
+ ],
+ "capReason": "4 red flags took 20 points off. Capped at 50 because of 4 or more red flags.",
+ "counts": {
+  "pass": 7,
+  "caution": 0,
+  "flag": 4,
+  "na": 22
+ },
+ "totalChecks": 33,
+ "confidence": "low",
+ "categories": [
+  {
+   "name": "Financial health",
+   "score": 72,
+   "detail": "4 of 6 checks passed · 1 flag · 1 not found"
+  },
+  {
+   "name": "Profitability",
+   "score": 12,
+   "detail": "0 of 5 checks passed · 3 flags · 2 not found"
+  },
+  {
+   "name": "Valuation vs peers",
+   "score": 30,
+   "detail": "Not found in public sources, scored as neutral"
+  },
+  {
+   "name": "Promoter & governance",
+   "score": 30,
+   "detail": "Not found in public sources, scored as neutral"
+  },
+  {
+   "name": "Issue structure",
+   "score": 30,
+   "detail": "Not found in public sources, scored as neutral"
+  },
+  {
+   "name": "Use of proceeds",
+   "score": 65,
+   "detail": "2 of 4 checks passed · 2 not found"
+  },
+  {
+   "name": "Legal & litigation",
+   "score": 30,
+   "detail": "Not found in public sources, scored as neutral"
+  },
+  {
+   "name": "Risk factors",
+   "score": 48,
+   "detail": "1 of 4 checks passed · 3 not found"
+  }
+ ],
+ "checks": [
+  {
+   "id": "fh1",
+   "name": "Revenue growth",
+   "category": "Financial health",
+   "status": "pass",
+   "finding": "Total income rose from ₹131.1 cr (FY22) to ₹380.2 cr (FY24), a CAGR of about 70%; FY25 and FY26 figures were not found.",
+   "source": "https://www.chittorgarh.com/ipo/foodlink-fb-ipo/2493/"
+  },
+  {
+   "id": "fh2",
+   "name": "Revenue rose every year",
+   "category": "Financial health",
+   "status": "pass",
+   "finding": "Total income grew in FY23 (₹275.8 cr) and FY24 (₹380.2 cr).",
+   "source": "https://www.chittorgarh.com/ipo/foodlink-fb-ipo/2493/"
+  },
+  {
+   "id": "fh3",
+   "name": "Debt to equity",
+   "category": "Financial health",
+   "status": "pass",
+   "finding": "Debt to equity was about 0.37 at 31 Dec 2024 (borrowings ₹32.6 cr vs net worth ₹88.8 cr).",
+   "source": "https://www.chittorgarh.com/ipo/foodlink-fb-ipo/2493/"
+  },
+  {
+   "id": "fh4",
+   "name": "Debt growing slower than revenue",
+   "category": "Financial health",
+   "status": "pass",
+   "finding": "Borrowings rose 74% (₹20.2 cr to ₹35.3 cr) while total income rose 190% over FY22–FY24.",
+   "source": "https://www.chittorgarh.com/ipo/foodlink-fb-ipo/2493/"
+  },
+  {
+   "id": "fh5",
+   "name": "Net worth rising",
+   "category": "Financial health",
+   "status": "flag",
+   "finding": "Net worth fell from ₹92.1 cr (FY23) to ₹79.6 cr (FY24) before recovering to ₹88.8 cr at Dec 2024.",
+   "source": "https://www.chittorgarh.com/ipo/foodlink-fb-ipo/2493/"
+  },
+  {
+   "id": "fh6",
+   "name": "Positive operating cash flow",
+   "category": "Financial health",
+   "status": "na",
+   "finding": "Operating cash flow figures were not found in public sources.",
+   "source": ""
+  },
+  {
+   "id": "pr1",
+   "name": "Profit growth",
+   "category": "Profitability",
+   "status": "flag",
+   "finding": "The company made a loss of ₹15.4 cr in FY24 after a ₹2.7 cr profit in FY23.",
+   "source": "https://www.chittorgarh.com/ipo/foodlink-fb-ipo/2493/"
+  },
+  {
+   "id": "pr2",
+   "name": "Profit margin trend",
+   "category": "Profitability",
+   "status": "flag",
+   "finding": "PAT margin was -4.04% in FY24, a loss-making year.",
+   "source": "https://ipowatch.in/foodlink-fb-holdings-ipo-details/"
+  },
+  {
+   "id": "pr3",
+   "name": "Return on equity",
+   "category": "Profitability",
+   "status": "flag",
+   "finding": "Return on net worth was -17.88% in FY24.",
+   "source": "https://ipowatch.in/foodlink-fb-holdings-ipo-details/"
+  },
+  {
+   "id": "pr4",
+   "name": "Return on capital employed",
+   "category": "Profitability",
+   "status": "na",
+   "finding": "ROCE was not found in public sources.",
+   "source": ""
+  },
+  {
+   "id": "pr5",
+   "name": "Margin vs listed peers",
+   "category": "Profitability",
+   "status": "na",
+   "finding": "Public sources say there are no comparable listed peers in India.",
+   "source": ""
+  },
+  {
+   "id": "va1",
+   "name": "P/E vs listed peers",
+   "category": "Valuation vs peers",
+   "status": "na",
+   "finding": "The price band has not been announced and no listed peers are named, so P/E cannot be compared.",
+   "source": ""
+  },
+  {
+   "id": "va2",
+   "name": "Price to book vs listed peers",
+   "category": "Valuation vs peers",
+   "status": "na",
+   "finding": "The price band has not been announced and no listed peers are named.",
+   "source": ""
+  },
+  {
+   "id": "va3",
+   "name": "Market cap to sales vs listed peers",
+   "category": "Valuation vs peers",
+   "status": "na",
+   "finding": "The price band has not been announced and no listed peers are named.",
+   "source": ""
+  },
+  {
+   "id": "va4",
+   "name": "Recent pre-IPO share price",
+   "category": "Valuation vs peers",
+   "status": "na",
+   "finding": "No details of pre-IPO share issues or transfers were found in public sources.",
+   "source": ""
+  },
+  {
+   "id": "pg1",
+   "name": "Promoter holding after the issue",
+   "category": "Promoter & governance",
+   "status": "na",
+   "finding": "Promoters hold 63.40% before the issue; the post-issue holding was not found.",
+   "source": ""
+  },
+  {
+   "id": "pg2",
+   "name": "No pledged promoter shares",
+   "category": "Promoter & governance",
+   "status": "na",
+   "finding": "No information on pledged promoter shares was found.",
+   "source": ""
+  },
+  {
+   "id": "pg3",
+   "name": "Related-party transactions",
+   "category": "Promoter & governance",
+   "status": "na",
+   "finding": "Related-party transaction figures were not found in public sources.",
+   "source": ""
+  },
+  {
+   "id": "pg4",
+   "name": "No regulatory action against promoters",
+   "category": "Promoter & governance",
+   "status": "na",
+   "finding": "No information on regulatory action against promoters was found.",
+   "source": ""
+  },
+  {
+   "id": "is1",
+   "name": "Offer for sale share of the issue",
+   "category": "Issue structure",
+   "status": "na",
+   "finding": "The issue has a ₹160 cr fresh issue and an OFS of 1,19,53,535 shares, but the OFS value is unknown until the price band is set.",
+   "source": ""
+  },
+  {
+   "id": "is2",
+   "name": "Free float after listing",
+   "category": "Issue structure",
+   "status": "na",
+   "finding": "The issue size and post-issue market cap are not known until the price band is set.",
+   "source": ""
+  },
+  {
+   "id": "is3",
+   "name": "Selling shareholders' cost",
+   "category": "Issue structure",
+   "status": "na",
+   "finding": "Selling shareholders' acquisition cost was not found in public sources.",
+   "source": ""
+  },
+  {
+   "id": "up1",
+   "name": "Money for growth",
+   "category": "Use of proceeds",
+   "status": "pass",
+   "finding": "₹86.3 cr (about 54% of the ₹160 cr fresh issue) goes to two centralised kitchens and four new restaurants.",
+   "source": "https://ipowatch.in/foodlink-fb-holdings-ipo-details/"
+  },
+  {
+   "id": "up2",
+   "name": "Debt repayment share",
+   "category": "Use of proceeds",
+   "status": "pass",
+   "finding": "₹28.45 cr, or about 17.8% of the fresh issue, goes to repaying borrowings.",
+   "source": "https://ipowatch.in/foodlink-fb-holdings-ipo-details/"
+  },
+  {
+   "id": "up3",
+   "name": "General corporate purposes",
+   "category": "Use of proceeds",
+   "status": "na",
+   "finding": "The general corporate purposes amount was not stated in public sources.",
+   "source": ""
+  },
+  {
+   "id": "up4",
+   "name": "No repayment to promoter entities",
+   "category": "Use of proceeds",
+   "status": "na",
+   "finding": "Whether any repaid loans are from promoter entities was not found.",
+   "source": ""
+  },
+  {
+   "id": "lg1",
+   "name": "Litigation against the company",
+   "category": "Legal & litigation",
+   "status": "na",
+   "finding": "Litigation figures were not found in public sources.",
+   "source": ""
+  },
+  {
+   "id": "lg2",
+   "name": "Criminal or regulatory cases",
+   "category": "Legal & litigation",
+   "status": "na",
+   "finding": "No information on criminal or regulatory cases was found.",
+   "source": ""
+  },
+  {
+   "id": "lg3",
+   "name": "Contingent liabilities",
+   "category": "Legal & litigation",
+   "status": "na",
+   "finding": "Contingent liability figures were not found in public sources.",
+   "source": ""
+  },
+  {
+   "id": "rk1",
+   "name": "Customer concentration",
+   "category": "Risk factors",
+   "status": "na",
+   "finding": "Customer concentration figures were not found in public sources.",
+   "source": ""
+  },
+  {
+   "id": "rk2",
+   "name": "Supplier dependence",
+   "category": "Risk factors",
+   "status": "na",
+   "finding": "Supplier concentration figures were not found in public sources.",
+   "source": ""
+  },
+  {
+   "id": "rk3",
+   "name": "Operating history",
+   "category": "Risk factors",
+   "status": "pass",
+   "finding": "The company was incorporated in October 2015, about 11 years ago.",
+   "source": "https://chanakyanipothi.com/foodlink-ipo-review-price-dates-gmp/"
+  },
+  {
+   "id": "rk4",
+   "name": "Auditor remarks",
+   "category": "Risk factors",
+   "status": "na",
+   "finding": "Auditor remarks were not found in public sources.",
+   "source": ""
+  }
+ ],
+ "peers": [],
+ "metrics": [
+  [
+   "Revenue growth (CAGR)",
+   "%",
+   "high",
+   70.3,
+   []
+  ],
+  [
+   "Net profit margin",
+   "%",
+   "high",
+   -4.04,
+   []
+  ],
+  [
+   "Return on equity",
+   "%",
+   "high",
+   -17.88,
+   []
+  ],
+  [
+   "Return on capital employed",
+   "%",
+   "high",
+   null,
+   []
+  ],
+  [
+   "Debt to equity",
+   "x",
+   "low",
+   0.37,
+   []
+  ],
+  [
+   "P/E (post-issue, upper band)",
+   "x",
+   "low",
+   null,
+   []
+  ],
+  [
+   "Price to book (post-issue)",
+   "x",
+   "low",
+   null,
+   []
+  ]
+ ],
+ "sources": [
+  {
+   "url": "https://ipowatch.in/foodlink-fb-holdings-ipo-details/",
+   "title": "Foodlink F&B Holdings IPO details — IPO Watch"
+  },
+  {
+   "url": "https://www.chittorgarh.com/ipo/foodlink-fb-ipo/2493/",
+   "title": "Foodlink F&B Holdings IPO — Chittorgarh"
+  },
+  {
+   "url": "https://chanakyanipothi.com/foodlink-ipo-review-price-dates-gmp/",
+   "title": "Foodlink IPO review — Chanakya Nipothi"
+  },
+  {
+   "url": "https://hdfcsky.com/ipo/foodlink-fb-holdings-india-ipo",
+   "title": "Foodlink F&B Holdings India IPO — HDFC Sky"
+  },
+  {
+   "url": "https://www.indiaipo.in/ipo-blogs/foodlink-fb-holdings-ipo",
+   "title": "Foodlink F&B Holdings IPO — IndiaIPO"
+  },
+  {
+   "url": "https://www.indianretailer.com/news/foodlink-fb-holdings-files-drhp-sebi-rs-160-cr-ipo",
+   "title": "Foodlink F&B Holdings files DRHP — Indian Retailer"
+  }
+ ],
+ "generatedAt": "2026-11-19T08:00:00+05:30"
+}
