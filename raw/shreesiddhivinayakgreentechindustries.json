@@ -1,0 +1,253 @@
+{
+ "name": "Shree Siddhivinayak Greentech Industries",
+ "board": "SME",
+ "sector": "Jaggery and sugarcane processing",
+ "exchange": "NSE Emerge",
+ "open": "2026-11-25",
+ "close": "2026-11-27",
+ "listing": "2026-12-02",
+ "priceBand": "₹130 – ₹142",
+ "issueSizeCr": 93.66,
+ "freshCr": 93.66,
+ "ofsCr": 0,
+ "lotSize": 1000,
+ "researchedOn": "2026-11-20",
+ "summary": "Shree Siddhivinayak Greentech Industries, incorporated in 2022 in Dharashiv (Osmanabad), Maharashtra, makes jaggery powder, khandsari sugar, jaggery premixes sold under the Feel Guddy brand and sugarcane by-products, and began commercial operations in FY24. Revenue rose from ₹36.3 cr in FY24 to ₹75.3 cr in FY26 and profit after tax more than doubled to ₹11.6 cr in FY26, but jaggery powder is most of its sales and the top 10 customers made up 99.9% of revenue in the four months to July 2026. Debt to equity was 2.62 before the issue, and about ₹48.5 cr of the ₹93.66 cr fresh issue goes to repaying borrowings, with ₹23.5 cr for expanding crushing capacity. At the upper band the company is valued at about ₹268 cr, or about 23x FY26 earnings, above the median of the two listed peers named in the RHP.",
+ "ipoMetrics": {
+  "rev_cagr": 44.0,
+  "pat_margin": 15.4,
+  "roe": 53.24,
+  "roce": 19.76,
+  "de": 2.62,
+  "pe": 23.09,
+  "pb": 2.19
+ },
+ "patGrowth": 110.7,
+ "peers": [
+  {
+   "name": "Dhampure Specialty Sugars",
+   "metrics": {
+    "pat_margin": 9.5,
+    "roe": 13.07,
+    "roce": 17.38,
+    "de": 0.0,
+    "pe": 22.65
+   }
+  },
+  {
+   "name": "Dollex Agrotech",
+   "metrics": {
+    "pat_margin": 3.74,
+    "roe": 6.79,
+    "roce": 5.09,
+    "de": 1.27,
+    "pe": 16.39
+   }
+  }
+ ],
+ "checks": {
+  "fh1": {
+   "status": "pass",
+   "finding": "Revenue from operations rose from ₹36.28 cr in FY24 to ₹75.27 cr in FY26, a CAGR of about 44.0%.",
+   "source": "https://www.multibagg.ai/market-pulse/articles/ipo/analyse-shree-siddhivinayak-greentech-industries-ipo-rhp-cmwn5yl4n00017bpei7eoyvaq"
+  },
+  "fh2": {
+   "status": "pass",
+   "finding": "Revenue grew in both of the last 2 years: to ₹58.57 cr in FY25 and ₹75.27 cr in FY26.",
+   "source": "https://www.multibagg.ai/market-pulse/articles/ipo/analyse-shree-siddhivinayak-greentech-industries-ipo-rhp-cmwn5yl4n00017bpei7eoyvaq"
+  },
+  "fh3": {
+   "status": "flag",
+   "finding": "Debt to equity was 2.62 at July 2026 (borrowings ₹74.72 cr vs net worth ₹28.52 cr), down from 3.59 at March 2026.",
+   "source": "https://www.multibagg.ai/market-pulse/articles/ipo/analyse-shree-siddhivinayak-greentech-industries-ipo-rhp-cmwn5yl4n00017bpei7eoyvaq"
+  },
+  "fh4": {
+   "status": "pass",
+   "finding": "Borrowings rose about 17.7% (₹76.45 cr to ₹89.95 cr) over FY24–FY26, slower than revenue (about 107%).",
+   "source": "https://www.multibagg.ai/market-pulse/articles/ipo/analyse-shree-siddhivinayak-greentech-industries-ipo-rhp-cmwn5yl4n00017bpei7eoyvaq"
+  },
+  "fh5": {
+   "status": "pass",
+   "finding": "Net worth rose every year: ₹12.98 cr (FY24), ₹18.48 cr (FY25), ₹25.07 cr (FY26) and ₹28.52 cr (July 2026).",
+   "source": "https://www.multibagg.ai/market-pulse/articles/ipo/analyse-shree-siddhivinayak-greentech-industries-ipo-rhp-cmwn5yl4n00017bpei7eoyvaq"
+  },
+  "fh6": {
+   "status": "caution",
+   "finding": "Operating cash flow was ₹5.04 cr in FY26, positive but only about 43% of PAT of ₹11.59 cr.",
+   "source": "https://www.kotakneo.com/ipo/shree-siddhivinayak-greentech-industries-ipo/"
+  },
+  "pr1": {
+   "status": "pass",
+   "finding": "Profit after tax grew about 110.7% in FY26, to ₹11.59 cr from ₹5.50 cr.",
+   "source": "https://www.multibagg.ai/market-pulse/articles/ipo/analyse-shree-siddhivinayak-greentech-industries-ipo-rhp-cmwn5yl4n00017bpei7eoyvaq"
+  },
+  "pr2": {
+   "status": "pass",
+   "finding": "PAT margin improved from 8.49% (FY24) to 9.39% (FY25) and 15.40% (FY26).",
+   "source": "https://www.multibagg.ai/market-pulse/articles/ipo/analyse-shree-siddhivinayak-greentech-industries-ipo-rhp-cmwn5yl4n00017bpei7eoyvaq"
+  },
+  "pr3": {
+   "status": "pass",
+   "finding": "Return on equity was 53.24% in FY26 (RoNW 46.24%).",
+   "source": "https://www.multibagg.ai/market-pulse/articles/ipo/analyse-shree-siddhivinayak-greentech-industries-ipo-rhp-cmwn5yl4n00017bpei7eoyvaq"
+  },
+  "pr4": {
+   "status": "pass",
+   "finding": "ROCE was 19.76% in FY26.",
+   "source": "https://www.multibagg.ai/market-pulse/articles/ipo/analyse-shree-siddhivinayak-greentech-industries-ipo-rhp-cmwn5yl4n00017bpei7eoyvaq"
+  },
+  "pr5": {
+   "status": "pass",
+   "finding": "FY26 EBITDA margin of 27.19% and PAT margin of 15.40% are above both listed peers (Dhampure Specialty Sugars 12.20% / 9.50%, Dollex Agrotech 7.57% / 3.74%).",
+   "source": "https://www.multibagg.ai/market-pulse/articles/ipo/analyse-shree-siddhivinayak-greentech-industries-ipo-rhp-cmwn5yl4n00017bpei7eoyvaq"
+  },
+  "va1": {
+   "status": "caution",
+   "finding": "Post-issue P/E is about 23.1x at the upper band (₹267.61 cr market cap / FY26 PAT ₹11.59 cr), about 18% above the peer median of 19.52x (Dhampure 22.65x, Dollex 16.39x).",
+   "source": "https://www.multibagg.ai/market-pulse/articles/ipo/analyse-shree-siddhivinayak-greentech-industries-ipo-rhp-cmwn5yl4n00017bpei7eoyvaq"
+  },
+  "va2": {
+   "status": "na",
+   "finding": "Post-issue price to book is about 2.2x (₹267.61 cr / ₹28.52 cr net worth plus ₹93.66 cr issue), but peer price-to-book figures were not stated in public sources.",
+   "source": ""
+  },
+  "va3": {
+   "status": "na",
+   "finding": "Market cap to FY26 sales is about 3.6x, but peer market caps were not found for comparison.",
+   "source": ""
+  },
+  "va4": {
+   "status": "flag",
+   "finding": "Promoter Dattatray Kashinath Kulkarni received 10.00 lakh shares as a gift at nil consideration in January 2026, within 12 months of the IPO; no other pre-IPO placement is planned.",
+   "source": "https://www.multibagg.ai/market-pulse/articles/ipo/analyse-shree-siddhivinayak-greentech-industries-ipo-rhp-cmwn5yl4n00017bpei7eoyvaq"
+  },
+  "pg1": {
+   "status": "pass",
+   "finding": "Promoter and promoter group holding falls from 100% to 65% after the issue.",
+   "source": "https://www.chittorgarh.com/ipo/shree-siddhivinayak-greentech-industries-ipo/3195/"
+  },
+  "pg2": {
+   "status": "pass",
+   "finding": "The RHP reports no pledge of promoter shares.",
+   "source": "https://www.multibagg.ai/market-pulse/articles/ipo/analyse-shree-siddhivinayak-greentech-industries-ipo-rhp-cmwn5yl4n00017bpei7eoyvaq"
+  },
+  "pg3": {
+   "status": "pass",
+   "finding": "Related-party expenses were ₹1.63 cr in FY26, about 2.2% of revenue; promoters have also lent the company ₹25.45 cr in unsecured loans (34% of borrowings) and lease it factory and godown property.",
+   "source": "https://www.multibagg.ai/market-pulse/articles/ipo/analyse-shree-siddhivinayak-greentech-industries-ipo-rhp-cmwn5yl4n00017bpei7eoyvaq"
+  },
+  "pg4": {
+   "status": "flag",
+   "finding": "Seven tax cases involving ₹10.86 lakh are pending against the promoters; no criminal, SEBI or regulatory cases are reported against them.",
+   "source": "https://www.multibagg.ai/market-pulse/articles/ipo/analyse-shree-siddhivinayak-greentech-industries-ipo-rhp-cmwn5yl4n00017bpei7eoyvaq"
+  },
+  "is1": {
+   "status": "pass",
+   "finding": "The issue is entirely a fresh issue of 65.96 lakh shares, with no offer for sale.",
+   "source": "https://www.chittorgarh.com/ipo/shree-siddhivinayak-greentech-industries-ipo/3195/"
+  },
+  "is2": {
+   "status": "pass",
+   "finding": "The ₹93.66 cr issue is about 35% of the ₹267.61 cr post-issue market cap.",
+   "source": "https://www.chittorgarh.com/ipo/shree-siddhivinayak-greentech-industries-ipo/3195/"
+  },
+  "is3": {
+   "status": "pass",
+   "finding": "There is no offer for sale, so no selling shareholders.",
+   "source": "https://www.chittorgarh.com/ipo/shree-siddhivinayak-greentech-industries-ipo/3195/"
+  },
+  "up1": {
+   "status": "caution",
+   "finding": "₹23.54 cr of the ₹93.66 cr issue (about 25%) goes to capex to expand crushing capacity from 1,250 to 2,000 tonnes a day.",
+   "source": "https://www.multibagg.ai/market-pulse/articles/ipo/analyse-shree-siddhivinayak-greentech-industries-ipo-rhp-cmwn5yl4n00017bpei7eoyvaq"
+  },
+  "up2": {
+   "status": "caution",
+   "finding": "₹48.50 cr of the ₹93.66 cr issue (about 52%) goes to repaying or prepaying borrowings.",
+   "source": "https://www.multibagg.ai/market-pulse/articles/ipo/analyse-shree-siddhivinayak-greentech-industries-ipo-rhp-cmwn5yl4n00017bpei7eoyvaq"
+  },
+  "up3": {
+   "status": "pass",
+   "finding": "General corporate purposes are capped at the lower of 15% of gross proceeds or ₹10.00 cr, so at most about 10.7% of the ₹93.66 cr issue.",
+   "source": "https://www.ipoguru.in/ipo/shree-siddhivinayak-greentech-industries-sme-ipo"
+  },
+  "up4": {
+   "status": "pass",
+   "finding": "Proceeds will not repay loans from directors, promoters, the promoter group or group companies; the named lender is HDFC Bank.",
+   "source": "https://www.multibagg.ai/market-pulse/articles/ipo/analyse-shree-siddhivinayak-greentech-industries-ipo-rhp-cmwn5yl4n00017bpei7eoyvaq"
+  },
+  "lg1": {
+   "status": "pass",
+   "finding": "Six tax cases against the company total ₹28.75 lakh, about 1% of net worth of ₹28.52 cr; no material civil cases are reported.",
+   "source": "https://www.multibagg.ai/market-pulse/articles/ipo/analyse-shree-siddhivinayak-greentech-industries-ipo-rhp-cmwn5yl4n00017bpei7eoyvaq"
+  },
+  "lg2": {
+   "status": "caution",
+   "finding": "No criminal or regulatory cases against the company, promoters or directors, but an adjudication over a March 2024 private-placement filing is pending, with penalties of up to ₹2 lakh for the company.",
+   "source": "https://www.multibagg.ai/market-pulse/articles/ipo/analyse-shree-siddhivinayak-greentech-industries-ipo-rhp-cmwn5yl4n00017bpei7eoyvaq"
+  },
+  "lg3": {
+   "status": "na",
+   "finding": "Contingent liability figures were not found in public sources.",
+   "source": ""
+  },
+  "rk1": {
+   "status": "flag",
+   "finding": "The top 10 customers made up 99.92% of revenue (top 5: 97.45%) in the four months to July 2026.",
+   "source": "https://www.multibagg.ai/market-pulse/articles/ipo/analyse-shree-siddhivinayak-greentech-industries-ipo-rhp-cmwn5yl4n00017bpei7eoyvaq"
+  },
+  "rk2": {
+   "status": "pass",
+   "finding": "The top 10 suppliers made up 3.03% of sugarcane purchases; cane is bought directly from farmers.",
+   "source": "https://www.multibagg.ai/market-pulse/articles/ipo/analyse-shree-siddhivinayak-greentech-industries-ipo-rhp-cmwn5yl4n00017bpei7eoyvaq"
+  },
+  "rk3": {
+   "status": "flag",
+   "finding": "The company was incorporated in June 2022 and began commercial operations in FY24, about 3–4 years ago.",
+   "source": "https://www.multibagg.ai/market-pulse/articles/ipo/analyse-shree-siddhivinayak-greentech-industries-ipo-rhp-cmwn5yl4n00017bpei7eoyvaq"
+  },
+  "rk4": {
+   "status": "na",
+   "finding": "Auditor remarks were not found in public sources.",
+   "source": ""
+  }
+ },
+ "sources": [
+  {
+   "url": "https://www.chittorgarh.com/ipo/shree-siddhivinayak-greentech-industries-ipo/3195/",
+   "title": "Shree Siddhivinayak Greentech Industries IPO details — Chittorgarh"
+  },
+  {
+   "url": "https://www.chittorgarh.com/ipo-recommendation/shree-siddhivinayak-greentech-industries-ipo/3195/",
+   "title": "Shree Siddhivinayak Greentech Industries IPO peer comparison — Chittorgarh"
+  },
+  {
+   "url": "https://www.multibagg.ai/market-pulse/articles/ipo/analyse-shree-siddhivinayak-greentech-industries-ipo-rhp-cmwn5yl4n00017bpei7eoyvaq",
+   "title": "Shree Siddhivinayak IPO RHP analysis — Multibagg"
+  },
+  {
+   "url": "https://www.kotakneo.com/ipo/shree-siddhivinayak-greentech-industries-ipo/",
+   "title": "Shree Siddhivinayak Greentech Industries IPO financials and cash flow — Kotak Neo"
+  },
+  {
+   "url": "https://www.investorgain.com/ipo/shree-siddhivinayak-greentech-industries-ipo/2349/",
+   "title": "Shree Siddhivinayak Greentech Industries IPO — InvestorGain"
+  },
+  {
+   "url": "https://www.ipoguru.in/ipo/shree-siddhivinayak-greentech-industries-sme-ipo",
+   "title": "Shree Siddhivinayak Greentech Industries IPO dates and objects — IPO Guru"
+  },
+  {
+   "url": "https://www.indiaipo.in/ipo-blogs/shree-siddhivinayak-greentech-industries-ipo",
+   "title": "Shree Siddhivinayak Greentech Industries IPO timetable — IndiaIPO"
+  },
+  {
+   "url": "https://www.torusdigital.com/ipo/shree-siddhivinayak-greentech-industries-ltd-ipo",
+   "title": "Shree Siddhivinayak Greentech Industries IPO registrar and peers — Torus Digital"
+  },
+  {
+   "url": "https://www.bajajfinservmarkets.in/ipo/shree-siddhivinayak-greentech-industries-ltd",
+   "title": "Shree Siddhivinayak Greentech Industries IPO business history — Bajaj Finserv Markets"
+  }
+ ]
+}

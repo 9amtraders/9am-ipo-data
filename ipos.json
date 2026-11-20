@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-19",
+ "updated": "2026-11-20",
  "ipos": [
   {
    "name": "Crystal Crop Protection",
@@ -15,24 +15,24 @@
    "listing": "2026-11-26",
    "band": "₹259 – ₹272",
    "hasReport": true,
-   "score": 30,
+   "score": 40,
    "registrar": "mufg",
    "allotment": "2026-11-23",
    "sub": {
-    "qib": 2.11,
-    "nii": 0.78,
-    "retail": 1.36,
-    "total": 1.47,
-    "retailShares": 5831827,
+    "qib": 2.18,
+    "nii": 3.43,
+    "retail": 3.12,
+    "total": 2.94,
+    "retailShares": 6059497,
     "minAppShares": 55,
     "retailApps": null,
-    "asOf": "2026-11-18 17:04",
+    "asOf": "2026-11-19 19:30",
     "final": false,
-    "source": "https://hdfcsky.com/news/crystal-crop-protection-ipo-subscription-status-day-1"
+    "source": "https://www.ipoguru.in/ipo-subscription/crystal-crop-protection-ipo"
    },
    "allot": {
-    "chance": 73.5,
-    "oneIn": 1,
+    "chance": 32.1,
+    "oneIn": 3,
     "basis": "estimate"
    }
   },
@@ -48,9 +48,26 @@
    "listing": "2026-11-27",
    "band": "₹232 – ₹245",
    "hasReport": true,
-   "score": 51,
+   "score": 40,
    "registrar": "maashitla",
-   "allotment": "2026-11-25"
+   "allotment": "2026-11-25",
+   "sub": {
+    "qib": 0.0,
+    "nii": 5.66,
+    "retail": 5.06,
+    "total": 3.74,
+    "retailShares": 1629600,
+    "minAppShares": 1200,
+    "retailApps": null,
+    "asOf": "2026-11-19 19:30",
+    "final": false,
+    "source": "https://www.ipoguru.in/ipo-subscription/watrana-rentals-sme-ipo"
+   },
+   "allot": {
+    "chance": 19.8,
+    "oneIn": 5,
+    "basis": "estimate"
+   }
   },
   {
    "name": "Mahanadi Coalfields",
@@ -69,7 +86,24 @@
    "hasReport": true,
    "score": 0,
    "registrar": "kfin",
-   "allotment": "2026-11-25"
+   "allotment": "2026-11-25",
+   "sub": {
+    "qib": 1.26,
+    "nii": 0.08,
+    "retail": 0.13,
+    "total": 0.38,
+    "retailShares": 196896300,
+    "minAppShares": 110,
+    "retailApps": null,
+    "asOf": "2026-11-19 19:30",
+    "final": false,
+    "source": "https://www.ipoguru.in/ipo-subscription/mahanadi-coalfields-ipo"
+   },
+   "allot": {
+    "chance": 100.0,
+    "oneIn": 1,
+    "basis": "undersubscribed"
+   }
   },
   {
    "name": "Foodlink F&B Holdings (India)",
@@ -91,6 +125,26 @@
    "hasReport": true,
    "score": 18,
    "registrar": "mufg",
+   "allotment": "2026-11-30"
+  },
+  {
+   "name": "Shree Siddhivinayak Greentech Industries",
+   "aka": [
+    "Shree Siddhivinayak Greentech",
+    "Siddhivinayak Greentech",
+    "Shree Siddhivinayak",
+    "Siddhivinayak Green Tech",
+    "Shri Siddhivinayak Greentech",
+    "Siddhivinayak Greentech IPO"
+   ],
+   "board": "SME",
+   "open": "2026-11-25",
+   "close": "2026-11-27",
+   "listing": "2026-12-02",
+   "band": "₹130 – ₹142",
+   "hasReport": true,
+   "score": 40,
+   "registrar": "mas",
    "allotment": "2026-11-30"
   },
   {

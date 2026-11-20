@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-19",
+ "updated": "2026-11-20",
  "ipos": {
   "bombaycoatedspecialsteels": {
    "name": "Bombay Coated & Special Steels",
@@ -487,6 +487,16 @@
       "https://www.investorgain.com/gmp/crystal-crop-protection-ipo-gmp/2067/",
       "https://www.ipomarket.in/gmp"
      ]
+    },
+    {
+     "date": "2026-11-19",
+     "low": 17,
+     "high": 18,
+     "sources": [
+      "https://ipowatch.in/crystal-crop-protection-ipo-details/",
+      "https://www.ipoji.com/ipo-gmp/crystal-crop-protection-ipo",
+      "https://www.ipoguru.in/ipo-gmp/crystal-crop-protection-ipo"
+     ]
     }
    ]
   },
@@ -525,6 +535,26 @@
       "https://www.investorgain.com/gmp/watrana-rentals-ipo-gmp/1818/",
       "https://www.ipomarket.in/gmp"
      ]
+    },
+    {
+     "date": "2026-11-19",
+     "low": 40,
+     "high": 67,
+     "sources": [
+      "https://www.investorgain.com/gmp/watrana-rentals-ipo/1818/",
+      "https://ipowatch.in/watrana-rentals-ipo-details/",
+      "https://www.ipoguru.in/ipo-gmp/watrana-rentals-sme-ipo",
+      "https://www.ipomarket.in/ipo/watrana-rentals-sme-ipo",
+      "https://www.ipoji.com/ipo/watrana-rentals-ipo"
+     ]
+    },
+    {
+     "date": "2026-11-20",
+     "low": 67,
+     "high": 67,
+     "sources": [
+      "https://www.investorgain.com/gmp/watrana-rentals-ipo/1818/"
+     ]
     }
    ]
   },
@@ -545,6 +575,29 @@
      "high": 3,
      "sources": [
       "https://www.ipomarket.in/gmp"
+     ]
+    },
+    {
+     "date": "2026-11-19",
+     "low": 2.3,
+     "high": 3,
+     "sources": [
+      "https://ipowatch.in/mahanadi-coalfields-ipo-details/",
+      "https://www.ipoji.com/ipo-gmp/mahanadi-coalfields-ipo",
+      "https://www.ipoguru.in/ipo-gmp/mahanadi-coalfields-ipo"
+     ]
+    }
+   ]
+  },
+  "shreesiddhivinayakgreentechindustries": {
+   "name": "Shree Siddhivinayak Greentech Industries",
+   "readings": [
+    {
+     "date": "2026-11-20",
+     "low": 0,
+     "high": 0,
+     "sources": [
+      "https://www.investorgain.com/gmp/shree-siddhivinayak-greentech-industries-ipo/2349/"
      ]
     }
    ]

@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-19",
+ "updated": "2026-11-20",
  "ipos": [
   {
    "name": "Crystal Crop Protection",
@@ -17,16 +17,16 @@
    "registrar": "mufg",
    "allotment": "2026-11-23",
    "sub": {
-    "qib": 2.11,
-    "nii": 0.78,
-    "retail": 1.36,
-    "total": 1.47,
-    "asOf": "2026-11-18 17:04",
+    "qib": 2.18,
+    "nii": 3.43,
+    "retail": 3.12,
+    "total": 2.94,
+    "asOf": "2026-11-19 19:30",
     "final": false,
-    "retailShares": 5831827,
+    "retailShares": 6059497,
     "minAppShares": 55,
     "retailApps": null,
-    "source": "https://hdfcsky.com/news/crystal-crop-protection-ipo-subscription-status-day-1"
+    "source": "https://www.ipoguru.in/ipo-subscription/crystal-crop-protection-ipo"
    }
   },
   {
@@ -41,7 +41,19 @@
    "listing": "2026-11-27",
    "band": "₹232 – ₹245",
    "registrar": "maashitla",
-   "allotment": "2026-11-25"
+   "allotment": "2026-11-25",
+   "sub": {
+    "qib": 0,
+    "nii": 5.66,
+    "retail": 5.06,
+    "total": 3.74,
+    "asOf": "2026-11-19 19:30",
+    "final": false,
+    "retailShares": 1629600,
+    "minAppShares": 1200,
+    "retailApps": null,
+    "source": "https://www.ipoguru.in/ipo-subscription/watrana-rentals-sme-ipo"
+   }
   },
   {
    "name": "Mahanadi Coalfields",
@@ -58,7 +70,19 @@
    "listing": "2026-11-27",
    "band": "₹129 – ₹136",
    "registrar": "kfin",
-   "allotment": "2026-11-25"
+   "allotment": "2026-11-25",
+   "sub": {
+    "qib": 1.26,
+    "nii": 0.08,
+    "retail": 0.13,
+    "total": 0.38,
+    "asOf": "2026-11-19 19:30",
+    "final": false,
+    "retailShares": 196896300,
+    "minAppShares": 110,
+    "retailApps": null,
+    "source": "https://www.ipoguru.in/ipo-subscription/mahanadi-coalfields-ipo"
+   }
   },
   {
    "name": "Foodlink F&B Holdings (India)",
@@ -78,6 +102,24 @@
    "listing": "2026-12-02",
    "band": "",
    "registrar": "mufg",
+   "allotment": "2026-11-30"
+  },
+  {
+   "name": "Shree Siddhivinayak Greentech Industries",
+   "aka": [
+    "Shree Siddhivinayak Greentech",
+    "Siddhivinayak Greentech",
+    "Shree Siddhivinayak",
+    "Siddhivinayak Green Tech",
+    "Shri Siddhivinayak Greentech",
+    "Siddhivinayak Greentech IPO"
+   ],
+   "board": "SME",
+   "open": "2026-11-25",
+   "close": "2026-11-27",
+   "listing": "2026-12-02",
+   "band": "₹130 – ₹142",
+   "registrar": "mas",
    "allotment": "2026-11-30"
   },
   {
