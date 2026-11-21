@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20",
+ "updated": "2026-11-21",
  "ipos": [
   {
    "name": "Crystal Crop Protection",
@@ -15,25 +15,25 @@
    "listing": "2026-11-26",
    "band": "₹259 – ₹272",
    "hasReport": true,
-   "score": 40,
+   "score": 49,
    "registrar": "mufg",
    "allotment": "2026-11-23",
    "sub": {
-    "qib": 2.18,
-    "nii": 3.43,
-    "retail": 3.12,
-    "total": 2.94,
+    "qib": 15.47,
+    "nii": 37.7,
+    "retail": 9.28,
+    "total": 17.07,
     "retailShares": 6059497,
     "minAppShares": 55,
-    "retailApps": null,
-    "asOf": "2026-11-19 19:30",
-    "final": false,
+    "retailApps": 844137,
+    "asOf": "2026-11-20 19:30",
+    "final": true,
     "source": "https://www.ipoguru.in/ipo-subscription/crystal-crop-protection-ipo"
    },
    "allot": {
-    "chance": 32.1,
-    "oneIn": 3,
-    "basis": "estimate"
+    "chance": 13.1,
+    "oneIn": 8,
+    "basis": "applications"
    }
   },
   {
@@ -48,25 +48,25 @@
    "listing": "2026-11-27",
    "band": "₹232 – ₹245",
    "hasReport": true,
-   "score": 40,
+   "score": 48,
    "registrar": "maashitla",
    "allotment": "2026-11-25",
    "sub": {
     "qib": 0.0,
-    "nii": 5.66,
-    "retail": 5.06,
-    "total": 3.74,
+    "nii": 20.33,
+    "retail": 15.23,
+    "total": 11.96,
     "retailShares": 1629600,
     "minAppShares": 1200,
-    "retailApps": null,
-    "asOf": "2026-11-19 19:30",
+    "retailApps": 20687,
+    "asOf": "2026-11-20 19:30",
     "final": false,
     "source": "https://www.ipoguru.in/ipo-subscription/watrana-rentals-sme-ipo"
    },
    "allot": {
-    "chance": 19.8,
-    "oneIn": 5,
-    "basis": "estimate"
+    "chance": 6.6,
+    "oneIn": 15,
+    "basis": "applications"
    }
   },
   {
@@ -88,14 +88,14 @@
    "registrar": "kfin",
    "allotment": "2026-11-25",
    "sub": {
-    "qib": 1.26,
-    "nii": 0.08,
-    "retail": 0.13,
-    "total": 0.38,
+    "qib": 1.37,
+    "nii": 0.18,
+    "retail": 0.24,
+    "total": 0.48,
     "retailShares": 196896300,
     "minAppShares": 110,
-    "retailApps": null,
-    "asOf": "2026-11-19 19:30",
+    "retailApps": 258788,
+    "asOf": "2026-11-20 19:30",
     "final": false,
     "source": "https://www.ipoguru.in/ipo-subscription/mahanadi-coalfields-ipo"
    },
@@ -118,14 +118,14 @@
     "Art of Dum"
    ],
    "board": "Mainboard",
-   "open": "2026-11-25",
-   "close": "2026-11-27",
-   "listing": "2026-12-02",
+   "open": "2026-11-26",
+   "close": "2026-11-30",
+   "listing": "2026-12-03",
    "band": "",
    "hasReport": true,
-   "score": 18,
+   "score": 56,
    "registrar": "mufg",
-   "allotment": "2026-11-30"
+   "allotment": "2026-12-01"
   },
   {
    "name": "Shree Siddhivinayak Greentech Industries",
@@ -146,6 +146,25 @@
    "score": 40,
    "registrar": "mas",
    "allotment": "2026-11-30"
+  },
+  {
+   "name": "Integris Medtech",
+   "aka": [
+    "Integris",
+    "Integris Medtech IPO",
+    "Integris Med Tech",
+    "Integris Medical",
+    "Integris Health"
+   ],
+   "board": "Mainboard",
+   "open": "2026-11-27",
+   "close": "2026-12-01",
+   "listing": "2026-12-04",
+   "band": "",
+   "hasReport": true,
+   "score": 35,
+   "registrar": "kfin",
+   "allotment": "2026-12-02"
   },
   {
    "name": "Casagrand Premier Builder",

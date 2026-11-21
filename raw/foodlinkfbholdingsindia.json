@@ -3,61 +3,61 @@
  "board": "Mainboard",
  "sector": "Catering and restaurants",
  "exchange": "NSE, BSE",
- "open": "2026-11-25",
- "close": "2026-11-27",
- "listing": "2026-12-02",
+ "open": "2026-11-26",
+ "close": "2026-11-30",
+ "listing": "2026-12-03",
  "priceBand": "",
  "issueSizeCr": null,
- "freshCr": 160.0,
+ "freshCr": 192.0,
  "ofsCr": null,
  "lotSize": null,
- "researchedOn": "2026-11-19",
- "summary": "Foodlink F&B Holdings runs events catering, casual dining restaurants (brands include India Bistro, China Bistro and Art of Dum), cloud kitchens and banquets in India and the UAE, led by promoter Sanjay Manohar Vazirani. Total income rose from ₹131 cr in FY22 to ₹380 cr in FY24, but profit swung between losses and small gains, with a ₹15.4 cr loss in FY24 and a ₹7.4 cr profit in the nine months to December 2024. The issue has a ₹160 cr fresh issue plus an offer for sale of about 1.2 crore shares; about 54% of the fresh money goes to new kitchens and restaurants and about 18% to repaying debt. The figures here come from the draft offer document; the price band and newer financials were not yet public when this report was written.",
+ "researchedOn": "2026-11-21",
+ "summary": "Foodlink F&B Holdings runs events catering, banquets, casual dining restaurants and cloud kitchens in India and the UAE, led by promoter Sanjay Manohar Vazirani. Revenue from operations grew from ₹377 cr in FY24 to ₹568 cr in FY26 and profit after tax roughly doubled to ₹29.1 cr in FY26, but the company lost ₹16.2 cr in the six months to September 2026. The RHP issue has a ₹192 cr fresh issue plus an offer for sale of 88.35 lakh shares; about 59% of the fresh money goes to a new kitchen, banquets and restaurants and about 11% to repaying debt. Pending tax and criminal cases involve the promoter and directors, and the price band had not been announced when this report was written, so valuation checks are open.",
  "checks": {
   "fh1": {
    "status": "pass",
-   "finding": "Total income rose from ₹131.1 cr (FY22) to ₹380.2 cr (FY24), a CAGR of about 70%; FY25 and FY26 figures were not found.",
-   "source": "https://www.chittorgarh.com/ipo/foodlink-fb-ipo/2493/"
+   "finding": "Revenue from operations rose from ₹377.2 cr (FY24) to ₹567.5 cr (FY26), a CAGR of about 22.7%.",
+   "source": "https://www.multibagg.ai/market-pulse/articles/ipo/analyse-foodlink-f-b-holdings-india-ipo-rhp-cmwoizeyo0001n2rwy83xcme6"
   },
   "fh2": {
    "status": "pass",
-   "finding": "Total income grew in FY23 (₹275.8 cr) and FY24 (₹380.2 cr).",
-   "source": "https://www.chittorgarh.com/ipo/foodlink-fb-ipo/2493/"
+   "finding": "Revenue grew in FY25 (₹450.9 cr, +19.5%) and FY26 (₹567.5 cr, +25.9%).",
+   "source": "https://www.multibagg.ai/market-pulse/articles/ipo/analyse-foodlink-f-b-holdings-india-ipo-rhp-cmwoizeyo0001n2rwy83xcme6"
   },
   "fh3": {
    "status": "pass",
-   "finding": "Debt to equity was about 0.37 at 31 Dec 2024 (borrowings ₹32.6 cr vs net worth ₹88.8 cr).",
-   "source": "https://www.chittorgarh.com/ipo/foodlink-fb-ipo/2493/"
+   "finding": "Debt to equity was about 0.10 at 30 Sep 2026 (borrowings ₹22.4 cr vs net worth ₹216.0 cr).",
+   "source": "https://www.multibagg.ai/market-pulse/articles/ipo/analyse-foodlink-f-b-holdings-india-ipo-rhp-cmwoizeyo0001n2rwy83xcme6"
   },
   "fh4": {
    "status": "pass",
-   "finding": "Borrowings rose 74% (₹20.2 cr to ₹35.3 cr) while total income rose 190% over FY22–FY24.",
-   "source": "https://www.chittorgarh.com/ipo/foodlink-fb-ipo/2493/"
+   "finding": "Borrowings fell from ₹35.3 cr (FY24) to ₹24.3 cr (FY26) while revenue rose about 50%.",
+   "source": "https://www.multibagg.ai/market-pulse/articles/ipo/analyse-foodlink-f-b-holdings-india-ipo-rhp-cmwoizeyo0001n2rwy83xcme6"
   },
   "fh5": {
-   "status": "flag",
-   "finding": "Net worth fell from ₹92.1 cr (FY23) to ₹79.6 cr (FY24) before recovering to ₹88.8 cr at Dec 2024.",
-   "source": "https://www.chittorgarh.com/ipo/foodlink-fb-ipo/2493/"
+   "status": "pass",
+   "finding": "Net worth rose from ₹79.6 cr (FY24) to ₹106.2 cr (FY25) and ₹229.4 cr (FY26), then dipped to ₹216.0 cr at Sep 2026.",
+   "source": "https://www.multibagg.ai/market-pulse/articles/ipo/analyse-foodlink-f-b-holdings-india-ipo-rhp-cmwoizeyo0001n2rwy83xcme6"
   },
   "fh6": {
-   "status": "na",
-   "finding": "Operating cash flow figures were not found in public sources.",
-   "source": ""
+   "status": "pass",
+   "finding": "Operating cash flow was ₹29.9 cr in FY26, about 103% of the ₹29.1 cr profit.",
+   "source": "https://www.multibagg.ai/market-pulse/articles/ipo/analyse-foodlink-f-b-holdings-india-ipo-rhp-cmwoizeyo0001n2rwy83xcme6"
   },
   "pr1": {
-   "status": "flag",
-   "finding": "The company made a loss of ₹15.4 cr in FY24 after a ₹2.7 cr profit in FY23.",
-   "source": "https://www.chittorgarh.com/ipo/foodlink-fb-ipo/2493/"
+   "status": "pass",
+   "finding": "Profit after tax grew about 104% in FY26, from ₹14.3 cr to ₹29.1 cr, though the six months to Sep 2026 showed a ₹16.2 cr loss.",
+   "source": "https://www.multibagg.ai/market-pulse/articles/ipo/analyse-foodlink-f-b-holdings-india-ipo-rhp-cmwoizeyo0001n2rwy83xcme6"
   },
   "pr2": {
-   "status": "flag",
-   "finding": "PAT margin was -4.04% in FY24, a loss-making year.",
-   "source": "https://ipowatch.in/foodlink-fb-holdings-ipo-details/"
+   "status": "pass",
+   "finding": "PAT margin improved from -4.04% (FY24) to 3.13% (FY25) and 5.09% (FY26).",
+   "source": "https://www.multibagg.ai/market-pulse/articles/ipo/analyse-foodlink-f-b-holdings-india-ipo-rhp-cmwoizeyo0001n2rwy83xcme6"
   },
   "pr3": {
-   "status": "flag",
-   "finding": "Return on net worth was -17.88% in FY24.",
-   "source": "https://ipowatch.in/foodlink-fb-holdings-ipo-details/"
+   "status": "pass",
+   "finding": "Return on net worth was 17.35% in FY26 (-7.25% for the six months to Sep 2026).",
+   "source": "https://www.investorgain.com/ipo/foodlink-fb-ipo/1810/"
   },
   "pr4": {
    "status": "na",
@@ -66,27 +66,27 @@
   },
   "pr5": {
    "status": "na",
-   "finding": "Public sources say there are no comparable listed peers in India.",
+   "finding": "The RHP lists restaurant companies only as references, not direct listed comparables, so no peer median applies.",
    "source": ""
   },
   "va1": {
    "status": "na",
-   "finding": "The price band has not been announced and no listed peers are named, so P/E cannot be compared.",
+   "finding": "The price band has not been announced, so P/E cannot be compared.",
    "source": ""
   },
   "va2": {
    "status": "na",
-   "finding": "The price band has not been announced and no listed peers are named.",
+   "finding": "The price band has not been announced, so price to book cannot be compared.",
    "source": ""
   },
   "va3": {
    "status": "na",
-   "finding": "The price band has not been announced and no listed peers are named.",
+   "finding": "The price band has not been announced, so market cap to sales cannot be compared.",
    "source": ""
   },
   "va4": {
    "status": "na",
-   "finding": "No details of pre-IPO share issues or transfers were found in public sources.",
+   "finding": "Pre-IPO placements were made at ₹363 per share in March–May 2025, but share transfers in the last 12 months and the price band were not found.",
    "source": ""
   },
   "pg1": {
@@ -100,18 +100,18 @@
    "source": ""
   },
   "pg3": {
-   "status": "na",
-   "finding": "Related-party transaction figures were not found in public sources.",
-   "source": ""
+   "status": "pass",
+   "finding": "Related-party transactions were ₹9.25 cr in FY26, about 1.6% of revenue.",
+   "source": "https://www.multibagg.ai/market-pulse/articles/ipo/analyse-foodlink-f-b-holdings-india-ipo-rhp-cmwoizeyo0001n2rwy83xcme6"
   },
   "pg4": {
-   "status": "na",
-   "finding": "No information on regulatory action against promoters was found.",
-   "source": ""
+   "status": "flag",
+   "finding": "Three tax and statutory cases (₹1.33 cr) are pending against the promoter and four criminal cases (₹3.00 cr) against directors.",
+   "source": "https://www.multibagg.ai/market-pulse/articles/ipo/analyse-foodlink-f-b-holdings-india-ipo-rhp-cmwoizeyo0001n2rwy83xcme6"
   },
   "is1": {
    "status": "na",
-   "finding": "The issue has a ₹160 cr fresh issue and an OFS of 1,19,53,535 shares, but the OFS value is unknown until the price band is set.",
+   "finding": "The issue has a ₹192 cr fresh issue and an OFS of 88,35,382 shares, but the OFS value is unknown until the price band is set.",
    "source": ""
   },
   "is2": {
@@ -121,22 +121,22 @@
   },
   "is3": {
    "status": "na",
-   "finding": "Selling shareholders' acquisition cost was not found in public sources.",
-   "source": ""
+   "finding": "The promoter's average cost is ₹0.19 per share, but the price band has not been announced to compare it with.",
+   "source": "https://www.multibagg.ai/market-pulse/articles/ipo/analyse-foodlink-f-b-holdings-india-ipo-rhp-cmwoizeyo0001n2rwy83xcme6"
   },
   "up1": {
    "status": "pass",
-   "finding": "₹86.3 cr (about 54% of the ₹160 cr fresh issue) goes to two centralised kitchens and four new restaurants.",
-   "source": "https://ipowatch.in/foodlink-fb-holdings-ipo-details/"
+   "finding": "₹113.7 cr (about 59% of the ₹192 cr fresh issue) goes to a centralised kitchen, two banquets and four new restaurants.",
+   "source": "https://www.ipoguru.in/news/foodlink-fb-holdings-ipo-opens-26-november-192-crore-fresh-issue"
   },
   "up2": {
    "status": "pass",
-   "finding": "₹28.45 cr, or about 17.8% of the fresh issue, goes to repaying borrowings.",
-   "source": "https://ipowatch.in/foodlink-fb-holdings-ipo-details/"
+   "finding": "₹21.0 cr, or about 11% of the fresh issue, goes to repaying borrowings.",
+   "source": "https://www.ipoguru.in/news/foodlink-fb-holdings-ipo-opens-26-november-192-crore-fresh-issue"
   },
   "up3": {
    "status": "na",
-   "finding": "The general corporate purposes amount was not stated in public sources.",
+   "finding": "The general corporate purposes amount was not stated; the RHP caps it at 25% of gross proceeds.",
    "source": ""
   },
   "up4": {
@@ -145,34 +145,34 @@
    "source": ""
   },
   "lg1": {
-   "status": "na",
-   "finding": "Litigation figures were not found in public sources.",
-   "source": ""
+   "status": "caution",
+   "finding": "Cases against the company total ₹15.48 cr (about 7% of net worth), and a tax show-cause notice alleges a further ₹23.32 cr (about 11%).",
+   "source": "https://www.multibagg.ai/market-pulse/articles/ipo/analyse-foodlink-f-b-holdings-india-ipo-rhp-cmwoizeyo0001n2rwy83xcme6"
   },
   "lg2": {
-   "status": "na",
-   "finding": "No information on criminal or regulatory cases was found.",
-   "source": ""
+   "status": "caution",
+   "finding": "Four criminal cases are pending against directors (₹3.00 cr) and one regulatory case against the company.",
+   "source": "https://www.multibagg.ai/market-pulse/articles/ipo/analyse-foodlink-f-b-holdings-india-ipo-rhp-cmwoizeyo0001n2rwy83xcme6"
   },
   "lg3": {
-   "status": "na",
-   "finding": "Contingent liability figures were not found in public sources.",
-   "source": ""
+   "status": "pass",
+   "finding": "Contingent liabilities were ₹4.51 cr at 30 Sep 2026, about 2% of net worth.",
+   "source": "https://www.multibagg.ai/market-pulse/articles/ipo/analyse-foodlink-f-b-holdings-india-ipo-rhp-cmwoizeyo0001n2rwy83xcme6"
   },
   "rk1": {
    "status": "na",
-   "finding": "Customer concentration figures were not found in public sources.",
-   "source": ""
+   "finding": "The top-10 customer share was not found; the largest customer gave 18.75% of FY26 revenue.",
+   "source": "https://www.multibagg.ai/market-pulse/articles/ipo/analyse-foodlink-f-b-holdings-india-ipo-rhp-cmwoizeyo0001n2rwy83xcme6"
   },
   "rk2": {
-   "status": "na",
-   "finding": "Supplier concentration figures were not found in public sources.",
-   "source": ""
+   "status": "pass",
+   "finding": "The top 10 suppliers made up 19.80% of material costs in the six months to Sep 2026.",
+   "source": "https://www.multibagg.ai/market-pulse/articles/ipo/analyse-foodlink-f-b-holdings-india-ipo-rhp-cmwoizeyo0001n2rwy83xcme6"
   },
   "rk3": {
    "status": "pass",
-   "finding": "The company was incorporated in October 2015, about 11 years ago.",
-   "source": "https://chanakyanipothi.com/foodlink-ipo-review-price-dates-gmp/"
+   "finding": "The company was incorporated in 2015, about 11 years ago; its predecessor business dates to 2003.",
+   "source": "https://www.multibagg.ai/market-pulse/articles/ipo/foodlink-fb-holdings-india-ipo-2026-cmwoiq2ut0000n2rw9brw7plm"
   },
   "rk4": {
    "status": "na",
@@ -181,40 +181,40 @@
   }
  },
  "ipoMetrics": {
-  "rev_cagr": 70.3,
-  "pat_margin": -4.04,
-  "roe": -17.88,
+  "rev_cagr": 22.7,
+  "pat_margin": 5.09,
+  "roe": 17.35,
   "roce": null,
-  "de": 0.37,
+  "de": 0.1,
   "pe": null,
   "pb": null
  },
- "patGrowth": -662.3,
+ "patGrowth": 104.1,
  "peers": [],
  "sources": [
   {
-   "url": "https://ipowatch.in/foodlink-fb-holdings-ipo-details/",
-   "title": "Foodlink F&B Holdings IPO details — IPO Watch"
+   "url": "https://www.multibagg.ai/market-pulse/articles/ipo/analyse-foodlink-f-b-holdings-india-ipo-rhp-cmwoizeyo0001n2rwy83xcme6",
+   "title": "Foodlink F&B Holdings IPO RHP analysis — Multibagg"
   },
   {
-   "url": "https://www.chittorgarh.com/ipo/foodlink-fb-ipo/2493/",
-   "title": "Foodlink F&B Holdings IPO — Chittorgarh"
+   "url": "https://www.multibagg.ai/market-pulse/articles/ipo/foodlink-fb-holdings-india-ipo-2026-cmwoiq2ut0000n2rw9brw7plm",
+   "title": "Foodlink F&B Holdings IPO ₹192 cr fresh issue — Multibagg"
   },
   {
-   "url": "https://chanakyanipothi.com/foodlink-ipo-review-price-dates-gmp/",
-   "title": "Foodlink IPO review — Chanakya Nipothi"
+   "url": "https://www.investorgain.com/ipo/foodlink-fb-ipo/1810/",
+   "title": "Foodlink F&B Holdings IPO details — Investorgain"
   },
   {
-   "url": "https://hdfcsky.com/ipo/foodlink-fb-holdings-india-ipo",
-   "title": "Foodlink F&B Holdings India IPO — HDFC Sky"
+   "url": "https://www.ipoguru.in/news/foodlink-fb-holdings-ipo-opens-26-november-192-crore-fresh-issue",
+   "title": "Foodlink F&B Holdings IPO opens 26 November — IPO Guru"
   },
   {
-   "url": "https://www.indiaipo.in/ipo-blogs/foodlink-fb-holdings-ipo",
-   "title": "Foodlink F&B Holdings IPO — IndiaIPO"
+   "url": "https://www.ipoji.com/ipo/foodlink-fb-ipo",
+   "title": "Foodlink F&B Holdings IPO — IPOji"
   },
   {
-   "url": "https://www.indianretailer.com/news/foodlink-fb-holdings-files-drhp-sebi-rs-160-cr-ipo",
-   "title": "Foodlink F&B Holdings files DRHP — Indian Retailer"
+   "url": "https://www.chittorgarh.com/ipo_faqs/foodlink-fb-ipo/2493/",
+   "title": "Foodlink F&B Holdings IPO FAQs — Chittorgarh"
   }
  ]
 }

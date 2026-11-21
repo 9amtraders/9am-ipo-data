@@ -13,14 +13,14 @@
  "ofsCr": 100.71,
  "lotSize": 55,
  "summary": "Crystal Crop Protection, founded in 1994, sells herbicides, insecticides, fungicides, plant growth regulators and seeds in India through more than 13,000 distributors and exports selected products. In the RHP, revenue from operations rose 17.2% to ₹3,152 cr in FY26 and profit after tax rose 22.4% to ₹144.9 cr, though return on equity stayed below 8%. At the upper band the company is valued at about ₹4,438 cr, or about 30.6x FY26 profit, below the median of its listed agrochemical peers. Of the ₹354.8 cr fresh issue, ₹270 cr (about 76%) goes to repaying debt of the company and its subsidiary Saffire Crop Science, and the ₹100.7 cr offer for sale is by promoter Ankur Aggarwal.",
- "score": 40,
+ "score": 49,
  "checksScore": 57,
  "drivers": [
   {
    "name": "Subscription demand",
    "weight": 50,
-   "score": 34,
-   "detail": "Subscribed 3.12x retail, 2.18x QIB, 3.43x NII, 2.94x overall (bidding still open)."
+   "score": 53,
+   "detail": "Subscribed 9.28x retail, 15.47x QIB, 37.7x NII, 17.07x overall."
   },
   {
    "name": "Profit growth (RHP)",

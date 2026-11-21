@@ -13,14 +13,14 @@
  "ofsCr": 0.0,
  "lotSize": 600,
  "summary": "Watrana Rentals, a Delhi company incorporated in 2019, rents out and trades forklifts, stackers, pallet trucks, aerial work platforms and batteries to automotive, tyre, beverage, paper, logistics and airport customers, with 2,646 owned equipment units at June 2026. Revenue rose from ₹130 cr in FY24 to ₹212 cr in FY26 and profit after tax grew 19.4% to ₹29.2 cr in FY26, with return on equity of about 41%. The business is funded largely by debt: borrowings of ₹165 cr at June 2026 were about 1.8 times net worth and grew faster than revenue over FY24–FY26. The ₹120.1 cr issue is entirely fresh, about ₹98 cr of it goes to buying more equipment, and the company is valued at about ₹400 cr, or about 13x earnings, at the upper band.",
- "score": 40,
+ "score": 48,
  "checksScore": 61,
  "drivers": [
   {
    "name": "Subscription demand",
    "weight": 50,
-   "score": 28,
-   "detail": "Subscribed 5.06x retail, 0x QIB, 5.66x NII, 3.74x overall (bidding still open)."
+   "score": 45,
+   "detail": "Subscribed 15.23x retail, 0x QIB, 20.33x NII, 11.96x overall (bidding still open)."
   },
   {
    "name": "Profit growth (RHP)",

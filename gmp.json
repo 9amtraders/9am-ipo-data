@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20",
+ "updated": "2026-11-21",
  "ipos": {
   "bombaycoatedspecialsteels": {
    "name": "Bombay Coated & Special Steels",
@@ -497,6 +497,15 @@
       "https://www.ipoji.com/ipo-gmp/crystal-crop-protection-ipo",
       "https://www.ipoguru.in/ipo-gmp/crystal-crop-protection-ipo"
      ]
+    },
+    {
+     "date": "2026-11-20",
+     "low": 14,
+     "high": 17,
+     "sources": [
+      "https://www.ipoji.com/ipo-gmp/crystal-crop-protection-ipo",
+      "https://www.ipoguru.in/ipo-gmp/crystal-crop-protection-ipo"
+     ]
     }
    ]
   },
@@ -555,6 +564,14 @@
      "sources": [
       "https://www.investorgain.com/gmp/watrana-rentals-ipo/1818/"
      ]
+    },
+    {
+     "date": "2026-11-21",
+     "low": 67,
+     "high": 67,
+     "sources": [
+      "https://www.investorgain.com/gmp/watrana-rentals-ipo/1818/"
+     ]
     }
    ]
   },
@@ -586,6 +603,16 @@
       "https://www.ipoji.com/ipo-gmp/mahanadi-coalfields-ipo",
       "https://www.ipoguru.in/ipo-gmp/mahanadi-coalfields-ipo"
      ]
+    },
+    {
+     "date": "2026-11-20",
+     "low": 0.75,
+     "high": 2,
+     "sources": [
+      "https://ipogyani.com/ipo/mahanadi-coalfields-ipo/gmp",
+      "https://www.ipoji.com/ipo-gmp/mahanadi-coalfields-ipo",
+      "https://www.ipoguru.in/ipo-gmp/mahanadi-coalfields-ipo"
+     ]
     }
    ]
   },
@@ -598,6 +625,28 @@
      "high": 0,
      "sources": [
       "https://www.investorgain.com/gmp/shree-siddhivinayak-greentech-industries-ipo/2349/"
+     ]
+    },
+    {
+     "date": "2026-11-21",
+     "low": 0,
+     "high": 0,
+     "sources": [
+      "https://www.investorgain.com/gmp/shree-siddhivinayak-greentech-industries-ipo/2349/"
+     ]
+    }
+   ]
+  },
+  "foodlinkfbholdingsindia": {
+   "name": "Foodlink F&B Holdings (India)",
+   "readings": [
+    {
+     "date": "2026-11-21",
+     "low": 12,
+     "high": 12,
+     "sources": [
+      "https://www.investorgain.com/ipo/foodlink-fb-ipo/1810/",
+      "https://www.ipoguru.in/ipo-gmp/foodlink-fb-holdings-india-ipo"
      ]
     }
    ]

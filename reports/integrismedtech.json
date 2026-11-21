@@ -1,0 +1,468 @@
+{
+ "id": "integrismedtech",
+ "name": "Integris Medtech",
+ "board": "Mainboard",
+ "sector": "Medical devices & lab solutions",
+ "exchange": "NSE, BSE",
+ "open": "2026-11-27",
+ "close": "2026-12-01",
+ "listing": "2026-12-04",
+ "band": "TBA",
+ "issueSizeCr": 600.0,
+ "freshCr": 600.0,
+ "ofsCr": null,
+ "lotSize": null,
+ "summary": "Integris Medtech makes cardiovascular devices such as drug-eluting stents and supplies laboratory equipment, reagents and services under the BioCal brand, with plants in India, Germany and the Netherlands and about two-thirds of revenue from outside India. Revenue grew from ₹1,348 cr in FY23 to ₹1,902 cr in FY25 and the company swung from a ₹4.9 cr loss to a ₹70.7 cr profit in FY25, but ROE was only 5.35% and borrowings tripled over the period. About ₹510 cr, or 85% of the ₹600 cr fresh issue, goes to repaying subsidiaries' borrowings, with nothing for new capacity, and the promoter Evercure Holdings is selling 1.08 crore shares. The price band was not announced when this was researched, so valuation checks are not rated and all figures come from the DRHP and its October 2026 addendum, not an RHP.",
+ "score": 35,
+ "checksScore": 46,
+ "drivers": [
+  {
+   "name": "Subscription demand",
+   "weight": 50,
+   "score": 50,
+   "detail": "Subscription not available yet, scored as neutral until bidding opens."
+  },
+  {
+   "name": "Profit growth (RHP)",
+   "weight": 20,
+   "score": 85,
+   "detail": "Latest-year profit growth figure not found; scored from the profit growth check."
+  },
+  {
+   "name": "P/E vs listed peers",
+   "weight": 5,
+   "score": 30,
+   "detail": "Peer P/E figures not found; scored from the P/E check."
+  },
+  {
+   "name": "All 33 checks",
+   "weight": 25,
+   "score": 46,
+   "detail": "Financial health, governance, issue structure, use of proceeds, legal and risk checks."
+  }
+ ],
+ "capReason": "4 red flags took 20 points off. Capped at 50 because of 4 or more red flags.",
+ "counts": {
+  "pass": 9,
+  "caution": 3,
+  "flag": 4,
+  "na": 17
+ },
+ "totalChecks": 33,
+ "confidence": "low",
+ "categories": [
+  {
+   "name": "Financial health",
+   "score": 83,
+   "detail": "5 of 6 checks passed · 1 flag"
+  },
+  {
+   "name": "Profitability",
+   "score": 56,
+   "detail": "2 of 5 checks passed · 1 flag · 1 not found"
+  },
+  {
+   "name": "Valuation vs peers",
+   "score": 30,
+   "detail": "Not found in public sources, scored as neutral"
+  },
+  {
+   "name": "Promoter & governance",
+   "score": 35,
+   "detail": "0 of 4 checks passed · 3 not found"
+  },
+  {
+   "name": "Issue structure",
+   "score": 30,
+   "detail": "Not found in public sources, scored as neutral"
+  },
+  {
+   "name": "Use of proceeds",
+   "score": 15,
+   "detail": "0 of 4 checks passed · 2 flags · 2 not found"
+  },
+  {
+   "name": "Legal & litigation",
+   "score": 60,
+   "detail": "1 of 3 checks passed · 1 not found"
+  },
+  {
+   "name": "Risk factors",
+   "score": 48,
+   "detail": "1 of 4 checks passed · 3 not found"
+  }
+ ],
+ "checks": [
+  {
+   "id": "fh1",
+   "name": "Revenue growth",
+   "category": "Financial health",
+   "status": "pass",
+   "finding": "Revenue from operations rose from ₹1,348.1 cr (FY23) to ₹1,902.5 cr (FY25), a CAGR of about 18.8%.",
+   "source": "https://chanakyanipothi.com/integris-medtech-ipo/"
+  },
+  {
+   "id": "fh2",
+   "name": "Revenue rose every year",
+   "category": "Financial health",
+   "status": "pass",
+   "finding": "Revenue grew every year: ₹1,348 cr, ₹1,553 cr, ₹1,902 cr (FY23–FY25).",
+   "source": "https://chanakyanipothi.com/integris-medtech-ipo/"
+  },
+  {
+   "id": "fh3",
+   "name": "Debt to equity",
+   "category": "Financial health",
+   "status": "pass",
+   "finding": "Debt to equity was about 0.20 at June 2025 (borrowings ₹793.4 cr vs net worth ₹3,890.0 cr).",
+   "source": "https://www.chittorgarh.com/ipo/integris-medtech-ipo/2774/"
+  },
+  {
+   "id": "fh4",
+   "name": "Debt growing slower than revenue",
+   "category": "Financial health",
+   "status": "flag",
+   "finding": "Borrowings rose 211% (₹556.5 cr to ₹1,729.5 cr) while revenue rose 41% over FY23–FY25; they fell to ₹793.4 cr by June 2025.",
+   "source": "https://www.chittorgarh.com/ipo/integris-medtech-ipo/2774/"
+  },
+  {
+   "id": "fh5",
+   "name": "Net worth rising",
+   "category": "Financial health",
+   "status": "pass",
+   "finding": "Net worth rose every year: ₹2,629.5 cr, ₹2,681.0 cr, ₹2,752.5 cr (FY23–FY25).",
+   "source": "https://www.chittorgarh.com/ipo/integris-medtech-ipo/2774/"
+  },
+  {
+   "id": "fh6",
+   "name": "Positive operating cash flow",
+   "category": "Financial health",
+   "status": "pass",
+   "finding": "Operating cash flow was ₹155.5 cr in FY25, more than twice the ₹70.7 cr profit.",
+   "source": "https://trendlyne.com/ipo/detail/2243/integris-medtech-ltd"
+  },
+  {
+   "id": "pr1",
+   "name": "Profit growth",
+   "category": "Profitability",
+   "status": "pass",
+   "finding": "Profit after tax turned from a ₹4.9 cr loss in FY24 to a ₹70.7 cr profit in FY25.",
+   "source": "https://www.chittorgarh.com/ipo/integris-medtech-ipo/2774/"
+  },
+  {
+   "id": "pr2",
+   "name": "Profit margin trend",
+   "category": "Profitability",
+   "status": "pass",
+   "finding": "Net margin improved from losses in FY23 (−₹40.5 cr) and FY24 (−₹4.9 cr) to 3.72% in FY25.",
+   "source": "https://www.chittorgarh.com/ipo/integris-medtech-ipo/2774/"
+  },
+  {
+   "id": "pr3",
+   "name": "Return on equity",
+   "category": "Profitability",
+   "status": "flag",
+   "finding": "ROE was 5.35% in FY25 (RoNW 1.48%).",
+   "source": "https://www.chittorgarh.com/ipo/integris-medtech-ipo/2774/"
+  },
+  {
+   "id": "pr4",
+   "name": "Return on capital employed",
+   "category": "Profitability",
+   "status": "caution",
+   "finding": "ROCE was 14.51% in FY25.",
+   "source": "https://www.chittorgarh.com/ipo/integris-medtech-ipo/2774/"
+  },
+  {
+   "id": "pr5",
+   "name": "Margin vs listed peers",
+   "category": "Profitability",
+   "status": "na",
+   "finding": "Peer margins were not found in public sources.",
+   "source": ""
+  },
+  {
+   "id": "va1",
+   "name": "P/E vs listed peers",
+   "category": "Valuation vs peers",
+   "status": "na",
+   "finding": "The price band was not announced, so the post-issue P/E cannot be worked out; DRHP peers trade at 54.0x–56.0x.",
+   "source": ""
+  },
+  {
+   "id": "va2",
+   "name": "Price to book vs listed peers",
+   "category": "Valuation vs peers",
+   "status": "na",
+   "finding": "The price band was not announced, so the post-issue price to book cannot be worked out.",
+   "source": ""
+  },
+  {
+   "id": "va3",
+   "name": "Market cap to sales vs listed peers",
+   "category": "Valuation vs peers",
+   "status": "na",
+   "finding": "The price band was not announced, so market cap to sales cannot be worked out.",
+   "source": ""
+  },
+  {
+   "id": "va4",
+   "name": "Recent pre-IPO share price",
+   "category": "Valuation vs peers",
+   "status": "na",
+   "finding": "No share issues or transfers in the 12 months before the IPO, or their prices, were found in public sources.",
+   "source": ""
+  },
+  {
+   "id": "pg1",
+   "name": "Promoter holding after the issue",
+   "category": "Promoter & governance",
+   "status": "na",
+   "finding": "Promoters hold 83.24% before the issue; the post-issue holding is not published yet.",
+   "source": ""
+  },
+  {
+   "id": "pg2",
+   "name": "No pledged promoter shares",
+   "category": "Promoter & governance",
+   "status": "na",
+   "finding": "No information on pledged promoter shares was found.",
+   "source": ""
+  },
+  {
+   "id": "pg3",
+   "name": "Related-party transactions",
+   "category": "Promoter & governance",
+   "status": "na",
+   "finding": "Related-party transaction figures were not found in public sources.",
+   "source": ""
+  },
+  {
+   "id": "pg4",
+   "name": "No regulatory action against promoters",
+   "category": "Promoter & governance",
+   "status": "caution",
+   "finding": "A ₹15.09 cr regulatory proceeding involving promoter Gurmit Singh Chugh has been paid in full, with a closure report awaited.",
+   "source": "https://newboard.in/ipo/integris-medtech"
+  },
+  {
+   "id": "is1",
+   "name": "Offer for sale share of the issue",
+   "category": "Issue structure",
+   "status": "na",
+   "finding": "The OFS of 1.08 crore shares has no rupee value until the price band is set, so its share of the issue is unknown.",
+   "source": ""
+  },
+  {
+   "id": "is2",
+   "name": "Free float after listing",
+   "category": "Issue structure",
+   "status": "na",
+   "finding": "Issue size and market cap are unknown until the price band is set.",
+   "source": ""
+  },
+  {
+   "id": "is3",
+   "name": "Selling shareholders' cost",
+   "category": "Issue structure",
+   "status": "na",
+   "finding": "Evercure Holdings is selling shares, but its average acquisition cost was not found.",
+   "source": ""
+  },
+  {
+   "id": "up1",
+   "name": "Money for growth",
+   "category": "Use of proceeds",
+   "status": "flag",
+   "finding": "None of the ₹600 cr fresh issue funds capex or expansion; it goes to repaying borrowings and general corporate purposes.",
+   "source": "https://www.chittorgarh.com/ipo/integris-medtech-ipo/2774/"
+  },
+  {
+   "id": "up2",
+   "name": "Debt repayment share",
+   "category": "Use of proceeds",
+   "status": "flag",
+   "finding": "₹509.85 cr, or about 85% of the ₹600 cr fresh issue, goes to repaying subsidiaries' borrowings.",
+   "source": "https://www.indmoney.com/blog/ipo/integris-medtech-ipo-fresh-issue-cut-debt-repayment"
+  },
+  {
+   "id": "up3",
+   "name": "General corporate purposes",
+   "category": "Use of proceeds",
+   "status": "na",
+   "finding": "The general corporate purposes amount is not stated; at most about ₹90 cr is left before expenses.",
+   "source": ""
+  },
+  {
+   "id": "up4",
+   "name": "No repayment to promoter entities",
+   "category": "Use of proceeds",
+   "status": "na",
+   "finding": "Public sources don't say whether any repaid loans are owed to promoters or group companies.",
+   "source": ""
+  },
+  {
+   "id": "lg1",
+   "name": "Litigation against the company",
+   "category": "Legal & litigation",
+   "status": "pass",
+   "finding": "Tax and regulatory claims against subsidiaries total about ₹17.5 cr, under 1% of the ₹3,890 cr net worth.",
+   "source": "https://newboard.in/ipo/integris-medtech"
+  },
+  {
+   "id": "lg2",
+   "name": "Criminal or regulatory cases",
+   "category": "Legal & litigation",
+   "status": "caution",
+   "finding": "One regulatory proceeding against promoters (₹15.09 cr) is paid in full and awaiting closure; no criminal cases against the company are reported.",
+   "source": "https://newboard.in/ipo/integris-medtech"
+  },
+  {
+   "id": "lg3",
+   "name": "Contingent liabilities",
+   "category": "Legal & litigation",
+   "status": "na",
+   "finding": "Contingent liabilities were not found in public sources.",
+   "source": ""
+  },
+  {
+   "id": "rk1",
+   "name": "Customer concentration",
+   "category": "Risk factors",
+   "status": "na",
+   "finding": "Top-10 customer share was not found in public sources.",
+   "source": ""
+  },
+  {
+   "id": "rk2",
+   "name": "Supplier dependence",
+   "category": "Risk factors",
+   "status": "na",
+   "finding": "It works with over 200 suppliers, but supplier concentration figures were not found.",
+   "source": ""
+  },
+  {
+   "id": "rk3",
+   "name": "Operating history",
+   "category": "Risk factors",
+   "status": "pass",
+   "finding": "Incorporated in 2008, so about 18 years of operating history.",
+   "source": "https://www.chittorgarh.com/ipo/integris-medtech-ipo/2774/"
+  },
+  {
+   "id": "rk4",
+   "name": "Auditor remarks",
+   "category": "Risk factors",
+   "status": "na",
+   "finding": "Auditor Walker Chandiok reports no unaddressed qualifications, but whether there is an emphasis of matter was not found.",
+   "source": ""
+  }
+ ],
+ "peers": [
+  "Poly Medicure",
+  "Laxmi Dental"
+ ],
+ "metrics": [
+  [
+   "Revenue growth (CAGR)",
+   "%",
+   "high",
+   18.8,
+   [
+    null,
+    null
+   ]
+  ],
+  [
+   "Net profit margin",
+   "%",
+   "high",
+   3.72,
+   [
+    null,
+    null
+   ]
+  ],
+  [
+   "Return on equity",
+   "%",
+   "high",
+   5.35,
+   [
+    12.26,
+    16.09
+   ]
+  ],
+  [
+   "Return on capital employed",
+   "%",
+   "high",
+   14.51,
+   [
+    null,
+    null
+   ]
+  ],
+  [
+   "Debt to equity",
+   "x",
+   "low",
+   0.2,
+   [
+    null,
+    null
+   ]
+  ],
+  [
+   "P/E (post-issue, upper band)",
+   "x",
+   "low",
+   null,
+   [
+    56.02,
+    53.95
+   ]
+  ],
+  [
+   "Price to book (post-issue)",
+   "x",
+   "low",
+   null,
+   [
+    6.87,
+    8.81
+   ]
+  ]
+ ],
+ "sources": [
+  {
+   "url": "https://www.chittorgarh.com/ipo/integris-medtech-ipo/2774/",
+   "title": "Integris Medtech IPO details — Chittorgarh"
+  },
+  {
+   "url": "https://www.chittorgarh.com/ipo-recommendation/integris-medtech-ipo/2774",
+   "title": "Integris Medtech IPO peer comparison — Chittorgarh"
+  },
+  {
+   "url": "https://trendlyne.com/ipo/detail/2243/integris-medtech-ltd",
+   "title": "Integris Medtech IPO — Trendlyne"
+  },
+  {
+   "url": "https://chanakyanipothi.com/integris-medtech-ipo/",
+   "title": "Integris Medtech IPO review — Chanakya Nipothi"
+  },
+  {
+   "url": "https://newboard.in/ipo/integris-medtech",
+   "title": "Integris Medtech DRHP study — newboard"
+  },
+  {
+   "url": "https://www.indmoney.com/blog/ipo/integris-medtech-ipo-fresh-issue-cut-debt-repayment",
+   "title": "Integris Medtech fresh issue cut — INDmoney"
+  },
+  {
+   "url": "https://upstox.com/news/market-news/ipo/ipo-watch-two-mainboard-ip-os-to-open-next-week-mahanadi-coalfields-crystal-crop-listing-ahead/article-203777/",
+   "title": "IPO watch: mainboard IPOs next week — Upstox"
+  }
+ ],
+ "generatedAt": "2026-11-21T08:00:00+05:30"
+}
