@@ -63,8 +63,8 @@
    "qty": 601341,
    "buy": 387.04,
    "date": "23 Jul 2026",
-   "now": 476.75,
-   "now_date": "20 Nov 2026, NSE close",
+   "now": 472.65,
+   "now_date": "23 Nov 2026, NSE close",
    "sym": "DHABRIYA"
   },
   {
@@ -73,8 +73,8 @@
    "qty": 1100000,
    "buy": 915.0,
    "date": "12 Oct 2026",
-   "now": 935.05,
-   "now_date": "20 Nov 2026, NSE close",
+   "now": 924.3,
+   "now_date": "23 Nov 2026, NSE close",
    "sym": "JUBLPHARMA"
   }
  ],
@@ -325,5 +325,5 @@
   "SUNIL SINGHANIA"
  ],
  "auto_deals": [],
- "deals_updated": "20 Nov 2026"
+ "deals_updated": "23 Nov 2026"
 }
