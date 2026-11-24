@@ -1,0 +1,480 @@
+{
+ "id": "ajpackaging",
+ "name": "A J Packaging",
+ "board": "SME",
+ "sector": "Metal packaging (tin cans)",
+ "exchange": "NSE SME",
+ "open": "2026-12-01",
+ "close": "2026-12-03",
+ "listing": "2026-12-08",
+ "band": "₹175 – ₹180",
+ "issueSizeCr": 54.0,
+ "freshCr": 49.5,
+ "ofsCr": 4.5,
+ "lotSize": 800,
+ "summary": "A J Packaging, incorporated in Hyderabad in 1995, makes oval, rectangular and round metal tin cans for FMCG and paint makers such as Asian Paints, Haldiram's and CCL Products, from plants in Hyderabad and Ghaziabad. Revenue fell from ₹210 cr in FY24 to ₹193 cr in FY25 and then rose to ₹223 cr in FY26, while profit after tax rose 54.5% to ₹7.9 cr in FY26, though the net margin is still thin at 3.6%. The ₹54 cr issue is mostly fresh money (₹49.5 cr), and the DRHP put ₹24.5 cr towards working capital and ₹7 cr towards repaying loans; debt to equity was 1.69 before the issue. At the upper band the post-issue P/E is about 23.9x, just below the 26.1x median of listed peers, but the price to book of about 2.0x is well above theirs, and the top ten customers bring in about 70% of revenue.",
+ "score": 48,
+ "checksScore": 55,
+ "drivers": [
+  {
+   "name": "Subscription demand",
+   "weight": 50,
+   "score": 50,
+   "detail": "Subscription not available yet, scored as neutral until bidding opens."
+  },
+  {
+   "name": "Profit growth (RHP)",
+   "weight": 20,
+   "score": 100,
+   "detail": "Profit after tax grew 54.5% in the latest year in the RHP."
+  },
+  {
+   "name": "P/E vs listed peers",
+   "weight": 5,
+   "score": 85,
+   "detail": "P/E 23.9x vs peer median 26.1x, 9% below."
+  },
+  {
+   "name": "All 33 checks",
+   "weight": 25,
+   "score": 55,
+   "detail": "Financial health, governance, issue structure, use of proceeds, legal and risk checks."
+  }
+ ],
+ "capReason": "3 red flags took 15 points off.",
+ "counts": {
+  "pass": 12,
+  "caution": 5,
+  "flag": 3,
+  "na": 13
+ },
+ "totalChecks": 33,
+ "confidence": "low",
+ "categories": [
+  {
+   "name": "Financial health",
+   "score": 58,
+   "detail": "2 of 6 checks passed · 1 flag"
+  },
+  {
+   "name": "Profitability",
+   "score": 86,
+   "detail": "4 of 5 checks passed · 1 not found"
+  },
+  {
+   "name": "Valuation vs peers",
+   "score": 40,
+   "detail": "1 of 4 checks passed · 1 flag · 2 not found"
+  },
+  {
+   "name": "Promoter & governance",
+   "score": 48,
+   "detail": "1 of 4 checks passed · 3 not found"
+  },
+  {
+   "name": "Issue structure",
+   "score": 77,
+   "detail": "2 of 3 checks passed · 1 not found"
+  },
+  {
+   "name": "Use of proceeds",
+   "score": 40,
+   "detail": "1 of 4 checks passed · 1 flag · 2 not found"
+  },
+  {
+   "name": "Legal & litigation",
+   "score": 30,
+   "detail": "Not found in public sources, scored as neutral"
+  },
+  {
+   "name": "Risk factors",
+   "score": 57,
+   "detail": "1 of 4 checks passed · 1 not found"
+  }
+ ],
+ "checks": [
+  {
+   "id": "fh1",
+   "name": "Revenue growth",
+   "category": "Financial health",
+   "status": "flag",
+   "finding": "Revenue went from ₹210.03 cr (FY24) to ₹223.03 cr (FY26), a CAGR of only about 3.0%.",
+   "source": "https://www.kotakneo.com/ipo/a-j-packaging-ipo/"
+  },
+  {
+   "id": "fh2",
+   "name": "Revenue rose every year",
+   "category": "Financial health",
+   "status": "caution",
+   "finding": "Revenue fell to ₹193.46 cr in FY25 from ₹210.03 cr in FY24, then rose to ₹223.03 cr in FY26.",
+   "source": "https://www.kotakneo.com/ipo/a-j-packaging-ipo/"
+  },
+  {
+   "id": "fh3",
+   "name": "Debt to equity",
+   "category": "Financial health",
+   "status": "caution",
+   "finding": "Debt to equity was 1.69 in FY26 (borrowings ₹75.00 cr vs net worth ₹44.46 cr).",
+   "source": "https://www.chittorgarh.com/compare/a-j-packaging-ipo-vs-hgs-india-ipo/83/"
+  },
+  {
+   "id": "fh4",
+   "name": "Debt growing slower than revenue",
+   "category": "Financial health",
+   "status": "caution",
+   "finding": "Borrowings rose about 6.9% (₹70.13 cr in FY24 to ₹75.00 cr in FY26), slightly faster than revenue (+6.2%).",
+   "source": "https://www.chittorgarh.com/compare/a-j-packaging-ipo-vs-hgs-india-ipo/83/"
+  },
+  {
+   "id": "fh5",
+   "name": "Net worth rising",
+   "category": "Financial health",
+   "status": "pass",
+   "finding": "Net worth rose every year: ₹26.69 cr, ₹37.32 cr, ₹44.46 cr (FY24–FY26).",
+   "source": "https://www.ipoplatform.com/ipo/financial-report/aj-packaging-ipo/4635"
+  },
+  {
+   "id": "fh6",
+   "name": "Positive operating cash flow",
+   "category": "Financial health",
+   "status": "pass",
+   "finding": "Operating cash flow was ₹15.75 cr in FY26, about twice the ₹7.91 cr profit.",
+   "source": "https://www.kotakneo.com/ipo/a-j-packaging-ipo/"
+  },
+  {
+   "id": "pr1",
+   "name": "Profit growth",
+   "category": "Profitability",
+   "status": "pass",
+   "finding": "Profit after tax grew 54.5% in FY26, from ₹5.12 cr to ₹7.91 cr.",
+   "source": "https://www.kotakneo.com/ipo/a-j-packaging-ipo/"
+  },
+  {
+   "id": "pr2",
+   "name": "Profit margin trend",
+   "category": "Profitability",
+   "status": "pass",
+   "finding": "Net margin improved from 1.80% (FY24) to 2.64% (FY25) and 3.55% (FY26).",
+   "source": "https://www.ipoplatform.com/ipo/financial-report/aj-packaging-ipo/4635"
+  },
+  {
+   "id": "pr3",
+   "name": "Return on equity",
+   "category": "Profitability",
+   "status": "pass",
+   "finding": "Return on net worth was 17.79% in FY26, up from 13.71% in FY25.",
+   "source": "https://www.kotakneo.com/ipo/a-j-packaging-ipo/"
+  },
+  {
+   "id": "pr4",
+   "name": "Return on capital employed",
+   "category": "Profitability",
+   "status": "pass",
+   "finding": "ROCE was 17.41% in FY26, up from 15.32% in FY25.",
+   "source": "https://www.chittorgarh.com/compare/a-j-packaging-ipo-vs-hgs-india-ipo/83/"
+  },
+  {
+   "id": "pr5",
+   "name": "Margin vs listed peers",
+   "category": "Profitability",
+   "status": "na",
+   "finding": "Peer profit or EBITDA margins were not found in public sources.",
+   "source": ""
+  },
+  {
+   "id": "va1",
+   "name": "P/E vs listed peers",
+   "category": "Valuation vs peers",
+   "status": "pass",
+   "finding": "Post-issue P/E of about 23.9x (₹189.09 cr market cap on 1,05,05,245 shares at ₹180 ÷ ₹7.91 cr FY26 PAT) vs a peer median of 26.1x (Shetron 26.1x, Kaira Can 69.8x, Rajeshwari Cans 6.6x).",
+   "source": "https://www.chittorgarh.com/ipo-recommendation/a-j-packaging-ipo/2978/"
+  },
+  {
+   "id": "va2",
+   "name": "Price to book vs listed peers",
+   "category": "Valuation vs peers",
+   "status": "flag",
+   "finding": "Post-issue price to book of about 2.0x (₹189.09 cr ÷ ₹93.96 cr, i.e. ₹44.46 cr FY26 net worth + ₹49.5 cr fresh issue) vs a peer median of 1.38x, about 46% above.",
+   "source": "https://www.chittorgarh.com/ipo-recommendation/a-j-packaging-ipo/2978/"
+  },
+  {
+   "id": "va3",
+   "name": "Market cap to sales vs listed peers",
+   "category": "Valuation vs peers",
+   "status": "na",
+   "finding": "Post-issue market cap to FY26 revenue is about 0.85x (₹189.09 cr ÷ ₹223.03 cr), but peer market cap to sales figures were not found.",
+   "source": ""
+  },
+  {
+   "id": "va4",
+   "name": "Recent pre-IPO share price",
+   "category": "Valuation vs peers",
+   "status": "na",
+   "finding": "No details of share issues or transfers in the 12 months before the IPO were found in public sources.",
+   "source": ""
+  },
+  {
+   "id": "pg1",
+   "name": "Promoter holding after the issue",
+   "category": "Promoter & governance",
+   "status": "pass",
+   "finding": "Promoters hold 66.07% after the issue, down from 92.72%.",
+   "source": "https://www.chittorgarh.com/compare/a-j-packaging-ipo-vs-hgs-india-ipo/83/"
+  },
+  {
+   "id": "pg2",
+   "name": "No pledged promoter shares",
+   "category": "Promoter & governance",
+   "status": "na",
+   "finding": "No information on pledged promoter shares was found.",
+   "source": ""
+  },
+  {
+   "id": "pg3",
+   "name": "Related-party transactions",
+   "category": "Promoter & governance",
+   "status": "na",
+   "finding": "Related-party transaction figures were not found in public sources.",
+   "source": ""
+  },
+  {
+   "id": "pg4",
+   "name": "No regulatory action against promoters",
+   "category": "Promoter & governance",
+   "status": "na",
+   "finding": "No information on regulatory action against promoters or directors was found.",
+   "source": ""
+  },
+  {
+   "id": "is1",
+   "name": "Offer for sale share of the issue",
+   "category": "Issue structure",
+   "status": "pass",
+   "finding": "The offer for sale is ₹4.50 cr (2.5 lakh shares by promoter Ranjani Agarwal), about 8.3% of the ₹54 cr issue.",
+   "source": "https://www.chittorgarh.com/ipo_faqs/a-j-packaging-ipo/2978/"
+  },
+  {
+   "id": "is2",
+   "name": "Free float after listing",
+   "category": "Issue structure",
+   "status": "pass",
+   "finding": "The ₹54 cr issue is about 28.6% of the ₹189.09 cr post-issue market cap.",
+   "source": "https://www.chittorgarh.com/compare/a-j-packaging-ipo-vs-hgs-india-ipo/83/"
+  },
+  {
+   "id": "is3",
+   "name": "Selling shareholders' cost",
+   "category": "Issue structure",
+   "status": "na",
+   "finding": "The average acquisition cost of the selling promoter's shares was not found in public sources.",
+   "source": ""
+  },
+  {
+   "id": "up1",
+   "name": "Money for growth",
+   "category": "Use of proceeds",
+   "status": "flag",
+   "finding": "The DRHP puts ₹24.5 cr into working capital and ₹7 cr into loan repayment; none of the fresh issue funds new capex, expansion or acquisitions.",
+   "source": "https://www.chittorgarh.com/ipo/a-j-packaging-ipo/2978/"
+  },
+  {
+   "id": "up2",
+   "name": "Debt repayment share",
+   "category": "Use of proceeds",
+   "status": "pass",
+   "finding": "₹7.00 cr, about 14% of the ₹49.5 cr fresh issue, goes to repaying loans (DRHP figure).",
+   "source": "https://www.chittorgarh.com/ipo/a-j-packaging-ipo/2978/"
+  },
+  {
+   "id": "up3",
+   "name": "General corporate purposes",
+   "category": "Use of proceeds",
+   "status": "na",
+   "finding": "The amount for general corporate purposes was not stated in public sources.",
+   "source": ""
+  },
+  {
+   "id": "up4",
+   "name": "No repayment to promoter entities",
+   "category": "Use of proceeds",
+   "status": "na",
+   "finding": "Public sources don't say whose loans are being repaid.",
+   "source": ""
+  },
+  {
+   "id": "lg1",
+   "name": "Litigation against the company",
+   "category": "Legal & litigation",
+   "status": "na",
+   "finding": "Litigation amounts were not found in public sources.",
+   "source": ""
+  },
+  {
+   "id": "lg2",
+   "name": "Criminal or regulatory cases",
+   "category": "Legal & litigation",
+   "status": "na",
+   "finding": "No information on criminal or regulatory cases was found.",
+   "source": ""
+  },
+  {
+   "id": "lg3",
+   "name": "Contingent liabilities",
+   "category": "Legal & litigation",
+   "status": "na",
+   "finding": "Contingent liabilities were not found in public sources.",
+   "source": ""
+  },
+  {
+   "id": "rk1",
+   "name": "Customer concentration",
+   "category": "Risk factors",
+   "status": "caution",
+   "finding": "The top ten customers bring in about 70% of revenue, with no long-term agreements.",
+   "source": "https://www.kotakneo.com/ipo/a-j-packaging-ipo/"
+  },
+  {
+   "id": "rk2",
+   "name": "Supplier dependence",
+   "category": "Risk factors",
+   "status": "caution",
+   "finding": "Dependence on a few suppliers for most raw materials is called out as a risk; exact shares are not published.",
+   "source": "https://www.torusdigital.com/ipo/a-j-packaging-ltd-ipo"
+  },
+  {
+   "id": "rk3",
+   "name": "Operating history",
+   "category": "Risk factors",
+   "status": "pass",
+   "finding": "Incorporated on 6 July 1995, so over 31 years of operating history.",
+   "source": "https://www.mstock.com/ipo/a-j-packaging-ltd/ipo1480"
+  },
+  {
+   "id": "rk4",
+   "name": "Auditor remarks",
+   "category": "Risk factors",
+   "status": "na",
+   "finding": "Auditor remarks were not found in public sources.",
+   "source": ""
+  }
+ ],
+ "peers": [
+  "Shetron",
+  "Kaira Can Company",
+  "Rajeshwari Cans"
+ ],
+ "metrics": [
+  [
+   "Revenue growth (CAGR)",
+   "%",
+   "high",
+   3.0,
+   [
+    null,
+    null,
+    null
+   ]
+  ],
+  [
+   "Net profit margin",
+   "%",
+   "high",
+   3.55,
+   [
+    null,
+    null,
+    null
+   ]
+  ],
+  [
+   "Return on equity",
+   "%",
+   "high",
+   17.79,
+   [
+    6.48,
+    1.97,
+    15.73
+   ]
+  ],
+  [
+   "Return on capital employed",
+   "%",
+   "high",
+   17.41,
+   [
+    null,
+    null,
+    null
+   ]
+  ],
+  [
+   "Debt to equity",
+   "x",
+   "low",
+   1.69,
+   [
+    null,
+    null,
+    null
+   ]
+  ],
+  [
+   "P/E (post-issue, upper band)",
+   "x",
+   "low",
+   23.9,
+   [
+    26.13,
+    69.8,
+    6.59
+   ]
+  ],
+  [
+   "Price to book (post-issue)",
+   "x",
+   "low",
+   2.01,
+   [
+    1.71,
+    1.38,
+    0.52
+   ]
+  ]
+ ],
+ "sources": [
+  {
+   "url": "https://www.chittorgarh.com/ipo/a-j-packaging-ipo/2978/",
+   "title": "A J Packaging IPO details (DRHP figures) — Chittorgarh"
+  },
+  {
+   "url": "https://www.chittorgarh.com/ipo_faqs/a-j-packaging-ipo/2978/",
+   "title": "A J Packaging IPO FAQs — Chittorgarh"
+  },
+  {
+   "url": "https://www.chittorgarh.com/ipo-recommendation/a-j-packaging-ipo/2978/",
+   "title": "A J Packaging IPO peer comparison — Chittorgarh"
+  },
+  {
+   "url": "https://www.chittorgarh.com/compare/a-j-packaging-ipo-vs-hgs-india-ipo/83/",
+   "title": "A J Packaging vs HGS India IPO comparison — Chittorgarh"
+  },
+  {
+   "url": "https://www.kotakneo.com/ipo/a-j-packaging-ipo/",
+   "title": "A J Packaging IPO — Kotak Neo"
+  },
+  {
+   "url": "https://www.ipoplatform.com/ipo/financial-report/aj-packaging-ipo/4635",
+   "title": "AJ Packaging IPO financial report — IPO Platform"
+  },
+  {
+   "url": "https://www.mstock.com/ipo/a-j-packaging-ltd/ipo1480",
+   "title": "A J Packaging IPO — m.Stock"
+  },
+  {
+   "url": "https://www.torusdigital.com/ipo/a-j-packaging-ltd-ipo",
+   "title": "A J Packaging IPO — Torus Digital"
+  }
+ ],
+ "generatedAt": "2026-11-24T08:00:00+05:30"
+}

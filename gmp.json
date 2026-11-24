@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-22",
+ "updated": "2026-11-24",
  "ipos": {
   "bombaycoatedspecialsteels": {
    "name": "Bombay Coated & Special Steels",
@@ -506,6 +506,15 @@
       "https://www.ipoji.com/ipo-gmp/crystal-crop-protection-ipo",
       "https://www.ipoguru.in/ipo-gmp/crystal-crop-protection-ipo"
      ]
+    },
+    {
+     "date": "2026-11-24",
+     "low": 14,
+     "high": 14,
+     "sources": [
+      "https://www.investorgain.com/gmp/crystal-crop-protection-ipo/2067/",
+      "https://www.ipoguru.in/ipo-gmp/crystal-crop-protection-ipo"
+     ]
     }
    ]
   },
@@ -572,6 +581,15 @@
      "sources": [
       "https://www.investorgain.com/gmp/watrana-rentals-ipo/1818/"
      ]
+    },
+    {
+     "date": "2026-11-24",
+     "low": 40,
+     "high": 40,
+     "sources": [
+      "https://www.ipoguru.in/ipo-gmp/watrana-rentals-sme-ipo",
+      "https://www.investorgain.com/report/ipo-gmp-live/331/?filter=sme"
+     ]
     }
    ]
   },
@@ -613,6 +631,14 @@
       "https://www.ipoji.com/ipo-gmp/mahanadi-coalfields-ipo",
       "https://www.ipoguru.in/ipo-gmp/mahanadi-coalfields-ipo"
      ]
+    },
+    {
+     "date": "2026-11-24",
+     "low": 0,
+     "high": 0,
+     "sources": [
+      "https://www.investorgain.com/gmp/mahanadi-coalfields-ipo/2401/"
+     ]
     }
    ]
   },
@@ -634,6 +660,14 @@
      "sources": [
       "https://www.investorgain.com/gmp/shree-siddhivinayak-greentech-industries-ipo/2349/"
      ]
+    },
+    {
+     "date": "2026-11-24",
+     "low": 10,
+     "high": 10,
+     "sources": [
+      "https://www.investorgain.com/report/ipo-gmp-live/331/?filter=sme"
+     ]
     }
    ]
   },
@@ -647,6 +681,27 @@
      "sources": [
       "https://www.investorgain.com/ipo/foodlink-fb-ipo/1810/",
       "https://www.ipoguru.in/ipo-gmp/foodlink-fb-holdings-india-ipo"
+     ]
+    },
+    {
+     "date": "2026-11-24",
+     "low": 15,
+     "high": 15,
+     "sources": [
+      "https://www.investorgain.com/gmp/foodlink-fb-ipo/1810/"
+     ]
+    }
+   ]
+  },
+  "ajpackaging": {
+   "name": "A J Packaging",
+   "readings": [
+    {
+     "date": "2026-11-24",
+     "low": 20,
+     "high": 20,
+     "sources": [
+      "https://www.investorgain.com/report/ipo-gmp-live/331/?filter=sme"
      ]
     }
    ]

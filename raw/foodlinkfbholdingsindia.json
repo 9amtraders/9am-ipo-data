@@ -6,13 +6,13 @@
  "open": "2026-11-26",
  "close": "2026-11-30",
  "listing": "2026-12-03",
- "priceBand": "",
- "issueSizeCr": null,
+ "priceBand": "₹181 – ₹191",
+ "issueSizeCr": 360.76,
  "freshCr": 192.0,
- "ofsCr": null,
- "lotSize": null,
- "researchedOn": "2026-11-21",
- "summary": "Foodlink F&B Holdings runs events catering, banquets, casual dining restaurants and cloud kitchens in India and the UAE, led by promoter Sanjay Manohar Vazirani. Revenue from operations grew from ₹377 cr in FY24 to ₹568 cr in FY26 and profit after tax roughly doubled to ₹29.1 cr in FY26, but the company lost ₹16.2 cr in the six months to September 2026. The RHP issue has a ₹192 cr fresh issue plus an offer for sale of 88.35 lakh shares; about 59% of the fresh money goes to a new kitchen, banquets and restaurants and about 11% to repaying debt. Pending tax and criminal cases involve the promoter and directors, and the price band had not been announced when this report was written, so valuation checks are open.",
+ "ofsCr": 168.76,
+ "lotSize": 78,
+ "researchedOn": "2026-11-24",
+ "summary": "Foodlink F&B Holdings runs events catering, banquets, casual dining restaurants and cloud kitchens in India and the UAE, led by promoter Sanjay Manohar Vazirani. Revenue from operations grew from ₹377 cr in FY24 to ₹568 cr in FY26 and profit after tax roughly doubled to ₹29.1 cr in FY26, but the company lost ₹16.2 cr in the six months to September 2026. The ₹360.76 cr issue at ₹181–₹191 is ₹192 cr fresh plus a ₹168.76 cr offer for sale (about 47%), and promoter holding falls to 49.51%; the promoter's average cost is about ₹0.19 per share. At the upper band the post-issue P/E is about 40.9x and price to book about 2.9x, and the RHP names no listed peers to compare against; tax and criminal cases are pending against the promoter and directors.",
  "checks": {
   "fh1": {
    "status": "pass",
@@ -61,38 +61,38 @@
   },
   "pr4": {
    "status": "na",
-   "finding": "ROCE was not found in public sources.",
+   "finding": "ROCE was not found in public sources for the RHP figures.",
    "source": ""
   },
   "pr5": {
    "status": "na",
-   "finding": "The RHP lists restaurant companies only as references, not direct listed comparables, so no peer median applies.",
-   "source": ""
+   "finding": "The RHP says no listed company in India or abroad has a comparable business model, so there is no peer median.",
+   "source": "https://zerodha.com/ipo/419785/foodlink-fb-holdings-india"
   },
   "va1": {
    "status": "na",
-   "finding": "The price band has not been announced, so P/E cannot be compared.",
-   "source": ""
+   "finding": "Post-issue P/E is about 40.9x (₹1,190.9 cr market cap ÷ ₹29.1 cr FY26 PAT), but the RHP names no listed peers to compare it with.",
+   "source": "https://www.chittorgarh.com/ipo_faqs/foodlink-fb-ipo/2493/"
   },
   "va2": {
    "status": "na",
-   "finding": "The price band has not been announced, so price to book cannot be compared.",
-   "source": ""
+   "finding": "Post-issue price to book is about 2.9x (₹1,190.9 cr ÷ ₹408 cr = ₹216.0 cr Sep 2026 net worth + ₹192 cr fresh issue), but the RHP names no listed peers.",
+   "source": "https://www.chittorgarh.com/ipo_faqs/foodlink-fb-ipo/2493/"
   },
   "va3": {
    "status": "na",
-   "finding": "The price band has not been announced, so market cap to sales cannot be compared.",
-   "source": ""
+   "finding": "Post-issue market cap to sales is about 2.1x (₹1,190.9 cr ÷ ₹567.5 cr FY26 revenue), but the RHP names no listed peers.",
+   "source": "https://www.chittorgarh.com/ipo_faqs/foodlink-fb-ipo/2493/"
   },
   "va4": {
    "status": "na",
-   "finding": "Pre-IPO placements were made at ₹363 per share in March–May 2025, but share transfers in the last 12 months and the price band were not found.",
-   "source": ""
+   "finding": "The last reported share issue was a ₹99.75 cr placement at ₹363 per share in March–May 2025, over 12 months before the IPO; transfers in the last 12 months were not found.",
+   "source": "https://kaustubhdalvi.substack.com/p/foodlink-f-and-b-holdings-india-ipo"
   },
   "pg1": {
-   "status": "na",
-   "finding": "Promoters hold 63.40% before the issue; the post-issue holding was not found.",
-   "source": ""
+   "status": "caution",
+   "finding": "Promoter and promoter group holding falls from 63.40% to 49.51% after the issue.",
+   "source": "https://www.chittorgarh.com/ipo_faqs/foodlink-fb-ipo/2493/"
   },
   "pg2": {
    "status": "na",
@@ -110,18 +110,18 @@
    "source": "https://www.multibagg.ai/market-pulse/articles/ipo/analyse-foodlink-f-b-holdings-india-ipo-rhp-cmwoizeyo0001n2rwy83xcme6"
   },
   "is1": {
-   "status": "na",
-   "finding": "The issue has a ₹192 cr fresh issue and an OFS of 88,35,382 shares, but the OFS value is unknown until the price band is set.",
-   "source": ""
+   "status": "caution",
+   "finding": "The OFS is ₹168.76 cr of the ₹360.76 cr issue, about 46.8%.",
+   "source": "https://www.chittorgarh.com/ipo_faqs/foodlink-fb-ipo/2493/"
   },
   "is2": {
-   "status": "na",
-   "finding": "The issue size and post-issue market cap are not known until the price band is set.",
-   "source": ""
+   "status": "pass",
+   "finding": "The ₹360.76 cr issue is about 30.3% of the ₹1,190.9 cr post-issue market cap.",
+   "source": "https://www.chittorgarh.com/ipo_faqs/foodlink-fb-ipo/2493/"
   },
   "is3": {
-   "status": "na",
-   "finding": "The promoter's average cost is ₹0.19 per share, but the price band has not been announced to compare it with.",
+   "status": "flag",
+   "finding": "Promoter Sanjay Vazirani, who sells shares in the OFS, has an average cost of about ₹0.19 per share, far over 10x below the ₹191 upper band.",
    "source": "https://www.multibagg.ai/market-pulse/articles/ipo/analyse-foodlink-f-b-holdings-india-ipo-rhp-cmwoizeyo0001n2rwy83xcme6"
   },
   "up1": {
@@ -135,14 +135,14 @@
    "source": "https://www.ipoguru.in/news/foodlink-fb-holdings-ipo-opens-26-november-192-crore-fresh-issue"
   },
   "up3": {
-   "status": "na",
-   "finding": "The general corporate purposes amount was not stated; the RHP caps it at 25% of gross proceeds.",
-   "source": ""
+   "status": "caution",
+   "finding": "General corporate purposes and issue expenses together take ₹57.29 cr (29.8% of the fresh issue); GCP alone is capped at 25% and not separately stated.",
+   "source": "https://zerodha.com/ipo/419785/foodlink-fb-holdings-india"
   },
   "up4": {
    "status": "na",
-   "finding": "Whether any repaid loans are from promoter entities was not found.",
-   "source": ""
+   "finding": "₹21.0 cr repays borrowings of the company and its subsidiary FGRCS; whether any lender is a promoter entity was not found.",
+   "source": "https://zerodha.com/ipo/419785/foodlink-fb-holdings-india"
   },
   "lg1": {
    "status": "caution",
@@ -175,9 +175,9 @@
    "source": "https://www.multibagg.ai/market-pulse/articles/ipo/foodlink-fb-holdings-india-ipo-2026-cmwoiq2ut0000n2rw9brw7plm"
   },
   "rk4": {
-   "status": "na",
-   "finding": "Auditor remarks were not found in public sources.",
-   "source": ""
+   "status": "caution",
+   "finding": "Auditors reported qualifications relating to books of account, audit trails and CARO 2020; no qualification of the financial statements themselves is reported.",
+   "source": "https://kaustubhdalvi.substack.com/p/foodlink-f-and-b-holdings-india-ipo"
   }
  },
  "ipoMetrics": {
@@ -186,8 +186,8 @@
   "roe": 17.35,
   "roce": null,
   "de": 0.1,
-  "pe": null,
-  "pb": null
+  "pe": 40.9,
+  "pb": 2.92
  },
  "patGrowth": 104.1,
  "peers": [],
@@ -215,6 +215,34 @@
   {
    "url": "https://www.chittorgarh.com/ipo_faqs/foodlink-fb-ipo/2493/",
    "title": "Foodlink F&B Holdings IPO FAQs — Chittorgarh"
+  },
+  {
+   "url": "https://zerodha.com/ipo/419785/foodlink-fb-holdings-india",
+   "title": "Foodlink F&B Holdings (India) IPO — Zerodha"
+  },
+  {
+   "url": "https://www.businesstoday.in/markets/ipo-corner/story/foodlink-fb-holdings-india-ipo-opens-on-nov-26-check-price-band-other-key-details-569015-2026-11-23",
+   "title": "Foodlink F&B IPO opens Nov 26, price band — Business Today"
+  },
+  {
+   "url": "https://upstox.com/news/market-news/ipo/foodlink-f-and-b-holdings-ipo-price-band-set-at-181-191-per-share-check-lot-size-and-key-dates/article-203832/",
+   "title": "Foodlink price band set at ₹181–₹191 — Upstox"
+  },
+  {
+   "url": "https://hdfcsky.com/news/foodlink-fb-ipo-opens-november-26-price-band-issue-size",
+   "title": "Foodlink F&B IPO to open on November 26 — HDFC Sky"
+  },
+  {
+   "url": "https://ipowatch.in/foodlink-fb-holdings-ipo-details/",
+   "title": "Foodlink F&B Holdings IPO details — IPO Watch"
+  },
+  {
+   "url": "https://www.ipoguru.in/ipo-review/foodlink-fb-holdings-india-ipo",
+   "title": "Foodlink F&B Holdings IPO review — IPO Guru"
+  },
+  {
+   "url": "https://kaustubhdalvi.substack.com/p/foodlink-f-and-b-holdings-india-ipo",
+   "title": "Foodlink F&B Holdings IPO preview (RHP) — Kaustubh Dalvi"
   }
  ]
 }

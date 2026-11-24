@@ -1,0 +1,476 @@
+{
+ "id": "matangirubber",
+ "name": "Matangi Rubber",
+ "board": "Mainboard",
+ "sector": "Tyre flaps and rubber products",
+ "exchange": "NSE, BSE",
+ "open": "2026-12-01",
+ "close": "2026-12-03",
+ "listing": "2026-12-08",
+ "band": "₹163 – ₹172",
+ "issueSizeCr": 125.16,
+ "freshCr": 99.1,
+ "ofsCr": 26.06,
+ "lotSize": 87,
+ "summary": "Matangi Rubber, incorporated in 2004, makes tyre flaps, tyre tubes and rubber compounds, mostly through contract manufacturing and job work for tyre makers, from seven plants in Uttarakhand, Madhya Pradesh and Tamil Nadu. Revenue grew from ₹90.1 cr in FY24 to ₹129.8 cr in FY26 (a 20% CAGR) and profit rose 11.5% in FY26 to ₹22.3 cr, but operating cash flow was only ₹3.3 cr. The business depends heavily on one customer: JK Tyre & Industries supplied 59.6% of FY26 revenue and the top 10 customers 96%. At the upper band the post-issue P/E is about 22.0x, slightly above the 20.5x median of the listed peers named in the RHP, and 45% of the fresh issue goes to repaying loans.",
+ "score": 39,
+ "checksScore": 63,
+ "drivers": [
+  {
+   "name": "Subscription demand",
+   "weight": 50,
+   "score": 50,
+   "detail": "Subscription not available yet, scored as neutral until bidding opens."
+  },
+  {
+   "name": "Profit growth (RHP)",
+   "weight": 20,
+   "score": 50,
+   "detail": "Profit after tax grew 11.5% in the latest year in the RHP."
+  },
+  {
+   "name": "P/E vs listed peers",
+   "weight": 5,
+   "score": 60,
+   "detail": "P/E 22.04x vs peer median 20.5x, 8% above."
+  },
+  {
+   "name": "All 33 checks",
+   "weight": 25,
+   "score": 63,
+   "detail": "Financial health, governance, issue structure, use of proceeds, legal and risk checks."
+  }
+ ],
+ "capReason": "3 red flags took 15 points off.",
+ "counts": {
+  "pass": 15,
+  "caution": 6,
+  "flag": 3,
+  "na": 9
+ },
+ "totalChecks": 33,
+ "confidence": "normal",
+ "categories": [
+  {
+   "name": "Financial health",
+   "score": 75,
+   "detail": "4 of 6 checks passed · 1 flag"
+  },
+  {
+   "name": "Profitability",
+   "score": 90,
+   "detail": "4 of 5 checks passed"
+  },
+  {
+   "name": "Valuation vs peers",
+   "score": 52,
+   "detail": "1 of 4 checks passed · 2 not found"
+  },
+  {
+   "name": "Promoter & governance",
+   "score": 40,
+   "detail": "1 of 4 checks passed · 1 flag · 2 not found"
+  },
+  {
+   "name": "Issue structure",
+   "score": 83,
+   "detail": "2 of 3 checks passed"
+  },
+  {
+   "name": "Use of proceeds",
+   "score": 40,
+   "detail": "0 of 4 checks passed · 2 not found"
+  },
+  {
+   "name": "Legal & litigation",
+   "score": 77,
+   "detail": "2 of 3 checks passed · 1 not found"
+  },
+  {
+   "name": "Risk factors",
+   "score": 40,
+   "detail": "1 of 4 checks passed · 1 flag · 2 not found"
+  }
+ ],
+ "checks": [
+  {
+   "id": "fh1",
+   "name": "Revenue growth",
+   "category": "Financial health",
+   "status": "pass",
+   "finding": "Revenue rose from ₹90.11 cr (FY24) to ₹129.76 cr (FY26), a CAGR of 20.0%.",
+   "source": "https://www.multibagg.ai/market-pulse/articles/ipo/analyse-matangi-rubber-ipo-rhp-cmwsxgunf0017oonq64cu46vo"
+  },
+  {
+   "id": "fh2",
+   "name": "Revenue rose every year",
+   "category": "Financial health",
+   "status": "pass",
+   "finding": "Revenue grew every year: ₹90.1 cr, ₹101.3 cr, ₹129.8 cr (FY24–FY26), up 12.4% and 28.1%.",
+   "source": "https://www.multibagg.ai/market-pulse/articles/ipo/analyse-matangi-rubber-ipo-rhp-cmwsxgunf0017oonq64cu46vo"
+  },
+  {
+   "id": "fh3",
+   "name": "Debt to equity",
+   "category": "Financial health",
+   "status": "pass",
+   "finding": "Debt to equity was 0.85 in FY26 (borrowings ₹108.9 cr vs net worth ₹127.8 cr) and 0.80 at June 2026.",
+   "source": "https://www.multibagg.ai/market-pulse/articles/ipo/analyse-matangi-rubber-ipo-rhp-cmwsxgunf0017oonq64cu46vo"
+  },
+  {
+   "id": "fh4",
+   "name": "Debt growing slower than revenue",
+   "category": "Financial health",
+   "status": "flag",
+   "finding": "Borrowings rose 76% (₹61.9 cr to ₹108.9 cr) while revenue rose 44% over FY24–FY26.",
+   "source": "https://www.multibagg.ai/market-pulse/articles/ipo/analyse-matangi-rubber-ipo-rhp-cmwsxgunf0017oonq64cu46vo"
+  },
+  {
+   "id": "fh5",
+   "name": "Net worth rising",
+   "category": "Financial health",
+   "status": "pass",
+   "finding": "Net worth rose every year: ₹40.2 cr, ₹85.2 cr, ₹127.8 cr (FY24–FY26).",
+   "source": "https://www.multibagg.ai/market-pulse/articles/ipo/analyse-matangi-rubber-ipo-rhp-cmwsxgunf0017oonq64cu46vo"
+  },
+  {
+   "id": "fh6",
+   "name": "Positive operating cash flow",
+   "category": "Financial health",
+   "status": "caution",
+   "finding": "Operating cash flow was ₹3.30 cr in FY26, only about 15% of the ₹22.33 cr profit.",
+   "source": "https://www.multibagg.ai/market-pulse/articles/ipo/analyse-matangi-rubber-ipo-rhp-cmwsxgunf0017oonq64cu46vo"
+  },
+  {
+   "id": "pr1",
+   "name": "Profit growth",
+   "category": "Profitability",
+   "status": "caution",
+   "finding": "Profit after tax grew 11.5% in FY26, from ₹20.03 cr to ₹22.33 cr.",
+   "source": "https://www.multibagg.ai/market-pulse/articles/ipo/analyse-matangi-rubber-ipo-rhp-cmwsxgunf0017oonq64cu46vo"
+  },
+  {
+   "id": "pr2",
+   "name": "Profit margin trend",
+   "category": "Profitability",
+   "status": "pass",
+   "finding": "Net margin rose from 5.27% (FY24, standalone) to 18.84% (FY25) and was 16.89% in FY26, down about 2 points in the latest year.",
+   "source": "https://www.multibagg.ai/market-pulse/articles/ipo/analyse-matangi-rubber-ipo-rhp-cmwsxgunf0017oonq64cu46vo"
+  },
+  {
+   "id": "pr3",
+   "name": "Return on equity",
+   "category": "Profitability",
+   "status": "pass",
+   "finding": "Return on equity was 20.98% in FY26.",
+   "source": "https://www.chittorgarh.com/ipo-recommendation/matangi-rubber-ipo/3136/"
+  },
+  {
+   "id": "pr4",
+   "name": "Return on capital employed",
+   "category": "Profitability",
+   "status": "pass",
+   "finding": "ROCE was 15.41% in FY26.",
+   "source": "https://www.multibagg.ai/market-pulse/articles/ipo/analyse-matangi-rubber-ipo-rhp-cmwsxgunf0017oonq64cu46vo"
+  },
+  {
+   "id": "pr5",
+   "name": "Margin vs listed peers",
+   "category": "Profitability",
+   "status": "pass",
+   "finding": "FY26 PAT margin of 16.89% vs a peer median of 4.44% (CEAT 4.44%, TVS Srichakra 1.94%, Tolins Tyres 10.82%).",
+   "source": "https://www.multibagg.ai/market-pulse/articles/ipo/analyse-matangi-rubber-ipo-rhp-cmwsxgunf0017oonq64cu46vo"
+  },
+  {
+   "id": "va1",
+   "name": "P/E vs listed peers",
+   "category": "Valuation vs peers",
+   "status": "caution",
+   "finding": "Post-issue P/E of about 22.0x (₹492.2 cr market cap ÷ ₹22.33 cr FY26 PAT) is about 7% above the peer median of 20.5x (CEAT 20.5x, TVS Srichakra 49.5x, Tolins Tyres 9.5x).",
+   "source": "https://www.chittorgarh.com/ipo-recommendation/matangi-rubber-ipo/3136/"
+  },
+  {
+   "id": "va2",
+   "name": "Price to book vs listed peers",
+   "category": "Valuation vs peers",
+   "status": "na",
+   "finding": "Post-issue price to book is about 2.2x (₹492.2 cr ÷ ₹226.9 cr, i.e. FY26 net worth ₹127.75 cr + ₹99.1 cr fresh issue), but peer price to book figures were not found.",
+   "source": ""
+  },
+  {
+   "id": "va3",
+   "name": "Market cap to sales vs listed peers",
+   "category": "Valuation vs peers",
+   "status": "na",
+   "finding": "Post-issue market cap to FY26 sales is about 3.8x, but peer market cap to sales figures were not found.",
+   "source": ""
+  },
+  {
+   "id": "va4",
+   "name": "Recent pre-IPO share price",
+   "category": "Valuation vs peers",
+   "status": "pass",
+   "finding": "The only share issue in the past 12 months was a January 2026 private placement of 11,38,898 shares at ₹180, above the ₹172 upper band.",
+   "source": "https://www.multibagg.ai/market-pulse/articles/ipo/analyse-matangi-rubber-ipo-rhp-cmwsxgunf0017oonq64cu46vo"
+  },
+  {
+   "id": "pg1",
+   "name": "Promoter holding after the issue",
+   "category": "Promoter & governance",
+   "status": "pass",
+   "finding": "Promoters hold 60.01% after the issue, down from 81.11%.",
+   "source": "https://trendlyne.com/ipo/detail/2454/matangi-rubber-ltd/"
+  },
+  {
+   "id": "pg2",
+   "name": "No pledged promoter shares",
+   "category": "Promoter & governance",
+   "status": "na",
+   "finding": "No information on pledged promoter shares was found.",
+   "source": ""
+  },
+  {
+   "id": "pg3",
+   "name": "Related-party transactions",
+   "category": "Promoter & governance",
+   "status": "na",
+   "finding": "Related-party transaction totals were not found; the RHP shows ₹13.13 cr of interest-free loans and advances to related parties at June 2026.",
+   "source": ""
+  },
+  {
+   "id": "pg4",
+   "name": "No regulatory action against promoters",
+   "category": "Promoter & governance",
+   "status": "flag",
+   "finding": "Tax proceedings are pending against promoters (3 cases, ₹0.14 cr) and other directors (13 cases, ₹12.28 cr).",
+   "source": "https://www.multibagg.ai/market-pulse/articles/ipo/analyse-matangi-rubber-ipo-rhp-cmwsxgunf0017oonq64cu46vo"
+  },
+  {
+   "id": "is1",
+   "name": "Offer for sale share of the issue",
+   "category": "Issue structure",
+   "status": "pass",
+   "finding": "The offer for sale is ₹26.06 cr, or 20.8% of the ₹125.16 cr issue.",
+   "source": "https://www.ipoguru.in/ipo/matangi-rubber-ipo"
+  },
+  {
+   "id": "is2",
+   "name": "Free float after listing",
+   "category": "Issue structure",
+   "status": "pass",
+   "finding": "The ₹125.16 cr issue is about 25.4% of the ₹492.2 cr post-issue market cap (2,86,17,281 shares at ₹172).",
+   "source": "https://www.multibagg.ai/market-pulse/articles/ipo/analyse-matangi-rubber-ipo-rhp-cmwsxgunf0017oonq64cu46vo"
+  },
+  {
+   "id": "is3",
+   "name": "Selling shareholders' cost",
+   "category": "Issue structure",
+   "status": "caution",
+   "finding": "The main seller, Vandana Rubber and Chemicals (13.63 lakh of 15.15 lakh OFS shares), paid ₹26.67 a share, so the upper band is about 6.4x its cost.",
+   "source": "https://www.multibagg.ai/market-pulse/articles/ipo/analyse-matangi-rubber-ipo-rhp-cmwsxgunf0017oonq64cu46vo"
+  },
+  {
+   "id": "up1",
+   "name": "Money for growth",
+   "category": "Use of proceeds",
+   "status": "caution",
+   "finding": "₹27.5 cr (27.7% of the ₹99.1 cr fresh issue) goes to new rubber recycling and solid tyre plants at Bhind.",
+   "source": "https://www.multibagg.ai/market-pulse/articles/ipo/analyse-matangi-rubber-ipo-rhp-cmwsxgunf0017oonq64cu46vo"
+  },
+  {
+   "id": "up2",
+   "name": "Debt repayment share",
+   "category": "Use of proceeds",
+   "status": "caution",
+   "finding": "₹45 cr, or 45.4% of the fresh issue, goes to repaying loans.",
+   "source": "https://www.multibagg.ai/market-pulse/articles/ipo/analyse-matangi-rubber-ipo-rhp-cmwsxgunf0017oonq64cu46vo"
+  },
+  {
+   "id": "up3",
+   "name": "General corporate purposes",
+   "category": "Use of proceeds",
+   "status": "na",
+   "finding": "The amount for general corporate purposes was not found in public sources.",
+   "source": ""
+  },
+  {
+   "id": "up4",
+   "name": "No repayment to promoter entities",
+   "category": "Use of proceeds",
+   "status": "na",
+   "finding": "Public sources don't say whose loans are being repaid.",
+   "source": ""
+  },
+  {
+   "id": "lg1",
+   "name": "Litigation against the company",
+   "category": "Legal & litigation",
+   "status": "pass",
+   "finding": "Cases against the company total about ₹6.22 cr (one civil case of ₹4.19 cr and 19 tax cases), about 4.9% of the ₹127.75 cr net worth.",
+   "source": "https://www.multibagg.ai/market-pulse/articles/ipo/analyse-matangi-rubber-ipo-rhp-cmwsxgunf0017oonq64cu46vo"
+  },
+  {
+   "id": "lg2",
+   "name": "Criminal or regulatory cases",
+   "category": "Legal & litigation",
+   "status": "na",
+   "finding": "No information on criminal or regulatory cases was found.",
+   "source": ""
+  },
+  {
+   "id": "lg3",
+   "name": "Contingent liabilities",
+   "category": "Legal & litigation",
+   "status": "pass",
+   "finding": "Contingent liabilities were ₹7.01 cr at June 2026, about 5.2% of the ₹134.1 cr net worth.",
+   "source": "https://www.multibagg.ai/market-pulse/articles/ipo/analyse-matangi-rubber-ipo-rhp-cmwsxgunf0017oonq64cu46vo"
+  },
+  {
+   "id": "rk1",
+   "name": "Customer concentration",
+   "category": "Risk factors",
+   "status": "flag",
+   "finding": "The top 10 customers were 96.04% of FY26 revenue, and JK Tyre & Industries alone was 59.56%.",
+   "source": "https://www.multibagg.ai/market-pulse/articles/ipo/analyse-matangi-rubber-ipo-rhp-cmwsxgunf0017oonq64cu46vo"
+  },
+  {
+   "id": "rk2",
+   "name": "Supplier dependence",
+   "category": "Risk factors",
+   "status": "na",
+   "finding": "The top 10 suppliers were 73.69% of FY26 purchases, but the largest single supplier's share was not found.",
+   "source": ""
+  },
+  {
+   "id": "rk3",
+   "name": "Operating history",
+   "category": "Risk factors",
+   "status": "pass",
+   "finding": "Incorporated in June 2004, so about 22 years of operating history.",
+   "source": "https://trendlyne.com/ipo/detail/2454/matangi-rubber-ltd/"
+  },
+  {
+   "id": "rk4",
+   "name": "Auditor remarks",
+   "category": "Risk factors",
+   "status": "na",
+   "finding": "Auditor remarks were not found in public sources.",
+   "source": ""
+  }
+ ],
+ "peers": [
+  "CEAT",
+  "TVS Srichakra",
+  "Tolins Tyres"
+ ],
+ "metrics": [
+  [
+   "Revenue growth (CAGR)",
+   "%",
+   "high",
+   20.0,
+   [
+    null,
+    null,
+    null
+   ]
+  ],
+  [
+   "Net profit margin",
+   "%",
+   "high",
+   16.89,
+   [
+    4.44,
+    1.94,
+    10.82
+   ]
+  ],
+  [
+   "Return on equity",
+   "%",
+   "high",
+   20.98,
+   [
+    14.81,
+    10.34,
+    10.41
+   ]
+  ],
+  [
+   "Return on capital employed",
+   "%",
+   "high",
+   15.41,
+   [
+    19.9,
+    14.48,
+    12.45
+   ]
+  ],
+  [
+   "Debt to equity",
+   "x",
+   "low",
+   0.85,
+   [
+    0.6,
+    4.01,
+    0.03
+   ]
+  ],
+  [
+   "P/E (post-issue, upper band)",
+   "x",
+   "low",
+   22.04,
+   [
+    20.5,
+    49.54,
+    9.51
+   ]
+  ],
+  [
+   "Price to book (post-issue)",
+   "x",
+   "low",
+   2.17,
+   [
+    null,
+    null,
+    null
+   ]
+  ]
+ ],
+ "sources": [
+  {
+   "url": "https://www.multibagg.ai/market-pulse/articles/ipo/analyse-matangi-rubber-ipo-rhp-cmwsxgunf0017oonq64cu46vo",
+   "title": "Matangi Rubber IPO RHP analysis — Multibagg"
+  },
+  {
+   "url": "https://www.multibagg.ai/market-pulse/articles/ipo/matangi-rubber-limited-fy26-revenue-rhp-cmwsxs5ic001eoonqe5c50uvx",
+   "title": "Matangi Rubber FY26 revenue mix from RHP — Multibagg"
+  },
+  {
+   "url": "https://trendlyne.com/ipo/detail/2454/matangi-rubber-ltd/",
+   "title": "Matangi Rubber IPO — Trendlyne"
+  },
+  {
+   "url": "https://www.chittorgarh.com/ipo-recommendation/matangi-rubber-ipo/3136/",
+   "title": "Matangi Rubber IPO peer comparison — Chittorgarh"
+  },
+  {
+   "url": "https://www.chittorgarh.com/ipo/matangi-rubber-ipo/3136/",
+   "title": "Matangi Rubber IPO — Chittorgarh"
+  },
+  {
+   "url": "https://www.ipoguru.in/ipo/matangi-rubber-ipo",
+   "title": "Matangi Rubber IPO — IPO Guru"
+  },
+  {
+   "url": "https://www.indiaipo.in/ipo-blogs/matangi-rubber-ipo",
+   "title": "Matangi Rubber IPO — IndiaIPO"
+  }
+ ],
+ "generatedAt": "2026-11-24T08:00:00+05:30"
+}

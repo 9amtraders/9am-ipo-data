@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23",
+ "updated": "2026-11-24",
  "ipos": [
   {
    "name": "Crystal Crop Protection",
@@ -43,16 +43,16 @@
    "registrar": "maashitla",
    "allotment": "2026-11-25",
    "sub": {
-    "qib": 0,
-    "nii": 20.33,
-    "retail": 15.23,
-    "total": 11.96,
-    "asOf": "2026-11-20 19:30",
-    "final": false,
+    "qib": 161.11,
+    "nii": 233.67,
+    "retail": 108.71,
+    "total": 150.48,
+    "asOf": "2026-11-23 17:54",
+    "final": true,
     "retailShares": 1629600,
     "minAppShares": 1200,
-    "retailApps": 20687,
-    "source": "https://www.ipoguru.in/ipo-subscription/watrana-rentals-sme-ipo"
+    "retailApps": null,
+    "source": "https://www.chittorgarh.com/ipo_subscription/watrana-rentals-ipo/2503/"
    }
   },
   {
@@ -72,16 +72,16 @@
    "registrar": "kfin",
    "allotment": "2026-11-25",
    "sub": {
-    "qib": 1.37,
-    "nii": 0.18,
-    "retail": 0.24,
-    "total": 0.48,
-    "asOf": "2026-11-20 19:30",
-    "final": false,
+    "qib": 4.95,
+    "nii": 0.66,
+    "retail": 0.46,
+    "total": 1.52,
+    "asOf": "2026-11-23 17:05",
+    "final": true,
     "retailShares": 196896300,
     "minAppShares": 110,
-    "retailApps": 258788,
-    "source": "https://www.ipoguru.in/ipo-subscription/mahanadi-coalfields-ipo"
+    "retailApps": null,
+    "source": "https://www.ipoguru.in/news/mahanadi-coalfields-ipo-final-subscription"
    }
   },
   {
@@ -100,7 +100,7 @@
    "open": "2026-11-26",
    "close": "2026-11-30",
    "listing": "2026-12-03",
-   "band": "",
+   "band": "₹181 – ₹191",
    "registrar": "mufg",
    "allotment": "2026-12-01"
   },
@@ -138,6 +138,56 @@
    "band": "",
    "registrar": "kfin",
    "allotment": "2026-12-02"
+  },
+  {
+   "name": "Matangi Rubber",
+   "aka": [
+    "Matangi Rubbers",
+    "Matangee Rubber",
+    "Matangi Rubber IPO",
+    "Matangi"
+   ],
+   "board": "Mainboard",
+   "open": "2026-12-01",
+   "close": "2026-12-03",
+   "listing": "2026-12-08",
+   "band": "₹163 – ₹172",
+   "registrar": "bigshare",
+   "allotment": "2026-12-04"
+  },
+  {
+   "name": "A J Packaging",
+   "aka": [
+    "AJ Packaging",
+    "A.J. Packaging",
+    "A J Packagings",
+    "AJ Packing",
+    "A J Packaging IPO"
+   ],
+   "board": "SME",
+   "open": "2026-12-01",
+   "close": "2026-12-03",
+   "listing": "2026-12-08",
+   "band": "₹175 – ₹180",
+   "registrar": "mufg",
+   "allotment": "2026-12-04"
+  },
+  {
+   "name": "Monomark Engineering (India)",
+   "aka": [
+    "Monomark Engineering",
+    "Monomark Engg",
+    "Mono Mark Engineering",
+    "Monomark India",
+    "Monomark"
+   ],
+   "board": "Mainboard",
+   "open": "2026-12-02",
+   "close": "2026-12-04",
+   "listing": "2026-12-09",
+   "band": "",
+   "registrar": "bigshare",
+   "allotment": "2026-12-07"
   },
   {
    "name": "Casagrand Premier Builder",
