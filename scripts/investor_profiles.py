@@ -273,12 +273,27 @@ def index_page(all_d):
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
 {CSS}
 <div class="smp" id="smp"><div class="w">
-<header class="hero rv"><div><span class="tag"><i></i>Smart Money · Updated {e(all_d[0]["updated"])}</span><h1>Big investors' portfolios: what they bought, sold and made</h1>
+<header class="hero rv"><div><span class="tag"><i></i>Smart Money · Updated {e(all_d[0].get("deals_updated", all_d[0]["updated"]))}</span><h1>Big investors' portfolios: what they bought, sold and made</h1>
 <p>Disclosed holdings, bulk deals with exact prices and the estimated gain on recent bets, for India's best-known investors. Every figure links to its source.</p></div></header>
 <section class="sec rv"><h2>Big investors (HNIs)</h2><p class="lede">Tap a name to open the full profile.</p><div class="news">{cards}</div></section>
 <p class="disc rv">For education only. Not investment advice or a recommendation to copy any investor.</p>
 </div></div>
 {JS}'''
+
+
+def todays_deals():
+    """Biggest NSE bulk & block deals of the latest trading day (all buyers/sellers), from smartmoney/deals.json."""
+    try:
+        d = json.load(open(ROOT / "smartmoney" / "deals.json", encoding="utf-8"))
+    except Exception:
+        return ""
+    day = (d.get("dates") or [""])[0]
+    rows = sorted((x for x in d.get("deals", []) if x.get("d") == day), key=lambda x: x["q"] * x["p"], reverse=True)[:9]
+    if not rows:
+        return ""
+    label = show_date(day)
+    items = ''.join(f'<div class="nw"><small>{e(x["t"].title())} deal · {e(x["s"])}</small><b>{"Bought" if x["b"] else "Sold"} {e(x["n"])}</b><span style="display:block;font-size:13px;color:#5b6278;margin-top:4px">{e(x["c"].title())} · {inr(x["q"])} shares @ ₹{inr(x["p"],2)} · {cr(x["q"]*x["p"],1)}</span></div>' for x in rows)
+    return f'<section class="sec rv"><h2>Biggest bulk &amp; block deals on {e(label)}</h2><p class="lede">Every big buyer and seller on NSE that day, largest first. Updated every trading day.</p><div class="news">{items}</div></section>'
 
 
 def latest_strip(all_d):
@@ -309,7 +324,7 @@ def main():
     views = []
     for d in all_d:
         v = dict(d); v["deals"] = merged_deals(d); views.append(v)
-    idx = index_page(all_d).replace('<section class="sec rv"><h2>Big investors (HNIs)</h2>', latest_strip(views) + '<section class="sec rv"><h2>Big investors (HNIs)</h2>', 1)
+    idx = index_page(all_d).replace('<section class="sec rv"><h2>Big investors (HNIs)</h2>', todays_deals() + latest_strip(views) + '<section class="sec rv"><h2>Big investors (HNIs)</h2>', 1)
     (OUT_DIR / "smart-money.html").write_text(idx, encoding="utf-8")
     print(f"rendered {len(all_d)} profiles + index into {OUT_DIR}")
 
