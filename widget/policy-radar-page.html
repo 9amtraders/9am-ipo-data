@@ -1,0 +1,226 @@
+<!-- 9AM Traders Academy — Policy Radar (paste into an Elementor HTML widget) -->
+<div id="pr9">
+<style>
+#pr9{--red:#c1121f;--navy:#16245c;--ink:#141a2e;--muted:#5b6275;--line:#e3e6ee;--panel:#f6f7fb;--ok:#13804b;--warn:#b86e00;--bad:#c1121f;font-family:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:var(--ink);line-height:1.55;max-width:1100px;margin:0 auto;padding:8px 4px 40px;box-sizing:border-box}
+#pr9 *{box-sizing:border-box;min-width:0}
+#pr9 h1,#pr9 h2,#pr9 h3,#pr9 p{margin:0}
+#pr9 .hero{background:var(--navy);color:#fff;border-radius:14px;padding:clamp(20px,4vw,36px);display:grid;gap:12px;position:relative;overflow:hidden}
+#pr9 .hero:after{content:"";position:absolute;right:-70px;bottom:-110px;width:220px;height:220px;border-radius:50%;background:var(--red);opacity:.9}
+#pr9 .hero>*{position:relative;z-index:1}
+#pr9 .kicker{font-size:14px;color:#ffd5d8;font-weight:600}
+#pr9 h1{font-size:clamp(28px,4.4vw,44px);line-height:1.08;font-weight:800;text-wrap:balance;max-width:20ch;color:#fff}
+#pr9 .lede{font-size:17px;color:#dfe4f5;max-width:62ch}
+#pr9 .upd{font-size:14px;color:#c8cfe8}
+#pr9 .win{display:flex;flex-wrap:wrap;gap:8px;margin:20px 0 12px}
+#pr9 .win button{min-height:44px;padding:0 18px;font:inherit;font-size:15px;font-weight:600;border:1.5px solid var(--navy);border-radius:999px;background:#fff;color:var(--navy);cursor:pointer}
+#pr9 .win button[aria-pressed="true"]{background:var(--navy);color:#fff}
+#pr9 .win button:focus-visible,#pr9 .ctl:focus-visible{outline:3px solid var(--red);outline-offset:2px}
+#pr9 .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-bottom:18px}
+#pr9 .stat{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+#pr9 .stat b{display:block;font-size:34px;line-height:1.1;font-weight:800;font-variant-numeric:tabular-nums;color:var(--navy)}
+#pr9 .stat span{font-size:14px;color:var(--muted)}
+#pr9 .pos{color:var(--ok)!important}#pr9 .neg{color:var(--bad)!important}#pr9 .wat{color:var(--warn)!important}
+#pr9 .box{border:1px solid var(--line);border-radius:12px;padding:clamp(16px,3vw,22px);margin-bottom:18px;display:grid;gap:10px;background:#fff}
+#pr9 .box h2{font-size:22px;font-weight:800;color:var(--navy);line-height:1.2}
+#pr9 .bar{display:flex;height:30px;border-radius:8px;overflow:hidden;background:var(--panel);border:1px solid var(--line)}
+#pr9 .bar span{display:block;height:100%}
+#pr9 .bg-up{background:var(--ok)}#pr9 .bg-mix{background:#e0a100}#pr9 .bg-down{background:var(--bad)}
+#pr9 .key{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:14px;color:var(--muted)}
+#pr9 .key i{display:inline-block;width:11px;height:11px;border-radius:3px;margin-right:6px;vertical-align:-1px}
+#pr9 .note{font-size:14px;color:var(--muted)}
+#pr9 .pipe{border-left:5px solid var(--warn)}
+#pr9 .prow{padding:12px 0;border-top:1px solid var(--line);display:grid;gap:5px}
+#pr9 .prow:first-of-type{border-top:0}
+#pr9 .prow b{font-size:17px}
+#pr9 .tools{display:flex;flex-wrap:wrap;gap:8px;margin:6px 0 14px}
+#pr9 .ctl{min-height:44px;font:inherit;font-size:16px;padding:0 12px;border:1.5px solid var(--line);border-radius:10px;background:#fff;color:var(--ink)}
+#pr9 input.ctl{flex:1 1 240px}
+#pr9 .list{display:grid;gap:12px}
+#pr9 .card{border:1px solid var(--line);border-radius:12px;padding:clamp(16px,3vw,20px);display:grid;gap:8px;background:#fff}
+#pr9 .meta{display:flex;flex-wrap:wrap;gap:6px 12px;font-size:14px;color:var(--muted);align-items:center}
+#pr9 .pill{display:inline-block;padding:2px 10px;border-radius:999px;border:1.5px solid currentColor;font-weight:700;white-space:nowrap;font-size:13px}
+#pr9 .card h3{font-size:19px;line-height:1.3;font-weight:800;color:var(--ink)}
+#pr9 .chips{display:flex;flex-wrap:wrap;gap:6px}
+#pr9 .chip{border:1.5px solid var(--navy);color:var(--navy);border-radius:7px;padding:3px 9px;font-size:14px;font-weight:600}
+#pr9 .chip.alt{border-style:dashed;border-color:#9aa1b5;color:var(--muted);font-weight:500}
+#pr9 .react{border-left:4px solid var(--line);padding-left:10px}
+#pr9 .react.up{border-color:var(--ok)}#pr9 .react.down{border-color:var(--bad)}#pr9 .react.mixed{border-color:#e0a100}
+#pr9 .lab{font-size:13px;font-weight:700;color:var(--muted);margin-right:6px;text-transform:none}
+#pr9 a{color:var(--navy);overflow-wrap:anywhere}
+#pr9 .sites{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(230px,100%),1fr));gap:8px}
+#pr9 .sites li{border:1px solid var(--line);border-radius:10px;padding:10px 12px}
+#pr9 .sites a{font-weight:700}
+#pr9 .sites span{display:block;font-size:14px;color:var(--muted)}
+#pr9 details{border-top:1px solid var(--line);padding:12px 0}
+#pr9 summary{cursor:pointer;font-weight:700;font-size:17px;min-height:28px}
+#pr9 details p{margin-top:8px;color:var(--ink)}
+#pr9 .cta{background:var(--red);color:#fff;border-radius:12px;padding:clamp(18px,3vw,24px);display:grid;gap:10px}
+#pr9 .cta h2{color:#fff}
+#pr9 .cta a{display:inline-block;background:#fff;color:var(--red);font-weight:800;text-decoration:none;padding:12px 20px;border-radius:10px;width:max-content;max-width:100%}
+#pr9 .empty{color:var(--muted);padding:10px 0}
+@media (prefers-reduced-motion:no-preference){#pr9 .card{animation:pr9in .35s ease-out both}@keyframes pr9in{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}}
+</style>
+
+<header class="hero">
+  <p class="kicker">Free tool by 9AM Traders Academy · Updated every morning</p>
+  <h1>Policy Radar: government policies that move Indian stocks</h1>
+  <p class="lede">Track new government schemes, anti-dumping duties, quality control orders and certification rules, and see which NSE-listed stocks they can help or hurt, plus how those stocks actually reacted.</p>
+  <p class="upd">Last updated: <b id="pr9-upd">—</b></p>
+</header>
+
+<div class="win" role="group" aria-label="Time window">
+  <button type="button" data-win="30" aria-pressed="false">Last 30 days</button>
+  <button type="button" data-win="60" aria-pressed="false">Last 60 days</button>
+  <button type="button" data-win="90" aria-pressed="false">Last 3 months</button>
+  <button type="button" data-win="all" aria-pressed="true">All</button>
+</div>
+
+<section class="stats" aria-label="Summary">
+  <div class="stat"><b id="pr9-n">—</b><span>Policies in this window</span></div>
+  <div class="stat"><b class="pos" id="pr9-pos">—</b><span>Positive for stocks</span></div>
+  <div class="stat"><b class="wat" id="pr9-wat">—</b><span>On watch (not final yet)</span></div>
+  <div class="stat"><b class="neg" id="pr9-neg">—</b><span>Negative for stocks</span></div>
+</section>
+
+<section class="box" id="backtest">
+  <h2>Backtest: did the stocks actually move?</h2>
+  <p>Of <b id="pr9-bt">—</b> policies in this window with a reported market reaction, the named stocks rose after <b class="pos" id="pr9-up">—</b>, were mixed after <b class="wat" id="pr9-mix">—</b> and fell after <b class="neg" id="pr9-down">—</b>.</p>
+  <div class="bar" id="pr9-bar" role="img" aria-label="Share of policies by stock reaction"></div>
+  <div class="key"><span><i class="bg-up"></i>Rose</span><span><i class="bg-mix"></i>Mixed</span><span><i class="bg-down"></i>Fell</span></div>
+  <p class="note">Reactions are first-session moves reported in market news, not returns calculated from prices, and the whole market's mood on the day affects them.</p>
+</section>
+
+<section class="box pipe" id="pipeline">
+  <h2>Waiting for a decision (<span id="pr9-np">—</span>)</h2>
+  <p class="note">Drafts, probes and recommendations that are not law yet. Prices often move before the final decision, and some never get one: the Finance Ministry rejected 81% of DGTR anti-dumping recommendations between November 2025 and April 2026.</p>
+  <div id="pr9-pipe"></div>
+</section>
+
+<h2 style="font-size:24px;font-weight:800;color:var(--navy);margin:8px 0 4px">All tracked policies</h2>
+<div class="tools">
+  <input class="ctl" id="pr9-q" type="search" placeholder="Search a stock, sector or policy" aria-label="Search policies">
+  <select class="ctl" id="pr9-imp" aria-label="Impact"><option value="">All impacts</option><option>Positive</option><option>Watch</option><option>Negative</option></select>
+  <select class="ctl" id="pr9-stg" aria-label="Stage"><option value="">All stages</option><option>Draft</option><option>Probe</option><option>Recommended</option><option>Proposed</option><option>Approved</option><option>Notified</option><option>In force</option><option>Dropped</option></select>
+</div>
+<div class="list" id="pr9-list"><p class="empty">Loading policies…</p></div>
+<p class="note" style="margin-top:10px">Solid chips are stocks named in market coverage of the policy. Dashed chips are extra names worth checking. This is a learning tool, not a buy or sell recommendation.</p>
+
+<section class="box" style="margin-top:22px" id="sources">
+  <h2>Where we check every morning</h2>
+  <ul class="sites">
+    <li><a href="https://pib.gov.in/" target="_blank" rel="noopener nofollow">PIB</a><span>Cabinet decisions and new schemes</span></li>
+    <li><a href="https://www.dgtr.gov.in/" target="_blank" rel="noopener nofollow">DGTR</a><span>Anti-dumping probes and recommendations</span></li>
+    <li><a href="https://www.cbic.gov.in/" target="_blank" rel="noopener nofollow">CBIC</a><span>Customs and anti-dumping duty notifications</span></li>
+    <li><a href="https://www.dgft.gov.in/" target="_blank" rel="noopener nofollow">DGFT</a><span>Import curbs and licensing</span></li>
+    <li><a href="https://www.bis.gov.in/" target="_blank" rel="noopener nofollow">BIS</a><span>Quality Control Orders</span></li>
+    <li><a href="https://egazette.gov.in/" target="_blank" rel="noopener nofollow">e-Gazette</a><span>Final, legally binding notifications</span></li>
+    <li><a href="https://www.stqc.gov.in/" target="_blank" rel="noopener nofollow">STQC</a><span>CCTV and IT security certification</span></li>
+    <li><a href="https://mnre.gov.in/" target="_blank" rel="noopener nofollow">MNRE</a><span>Solar ALMM lists, renewables</span></li>
+    <li><a href="https://www.meity.gov.in/" target="_blank" rel="noopener nofollow">MeitY</a><span>Electronics, mobile and chip schemes</span></li>
+    <li><a href="https://powermin.gov.in/" target="_blank" rel="noopener nofollow">Ministry of Power</a><span>Storage, transmission, meters</span></li>
+    <li><a href="https://mines.gov.in/" target="_blank" rel="noopener nofollow">Ministry of Mines</a><span>Critical minerals</span></li>
+    <li><a href="https://www.mod.gov.in/" target="_blank" rel="noopener nofollow">Ministry of Defence</a><span>Indigenisation lists, DAC approvals</span></li>
+  </ul>
+</section>
+
+<section class="box" id="faq">
+  <h2>Government policy and stocks: common questions</h2>
+  <details><summary>How do government policies affect stock prices in India?</summary><p>A policy can raise a company's sales (a new scheme or government order), protect it from cheap imports (an anti-dumping duty, a quality control order or a certification rule) or raise its costs (a duty on its raw material). Prices often move when the market first hears of the policy, which can be well before the final notification.</p></details>
+  <details><summary>What is an anti-dumping duty and which stocks benefit?</summary><p>It is an extra import duty on goods sold into India below their fair price. DGTR investigates and recommends it, and the Finance Ministry decides whether to impose it. Indian makers of the same product usually benefit, while companies that use it as a raw material can lose.</p></details>
+  <details><summary>Does a DGTR recommendation mean the duty will be imposed?</summary><p>No. The Finance Ministry makes the final call, and in recent periods it has rejected most recommendations. That is why this page keeps recommendations in a separate "Waiting for a decision" list.</p></details>
+  <details><summary>Should I buy a stock when a policy is announced?</summary><p>Not just because of a headline. Check how big the benefit is compared with the company's revenue, whether the stock has already rallied on the news, and how long the policy will last. This page is for learning and research, not advice.</p></details>
+</section>
+
+<section class="cta">
+  <h2>Learn to read policy, results and money flow like a professional</h2>
+  <p>9AM Traders Academy in Moti Nagar, Delhi teaches market basics, fundamental analysis and how big money moves, in the classroom and online.</p>
+  <a href="https://9amtraders.com/9amtraders-com-brochure/">See courses and fees</a>
+</section>
+
+<script type="application/json" id="pr9-data">{"updated": "2026-11-24", "policies": [{"id": "almm-cells-2026", "date": "2026-06-01", "title": "Solar ALMM List-II: approved Indian solar cells required", "what": "Government-backed, net-metered and open-access solar projects commissioned from 1 June 2026 must use modules made with cells from approved Indian makers.", "authority": "MNRE", "category": "Approved list", "stage": "In force", "impact": "Positive", "sectors": "Solar manufacturing", "stocks": "", "also_watch": "Waaree Energies, Premier Energies", "source_name": "TaiyangNews — ALMM List-II comes into force", "source_url": "https://taiyangnews.info/markets/india-enforces-almm-list-ii-for-solar-cells", "reaction_dir": "Up", "reaction": "Waaree Energies, Premier Energies and Emmvee rose about 4% on 26 May after MNRE refused to extend the deadline.", "reaction_url": "https://www.businesstoday.in/markets/stocks/story/waaree-energies-premier-energies-emmvee-shares-rise-4-each-heres-why-533307-2026-05-26"}, {"id": "alu-extrusion-probe-2026", "date": "2026-11-09", "title": "DGTR anti-dumping probe on aluminium extrusions", "what": "Investigation into extrusions from China, Malaysia, Vietnam and Thailand, which make up about 90% of these imports. No duty yet: DGTR must recommend one and the Finance Ministry must impose it.", "authority": "DGTR", "category": "Trade remedy", "stage": "Probe", "impact": "Watch", "next_step": "DGTR final findings, then a Finance Ministry decision", "sectors": "Aluminium, building materials", "stocks": "Hindalco, NALCO, Vedanta", "also_watch": "", "source_name": "AlCircle — DGTR aluminium probe", "source_url": "https://www.alcircle.com/news/india-probes-aluminium-dumping-by-china-malaysia-vietnam-thailand-vedanta-hindalco-shares-eyed-122026"}, {"id": "alu-foil-sunset-2026", "date": "2026-09-24", "expected_by": "2026-12-15", "title": "DGTR recommends 5-year extension of duty on aluminium foil imports", "what": "Recommended $93.53–976.99 per tonne on foil of 80 micron and below from China, Thailand, Malaysia and Indonesia. The existing duty runs until 15 Dec 2026.", "authority": "DGTR → Finance Ministry", "category": "Trade remedy", "stage": "Recommended", "impact": "Watch", "next_step": "Finance Ministry notification before the current duty lapses", "sectors": "Aluminium downstream", "stocks": "", "also_watch": "Hindalco", "source_name": "The Pioneer — DGTR backs 5-year duty on aluminium foil", "source_url": "https://dailypioneer.com/news/slug-lite/dgtr-backs-5-year-anti-dumping-duty-on-aluminium-foil-imports?year=2026"}, {"id": "cctv-stqc-2026", "date": "2026-04-01", "title": "STQC certification mandatory for internet-connected CCTV", "what": "CCTV products need STQC approval before sale. Chinese brands such as Hikvision, Dahua and TP-Link, and devices with Chinese-origin chipsets, are reportedly being refused.", "authority": "MeitY / STQC", "category": "Certification", "stage": "In force", "impact": "Positive", "sectors": "Video surveillance", "stocks": "", "also_watch": "Aditya Infotech (CP PLUS)", "source_name": "Communications Today — Chinese CCTV firms barred", "source_url": "https://www.communicationstoday.co.in/?p=401803"}, {"id": "container-cmps-2026", "date": "2026-10-28", "title": "₹10,000 cr Container Manufacturing Promotion Scheme", "what": "Support up to FY40 for new or expanded shipping-container factories, to cut India's dependence on imported containers.", "authority": "Union Cabinet / Ministry of Ports, Shipping & Waterways", "category": "Scheme", "stage": "Approved", "impact": "Positive", "sectors": "Container makers, wagons, logistics", "stocks": "Kalyani Cast-Tech, Jupiter Wagons", "also_watch": "CONCOR, Texmaco Rail & Engineering", "source_name": "Upstox — container scheme puts Kalyani Cast-Tech, Jupiter Wagons in focus", "source_url": "https://upstox.com/news/market-news/stocks/kalyani-cast-tech-jupiter-wagons-in-focus-as-centre-approves-10-000-crore-container-scheme/article-202597/"}, {"id": "cranes-add-pending-2025", "date": "2025-09-19", "title": "24–52% duty on Chinese cranes, recommended but still not imposed", "what": "DGTR recommended duties on Chinese crawler and truck cranes in September 2025; about a year later the Finance Ministry still had not notified them. A case study in how long a recommendation can sit.", "authority": "DGTR → Finance Ministry", "category": "Trade remedy", "stage": "Recommended", "impact": "Watch", "next_step": "Finance Ministry decision — overdue", "sectors": "Construction equipment", "stocks": "", "also_watch": "Action Construction Equipment", "source_name": "Outlook Business — crane duty still awaiting government nod", "source_url": "https://www.outlookbusiness.com/news/anti-dumping-duty-on-chinese-cranes-still-awaiting-govt-nod-despite-dgtr-recommendation"}, {"id": "critmin-processing-2026", "date": "2026-11-04", "title": "₹2,814 cr capex support for lithium and nickel processing", "what": "A 30% capital subsidy for two lithium and two nickel refining plants, capped at ₹500 cr and ₹900 cr per plant. Winners are picked by who asks for the least support.", "authority": "Union Cabinet / Ministry of Mines", "category": "Scheme", "stage": "Approved", "impact": "Positive", "sectors": "Critical minerals, battery materials", "stocks": "Vedanta, Hindustan Zinc, GMDC", "also_watch": "Himadri Speciality Chemical", "source_name": "Upstox — metal stocks in focus on critical mineral scheme", "source_url": "https://upstox.com/news/market-news/stocks/vedanta-hindustan-zinc-gmdc-metal-stocks-in-focus-as-cabinet-approves-2-814-crore-critical-mineral-processing-outlay/article-203014/"}, {"id": "dac-110k-cr-2026", "date": "2026-09-07", "title": "DAC clears ₹1.10 lakh cr of defence purchases, 98% from Indian industry", "what": "The Defence Acquisition Council gave in-principle approval (AoN) to about ₹1.10 lakh cr of procurement, almost all to be sourced domestically. Orders come later.", "authority": "Ministry of Defence (DAC)", "category": "Procurement rule", "stage": "Approved", "impact": "Positive", "sectors": "Defence", "stocks": "HAL, BEL, BEML", "also_watch": "MIDHANI, Astra Microwave", "source_name": "Upstox — defence stocks rally on ₹1.10 lakh cr procurement", "source_url": "https://upstox.com/news/market-news/stocks/bel-hal-beml-defence-stocks-in-focus-as-centre-clears-1-10-lakh-crore-military-procurement/article-199929/", "reaction_dir": "Up", "reaction": "Nifty India Defence index closed 2.5% higher on 8 Sep, with MIDHANI leading gainers.", "reaction_url": "https://www.newkerala.com/news/a/nifty-india-defence-index-closes-25-higher-after-631.htm"}, {"id": "defence-pil6-2026", "date": "2026-08-18", "title": "Sixth Positive Indigenisation List: 405 defence items", "what": "405 more items reserved for Indian suppliers, with an estimated ₹3,070 cr of business potential.", "authority": "Ministry of Defence", "category": "Approved list", "stage": "In force", "impact": "Positive", "sectors": "Defence", "stocks": "Paras Defence, Zen Technologies", "also_watch": "", "source_name": "Kotak Neo — sixth indigenisation list", "source_url": "https://www.kotakneo.com/news/sectors/defence-stocks-sixth-indigenisation-list-3070-crore/", "reaction_dir": "Up", "reaction": "Defence stocks rose up to 10%; Paras Defence gained 10% and Zen Technologies over 7%.", "reaction_url": "https://www.kotakneo.com/news/sectors/defence-stocks-sixth-indigenisation-list-3070-crore/"}, {"id": "dgtr-pharma-probes-2026", "date": "2026-09-29", "title": "DGTR anti-dumping probes on 7 Chinese products, incl. Penicillin G and Amoxycillin", "what": "Investigations into Chinese imports including key drug ingredients Penicillin G, Amoxycillin Trihydrate and Montelukast, plus rubber and elevator parts. No duty yet.", "authority": "DGTR", "category": "Trade remedy", "stage": "Probe", "impact": "Watch", "next_step": "DGTR final findings, then a Finance Ministry decision", "sectors": "Pharma APIs", "stocks": "", "also_watch": "Aurobindo Pharma", "source_name": "NewKerala (IANS) — India opens probes into seven Chinese products", "source_url": "https://www.newkerala.com/news/a/india-opens-anti-dumping-probes-into-seven-chinese-products-956.htm"}, {"id": "es-vgf-92gwh-2026", "date": "2026-11-04", "title": "₹14,500 cr viability gap funding for 92 GWh grid-scale energy storage", "what": "Support over FY27–FY31 for 30 GWh of battery storage, 60 GWh of pumped hydro and 2 GWh of new technologies, awarded by tariff bidding. Battery projects must meet 40% domestic content.", "authority": "Union Cabinet / Ministry of Power", "category": "Scheme", "stage": "Approved", "impact": "Positive", "sectors": "Batteries, pumped hydro, power utilities", "stocks": "Exide Industries, Amara Raja Energy & Mobility", "also_watch": "JSW Energy, NHPC", "source_name": "Angel One — Cabinet approves grid storage scheme", "source_url": "https://www.angelone.in/news/market-updates/union-cabinet-approves-14-500-crore-grid-scale-storage-scheme-exide-amara-raja-and-others-in-focus"}, {"id": "eu-crsteel-duty-2026", "date": "2026-11-17", "title": "EU 9.5% anti-dumping duty on Indian cold-rolled steel", "what": "A definitive EU duty on certain uncoated cold-rolled flat steel from India, which makes Indian exports to Europe costlier.", "authority": "European Commission", "category": "Foreign duty", "stage": "In force", "impact": "Negative", "sectors": "Steel exporters", "stocks": "JSW Steel, Tata Steel", "also_watch": "", "source_name": "Ventura Securities — EU duty on Indian steel", "source_url": "https://www.venturasecurities.com/?p=67609"}, {"id": "ev-govt-cars-2026", "date": "2026-11-11", "title": "EVs made the default choice for government staff cars", "what": "Revised purchase rules make electric vehicles the default for central government staff cars and double the allowed price ceiling. It covers government fleets only, not private buyers.", "authority": "Central Government", "category": "Procurement rule", "stage": "In force", "impact": "Positive", "sectors": "Autos, EVs", "stocks": "Mahindra & Mahindra, Hyundai Motor India", "also_watch": "Tata Motors", "source_name": "Kotak Neo — EVs default for government cars", "source_url": "https://www.kotakneo.com/news/stocks/centre-makes-electric-vehicles-default-choice-for-government-cars-as-auto-stocks-in-focus/", "reaction_dir": "Up", "reaction": "Auto and EV shares mostly rose on 11 Nov, led by M&M; JBM Auto was the only tracked stock to close lower.", "reaction_url": "https://www.kotakneo.com/news/stocks/centre-makes-electric-vehicles-default-choice-for-government-cars-as-auto-stocks-in-focus/"}, {"id": "laptop-import-registration-2026", "date": "2026-11-01", "title": "Import registration for laptops and tablets", "what": "DGFT moved laptop and tablet imports to a registration system from 1 Nov. Officials say it will be simple and non-restrictive at first, so watch for tightening.", "authority": "DGFT", "category": "Import curb", "stage": "In force", "impact": "Watch", "sectors": "IT hardware, EMS", "stocks": "", "also_watch": "Dixon Technologies", "source_name": "India Sea Trade News — DGFT import registration for laptops", "source_url": "https://indiaseatradenews.com/?p=65454"}, {"id": "mpms-2026", "date": "2026-07-15", "title": "₹62,500 cr Mobile Phone Manufacturing Scheme (MPMS)", "what": "Production-linked incentives of roughly 2.25–5% on eligible phone sales for FY27–FY31, replacing the mobile PLI that ended in March 2026.", "authority": "Union Cabinet / MeitY", "category": "Scheme", "stage": "Notified", "impact": "Positive", "sectors": "Electronics manufacturing (EMS)", "stocks": "Dixon Technologies, Kaynes Technology, Syrma SGS, Amber Enterprises", "also_watch": "", "source_name": "Upstox — Dixon, Kaynes, Syrma in spotlight", "source_url": "https://upstox.com/news/market-news/stocks/dixon-tech-kaynes-syrma-in-spotlight-on-centre-s-62-500-crore-mobile-manufacturing-push/article-199088/", "reaction_dir": "Up", "reaction": "EMS stocks rallied up to 7% on 16 Jul (Dixon, Kaynes, Cyient DLM); Dixon traded over 4% higher.", "reaction_url": "https://www.angelone.in/news/stocks/dixon-technologies-kaynes-technology-cyient-dlm-share-price-rally-up-to-7-percent-after-cabinet-approves-new-manufacturing-schemes"}, {"id": "pm-dhara-2026", "date": "2026-09-30", "title": "₹1.86 lakh cr PM-DHARA (Green Energy Corridor III)", "what": "₹1,36,378 cr for state transmission lines plus ₹50,000 cr for 50 GWh of battery storage, to move up to 135 GW of renewable power by FY33.", "authority": "Union Cabinet / Ministry of Power", "category": "Scheme", "stage": "Approved", "impact": "Positive", "sectors": "Transmission, power equipment, battery storage", "stocks": "Power Grid, Adani Energy Solutions, GE Vernova T&D India, Hitachi Energy India, CG Power, Transformers & Rectifiers", "also_watch": "KEC International", "source_name": "Upstox — what PM-DHARA means for stocks", "source_url": "https://upstox.com/news/market-news/stocks/power-grid-adani-energy-exide-industries-what-the-1-86-lakh-crore-pm-dhara-scheme-means-for-stocks/article-201170/", "reaction_dir": "Mixed", "reaction": "Equipment makers rose on 1 Oct (Transformers & Rectifiers up to 10%, Adani Energy Solutions about 5%), but Power Grid, Tata Power and NTPC fell 1–2% in a weak market — a 'sell the news' day for utilities.", "reaction_url": "https://www.kotakneo.com/news/sectors/power-stocks-fall-despite-1-86-lakh-crore-pm-dhara-scheme/"}, {"id": "qco-electrical-appliances-2026", "date": "2026-04-06", "effective": "2026-10-01", "title": "BIS Quality Control Order on 90 electrical appliances", "what": "ISI certification is now mandatory for about 90 household and commercial appliances, which filters out uncertified cheap imports. Small enterprises have until 1 January 2027.", "authority": "DPIIT / BIS", "category": "Quality Control Order", "stage": "In force", "impact": "Positive", "sectors": "Consumer appliances", "stocks": "", "also_watch": "Havells, Crompton Greaves Consumer, Bajaj Electricals, TTK Prestige", "source_name": "Corpseed — Electrical appliances QCO 2026", "source_url": "https://www.corpseed.com/law-update/electrical-appliances-qco-2026-small-enterprises-comply-by-1-january-2027"}, {"id": "seamless-pipes-sunset-2026", "date": "2026-10-29", "expected_by": "2027-01-27", "title": "DGTR recommends 5 more years of $268/t duty on Chinese seamless pipes", "what": "A sunset review found dumping would likely continue, so DGTR recommended keeping the duty. The current duty was extended only until 27 Jan 2027, so the Finance Ministry has to notify before then or the duty lapses.", "authority": "DGTR → Finance Ministry", "category": "Trade remedy", "stage": "Recommended", "impact": "Watch", "next_step": "Finance Ministry customs notification (or rejection)", "sectors": "Steel pipes and tubes", "stocks": "Jindal Saw, Maharashtra Seamless, Kirloskar Ferrous", "also_watch": "", "source_name": "SteelOrbis — DGTR recommends 5-year AD duty on Chinese seamless pipes", "source_url": "https://www.steelorbis.com/steel-news/latest-news/indias-dgtr-recommends-five-year-ad-duty-on-chinese-seamless-pipes-1486928.htm"}, {"id": "steel-policy-draft-2026", "date": "2026-10-11", "title": "Draft National Steel Policy: Vision 2047", "what": "A Ministry of Steel draft roadmap targeting 604 million tonnes of crude steel capacity by 2047. Still a draft, so nothing is binding yet.", "authority": "Ministry of Steel", "category": "Scheme", "stage": "Draft", "impact": "Watch", "next_step": "Final National Steel Policy after consultations", "sectors": "Steel", "stocks": "Tata Steel, JSW Steel, SAIL", "also_watch": "", "source_name": "Outlook Money — draft steel policy lifts steel stocks", "source_url": "https://www.outlookmoney.com/invest/national-steel-policy-draft-pulls-nifty-metal-steel-stocks-in-green", "reaction_dir": "Up", "reaction": "Steel stocks traded higher in early trade on 12 Oct; SAIL gained over 3%.", "reaction_url": "https://www.outlookmoney.com/invest/national-steel-policy-draft-pulls-nifty-metal-steel-stocks-in-green"}, {"id": "tio2-add-2026", "date": "2026-10-24", "title": "Anti-dumping duty on Chinese titanium dioxide restored for 5 years", "what": "$460–681 per tonne on titanium dioxide from China, ending a 13-month gap with no duty. It protects domestic TiO2 makers but raises a key raw-material cost for paint companies.", "authority": "Finance Ministry (CBIC) on DGTR findings", "category": "Trade remedy", "stage": "In force", "impact": "Negative", "sectors": "Paints (raw-material cost)", "stocks": "", "also_watch": "Asian Paints, Berger Paints, Kansai Nerolac", "source_name": "TaxGuru — Notification 26/2026-Customs (ADD)", "source_url": "https://taxguru.in/?p=1094286"}]}</script>
+<script>
+(function(){
+  var REMOTE=['https://raw.githubusercontent.com/9amtraders/9am-ipo-data/main/policy-radar/policies.json','https://cdn.jsdelivr.net/gh/9amtraders/9am-ipo-data@main/policy-radar/policies.json'];
+  var root=document.getElementById('pr9');
+  var $=function(id){return document.getElementById(id)};
+  var DATA={updated:'',policies:[]};
+  try{DATA=JSON.parse($('pr9-data').textContent)}catch(e){}
+  var win='all',q='',imp='',stg='';
+  var PIPE=['draft','probe','recommended','proposed'];
+  var MON=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+  function toD(s){return new Date(String(s||'').slice(0,10)+'T00:00:00Z')}
+  function day(s){var d=toD(s);return isNaN(d)?String(s||''):(d.getUTCDate()+' '+MON[d.getUTCMonth()]+' '+d.getUTCFullYear())}
+  function el(t,c,x){var e=document.createElement(t);if(c)e.className=c;if(x!=null)e.textContent=String(x);return e}
+  function names(s){return String(s||'').split(',').map(function(x){return x.trim()}).filter(Boolean)}
+  function low(s){return String(s||'').toLowerCase()}
+  function inWin(p){if(win==='all')return true;var d=toD(p.date);if(isNaN(d))return false;return (Date.now()-d.getTime())/864e5<=Number(win)}
+  function link(u,label){u=String(u||'');if(/^https?:\/\//i.test(u)){var a=el('a',null,label||u);a.href=u;a.target='_blank';a.rel='noopener nofollow';return a}return document.createTextNode(u)}
+  function chips(p){var c=el('div','chips');names(p.stocks).forEach(function(n){c.appendChild(el('span','chip',n))});names(p.also_watch).forEach(function(n){c.appendChild(el('span','chip alt',n))});return c.childNodes.length?c:null}
+  var TONE={positive:'pos',negative:'neg',watch:'wat'};
+
+  function render(){
+    var all=DATA.policies||[];
+    $('pr9-upd').textContent=DATA.updated?day(DATA.updated):'—';
+    var w=all.filter(inWin);
+    $('pr9-n').textContent=w.length;
+    $('pr9-pos').textContent=w.filter(function(p){return p.impact==='Positive'}).length;
+    $('pr9-wat').textContent=w.filter(function(p){return p.impact==='Watch'}).length;
+    $('pr9-neg').textContent=w.filter(function(p){return p.impact==='Negative'}).length;
+    var r=function(v){return w.filter(function(p){return low(p.reaction_dir)===v}).length};
+    var up=r('up'),mx=r('mixed'),dn=r('down'),tot=up+mx+dn;
+    $('pr9-bt').textContent=tot;$('pr9-up').textContent=up;$('pr9-mix').textContent=mx;$('pr9-down').textContent=dn;
+    var bar=$('pr9-bar');bar.innerHTML='';
+    [['bg-up',up],['bg-mix',mx],['bg-down',dn]].forEach(function(s){if(!s[1]||!tot)return;var x=el('span',s[0]);x.style.width=(100*s[1]/tot)+'%';bar.appendChild(x)});
+
+    var pipe=all.filter(function(p){return PIPE.indexOf(low(p.stage))>-1}).sort(function(a,b){return String(a.expected_by||'9999').localeCompare(String(b.expected_by||'9999'))||String(b.date).localeCompare(String(a.date))});
+    $('pr9-np').textContent=pipe.length;
+    var pb=$('pr9-pipe');pb.innerHTML='';
+    if(!pipe.length)pb.appendChild(el('p','empty','Nothing is waiting for a decision right now.'));
+    pipe.forEach(function(p){
+      var row=el('div','prow');var m=el('div','meta');
+      m.appendChild(el('span','pill wat',p.stage));m.appendChild(el('span',null,'Since '+day(p.date)));
+      if(p.expected_by)m.appendChild(el('span',null,'Decision due by '+day(p.expected_by)));
+      row.appendChild(m);row.appendChild(el('b',null,p.title));
+      if(p.next_step){var n=el('p');n.appendChild(el('span','lab','Next step'));n.appendChild(document.createTextNode(p.next_step));row.appendChild(n)}
+      var c=chips(p);if(c)row.appendChild(c);pb.appendChild(row);
+    });
+
+    var list=$('pr9-list');list.innerHTML='';
+    var rows=w.filter(function(p){
+      if(imp&&low(p.impact)!==imp)return false;
+      if(stg&&low(p.stage)!==stg)return false;
+      if(q){var h=low([p.title,p.what,p.sectors,p.stocks,p.also_watch,p.authority,p.category,p.reaction].join(' '));if(h.indexOf(q)<0)return false}
+      return true;
+    }).sort(function(a,b){return String(b.date).localeCompare(String(a.date))});
+    if(!rows.length){list.appendChild(el('p','empty',all.length?'No policy matches this window and these filters.':'No policies yet.'));return}
+    rows.forEach(function(p){
+      var card=el('article','card');var m=el('div','meta');
+      m.appendChild(el('span','pill '+(TONE[low(p.impact)]||''),p.impact));
+      m.appendChild(el('span',null,p.stage));m.appendChild(el('span',null,day(p.date)));
+      var who=[p.category,p.authority].filter(Boolean).join(' · ');if(who)m.appendChild(el('span',null,who));
+      if(p.effective)m.appendChild(el('span',null,'In force from '+day(p.effective)));
+      card.appendChild(m);card.appendChild(el('h3',null,p.title));card.appendChild(el('p',null,p.what));
+      if(p.sectors){var s=el('p','note');s.appendChild(el('span','lab','Sectors'));s.appendChild(document.createTextNode(p.sectors));card.appendChild(s)}
+      var c=chips(p);if(c)card.appendChild(c);
+      if(p.next_step){var n=el('p','note');n.appendChild(el('span','lab','Next step'));n.appendChild(document.createTextNode(p.next_step+(p.expected_by?' (by '+day(p.expected_by)+')':'')));card.appendChild(n)}
+      if(p.reaction){var rr=el('p','react '+low(p.reaction_dir));rr.appendChild(el('span','lab','Stock reaction'));rr.appendChild(document.createTextNode(p.reaction+' '));if(p.reaction_url)rr.appendChild(link(p.reaction_url,'(report)'));card.appendChild(rr)}
+      if(p.source_url){var src=el('p','note');src.appendChild(el('span','lab','Source'));src.appendChild(link(p.source_url,p.source_name));card.appendChild(src)}
+      list.appendChild(card);
+    });
+  }
+
+  root.querySelectorAll('.win button').forEach(function(b){b.addEventListener('click',function(){win=b.getAttribute('data-win');root.querySelectorAll('.win button').forEach(function(x){x.setAttribute('aria-pressed',x===b?'true':'false')});render()})});
+  $('pr9-q').addEventListener('input',function(){q=low(this.value.trim());render()});
+  $('pr9-imp').addEventListener('change',function(){imp=low(this.value);render()});
+  $('pr9-stg').addEventListener('change',function(){stg=low(this.value);render()});
+  render();
+
+  (function load(i){
+    if(i>=REMOTE.length)return;
+    fetch(REMOTE[i]+'?t='+Date.now(),{cache:'no-store'}).then(function(r){if(!r.ok)throw 0;return r.json()}).then(function(j){
+      if(j&&Array.isArray(j.policies)&&String(j.updated||'')>=String(DATA.updated||'')){DATA=j;render()}
+    }).catch(function(){load(i+1)});
+  })(0);
+})();
+</script>
+</div>
