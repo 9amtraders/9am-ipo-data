@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-24",
+ "updated": "2026-11-25",
  "ipos": {
   "bombaycoatedspecialsteels": {
    "name": "Bombay Coated & Special Steels",
@@ -515,6 +515,14 @@
       "https://www.investorgain.com/gmp/crystal-crop-protection-ipo/2067/",
       "https://www.ipoguru.in/ipo-gmp/crystal-crop-protection-ipo"
      ]
+    },
+    {
+     "date": "2026-11-25",
+     "low": 19,
+     "high": 19,
+     "sources": [
+      "https://www.investorgain.com/gmp/crystal-crop-protection-ipo-gmp/2067/"
+     ]
     }
    ]
   },
@@ -590,6 +598,15 @@
       "https://www.ipoguru.in/ipo-gmp/watrana-rentals-sme-ipo",
       "https://www.investorgain.com/report/ipo-gmp-live/331/?filter=sme"
      ]
+    },
+    {
+     "date": "2026-11-25",
+     "low": 40,
+     "high": 40,
+     "sources": [
+      "https://www.investorgain.com/gmp/watrana-rentals-ipo/1818/",
+      "https://www.ipoguru.in/ipo-gmp/watrana-rentals-sme-ipo"
+     ]
     }
    ]
   },
@@ -639,6 +656,14 @@
      "sources": [
       "https://www.investorgain.com/gmp/mahanadi-coalfields-ipo/2401/"
      ]
+    },
+    {
+     "date": "2026-11-25",
+     "low": 0,
+     "high": 0,
+     "sources": [
+      "https://www.investorgain.com/gmp/mahanadi-coalfields-ipo/2401/"
+     ]
     }
    ]
   },
@@ -668,6 +693,15 @@
      "sources": [
       "https://www.investorgain.com/report/ipo-gmp-live/331/?filter=sme"
      ]
+    },
+    {
+     "date": "2026-11-25",
+     "low": 20,
+     "high": 20,
+     "sources": [
+      "https://www.investorgain.com/gmp/shree-siddhivinayak-greentech-industries-ipo/2349/",
+      "https://www.ipoguru.in/live-ipo-summary"
+     ]
     }
    ]
   },
@@ -690,6 +724,15 @@
      "sources": [
       "https://www.investorgain.com/gmp/foodlink-fb-ipo/1810/"
      ]
+    },
+    {
+     "date": "2026-11-25",
+     "low": 21,
+     "high": 21,
+     "sources": [
+      "https://www.investorgain.com/gmp/foodlink-fb-ipo/1810/",
+      "https://www.ipoguru.in/live-ipo-summary"
+     ]
     }
    ]
   },
@@ -702,6 +745,43 @@
      "high": 20,
      "sources": [
       "https://www.investorgain.com/report/ipo-gmp-live/331/?filter=sme"
+     ]
+    },
+    {
+     "date": "2026-11-25",
+     "low": 18,
+     "high": 18,
+     "sources": [
+      "https://www.investorgain.com/ipo/a-j-packaging-ipo/2247/",
+      "https://www.ipoguru.in/live-ipo-summary"
+     ]
+    }
+   ]
+  },
+  "matangirubber": {
+   "name": "Monomark Engineering (India)",
+   "readings": [
+    {
+     "date": "2026-11-25",
+     "low": 21.5,
+     "high": 21.5,
+     "sources": [
+      "https://www.investorgain.com/gmp/matangi-rubber-ipo/2290/",
+      "https://www.ipoguru.in/ipo-gmp/matangi-rubber-ipo"
+     ]
+    }
+   ]
+  },
+  "monomarkengineeringindia": {
+   "name": "Monomark Engineering (India)",
+   "readings": [
+    {
+     "date": "2026-11-25",
+     "low": 23,
+     "high": 23,
+     "sources": [
+      "https://www.investorgain.com/gmp/monomark-engineering-ipo-gmp/2232/",
+      "https://www.ipoguru.in/live-ipo-summary"
      ]
     }
    ]

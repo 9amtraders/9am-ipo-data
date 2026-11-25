@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-24",
+ "updated": "2026-11-25",
  "ipos": [
   {
    "name": "Crystal Crop Protection",
@@ -167,6 +167,24 @@
    "allotment": "2026-12-02"
   },
   {
+   "name": "Airpro Technology India",
+   "aka": [
+    "Airpro Technology",
+    "Airpro",
+    "Air Pro Technology",
+    "Airpro Tech",
+    "Airpro Technology IPO"
+   ],
+   "board": "SME",
+   "open": "2026-11-27",
+   "close": "2026-12-01",
+   "listing": "2026-12-04",
+   "band": "₹99",
+   "hasReport": false,
+   "score": null,
+   "registrar": "mufg"
+  },
+  {
    "name": "Matangi Rubber",
    "aka": [
     "Matangi Rubbers",
@@ -217,8 +235,8 @@
    "close": "2026-12-04",
    "listing": "2026-12-09",
    "band": "",
-   "hasReport": false,
-   "score": null,
+   "hasReport": true,
+   "score": 46,
    "registrar": "bigshare",
    "allotment": "2026-12-07"
   },

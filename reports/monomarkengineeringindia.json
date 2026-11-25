@@ -1,0 +1,492 @@
+{
+ "id": "monomarkengineeringindia",
+ "name": "Monomark Engineering (India)",
+ "board": "Mainboard",
+ "sector": "Industrial O&M and fabrication",
+ "exchange": "NSE, BSE",
+ "open": "2026-12-02",
+ "close": "2026-12-04",
+ "listing": "2026-12-09",
+ "band": "TBA",
+ "issueSizeCr": null,
+ "freshCr": null,
+ "ofsCr": 0.0,
+ "lotSize": null,
+ "summary": "Monomark Engineering, based in Chittorgarh, Rajasthan, provides industrial operations and maintenance, metal fabrication and project execution for metals, cement, ports and engineering clients. Revenue grew from ₹390 cr in FY24 to ₹562 cr in FY26, and profit rose 42% in FY26 to ₹25.9 cr, though operating cash flow was only ₹8.1 cr. The issue is a fresh issue of 2.70 crore shares with no offer for sale, and ₹120 cr of it is earmarked for working capital, not new capacity. Customer concentration is very high: the top 10 customers gave 91% of FY26 revenue and Hindustan Zinc alone 35%; the price band is not yet announced.",
+ "score": 46,
+ "checksScore": 69,
+ "drivers": [
+  {
+   "name": "Subscription demand",
+   "weight": 50,
+   "score": 50,
+   "detail": "Subscription not available yet, scored as neutral until bidding opens."
+  },
+  {
+   "name": "Profit growth (RHP)",
+   "weight": 20,
+   "score": 85,
+   "detail": "Profit after tax grew 42.2% in the latest year in the RHP."
+  },
+  {
+   "name": "P/E vs listed peers",
+   "weight": 5,
+   "score": 30,
+   "detail": "Peer P/E figures not found; scored from the P/E check."
+  },
+  {
+   "name": "All 33 checks",
+   "weight": 25,
+   "score": 69,
+   "detail": "Financial health, governance, issue structure, use of proceeds, legal and risk checks."
+  }
+ ],
+ "capReason": "3 red flags took 15 points off.",
+ "counts": {
+  "pass": 19,
+  "caution": 3,
+  "flag": 3,
+  "na": 8
+ },
+ "totalChecks": 33,
+ "confidence": "normal",
+ "categories": [
+  {
+   "name": "Financial health",
+   "score": 92,
+   "detail": "5 of 6 checks passed"
+  },
+  {
+   "name": "Profitability",
+   "score": 86,
+   "detail": "4 of 5 checks passed · 1 not found"
+  },
+  {
+   "name": "Valuation vs peers",
+   "score": 30,
+   "detail": "Not found in public sources, scored as neutral"
+  },
+  {
+   "name": "Promoter & governance",
+   "score": 75,
+   "detail": "3 of 4 checks passed · 1 flag"
+  },
+  {
+   "name": "Issue structure",
+   "score": 100,
+   "detail": "3 of 3 checks passed"
+  },
+  {
+   "name": "Use of proceeds",
+   "score": 57,
+   "detail": "2 of 4 checks passed · 1 flag · 1 not found"
+  },
+  {
+   "name": "Legal & litigation",
+   "score": 67,
+   "detail": "1 of 3 checks passed"
+  },
+  {
+   "name": "Risk factors",
+   "score": 40,
+   "detail": "1 of 4 checks passed · 1 flag · 2 not found"
+  }
+ ],
+ "checks": [
+  {
+   "id": "fh1",
+   "name": "Revenue growth",
+   "category": "Financial health",
+   "status": "pass",
+   "finding": "Revenue rose from ₹389.9 cr (FY24) to ₹561.9 cr (FY26), a CAGR of about 20.1%.",
+   "source": "https://www.multibagg.ai/market-pulse/articles/ipo/analyse-monomark-engineering-india-ipo-rhp-cmwsyl28d001roonq1p0p84j6"
+  },
+  {
+   "id": "fh2",
+   "name": "Revenue rose every year",
+   "category": "Financial health",
+   "status": "pass",
+   "finding": "Revenue grew every year: ₹389.9 cr, ₹475.0 cr, ₹561.9 cr (FY24–FY26).",
+   "source": "https://www.multibagg.ai/market-pulse/articles/ipo/analyse-monomark-engineering-india-ipo-rhp-cmwsyl28d001roonq1p0p84j6"
+  },
+  {
+   "id": "fh3",
+   "name": "Debt to equity",
+   "category": "Financial health",
+   "status": "pass",
+   "finding": "Debt to equity was 0.77 at June 30, 2026 (borrowings ₹92.1 cr vs net worth ₹119.3 cr).",
+   "source": "https://www.multibagg.ai/market-pulse/articles/ipo/analyse-monomark-engineering-india-ipo-rhp-cmwsyl28d001roonq1p0p84j6"
+  },
+  {
+   "id": "fh4",
+   "name": "Debt growing slower than revenue",
+   "category": "Financial health",
+   "status": "pass",
+   "finding": "Borrowings rose 9% (₹80.2 cr to ₹87.3 cr) while revenue rose 44% over FY24–FY26.",
+   "source": "https://www.multibagg.ai/market-pulse/articles/ipo/analyse-monomark-engineering-india-ipo-rhp-cmwsyl28d001roonq1p0p84j6"
+  },
+  {
+   "id": "fh5",
+   "name": "Net worth rising",
+   "category": "Financial health",
+   "status": "pass",
+   "finding": "Net worth rose every year: ₹60.1 cr, ₹73.3 cr, ₹116.7 cr (FY24–FY26).",
+   "source": "https://www.multibagg.ai/market-pulse/articles/ipo/analyse-monomark-engineering-india-ipo-rhp-cmwsyl28d001roonq1p0p84j6"
+  },
+  {
+   "id": "fh6",
+   "name": "Positive operating cash flow",
+   "category": "Financial health",
+   "status": "caution",
+   "finding": "Operating cash flow was ₹8.1 cr in FY26, about 31% of the ₹25.9 cr profit.",
+   "source": "https://www.multibagg.ai/market-pulse/articles/ipo/analyse-monomark-engineering-india-ipo-rhp-cmwsyl28d001roonq1p0p84j6"
+  },
+  {
+   "id": "pr1",
+   "name": "Profit growth",
+   "category": "Profitability",
+   "status": "pass",
+   "finding": "Profit after tax grew 42.2% in FY26, from ₹18.2 cr to ₹25.9 cr.",
+   "source": "https://www.multibagg.ai/market-pulse/articles/ipo/analyse-monomark-engineering-india-ipo-rhp-cmwsyl28d001roonq1p0p84j6"
+  },
+  {
+   "id": "pr2",
+   "name": "Profit margin trend",
+   "category": "Profitability",
+   "status": "pass",
+   "finding": "Net margin improved from 3.80% (FY24) to 3.83% (FY25) and 4.61% (FY26).",
+   "source": "https://www.multibagg.ai/market-pulse/articles/ipo/monomark-engineering-india-ipo-cmwsxqq8r001doonq9kio6r71"
+  },
+  {
+   "id": "pr3",
+   "name": "Return on equity",
+   "category": "Profitability",
+   "status": "pass",
+   "finding": "Return on equity was 27.27% in FY26 (RoNW 22.19%).",
+   "source": "https://ipowatch.in/monomark-engineering-ipo-details/"
+  },
+  {
+   "id": "pr4",
+   "name": "Return on capital employed",
+   "category": "Profitability",
+   "status": "pass",
+   "finding": "ROCE was 21.47% in FY26.",
+   "source": "https://ipowatch.in/monomark-engineering-ipo-details/"
+  },
+  {
+   "id": "pr5",
+   "name": "Margin vs listed peers",
+   "category": "Profitability",
+   "status": "na",
+   "finding": "Peer margins were not found in public sources.",
+   "source": ""
+  },
+  {
+   "id": "va1",
+   "name": "P/E vs listed peers",
+   "category": "Valuation vs peers",
+   "status": "na",
+   "finding": "The price band is not announced, so the post-issue P/E cannot be computed (peer median P/E is about 31.5x).",
+   "source": ""
+  },
+  {
+   "id": "va2",
+   "name": "Price to book vs listed peers",
+   "category": "Valuation vs peers",
+   "status": "na",
+   "finding": "The price band is not announced, so the post-issue price to book cannot be computed.",
+   "source": ""
+  },
+  {
+   "id": "va3",
+   "name": "Market cap to sales vs listed peers",
+   "category": "Valuation vs peers",
+   "status": "na",
+   "finding": "The price band is not announced, so the post-issue market cap to sales cannot be computed.",
+   "source": ""
+  },
+  {
+   "id": "va4",
+   "name": "Recent pre-IPO share price",
+   "category": "Valuation vs peers",
+   "status": "na",
+   "finding": "The price band is not announced; the last reported private allotment was in July 2025 at ₹38 a share.",
+   "source": ""
+  },
+  {
+   "id": "pg1",
+   "name": "Promoter holding after the issue",
+   "category": "Promoter & governance",
+   "status": "pass",
+   "finding": "Promoters hold 65.69% after the issue, down from 91.37%.",
+   "source": "https://www.ipoguru.in/ipo/monomark-engineering-india-ipo"
+  },
+  {
+   "id": "pg2",
+   "name": "No pledged promoter shares",
+   "category": "Promoter & governance",
+   "status": "pass",
+   "finding": "The offer document states none of the promoters' shares are pledged.",
+   "source": "https://www.sebi.gov.in/sebi_data/commondocs/sep-2026/Monomark%20Engineering%20-%20ADRHP_p.pdf"
+  },
+  {
+   "id": "pg3",
+   "name": "Related-party transactions",
+   "category": "Promoter & governance",
+   "status": "pass",
+   "finding": "FY26 related-party payments (promoter pay ₹2.67 cr plus about ₹1.3 cr of equipment, rent and reimbursements to a promoter firm) are under 1% of revenue.",
+   "source": "https://www.multibagg.ai/market-pulse/articles/ipo/analyse-monomark-engineering-india-ipo-rhp-cmwsyl28d001roonq1p0p84j6"
+  },
+  {
+   "id": "pg4",
+   "name": "No regulatory action against promoters",
+   "category": "Promoter & governance",
+   "status": "flag",
+   "finding": "Tax proceedings of ₹13.1 lakh are pending against the promoters.",
+   "source": "https://www.multibagg.ai/market-pulse/articles/ipo/analyse-monomark-engineering-india-ipo-rhp-cmwsyl28d001roonq1p0p84j6"
+  },
+  {
+   "id": "is1",
+   "name": "Offer for sale share of the issue",
+   "category": "Issue structure",
+   "status": "pass",
+   "finding": "The entire issue of 2.70 crore shares is fresh; there is no offer for sale.",
+   "source": "https://upstox.com/news/market-news/ipo/monomark-engineering-ipo-opens-dec-2-check-issue-details-objectives-and-key-dates/article-203837/"
+  },
+  {
+   "id": "is2",
+   "name": "Free float after listing",
+   "category": "Issue structure",
+   "status": "pass",
+   "finding": "The 2.70 crore new shares are about 28.1% of the 9.60 crore post-issue shares.",
+   "source": "https://www.chittorgarh.com/ipo/monomark-engineering-ipo/2972/"
+  },
+  {
+   "id": "is3",
+   "name": "Selling shareholders' cost",
+   "category": "Issue structure",
+   "status": "pass",
+   "finding": "No selling shareholders, because there is no offer for sale.",
+   "source": "https://upstox.com/news/market-news/ipo/monomark-engineering-ipo-opens-dec-2-check-issue-details-objectives-and-key-dates/article-203837/"
+  },
+  {
+   "id": "up1",
+   "name": "Money for growth",
+   "category": "Use of proceeds",
+   "status": "flag",
+   "finding": "Nothing funds capex, expansion or acquisitions; ₹120 cr goes to working capital and the rest to general corporate purposes.",
+   "source": "https://www.multibagg.ai/market-pulse/articles/ipo/analyse-monomark-engineering-india-ipo-rhp-cmwsyl28d001roonq1p0p84j6"
+  },
+  {
+   "id": "up2",
+   "name": "Debt repayment share",
+   "category": "Use of proceeds",
+   "status": "pass",
+   "finding": "None of the fresh issue goes to repaying debt.",
+   "source": "https://www.multibagg.ai/market-pulse/articles/ipo/analyse-monomark-engineering-india-ipo-rhp-cmwsyl28d001roonq1p0p84j6"
+  },
+  {
+   "id": "up3",
+   "name": "General corporate purposes",
+   "category": "Use of proceeds",
+   "status": "na",
+   "finding": "The general corporate purposes amount is not disclosed (capped at 25%), as the issue size isn't fixed yet.",
+   "source": ""
+  },
+  {
+   "id": "up4",
+   "name": "No repayment to promoter entities",
+   "category": "Use of proceeds",
+   "status": "pass",
+   "finding": "No proceeds go to repaying loans, so none repay promoter entities.",
+   "source": "https://www.multibagg.ai/market-pulse/articles/ipo/analyse-monomark-engineering-india-ipo-rhp-cmwsyl28d001roonq1p0p84j6"
+  },
+  {
+   "id": "lg1",
+   "name": "Litigation against the company",
+   "category": "Legal & litigation",
+   "status": "pass",
+   "finding": "Tax proceedings against the company total ₹1.20 cr, about 1% of the ₹116.7 cr net worth.",
+   "source": "https://www.multibagg.ai/market-pulse/articles/ipo/analyse-monomark-engineering-india-ipo-rhp-cmwsyl28d001roonq1p0p84j6"
+  },
+  {
+   "id": "lg2",
+   "name": "Criminal or regulatory cases",
+   "category": "Legal & litigation",
+   "status": "caution",
+   "finding": "An independent director faces a ₹20 lakh cheque-dishonour complaint and a separate criminal matter.",
+   "source": "https://www.multibagg.ai/market-pulse/articles/ipo/analyse-monomark-engineering-india-ipo-rhp-cmwsyl28d001roonq1p0p84j6"
+  },
+  {
+   "id": "lg3",
+   "name": "Contingent liabilities",
+   "category": "Legal & litigation",
+   "status": "caution",
+   "finding": "Contingent liabilities are ₹56.5 cr, about 47.3% of net worth.",
+   "source": "https://www.multibagg.ai/market-pulse/articles/ipo/analyse-monomark-engineering-india-ipo-rhp-cmwsyl28d001roonq1p0p84j6"
+  },
+  {
+   "id": "rk1",
+   "name": "Customer concentration",
+   "category": "Risk factors",
+   "status": "flag",
+   "finding": "The top 10 customers gave 91.2% of FY26 revenue, and Hindustan Zinc alone 35.4%.",
+   "source": "https://www.multibagg.ai/market-pulse/articles/ipo/analyse-monomark-engineering-india-ipo-rhp-cmwsyl28d001roonq1p0p84j6"
+  },
+  {
+   "id": "rk2",
+   "name": "Supplier dependence",
+   "category": "Risk factors",
+   "status": "na",
+   "finding": "Supplier concentration figures were not found in public sources.",
+   "source": ""
+  },
+  {
+   "id": "rk3",
+   "name": "Operating history",
+   "category": "Risk factors",
+   "status": "pass",
+   "finding": "Incorporated in September 2005, so about 21 years of operating history.",
+   "source": "https://trendlyne.com/ipo/detail/2406/monomark-engineering-india-ltd"
+  },
+  {
+   "id": "rk4",
+   "name": "Auditor remarks",
+   "category": "Risk factors",
+   "status": "na",
+   "finding": "Auditor remarks were not found in public sources.",
+   "source": ""
+  }
+ ],
+ "peers": [
+  "Thermax",
+  "Power Mech Projects",
+  "Thejo Engineering",
+  "ANI Integrated Services"
+ ],
+ "metrics": [
+  [
+   "Revenue growth (CAGR)",
+   "%",
+   "high",
+   20.05,
+   [
+    null,
+    null,
+    null,
+    null
+   ]
+  ],
+  [
+   "Net profit margin",
+   "%",
+   "high",
+   4.61,
+   [
+    null,
+    null,
+    null,
+    null
+   ]
+  ],
+  [
+   "Return on equity",
+   "%",
+   "high",
+   27.27,
+   [
+    12.91,
+    16.35,
+    12.89,
+    6.46
+   ]
+  ],
+  [
+   "Return on capital employed",
+   "%",
+   "high",
+   21.47,
+   [
+    null,
+    null,
+    null,
+    null
+   ]
+  ],
+  [
+   "Debt to equity",
+   "x",
+   "low",
+   0.77,
+   [
+    null,
+    null,
+    null,
+    null
+   ]
+  ],
+  [
+   "P/E (post-issue, upper band)",
+   "x",
+   "low",
+   null,
+   [
+    48.66,
+    18.79,
+    44.24,
+    5.99
+   ]
+  ],
+  [
+   "Price to book (post-issue)",
+   "x",
+   "low",
+   null,
+   [
+    null,
+    null,
+    null,
+    null
+   ]
+  ]
+ ],
+ "sources": [
+  {
+   "url": "https://www.chittorgarh.com/ipo/monomark-engineering-ipo/2972/",
+   "title": "Monomark Engineering (India) IPO — Chittorgarh"
+  },
+  {
+   "url": "https://trendlyne.com/ipo/detail/2406/monomark-engineering-india-ltd",
+   "title": "Monomark Engineering (India) IPO — Trendlyne"
+  },
+  {
+   "url": "https://upstox.com/news/market-news/ipo/monomark-engineering-ipo-opens-dec-2-check-issue-details-objectives-and-key-dates/article-203837/",
+   "title": "Monomark Engineering IPO opens Dec 2 — Upstox"
+  },
+  {
+   "url": "https://www.multibagg.ai/market-pulse/articles/ipo/analyse-monomark-engineering-india-ipo-rhp-cmwsyl28d001roonq1p0p84j6",
+   "title": "Monomark Engineering RHP analysis — Multibagg"
+  },
+  {
+   "url": "https://www.multibagg.ai/market-pulse/articles/ipo/monomark-engineering-india-ipo-cmwsxqq8r001doonq9kio6r71",
+   "title": "Monomark Engineering IPO dates and financials — Multibagg"
+  },
+  {
+   "url": "https://www.ipoguru.in/ipo/monomark-engineering-india-ipo",
+   "title": "Monomark Engineering India IPO — IPO Guru"
+  },
+  {
+   "url": "https://ipowatch.in/monomark-engineering-ipo-details/",
+   "title": "Monomark Engineering IPO details and peers — IPO Watch"
+  },
+  {
+   "url": "https://www.sebi.gov.in/sebi_data/commondocs/sep-2026/Monomark%20Engineering%20-%20ADRHP_p.pdf",
+   "title": "Monomark Engineering addendum to DRHP — SEBI"
+  },
+  {
+   "url": "https://www.bajajbroking.in/blog/monomark-engineering-ipo",
+   "title": "Monomark Engineering IPO overview — Bajaj Broking"
+  }
+ ],
+ "generatedAt": "2026-11-25T08:00:00+05:30"
+}
