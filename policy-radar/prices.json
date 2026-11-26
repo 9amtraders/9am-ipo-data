@@ -1,36 +1,36 @@
 {
- "updated": "2026-11-24",
- "as_of": "2026-11-23",
- "nifty_now": 25349.65,
+ "updated": "2026-11-26",
+ "as_of": "2026-11-26",
+ "nifty_now": 25884.5,
  "unmapped": [],
  "policies": {
   "almm-cells-2026": {
    "policy_date": "2026-06-01",
    "base_date": "2026-05-29",
    "nifty_before": 23547.75,
-   "nifty_chg": 7.65,
+   "nifty_chg": 9.92,
    "verdict": "Fell",
    "basis": "watch",
-   "avg_chg": -23.79,
+   "avg_chg": -24.16,
    "up": 0,
    "down": 2,
-   "vs_nifty": -31.44,
+   "vs_nifty": -34.08,
    "stocks": [
     {
      "name": "Waaree Energies",
      "group": "watch",
      "symbol": "WAAREEENER",
      "before": 3140.8,
-     "now": 2390.0,
-     "chg": -23.9
+     "now": 2385.2,
+     "chg": -24.06
     },
     {
      "name": "Premier Energies",
      "group": "watch",
      "symbol": "PREMIERENE",
      "before": 1061.0,
-     "now": 809.85,
-     "chg": -23.67
+     "now": 803.5,
+     "chg": -24.27
     }
    ]
   },
@@ -38,37 +38,37 @@
    "policy_date": "2026-11-09",
    "base_date": "2026-11-06",
    "nifty_before": 25030.35,
-   "nifty_chg": 1.28,
+   "nifty_chg": 3.41,
    "verdict": "Fell",
    "basis": "named",
-   "avg_chg": -8.13,
+   "avg_chg": -7.67,
    "up": 0,
    "down": 3,
-   "vs_nifty": -9.41,
+   "vs_nifty": -11.08,
    "stocks": [
     {
      "name": "Hindalco",
      "group": "named",
      "symbol": "HINDALCO",
      "before": 958.4,
-     "now": 900.45,
-     "chg": -6.05
+     "now": 915.5,
+     "chg": -4.48
     },
     {
      "name": "NALCO",
      "group": "named",
      "symbol": "NATIONALUM",
      "before": 325.75,
-     "now": 298.65,
-     "chg": -8.32
+     "now": 294.95,
+     "chg": -9.46
     },
     {
      "name": "Vedanta",
      "group": "named",
      "symbol": "VEDL",
      "before": 261.75,
-     "now": 235.53,
-     "chg": -10.02
+     "now": 238.0,
+     "chg": -9.07
     }
    ]
   },
@@ -76,21 +76,21 @@
    "policy_date": "2026-09-24",
    "base_date": "2026-09-23",
    "nifty_before": 23446.8,
-   "nifty_chg": 8.12,
+   "nifty_chg": 10.4,
    "verdict": "Fell",
    "basis": "watch",
-   "avg_chg": -10.3,
+   "avg_chg": -8.8,
    "up": 0,
    "down": 1,
-   "vs_nifty": -18.42,
+   "vs_nifty": -19.2,
    "stocks": [
     {
      "name": "Hindalco",
      "group": "watch",
      "symbol": "HINDALCO",
      "before": 1003.8,
-     "now": 900.45,
-     "chg": -10.3
+     "now": 915.5,
+     "chg": -8.8
     }
    ]
   },
@@ -98,21 +98,21 @@
    "policy_date": "2026-04-01",
    "base_date": "2026-03-30",
    "nifty_before": 22331.4,
-   "nifty_chg": 13.52,
+   "nifty_chg": 15.91,
    "verdict": "Rose",
    "basis": "watch",
-   "avg_chg": 126.55,
+   "avg_chg": 135.5,
    "up": 1,
    "down": 0,
-   "vs_nifty": 113.03,
+   "vs_nifty": 119.59,
    "stocks": [
     {
      "name": "Aditya Infotech (CP PLUS)",
      "group": "watch",
      "symbol": "CPPLUS",
      "before": 1798.3,
-     "now": 4074.1,
-     "chg": 126.55,
+     "now": 4235.0,
+     "chg": 135.5,
      "note": "big move: check for a split or bonus"
     }
    ]
@@ -121,13 +121,13 @@
    "policy_date": "2026-10-28",
    "base_date": "2026-10-27",
    "nifty_before": 22749.75,
-   "nifty_chg": 11.43,
+   "nifty_chg": 13.78,
    "verdict": "Rose",
    "basis": "named",
-   "avg_chg": 4.93,
+   "avg_chg": 35.1,
    "up": 1,
    "down": 0,
-   "vs_nifty": -6.5,
+   "vs_nifty": 21.32,
    "stocks": [
     {
      "name": "Kalyani Cast-Tech",
@@ -140,24 +140,24 @@
      "group": "named",
      "symbol": "JWL",
      "before": 176.68,
-     "now": 185.39,
-     "chg": 4.93
+     "now": 238.69,
+     "chg": 35.1
     },
     {
      "name": "CONCOR",
      "group": "watch",
      "symbol": "CONCOR",
      "before": 425.15,
-     "now": 427.25,
-     "chg": 0.49
+     "now": 421.0,
+     "chg": -0.98
     },
     {
      "name": "Texmaco Rail & Engineering",
      "group": "watch",
      "symbol": "TEXRAIL",
      "before": 100.58,
-     "now": 112.19,
-     "chg": 11.54
+     "now": 118.05,
+     "chg": 17.37
     }
    ]
   },
@@ -165,21 +165,21 @@
    "policy_date": "2025-09-19",
    "base_date": "2025-09-18",
    "nifty_before": 25423.6,
-   "nifty_chg": -0.29,
+   "nifty_chg": 1.81,
    "verdict": "Rose",
    "basis": "watch",
-   "avg_chg": 3.7,
+   "avg_chg": 13.09,
    "up": 1,
    "down": 0,
-   "vs_nifty": 3.99,
+   "vs_nifty": 11.28,
    "stocks": [
     {
      "name": "Action Construction Equipment",
      "group": "watch",
      "symbol": "ACE",
      "before": 1145.1,
-     "now": 1187.45,
-     "chg": 3.7
+     "now": 1295.0,
+     "chg": 13.09
     }
    ]
   },
@@ -187,45 +187,45 @@
    "policy_date": "2026-11-04",
    "base_date": "2026-11-03",
    "nifty_before": 23810.85,
-   "nifty_chg": 6.46,
+   "nifty_chg": 8.71,
    "verdict": "Rose",
    "basis": "named",
-   "avg_chg": 1.83,
+   "avg_chg": 1.16,
    "up": 2,
    "down": 1,
-   "vs_nifty": -4.63,
+   "vs_nifty": -7.55,
    "stocks": [
     {
      "name": "Vedanta",
      "group": "named",
      "symbol": "VEDL",
      "before": 246.9,
-     "now": 235.53,
-     "chg": -4.61
+     "now": 238.0,
+     "chg": -3.6
     },
     {
      "name": "Hindustan Zinc",
      "group": "named",
      "symbol": "HINDZINC",
      "before": 526.5,
-     "now": 528.95,
-     "chg": 0.47
+     "now": 526.6,
+     "chg": 0.02
     },
     {
      "name": "GMDC",
      "group": "named",
      "symbol": "GMDCLTD",
      "before": 425.6,
-     "now": 466.55,
-     "chg": 9.62
+     "now": 455.6,
+     "chg": 7.05
     },
     {
      "name": "Himadri Speciality Chemical",
      "group": "watch",
      "symbol": "HSCL",
      "before": 529.0,
-     "now": 552.95,
-     "chg": 4.53
+     "now": 545.25,
+     "chg": 3.07
     }
    ]
   },
@@ -233,53 +233,53 @@
    "policy_date": "2026-09-07",
    "base_date": "2026-09-04",
    "nifty_before": 23897.7,
-   "nifty_chg": 6.08,
-   "verdict": "Fell",
+   "nifty_chg": 8.31,
+   "verdict": "Mixed",
    "basis": "named",
-   "avg_chg": -2.12,
-   "up": 0,
-   "down": 3,
-   "vs_nifty": -8.2,
+   "avg_chg": 0.01,
+   "up": 1,
+   "down": 2,
+   "vs_nifty": -8.3,
    "stocks": [
     {
      "name": "HAL",
      "group": "named",
      "symbol": "HAL",
      "before": 4856.0,
-     "now": 4780.0,
-     "chg": -1.57
+     "now": 4909.6,
+     "chg": 1.1
     },
     {
      "name": "BEL",
      "group": "named",
      "symbol": "BEL",
      "before": 405.35,
-     "now": 395.8,
-     "chg": -2.36
+     "now": 404.5,
+     "chg": -0.21
     },
     {
      "name": "BEML",
      "group": "named",
      "symbol": "BEML",
      "before": 2057.8,
-     "now": 2008.1,
-     "chg": -2.42
+     "now": 2040.2,
+     "chg": -0.86
     },
     {
      "name": "MIDHANI",
      "group": "watch",
      "symbol": "MIDHANI",
      "before": 418.8,
-     "now": 380.5,
-     "chg": -9.15
+     "now": 369.0,
+     "chg": -11.89
     },
     {
      "name": "Astra Microwave",
      "group": "watch",
      "symbol": "ASTRAMICRO",
      "before": 1729.0,
-     "now": 1623.3,
-     "chg": -6.11
+     "now": 1620.6,
+     "chg": -6.27
     }
    ]
   },
@@ -287,29 +287,29 @@
    "policy_date": "2026-08-18",
    "base_date": "2026-08-17",
    "nifty_before": 24287.65,
-   "nifty_chg": 4.37,
+   "nifty_chg": 6.57,
    "verdict": "Fell",
    "basis": "named",
-   "avg_chg": -9.26,
+   "avg_chg": -7.93,
    "up": 0,
    "down": 2,
-   "vs_nifty": -13.63,
+   "vs_nifty": -14.5,
    "stocks": [
     {
      "name": "Paras Defence",
      "group": "named",
      "symbol": "PARAS",
      "before": 1388.5,
-     "now": 1257.9,
-     "chg": -9.41
+     "now": 1240.1,
+     "chg": -10.69
     },
     {
      "name": "Zen Technologies",
      "group": "named",
      "symbol": "ZENTEC",
      "before": 1864.5,
-     "now": 1694.6,
-     "chg": -9.11
+     "now": 1768.1,
+     "chg": -5.17
     }
    ]
   },
@@ -317,21 +317,21 @@
    "policy_date": "2026-09-29",
    "base_date": "2026-09-28",
    "nifty_before": 22780.25,
-   "nifty_chg": 11.28,
+   "nifty_chg": 13.63,
    "verdict": "Rose",
    "basis": "watch",
-   "avg_chg": 5.83,
+   "avg_chg": 6.69,
    "up": 1,
    "down": 0,
-   "vs_nifty": -5.45,
+   "vs_nifty": -6.94,
    "stocks": [
     {
      "name": "Aurobindo Pharma",
      "group": "watch",
      "symbol": "AUROPHARMA",
      "before": 1697.5,
-     "now": 1796.5,
-     "chg": 5.83
+     "now": 1811.0,
+     "chg": 6.69
     }
    ]
   },
@@ -339,45 +339,45 @@
    "policy_date": "2026-11-04",
    "base_date": "2026-11-03",
    "nifty_before": 23810.85,
-   "nifty_chg": 6.46,
+   "nifty_chg": 8.71,
    "verdict": "Rose",
    "basis": "named",
-   "avg_chg": 10.41,
+   "avg_chg": 8.04,
    "up": 2,
    "down": 0,
-   "vs_nifty": 3.95,
+   "vs_nifty": -0.67,
    "stocks": [
     {
      "name": "Exide Industries",
      "group": "named",
      "symbol": "EXIDEIND",
      "before": 346.25,
-     "now": 401.85,
-     "chg": 16.06
+     "now": 387.05,
+     "chg": 11.78
     },
     {
      "name": "Amara Raja Energy & Mobility",
      "group": "named",
      "symbol": "ARE&M",
      "before": 696.6,
-     "now": 729.8,
-     "chg": 4.77
+     "now": 726.65,
+     "chg": 4.31
     },
     {
      "name": "JSW Energy",
      "group": "watch",
      "symbol": "JSWENERGY",
      "before": 502.6,
-     "now": 502.55,
-     "chg": -0.01
+     "now": 485.15,
+     "chg": -3.47
     },
     {
      "name": "NHPC",
      "group": "watch",
      "symbol": "NHPC",
      "before": 79.4,
-     "now": 75.36,
-     "chg": -5.09
+     "now": 75.9,
+     "chg": -4.41
     }
    ]
   },
@@ -385,29 +385,29 @@
    "policy_date": "2026-11-17",
    "base_date": "2026-11-16",
    "nifty_before": 25291.1,
-   "nifty_chg": 0.23,
+   "nifty_chg": 2.35,
    "verdict": "Fell",
    "basis": "named",
-   "avg_chg": -6.13,
+   "avg_chg": -6.32,
    "up": 0,
    "down": 2,
-   "vs_nifty": -6.36,
+   "vs_nifty": -8.67,
    "stocks": [
     {
      "name": "JSW Steel",
      "group": "named",
      "symbol": "JSWSTEEL",
      "before": 1334.6,
-     "now": 1311.9,
-     "chg": -1.7
+     "now": 1303.0,
+     "chg": -2.37
     },
     {
      "name": "Tata Steel",
      "group": "named",
      "symbol": "TATASTEEL",
      "before": 182.26,
-     "now": 163.0,
-     "chg": -10.57
+     "now": 163.54,
+     "chg": -10.27
     }
    ]
   },
@@ -415,20 +415,20 @@
    "policy_date": "2026-11-11",
    "base_date": "2026-11-09",
    "nifty_before": 25044.65,
-   "nifty_chg": 1.22,
-   "verdict": "Rose",
+   "nifty_chg": 3.35,
+   "verdict": "Mixed",
    "basis": "named",
-   "avg_chg": 4.05,
-   "up": 2,
-   "down": 0,
-   "vs_nifty": 2.83,
+   "avg_chg": 2.86,
+   "up": 1,
+   "down": 1,
+   "vs_nifty": -0.49,
    "stocks": [
     {
      "name": "Mahindra & Mahindra",
      "group": "named",
      "symbol": "M&M",
      "before": 3290.6,
-     "now": 3487.4,
+     "now": 3487.5,
      "chg": 5.98
     },
     {
@@ -436,16 +436,16 @@
      "group": "named",
      "symbol": "HYUNDAI",
      "before": 2110.0,
-     "now": 2155.0,
-     "chg": 2.13
+     "now": 2104.2,
+     "chg": -0.27
     },
     {
      "name": "Tata Motors",
      "group": "watch",
      "symbol": "TMPV",
      "before": 295.0,
-     "now": 259.0,
-     "chg": -12.2
+     "now": 262.0,
+     "chg": -11.19
     }
    ]
   },
@@ -453,21 +453,21 @@
    "policy_date": "2026-11-01",
    "base_date": "2026-10-30",
    "nifty_before": 23053.1,
-   "nifty_chg": 9.96,
+   "nifty_chg": 12.28,
    "verdict": "Rose",
    "basis": "watch",
-   "avg_chg": 21.73,
+   "avg_chg": 15.62,
    "up": 1,
    "down": 0,
-   "vs_nifty": 11.77,
+   "vs_nifty": 3.34,
    "stocks": [
     {
      "name": "Dixon Technologies",
      "group": "watch",
      "symbol": "DIXON",
      "before": 11000.0,
-     "now": 13390.0,
-     "chg": 21.73
+     "now": 12718.0,
+     "chg": 15.62
     }
    ]
   },
@@ -475,45 +475,45 @@
    "policy_date": "2026-07-15",
    "base_date": "2026-07-14",
    "nifty_before": 24052.05,
-   "nifty_chg": 5.39,
-   "verdict": "Mixed",
+   "nifty_chg": 7.62,
+   "verdict": "Fell",
    "basis": "named",
-   "avg_chg": -5.39,
-   "up": 2,
-   "down": 2,
-   "vs_nifty": -10.78,
+   "avg_chg": -7.74,
+   "up": 1,
+   "down": 3,
+   "vs_nifty": -15.36,
    "stocks": [
     {
      "name": "Dixon Technologies",
      "group": "named",
      "symbol": "DIXON",
      "before": 13365.0,
-     "now": 13390.0,
-     "chg": 0.19
+     "now": 12718.0,
+     "chg": -4.84
     },
     {
      "name": "Kaynes Technology",
      "group": "named",
      "symbol": "KAYNES",
      "before": 3288.4,
-     "now": 2809.0,
-     "chg": -14.58
+     "now": 2703.3,
+     "chg": -17.79
     },
     {
      "name": "Syrma SGS",
      "group": "named",
      "symbol": "SYRMA",
      "before": 1421.8,
-     "now": 1491.1,
-     "chg": 4.87
+     "now": 1479.0,
+     "chg": 4.02
     },
     {
      "name": "Amber Enterprises",
      "group": "named",
      "symbol": "AMBER",
      "before": 7786.5,
-     "now": 6850.0,
-     "chg": -12.03
+     "now": 6826.0,
+     "chg": -12.34
     }
    ]
   },
@@ -521,69 +521,69 @@
    "policy_date": "2026-09-30",
    "base_date": "2026-09-29",
    "nifty_before": 22716.2,
-   "nifty_chg": 11.59,
+   "nifty_chg": 13.95,
    "verdict": "Rose",
    "basis": "named",
-   "avg_chg": 2.0,
+   "avg_chg": 0.9,
    "up": 4,
    "down": 2,
-   "vs_nifty": -9.59,
+   "vs_nifty": -13.05,
    "stocks": [
     {
      "name": "Power Grid",
      "group": "named",
      "symbol": "POWERGRID",
      "before": 261.5,
-     "now": 264.85,
-     "chg": 1.28
+     "now": 266.95,
+     "chg": 2.08
     },
     {
      "name": "Adani Energy Solutions",
      "group": "named",
      "symbol": "ADANIENSOL",
      "before": 1305.8,
-     "now": 1470.0,
-     "chg": 12.57
+     "now": 1382.0,
+     "chg": 5.84
     },
     {
      "name": "GE Vernova T&D India",
      "group": "named",
      "symbol": "GVT&D",
      "before": 4130.3,
-     "now": 4195.0,
-     "chg": 1.57
+     "now": 4159.9,
+     "chg": 0.72
     },
     {
      "name": "Hitachi Energy India",
      "group": "named",
      "symbol": "POWERINDIA",
      "before": 30735.0,
-     "now": 30240.0,
-     "chg": -1.61
+     "now": 30335.0,
+     "chg": -1.3
     },
     {
      "name": "CG Power",
      "group": "named",
      "symbol": "CGPOWER",
      "before": 858.05,
-     "now": 790.6,
-     "chg": -7.86
+     "now": 782.0,
+     "chg": -8.86
     },
     {
      "name": "Transformers & Rectifiers",
      "group": "named",
      "symbol": "TARIL",
      "before": 272.85,
-     "now": 289.45,
-     "chg": 6.08
+     "now": 291.65,
+     "chg": 6.89
     },
     {
      "name": "KEC International",
      "group": "watch",
      "symbol": "KEC",
      "before": 378.35,
-     "now": 295.25,
-     "chg": -21.96
+     "now": 297.45,
+     "chg": -21.38
     }
    ]
   },
@@ -591,45 +591,45 @@
    "policy_date": "2026-04-06",
    "base_date": "2026-04-02",
    "nifty_before": 22713.1,
-   "nifty_chg": 11.61,
+   "nifty_chg": 13.96,
    "verdict": "Mixed",
    "basis": "watch",
-   "avg_chg": -1.64,
+   "avg_chg": -2.57,
    "up": 2,
    "down": 2,
-   "vs_nifty": -13.25,
+   "vs_nifty": -16.53,
    "stocks": [
     {
      "name": "Havells",
      "group": "watch",
      "symbol": "HAVELLS",
      "before": 1180.6,
-     "now": 1184.0,
-     "chg": 0.29
+     "now": 1181.0,
+     "chg": 0.03
     },
     {
      "name": "Crompton Greaves Consumer",
      "group": "watch",
      "symbol": "CROMPTON",
      "before": 231.91,
-     "now": 219.0,
-     "chg": -5.57
+     "now": 215.6,
+     "chg": -7.03
     },
     {
      "name": "Bajaj Electricals",
      "group": "watch",
      "symbol": "BAJAJELEC",
      "before": 349.25,
-     "now": 277.35,
-     "chg": -20.59
+     "now": 276.5,
+     "chg": -20.83
     },
     {
      "name": "TTK Prestige",
      "group": "watch",
      "symbol": "TTKPRESTIG",
      "before": 443.55,
-     "now": 529.3,
-     "chg": 19.33
+     "now": 521.3,
+     "chg": 17.53
     }
    ]
   },
@@ -637,37 +637,37 @@
    "policy_date": "2026-10-29",
    "base_date": "2026-10-28",
    "nifty_before": 22698.85,
-   "nifty_chg": 11.68,
+   "nifty_chg": 14.03,
    "verdict": "Fell",
    "basis": "named",
-   "avg_chg": -6.97,
+   "avg_chg": -9.69,
    "up": 0,
    "down": 3,
-   "vs_nifty": -18.65,
+   "vs_nifty": -23.72,
    "stocks": [
     {
      "name": "Jindal Saw",
      "group": "named",
      "symbol": "JINDALSAW",
      "before": 241.05,
-     "now": 240.52,
-     "chg": -0.22
+     "now": 239.15,
+     "chg": -0.79
     },
     {
      "name": "Maharashtra Seamless",
      "group": "named",
      "symbol": "MAHSEAMLES",
      "before": 540.15,
-     "now": 488.9,
-     "chg": -9.49
+     "now": 451.35,
+     "chg": -16.44
     },
     {
      "name": "Kirloskar Ferrous",
      "group": "named",
      "symbol": "KIRLFER",
      "before": 443.4,
-     "now": 393.75,
-     "chg": -11.2
+     "now": 390.95,
+     "chg": -11.83
     }
    ]
   },
@@ -675,37 +675,37 @@
    "policy_date": "2026-10-11",
    "base_date": "2026-10-09",
    "nifty_before": 22520.45,
-   "nifty_chg": 12.56,
-   "verdict": "Mixed",
+   "nifty_chg": 14.94,
+   "verdict": "Fell",
    "basis": "named",
-   "avg_chg": 0.18,
+   "avg_chg": -0.17,
    "up": 1,
    "down": 2,
-   "vs_nifty": -12.38,
+   "vs_nifty": -15.11,
    "stocks": [
     {
      "name": "Tata Steel",
      "group": "named",
      "symbol": "TATASTEEL",
      "before": 173.8,
-     "now": 163.0,
-     "chg": -6.21
+     "now": 163.54,
+     "chg": -5.9
     },
     {
      "name": "JSW Steel",
      "group": "named",
      "symbol": "JSWSTEEL",
      "before": 1168.0,
-     "now": 1311.9,
-     "chg": 12.32
+     "now": 1303.0,
+     "chg": 11.56
     },
     {
      "name": "SAIL",
      "group": "named",
      "symbol": "SAIL",
      "before": 171.55,
-     "now": 162.0,
-     "chg": -5.57
+     "now": 160.96,
+     "chg": -6.17
     }
    ]
   },
@@ -713,37 +713,37 @@
    "policy_date": "2026-10-24",
    "base_date": "2026-10-23",
    "nifty_before": 22600.0,
-   "nifty_chg": 12.17,
+   "nifty_chg": 14.53,
    "verdict": "Rose",
    "basis": "watch",
-   "avg_chg": 5.87,
+   "avg_chg": 5.56,
    "up": 2,
    "down": 1,
-   "vs_nifty": -6.3,
+   "vs_nifty": -8.97,
    "stocks": [
     {
      "name": "Asian Paints",
      "group": "watch",
      "symbol": "ASIANPAINT",
      "before": 2307.0,
-     "now": 2580.4,
-     "chg": 11.85
+     "now": 2543.0,
+     "chg": 10.23
     },
     {
      "name": "Berger Paints",
      "group": "watch",
      "symbol": "BERGEPAINT",
      "before": 466.35,
-     "now": 462.25,
-     "chg": -0.88
+     "now": 459.65,
+     "chg": -1.44
     },
     {
      "name": "Kansai Nerolac",
      "group": "watch",
      "symbol": "KANSAINER",
      "before": 181.2,
-     "now": 193.25,
-     "chg": 6.65
+     "now": 195.48,
+     "chg": 7.88
     }
    ]
   }
