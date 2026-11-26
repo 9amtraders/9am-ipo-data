@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25",
+ "updated": "2026-11-26",
  "ipos": {
   "bombaycoatedspecialsteels": {
    "name": "Bombay Coated & Special Steels",
@@ -607,6 +607,15 @@
       "https://www.investorgain.com/gmp/watrana-rentals-ipo/1818/",
       "https://www.ipoguru.in/ipo-gmp/watrana-rentals-sme-ipo"
      ]
+    },
+    {
+     "date": "2026-11-26",
+     "low": 22,
+     "high": 22,
+     "sources": [
+      "https://www.investorgain.com/gmp/watrana-rentals-ipo/1818/",
+      "https://www.ipoguru.in/ipo-gmp/watrana-rentals-sme-ipo"
+     ]
     }
    ]
   },
@@ -664,6 +673,15 @@
      "sources": [
       "https://www.investorgain.com/gmp/mahanadi-coalfields-ipo/2401/"
      ]
+    },
+    {
+     "date": "2026-11-26",
+     "low": 0,
+     "high": 0.4,
+     "sources": [
+      "https://www.multibagg.ai/ipo/ipo-grey-market-premium-listing-gmp-latest",
+      "https://investorgain.com/report/ipo-gmp-live/331/"
+     ]
     }
    ]
   },
@@ -702,6 +720,15 @@
       "https://www.investorgain.com/gmp/shree-siddhivinayak-greentech-industries-ipo/2349/",
       "https://www.ipoguru.in/live-ipo-summary"
      ]
+    },
+    {
+     "date": "2026-11-26",
+     "low": 25,
+     "high": 25,
+     "sources": [
+      "https://www.investorgain.com/gmp/shree-siddhivinayak-greentech-industries-ipo/2349/",
+      "https://www.multibagg.ai/ipo/ipo-grey-market-premium-listing-gmp-latest"
+     ]
     }
    ]
   },
@@ -733,6 +760,15 @@
       "https://www.investorgain.com/gmp/foodlink-fb-ipo/1810/",
       "https://www.ipoguru.in/live-ipo-summary"
      ]
+    },
+    {
+     "date": "2026-11-26",
+     "low": 18,
+     "high": 18,
+     "sources": [
+      "https://www.multibagg.ai/ipo/ipo-grey-market-premium-listing-gmp-latest",
+      "https://investorgain.com/report/ipo-gmp-live/331/"
+     ]
     }
    ]
   },
@@ -754,6 +790,15 @@
      "sources": [
       "https://www.investorgain.com/ipo/a-j-packaging-ipo/2247/",
       "https://www.ipoguru.in/live-ipo-summary"
+     ]
+    },
+    {
+     "date": "2026-11-26",
+     "low": 24,
+     "high": 24,
+     "sources": [
+      "https://www.multibagg.ai/ipo/ipo-grey-market-premium-listing-gmp-latest",
+      "https://investorgain.com/report/ipo-gmp-live/331/"
      ]
     }
    ]
@@ -785,6 +830,21 @@
      ]
     }
    ]
+  },
+  "airprotechnologyindia": {
+   "name": "Airpro Technology India",
+   "readings": [
+    {
+     "date": "2026-11-26",
+     "low": 4,
+     "high": 4,
+     "sources": [
+      "https://www.multibagg.ai/ipo/ipo-grey-market-premium-listing-gmp-latest",
+      "https://investorgain.com/report/ipo-gmp-live/331/"
+     ]
+    }
+   ],
+   "issuePrice": 99
   }
  }
 }

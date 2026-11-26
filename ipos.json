@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25",
+ "updated": "2026-11-26",
  "ipos": [
   {
    "name": "Crystal Crop Protection",
@@ -143,9 +143,26 @@
    "listing": "2026-12-02",
    "band": "₹130 – ₹142",
    "hasReport": true,
-   "score": 40,
+   "score": 20,
    "registrar": "mas",
-   "allotment": "2026-11-30"
+   "allotment": "2026-11-30",
+   "sub": {
+    "qib": 4.27,
+    "nii": 0.51,
+    "retail": 0.22,
+    "total": 0.4,
+    "retailShares": 3100000,
+    "minAppShares": 2000,
+    "retailApps": 339,
+    "asOf": "2026-11-25 19:30",
+    "final": false,
+    "source": "https://www.ipoguru.in/ipo-subscription/shree-siddhivinayak-greentech-industries-sme-ipo"
+   },
+   "allot": {
+    "chance": 100.0,
+    "oneIn": 1,
+    "basis": "undersubscribed"
+   }
   },
   {
    "name": "Integris Medtech",
@@ -180,9 +197,10 @@
    "close": "2026-12-01",
    "listing": "2026-12-04",
    "band": "₹99",
-   "hasReport": false,
-   "score": null,
-   "registrar": "mufg"
+   "hasReport": true,
+   "score": 33,
+   "registrar": "mufg",
+   "allotment": "2026-12-02"
   },
   {
    "name": "Matangi Rubber",
@@ -234,7 +252,7 @@
    "open": "2026-12-02",
    "close": "2026-12-04",
    "listing": "2026-12-09",
-   "band": "",
+   "band": "₹60 – ₹65",
    "hasReport": true,
    "score": 46,
    "registrar": "bigshare",
