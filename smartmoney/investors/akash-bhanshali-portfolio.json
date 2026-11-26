@@ -65,8 +65,8 @@
    "qty": 5567711,
    "buy": 300.2,
    "date": "19 Oct 2018",
-   "now": 1111.85,
-   "now_date": "25 Nov 2026, NSE close",
+   "now": 1097.0,
+   "now_date": "26 Nov 2026, NSE close",
    "extra": "on this lot",
    "sym": "SUDARSCHEM"
   },
@@ -315,5 +315,5 @@
   "AKASH BHANSHALI"
  ],
  "auto_deals": [],
- "deals_updated": "25 Nov 2026"
+ "deals_updated": "26 Nov 2026"
 }
