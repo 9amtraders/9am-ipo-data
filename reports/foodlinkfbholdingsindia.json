@@ -13,14 +13,14 @@
  "ofsCr": 168.76,
  "lotSize": 78,
  "summary": "Foodlink F&B Holdings runs events catering, banquets, casual dining restaurants and cloud kitchens in India and the UAE, led by promoter Sanjay Manohar Vazirani. Revenue from operations grew from ₹377 cr in FY24 to ₹568 cr in FY26 and profit after tax roughly doubled to ₹29.1 cr in FY26, but the company lost ₹16.2 cr in the six months to September 2026. The ₹360.76 cr issue at ₹181–₹191 is ₹192 cr fresh plus a ₹168.76 cr offer for sale (about 47%), and promoter holding falls to 49.51%; the promoter's average cost is about ₹0.19 per share. At the upper band the post-issue P/E is about 40.9x and price to book about 2.9x, and the RHP names no listed peers to compare against; tax and criminal cases are pending against the promoter and directors.",
- "score": 52,
+ "score": 35,
  "checksScore": 63,
  "drivers": [
   {
    "name": "Subscription demand",
    "weight": 50,
-   "score": 50,
-   "detail": "Subscription not available yet, scored as neutral until bidding opens."
+   "score": 16,
+   "detail": "Subscribed 2.33x retail, 1.01x QIB, 0.4x NII, 1.08x overall (bidding still open)."
   },
   {
    "name": "Profit growth (RHP)",

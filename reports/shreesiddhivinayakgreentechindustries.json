@@ -13,14 +13,14 @@
  "ofsCr": 0.0,
  "lotSize": 1000,
  "summary": "Shree Siddhivinayak Greentech Industries, incorporated in 2022 in Dharashiv (Osmanabad), Maharashtra, makes jaggery powder, khandsari sugar, jaggery premixes sold under the Feel Guddy brand and sugarcane by-products, and began commercial operations in FY24. Revenue rose from ₹36.3 cr in FY24 to ₹75.3 cr in FY26 and profit after tax more than doubled to ₹11.6 cr in FY26, but jaggery powder is most of its sales and the top 10 customers made up 99.9% of revenue in the four months to July 2026. Debt to equity was 2.62 before the issue, and about ₹48.5 cr of the ₹93.66 cr fresh issue goes to repaying borrowings, with ₹23.5 cr for expanding crushing capacity. At the upper band the company is valued at about ₹268 cr, or about 23x FY26 earnings, above the median of the two listed peers named in the RHP.",
- "score": 20,
+ "score": 26,
  "checksScore": 68,
  "drivers": [
   {
    "name": "Subscription demand",
    "weight": 50,
-   "score": 10,
-   "detail": "Subscribed 0.22x retail, 4.27x QIB, 0.51x NII, 0.4x overall (bidding still open)."
+   "score": 22,
+   "detail": "Subscribed 1.64x retail, 4.27x QIB, 0.83x NII, 1.27x overall (bidding still open)."
   },
   {
    "name": "Profit growth (RHP)",
@@ -41,7 +41,7 @@
    "detail": "Financial health, governance, issue structure, use of proceeds, legal and risk checks."
   }
  ],
- "capReason": "5 red flags took 25 points off. Capped at 50 because of 4 or more red flags. Capped at 25 because the retail portion is not fully subscribed so far.",
+ "capReason": "5 red flags took 25 points off. Capped at 50 because of 4 or more red flags.",
  "counts": {
   "pass": 19,
   "caution": 5,

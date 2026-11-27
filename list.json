@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26",
+ "updated": "2026-11-27",
  "ipos": [
   {
    "name": "Crystal Crop Protection",
@@ -102,7 +102,19 @@
    "listing": "2026-12-03",
    "band": "₹181 – ₹191",
    "registrar": "mufg",
-   "allotment": "2026-12-01"
+   "allotment": "2026-12-01",
+   "sub": {
+    "qib": 1.01,
+    "nii": 0.4,
+    "retail": 2.33,
+    "total": 1.08,
+    "asOf": "2026-11-26 21:00",
+    "final": false,
+    "retailShares": 1944311,
+    "minAppShares": 78,
+    "retailApps": null,
+    "source": "https://www.ipoguru.in/ipo-subscription/foodlink-fb-holdings-india-ipo"
+   }
   },
   {
    "name": "Shree Siddhivinayak Greentech Industries",
@@ -123,15 +135,15 @@
    "allotment": "2026-11-30",
    "sub": {
     "qib": 4.27,
-    "nii": 0.51,
-    "retail": 0.22,
-    "total": 0.4,
-    "asOf": "2026-11-25 19:30",
+    "nii": 0.83,
+    "retail": 1.64,
+    "total": 1.27,
+    "asOf": "2026-11-26 17:54",
     "final": false,
     "retailShares": 3100000,
     "minAppShares": 2000,
-    "retailApps": 339,
-    "source": "https://www.ipoguru.in/ipo-subscription/shree-siddhivinayak-greentech-industries-sme-ipo"
+    "retailApps": null,
+    "source": "https://www.chittorgarh.com/ipo_subscription/shree-siddhivinayak-greentech-industries-ipo/3195/"
    }
   },
   {
@@ -217,6 +229,24 @@
    "band": "₹60 – ₹65",
    "registrar": "bigshare",
    "allotment": "2026-12-07"
+  },
+  {
+   "name": "Swara Baby Products",
+   "aka": [
+    "Swara Baby",
+    "Swara Baby Products IPO",
+    "Swara Hygiene",
+    "FirstCry Swara",
+    "Swara Babies",
+    "Swara Baby Product"
+   ],
+   "board": "Mainboard",
+   "open": "2026-12-02",
+   "close": "2026-12-04",
+   "listing": null,
+   "band": "",
+   "registrar": "mufg",
+   "allotment": null
   },
   {
    "name": "Casagrand Premier Builder",

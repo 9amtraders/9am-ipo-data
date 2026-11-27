@@ -1,0 +1,220 @@
+{
+ "name": "Swara Baby Products",
+ "board": "Mainboard",
+ "sector": "Hygiene products manufacturing",
+ "exchange": "NSE, BSE",
+ "open": "2026-12-02",
+ "close": "2026-12-04",
+ "listing": null,
+ "priceBand": "",
+ "issueSizeCr": 800,
+ "freshCr": 500,
+ "ofsCr": 300,
+ "lotSize": null,
+ "researchedOn": "2026-11-27",
+ "summary": "Swara Baby Products, backed by FirstCry parent Brainbees Solutions, is a contract manufacturer of disposable hygiene products such as baby diapers, based in Pithampur, Madhya Pradesh. Revenue grew from ₹767 cr in FY24 to ₹1,212 cr in FY26, and profit rose 18.5% in FY26 to ₹95.6 cr, though the net margin is down from about 12% in FY24 to about 8%. Borrowings grew faster than revenue to ₹443 cr, with debt to equity at 0.81; about ₹128 cr of the ₹500 cr fresh issue goes to repaying debt and about ₹198 cr to a new project. The RHP cut the issue to ₹800 cr with a ₹300 cr offer for sale, and the price band was not yet announced when this was written, so valuation checks are not available.",
+ "checks": {
+  "fh1": {
+   "status": "pass",
+   "finding": "Revenue rose from ₹766.6 cr (FY24) to ₹1,212.4 cr (FY26), a CAGR of about 25.8%.",
+   "source": "https://www.chittorgarh.com/ipo/swara-baby-products-ipo/3186/"
+  },
+  "fh2": {
+   "status": "pass",
+   "finding": "Revenue grew every year: ₹766.6 cr, ₹959.7 cr, ₹1,212.4 cr (FY24–FY26).",
+   "source": "https://www.chittorgarh.com/ipo/swara-baby-products-ipo/3186/"
+  },
+  "fh3": {
+   "status": "pass",
+   "finding": "Debt to equity was 0.81 at 31 March 2026.",
+   "source": "https://www.chittorgarh.com/ipo/swara-baby-products-ipo/3186/"
+  },
+  "fh4": {
+   "status": "flag",
+   "finding": "Borrowings rose 70% (₹260.1 cr to ₹443.1 cr) while revenue rose 58% over FY24–FY26.",
+   "source": "https://www.chittorgarh.com/ipo/swara-baby-products-ipo/3186/"
+  },
+  "fh5": {
+   "status": "pass",
+   "finding": "Net worth rose every year: ₹319.4 cr, ₹399.9 cr, ₹553.2 cr (FY24–FY26).",
+   "source": "https://www.chittorgarh.com/ipo/swara-baby-products-ipo/3186/"
+  },
+  "fh6": {
+   "status": "na",
+   "finding": "Operating cash flow for FY26 was not found in public sources.",
+   "source": ""
+  },
+  "pr1": {
+   "status": "pass",
+   "finding": "Profit after tax rose about 18.5% in FY26, to ₹95.6 cr from ₹80.7 cr.",
+   "source": "https://www.chittorgarh.com/ipo/swara-baby-products-ipo/3186/"
+  },
+  "pr2": {
+   "status": "flag",
+   "finding": "Net margin fell from about 12.3% in FY24 (PAT ₹94.0 cr on ₹766.6 cr) to 8.2% in FY26.",
+   "source": "https://www.chittorgarh.com/ipo/swara-baby-products-ipo/3186/"
+  },
+  "pr3": {
+   "status": "pass",
+   "finding": "Return on net worth was 17.28% in FY26 (ROE 20.06%).",
+   "source": "https://www.chittorgarh.com/ipo/swara-baby-products-ipo/3186/"
+  },
+  "pr4": {
+   "status": "pass",
+   "finding": "ROCE was 16.19% in FY26.",
+   "source": "https://www.chittorgarh.com/ipo/swara-baby-products-ipo/3186/"
+  },
+  "pr5": {
+   "status": "na",
+   "finding": "No listed peer comparison was found; one source says there are no listed peers.",
+   "source": ""
+  },
+  "va1": {
+   "status": "na",
+   "finding": "The price band has not been announced, so the post-issue P/E cannot be computed.",
+   "source": ""
+  },
+  "va2": {
+   "status": "na",
+   "finding": "The price band has not been announced, so the post-issue price to book cannot be computed.",
+   "source": ""
+  },
+  "va3": {
+   "status": "na",
+   "finding": "The price band has not been announced, so market cap to sales cannot be computed.",
+   "source": ""
+  },
+  "va4": {
+   "status": "na",
+   "finding": "Pre-IPO share issues or transfers in the last 12 months were not found in public sources.",
+   "source": ""
+  },
+  "pg1": {
+   "status": "na",
+   "finding": "Promoters hold 100% before the issue; the post-issue holding was not found.",
+   "source": ""
+  },
+  "pg2": {
+   "status": "na",
+   "finding": "Information on any pledge of promoter shares was not found.",
+   "source": ""
+  },
+  "pg3": {
+   "status": "na",
+   "finding": "Related-party transaction figures were not found in public sources.",
+   "source": ""
+  },
+  "pg4": {
+   "status": "na",
+   "finding": "Information on regulatory action against promoters was not found.",
+   "source": ""
+  },
+  "is1": {
+   "status": "caution",
+   "finding": "The offer for sale is up to ₹300 cr of the ₹800 cr issue in the RHP, about 37.5%.",
+   "source": "https://www.multibagg.ai/market-pulse/articles/firstcry-swara-baby-ipo-revision-announcement-cmwxq8tgn00072hm5t2wp94n9"
+  },
+  "is2": {
+   "status": "na",
+   "finding": "The price band and post-issue market cap have not been announced.",
+   "source": ""
+  },
+  "is3": {
+   "status": "na",
+   "finding": "Selling shareholders' average acquisition cost was not found.",
+   "source": ""
+  },
+  "up1": {
+   "status": "caution",
+   "finding": "₹198.2 cr of the ₹500 cr fresh issue (about 40%, just under the line) is for capex on a new project.",
+   "source": "https://www.chittorgarh.com/ipo/swara-baby-products-ipo/3186/"
+  },
+  "up2": {
+   "status": "pass",
+   "finding": "₹127.5 cr (about 26%) of the fresh issue repays borrowings of the company and its subsidiaries.",
+   "source": "https://www.chittorgarh.com/ipo/swara-baby-products-ipo/3186/"
+  },
+  "up3": {
+   "status": "na",
+   "finding": "The amount for general corporate purposes was not stated.",
+   "source": ""
+  },
+  "up4": {
+   "status": "na",
+   "finding": "Whether any proceeds repay promoter or group-company loans was not found.",
+   "source": ""
+  },
+  "lg1": {
+   "status": "na",
+   "finding": "Outstanding litigation figures were not found in public sources.",
+   "source": ""
+  },
+  "lg2": {
+   "status": "na",
+   "finding": "Criminal or regulatory case details were not found in public sources.",
+   "source": ""
+  },
+  "lg3": {
+   "status": "na",
+   "finding": "Contingent liabilities were not found in public sources.",
+   "source": ""
+  },
+  "rk1": {
+   "status": "na",
+   "finding": "Customer concentration figures were not found in public sources.",
+   "source": ""
+  },
+  "rk2": {
+   "status": "na",
+   "finding": "Supplier concentration figures were not found in public sources.",
+   "source": ""
+  },
+  "rk3": {
+   "status": "pass",
+   "finding": "The company was incorporated in November 2016, about 10 years ago.",
+   "source": "https://www.chittorgarh.com/ipo/swara-baby-products-ipo/3186/"
+  },
+  "rk4": {
+   "status": "na",
+   "finding": "The audit opinion was not found in public sources.",
+   "source": ""
+  }
+ },
+ "ipoMetrics": {
+  "rev_cagr": 25.8,
+  "pat_margin": 8.21,
+  "roe": 20.06,
+  "roce": 16.19,
+  "de": 0.81,
+  "pe": null,
+  "pb": null
+ },
+ "patGrowth": 18.5,
+ "peers": [],
+ "sources": [
+  {
+   "url": "https://www.chittorgarh.com/ipo/swara-baby-products-ipo/3186/",
+   "title": "Swara Baby Products IPO details — Chittorgarh"
+  },
+  {
+   "url": "https://www.ipoji.com/ipo/swara-baby-products-ipo",
+   "title": "Swara Baby Products IPO — IPO Ji"
+  },
+  {
+   "url": "https://www.multibagg.ai/market-pulse/articles/brainbees-swara-baby-ipo-rhp-cmwxq897200062hm5lrvgzmbi",
+   "title": "Swara Baby files RHP for ₹800 cr IPO — Multibagg"
+  },
+  {
+   "url": "https://www.multibagg.ai/market-pulse/articles/firstcry-swara-baby-ipo-revision-announcement-cmwxq8tgn00072hm5t2wp94n9",
+   "title": "Swara Baby IPO revised to ₹800 cr — Multibagg"
+  },
+  {
+   "url": "https://ipowatch.in/swara-baby-products-ipo/",
+   "title": "Swara Baby Products IPO — IPO Watch"
+  },
+  {
+   "url": "https://ipowatch.in/upcoming-ipo-list/",
+   "title": "Upcoming IPO list — IPO Watch"
+  }
+ ]
+}
