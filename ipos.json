@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-27",
+ "updated": "2026-11-28",
  "ipos": [
   {
    "name": "Crystal Crop Protection",
@@ -123,24 +123,24 @@
    "listing": "2026-12-03",
    "band": "₹181 – ₹191",
    "hasReport": true,
-   "score": 35,
+   "score": 40,
    "registrar": "mufg",
    "allotment": "2026-12-01",
    "sub": {
     "qib": 1.01,
-    "nii": 0.4,
-    "retail": 2.33,
-    "total": 1.08,
+    "nii": 0.72,
+    "retail": 3.95,
+    "total": 1.47,
     "retailShares": 1944311,
     "minAppShares": 78,
     "retailApps": null,
-    "asOf": "2026-11-26 21:00",
+    "asOf": "2026-11-27 19:30",
     "final": false,
     "source": "https://www.ipoguru.in/ipo-subscription/foodlink-fb-holdings-india-ipo"
    },
    "allot": {
-    "chance": 42.9,
-    "oneIn": 2,
+    "chance": 25.3,
+    "oneIn": 4,
     "basis": "estimate"
    }
   },
@@ -165,18 +165,18 @@
    "allotment": "2026-11-30",
    "sub": {
     "qib": 4.27,
-    "nii": 0.83,
-    "retail": 1.64,
-    "total": 1.27,
+    "nii": 0.97,
+    "retail": 2.35,
+    "total": 1.69,
     "retailShares": 3100000,
     "minAppShares": 2000,
     "retailApps": null,
-    "asOf": "2026-11-26 17:54",
-    "final": false,
+    "asOf": "2026-11-27 17:54",
+    "final": true,
     "source": "https://www.chittorgarh.com/ipo_subscription/shree-siddhivinayak-greentech-industries-ipo/3195/"
    },
    "allot": {
-    "chance": 61.0,
+    "chance": 42.6,
     "oneIn": 2,
     "basis": "estimate"
    }
@@ -215,9 +215,26 @@
    "listing": "2026-12-04",
    "band": "₹99",
    "hasReport": true,
-   "score": 33,
+   "score": 15,
    "registrar": "mufg",
-   "allotment": "2026-12-02"
+   "allotment": "2026-12-02",
+   "sub": {
+    "qib": null,
+    "nii": 0.54,
+    "retail": 1.01,
+    "total": 0.76,
+    "retailShares": 1708800,
+    "minAppShares": 2400,
+    "retailApps": null,
+    "asOf": "2026-11-27 19:55",
+    "final": false,
+    "source": "https://www.ipoplatform.com/ipo/subscription-status/sme"
+   },
+   "allot": {
+    "chance": 99.0,
+    "oneIn": 1,
+    "basis": "estimate"
+   }
   },
   {
    "name": "Matangi Rubber",
@@ -288,11 +305,31 @@
    "board": "Mainboard",
    "open": "2026-12-02",
    "close": "2026-12-04",
-   "listing": null,
-   "band": "",
+   "listing": "2026-12-09",
+   "band": "₹105 – ₹111",
    "hasReport": true,
-   "score": 42,
-   "registrar": "mufg"
+   "score": 26,
+   "registrar": "mufg",
+   "allotment": "2026-12-07"
+  },
+  {
+   "name": "Vishwas Refoils & Consumer",
+   "aka": [
+    "Vishwas Refoils",
+    "Vishwas Refoils and Consumer",
+    "Vishwas Refoil",
+    "Vishwas Re Foils",
+    "Vishwas Refoils & Consumer IPO"
+   ],
+   "board": "SME",
+   "open": "2026-12-03",
+   "close": "2026-12-07",
+   "listing": "2026-12-10",
+   "band": "₹85 – ₹90",
+   "hasReport": true,
+   "score": 59,
+   "registrar": "mufg",
+   "allotment": "2026-12-08"
   },
   {
    "name": "Casagrand Premier Builder",

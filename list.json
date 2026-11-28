@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-27",
+ "updated": "2026-11-28",
  "ipos": [
   {
    "name": "Crystal Crop Protection",
@@ -105,10 +105,10 @@
    "allotment": "2026-12-01",
    "sub": {
     "qib": 1.01,
-    "nii": 0.4,
-    "retail": 2.33,
-    "total": 1.08,
-    "asOf": "2026-11-26 21:00",
+    "nii": 0.72,
+    "retail": 3.95,
+    "total": 1.47,
+    "asOf": "2026-11-27 19:30",
     "final": false,
     "retailShares": 1944311,
     "minAppShares": 78,
@@ -135,11 +135,11 @@
    "allotment": "2026-11-30",
    "sub": {
     "qib": 4.27,
-    "nii": 0.83,
-    "retail": 1.64,
-    "total": 1.27,
-    "asOf": "2026-11-26 17:54",
-    "final": false,
+    "nii": 0.97,
+    "retail": 2.35,
+    "total": 1.69,
+    "asOf": "2026-11-27 17:54",
+    "final": true,
     "retailShares": 3100000,
     "minAppShares": 2000,
     "retailApps": null,
@@ -178,7 +178,19 @@
    "listing": "2026-12-04",
    "band": "₹99",
    "registrar": "mufg",
-   "allotment": "2026-12-02"
+   "allotment": "2026-12-02",
+   "sub": {
+    "qib": null,
+    "nii": 0.54,
+    "retail": 1.01,
+    "total": 0.76,
+    "asOf": "2026-11-27 19:55",
+    "final": false,
+    "retailShares": 1708800,
+    "minAppShares": 2400,
+    "retailApps": null,
+    "source": "https://www.ipoplatform.com/ipo/subscription-status/sme"
+   }
   },
   {
    "name": "Matangi Rubber",
@@ -243,10 +255,27 @@
    "board": "Mainboard",
    "open": "2026-12-02",
    "close": "2026-12-04",
-   "listing": null,
-   "band": "",
+   "listing": "2026-12-09",
+   "band": "₹105 – ₹111",
    "registrar": "mufg",
-   "allotment": null
+   "allotment": "2026-12-07"
+  },
+  {
+   "name": "Vishwas Refoils & Consumer",
+   "aka": [
+    "Vishwas Refoils",
+    "Vishwas Refoils and Consumer",
+    "Vishwas Refoil",
+    "Vishwas Re Foils",
+    "Vishwas Refoils & Consumer IPO"
+   ],
+   "board": "SME",
+   "open": "2026-12-03",
+   "close": "2026-12-07",
+   "listing": "2026-12-10",
+   "band": "₹85 – ₹90",
+   "registrar": "mufg",
+   "allotment": "2026-12-08"
   },
   {
    "name": "Casagrand Premier Builder",

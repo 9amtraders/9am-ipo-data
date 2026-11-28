@@ -6,15 +6,15 @@
  "exchange": "NSE, BSE",
  "open": "2026-12-02",
  "close": "2026-12-04",
- "listing": null,
- "band": "",
- "issueSizeCr": 800.0,
- "freshCr": 500.0,
+ "listing": "2026-12-09",
+ "band": "₹105 – ₹111",
+ "issueSizeCr": 799.88,
+ "freshCr": 499.88,
  "ofsCr": 300.0,
- "lotSize": null,
- "summary": "Swara Baby Products, backed by FirstCry parent Brainbees Solutions, is a contract manufacturer of disposable hygiene products such as baby diapers, based in Pithampur, Madhya Pradesh. Revenue grew from ₹767 cr in FY24 to ₹1,212 cr in FY26, and profit rose 18.5% in FY26 to ₹95.6 cr, though the net margin is down from about 12% in FY24 to about 8%. Borrowings grew faster than revenue to ₹443 cr, with debt to equity at 0.81; about ₹128 cr of the ₹500 cr fresh issue goes to repaying debt and about ₹198 cr to a new project. The RHP cut the issue to ₹800 cr with a ₹300 cr offer for sale, and the price band was not yet announced when this was written, so valuation checks are not available.",
- "score": 42,
- "checksScore": 46,
+ "lotSize": 135,
+ "summary": "Swara Baby Products, promoted by FirstCry parent Brainbees Solutions, is the largest contract manufacturer of disposable hygiene products such as baby and adult diapers in India, with four plants in Madhya Pradesh. Revenue grew from ₹767 cr in FY24 to ₹1,212 cr in FY26 and profit rose 18.5% in FY26 to ₹95.6 cr, but the net margin fell from about 12% to about 8% and borrowings grew faster than revenue to ₹443 cr. At ₹111 the post-issue market cap is ₹3,211.56 cr, about 33.6 times FY26 profit and 3.05 times post-issue book value, and the RHP names no listed peers to compare against. The top 10 customers give 80.3% of revenue and sales to related parties (mainly Brainbees) are about 25.7% of revenue, shares were allotted and transferred at an adjusted ₹22.50 within the last year, and cases are pending against the promoters and a director.",
+ "score": 26,
+ "checksScore": 61,
  "drivers": [
   {
    "name": "Subscription demand",
@@ -37,24 +37,24 @@
   {
    "name": "All 33 checks",
    "weight": 25,
-   "score": 46,
+   "score": 61,
    "detail": "Financial health, governance, issue structure, use of proceeds, legal and risk checks."
   }
  ],
- "capReason": "2 red flags took 10 points off.",
+ "capReason": "6 red flags took 30 points off. Capped at 50 because of 4 or more red flags.",
  "counts": {
-  "pass": 9,
-  "caution": 2,
-  "flag": 2,
-  "na": 20
+  "pass": 17,
+  "caution": 4,
+  "flag": 6,
+  "na": 6
  },
  "totalChecks": 33,
- "confidence": "low",
+ "confidence": "normal",
  "categories": [
   {
    "name": "Financial health",
-   "score": 72,
-   "detail": "4 of 6 checks passed · 1 flag · 1 not found"
+   "score": 83,
+   "detail": "5 of 6 checks passed · 1 flag"
   },
   {
    "name": "Profitability",
@@ -63,33 +63,33 @@
   },
   {
    "name": "Valuation vs peers",
-   "score": 30,
-   "detail": "Not found in public sources, scored as neutral"
+   "score": 22,
+   "detail": "0 of 4 checks passed · 1 flag · 3 not found"
   },
   {
    "name": "Promoter & governance",
-   "score": 30,
-   "detail": "Not found in public sources, scored as neutral"
+   "score": 50,
+   "detail": "2 of 4 checks passed · 2 flags"
   },
   {
    "name": "Issue structure",
-   "score": 37,
-   "detail": "0 of 3 checks passed · 2 not found"
+   "score": 67,
+   "detail": "1 of 3 checks passed"
   },
   {
    "name": "Use of proceeds",
-   "score": 52,
-   "detail": "1 of 4 checks passed · 2 not found"
+   "score": 70,
+   "detail": "2 of 4 checks passed · 1 not found"
   },
   {
    "name": "Legal & litigation",
-   "score": 30,
-   "detail": "Not found in public sources, scored as neutral"
+   "score": 83,
+   "detail": "2 of 3 checks passed"
   },
   {
    "name": "Risk factors",
-   "score": 48,
-   "detail": "1 of 4 checks passed · 3 not found"
+   "score": 57,
+   "detail": "2 of 4 checks passed · 1 flag · 1 not found"
   }
  ],
  "checks": [
@@ -137,9 +137,9 @@
    "id": "fh6",
    "name": "Positive operating cash flow",
    "category": "Financial health",
-   "status": "na",
-   "finding": "Operating cash flow for FY26 was not found in public sources.",
-   "source": ""
+   "status": "pass",
+   "finding": "FY26 operating cash flow was ₹74.87 cr, about 78% of PAT of ₹95.59 cr.",
+   "source": "https://www.kotakneo.com/ipo/swara-baby-products-ipo/"
   },
   {
    "id": "pr1",
@@ -178,168 +178,168 @@
    "name": "Margin vs listed peers",
    "category": "Profitability",
    "status": "na",
-   "finding": "No listed peer comparison was found; one source says there are no listed peers.",
-   "source": ""
+   "finding": "The RHP says there are no listed peers of comparable size, scale and business model.",
+   "source": "https://www.swarababy.com/wp-content/uploads/2026/11/Project-Dream-Red-Herring-Prospectus-Filing-Version.pdf"
   },
   {
    "id": "va1",
    "name": "P/E vs listed peers",
    "category": "Valuation vs peers",
    "status": "na",
-   "finding": "The price band has not been announced, so the post-issue P/E cannot be computed.",
-   "source": ""
+   "finding": "No listed peers are named in the RHP, so P/E cannot be compared; post-issue P/E at ₹111 is about 33.6x FY26 PAT.",
+   "source": "https://www.swarababy.com/wp-content/uploads/2026/11/Project-Dream-Red-Herring-Prospectus-Filing-Version.pdf"
   },
   {
    "id": "va2",
    "name": "Price to book vs listed peers",
    "category": "Valuation vs peers",
    "status": "na",
-   "finding": "The price band has not been announced, so the post-issue price to book cannot be computed.",
-   "source": ""
+   "finding": "No listed peers are named in the RHP, so P/B cannot be compared; post-issue P/B at ₹111 is about 3.05x.",
+   "source": "https://www.swarababy.com/wp-content/uploads/2026/11/Project-Dream-Red-Herring-Prospectus-Filing-Version.pdf"
   },
   {
    "id": "va3",
    "name": "Market cap to sales vs listed peers",
    "category": "Valuation vs peers",
    "status": "na",
-   "finding": "The price band has not been announced, so market cap to sales cannot be computed.",
-   "source": ""
+   "finding": "No listed peers are named in the RHP, so market cap to sales cannot be compared; it is about 2.76x FY26 revenue from operations.",
+   "source": "https://www.swarababy.com/wp-content/uploads/2026/11/Project-Dream-Red-Herring-Prospectus-Filing-Version.pdf"
   },
   {
    "id": "va4",
    "name": "Recent pre-IPO share price",
    "category": "Valuation vs peers",
-   "status": "na",
-   "finding": "Pre-IPO share issues or transfers in the last 12 months were not found in public sources.",
-   "source": ""
+   "status": "flag",
+   "finding": "Shares were allotted in December 2025 and transferred in March 2026 at an adjusted ₹22.50, about 80% below the ₹111 upper band.",
+   "source": "https://www.swarababy.com/wp-content/uploads/2026/11/Project-Dream-Red-Herring-Prospectus-Filing-Version.pdf"
   },
   {
    "id": "pg1",
    "name": "Promoter holding after the issue",
    "category": "Promoter & governance",
-   "status": "na",
-   "finding": "Promoters hold 100% before the issue; the post-issue holding was not found.",
-   "source": ""
+   "status": "pass",
+   "finding": "Promoter and promoter group holding falls from 100% to 75.09% after the issue.",
+   "source": "https://www.chittorgarh.com/ipo_faqs/swara-baby-products-ipo/3186/"
   },
   {
    "id": "pg2",
    "name": "No pledged promoter shares",
    "category": "Promoter & governance",
-   "status": "na",
-   "finding": "Information on any pledge of promoter shares was not found.",
-   "source": ""
+   "status": "pass",
+   "finding": "The RHP states promoter shares are not pledged or encumbered, apart from a 1.62% non-disposal undertaking.",
+   "source": "https://www.swarababy.com/wp-content/uploads/2026/11/Project-Dream-Red-Herring-Prospectus-Filing-Version.pdf"
   },
   {
    "id": "pg3",
    "name": "Related-party transactions",
    "category": "Promoter & governance",
-   "status": "na",
-   "finding": "Related-party transaction figures were not found in public sources.",
-   "source": ""
+   "status": "flag",
+   "finding": "FY26 sales to related parties were ₹299.5 cr, about 25.7% of revenue from operations, with Brainbees alone at 22.64%.",
+   "source": "https://www.swarababy.com/wp-content/uploads/2026/11/Project-Dream-Red-Herring-Prospectus-Filing-Version.pdf"
   },
   {
    "id": "pg4",
    "name": "No regulatory action against promoters",
    "category": "Promoter & governance",
-   "status": "na",
-   "finding": "Information on regulatory action against promoters was not found.",
-   "source": ""
+   "status": "flag",
+   "finding": "Pending against promoters: 2 criminal, 3 regulatory and 16 tax cases (₹16.68 cr), plus criminal cases against director Supam Maheshwari.",
+   "source": "https://www.swarababy.com/wp-content/uploads/2026/11/Project-Dream-Red-Herring-Prospectus-Filing-Version.pdf"
   },
   {
    "id": "is1",
    "name": "Offer for sale share of the issue",
    "category": "Issue structure",
    "status": "caution",
-   "finding": "The offer for sale is up to ₹300 cr of the ₹800 cr issue in the RHP, about 37.5%.",
-   "source": "https://www.multibagg.ai/market-pulse/articles/firstcry-swara-baby-ipo-revision-announcement-cmwxq8tgn00072hm5t2wp94n9"
+   "finding": "The offer for sale is ₹300 cr of the ₹799.88 cr issue, about 37.5%.",
+   "source": "https://www.chittorgarh.com/ipo_faqs/swara-baby-products-ipo/3186/"
   },
   {
    "id": "is2",
    "name": "Free float after listing",
    "category": "Issue structure",
-   "status": "na",
-   "finding": "The price band and post-issue market cap have not been announced.",
-   "source": ""
+   "status": "pass",
+   "finding": "The ₹799.88 cr issue is about 24.9% of the ₹3,211.56 cr post-issue market cap at ₹111.",
+   "source": "https://www.chittorgarh.com/ipo_faqs/swara-baby-products-ipo/3186/"
   },
   {
    "id": "is3",
    "name": "Selling shareholders' cost",
    "category": "Issue structure",
-   "status": "na",
-   "finding": "Selling shareholders' average acquisition cost was not found.",
-   "source": ""
+   "status": "caution",
+   "finding": "Selling shareholders sell equal amounts at costs of ₹24.55 (Brainbees) and ₹2.13 (Anadya), an average of ₹13.34, so ₹111 is about 8.3x their cost.",
+   "source": "https://www.swarababy.com/wp-content/uploads/2026/11/Project-Dream-Red-Herring-Prospectus-Filing-Version.pdf"
   },
   {
    "id": "up1",
    "name": "Money for growth",
    "category": "Use of proceeds",
    "status": "caution",
-   "finding": "₹198.2 cr of the ₹500 cr fresh issue (about 40%, just under the line) is for capex on a new project.",
-   "source": "https://www.chittorgarh.com/ipo/swara-baby-products-ipo/3186/"
+   "finding": "₹198.21 cr of the ₹499.88 cr fresh issue (about 39.7%, just under the line) is for capex on a new project.",
+   "source": "https://www.chittorgarh.com/ipo_faqs/swara-baby-products-ipo/3186/"
   },
   {
    "id": "up2",
    "name": "Debt repayment share",
    "category": "Use of proceeds",
    "status": "pass",
-   "finding": "₹127.5 cr (about 26%) of the fresh issue repays borrowings of the company and its subsidiaries.",
-   "source": "https://www.chittorgarh.com/ipo/swara-baby-products-ipo/3186/"
+   "finding": "₹127.5 cr (about 25.5%) of the fresh issue repays borrowings of the company and its subsidiaries.",
+   "source": "https://www.chittorgarh.com/ipo_faqs/swara-baby-products-ipo/3186/"
   },
   {
    "id": "up3",
    "name": "General corporate purposes",
    "category": "Use of proceeds",
    "status": "na",
-   "finding": "The amount for general corporate purposes was not stated.",
-   "source": ""
+   "finding": "The general corporate purposes amount is not fixed; the RHP caps it at 25% of the fresh issue.",
+   "source": "https://www.swarababy.com/wp-content/uploads/2026/11/Project-Dream-Red-Herring-Prospectus-Filing-Version.pdf"
   },
   {
    "id": "up4",
    "name": "No repayment to promoter entities",
    "category": "Use of proceeds",
-   "status": "na",
-   "finding": "Whether any proceeds repay promoter or group-company loans was not found.",
-   "source": ""
+   "status": "pass",
+   "finding": "All loans to be repaid are from HDFC Bank, and the RHP says the Brainbees loan will not be repaid from the proceeds.",
+   "source": "https://www.swarababy.com/wp-content/uploads/2026/11/Project-Dream-Red-Herring-Prospectus-Filing-Version.pdf"
   },
   {
    "id": "lg1",
    "name": "Litigation against the company",
    "category": "Legal & litigation",
-   "status": "na",
-   "finding": "Outstanding litigation figures were not found in public sources.",
-   "source": ""
+   "status": "pass",
+   "finding": "Cases against the company and subsidiaries total about ₹3.39 cr, about 0.6% of ₹553.22 cr net worth.",
+   "source": "https://www.swarababy.com/wp-content/uploads/2026/11/Project-Dream-Red-Herring-Prospectus-Filing-Version.pdf"
   },
   {
    "id": "lg2",
    "name": "Criminal or regulatory cases",
    "category": "Legal & litigation",
-   "status": "na",
-   "finding": "Criminal or regulatory case details were not found in public sources.",
-   "source": ""
+   "status": "caution",
+   "finding": "No criminal or regulatory cases against the company, but promoter Brainbees faces customs (₹6.57 cr) and other cases and a director faces criminal cases.",
+   "source": "https://www.swarababy.com/wp-content/uploads/2026/11/Project-Dream-Red-Herring-Prospectus-Filing-Version.pdf"
   },
   {
    "id": "lg3",
    "name": "Contingent liabilities",
    "category": "Legal & litigation",
-   "status": "na",
-   "finding": "Contingent liabilities were not found in public sources.",
-   "source": ""
+   "status": "pass",
+   "finding": "Contingent liabilities were ₹0.14 cr at 30 June 2026, 0.03% of net worth.",
+   "source": "https://www.swarababy.com/wp-content/uploads/2026/11/Project-Dream-Red-Herring-Prospectus-Filing-Version.pdf"
   },
   {
    "id": "rk1",
    "name": "Customer concentration",
    "category": "Risk factors",
-   "status": "na",
-   "finding": "Customer concentration figures were not found in public sources.",
-   "source": ""
+   "status": "flag",
+   "finding": "The top 10 customers gave 80.31% of FY26 revenue from operations, with Brainbees at 22.64%.",
+   "source": "https://www.swarababy.com/wp-content/uploads/2026/11/Project-Dream-Red-Herring-Prospectus-Filing-Version.pdf"
   },
   {
    "id": "rk2",
    "name": "Supplier dependence",
    "category": "Risk factors",
    "status": "na",
-   "finding": "Supplier concentration figures were not found in public sources.",
-   "source": ""
+   "finding": "The top 10 suppliers were 69.43% of FY26 purchases; the largest single supplier share was not found.",
+   "source": "https://www.swarababy.com/wp-content/uploads/2026/11/Project-Dream-Red-Herring-Prospectus-Filing-Version.pdf"
   },
   {
    "id": "rk3",
@@ -353,9 +353,9 @@
    "id": "rk4",
    "name": "Auditor remarks",
    "category": "Risk factors",
-   "status": "na",
-   "finding": "The audit opinion was not found in public sources.",
-   "source": ""
+   "status": "pass",
+   "finding": "The statutory auditor, Walker Chandiok & Co LLP, gave unmodified opinions on the restated financials.",
+   "source": "https://www.swarababy.com/wp-content/uploads/2026/11/Project-Dream-Red-Herring-Prospectus-Filing-Version.pdf"
   }
  ],
  "peers": [],
@@ -399,14 +399,14 @@
    "P/E (post-issue, upper band)",
    "x",
    "low",
-   null,
+   33.6,
    []
   ],
   [
    "Price to book (post-issue)",
    "x",
    "low",
-   null,
+   3.05,
    []
   ]
  ],
@@ -434,7 +434,35 @@
   {
    "url": "https://ipowatch.in/upcoming-ipo-list/",
    "title": "Upcoming IPO list — IPO Watch"
+  },
+  {
+   "url": "https://www.chittorgarh.com/ipo_faqs/swara-baby-products-ipo/3186/",
+   "title": "Swara Baby Products IPO details and FAQs — Chittorgarh"
+  },
+  {
+   "url": "https://www.kotakneo.com/ipo/swara-baby-products-ipo/",
+   "title": "Swara Baby Products IPO details — Kotak Neo"
+  },
+  {
+   "url": "https://www.swarababy.com/wp-content/uploads/2026/11/Project-Dream-Red-Herring-Prospectus-Filing-Version.pdf",
+   "title": "Swara Baby Products Red Herring Prospectus — company website"
+  },
+  {
+   "url": "https://www.businesstoday.in/markets/ipo-corner/story/firstcry-backed-swara-baby-products-ipo-opens-on-dec-2-check-price-band-issue-size-key-details-569799-2026-11-27",
+   "title": "Swara Baby IPO opens Dec 2, price band — Business Today"
+  },
+  {
+   "url": "https://hdfcsky.com/news/swara-baby-products-rs-800-cr-ipo-to-open-on-dec-2-price-band-fixed-at-rs-105-111",
+   "title": "Swara Baby ₹800 cr IPO price band fixed — HDFC Sky (PTI)"
+  },
+  {
+   "url": "https://india.entrepreneur.com/business-news/swara-baby-products-ipo-opens-december-2-price-band-inr-105-111",
+   "title": "Swara Baby IPO opens Dec 2, price band — Entrepreneur India"
+  },
+  {
+   "url": "https://www.angelone.in/ipo/swara-baby-products-limited-ipo",
+   "title": "Swara Baby Products IPO — Angel One"
   }
  ],
- "generatedAt": "2026-11-27T08:00:00+05:30"
+ "generatedAt": "2026-11-28T08:00:00+05:30"
 }

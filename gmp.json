@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-27",
+ "updated": "2026-11-28",
  "ipos": {
   "bombaycoatedspecialsteels": {
    "name": "Bombay Coated & Special Steels",
@@ -524,7 +524,13 @@
       "https://www.investorgain.com/gmp/crystal-crop-protection-ipo-gmp/2067/"
      ]
     }
-   ]
+   ],
+   "issuePrice": 272,
+   "listing": {
+    "date": "2026-11-26",
+    "open": 278.0,
+    "source": "https://upstox.com/news/market-news/ipo/crystal-crop-protection-shares-debut-at-over-2-premium-on-nse-here-s-how-much-investors-made/article-203994/"
+   }
   },
   "watranarentals": {
    "name": "Watrana Rentals",
@@ -617,7 +623,13 @@
       "https://www.ipoguru.in/ipo-gmp/watrana-rentals-sme-ipo"
      ]
     }
-   ]
+   ],
+   "issuePrice": 245,
+   "listing": {
+    "date": "2026-11-27",
+    "open": 243.0,
+    "source": "https://www.alphave.in/ipo/watrana-rentals/listing"
+   }
   },
   "mahanadicoalfields": {
    "name": "Mahanadi Coalfields",
@@ -683,7 +695,13 @@
       "https://investorgain.com/report/ipo-gmp-live/331/"
      ]
     }
-   ]
+   ],
+   "issuePrice": 136,
+   "listing": {
+    "date": "2026-11-27",
+    "open": 134.0,
+    "source": "https://www.indiainfoline.com/news/ipo/mahanadi-coalfields-lists-at-134-down-by-2-to-issue-price"
+   }
   },
   "shreesiddhivinayakgreentechindustries": {
    "name": "Shree Siddhivinayak Greentech Industries",
@@ -728,6 +746,14 @@
      "sources": [
       "https://www.investorgain.com/gmp/shree-siddhivinayak-greentech-industries-ipo/2349/",
       "https://www.multibagg.ai/ipo/ipo-grey-market-premium-listing-gmp-latest"
+     ]
+    },
+    {
+     "date": "2026-11-28",
+     "low": 1,
+     "high": 1,
+     "sources": [
+      "https://www.investorgain.com/gmp/shree-siddhivinayak-greentech-industries-ipo/2349/"
      ]
     }
    ]
@@ -804,7 +830,7 @@
    ]
   },
   "matangirubber": {
-   "name": "Monomark Engineering (India)",
+   "name": "Matangi Rubber",
    "readings": [
     {
      "date": "2026-11-25",
@@ -845,6 +871,20 @@
     }
    ],
    "issuePrice": 99
+  },
+  "swarababyproducts": {
+   "name": "Swara Baby Products",
+   "readings": [
+    {
+     "date": "2026-11-28",
+     "low": 3,
+     "high": 3,
+     "sources": [
+      "https://www.investorgain.com/gmp/swara-baby-products-ipo/2340/",
+      "https://www.investorgain.com/chr-gmp/swara-baby-products-ipo/3186"
+     ]
+    }
+   ]
   }
  }
 }

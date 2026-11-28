@@ -13,14 +13,14 @@
  "ofsCr": 6.73,
  "lotSize": 1200,
  "summary": "Airpro Technology India, incorporated in Jaipur in 2014, designs, assembles and sells wired and wireless networking products such as Wi-Fi access points and Ethernet switches under its own brand, and plans a new factory in Jaipur. Revenue grew from ₹22.0 cr in FY24 to ₹39.1 cr in FY26 and profit after tax rose 165.5% to ₹6.08 cr in FY26, lifting the net margin to 15.6%. The ₹35.64 cr fixed-price issue at ₹99 is mostly fresh money, with ₹13 cr going to working capital and about ₹7.6 cr to the factory; at ₹99 the post-issue P/E is about 20.4x, below the two listed peers' median of 42.1x. Concentration is high: the top ten customers brought in 92.6% of FY26 revenue, the largest about 37%, all imports come from China, related-party transactions were about 30% of revenue, and promoters got shares in a March 2026 rights issue at ₹10.",
- "score": 33,
+ "score": 15,
  "checksScore": 72,
  "drivers": [
   {
    "name": "Subscription demand",
    "weight": 50,
-   "score": 50,
-   "detail": "Subscription not available yet, scored as neutral until bidding opens."
+   "score": 14,
+   "detail": "Subscribed 1.01x retail, 0.54x NII, 0.76x overall (bidding still open)."
   },
   {
    "name": "Profit growth (RHP)",
@@ -41,7 +41,7 @@
    "detail": "Financial health, governance, issue structure, use of proceeds, legal and risk checks."
   }
  ],
- "capReason": "7 red flags took 35 points off. Capped at 50 because of 4 or more red flags.",
+ "capReason": "7 red flags took 35 points off. Capped at 50 because of 4 or more red flags. Capped at 25 because the issue is not fully subscribed so far.",
  "counts": {
   "pass": 23,
   "caution": 3,
